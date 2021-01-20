@@ -264,11 +264,7 @@ Accumulator:
 ```  
 </details>    
 ## Example payloads    
-#### Accumulator NGSI V2 key-values Example    
-Here is an example of a Accumulator in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
-#### Accumulator NGSI V2 normalized Example    
-Here is an example of a Accumulator in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
-#### Accumulator NGSI-LD key-values Example    
-Here is an example of a Accumulator in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-#### Accumulator NGSI-LD normalized Example    
-Here is an example of a Accumulator in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+Not available the example of a Accumulator in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.   
+Not available the example of a Accumulator in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.   
+Not available the example of a Accumulator in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.   
+Not available the example of a Accumulator in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.   
