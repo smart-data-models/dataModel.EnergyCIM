@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0",
   "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroPID2/schema.json",
   "title": " Smart Data Models - GovHydroPID2",
-  "description": "Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight forward penstock configurations and "three term" electro-hydraulic governors (i.e. Woodard electronic).",
+  "description": "Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight forward penstock configurations and three term electro-hydraulic governors (i.e. Woodard electronic).",
   "type": "object",
   "allOf": [
     {
