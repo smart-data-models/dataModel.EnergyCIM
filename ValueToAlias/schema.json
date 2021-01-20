@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0",
   "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ValueToAlias/schema.json",
   "title": " Smart Data Models - ValueToAlias",
-  "description": "Adapted from CIM data models. Describes the translation of one particular value into a name, e.g. 1 as "Open".",
+  "description": "Adapted from CIM data models. Describes the translation of one particular value into a name, e.g. 1 as 'Open'.",
   "type": "object",
   "allOf": [
     {
