@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0",
   "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BusNameMarker/schema.json",
   "title": " Smart Data Models - BusNameMarker",
-  "description": "Adapted from CIM data models. Used to apply user standard names to topology buses. Typically used for bus/branch case generation. Associated with one or more terminals that are normally connected with the bus name.    The associated terminals are normally connected by non-retained switches. For a ring bus station configuration, all busbar terminals in the ring are typically associated.   For a breaker and a half scheme, both busbars would normally be associated.  For a ring bus, all busbars would normally be associated.  For a 'straight' busbar configuration, normally only the main terminal at the busbar would be associated.",
+  "description": "Adapted from CIM data models. Used to apply user standard names to topology buses. Typically used for bus/branch case generation. Associated with one or more terminals that are normally connected with the bus name. The associated terminals are normally connected by non-retained switches. For a ring bus station configuration, all busbar terminals in the ring are typically associated. For a breaker and a half scheme, both busbars would normally be associated.  For a ring bus, all busbars would normally be associated.  For a 'straight' busbar configuration, normally only the main terminal at the busbar would be associated.",
   "type": "object",
   "allOf": [
     {
