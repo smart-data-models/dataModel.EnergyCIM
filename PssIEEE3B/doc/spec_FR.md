@@ -1,0 +1,355 @@
+Entité : PssIEEE3B  
+==================  
+[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssIEEE3B/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. La classe représente le modèle de stabilisateur de système d'alimentation PSS3B de type IEEE Std 421.5-2005. Le modèle PSS PSS3B a une double entrée de puissance électrique et de déviation de la fréquence angulaire du rotor. Les signaux sont utilisés pour dériver un signal de puissance mécanique équivalent.  Référence : IEEE 3B 421.5-2005, section 8.3.**  
+
+## Liste des biens  
+
+- `a1`: Paramètre du filtre coupe-bande (A1).  Valeur typique = 0,359. Valeur par défaut : 0.0  - `a2`: Paramètre du filtre coupe-bande (A2).  Valeur typique = 0,586. Valeur par défaut : 0.0  - `a3`: Paramètre du filtre coupe-bande (A3).  Valeur typique = 0,429. Valeur par défaut : 0.0  - `a4`: Paramètre du filtre coupe-bande (A4).  Valeur typique = 0,564. Valeur par défaut : 0.0  - `a5`: Paramètre du filtre coupe-bande (A5).  Valeur typique = 0,001. Valeur par défaut : 0.0  - `a6`: Paramètre du filtre coupe-bande (A6).  Valeur typique = 0, valeur par défaut : 0,0  - `a7`: Paramètre du filtre coupe-bande (A7).  Valeur typique = 0,031. Valeur par défaut : 0.0  - `a8`: Paramètre du filtre coupe-bande (A8).  Valeur typique = 0, valeur par défaut : 0,0  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inputSignal1Type`: Type de signal d'entrée #1.  Valeur typique = générateurElectricité. Par défaut : Aucun  - `inputSignal2Type`: Type de signal d'entrée #2.  Valeur typique = vitesse du rotor. Par défaut : Aucune  - `ks1`: Gain sur le signal n° 1 (Ks1).  Valeur typique = -0,602. Valeur par défaut : 0,0  - `ks2`: Gain sur le signal # 2 (Ks2).  Valeur typique = 30,12. Valeur par défaut : 0,0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `t1`: Constante de temps du transducteur (T1).  Valeur typique = 0,012. Valeur par défaut : 0  - `t2`: Constante de temps du transducteur (T2).  Valeur typique = 0,012. Valeur par défaut : 0  - `tw1`: Constante de temps de lavage (Tw1).  Valeur typique = 0,3. Valeur par défaut : 0  - `tw2`: Constante de temps de lavage (Tw2).  Valeur typique = 0,3. Valeur par défaut : 0  - `tw3`: Constante de temps de lavage (Tw3).  Valeur typique = 0,6. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type PssIEEE3B  - `vstmax`: Limite maximale de sortie du stabilisateur (Vstmax).  Valeur typique = 0,1. Valeur par défaut : 0,0  - `vstmin`: Limite minimale de sortie du stabilisateur (Vstmin).  Valeur typique = -0,1. Valeur par défaut : 0,0    
+Propriétés requises  
+Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
+## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+PssIEEE3B:    
+  description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS3B power system stabilizer model. The PSS model PSS3B has dual inputs of electrical power and rotor angular frequency deviation. The signals are used to derive an equivalent mechanical power signal.  Reference: IEEE 3B 421.5-2005 Section 8.3.'    
+  properties:    
+    a1:    
+      description: 'Notch filter parameter (A1).  Typical Value = 0.359. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a2:    
+      description: 'Notch filter parameter (A2).  Typical Value = 0.586. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a3:    
+      description: 'Notch filter parameter (A3).  Typical Value = 0.429. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a4:    
+      description: 'Notch filter parameter (A4).  Typical Value = 0.564. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a5:    
+      description: 'Notch filter parameter (A5).  Typical Value = 0.001. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a6:    
+      description: 'Notch filter parameter (A6).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a7:    
+      description: 'Notch filter parameter (A7).  Typical Value = 0.031. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    a8:    
+      description: 'Notch filter parameter (A8).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    address:    
+      description: 'The mailing address.'    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          type: string    
+        areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          type: string    
+      type: Property    
+    alternateName:    
+      description: 'An alternative name for this item'    
+      type: Property    
+    areaServed:    
+      description: 'The geographic area where a service or offered item is provided'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
+    dataProvider:    
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      type: Property    
+    dateCreated:    
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: Property    
+    dateModified:    
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: Property    
+    description:    
+      description: 'A description of this item'    
+      type: Property    
+    id:    
+      anyOf: &pssieee3b_-_properties_-_owner_-_items_-_anyof    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
+    inputSignal1Type:    
+      description: "Type of input signal #1.  Typical Value = generatorElectricalPower. Default: None"    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    inputSignal2Type:    
+      description: "Type of input signal #2.  Typical Value = rotorSpeed. Default: None"    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    ks1:    
+      description: "Gain on signal # 1 (Ks1).  Typical Value = -0.602. Default: 0.0"    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    ks2:    
+      description: "Gain on signal # 2 (Ks2).  Typical Value = 30.12. Default: 0.0"    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    location:    
+      $id: https://geojson.org/schema/Geometry.json    
+      $schema: "http://json-schema.org/draft-07/schema#"    
+      oneOf:    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Point'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON LineString'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Polygon'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPoint'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiLineString'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPolygon'    
+          type: object    
+      title: 'GeoJSON Geometry'    
+    name:    
+      description: 'The name of this item.'    
+      type: Property    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf: *pssieee3b_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
+      type: Property    
+    seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
+      oneOf:    
+        - items:    
+            - format: uri    
+              type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: Property    
+    t1:    
+      description: 'Transducer time constant (T1).  Typical Value = 0.012. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    t2:    
+      description: 'Transducer time constant (T2).  Typical Value = 0.012. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tw1:    
+      description: 'Washout time constant (Tw1).  Typical Value = 0.3. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tw2:    
+      description: 'Washout time constant (Tw2).  Typical Value = 0.3. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tw3:    
+      description: 'Washout time constant (Tw3).  Typical Value = 0.6. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    type:    
+      description: 'NGSI type. It has to be PssIEEE3B'    
+      enum:    
+        - PssIEEE3B    
+      type: Property    
+    vstmax:    
+      description: 'Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    vstmin:    
+      description: 'Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+  required: []    
+  type: object    
+```  
+</details>    
+## Exemples de charges utiles  
+Non disponible l'exemple d'un PssIEEE3B en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un PssIEEE3B en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un PssIEEE3B en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un PssIEEE3B en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
