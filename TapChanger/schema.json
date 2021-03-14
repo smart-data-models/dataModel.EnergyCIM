@@ -31,7 +31,7 @@
         "type": "number"
     },
     "TapSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. A TapSchedule is associated with a TapChanger. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A TapSchedule is associated with a TapChanger. Default: 'list'",
         "type": "number"
     },
     "controlEnabled": {
