@@ -27,7 +27,7 @@
         "type": "number"
     },
     "LoadGroups": {
-        "description": "Property. Model:'https://schema.org/Number'. The Loadgroups in the SubLoadArea. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The Loadgroups in the SubLoadArea. Default: 'list'",
         "type": "number"
     }
 }
