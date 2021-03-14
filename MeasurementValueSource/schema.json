@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be MeasurementValueSource"
     },
     "MeasurementValues": {
-        "description": "Property. Model:'https://schema.org/Number'. A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301. Default: 'list'",
         "type": "number"
     }
 }
