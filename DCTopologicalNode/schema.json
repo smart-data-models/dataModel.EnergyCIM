@@ -27,11 +27,11 @@
         "type": "number"
     },
     "DCNodes": {
-        "description": "Property. Model:'https://schema.org/Number'. See association end ConnectivityNode.TopologicalNode. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. See association end ConnectivityNode.TopologicalNode. Default: 'list'",
         "type": "number"
     },
     "DCTerminals": {
-        "description": "Property. Model:'https://schema.org/Number'. See association end Terminal.TopologicalNode. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. See association end Terminal.TopologicalNode. Default: 'list'",
         "type": "number"
     },
     "DCTopologicalIsland": {
