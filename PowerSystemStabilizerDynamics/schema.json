@@ -27,7 +27,7 @@
         "type": "number"
     },
     "RemoteInputSignal": {
-        "description": "Property. Model:'https://schema.org/Number'. Remote input signal used by this power system stabilizer model. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Remote input signal used by this power system stabilizer model. Default: 'list'",
         "type": "number"
     }
 }
