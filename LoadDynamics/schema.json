@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be LoadDynamics"
     },
     "EnergyConsumer": {
-        "description": "Property. Model:'https://schema.org/Number'. Energy consumer to which this dynamics load model applies. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Energy consumer to which this dynamics load model applies. Default: 'list'",
         "type": "number"
     }
 }
