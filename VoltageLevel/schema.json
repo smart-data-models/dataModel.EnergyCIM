@@ -27,7 +27,7 @@
         "type": "number"
     },
     "Bays": {
-        "description": "Property. Model:'https://schema.org/Number'. The bays within this voltage level. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The bays within this voltage level. Default: 'list'",
         "type": "number"
     },
     "Substation": {
