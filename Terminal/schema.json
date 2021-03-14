@@ -31,15 +31,15 @@
         "type": "number"
     },
     "ConverterDCSides": {
-        "description": "Property. Model:'https://schema.org/Number'. Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: 'list'",
         "type": "number"
     },
     "HasFirstMutualCoupling": {
-        "description": "Property. Model:'https://schema.org/Number'. Mutual couplings associated with the branch as the first branch. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Mutual couplings associated with the branch as the first branch. Default: 'list'",
         "type": "number"
     },
     "HasSecondMutualCoupling": {
-        "description": "Property. Model:'https://schema.org/Number'. Mutual couplings with the branch associated as the first branch. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Mutual couplings with the branch associated as the first branch. Default: 'list'",
         "type": "number"
     },
     "RegulatingControl": {
@@ -47,7 +47,7 @@
         "type": "number"
     },
     "RemoteInputSignal": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal coming from this terminal. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Input signal coming from this terminal. Default: 'list'",
         "type": "number"
     },
     "SvPowerFlow": {
@@ -55,7 +55,7 @@
         "type": "number"
     },
     "TieFlow": {
-        "description": "Property. Model:'https://schema.org/Number'. The control area tie flows to which this terminal associates. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The control area tie flows to which this terminal associates. Default: 'list'",
         "type": "number"
     },
     "TopologicalNode": {
@@ -63,7 +63,7 @@
         "type": "number"
     },
     "TransformerEnd": {
-        "description": "Property. Model:'https://schema.org/Number'. All transformer ends connected at this terminal. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. All transformer ends connected at this terminal. Default: 'list'",
         "type": "number"
     },
     "phases": {
