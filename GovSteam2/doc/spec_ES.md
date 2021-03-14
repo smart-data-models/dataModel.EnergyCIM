@@ -5,7 +5,7 @@ Entidad: GovSteam2
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dbf`: Banda muerta de frecuencia (DBF).  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k`: Ganancia del regulador (recíproco del estatismo) (K).  Valor típico = 20. Por defecto: 0,0  - `location`:   - `mnef`: Valor máximo de error negativo del flujo de combustible (MN).  Valor típico = -1. Por defecto: 0,0  - `mxef`: Valor máximo de error positivo del flujo de combustible (MX).  Valor típico = 1. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pmax`: Caudal máximo de combustible (P).  Valor típico = 1. Por defecto: 0,0  - `pmin`: Caudal mínimo de combustible (P).  Valor típico = 0. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de retardo del regulador (T) (>0).  Valor típico = 0,45. Por defecto: 0  - `t2`: Constante de tiempo de espera del gobernador (T) (puede ser 0).  Valor típico = 0. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteam2    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dbf`: Banda muerta de frecuencia (DBF).  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k`: Ganancia del regulador (recíproco del estatismo) (K).  Valor típico = 20. Por defecto: 0,0  - `location`:   - `mnef`: Valor máximo de error negativo del flujo de combustible (MN).  Valor típico = -1. Por defecto: 0,0  - `mxef`: Valor máximo de error positivo del flujo de combustible (MX).  Valor típico = 1. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pmax`: Caudal máximo de combustible (P).  Valor típico = 1. Por defecto: 0,0  - `pmin`: Caudal mínimo de combustible (P).  Valor típico = 0. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de retardo del regulador (T) (>0).  Valor típico = 0,45. Por defecto: 0  - `t2`: Constante de tiempo de espera del gobernador (T) (puede ser 0).  Valor típico = 0. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteam2    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ GovSteam2:
   description: 'Adapted from CIM data models. Simplified governor model.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
