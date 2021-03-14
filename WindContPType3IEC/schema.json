@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be WindContPType3IEC"
     },
     "WindDynamicsLookupTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The P control type 3 model with which this wind dynamics lookup table is associated. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The P control type 3 model with which this wind dynamics lookup table is associated. Default: 'list'",
         "type": "number"
     },
     "WindGenTurbineType3IEC": {
