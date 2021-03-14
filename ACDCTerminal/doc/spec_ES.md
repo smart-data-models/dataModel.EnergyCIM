@@ -5,7 +5,7 @@ Entidad: ACDCTerminal
 
 ## Lista de propiedades  
 
-- `BusNameMarker`: El marcador de nombre de bus utilizado para nombrar el bus (nodo topológico). Por defecto: Ninguno  - `Measurements`: Las medidas asociadas a este terminal definen el lugar en el que se sitúa la medida en la topología de la red.  Puede utilizarse, por ejemplo, para capturar la posición del sensor, como un transformador de tensión (PT) en una barra o un transformador de corriente (CT) en la barra entre un interruptor y un seccionador. Por defecto: "lista"  - `OperationalLimitSet`:  Por defecto: "lista"  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `connected`: El estado de conexión está relacionado con un modelo de rama de bus y la relación nodo topológico a terminal.  Verdadero implica que el terminal está conectado al nodo topológico relacionado y falso implica que no lo está.  En un modelo de rama de bus, el estado conectado se utiliza para saber si el equipo está desconectado sin tener que cambiar la conectividad descrita por la relación nodo topológico-terminal. Un caso válido es que un equipo conductor puede estar conectado en un extremo y abierto en el otro. En particular, para un segmento de línea de CA, donde la carga reactiva de la línea puede ser significativa, este es un caso relevante. Por defecto: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequenceNumber`: La orientación de las conexiones de los terminales para un equipo conductor de terminales múltiples.  La numeración secuencial comienza con el 1 y los terminales adicionales deben seguir en orden creciente.   El primer terminal es el "punto de partida" para una rama de dos terminales. Por defecto: 0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser ACDCTerminal    
+- `BusNameMarker`: El marcador de nombre de bus utilizado para nombrar el bus (nodo topológico). Por defecto: Ninguno  - `Measurements`: Las medidas asociadas a este terminal definen el lugar en el que se sitúa la medida en la topología de la red.  Puede utilizarse, por ejemplo, para capturar la posición del sensor, como un transformador de tensión (PT) en una barra o un transformador de corriente (CT) en la barra entre un interruptor y un seccionador. Por defecto: 'lista'  - `OperationalLimitSet`:  Por defecto: "lista  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `connected`: El estado de conexión está relacionado con un modelo de rama de bus y la relación nodo topológico a terminal.  Verdadero implica que el terminal está conectado al nodo topológico relacionado y falso implica que no lo está.  En un modelo de rama de bus, el estado conectado se utiliza para saber si el equipo está desconectado sin tener que cambiar la conectividad descrita por la relación nodo topológico-terminal. Un caso válido es que un equipo conductor puede estar conectado en un extremo y abierto en el otro. En particular, para un segmento de línea de CA, donde la carga reactiva de la línea puede ser significativa, este es un caso relevante. Por defecto: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequenceNumber`: La orientación de las conexiones de los terminales para un equipo conductor de terminales múltiples.  La numeración secuencial comienza con el 1 y los terminales adicionales deben seguir en orden creciente.   El primer terminal es el "punto de partida" para una rama de dos terminales. Por defecto: 0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser ACDCTerminal    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -21,40 +21,42 @@ ACDCTerminal:
       x-ngsi:    
         model: https://schema.org/Number    
     Measurements:    
-      description: 'Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: "list"'    
+      description: 'Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     OperationalLimitSet:    
-      description: ' Default: "list"'    
+      description: ' Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
