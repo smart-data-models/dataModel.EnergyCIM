@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be ReportingGroup"
     },
     "BusNameMarker": {
-        "description": "Property. Model:'https://schema.org/Number'. The reporting group to which this bus name marker belongs. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The reporting group to which this bus name marker belongs. Default: 'list'",
         "type": "number"
     },
     "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The reporting group to which the topological node belongs. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The reporting group to which the topological node belongs. Default: 'list'",
         "type": "number"
     }
 }
