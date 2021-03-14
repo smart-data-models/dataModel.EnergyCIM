@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be PhaseTapChangerTable"
     },
     "PhaseTapChangerTablePoint": {
-        "description": "Property. Model:'https://schema.org/Number'. The points of this table. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The points of this table. Default: 'list'",
         "type": "number"
     },
     "PhaseTapChangerTabular": {
-        "description": "Property. Model:'https://schema.org/Number'. The phase tap changers to which this phase tap table applies. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The phase tap changers to which this phase tap table applies. Default: 'list'",
         "type": "number"
     }
 }
