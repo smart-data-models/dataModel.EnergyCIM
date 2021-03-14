@@ -1,45 +1,47 @@
 Entité : CsConverter  
 ====================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/CsConverter/LICENSE.md)  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/CsConverter/LICENSE.md)  
 Description globale : **Adapté des modèles de données CIM. Côté DC du convertisseur de source de courant (CSC).**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alpha`: Angle de tir, valeur typique entre 10 et 18 degrés pour un redresseur. Variable d'état CSC, résultat du flux de puissance. Valeur par défaut : 0,0  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `gamma`: Angle d'extinction. Variable d'état CSC, résultat du flux d'énergie. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `location`:   - `maxAlpha`: Angle de tir maximum. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `maxGamma`: Angle d'extinction maximum. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `maxIdc`: Le courant continu maximum (Id) du côté DC auquel le convertisseur doit fonctionner. Les données de configuration du convertisseur sont utilisées dans le flux de puissance. Valeur par défaut : 0,0  - `minAlpha`: Angle de tir minimum. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `minGamma`: Angle d'extinction minimum. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `minIdc`: Le courant continu minimum (Id) du côté DC auquel le convertisseur doit fonctionner. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `name`: Le nom de cet article.  - `operatingMode`: Indique si le pôle CC fonctionne comme un onduleur ou comme un redresseur. Variable de commande CSC utilisée dans le flux de puissance. Par défaut : Aucune  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `pPccControl`:  Par défaut : Aucune  - `ratedIdc`: Convertisseur nominal de courant continu, également appelé IdN. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `targetAlpha`: Angle de tir de la cible. Variable de contrôle CSC utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `targetGamma`: Angle d'extinction de la cible. Variable de contrôle CSC utilisée dans le flux d'énergie. Valeur par défaut : 0,0  - `targetIdc`: Valeur cible du courant continu. Variable de contrôle CSC utilisée dans le flux de puissance. Valeur par défaut : 0,0  - `type`: Type NGSI. Il doit être de type CsConverter    
+- `address`: L'adresse postale  - `alpha`: Angle d'allumage, valeur typique entre 10 et 18 degrés pour un redresseur. Variable d'état du CSC, résultat du flux de puissance. Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `gamma`: Angle d'extinction. Variable d'état du CSC, résultat du flux de puissance. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `location`:   - `maxAlpha`: Angle d'allumage maximal. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `maxGamma`: Angle d'extinction maximal. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `maxIdc`: Le courant continu (Id) maximum du côté DC auquel le convertisseur doit fonctionner. Utilisation des données de configuration du convertisseur dans le flux de puissance. Valeur par défaut : 0.0  - `minAlpha`: Angle d'allumage minimum. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `minGamma`: Angle d'extinction minimum. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `minIdc`: Le courant continu (Id) minimum du côté DC auquel le convertisseur doit fonctionner. Données de configuration du CSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `operatingMode`: Indique si le pôle DC fonctionne comme un onduleur ou comme un redresseur. Variable de contrôle CSC utilisée dans le flux de puissance. Valeur par défaut : Aucun  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pPccControl`:  Par défaut : Aucun  - `ratedIdc`: Courant continu nominal du convertisseur, également appelé IdN. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `targetAlpha`: Angle de tir cible. Variable de contrôle du CSC utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `targetGamma`: Angle d'extinction cible. Variable de contrôle du CSC utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `targetIdc`: Valeur cible du courant continu. Variable de contrôle CSC utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit s'agir de CsConverter    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CsConverter:    
   description: 'Adapted from CIM data models. DC side of the current source converter (CSC).'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alpha:    
       description: 'Firing angle, typical value between 10 and 18 degrees for a rectifier. CSC state variable, result from power flow. Default: 0.0'    
       type: number    
@@ -324,7 +326,7 @@ CsConverter:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un CsConverter en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un CsConverter en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un CsConverter en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un CsConverter en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un CsConverter au format JSON comme key-values. Ceci est compatible avec la NGSI V2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un CsConverter au format JSON comme normalisé. Il est compatible avec la NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un CsConverter au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un CsConverter au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
