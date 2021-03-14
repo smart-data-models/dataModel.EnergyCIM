@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be ConnectivityNodeContainer"
     },
     "ConnectivityNodes": {
-        "description": "Property. Model:'https://schema.org/Number'. Connectivity nodes which belong to this connectivity node container. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Connectivity nodes which belong to this connectivity node container. Default: 'list'",
         "type": "number"
     },
     "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The topological nodes which belong to this connectivity node container. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The topological nodes which belong to this connectivity node container. Default: 'list'",
         "type": "number"
     }
 }
