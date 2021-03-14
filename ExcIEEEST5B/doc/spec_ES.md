@@ -5,7 +5,7 @@ Entidad: ExcIEEEST5B
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kc`: Factor de regulación del rectificador (K).  Valor típico = 0,004. Por defecto: 0,0  - `kr`: Ganancia del regulador (K).  Valor típico = 200. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo del circuito de disparo (T1).  Valor típico = 0,004. Por defecto: 0  - `tb1`: Constante de tiempo de retardo del regulador (T).  Valor típico = 6. Por defecto: 0  - `tb2`: Constante de tiempo de retardo del regulador (T).  Valor típico = 0,01. Por defecto: 0  - `tc1`: Constante de tiempo del regulador (T).  Valor típico = 0,8. Por defecto: 0  - `tc2`: Constante de tiempo de espera del regulador (T).  Valor típico = 0,08. Por defecto: 0  - `tob1`: Constante de tiempo de retardo OEL (T).  Valor típico = 2. Por defecto: 0  - `tob2`: Constante de tiempo de retardo OEL (T).  Valor típico = 0,08. Por defecto: 0  - `toc1`: Constante de tiempo de espera OEL (T).  Valor típico = 0,1. Por defecto: 0  - `toc2`: Constante de tiempo de espera OEL (T).  Valor típico = 0,08. Por defecto: 0  - `tub1`: Constante de tiempo de retardo UEL (T).  Valor típico = 10. Por defecto: 0  - `tub2`: Constante de tiempo de retardo UEL (T).  Valor típico = 0,05. Por defecto: 0  - `tuc1`: Constante de tiempo de espera UEL (T).  Valor típico = 2. Por defecto: 0  - `tuc2`: Constante de tiempo de espera UEL (T).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST5B  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -4. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kc`: Factor de regulación del rectificador (K).  Valor típico = 0,004. Por defecto: 0,0  - `kr`: Ganancia del regulador (K).  Valor típico = 200. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del circuito de disparo (T1).  Valor típico = 0,004. Por defecto: 0  - `tb1`: Constante de tiempo de retardo del regulador (T).  Valor típico = 6. Por defecto: 0  - `tb2`: Constante de tiempo de retardo del regulador (T).  Valor típico = 0,01. Por defecto: 0  - `tc1`: Constante de tiempo del regulador (T).  Valor típico = 0,8. Por defecto: 0  - `tc2`: Constante de tiempo de espera del regulador (T).  Valor típico = 0,08. Por defecto: 0  - `tob1`: Constante de tiempo de retardo OEL (T).  Valor típico = 2. Por defecto: 0  - `tob2`: Constante de tiempo de retardo OEL (T).  Valor típico = 0,08. Por defecto: 0  - `toc1`: Constante de tiempo de espera OEL (T).  Valor típico = 0,1. Por defecto: 0  - `toc2`: Constante de tiempo de espera OEL (T).  Valor típico = 0,08. Por defecto: 0  - `tub1`: Constante de tiempo de retardo UEL (T).  Valor típico = 10. Por defecto: 0  - `tub2`: Constante de tiempo de retardo UEL (T).  Valor típico = 0,05. Por defecto: 0  - `tuc1`: Constante de tiempo de espera UEL (T).  Valor típico = 2. Por defecto: 0  - `tuc2`: Constante de tiempo de espera UEL (T).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST5B  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -4. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ ExcIEEEST5B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST5B model. The Type ST5B excitation system is a variation of the Type ST1A model, with alternative overexcitation and underexcitation inputs and additional limits.  Reference: IEEE Standard 421.5-2005 Section 7.5.   Note: the block diagram in the IEEE 421.5 standard has input signal Vc and does not indicate the summation point with Vref. The implementation of the ExcIEEEST5B shall consider summation point with Vref.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -339,7 +341,7 @@ ExcIEEEST5B:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcIEEEST5B en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcIEEEST5B en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
