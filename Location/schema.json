@@ -27,7 +27,7 @@
         "type": "number"
     },
     "PositionPoints": {
-        "description": "Property. Model:'https://schema.org/Number'. Sequence of position points describing this location, expressed in coordinate system `Location.CoordinateSystem`. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Sequence of position points describing this location, expressed in coordinate system `Location.CoordinateSystem`. Default: 'list'",
         "type": "number"
     },
     "PowerSystemResources": {
