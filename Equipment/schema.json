@@ -27,7 +27,7 @@
         "type": "number"
     },
     "OperationalLimitSet": {
-        "description": "Property. Model:'https://schema.org/Number'. The operational limit sets associated with this equipment. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The operational limit sets associated with this equipment. Default: 'list'",
         "type": "number"
     },
     "aggregate": {
