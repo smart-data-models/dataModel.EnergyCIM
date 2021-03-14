@@ -5,7 +5,7 @@ Entidad: ExcBBC
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Tensión máxima de excitación en circuito abierto (Efdmax).  Valor típico = 5. Por defecto: 0,0  - `efdmin`: Tensión mínima de excitación en circuito abierto (Efdmin).  Valor típico = -5. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `k`: Ganancia en estado estacionario (K).  Valor típico = 300. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `switch`: Selector de enrutamiento de la señal suplementaria (interruptor). verdadero = Vs conectado al 3er punto de suma falso = Vs conectado al 1er punto de suma (ver diagrama). Valor típico = verdadero. Por defecto: Falso  - `t1`: Constante de tiempo del regulador (T1).  Valor típico = 6. Por defecto: 0  - `t2`: Constante de tiempo del regulador (T2).  Valor típico = 1. Por defecto: 0  - `t3`: Constante de tiempo de avance/retraso (T3).  Valor típico = 0,05. Por defecto: 0  - `t4`: Constante de tiempo de avance/retraso (T4).  Valor típico = 0,01. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcBBC  - `vrmax`: Salida máxima del elemento de control (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del elemento de control (Vrmin).  Valor típico = -5. Por defecto: 0,0  - `xe`: Reactancia efectiva del transformador de excitación (Xe).  Valor típico = 0,05. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Tensión máxima de excitación en circuito abierto (Efdmax).  Valor típico = 5. Por defecto: 0,0  - `efdmin`: Tensión mínima de excitación en circuito abierto (Efdmin).  Valor típico = -5. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `k`: Ganancia en estado estacionario (K).  Valor típico = 300. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `switch`: Selector de enrutamiento de la señal suplementaria (interruptor). verdadero = Vs conectado al 3er punto de suma falso = Vs conectado al 1er punto de suma (ver diagrama). Valor típico = verdadero. Por defecto: Falso  - `t1`: Constante de tiempo del regulador (T1).  Valor típico = 6. Por defecto: 0  - `t2`: Constante de tiempo del regulador (T2).  Valor típico = 1. Por defecto: 0  - `t3`: Constante de tiempo de avance/retraso (T3).  Valor típico = 0,05. Por defecto: 0  - `t4`: Constante de tiempo de avance/retraso (T4).  Valor típico = 0,01. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcBBC  - `vrmax`: Salida máxima del elemento de control (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del elemento de control (Vrmin).  Valor típico = -5. Por defecto: 0,0  - `xe`: Reactancia efectiva del transformador de excitación (Xe).  Valor típico = 0,05. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ ExcBBC:
   description: 'Adapted from CIM data models. Transformer fed static excitation system (static with ABB regulator). This model represents a static excitation system in which a gated thyristor bridge fed by a transformer at the main generator terminals feeds the main generator directly.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
