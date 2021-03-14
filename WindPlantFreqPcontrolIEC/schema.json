@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be WindPlantFreqPcontrolIEC"
     },
     "WindDynamicsLookupTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 'list'",
         "type": "number"
     },
     "WindPlantIEC": {
