@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be EnergySchedulingType"
     },
     "EnergySource": {
-        "description": "Property. Model:'https://schema.org/Number'. Energy Scheduling Type of an Energy Source Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Energy Scheduling Type of an Energy Source Default: 'list'",
         "type": "number"
     }
 }
