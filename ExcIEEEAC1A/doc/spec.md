@@ -5,7 +5,7 @@ Entity: ExcIEEEAC1A
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ka`: Voltage regulator gain (K).  Typical Value = 400. Default: 0.0  - `kc`: Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0.2. Default: 0.0  - `kd`: Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.38. Default: 0.0  - `ke`: Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0  - `kf`: Excitation control system stabilizer gains (K).  Typical Value = 0.03. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `seve1`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.1. Default: 0.0  - `seve2`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.03. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (T).  Typical Value = 0.02. Default: 0  - `tb`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `tc`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `te`: Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.8. Default: 0  - `tf`: Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0  - `type`: NGSI type. It has to be ExcIEEEAC1A  - `vamax`: Maximum voltage regulator output (V).  Typical Value = 14.5. Default: 0.0  - `vamin`: Minimum voltage regulator output (V).  Typical Value = -14.5. Default: 0.0  - `ve1`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 4.18. Default: 0.0  - `ve2`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.14. Default: 0.0  - `vrmax`: Maximum voltage regulator outputs (V).  Typical Value = 6.03. Default: 0.0  - `vrmin`: Minimum voltage regulator outputs (V).  Typical Value = -5.43. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ka`: Voltage regulator gain (K).  Typical Value = 400. Default: 0.0  - `kc`: Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0.2. Default: 0.0  - `kd`: Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.38. Default: 0.0  - `ke`: Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0  - `kf`: Excitation control system stabilizer gains (K).  Typical Value = 0.03. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `seve1`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.1. Default: 0.0  - `seve2`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.03. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (T).  Typical Value = 0.02. Default: 0  - `tb`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `tc`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `te`: Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.8. Default: 0  - `tf`: Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0  - `type`: NGSI type. It has to be ExcIEEEAC1A  - `vamax`: Maximum voltage regulator output (V).  Typical Value = 14.5. Default: 0.0  - `vamin`: Minimum voltage regulator output (V).  Typical Value = -14.5. Default: 0.0  - `ve1`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 4.18. Default: 0.0  - `ve2`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.14. Default: 0.0  - `vrmax`: Maximum voltage regulator outputs (V).  Typical Value = 6.03. Default: 0.0  - `vrmin`: Minimum voltage regulator outputs (V).  Typical Value = -5.43. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ ExcIEEEAC1A:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type AC1A model. The model represents the field-controlled alternator-rectifier excitation systems designated Type AC1A. These excitation systems consist of an alternator main exciter with non-controlled rectifiers.  Reference: IEEE Standard 421.5-2005 Section 6.1.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
