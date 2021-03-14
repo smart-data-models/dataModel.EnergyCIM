@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be NonConformLoadGroup"
     },
     "EnergyConsumers": {
-        "description": "Property. Model:'https://schema.org/Number'. Group of this ConformLoad. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Group of this ConformLoad. Default: 'list'",
         "type": "number"
     },
     "NonConformLoadSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. The NonConformLoadSchedules in the NonConformLoadGroup. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The NonConformLoadSchedules in the NonConformLoadGroup. Default: 'list'",
         "type": "number"
     }
 }
