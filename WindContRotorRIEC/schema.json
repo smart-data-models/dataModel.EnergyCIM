@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be WindContRotorRIEC"
     },
     "WindDynamicsLookupTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this rotor resistance control model. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this rotor resistance control model. Default: 'list'",
         "type": "number"
     },
     "WindGenTurbineType2IEC": {
