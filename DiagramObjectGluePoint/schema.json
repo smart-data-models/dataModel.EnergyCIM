@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be DiagramObjectGluePoint"
     },
     "DiagramObjectPoints": {
-        "description": "Property. Model:'https://schema.org/Number'. The `glue` point to which this point is associated. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The `glue` point to which this point is associated. Default: 'list'",
         "type": "number"
     }
 }
