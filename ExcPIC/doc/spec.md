@@ -5,7 +5,7 @@ Entity: ExcPIC
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `e1`: Field voltage value 1 (E1).  Typical Value = 0. Default: 0.0  - `e2`: Field voltage value 2 (E2).  Typical Value = 0. Default: 0.0  - `efdmax`: Exciter maximum limit (Efdmax).  Typical Value = 8. Default: 0.0  - `efdmin`: Exciter minimum limit (Efdmin).  Typical Value = -0.87. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: PI controller gain (Ka).  Typical Value = 3.15. Default: 0.0  - `kc`: Exciter regulation factor (Kc).  Typical Value = 0.08. Default: 0.0  - `ke`: Exciter constant (Ke).  Typical Value = 0. Default: 0.0  - `kf`: Rate feedback gain (Kf).  Typical Value = 0. Default: 0.0  - `ki`: Current source gain (Ki).  Typical Value = 0. Default: 0.0  - `kp`: Potential source gain (Kp).  Typical Value = 6.5. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `se1`: Saturation factor at E1 (Se1).  Typical Value = 0. Default: 0.0  - `se2`: Saturation factor at E2 (Se2).  Typical Value = 0. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta1`: PI controller time constant (Ta1).  Typical Value = 1. Default: 0  - `ta2`: Voltage regulator time constant (Ta2).  Typical Value = 0.01. Default: 0  - `ta3`: Lead time constant (Ta3).  Typical Value = 0. Default: 0  - `ta4`: Lag time constant (Ta4).  Typical Value = 0. Default: 0  - `te`: Exciter time constant (Te).  Typical Value = 0. Default: 0  - `tf1`: Rate feedback time constant (Tf1).  Typical Value = 0. Default: 0  - `tf2`: Rate feedback lag time constant (Tf2).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be ExcPIC  - `vr1`: PI maximum limit (Vr1).  Typical Value = 1. Default: 0.0  - `vr2`: PI minimum limit (Vr2).  Typical Value = -0.87. Default: 0.0  - `vrmax`: Voltage regulator maximum limit (Vrmax).  Typical Value = 1. Default: 0.0  - `vrmin`: Voltage regulator minimum limit (Vrmin).  Typical Value = -0.87. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `e1`: Field voltage value 1 (E1).  Typical Value = 0. Default: 0.0  - `e2`: Field voltage value 2 (E2).  Typical Value = 0. Default: 0.0  - `efdmax`: Exciter maximum limit (Efdmax).  Typical Value = 8. Default: 0.0  - `efdmin`: Exciter minimum limit (Efdmin).  Typical Value = -0.87. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: PI controller gain (Ka).  Typical Value = 3.15. Default: 0.0  - `kc`: Exciter regulation factor (Kc).  Typical Value = 0.08. Default: 0.0  - `ke`: Exciter constant (Ke).  Typical Value = 0. Default: 0.0  - `kf`: Rate feedback gain (Kf).  Typical Value = 0. Default: 0.0  - `ki`: Current source gain (Ki).  Typical Value = 0. Default: 0.0  - `kp`: Potential source gain (Kp).  Typical Value = 6.5. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `se1`: Saturation factor at E1 (Se1).  Typical Value = 0. Default: 0.0  - `se2`: Saturation factor at E2 (Se2).  Typical Value = 0. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta1`: PI controller time constant (Ta1).  Typical Value = 1. Default: 0  - `ta2`: Voltage regulator time constant (Ta2).  Typical Value = 0.01. Default: 0  - `ta3`: Lead time constant (Ta3).  Typical Value = 0. Default: 0  - `ta4`: Lag time constant (Ta4).  Typical Value = 0. Default: 0  - `te`: Exciter time constant (Te).  Typical Value = 0. Default: 0  - `tf1`: Rate feedback time constant (Tf1).  Typical Value = 0. Default: 0  - `tf2`: Rate feedback lag time constant (Tf2).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be ExcPIC  - `vr1`: PI maximum limit (Vr1).  Typical Value = 1. Default: 0.0  - `vr2`: PI minimum limit (Vr2).  Typical Value = -0.87. Default: 0.0  - `vrmax`: Voltage regulator maximum limit (Vrmax).  Typical Value = 1. Default: 0.0  - `vrmin`: Voltage regulator minimum limit (Vrmin).  Typical Value = -0.87. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ ExcPIC:
   description: 'Adapted from CIM data models. Proportional/Integral Regulator Excitation System Model.  This model can be used to represent excitation systems with a proportional-integral (PI) voltage regulator controller.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
