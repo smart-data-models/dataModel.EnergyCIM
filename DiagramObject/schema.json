@@ -27,7 +27,7 @@
         "type": "number"
     },
     "DiagramObjectPoints": {
-        "description": "Property. Model:'https://schema.org/Number'. A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: 'list'",
         "type": "number"
     },
     "DiagramObjectStyle": {
@@ -39,7 +39,7 @@
         "type": "number"
     },
     "VisibilityLayers": {
-        "description": "Property. Model:'https://schema.org/Number'. A diagram object can be part of multiple visibility layers. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A diagram object can be part of multiple visibility layers. Default: 'list'",
         "type": "number"
     },
     "drawingOrder": {
