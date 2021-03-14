@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be GeographicalRegion"
     },
     "Regions": {
-        "description": "Property. Model:'https://schema.org/Number'. All sub-geograhpical regions within this geographical region. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. All sub-geograhpical regions within this geographical region. Default: 'list'",
         "type": "number"
     }
 }
