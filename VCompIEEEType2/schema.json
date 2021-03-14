@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be VCompIEEEType2"
     },
     "GenICompensationForGenJ": {
-        "description": "Property. Model:'https://schema.org/Number'. Compensation of this voltage compensator`s generator for current flow out of another generator. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Compensation of this voltage compensator`s generator for current flow out of another generator. Default: 'list'",
         "type": "number"
     },
     "tr": {
