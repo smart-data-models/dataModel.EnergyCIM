@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be DiagramObjectStyle"
     },
     "StyledObjects": {
-        "description": "Property. Model:'https://schema.org/Number'. A style can be assigned to multiple diagram objects. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A style can be assigned to multiple diagram objects. Default: 'list'",
         "type": "number"
     }
 }
