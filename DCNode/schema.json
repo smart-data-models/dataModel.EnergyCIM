@@ -27,7 +27,7 @@
         "type": "number"
     },
     "DCTerminals": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
         "type": "number"
     },
     "DCTopologicalNode": {
