@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be VsCapabilityCurve"
     },
     "VsConverterDCSides": {
-        "description": "Property. Model:'https://schema.org/Number'. Capability curve of this converter. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Capability curve of this converter. Default: 'list'",
         "type": "number"
     }
 }
