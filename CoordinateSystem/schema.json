@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be CoordinateSystem"
     },
     "Location": {
-        "description": "Property. Model:'https://schema.org/Number'. All locations described with position points in this coordinate system. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. All locations described with position points in this coordinate system. Default: 'list'",
         "type": "number"
     },
     "crsUrn": {
