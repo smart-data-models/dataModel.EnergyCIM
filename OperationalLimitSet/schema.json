@@ -27,7 +27,7 @@
         "type": "number"
     },
     "OperationalLimitValue": {
-        "description": "Property. Model:'https://schema.org/Number'. The limit set to which the limit values belong. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The limit set to which the limit values belong. Default: 'list'",
         "type": "number"
     },
     "Terminal": {
