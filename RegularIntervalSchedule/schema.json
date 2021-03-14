@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be RegularIntervalSchedule"
     },
     "TimePoints": {
-        "description": "Property. Model:'https://schema.org/Number'. The regular interval time point data values that define this schedule. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The regular interval time point data values that define this schedule. Default: 'list'",
         "type": "number"
     },
     "endTime": {
