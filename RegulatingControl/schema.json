@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be RegulatingControl"
     },
     "RegulatingCondEq": {
-        "description": "Property. Model:'https://schema.org/Number'. The equipment that participates in this regulating control scheme. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The equipment that participates in this regulating control scheme. Default: 'list'",
         "type": "number"
     },
     "RegulationSchedule": {
-        "description": "Property. Model:'https://schema.org/Number'. Schedule for this Regulating regulating control. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Schedule for this Regulating regulating control. Default: 'list'",
         "type": "number"
     },
     "Terminal": {
