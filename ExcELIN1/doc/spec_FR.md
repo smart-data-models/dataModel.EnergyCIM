@@ -1,45 +1,47 @@
 Entité : ExcELIN1  
 =================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcELIN1/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Système d'excitation statique alimenté par transformateur PI : ELIN (VATECH) - modèle simplifié.  Ce modèle représente un système d'excitation entièrement statique. Un régulateur de tension PI établit un point de consigne de courant d'excitation souhaité pour un régulateur de courant proportionnel. L'intégrateur du régulateur PI dispose d'une entrée de suivi pour faire correspondre son signal au courant d'excitation actuel.  Un stabilisateur de système d'alimentation avec entrée de puissance est inclus dans le modèle.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcELIN1/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Système d'excitation statique alimenté par un transformateur PI : ELIN (VATECH) - modèle simplifié.  Ce modèle représente un système d'excitation entièrement statique. Un contrôleur de tension PI établit un point de consigne de courant d'excitation souhaité pour un contrôleur de courant proportionnel. L'intégrateur du régulateur PI a une entrée de suivi pour adapter son signal au courant d'excitation actuel.  Un stabilisateur de système de puissance avec entrée de puissance est inclus dans le modèle.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `dpnf`: Contrôleur suivi de la bande morte (Dpnf).  Valeur typique = 0, valeur par défaut : 0,0  - `efmax`: Tension d'excitation maximale en circuit ouvert (Efmax).  Valeur typique = 5. Valeur par défaut : 0,0  - `efmin`: Tension d'excitation minimale en circuit ouvert (Efmin).  Valeur typique = -5. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `ks1`: Gain de stabilisateur 1 (Ks1).  Valeur typique = 0, par défaut : 0,0  - `ks2`: Gain de stabilisateur 2 (Ks2).  Valeur typique = 0, par défaut : 0,0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `smax`: Limite de sortie du stabilisateur (smax).  Valeur typique = 0,1. Valeur par défaut : 0,0  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `tfi`: Constante de temps du transducteur de courant (Tfi).  Valeur typique = 0, par défaut : 0  - `tnu`: Constante de temps de réinitialisation du contrôleur (Tnu).  Valeur typique = 2. Valeur par défaut : 0  - `ts1`: Constante de temps de retard de phase du stabilisateur (Ts1).  Valeur typique = 1. Valeur par défaut : 0  - `ts2`: Constante de temps du filtre stabilisateur (Ts2).  Valeur typique = 1. Valeur par défaut : 0  - `tsw`: Paramètres du stabilisateur (Tsw).  Valeur typique = 3. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type ExcELIN1  - `vpi`: Gain du régulateur de courant (Vpi).  Valeur typique = 12,45. Valeur par défaut : 0,0  - `vpnf`: Gain de suivi du contrôleur (Vpnf).  Valeur typique = 2. Valeur par défaut : 0,0  - `vpu`: Gain proportionnel du régulateur de tension (Vpu).  Valeur typique = 34,5. Valeur par défaut : 0,0  - `xe`: Réactance effective du transformateur d'excitation (Xe) (>=0).  Xe représente la régulation de l'unité transformateur/redresseur.  Valeur typique = 0,06. Valeur par défaut : 0,0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dpnf`: Bande morte de suivi du contrôleur (Dpnf).  Valeur typique = 0. Valeur par défaut : 0.0  - `efmax`: Tension d'excitation maximale en circuit ouvert (Efmax).  Valeur typique = 5. Valeur par défaut : 0.0  - `efmin`: Tension minimale d'excitation en circuit ouvert (Efmin).  Valeur typique = -5. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ks1`: Gain du stabilisateur 1 (Ks1).  Valeur typique = 0. Valeur par défaut : 0.0  - `ks2`: Gain du stabilisateur 2 (Ks2).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `smax`: Sortie de la limite du stabilisateur (smax).  Valeur typique = 0,1. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tfi`: Constante de temps du transducteur de courant (Tfi).  Valeur typique = 0. Valeur par défaut : 0  - `tnu`: Constante de temps de réinitialisation du contrôleur (Tnu).  Valeur typique = 2. Valeur par défaut : 0  - `ts1`: Constante de temps de retard de phase du stabilisateur (Ts1).  Valeur typique = 1. Valeur par défaut : 0  - `ts2`: Constante de temps du filtre stabilisateur (Ts2).  Valeur typique = 1. Valeur par défaut : 0  - `tsw`: Paramètres du stabilisateur (Tsw).  Valeur typique = 3. Valeur par défaut : 0  - `type`: Type NGSI. Ce doit être ExcELIN1  - `vpi`: Gain du contrôleur de courant (Vpi).  Valeur typique = 12.45. Valeur par défaut : 0.0  - `vpnf`: Gain de suivi du contrôleur (Vpnf).  Valeur typique = 2. Valeur par défaut : 0.0  - `vpu`: Gain proportionnel du contrôleur de tension (Vpu).  Valeur typique = 34.5. Valeur par défaut : 0.0  - `xe`: Réactance effective du transformateur d'excitation (Xe) (>=0).  Xe représente la régulation de l'unité du transformateur/redresseur.  Valeur typique = 0.06. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcELIN1:    
   description: 'Adapted from CIM data models. Static PI transformer fed excitation system: ELIN (VATECH) - simplified model.  This model represents an all-static excitation system. A PI voltage controller establishes a desired field current set point for a proportional current controller. The integrator of the PI controller has a follow-up input to match its signal to the present field current.  A power system stabilizer with power input is included in the model.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -329,7 +331,7 @@ ExcELIN1:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcELIN1 au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcELIN1 en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcELIN1 au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcELIN1 en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un ExcELIN1 au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcELIN1 au format JSON comme normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcELIN1 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcELIN1 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
