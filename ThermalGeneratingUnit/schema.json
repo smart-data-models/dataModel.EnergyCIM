@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be ThermalGeneratingUnit"
     },
     "FossilFuels": {
-        "description": "Property. Model:'https://schema.org/Number'. A thermal generating unit may have one or more fossil fuels. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A thermal generating unit may have one or more fossil fuels. Default: 'list'",
         "type": "number"
     }
 }
