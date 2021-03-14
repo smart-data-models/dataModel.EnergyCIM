@@ -23,15 +23,15 @@
         "description": "Property. NGSI type. It has to be GeneratingUnit"
     },
     "ControlAreaGeneratingUnit": {
-        "description": "Property. Model:'https://schema.org/Number'. ControlArea specifications for this generating unit. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. ControlArea specifications for this generating unit. Default: 'list'",
         "type": "number"
     },
     "GrossToNetActivePowerCurves": {
-        "description": "Property. Model:'https://schema.org/Number'. A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: 'list'",
         "type": "number"
     },
     "RotatingMachine": {
-        "description": "Property. Model:'https://schema.org/Number'. A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: 'list'",
         "type": "number"
     },
     "genControlSource": {
