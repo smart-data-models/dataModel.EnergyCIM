@@ -7,35 +7,37 @@ Equipment:
       x-ngsi:
         model: https://schema.org/Number
     OperationalLimitSet:
-      description: 'The operational limit sets associated with this equipment. Default: "list"'
+      description: 'The operational limit sets associated with this equipment. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
     address:
-      description: 'The mailing address.'
+      description: 'The mailing address'
       properties:
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
           type: string
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
           type: string
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
         areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
           type: string
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
         postalCode:
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''
           type: string
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/Text'''
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
       type: Property
+      x-ngsi:
+        model: https://schema.org/address
     aggregate:
       description: 'The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or synchronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program. Default: False'
       type: number
