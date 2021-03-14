@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be ConformLoadGroup"
     },
     "ConformLoadSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. The ConformLoadSchedules in the ConformLoadGroup. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The ConformLoadSchedules in the ConformLoadGroup. Default: 'list'",
         "type": "number"
     },
     "EnergyConsumers": {
-        "description": "Property. Model:'https://schema.org/Number'. Conform loads assigned to this ConformLoadGroup. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Conform loads assigned to this ConformLoadGroup. Default: 'list'",
         "type": "number"
     }
 }
