@@ -5,7 +5,7 @@ Entity: ExcIEEEST3A
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ka`: Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: 0.0  - `kc`: Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0  - `ki`: Potential circuit gain coefficient (K).  Typical Value = 0. Default: 0.0  - `km`: Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: 0.0  - `kp`: Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `tb`: Voltage regulator time constant (T).  Typical Value = 10. Default: 0  - `tc`: Voltage regulator time constant (T).  Typical Value = 1. Default: 0  - `thetap`: Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0  - `tm`: Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: 0  - `type`: NGSI type. It has to be ExcIEEEST3A  - `vbmax`: Maximum excitation voltage (V).  Typical Value = 6.9. Default: 0.0  - `vgmax`: Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: 0.0  - `vimax`: Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: 0.0  - `vimin`: Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: 0.0  - `vmmax`: Maximum inner loop output (V).  Typical Value = 1. Default: 0.0  - `vmmin`: Minimum inner loop output (V).  Typical Value = 0. Default: 0.0  - `vrmax`: Maximum voltage regulator output (V).  Typical Value = 10. Default: 0.0  - `vrmin`: Minimum voltage regulator output (V).  Typical Value = -10. Default: 0.0  - `xl`: Reactance associated with potential source (X).  Typical Value = 0.081. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ka`: Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: 0.0  - `kc`: Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0  - `ki`: Potential circuit gain coefficient (K).  Typical Value = 0. Default: 0.0  - `km`: Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: 0.0  - `kp`: Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `tb`: Voltage regulator time constant (T).  Typical Value = 10. Default: 0  - `tc`: Voltage regulator time constant (T).  Typical Value = 1. Default: 0  - `thetap`: Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0  - `tm`: Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: 0  - `type`: NGSI type. It has to be ExcIEEEST3A  - `vbmax`: Maximum excitation voltage (V).  Typical Value = 6.9. Default: 0.0  - `vgmax`: Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: 0.0  - `vimax`: Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: 0.0  - `vimin`: Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: 0.0  - `vmmax`: Maximum inner loop output (V).  Typical Value = 1. Default: 0.0  - `vmmin`: Minimum inner loop output (V).  Typical Value = 0. Default: 0.0  - `vrmax`: Maximum voltage regulator output (V).  Typical Value = 10. Default: 0.0  - `vrmin`: Minimum voltage regulator output (V).  Typical Value = -10. Default: 0.0  - `xl`: Reactance associated with potential source (X).  Typical Value = 0.081. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ ExcIEEEST3A:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST3A model.  Some static systems utilize a field voltage control loop to linearize the exciter control characteristic. This also makes the output independent of supply source variations until supply limitations are reached.  These systems utilize a variety of controlled-rectifier designs: full thyristor complements or hybrid bridges in either series or shunt configurations. The power source may consist of only a potential source, either fed from the machine terminals or from internal windings. Some designs may have compound power sources utilizing both machine potential and current. These power sources are represented as phasor combinations of machine terminal current and voltage and are accommodated by suitable parameters in model Type ST3A which is represented by ExcIEEEST3A.   Reference: IEEE Standard 421.5-2005 Section 7.3.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
