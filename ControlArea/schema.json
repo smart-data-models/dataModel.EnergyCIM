@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be ControlArea"
     },
     "ControlAreaGeneratingUnit": {
-        "description": "Property. Model:'https://schema.org/Number'. The generating unit specificaitons for the control area. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The generating unit specificaitons for the control area. Default: 'list'",
         "type": "number"
     },
     "EnergyArea": {
@@ -31,7 +31,7 @@
         "type": "number"
     },
     "TieFlow": {
-        "description": "Property. Model:'https://schema.org/Number'. The tie flows associated with the control area. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The tie flows associated with the control area. Default: 'list'",
         "type": "number"
     },
     "netInterchange": {
