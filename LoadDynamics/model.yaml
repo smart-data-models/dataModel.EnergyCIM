@@ -2,35 +2,37 @@ LoadDynamics:
   description: 'Adapted from CIM data models. Load whose behaviour is described by reference to a standard model   A standard feature of dynamic load behaviour modelling is the ability to associate the same behaviour to multiple energy consumers by means of a single aggregate load definition.  Aggregate loads are used to represent all or part of the real and reactive load from one or more loads in the static (power flow) data. This load is usually the aggregation of many individual load devices and the load model is approximate representation of the aggregate response of the load devices to system disturbances. The load model is always applied to individual bus loads (energy consumers) but a single set of load model parameters can used for all loads in the grouping.'
   properties:
     EnergyConsumer:
-      description: 'Energy consumer to which this dynamics load model applies. Default: "list"'
+      description: 'Energy consumer to which this dynamics load model applies. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
     address:
-      description: 'The mailing address.'
+      description: 'The mailing address'
       properties:
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
           type: string
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
           type: string
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
         areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
           type: string
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
         postalCode:
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''
           type: string
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/Text'''
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
       type: Property
+      x-ngsi:
+        model: https://schema.org/address
     alternateName:
       description: 'An alternative name for this item'
       type: Property
