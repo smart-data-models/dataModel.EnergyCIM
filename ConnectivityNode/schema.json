@@ -27,7 +27,7 @@
         "type": "number"
     },
     "Terminals": {
-        "description": "Property. Model:'https://schema.org/Number'. The connectivity node to which this terminal connects with zero impedance. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The connectivity node to which this terminal connects with zero impedance. Default: 'list'",
         "type": "number"
     },
     "TopologicalNode": {
