@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be AccumulatorLimitSet"
     },
     "Limits": {
-        "description": "Property. Model:'https://schema.org/Number'. The set of limits. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The set of limits. Default: 'list'",
         "type": "number"
     },
     "Measurements": {
-        "description": "Property. Model:'https://schema.org/Number'. A measurement may have zero or more limit ranges defined for it. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A measurement may have zero or more limit ranges defined for it. Default: 'list'",
         "type": "number"
     }
 }
