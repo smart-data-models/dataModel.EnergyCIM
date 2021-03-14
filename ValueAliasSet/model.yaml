@@ -2,50 +2,52 @@ ValueAliasSet:
   description: 'Adapted from CIM data models. Describes the translation of a set of values into a name and is intendend to facilitate cusom translations. Each ValueAliasSet has a name, description etc. A specific Measurement may represent a discrete state like Open, Closed, Intermediate etc. This requires a translation from the MeasurementValue.value number to a string, e.g. 0->''Invalid'', 1->''Open'', 2->''Closed'', 3->''Intermediate''. Each ValueToAlias member in ValueAliasSet.Value describe a mapping for one particular value to a name.'
   properties:
     Commands:
-      description: 'The Commands using the set for translation. Default: "list"'
+      description: 'The Commands using the set for translation. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
     Discretes:
-      description: 'The Measurements using the set for translation. Default: "list"'
+      description: 'The Measurements using the set for translation. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
     RaiseLowerCommands:
-      description: 'The Commands using the set for translation. Default: "list"'
+      description: 'The Commands using the set for translation. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
     Values:
-      description: 'The ValueAliasSet having the ValueToAlias mappings. Default: "list"'
+      description: 'The ValueAliasSet having the ValueToAlias mappings. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
     address:
-      description: 'The mailing address.'
+      description: 'The mailing address'
       properties:
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
           type: string
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
           type: string
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
         areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
           type: string
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
         postalCode:
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''
           type: string
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/Text'''
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
       type: Property
+      x-ngsi:
+        model: https://schema.org/address
     alternateName:
       description: 'An alternative name for this item'
       type: Property
