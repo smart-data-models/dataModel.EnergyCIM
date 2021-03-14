@@ -23,19 +23,19 @@
         "description": "Property. NGSI type. It has to be ValueAliasSet"
     },
     "Commands": {
-        "description": "Property. Model:'https://schema.org/Number'. The Commands using the set for translation. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The Commands using the set for translation. Default: 'list'",
         "type": "number"
     },
     "Discretes": {
-        "description": "Property. Model:'https://schema.org/Number'. The Measurements using the set for translation. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The Measurements using the set for translation. Default: 'list'",
         "type": "number"
     },
     "RaiseLowerCommands": {
-        "description": "Property. Model:'https://schema.org/Number'. The Commands using the set for translation. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The Commands using the set for translation. Default: 'list'",
         "type": "number"
     },
     "Values": {
-        "description": "Property. Model:'https://schema.org/Number'. The ValueAliasSet having the ValueToAlias mappings. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The ValueAliasSet having the ValueToAlias mappings. Default: 'list'",
         "type": "number"
     }
 }
