@@ -1,15 +1,15 @@
 Entité : DiagramObject  
 ======================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/DiagramObject/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Un objet qui définit un ou plusieurs points dans un espace donné. Cet objet peut être associé à tout ce qui est spécialisé IdentifiedObject. Pour les schémas unifilaires, ces objets comprennent généralement des éléments tels que des valeurs analogiques, des disjoncteurs, des sectionneurs, des transformateurs de puissance et des lignes de transmission**.  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/DiagramObject/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Un objet qui définit un ou plusieurs points dans un espace donné. Cet objet peut être associé à tout ce qui spécialise IdentifiedObject. Pour les diagrammes unifilaires, ces objets comprennent généralement des éléments tels que des valeurs analogiques, des disjoncteurs, des sectionneurs, des transformateurs de puissance et des lignes de transmission**.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `Diagram`: Un objet de diagramme fait partie d'un diagramme. Par défaut : Aucun  - `DiagramObjectPoints`: Un objet de diagramme peut avoir 0 ou plusieurs points pour refléter sa position de disposition, son routage (pour les polylignes) ou sa limite (pour les polygones). Valeur par défaut : "list".  - `DiagramObjectStyle`: Un objet de diagramme a un style associé qui fournit une référence pour le style utilisé dans le système d'origine. Par défaut : Aucun  - `IdentifiedObject`: Les objets de diagramme qui sont associés à l'objet de domaine. Par défaut : Aucun  - `VisibilityLayers`: Un objet de diagramme peut faire partie de plusieurs couches de visibilité. Valeur par défaut : "list".  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `drawingOrder`: L'ordre de dessin de cet élément. Plus le nombre est élevé, plus l'élément est dessiné dans l'ordre. Cela permet de s'assurer que les éléments qui se chevauchent sont rendus dans le bon ordre. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `isPolygon`: Définit si les points des objets du diagramme définissent ou non les limites d'un polygone ou le routage d'une polyligne. Si cette valeur est vraie, une application réceptrice doit alors considérer le premier et le dernier point à relier. Par défaut : Faux :  - `location`:   - `name`: Le nom de cet article.  - `offsetX`: Le décalage dans la direction X. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un seul point spécifie le centre de l'icône).  Le décalage est par unité, 0 indiquant qu'il n'y a pas de décalage par rapport au centre horizontal de l'icône.  -0,5 indique un décalage de 50% vers la gauche et 0,5 indique un décalage de 50% vers la droite. Valeur par défaut : 0.0  - `offsetY`: Le décalage dans la direction Y. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un seul point spécifie le centre de l'icône).  Le décalage est par unité, 0 indiquant qu'il n'y a pas de décalage par rapport au centre vertical de l'icône.  La direction du décalage dépend de l'orientation du diagramme, -0,5 et 0,5 indiquant un décalage de +/- 50% sur l'axe vertical. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `rotation`: Définit l'angle de rotation de l'objet du diagramme.  Zéro degré pointe vers le haut du diagramme.  La rotation se fait dans le sens des aiguilles d'une montre. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type DiagramObject    
+- `Diagram`: Un objet de diagramme fait partie d'un diagramme. Par défaut : Aucun  - `DiagramObjectPoints`: Un objet de diagramme peut avoir 0 ou plusieurs points pour refléter sa position de disposition, son acheminement (pour les polylignes) ou sa limite (pour les polygones). Valeur par défaut : "list".  - `DiagramObjectStyle`: Un objet diagramme a un style associé qui fournit une référence pour le style utilisé dans le système d'origine. Par défaut : Aucun  - `IdentifiedObject`: Les objets de diagramme qui sont associés à l'objet de domaine. Valeur par défaut : Aucun  - `VisibilityLayers`: Un objet de diagramme peut faire partie de plusieurs couches de visibilité. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `drawingOrder`: L'ordre de dessin de cet élément. Plus le nombre est élevé, plus l'élément est dessiné tard dans la séquence. Ceci est utilisé pour s'assurer que les éléments qui se chevauchent sont rendus dans le bon ordre. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `isPolygon`: Définit si les points des objets du diagramme définissent ou non les limites d'un polygone ou le routage d'une polyligne. Si cette valeur est vraie, l'application réceptrice doit considérer que le premier et le dernier point sont connectés. Valeur par défaut : False  - `location`:   - `name`: Le nom de cet élément.  - `offsetX`: Le décalage dans la direction X. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un point unique spécifie le centre de l'icône).  Le décalage est exprimé en unités, 0 indiquant qu'il n'y a pas de décalage par rapport au centre horizontal de l'icône.  -0,5 indique qu'il y a un décalage de 50% vers la gauche et 0,5 indique un décalage de 50% vers la droite. Valeur par défaut : 0.0  - `offsetY`: Le décalage dans la direction Y. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un point unique spécifie le centre de l'icône).  Le décalage est exprimé en unités, 0 indiquant qu'il n'y a pas de décalage par rapport au centre vertical de l'icône.  La direction du décalage dépend de l'orientation du diagramme, avec -0,5 et 0,5 indiquant un décalage de +/- 50% sur l'axe vertical. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotation`: Définit l'angle de rotation de l'objet diagramme.  Le degré zéro est dirigé vers le haut du diagramme.  La rotation se fait dans le sens des aiguilles d'une montre. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit s'agir de DiagramObject    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DiagramObject:    
@@ -21,7 +21,7 @@ DiagramObject:
       x-ngsi:    
         model: https://schema.org/Number    
     DiagramObjectPoints:    
-      description: 'A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: "list"'    
+      description: 'A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -36,35 +36,37 @@ DiagramObject:
       x-ngsi:    
         model: https://schema.org/Number    
     VisibilityLayers:    
-      description: 'A diagram object can be part of multiple visibility layers. Default: "list"'    
+      description: 'A diagram object can be part of multiple visibility layers. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -304,7 +306,7 @@ DiagramObject:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un DiagramObject au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un DiagramObject en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un DiagramObject au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un DiagramObject en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un DiagramObject au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un DiagramObject au format JSON comme normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un DiagramObject au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un DiagramObject au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
