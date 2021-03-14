@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be PowerTransformer"
     },
     "PowerTransformerEnd": {
-        "description": "Property. Model:'https://schema.org/Number'. The power transformer of this power transformer end. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The power transformer of this power transformer end. Default: 'list'",
         "type": "number"
     },
     "beforeShCircuitHighestOperatingCurrent": {
