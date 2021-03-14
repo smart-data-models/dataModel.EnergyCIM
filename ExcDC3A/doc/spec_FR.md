@@ -1,45 +1,47 @@
 Entité : ExcDC3A  
 ================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcDC3A/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Il s'agit d'excitateurs à collecteur en courant continu IEEE DC3A modifiés, avec entrée de vitesse et bande morte.  DC ancien type 4.**  
+Description globale : **Adapté des modèles de données CIM. Il s'agit d'excitateurs à collecteur à courant continu IEEE DC3A modifiés avec entrée de vitesse, et bande de mort.  DC ancien type 4.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `edfmax`: Limiteur de sortie de l'excitateur à tension maximale (Efdmax).  Valeur typique = 99. Valeur par défaut : 0,0  - `efd1`: Tension d'excitation à laquelle la saturation de l'excitateur est définie (Efd1).  Valeur typique = 2,6. Valeur par défaut : 0,0  - `efd2`: Tension d'excitation à laquelle la saturation de l'excitateur est définie (Efd2).  Valeur typique = 3,45. Valeur par défaut : 0,0  - `efdlim`: (Efdlim). true = le limiteur de sortie de l'excitateur est actif false = le limiteur de sortie de l'excitateur n'est pas actif. Valeur typique = vrai. Valeur par défaut : False  - `efdmin`: Limiteur de sortie de l'excitateur à tension minimale (Efdmin).  Valeur typique = -99. Valeur par défaut : 0,0  - `exclim`: (exclu).  La norme IEEE est ambiguë en ce qui concerne la limite inférieure de la sortie de l'excitateur. vrai = une limite inférieure de zéro est appliquée à la sortie de l'intégrateur faux = une limite inférieure de zéro n'est pas appliquée à la sortie de l'intégrateur. Valeur typique = vrai. Par défaut : False  - `id`: Identifiant unique de l'entité  - `ke`: Constante d'excitation liée au champ d'auto-excitation (Ke).  Valeur typique = 1. Valeur par défaut : 0.0  - `kr`: Groupe de la mort (Kr).  Si Kr n'est pas nulle, l'entrée du régulateur de tension change à une vitesse constante si Verr > Kr ou Verr < -Kr selon le modèle IEEE (1968) de type 4. Si Kr est égal à zéro, le signal d'erreur entraîne le régulateur de tension de manière continue, conformément aux modèles DC3 de l'IEEE (1980) et DC3A de l'IEEE (1992, 2005).  Valeur typique = 0, par défaut : 0,0  - `ks`: Coefficient permettant une utilisation différente du coefficient de vitesse du modèle (Ks).  Valeur typique = 0, par défaut : 0,0  - `kv`: Réglage rapide du contact (Kv).  Valeur typique = 0,05. Valeur par défaut : 0,0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `seefd1`: Valeur de la fonction de saturation de l'excitateur à la tension d'excitation correspondante, Efd1 (Se [Eefd1]).  Valeur typique = 0,1. Valeur par défaut : 0,0  - `seefd2`: Valeur de la fonction de saturation de l'excitateur à la tension d'excitation correspondante, Efd2 (Se [Efd2]).  Valeur typique = 0,35. Valeur par défaut : 0,0  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `te`: Constante de temps de l'excitateur, taux d'intégration associé au contrôle de l'excitateur (Te).  Valeur typique = 1,83. Valeur par défaut : 0  - `trh`: Temps de parcours du rhéostat (Trh).  Valeur typique = 20. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type ExcDC3A  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 5. Valeur par défaut : 0,0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = 0, par défaut : 0,0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `edfmax`: Limiteur de la tension maximale de sortie de l'excitateur (Efdmax).  Valeur typique = 99. Valeur par défaut : 0.0  - `efd1`: Tension d'excitation à laquelle la saturation de l'excitation est définie (Efd1).  Valeur typique = 2.6. Valeur par défaut : 0,0  - `efd2`: Tension d'excitation à laquelle la saturation de l'excitation est définie (Efd2).  Valeur typique = 3.45. Valeur par défaut : 0.0  - `efdlim`: (Efdlim). true = le limiteur de sortie de l'excitateur est actif false = le limiteur de sortie de l'excitateur n'est pas actif. Valeur typique = true. Valeur par défaut : False  - `efdmin`: Limiteur de la tension minimale de sortie de l'excitateur (Efdmin).  Valeur typique = -99. Valeur par défaut : 0.0  - `exclim`: (exclim).  La norme IEEE est ambiguë concernant la limite inférieure de la sortie de l'excitateur. true = une limite inférieure de zéro est appliquée à la sortie de l'intégrateur false = une limite inférieure de zéro n'est pas appliquée à la sortie de l'intégrateur. Valeur typique = true. Valeur par défaut : False  - `id`: Identifiant unique de l'entité  - `ke`: Constante d'excitation liée au champ auto-excité (Ke).  Valeur typique = 1. Valeur par défaut : 0.0  - `kr`: Bande morte (Kr).  Si Kr n'est pas nul, l'entrée du régulateur de tension change à une vitesse constante si Verr > Kr ou Verr < -Kr selon le modèle IEEE (1968) Type 4. Si Kr est égal à zéro, le signal d'erreur commande le régulateur de tension en continu selon les modèles DC3 et DC3A de l'IEEE (1980) et de l'IEEE (1992, 2005).  Valeur typique = 0. Par défaut : 0.0  - `ks`: Coefficient permettant une utilisation différente du coefficient de vitesse du modèle (Ks).  Valeur typique = 0. Valeur par défaut : 0.0  - `kv`: Réglage du contact de montée/descente rapide (Kv).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seefd1`: Valeur de la fonction de saturation de l'excitatrice à la tension d'excitation correspondante, Efd1 (Se[Eefd1]).  Valeur typique = 0,1. Valeur par défaut : 0,0  - `seefd2`: Valeur de la fonction de saturation de l'excitatrice à la tension d'excitation correspondante, Efd2 (Se[Efd2]).  Valeur typique = 0.35. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `te`: Constante de temps de l'excitateur, taux d'intégration associé au contrôle de l'excitateur (Te).  Valeur typique = 1,83. Valeur par défaut : 0  - `trh`: Temps de déplacement du rhéostat (Trh).  Valeur typique = 20. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcDC3A  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 5. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = 0. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcDC3A:    
   description: 'Adapted from CIM data models. This is modified IEEE DC3A direct current commutator exciters with speed input, and death band.  DC old type 4.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -334,7 +336,7 @@ ExcDC3A:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcDC3A en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsque l'on utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcDC3A en format JSON comme normalisé. Il est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcDC3A en format JSON-LD comme valeurs clés. Il est compatible avec le format JSON-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcDC3A en format JSON-LD comme normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un ExcDC3A au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcDC3A au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcDC3A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcDC3A au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
