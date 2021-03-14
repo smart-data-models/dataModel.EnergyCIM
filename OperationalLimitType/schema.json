@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be OperationalLimitType"
     },
     "OperationalLimit": {
-        "description": "Property. Model:'https://schema.org/Number'. The operational limits associated with this type of limit. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The operational limits associated with this type of limit. Default: 'list'",
         "type": "number"
     },
     "acceptableDuration": {
