@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be SubGeographicalRegion"
     },
     "DCLines": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
         "type": "number"
     },
     "Lines": {
-        "description": "Property. Model:'https://schema.org/Number'. The lines within the sub-geographical region. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The lines within the sub-geographical region. Default: 'list'",
         "type": "number"
     },
     "Region": {
@@ -35,7 +35,7 @@
         "type": "number"
     },
     "Substations": {
-        "description": "Property. Model:'https://schema.org/Number'. The substations in this sub-geographical region. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The substations in this sub-geographical region. Default: 'list'",
         "type": "number"
     }
 }
