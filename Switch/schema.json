@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be Switch"
     },
     "SwitchSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. A SwitchSchedule is associated with a Switch. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A SwitchSchedule is associated with a Switch. Default: 'list'",
         "type": "number"
     },
     "normalOpen": {
