@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be PerLengthDCLineParameter"
     },
     "DCLineSegments": {
-        "description": "Property. Model:'https://schema.org/Number'. All line segments described by this set of per-length parameters. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. All line segments described by this set of per-length parameters. Default: 'list'",
         "type": "number"
     },
     "capacitance": {
