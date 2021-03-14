@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be RatioTapChangerTable"
     },
     "RatioTapChanger": {
-        "description": "Property. Model:'https://schema.org/Number'. The tap ratio table for this ratio  tap changer. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The tap ratio table for this ratio  tap changer. Default: 'list'",
         "type": "number"
     },
     "RatioTapChangerTablePoint": {
-        "description": "Property. Model:'https://schema.org/Number'. Table of this point. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Table of this point. Default: 'list'",
         "type": "number"
     }
 }
