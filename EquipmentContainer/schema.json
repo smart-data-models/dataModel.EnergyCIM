@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be EquipmentContainer"
     },
     "Equipments": {
-        "description": "Property. Model:'https://schema.org/Number'. Contained equipment. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Contained equipment. Default: 'list'",
         "type": "number"
     }
 }
