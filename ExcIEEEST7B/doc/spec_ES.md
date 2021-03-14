@@ -5,7 +5,7 @@ Entidad: ExcIEEEST7B
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kh`: Ganancia de retroalimentación de la puerta de alto valor (K).  Valor típico 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 1. Por defecto: 0,0  - `kl`: Ganancia de retroalimentación de la puerta de bajo valor (K).  Valor típico 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 40. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tb`: Constante de tiempo de retardo del regulador (T).  Valor típico 1. Por defecto: 0  - `tc`: Constante de tiempo del regulador (T).  Valor típico 1. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico 1. Por defecto: 0  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (T). Valor típico 1. Por defecto: 0  - `tia`: Constante de tiempo de retroalimentación (T).  Valor típico = 3. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST7B  - `uelin`: Selector de entrada UEL (UELin). Valor típico = noUELinput. Por defecto: Ninguno  - `vmax`: Señal de referencia de tensión máxima (V).  Valor típico = 1,1. Por defecto: 0,0  - `vmin`: Señal mínima de referencia de tensión (V).  Valor típico = 0,9. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -4,5. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kh`: Ganancia de retroalimentación de la puerta de alto valor (K).  Valor típico 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 1. Por defecto: 0,0  - `kl`: Ganancia de retroalimentación de la puerta de bajo valor (K).  Valor típico 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 40. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tb`: Constante de tiempo de retardo del regulador (T).  Valor típico 1. Por defecto: 0  - `tc`: Constante de tiempo del regulador (T).  Valor típico 1. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico 1. Por defecto: 0  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (T). Valor típico 1. Por defecto: 0  - `tia`: Constante de tiempo de retroalimentación (T).  Valor típico = 3. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST7B  - `uelin`: Selector de entrada UEL (UELin). Valor típico = noUELinput. Por defecto: Ninguno  - `vmax`: Señal de referencia de tensión máxima (V).  Valor típico = 1,1. Por defecto: 0,0  - `vmin`: Señal mínima de referencia de tensión (V).  Valor típico = 0,9. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -4,5. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ ExcIEEEST7B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST7B model. This model is representative of static potential-source excitation systems. In this system, the AVR consists of a PI voltage regulator. A phase lead-lag filter in series allows introduction of a derivative function, typically used with brushless excitation systems. In that case, the regulator is of the PID type. In addition, the terminal voltage channel includes a phase lead-lag filter.  The AVR includes the appropriate inputs on its reference for overexcitation limiter (OEL1), underexcitation limiter (UEL), stator current limiter (SCL), and current compensator (DROOP). All these limitations, when they work at voltage reference level, keep the PSS (VS signal from Type PSS1A, PSS2A, or PSS2B) in operation. However, the UEL limitation can also be transferred to the high value (HV) gate acting on the output signal. In addition, the output signal passes through a low value (LV) gate for a ceiling overexcitation limiter (OEL2).  Reference: IEEE Standard 421.5-2005 Section 7.7.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
