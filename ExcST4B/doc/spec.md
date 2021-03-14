@@ -5,7 +5,7 @@ Entity: ExcST4B
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kc`: Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.113. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (Kg). Typical Value = 0. Default: 0.0  - `ki`: Potential circuit gain coefficient (Ki).  Typical Value = 0. Default: 0.0  - `kim`: Voltage regulator integral gain output (Kim).  Typical Value = 0. Default: 0.0  - `kir`: Voltage regulator integral gain (Kir).  Typical Value = 10.75. Default: 0.0  - `kp`: Potential circuit gain coefficient (Kp).  Typical Value = 9.3. Default: 0.0  - `kpm`: Voltage regulator proportional gain output (Kpm).  Typical Value = 1. Default: 0.0  - `kpr`: Voltage regulator proportional gain (Kpr).  Typical Value = 10.75. Default: 0.0  - `location`:   - `lvgate`: Selector (LVgate). true = LVgate is part of the block diagram false = LVgate is not part of the block diagram.  Typical Value = false. Default: False  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0  - `thetap`: Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0  - `type`: NGSI type. It has to be ExcST4B  - `uel`: Selector (Uel). true = UEL is part of block diagram false = UEL is not part of block diagram.  Typical Value = false. Default: False  - `vbmax`: Maximum excitation voltage (Vbmax).  Typical Value = 11.63. Default: 0.0  - `vgmax`: Maximum inner loop feedback voltage (Vgmax).  Typical Value = 5.8. Default: 0.0  - `vmmax`: Maximum inner loop output (Vmmax).  Typical Value = 99. Default: 0.0  - `vmmin`: Minimum inner loop output (Vmmin).  Typical Value = -99. Default: 0.0  - `vrmax`: Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0  - `vrmin`: Minimum voltage regulator output (Vrmin).  Typical Value = -0.87. Default: 0.0  - `xl`: Reactance associated with potential source (Xl).  Typical Value = 0.124. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kc`: Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.113. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (Kg). Typical Value = 0. Default: 0.0  - `ki`: Potential circuit gain coefficient (Ki).  Typical Value = 0. Default: 0.0  - `kim`: Voltage regulator integral gain output (Kim).  Typical Value = 0. Default: 0.0  - `kir`: Voltage regulator integral gain (Kir).  Typical Value = 10.75. Default: 0.0  - `kp`: Potential circuit gain coefficient (Kp).  Typical Value = 9.3. Default: 0.0  - `kpm`: Voltage regulator proportional gain output (Kpm).  Typical Value = 1. Default: 0.0  - `kpr`: Voltage regulator proportional gain (Kpr).  Typical Value = 10.75. Default: 0.0  - `location`:   - `lvgate`: Selector (LVgate). true = LVgate is part of the block diagram false = LVgate is not part of the block diagram.  Typical Value = false. Default: False  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0  - `thetap`: Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0  - `type`: NGSI type. It has to be ExcST4B  - `uel`: Selector (Uel). true = UEL is part of block diagram false = UEL is not part of block diagram.  Typical Value = false. Default: False  - `vbmax`: Maximum excitation voltage (Vbmax).  Typical Value = 11.63. Default: 0.0  - `vgmax`: Maximum inner loop feedback voltage (Vgmax).  Typical Value = 5.8. Default: 0.0  - `vmmax`: Maximum inner loop output (Vmmax).  Typical Value = 99. Default: 0.0  - `vmmin`: Minimum inner loop output (Vmmin).  Typical Value = -99. Default: 0.0  - `vrmax`: Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0  - `vrmin`: Minimum voltage regulator output (Vrmin).  Typical Value = -0.87. Default: 0.0  - `xl`: Reactance associated with potential source (Xl).  Typical Value = 0.124. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ ExcST4B:
   description: 'Adapted from CIM data models. Modified IEEE ST4B static excitation system with maximum inner loop feedback gain .'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
