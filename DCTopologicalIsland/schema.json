@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be DCTopologicalIsland"
     },
     "DCTopologicalNodes": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
         "type": "number"
     }
 }
