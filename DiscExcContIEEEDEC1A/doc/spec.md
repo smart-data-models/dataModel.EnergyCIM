@@ -5,7 +5,7 @@ Entity: DiscExcContIEEEDEC1A
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `esc`: Speed change reference ().  Typical Value = 0.0015. Default: 0.0  - `id`: Unique identifier of the entity  - `kan`: Discontinuous controller gain ().  Typical Value = 400. Default: 0.0  - `ketl`: Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tan`: Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0  - `td`: Time constant ().  Typical Value = 0.03. Default: 0  - `tl1`: Time constant ().  Typical Value = 0.025. Default: 0  - `tl2`: Time constant ().  Typical Value = 1.25. Default: 0  - `tw5`: DEC washout time constant ().  Typical Value = 5. Default: 0  - `type`: NGSI type. It has to be DiscExcContIEEEDEC1A  - `val`: Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0  - `vanmax`: Limiter for Van (). Default: 0.0  - `vomax`: Limiter ().  Typical Value = 0.3. Default: 0.0  - `vomin`: Limiter ().  Typical Value = 0.1. Default: 0.0  - `vsmax`: Limiter ().  Typical Value = 0.2. Default: 0.0  - `vsmin`: Limiter ().  Typical Value = -0.066. Default: 0.0  - `vtc`: Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0  - `vtlmt`: Voltage reference ().  Typical Value = 1.1. Default: 0.0  - `vtm`: Voltage limits ().  Typical Value = 1.13. Default: 0.0  - `vtn`: Voltage limits ().  Typical Value = 1.12. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `esc`: Speed change reference ().  Typical Value = 0.0015. Default: 0.0  - `id`: Unique identifier of the entity  - `kan`: Discontinuous controller gain ().  Typical Value = 400. Default: 0.0  - `ketl`: Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tan`: Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0  - `td`: Time constant ().  Typical Value = 0.03. Default: 0  - `tl1`: Time constant ().  Typical Value = 0.025. Default: 0  - `tl2`: Time constant ().  Typical Value = 1.25. Default: 0  - `tw5`: DEC washout time constant ().  Typical Value = 5. Default: 0  - `type`: NGSI type. It has to be DiscExcContIEEEDEC1A  - `val`: Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0  - `vanmax`: Limiter for Van (). Default: 0.0  - `vomax`: Limiter ().  Typical Value = 0.3. Default: 0.0  - `vomin`: Limiter ().  Typical Value = 0.1. Default: 0.0  - `vsmax`: Limiter ().  Typical Value = 0.2. Default: 0.0  - `vsmin`: Limiter ().  Typical Value = -0.066. Default: 0.0  - `vtc`: Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0  - `vtlmt`: Voltage reference ().  Typical Value = 1.1. Default: 0.0  - `vtm`: Voltage limits ().  Typical Value = 1.13. Default: 0.0  - `vtn`: Voltage limits ().  Typical Value = 1.12. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ DiscExcContIEEEDEC1A:
   description: 'Adapted from CIM data models. The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.  Reference: IEEE Standard 421.5-2005 Section 12.2.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
