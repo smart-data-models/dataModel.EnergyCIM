@@ -27,7 +27,7 @@
         "type": "number"
     },
     "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The terminals associated with this bus name marker. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The terminals associated with this bus name marker. Default: 'list'",
         "type": "number"
     },
     "priority": {
