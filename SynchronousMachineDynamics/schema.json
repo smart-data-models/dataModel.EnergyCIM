@@ -27,7 +27,7 @@
         "type": "number"
     },
     "GenICompensationForGenJ": {
-        "description": "Property. Model:'https://schema.org/Number'. Compensation of voltage compensator`s generator for current flow out of this  generator. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Compensation of voltage compensator`s generator for current flow out of this  generator. Default: 'list'",
         "type": "number"
     },
     "MechanicalLoadDynamics": {
@@ -39,7 +39,7 @@
         "type": "number"
     },
     "TurbineGovernorDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this turbine-governor model is associated. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this turbine-governor model is associated. Default: 'list'",
         "type": "number"
     }
 }
