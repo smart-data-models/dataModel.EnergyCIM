@@ -1,45 +1,47 @@
 Entité : ExcIEEEDC1A  
 ====================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEDC1A/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. La classe représente le modèle DC1A de type IEEE Std 421.5-2005. Ce modèle représente des excitateurs à collecteur c.c. contrôlés par le champ avec des régulateurs de tension à action continue (en particulier les types rhéostatique, amplificateur rotatif et amplificateur magnétique à action directe).  Comme ce modèle a été largement mis en œuvre par l'industrie, il est parfois utilisé pour représenter d'autres types de systèmes lorsque les données détaillées les concernant ne sont pas disponibles ou lorsqu'un modèle simplifié est nécessaire.   Référence : Norme IEEE 421.5-2005, section 5.1.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEDC1A/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. La classe représente le modèle DC1A de type IEEE Std 421.5-2005. Ce modèle représente les excitateurs à collecteur à courant continu commandés par le champ avec des régulateurs de tension à action continue (en particulier les types rhéostatiques à action directe, à amplificateur rotatif et à amplificateur magnétique).  Ce modèle ayant été largement mis en œuvre par l'industrie, il est parfois utilisé pour représenter d'autres types de systèmes lorsque les données détaillées les concernant ne sont pas disponibles ou lorsqu'un modèle simplifié est nécessaire.   Référence : IEEE Standard 421.5-2005 Section 5.1.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `efd1`: Tension d'excitation à laquelle la saturation de l'excitateur est définie (E).  Valeur typique = 3,1. Valeur par défaut : 0,0  - `efd2`: Tension d'excitation à laquelle la saturation de l'excitateur est définie (E).  Valeur typique = 2,3. Valeur par défaut : 0,0  - `exclim`: (exclu).  La norme IEEE est ambiguë en ce qui concerne la limite inférieure de la sortie de l'excitateur. vrai = une limite inférieure de zéro est appliquée à la sortie de l'intégrateur faux = une limite inférieure de zéro n'est pas appliquée à la sortie de l'intégrateur. Valeur typique = vrai. Par défaut : False  - `id`: Identifiant unique de l'entité  - `ka`: Gain du régulateur de tension (K).  Valeur typique = 46. Valeur par défaut : 0,0  - `ke`: Constante de l'excitateur liée au champ auto-excité (K).  Valeur typique = 0, valeur par défaut : 0,0  - `kf`: Gain stabilisateur du système de contrôle de l'excitation (K).  Valeur typique = 0,1. Valeur par défaut : 0,0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `seefd1`: Valeur de la fonction de saturation de l'excitateur à la tension d'excitation correspondante, E (S[E]).  Valeur typique = 0,33. Valeur par défaut : 0,0  - `seefd2`: Valeur de la fonction de saturation de l'excitateur à la tension d'excitation correspondante, E (S[E]).  Valeur typique = 0,1. Valeur par défaut : 0,0  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (T).  Valeur typique = 0,06. Valeur par défaut : 0  - `tb`: Constante de temps du régulateur de tension (T).  Valeur typique = 0, par défaut : 0  - `tc`: Constante de temps du régulateur de tension (T).  Valeur typique = 0, par défaut : 0  - `te`: Constante de temps de l'excitateur, taux d'intégration associé au contrôle de l'excitateur (T).  Valeur typique = 0,46. Valeur par défaut : 0  - `tf`: Constante de temps (T) du stabilisateur du système de contrôle de l'excitation.  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type ExcIEEEDC1A  - `uelin`: Entrée UEL (uelin). true = l'entrée est connectée à la porte HV false = l'entrée est connectée au signal d'erreur. Valeur typique = vrai. Par défaut : False  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 1. Valeur par défaut : 0,0  - `vrmin`: Sortie minimale du régulateur de tension (V).  Valeur typique = -0,9. Valeur par défaut : 0,0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efd1`: Tension d'excitation à laquelle la saturation de l'excitation est définie (E).  Valeur typique = 3.1. Valeur par défaut : 0.0  - `efd2`: Tension d'excitation à laquelle la saturation de l'excitation est définie (E).  Valeur typique = 2.3. Valeur par défaut : 0,0  - `exclim`: (exclim).  La norme IEEE est ambiguë concernant la limite inférieure de la sortie de l'excitateur. true = une limite inférieure de zéro est appliquée à la sortie de l'intégrateur false = une limite inférieure de zéro n'est pas appliquée à la sortie de l'intégrateur. Valeur typique = true. Valeur par défaut : False  - `id`: Identifiant unique de l'entité  - `ka`: Gain du régulateur de tension (K).  Valeur typique = 46. Valeur par défaut : 0.0  - `ke`: Constante d'excitation liée au champ auto-excité (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kf`: Gain du stabilisateur du système de contrôle d'excitation (K).  Valeur typique = 0,1. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seefd1`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, E (S[E]).  Valeur typique = 0.33. Valeur par défaut : 0.0  - `seefd2`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, E (S[E]).  Valeur typique = 0,1. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (T).  Valeur typique = 0.06. Valeur par défaut : 0  - `tb`: Constante de temps du régulateur de tension (T).  Valeur typique = 0. Valeur par défaut : 0  - `tc`: Constante de temps du régulateur de tension (T).  Valeur typique = 0. Valeur par défaut : 0  - `te`: Constante de temps de l'excitatrice, taux d'intégration associé à la commande de l'excitatrice (T).  Valeur typique = 0,46. Valeur par défaut : 0  - `tf`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être ExcIEEEDC1A  - `uelin`: Entrée UEL (uelin). true = l'entrée est connectée à la porte HV false = l'entrée est connectée au signal d'erreur. Valeur typique = true. Valeur par défaut : False  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 1. Valeur par défaut : 0.0  - `vrmin`: Tension minimale de sortie du régulateur (V).  Valeur typique = -0.9. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEDC1A:    
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type DC1A model. This model represents field-controlled dc commutator exciters with continuously acting voltage regulators (especially the direct-acting rheostatic, rotating amplifier, and magnetic amplifier types).  Because this model has been widely implemented by the industry, it is sometimes used to represent other types of systems when detailed data for them are not available or when a simplified model is required.   Reference: IEEE Standard 421.5-2005 Section 5.1.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -334,7 +336,7 @@ ExcIEEEDC1A:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcIEEEDC1A en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEDC1A en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEDC1A en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEDC1A en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEDC1A au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEDC1A au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEDC1A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEDC1A au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
