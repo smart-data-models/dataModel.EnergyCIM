@@ -5,7 +5,7 @@ Entidad: ExcIEEEST6B
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ilr`: Referencia de límite de corriente de salida del excitador (I).  Valor típico = 4,164. Por defecto: 0,0  - `kci`: Ajuste del límite de corriente de salida del excitador (K).  Valor típico = 1,0577. Por defecto: 0,0  - `kff`: Constante de ganancia de precontrol del regulador de campo del bucle interior (K). Valor típico = 1. Por defecto: 0,0  - `kg`: Constante de ganancia de retroalimentación del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 45,094. Por defecto: 0,0  - `klr`: Ganancia del limitador de corriente de salida del excitador (K).  Valor típico = 17,33. Por defecto: 0,0  - `km`: Constante de ganancia de avance del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 18,038. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (T). Valor típico = 0,02. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST6B  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ilr`: Referencia de límite de corriente de salida del excitador (I).  Valor típico = 4,164. Por defecto: 0,0  - `kci`: Ajuste del límite de corriente de salida del excitador (K).  Valor típico = 1,0577. Por defecto: 0,0  - `kff`: Constante de ganancia de precontrol del regulador de campo del bucle interior (K). Valor típico = 1. Por defecto: 0,0  - `kg`: Constante de ganancia de retroalimentación del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 45,094. Por defecto: 0,0  - `klr`: Ganancia del limitador de corriente de salida del excitador (K).  Valor típico = 17,33. Por defecto: 0,0  - `km`: Constante de ganancia de avance del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 18,038. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (T). Valor típico = 0,02. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST6B  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ ExcIEEEST6B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST6B model. This model consists of a PI voltage regulator with an inner loop field voltage regulator and pre-control. The field voltage regulator implements a proportional control. The pre-control and the delay in the feedback circuit increase the dynamic response.  Reference: IEEE Standard 421.5-2005 Section 7.6.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
