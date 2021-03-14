@@ -31,7 +31,7 @@
         "type": "number"
     },
     "Terminals": {
-        "description": "Property. Model:'https://schema.org/Number'. Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: 'list'",
         "type": "number"
     }
 }
