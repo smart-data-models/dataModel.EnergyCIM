@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be ReactiveCapabilityCurve"
     },
     "EquivalentInjection": {
-        "description": "Property. Model:'https://schema.org/Number'. The reactive capability curve used by this equivalent injection. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The reactive capability curve used by this equivalent injection. Default: 'list'",
         "type": "number"
     },
     "InitiallyUsedBySynchronousMachines": {
-        "description": "Property. Model:'https://schema.org/Number'. The default reactive capability curve for use by a synchronous machine. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The default reactive capability curve for use by a synchronous machine. Default: 'list'",
         "type": "number"
     }
 }
