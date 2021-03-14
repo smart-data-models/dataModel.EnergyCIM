@@ -27,7 +27,7 @@
         "type": "number"
     },
     "WindTurbineType3or4Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind turbine type 3 or 4 associated with this wind plant. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The wind turbine type 3 or 4 associated with this wind plant. Default: 'list'",
         "type": "number"
     }
 }
