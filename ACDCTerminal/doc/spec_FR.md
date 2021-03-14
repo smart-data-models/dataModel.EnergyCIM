@@ -1,15 +1,15 @@
 Entité : ACDCTerminal  
 =====================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ACDCTerminal/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Un point de connexion électrique (CA ou CC) à un équipement conducteur. Les terminaux sont connectés à des points de connexion physiques appelés nœuds de connectivité.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ACDCTerminal/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Un point de connexion électrique (CA ou CC) à un équipement conducteur. Les bornes sont connectées à des points de connexion physiques appelés nœuds de connectivité.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `BusNameMarker`: Le marqueur de nom de bus utilisé pour nommer le bus (nœud topologique). Par défaut : Aucun  - `Measurements`: Mesures associées à ce terminal définissant l'endroit où la mesure est placée dans la topologie du réseau.  Elle peut être utilisée, par exemple, pour saisir la position du capteur, comme un transformateur de tension (PT) au niveau d'une barre omnibus ou un transformateur de courant (CT) au niveau de la barre entre un disjoncteur et un isolateur. Par défaut : "list".  - `OperationalLimitSet`:  Par défaut : "liste".  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `connected`: L'état connecté est lié à un modèle de branche de bus et à la relation topologique de nœud à terminal.  Le vrai implique que le terminal est connecté au nœud topologique correspondant et le faux implique qu'il ne l'est pas.  Dans un modèle de branche de bus, l'état connecté est utilisé pour dire si l'équipement est déconnecté sans avoir à modifier la connectivité décrite par la relation topologique entre le nœud et le terminal. Un cas valable est que l'équipement conducteur peut être connecté à une extrémité et ouvert à l'autre. C'est un cas pertinent, en particulier pour un segment de ligne CA, où la charge réactive de la ligne peut être importante. Par défaut : Faux :  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `sequenceNumber`: L'orientation des connexions terminales pour un équipement conducteur à bornes multiples.  La numérotation séquentielle commence par 1 et les bornes supplémentaires doivent suivre dans un ordre croissant.   La première borne est le "point de départ" pour une branche à deux bornes. Par défaut : 0  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type ACDCTerminal    
+- `BusNameMarker`: Le marqueur de nom de bus utilisé pour nommer le bus (nœud topologique). Valeur par défaut : Aucun  - `Measurements`: Les mesures associées à cette borne définissent l'endroit où la mesure est placée dans la topologie du réseau.  Elle peut être utilisée, par exemple, pour capturer la position du capteur, comme un transformateur de tension (PT) sur un jeu de barres ou un transformateur de courant (CT) sur la barre entre un disjoncteur et un isolateur. Valeur par défaut : "list".  - `OperationalLimitSet`:  Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `connected`: L'état connecté est lié à un modèle de bus-branche et à la relation topologique nœud-terminal.  Vrai signifie que le terminal est connecté au nœud topologique correspondant et faux signifie qu'il ne l'est pas.  Dans un modèle bus-branche, l'état connecté est utilisé pour indiquer si un équipement est déconnecté sans avoir à modifier la connectivité décrite par la relation topologique nœud à borne. Un cas valide est que l'équipement conducteur peut être connecté à une extrémité et ouvert à l'autre. En particulier pour un segment de ligne CA, où la charge réactive de la ligne peut être importante, c'est un cas pertinent. Par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sequenceNumber`: L'orientation des connexions des bornes pour un équipement conducteur à bornes multiples.  La numérotation de la séquence commence par 1 et les bornes supplémentaires doivent suivre dans un ordre croissant.   La première borne est le "point de départ" d'une branche à deux bornes. Valeur par défaut : 0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être ACDCTerminal    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ACDCTerminal:    
@@ -21,40 +21,42 @@ ACDCTerminal:
       x-ngsi:    
         model: https://schema.org/Number    
     Measurements:    
-      description: 'Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: "list"'    
+      description: 'Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     OperationalLimitSet:    
-      description: ' Default: "list"'    
+      description: ' Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -279,7 +281,7 @@ ACDCTerminal:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ACDCTerminal en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ACDCTerminal en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ACDCTerminal en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ACDCTerminal en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un ACDCTerminal au format JSON comme key-values. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ACDCTerminal au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ACDCTerminal au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ACDCTerminal au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
