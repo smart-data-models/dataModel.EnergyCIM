@@ -5,7 +5,7 @@ Entidad: BaseVoltage
 
 ## Lista de propiedades  
 
-- `ConductingEquipment`: Tensión base de este equipo conductor.  Utilizar sólo cuando no se utiliza ningún contenedor de nivel de tensión y sólo se aplica una tensión base.  Por ejemplo, no se utiliza para los transformadores. Por defecto: "lista"  - `TopologicalNode`: Los nodos topológicos en la tensión base. Por defecto: "lista"  - `TransformerEnds`: El transformador termina en la tensión de base.  Esto es esencial para el cálculo de la PU. Por defecto: "lista"  - `VoltageLevel`: Los niveles de tensión que tienen esta tensión base. Por defecto: "lista"  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `nominalVoltage`: Tensión base de los recursos del sistema eléctrico. Por defecto: 0.0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser BaseVoltage    
+- `ConductingEquipment`: Tensión base de este equipo conductor.  Utilizar sólo cuando no se utiliza ningún contenedor de nivel de tensión y sólo se aplica una tensión base.  Por ejemplo, no se utiliza para los transformadores. Por defecto: 'lista'  - `TopologicalNode`: Los nodos topológicos en la tensión base. Por defecto: 'lista'  - `TransformerEnds`: El transformador termina en la tensión de base.  Esto es esencial para el cálculo de la PU. Por defecto: 'lista'  - `VoltageLevel`: Los niveles de tensión que tienen esta tensión base. Por defecto: 'list'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `nominalVoltage`: Tensión base de los recursos del sistema eléctrico. Por defecto: 0.0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser BaseVoltage    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,50 +16,52 @@ BaseVoltage:
   description: 'Adapted from CIM data models. Defines a system base voltage which is referenced.'    
   properties:    
     ConductingEquipment:    
-      description: 'Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: "list"'    
+      description: 'Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     TopologicalNode:    
-      description: 'The topological nodes at the base voltage. Default: "list"'    
+      description: 'The topological nodes at the base voltage. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     TransformerEnds:    
-      description: 'Transformer ends at the base voltage.  This is essential for PU calculation. Default: "list"'    
+      description: 'Transformer ends at the base voltage.  This is essential for PU calculation. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     VoltageLevel:    
-      description: 'The voltage levels having this base voltage. Default: "list"'    
+      description: 'The voltage levels having this base voltage. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
