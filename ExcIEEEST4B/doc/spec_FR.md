@@ -1,45 +1,47 @@
 Entité : ExcIEEEST4B  
 ====================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST4B/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. La classe représente le modèle ST4B de type IEEE Std 421.5-2005. Ce modèle est une variante du modèle de type ST3A, avec un bloc régulateur proportionnel plus intégral (PI) remplaçant la caractéristique de régulateur à retardement qui se trouve dans le modèle ST3A. Les systèmes d'excitation à redresseur de source potentielle et composée sont tous deux modélisés.  Les blocs régulateurs PI ont des limites de non-induplication qui sont représentées. Le régulateur de tension de ce modèle est généralement implémenté numériquement.  Référence : Norme IEEE 421.5-2005 Section 7.4.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST4B/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. La classe représente le modèle IEEE Std 421.5-2005 de type ST4B. Ce modèle est une variation du modèle de type ST3A, avec un bloc de régulateur proportionnel plus intégral (PI) remplaçant la caractéristique de régulateur lag-lead qui se trouve dans le modèle ST3A. Les systèmes d'excitation à redresseur de source potentielle et composée sont modélisés.  Les blocs de régulateurs PI ont des limites de non-redressement qui sont représentées. Le régulateur de tension de ce modèle est généralement implémenté numériquement.  Référence : IEEE Standard 421.5-2005 Section 7.4.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kc`: Facteur de charge du redresseur proportionnel à la réactance de commutation (K). Valeur typique = 0,113. Valeur par défaut : 0,0  - `kg`: Constante de gain de rétroaction du régulateur de champ de la boucle interne (K).  Valeur typique = 0, par défaut : 0,0  - `ki`: Coefficient de gain du circuit potentiel (K).  Valeur typique = 0, par défaut : 0,0  - `kim`: Sortie à gain intégral du régulateur de tension (K).  Valeur typique = 0, par défaut : 0,0  - `kir`: Gain intégral du régulateur de tension (K).  Valeur typique = 10,75. Valeur par défaut : 0,0  - `kp`: Coefficient de gain du circuit potentiel (K).  Valeur typique = 9,3. Valeur par défaut : 0,0  - `kpm`: Sortie à gain proportionnel du régulateur de tension (K).  Valeur typique = 1. Valeur par défaut : 0,0  - `kpr`: Gain proportionnel du régulateur de tension (K).  Valeur typique = 10,75. Valeur par défaut : 0,0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (T).  Valeur typique = 0,02. Valeur par défaut : 0  - `thetap`: Angle de phase du circuit potentiel (thetap).  Valeur typique = 0, par défaut : 0,0  - `type`: Type NGSI. Il doit être de type ExcIEEEST4B  - `vbmax`: Tension d'excitation maximale (V).  Valeur typique = 11,63. Valeur par défaut : 0,0  - `vmmax`: Sortie maximale de la boucle intérieure (V).  Valeur typique = 99. Valeur par défaut : 0,0  - `vmmin`: Sortie minimale de la boucle intérieure (V).  Valeur typique = -99. Valeur par défaut : 0,0  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 1. Valeur par défaut : 0,0  - `vrmin`: Sortie minimale du régulateur de tension (V).  Valeur typique = -0,87. Valeur par défaut : 0,0  - `xl`: Réaction associée à la source potentielle (X).  Valeur typique = 0,124. Valeur par défaut : 0,0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kc`: Facteur de charge du redresseur proportionnel à la réactance de commutation (K). Valeur typique = 0.113. Valeur par défaut : 0.0  - `kg`: Constante du gain de rétroaction du régulateur de champ en boucle interne (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `ki`: Coefficient de gain du circuit potentiel (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kim`: Sortie du gain intégral du régulateur de tension (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kir`: Gain intégral du régulateur de tension (K).  Valeur typique = 10.75. Valeur par défaut : 0.0  - `kp`: Coefficient de gain du circuit potentiel (K).  Valeur typique = 9.3. Valeur par défaut : 0.0  - `kpm`: Sortie du gain proportionnel du régulateur de tension (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `kpr`: Gain proportionnel du régulateur de tension (K).  Valeur typique = 10.75. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (T).  Valeur typique = 0,02. Valeur par défaut : 0  - `thetap`: Angle de phase du circuit potentiel (thetap).  Valeur typique = 0. Valeur par défaut : 0.0  - `type`: Type NGSI. Il faut que ce soit ExcIEEEST4B  - `vbmax`: Tension d'excitation maximale (V).  Valeur typique = 11.63. Valeur par défaut : 0.0  - `vmmax`: Sortie maximale de la boucle interne (V).  Valeur typique = 99. Valeur par défaut : 0.0  - `vmmin`: Sortie minimale de la boucle interne (V).  Valeur typique = -99. Valeur par défaut : 0.0  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 1. Valeur par défaut : 0.0  - `vrmin`: Tension minimale de sortie du régulateur (V).  Valeur typique = -0.87. Valeur par défaut : 0.0  - `xl`: Réactance associée à la source de potentiel (X).  Valeur typique = 0.124. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEST4B:    
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST4B model. This model is a variation of the Type ST3A model, with a proportional plus integral (PI) regulator block replacing the lag-lead regulator characteristic that is in the ST3A model. Both potential and compound source rectifier excitation systems are modeled.  The PI regulator blocks have non-windup limits that are represented. The voltage regulator of this model is typically implemented digitally.  Reference: IEEE Standard 421.5-2005 Section 7.4.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -334,7 +336,7 @@ ExcIEEEST4B:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcIEEEST4B en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEST4B en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEST4B en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEST4B en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEST4B au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEST4B au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEST4B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEST4B au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
