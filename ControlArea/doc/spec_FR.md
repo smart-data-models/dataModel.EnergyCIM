@@ -1,22 +1,22 @@
 Entité : ControlArea  
 ====================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Une zone de contrôle est un regroupement d'unités de production et/ou de charges et un ensemble de lignes de raccordement (en tant que terminaux) qui peuvent être utilisés à des fins diverses, y compris le contrôle automatique de la production, la spécification du contrôle de l'échange de la zone de solution de flux d'énergie et la contribution à la prévision de la charge.   Notez que n'importe quel nombre de spécifications de zones de contrôle qui se chevauchent peut être superposé au modèle physique.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Une zone de contrôle est un regroupement d'unités de production et/ou de charges et un ensemble de lignes de raccordement (en tant que terminaux) qui peuvent être utilisés à des fins diverses, y compris le contrôle automatique de la production, la spécification de contrôle de l'échange de zones de solution de flux de puissance et l'entrée dans la prévision de la charge.   Notez que n'importe quel nombre de spécifications de zones de contrôle se chevauchant peut être superposé au modèle physique.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `ControlAreaGeneratingUnit`: Les spécifications de l'unité de production pour la zone de contrôle. Par défaut : "list".  - `EnergyArea`: La zone d'énergie qui est prévue à partir de cette spécification de la zone de contrôle. Par défaut : Aucune  - `TieFlow`: La liaison s'écoule en association avec la zone de contrôle. Valeur par défaut : "liste".  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `netInterchange`: L'échange net positif spécifié dans la zone de contrôle, c'est-à-dire que le signe positif signifie un flux entrant dans la zone. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `pTolerance`: Tolérance d'échange sur le réseau de puissance active Défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Le principal type de définition de la zone de contrôle utilisé pour déterminer si celle-ci est utilisée pour le contrôle automatique de la production, pour la planification du contrôle des échanges ou à d'autres fins.   Une zone de contrôle spécifiée avec le type primaire de contrôle automatique de la production pourrait toujours être prévue et utilisée comme zone d'échange dans l'analyse des flux d'énergie. Par défaut : Aucune    
+- `ControlAreaGeneratingUnit`: Les spécificités de l'unité de production pour la zone de contrôle. Valeur par défaut : "list".  - `EnergyArea`: La zone d'énergie qui est prévue à partir de cette spécification de zone de contrôle. Valeur par défaut : Aucun  - `TieFlow`: Les flux de liaison associés à la zone de contrôle. Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `netInterchange`: L'échange net positif spécifié dans la zone de contrôle, c'est-à-dire que le signe positif signifie que le flux entre dans la zone. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pTolerance`: Tolérance d'échange de la puissance active nette Défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Le type primaire de définition de la zone de contrôle est utilisé pour déterminer si celle-ci est utilisée pour le contrôle automatique de la production, pour la planification du contrôle des échanges, ou à d'autres fins.   Une zone de contrôle spécifiée avec le type primaire de contrôle automatique de la production peut toujours être prévue et utilisée comme zone d'échange dans l'analyse des flux de puissance. Valeur par défaut : Aucun    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ControlArea:    
   description: 'Adapted from CIM data models. A control areais a grouping of generating units and/or loads and a cutset of tie lines (as terminals) which may be used for a variety of purposes including automatic generation control, powerflow solution area interchange control specification, and input to load forecasting.   Note that any number of overlapping control area specifications can be superimposed on the physical model.'    
   properties:    
     ControlAreaGeneratingUnit:    
-      description: 'The generating unit specificaitons for the control area. Default: "list"'    
+      description: 'The generating unit specificaitons for the control area. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -26,35 +26,37 @@ ControlArea:
       x-ngsi:    
         model: https://schema.org/Number    
     TieFlow:    
-      description: 'The tie flows associated with the control area. Default: "list"'    
+      description: 'The tie flows associated with the control area. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -279,7 +281,7 @@ ControlArea:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'une ControlArea au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une ControlArea en format JSON comme normalisé. Il est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une ControlArea en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une ControlArea en format JSON-LD comme normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'une ControlArea au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ControlArea au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une ControlArea au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ControlArea au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
