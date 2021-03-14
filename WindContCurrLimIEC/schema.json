@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be WindContCurrLimIEC"
     },
     "WindDynamicsLookupTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The current control limitation model with which this wind dynamics lookup table is associated. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The current control limitation model with which this wind dynamics lookup table is associated. Default: 'list'",
         "type": "number"
     },
     "WindTurbineType3or4IEC": {
