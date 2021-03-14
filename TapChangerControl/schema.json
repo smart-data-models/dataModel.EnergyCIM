@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be TapChangerControl"
     },
     "TapChanger": {
-        "description": "Property. Model:'https://schema.org/Number'. The regulating control scheme in which this tap changer participates. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The regulating control scheme in which this tap changer participates. Default: 'list'",
         "type": "number"
     }
 }
