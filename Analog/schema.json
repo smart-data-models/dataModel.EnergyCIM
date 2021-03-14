@@ -23,11 +23,11 @@
         "description": "Property. NGSI type. It has to be Analog"
     },
     "AnalogValues": {
-        "description": "Property. Model:'https://schema.org/Number'. Measurement to which this value is connected. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Measurement to which this value is connected. Default: 'list'",
         "type": "number"
     },
     "LimitSets": {
-        "description": "Property. Model:'https://schema.org/Number'. The Measurements using the LimitSet. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The Measurements using the LimitSet. Default: 'list'",
         "type": "number"
     },
     "positiveFlowIn": {
