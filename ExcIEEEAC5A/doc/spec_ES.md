@@ -5,7 +5,7 @@ Entidad: ExcIEEEAC5A
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efd1`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 5,6. Por defecto: 0,0  - `efd2`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 4,2. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 400. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de la excitación (K).  Valor típico = 0,03. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seefd1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,86. Por defecto: 0,0  - `seefd2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,5. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0,02. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 0,8. Por defecto: 0  - `tf1`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `tf2`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `tf3`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEAC5A  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 7,3. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -7,3. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efd1`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 5,6. Por defecto: 0,0  - `efd2`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 4,2. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 400. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de la excitación (K).  Valor típico = 0,03. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seefd1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,86. Por defecto: 0,0  - `seefd2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,5. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0,02. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 0,8. Por defecto: 0  - `tf1`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `tf2`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `tf3`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEAC5A  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 7,3. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -7,3. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ ExcIEEEAC5A:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type AC5A model. The model represents a simplified model for brushless excitation systems. The regulator is supplied from a source, such as a permanent magnet generator, which is not affected by system disturbances.  Unlike other ac models, this model uses loaded rather than open circuit exciter saturation data in the same way as it is used for the dc models.  Because the model has been widely implemented by the industry, it is sometimes used to represent other types of systems when either detailed data for them are not available or simplified models are required.   Reference: IEEE Standard 421.5-2005 Section 6.5.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
