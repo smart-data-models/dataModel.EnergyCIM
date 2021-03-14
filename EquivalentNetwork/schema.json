@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be EquivalentNetwork"
     },
     "EquivalentEquipments": {
-        "description": "Property. Model:'https://schema.org/Number'. The equivalent where the reduced model belongs. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The equivalent where the reduced model belongs. Default: 'list'",
         "type": "number"
     }
 }
