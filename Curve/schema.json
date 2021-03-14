@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be Curve"
     },
     "CurveDatas": {
-        "description": "Property. Model:'https://schema.org/Number'. The curve of  this curve data point. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The curve of  this curve data point. Default: 'list'",
         "type": "number"
     },
     "curveStyle": {
