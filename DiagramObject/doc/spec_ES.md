@@ -5,7 +5,7 @@ Entidad: DiagramObject
 
 ## Lista de propiedades  
 
-- `Diagram`: Un objeto de diagrama es parte de un diagrama. Por defecto: Ninguno  - `DiagramObjectPoints`: Un objeto de diagrama puede tener 0 o más puntos para reflejar su posición de trazado, enrutamiento (para polilíneas) o límite (para polígonos). Por defecto: "lista"  - `DiagramObjectStyle`: Un objeto de diagrama tiene asociado un estilo que proporciona una referencia para el estilo utilizado en el sistema de origen. Por defecto: Ninguno  - `IdentifiedObject`: Los objetos de diagrama que están asociados con el objeto de dominio. Por defecto: Ninguno  - `VisibilityLayers`: Un objeto de diagrama puede formar parte de varias capas de visibilidad. Por defecto: "lista"  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `drawingOrder`: El orden de dibujo de este elemento. Cuanto mayor sea el número, más tarde se dibujará el elemento en la secuencia. Esto se utiliza para asegurar que los elementos que se solapan se dibujan en el orden correcto. Por defecto: 0  - `id`: Identificador único de la entidad  - `isPolygon`: Define si los puntos de los objetos del diagrama definen o no los límites de un polígono o el trazado de una polilínea. Si este valor es verdadero, la aplicación receptora debe considerar que el primer y el último punto están conectados. Por defecto: Falso  - `location`:   - `name`: El nombre de este artículo.  - `offsetX`: El desplazamiento en la dirección X. Se utiliza para definir el desplazamiento desde el centro para renderizar un icono (por defecto, un único punto especifica el centro del icono).  El desplazamiento está en unidades, con 0 indicando que no hay desplazamiento desde el centro horizontal del icono.  -0,5 indica que está desplazado un 50% hacia la izquierda y 0,5 indica un desplazamiento del 50% hacia la derecha. Por defecto: 0,0  - `offsetY`: El desplazamiento en la dirección Y. Se utiliza para definir el desplazamiento desde el centro para renderizar un icono (por defecto, un único punto especifica el centro del icono).  El desplazamiento está en unidades, con 0 indicando que no hay desplazamiento desde el centro vertical del icono.  La dirección del desplazamiento depende de la orientación del diagrama, con -0,5 y 0,5 indicando un desplazamiento de +/- 50% en el eje vertical. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rotation`: Establece el ángulo de rotación del objeto diagrama.  Cero grados apunta a la parte superior del diagrama.  La rotación es en el sentido de las agujas del reloj. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser DiagramObject    
+- `Diagram`: Un objeto de diagrama es parte de un diagrama. Por defecto: Ninguno  - `DiagramObjectPoints`: Un objeto de diagrama puede tener 0 o más puntos para reflejar su posición de trazado, enrutamiento (para polilíneas) o límite (para polígonos). Por defecto: 'lista'  - `DiagramObjectStyle`: Un objeto de diagrama tiene asociado un estilo que proporciona una referencia para el estilo utilizado en el sistema de origen. Por defecto: Ninguno  - `IdentifiedObject`: Los objetos de diagrama que están asociados con el objeto de dominio. Por defecto: Ninguno  - `VisibilityLayers`: Un objeto de diagrama puede formar parte de múltiples capas de visibilidad. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `drawingOrder`: El orden de dibujo de este elemento. Cuanto mayor sea el número, más tarde se dibujará el elemento en la secuencia. Esto se utiliza para asegurar que los elementos que se solapan se dibujan en el orden correcto. Por defecto: 0  - `id`: Identificador único de la entidad  - `isPolygon`: Define si los puntos de los objetos del diagrama definen o no los límites de un polígono o el trazado de una polilínea. Si este valor es verdadero, la aplicación receptora debe considerar que el primer y el último punto están conectados. Por defecto: Falso  - `location`:   - `name`: El nombre de este artículo.  - `offsetX`: El desplazamiento en la dirección X. Se utiliza para definir el desplazamiento desde el centro para renderizar un icono (por defecto, un único punto especifica el centro del icono).  El desplazamiento está en unidades, con 0 indicando que no hay desplazamiento desde el centro horizontal del icono.  -0,5 indica que está desplazado un 50% hacia la izquierda y 0,5 indica un desplazamiento del 50% hacia la derecha. Por defecto: 0,0  - `offsetY`: El desplazamiento en la dirección Y. Se utiliza para definir el desplazamiento desde el centro para renderizar un icono (por defecto, un único punto especifica el centro del icono).  El desplazamiento está en unidades, con 0 indicando que no hay desplazamiento desde el centro vertical del icono.  La dirección del desplazamiento depende de la orientación del diagrama, con -0,5 y 0,5 indicando un desplazamiento de +/- 50% en el eje vertical. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rotation`: Establece el ángulo de rotación del objeto diagrama.  Cero grados apunta a la parte superior del diagrama.  La rotación es en el sentido de las agujas del reloj. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser DiagramObject    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -21,7 +21,7 @@ DiagramObject:
       x-ngsi:    
         model: https://schema.org/Number    
     DiagramObjectPoints:    
-      description: 'A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: "list"'    
+      description: 'A diagram object can have 0 or more points to reflect its layout position, routing (for polylines) or boundary (for polygons). Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -36,35 +36,37 @@ DiagramObject:
       x-ngsi:    
         model: https://schema.org/Number    
     VisibilityLayers:    
-      description: 'A diagram object can be part of multiple visibility layers. Default: "list"'    
+      description: 'A diagram object can be part of multiple visibility layers. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
