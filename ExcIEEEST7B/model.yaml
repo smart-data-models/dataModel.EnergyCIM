@@ -2,30 +2,32 @@ ExcIEEEST7B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST7B model. This model is representative of static potential-source excitation systems. In this system, the AVR consists of a PI voltage regulator. A phase lead-lag filter in series allows introduction of a derivative function, typically used with brushless excitation systems. In that case, the regulator is of the PID type. In addition, the terminal voltage channel includes a phase lead-lag filter.  The AVR includes the appropriate inputs on its reference for overexcitation limiter (OEL1), underexcitation limiter (UEL), stator current limiter (SCL), and current compensator (DROOP). All these limitations, when they work at voltage reference level, keep the PSS (VS signal from Type PSS1A, PSS2A, or PSS2B) in operation. However, the UEL limitation can also be transferred to the high value (HV) gate acting on the output signal. In addition, the output signal passes through a low value (LV) gate for a ceiling overexcitation limiter (OEL2).  Reference: IEEE Standard 421.5-2005 Section 7.7.'
   properties:
     address:
-      description: 'The mailing address.'
+      description: 'The mailing address'
       properties:
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
           type: string
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
           type: string
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
         areaServed:
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''
           type: string
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
         postalCode:
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''
           type: string
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/Text'''
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
       type: Property
+      x-ngsi:
+        model: https://schema.org/address
     alternateName:
       description: 'An alternative name for this item'
       type: Property
