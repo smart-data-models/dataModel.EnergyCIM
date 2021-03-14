@@ -5,7 +5,7 @@ Entity: ExcIEEEST5B
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kc`: Rectifier regulation factor (K).  Typical Value = 0.004. Default: 0.0  - `kr`: Regulator gain (K).  Typical Value = 200. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1`: Firing circuit time constant (T1).  Typical Value = 0.004. Default: 0  - `tb1`: Regulator lag time constant (T).  Typical Value = 6. Default: 0  - `tb2`: Regulator lag time constant (T).  Typical Value = 0.01. Default: 0  - `tc1`: Regulator lead time constant (T).  Typical Value = 0.8. Default: 0  - `tc2`: Regulator lead time constant (T).  Typical Value = 0.08. Default: 0  - `tob1`: OEL lag time constant (T).  Typical Value = 2. Default: 0  - `tob2`: OEL lag time constant (T).  Typical Value = 0.08. Default: 0  - `toc1`: OEL lead time constant (T).  Typical Value = 0.1. Default: 0  - `toc2`: OEL lead time constant (T).  Typical Value = 0.08. Default: 0  - `tub1`: UEL lag time constant (T).  Typical Value = 10. Default: 0  - `tub2`: UEL lag time constant (T).  Typical Value = 0.05. Default: 0  - `tuc1`: UEL lead time constant (T).  Typical Value = 2. Default: 0  - `tuc2`: UEL lead time constant (T).  Typical Value = 0.1. Default: 0  - `type`: NGSI type. It has to be ExcIEEEST5B  - `vrmax`: Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0  - `vrmin`: Minimum voltage regulator output (V).  Typical Value = -4. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kc`: Rectifier regulation factor (K).  Typical Value = 0.004. Default: 0.0  - `kr`: Regulator gain (K).  Typical Value = 200. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1`: Firing circuit time constant (T1).  Typical Value = 0.004. Default: 0  - `tb1`: Regulator lag time constant (T).  Typical Value = 6. Default: 0  - `tb2`: Regulator lag time constant (T).  Typical Value = 0.01. Default: 0  - `tc1`: Regulator lead time constant (T).  Typical Value = 0.8. Default: 0  - `tc2`: Regulator lead time constant (T).  Typical Value = 0.08. Default: 0  - `tob1`: OEL lag time constant (T).  Typical Value = 2. Default: 0  - `tob2`: OEL lag time constant (T).  Typical Value = 0.08. Default: 0  - `toc1`: OEL lead time constant (T).  Typical Value = 0.1. Default: 0  - `toc2`: OEL lead time constant (T).  Typical Value = 0.08. Default: 0  - `tub1`: UEL lag time constant (T).  Typical Value = 10. Default: 0  - `tub2`: UEL lag time constant (T).  Typical Value = 0.05. Default: 0  - `tuc1`: UEL lead time constant (T).  Typical Value = 2. Default: 0  - `tuc2`: UEL lead time constant (T).  Typical Value = 0.1. Default: 0  - `type`: NGSI type. It has to be ExcIEEEST5B  - `vrmax`: Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0  - `vrmin`: Minimum voltage regulator output (V).  Typical Value = -4. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ ExcIEEEST5B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST5B model. The Type ST5B excitation system is a variation of the Type ST1A model, with alternative overexcitation and underexcitation inputs and additional limits.  Reference: IEEE Standard 421.5-2005 Section 7.5.   Note: the block diagram in the IEEE 421.5 standard has input signal Vc and does not indicate the summation point with Vref. The implementation of the ExcIEEEST5B shall consider summation point with Vref.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
