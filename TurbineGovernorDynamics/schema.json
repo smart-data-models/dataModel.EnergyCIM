@@ -27,7 +27,7 @@
         "type": "number"
     },
     "SynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine-governor model associated with this synchronous machine model. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Turbine-governor model associated with this synchronous machine model. Default: 'list'",
         "type": "number"
     },
     "TurbineLoadControllerDynamics": {
