@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be Substation"
     },
     "DCConverterUnit": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
         "type": "number"
     },
     "Region": {
@@ -31,7 +31,7 @@
         "type": "number"
     },
     "VoltageLevels": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage levels within this substation. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The voltage levels within this substation. Default: 'list'",
         "type": "number"
     }
 }
