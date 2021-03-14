@@ -27,11 +27,11 @@
         "type": "number"
     },
     "Measurements": {
-        "description": "Property. Model:'https://schema.org/Number'. Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: 'list'",
         "type": "number"
     },
     "OperationalLimitSet": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
         "type": "number"
     },
     "connected": {
