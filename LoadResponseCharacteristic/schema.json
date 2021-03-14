@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be LoadResponseCharacteristic"
     },
     "EnergyConsumer": {
-        "description": "Property. Model:'https://schema.org/Number'. The set of loads that have the response characteristics. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. The set of loads that have the response characteristics. Default: 'list'",
         "type": "number"
     },
     "exponentModel": {
