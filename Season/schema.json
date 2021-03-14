@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be Season"
     },
     "SeasonDayTypeSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. Season for the Schedule. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Season for the Schedule. Default: 'list'",
         "type": "number"
     },
     "endDate": {
