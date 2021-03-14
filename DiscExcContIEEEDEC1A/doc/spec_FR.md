@@ -1,45 +1,47 @@
 Entité : DiscExcContIEEEDEC1A  
 =============================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/DiscExcContIEEEDEC1A/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. La classe représente le modèle de contrôle d'excitation discontinue IEEE de type DEC1A qui augmente l'excitation du générateur à un niveau supérieur à celui exigé par le régulateur et le stabilisateur de tension immédiatement après un défaut du système.  Référence : Norme IEEE 421.5-2005, section 12.2.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/DiscExcContIEEEDEC1A/LICENSE.md)  
+Description globale : **Adaptée des modèles de données CIM. La classe représente le modèle de commande d'excitation discontinue de type DEC1A de l'IEEE qui augmente l'excitation du générateur à un niveau supérieur à celui demandé par le régulateur de tension et le stabilisateur immédiatement après un défaut du système.  Référence : Norme IEEE 421.5-2005, section 12.2.**.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `esc`: Référence de changement de vitesse ().  Valeur typique = 0,0015. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kan`: Gain discontinu du contrôleur ().  Valeur typique = 400. Valeur par défaut : 0,0  - `ketl`: Gain du limiteur de tension aux bornes ().  Valeur typique = 47. Valeur par défaut : 0,0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `tan`: Constante de temps du contrôleur discontinu ().  Valeur typique = 0,08. Valeur par défaut : 0  - `td`: Constante de temps ().  Valeur typique = 0,03. Valeur par défaut : 0  - `tl1`: Constante de temps ().  Valeur typique = 0,025. Valeur par défaut : 0  - `tl2`: Constante de temps ().  Valeur typique = 1,25. Valeur par défaut : 0  - `tw5`: Constante de temps de lavage du DEC ().  Valeur typique = 5. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type DiscExcContIEEEDEC1A  - `val`: Référence de la tension du régulateur ().  Valeur typique = 5,5. Valeur par défaut : 0,0  - `vanmax`: Limiteur pour Van (). Valeur par défaut : 0.0  - `vomax`: Limiteur ().  Valeur typique = 0,3. Valeur par défaut : 0.0  - `vomin`: Limiteur ().  Valeur typique = 0,1. Valeur par défaut : 0.0  - `vsmax`: Limiteur ().  Valeur typique = 0,2. Valeur par défaut : 0.0  - `vsmin`: Limiteur ().  Valeur typique = -0,066. Valeur par défaut : 0,0  - `vtc`: Référence du niveau de tension aux bornes ().  Valeur typique = 0,95. Valeur par défaut : 0,0  - `vtlmt`: Référence de tension ().  Valeur typique = 1,1. Valeur par défaut : 0,0  - `vtm`: Limites de tension ().  Valeur typique = 1,13. Valeur par défaut : 0,0  - `vtn`: Limites de tension ().  Valeur typique = 1,12. Valeur par défaut : 0,0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `esc`: Référence de changement de vitesse ().  Valeur typique = 0.0015. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kan`: Gain du contrôleur discontinu ().  Valeur typique = 400. Valeur par défaut : 0.0  - `ketl`: Gain du limiteur de tension aux bornes ().  Valeur typique = 47. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tan`: Constante de temps du contrôleur discontinu ().  Valeur typique = 0.08. Valeur par défaut : 0  - `td`: Constante de temps ().  Valeur typique = 0.03. Valeur par défaut : 0  - `tl1`: Constante de temps ().  Valeur typique = 0.025. Valeur par défaut : 0  - `tl2`: Constante de temps ().  Valeur typique = 1,25. Valeur par défaut : 0  - `tw5`: Constante de temps de lavage DEC ().  Valeur typique = 5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être DiscExcContIEEEDEC1A.  - `val`: Référence de tension du régulateur ().  Valeur typique = 5.5. Valeur par défaut : 0.0  - `vanmax`: Limiteur pour Van (). Valeur par défaut : 0.0  - `vomax`: Limiteur ().  Valeur typique = 0.3. Valeur par défaut : 0.0  - `vomin`: Limiteur ().  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vsmax`: Limiteur ().  Valeur typique = 0.2. Valeur par défaut : 0.0  - `vsmin`: Limiteur ( ).  Valeur typique = -0.066. Valeur par défaut : 0.0  - `vtc`: Référence du niveau de tension aux bornes ().  Valeur typique = 0.95. Valeur par défaut : 0.0  - `vtlmt`: Référence de tension ().  Valeur typique = 1.1. Valeur par défaut : 0.0  - `vtm`: Limites de tension ().  Valeur typique = 1.13. Valeur par défaut : 0.0  - `vtn`: Limites de tension ().  Valeur typique = 1.12. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DiscExcContIEEEDEC1A:    
   description: 'Adapted from CIM data models. The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.  Reference: IEEE Standard 421.5-2005 Section 12.2.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -344,7 +346,7 @@ DiscExcContIEEEDEC1A:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un DiscExcContIEEEDEC1A en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un DiscExcContIEEEDEC1A en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un DiscExcContIEEEDEC1A en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un DiscExcContIEEEDEC1A en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un DiscExcContIEEEDEC1A au format JSON comme valeurs-clés. Ceci est compatible avec la NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un DiscExcContIEEEDEC1A au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un DiscExcContIEEEDEC1A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un DiscExcContIEEEDEC1A au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
