@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be VisibilityLayer"
     },
     "VisibleObjects": {
-        "description": "Property. Model:'https://schema.org/Number'. A visibility layer can contain one or more diagram objects. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A visibility layer can contain one or more diagram objects. Default: 'list'",
         "type": "number"
     },
     "drawingOrder": {
