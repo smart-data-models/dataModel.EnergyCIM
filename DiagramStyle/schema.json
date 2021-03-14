@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be DiagramStyle"
     },
     "Diagram": {
-        "description": "Property. Model:'https://schema.org/Number'. A DiagramStyle can be used by many Diagrams. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. A DiagramStyle can be used by many Diagrams. Default: 'list'",
         "type": "number"
     }
 }
