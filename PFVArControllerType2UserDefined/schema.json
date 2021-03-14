@@ -23,7 +23,7 @@
         "description": "Property. NGSI type. It has to be PFVArControllerType2UserDefined"
     },
     "ProprietaryParameterDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Parameter of this proprietary user-defined model. Default: \"list\"",
+        "description": "Property. Model:'https://schema.org/Number'. Parameter of this proprietary user-defined model. Default: 'list'",
         "type": "number"
     },
     "proprietary": {
