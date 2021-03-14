@@ -5,7 +5,7 @@ Entity: ExcBBC
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `efdmax`: Maximum open circuit exciter voltage (Efdmax).  Typical Value = 5. Default: 0.0  - `efdmin`: Minimum open circuit exciter voltage (Efdmin).  Typical Value = -5. Default: 0.0  - `id`: Unique identifier of the entity  - `k`: Steady state gain (K).  Typical Value = 300. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `switch`: Supplementary signal routing selector (switch). true = Vs connected to 3rd summing point false =  Vs connected to 1st summing point (see diagram). Typical Value = true. Default: False  - `t1`: Controller time constant (T1).  Typical Value = 6. Default: 0  - `t2`: Controller time constant (T2).  Typical Value = 1. Default: 0  - `t3`: Lead/lag time constant (T3).  Typical Value = 0.05. Default: 0  - `t4`: Lead/lag time constant (T4).  Typical Value = 0.01. Default: 0  - `type`: NGSI type. It has to be ExcBBC  - `vrmax`: Maximum control element output (Vrmax).  Typical Value = 5. Default: 0.0  - `vrmin`: Minimum control element output (Vrmin).  Typical Value = -5. Default: 0.0  - `xe`: Effective excitation transformer reactance (Xe).  Typical Value = 0.05. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `efdmax`: Maximum open circuit exciter voltage (Efdmax).  Typical Value = 5. Default: 0.0  - `efdmin`: Minimum open circuit exciter voltage (Efdmin).  Typical Value = -5. Default: 0.0  - `id`: Unique identifier of the entity  - `k`: Steady state gain (K).  Typical Value = 300. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `switch`: Supplementary signal routing selector (switch). true = Vs connected to 3rd summing point false =  Vs connected to 1st summing point (see diagram). Typical Value = true. Default: False  - `t1`: Controller time constant (T1).  Typical Value = 6. Default: 0  - `t2`: Controller time constant (T2).  Typical Value = 1. Default: 0  - `t3`: Lead/lag time constant (T3).  Typical Value = 0.05. Default: 0  - `t4`: Lead/lag time constant (T4).  Typical Value = 0.01. Default: 0  - `type`: NGSI type. It has to be ExcBBC  - `vrmax`: Maximum control element output (Vrmax).  Typical Value = 5. Default: 0.0  - `vrmin`: Minimum control element output (Vrmin).  Typical Value = -5. Default: 0.0  - `xe`: Effective excitation transformer reactance (Xe).  Typical Value = 0.05. Default: 0.0    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ ExcBBC:
   description: 'Adapted from CIM data models. Transformer fed static excitation system (static with ABB regulator). This model represents a static excitation system in which a gated thyristor bridge fed by a transformer at the main generator terminals feeds the main generator directly.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
