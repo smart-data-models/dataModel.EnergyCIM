@@ -5,7 +5,7 @@ Entity: LoadComposite
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `epfd`: Active load-frequency dependence index (dynamic) (Epfd).  Typical Value = 1.5. Default: 0.0  - `epfs`: Active load-frequency dependence index (static) (Epfs).  Typical Value = 1.5. Default: 0.0  - `epvd`: Active load-voltage dependence index (dynamic) (Epvd).  Typical Value = 0.7. Default: 0.0  - `epvs`: Active load-voltage dependence index (static) (Epvs).  Typical Value = 0.7. Default: 0.0  - `eqfd`: Reactive load-frequency dependence index (dynamic) (Eqfd).  Typical Value = 0. Default: 0.0  - `eqfs`: Reactive load-frequency dependence index (static) (Eqfs).  Typical Value = 0. Default: 0.0  - `eqvd`: Reactive load-voltage dependence index (dynamic) (Eqvd).  Typical Value = 2. Default: 0.0  - `eqvs`: Reactive load-voltage dependence index (static) (Eqvs).  Typical Value = 2. Default: 0.0  - `h`: Inertia constant (H).  Typical Value = 2.5. Default: 0  - `id`: Unique identifier of the entity  - `lfrac`: Loading factor - ratio of initial P to motor MVA base (Lfrac).  Typical Value = 0.8. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pfrac`: Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0).  Typical Value = 0.5. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be LoadComposite    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `epfd`: Active load-frequency dependence index (dynamic) (Epfd).  Typical Value = 1.5. Default: 0.0  - `epfs`: Active load-frequency dependence index (static) (Epfs).  Typical Value = 1.5. Default: 0.0  - `epvd`: Active load-voltage dependence index (dynamic) (Epvd).  Typical Value = 0.7. Default: 0.0  - `epvs`: Active load-voltage dependence index (static) (Epvs).  Typical Value = 0.7. Default: 0.0  - `eqfd`: Reactive load-frequency dependence index (dynamic) (Eqfd).  Typical Value = 0. Default: 0.0  - `eqfs`: Reactive load-frequency dependence index (static) (Eqfs).  Typical Value = 0. Default: 0.0  - `eqvd`: Reactive load-voltage dependence index (dynamic) (Eqvd).  Typical Value = 2. Default: 0.0  - `eqvs`: Reactive load-voltage dependence index (static) (Eqvs).  Typical Value = 2. Default: 0.0  - `h`: Inertia constant (H).  Typical Value = 2.5. Default: 0  - `id`: Unique identifier of the entity  - `lfrac`: Loading factor - ratio of initial P to motor MVA base (Lfrac).  Typical Value = 0.8. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pfrac`: Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0).  Typical Value = 0.5. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be LoadComposite    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,30 +16,32 @@ LoadComposite:
   description: 'Adapted from CIM data models. This models combines static load and induction motor load effects. The dynamics of the motor are simplified by linearizing the induction machine equations.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
