@@ -5,7 +5,7 @@ Entidad: PowerTransformer
 
 ## Lista de propiedades  
 
-- `PowerTransformerEnd`: El transformador de potencia de este extremo del transformador de potencia. Por defecto: "lista"  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `beforeShCircuitHighestOperatingCurrent`: La corriente de funcionamiento más alta (Ib en la IEC 60909-0) antes del cortocircuito (depende de la configuración de la red y de la filosofía de fiabilidad pertinente). Se utiliza para el cálculo del factor de corrección de la impedancia KT definido en la norma IEC 60909-0. Por defecto: 0,0  - `beforeShCircuitHighestOperatingVoltage`: La tensión de funcionamiento más alta (Ub en la IEC 60909-0) antes del cortocircuito. Se utiliza para calcular el factor de corrección de la impedancia KT definido en la norma IEC 60909-0. Se trata de la peor tensión en el devanado del lado de baja (apartado 3.7.1 de la norma). Se utiliza para definir las condiciones de funcionamiento. Por defecto: 0,0  - `beforeShortCircuitAnglePf`: El ángulo del factor de potencia antes del cortocircuito (phib en la IEC 60909-0). Se utiliza para calcular el factor de corrección de la impedancia KT definido en la norma IEC 60909-0. Es el factor de potencia en el peor de los casos. Se utiliza para definir las condiciones de funcionamiento. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `highSideMinOperatingU`: La tensión mínima de funcionamiento (uQmin en la IEC 60909-0) en el lado de alta tensión (lado Q) del transformador de la unidad de la central eléctrica. Un valor bien establecido a partir de la experiencia de funcionamiento a largo plazo del sistema. Se utiliza para el cálculo del factor de corrección de la impedancia KG definido en la CEI 60909-0 Valor predeterminado: 0,0  - `id`: Identificador único de la entidad  - `isPartOfGeneratorUnit`: Indica si la máquina forma parte de una central eléctrica. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909: Falso  - `location`:   - `name`: El nombre de este artículo.  - `operationalValuesConsidered`: Se utiliza para definir si los datos (otros atributos relacionados con el intercambio de datos de cortocircuito) definen las condiciones operativas a largo plazo o no. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: Falso  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser PowerTransformer    
+- `PowerTransformerEnd`: El transformador de potencia de este extremo del transformador de potencia. Por defecto: 'list'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `beforeShCircuitHighestOperatingCurrent`: La corriente de funcionamiento más alta (Ib en la IEC 60909-0) antes del cortocircuito (depende de la configuración de la red y de la filosofía de fiabilidad pertinente). Se utiliza para el cálculo del factor de corrección de la impedancia KT definido en la norma IEC 60909-0. Por defecto: 0,0  - `beforeShCircuitHighestOperatingVoltage`: La tensión de funcionamiento más alta (Ub en la IEC 60909-0) antes del cortocircuito. Se utiliza para calcular el factor de corrección de la impedancia KT definido en la norma IEC 60909-0. Se trata de la peor tensión en el devanado del lado de baja (apartado 3.7.1 de la norma). Se utiliza para definir las condiciones de funcionamiento. Por defecto: 0,0  - `beforeShortCircuitAnglePf`: El ángulo del factor de potencia antes del cortocircuito (phib en la IEC 60909-0). Se utiliza para calcular el factor de corrección de la impedancia KT definido en la norma IEC 60909-0. Es el factor de potencia en el peor de los casos. Se utiliza para definir las condiciones de funcionamiento. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `highSideMinOperatingU`: La tensión mínima de funcionamiento (uQmin en la IEC 60909-0) en el lado de alta tensión (lado Q) del transformador de la unidad de la central eléctrica. Un valor bien establecido a partir de la experiencia de funcionamiento a largo plazo del sistema. Se utiliza para el cálculo del factor de corrección de la impedancia KG definido en la CEI 60909-0 Valor predeterminado: 0,0  - `id`: Identificador único de la entidad  - `isPartOfGeneratorUnit`: Indica si la máquina forma parte de una central eléctrica. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909: Falso  - `location`:   - `name`: El nombre de este artículo.  - `operationalValuesConsidered`: Se utiliza para definir si los datos (otros atributos relacionados con el intercambio de datos de cortocircuito) definen las condiciones operativas a largo plazo o no. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: Falso  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser PowerTransformer    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,35 +16,37 @@ PowerTransformer:
   description: 'Adapted from CIM data models. An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow). A power transformer may be composed of separate transformer tanks that need not be identical. A power transformer can be modeled with or without tanks and is intended for use in both balanced and unbalanced representations.   A power transformer typically has two terminals, but may have one (grounding), three or more terminals. The inherited association ConductingEquipment.BaseVoltage should not be used.  The association from TransformerEnd to BaseVoltage should be used instead.'    
   properties:    
     PowerTransformerEnd:    
-      description: 'The power transformer of this power transformer end. Default: "list"'    
+      description: 'The power transformer of this power transformer end. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
