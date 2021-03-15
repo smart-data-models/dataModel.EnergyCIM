@@ -5,7 +5,7 @@ Entidad: ShuntCompensator
 
 ## Lista de propiedades  
 
-- `SvShuntCompensatorSections`: El estado para el número de secciones del compensador en derivación en servicio. Por defecto: Ninguno  - `aVRDelay`: Tiempo de retardo necesario para que el dispositivo se conecte o desconecte mediante la regulación automática de la tensión (AVR). Por defecto: 0  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `grounded`: Se utiliza para las conexiones Yn y Zn. Verdadero si el neutro está sólidamente conectado a tierra. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `maximumSections`: El número máximo de secciones que se pueden conmutar. Por defecto: 0  - `name`: El nombre de este artículo.  - `nomU`: La tensión a la que se puede calcular la potencia reactiva nominal. Normalmente debería estar dentro del 10% de la tensión a la que el condensador está conectado a la red. Por defecto: 0,0  - `normalSections`: El número normal de secciones conectadas. Por defecto: 0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `sections`: Secciones del compensador en derivación en uso. Valor inicial para la solución de estado estacionario. Se permiten valores no enteros para apoyar las variables continuas. Las razones para el valor continuo son para apoyar los casos de estudio en los que no se han diseñado todavía compensadores de derivación discretos, una solución en la que una banda de tensión estrecha obliga a las secciones a oscilar o acomodar una solución continua como entrada. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `switchOnCount`: El recuento de encendidos desde que el recuento de condensadores se reinició o inicializó por última vez. Por defecto: 0  - `switchOnDate`: La fecha y la hora en que se encendió por última vez la batería de condensadores. Por defecto: ''  - `type`: Tipo de NGSI. Tiene que ser ShuntCompensator  - `voltageSensitivity`: Sensibilidad de tensión necesaria para que el dispositivo regule la tensión del bus, en tensión/potencia reactiva. Por defecto: 0,0    
+- `SvShuntCompensatorSections`: El estado para el número de secciones del compensador en derivación en servicio. Por defecto: Ninguno  - `aVRDelay`: Tiempo de retardo necesario para que el dispositivo se conecte o desconecte mediante la regulación automática de la tensión (AVR). Por defecto: 0  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `grounded`: Se utiliza para las conexiones Yn y Zn. Verdadero si el neutro está sólidamente conectado a tierra. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `maximumSections`: El número máximo de secciones que se pueden conmutar. Por defecto: 0  - `name`: El nombre de este artículo.  - `nomU`: La tensión a la que se puede calcular la potencia reactiva nominal. Normalmente debería estar dentro del 10% de la tensión a la que el condensador está conectado a la red. Por defecto: 0,0  - `normalSections`: El número normal de secciones conectadas. Por defecto: 0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `sections`: Secciones del compensador en derivación en uso. Valor inicial para la solución de estado estacionario. Se permiten valores no enteros para apoyar las variables continuas. Las razones para el valor continuo son para apoyar los casos de estudio en los que no se han diseñado todavía compensadores de derivación discretos, una solución en la que una banda de tensión estrecha obliga a las secciones a oscilar o acomodar una solución continua como entrada. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `switchOnCount`: El recuento de encendidos desde que el recuento de condensadores se reinició o inicializó por última vez. Por defecto: 0  - `switchOnDate`: La fecha y la hora en que se encendió por última vez la batería de condensadores. Por defecto: ''  - `type`: Tipo de NGSI. Tiene que ser ShuntCompensator  - `voltageSensitivity`: Sensibilidad de tensión necesaria para que el dispositivo regule la tensión del bus, en tensión/potencia reactiva. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -26,30 +26,32 @@ ShuntCompensator:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
