@@ -5,7 +5,7 @@ Entidad: Terminal
 
 ## Lista de propiedades  
 
-- `ConductingEquipment`: El equipo conductor del terminal.  Los equipos conductores tienen terminales que pueden estar conectados a otros terminales de equipos conductores mediante nodos de conectividad o nodos topológicos. Por defecto: Ninguno  - `ConnectivityNode`: Terminales interconectados con impedancia cero en este nodo de conectividad. Por defecto: Ninguno  - `ConverterDCSides`: Terminal de acoplamiento común para el lado de CC de este convertidor. Suele ser el terminal del transformador de potencia (o interruptor) más cercano a la red de CA. La medición del flujo de potencia debe ser la suma de todos los flujos que entran en el transformador. Por defecto: "lista"  - `HasFirstMutualCoupling`: Acoplamientos mutuos asociados a la rama como la primera rama. Por defecto: "lista"  - `HasSecondMutualCoupling`: Acoplamientos mutuos con la rama asociada como primera rama. Por defecto: "lista"  - `RegulatingControl`: El terminal asociado a este control de regulación.  El terminal se asocia en lugar de un nodo, ya que el terminal podría conectarse a un nodo topológico (bus en el modelo de rama de bus) o a un nodo de conectividad (modelo con detalle de interruptor).  A veces es útil modelar la regulación en un terminal de un objeto barra de bus, ya que la barra de bus puede estar presente tanto en un modelo de rama de bus como en un modelo con detalle de interruptor. Por defecto: Ninguno  - `RemoteInputSignal`: Señal de entrada procedente de este terminal. Por defecto: "lista"  - `SvPowerFlow`: La variable de estado del flujo de energía asociada al terminal. Por defecto: Ninguno  - `TieFlow`: Los flujos de enlace del área de control a los que se asocia este terminal. Por defecto: "lista"  - `TopologicalNode`: Los terminales asociados al nodo topológico.   Puede utilizarse como alternativa a la ruta del nodo de conectividad a la terminal, lo que hace innecesario modelar los nodos de conectividad en algunos casos.   Tenga en cuenta que si los nodos de conectividad están en el modelo, esta asociación probablemente no se utilizará como especificación de entrada. Por defecto: Ninguno  - `TransformerEnd`: Todos los extremos del transformador conectados en este terminal. Por defecto: "lista"  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `phases`: Representa la condición de fase normal de la red. Si falta el atributo, se asumirán tres fases (ABC o ABCN). Por defecto: Ninguno  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser de tipo Terminal    
+- `ConductingEquipment`: El equipo conductor del terminal.  Los equipos conductores tienen terminales que pueden estar conectados a otros terminales de equipos conductores mediante nodos de conectividad o nodos topológicos. Por defecto: Ninguno  - `ConnectivityNode`: Terminales interconectados con impedancia cero en este nodo de conectividad. Por defecto: Ninguno  - `ConverterDCSides`: Terminal de acoplamiento común para el lado de CC de este convertidor. Suele ser el terminal del transformador de potencia (o interruptor) más cercano a la red de CA. La medición del flujo de potencia debe ser la suma de todos los flujos que entran en el transformador. Por defecto: "lista".  - `HasFirstMutualCoupling`: Acoplamientos mutuos asociados a la rama como la primera rama. Por defecto: 'lista'  - `HasSecondMutualCoupling`: Acoplamientos mutuos con la rama asociada como primera rama. Por defecto: 'lista'  - `RegulatingControl`: El terminal asociado a este control de regulación.  El terminal se asocia en lugar de un nodo, ya que el terminal podría conectarse a un nodo topológico (bus en el modelo de rama de bus) o a un nodo de conectividad (modelo con detalle de interruptor).  A veces es útil modelar la regulación en un terminal de un objeto barra de bus, ya que la barra de bus puede estar presente tanto en un modelo de rama de bus como en un modelo con detalle de interruptor. Por defecto: Ninguno  - `RemoteInputSignal`: Señal de entrada procedente de este terminal. Por defecto: 'list'  - `SvPowerFlow`: La variable de estado del flujo de energía asociada al terminal. Por defecto: Ninguno  - `TieFlow`: Los flujos de enlace del área de control a los que se asocia este terminal. Por defecto: "lista".  - `TopologicalNode`: Los terminales asociados al nodo topológico.   Puede utilizarse como alternativa a la ruta del nodo de conectividad a la terminal, lo que hace innecesario modelar los nodos de conectividad en algunos casos.   Tenga en cuenta que si los nodos de conectividad están en el modelo, esta asociación probablemente no se utilizará como especificación de entrada. Por defecto: Ninguno  - `TransformerEnd`: Todos los extremos del transformador conectados en este terminal. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `phases`: Representa la condición de fase normal de la red. Si falta el atributo, se asumirán tres fases (ABC o ABCN). Por defecto: Ninguno  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser de tipo Terminal    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -26,17 +26,17 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     ConverterDCSides:    
-      description: 'Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: "list"'    
+      description: 'Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     HasFirstMutualCoupling:    
-      description: 'Mutual couplings associated with the branch as the first branch. Default: "list"'    
+      description: 'Mutual couplings associated with the branch as the first branch. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     HasSecondMutualCoupling:    
-      description: 'Mutual couplings with the branch associated as the first branch. Default: "list"'    
+      description: 'Mutual couplings with the branch associated as the first branch. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -46,7 +46,7 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     RemoteInputSignal:    
-      description: 'Input signal coming from this terminal. Default: "list"'    
+      description: 'Input signal coming from this terminal. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -56,7 +56,7 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     TieFlow:    
-      description: 'The control area tie flows to which this terminal associates. Default: "list"'    
+      description: 'The control area tie flows to which this terminal associates. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -66,35 +66,37 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     TransformerEnd:    
-      description: 'All transformer ends connected at this terminal. Default: "list"'    
+      description: 'All transformer ends connected at this terminal. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
