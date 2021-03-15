@@ -5,7 +5,7 @@ Entidad: MutualCoupling
 
 ## Lista de propiedades  
 
-- `First_Terminal`: El terminal inicial para el cálculo de las distancias a lo largo de la primera rama del acoplamiento mutuo.  Normalmente, MutualCoupling sólo se utilizaría para los terminales de los segmentos de línea de CA.  El primer y segundo terminal de un acoplamiento mutuo deben apuntar a diferentes segmentos de línea de CA. Por defecto: Ninguno  - `Second_Terminal`: El terminal inicial para el cálculo de las distancias a lo largo de la segunda rama del acoplamiento mutuo. Por defecto: Ninguno  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `b0ch`: Susceptancia de acoplamiento mutuo de secuencia cero (carga), distribuida uniformemente, de toda la sección de la línea. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `distance11`: Distancia al inicio de la región acoplada desde el terminal de la primera línea con número de secuencia igual a 1. Por defecto: 0,0  - `distance12`: Distancia al final de la región acoplada desde el terminal de la primera línea con número de secuencia igual a 1. Por defecto: 0,0  - `distance21`: Distancia al inicio de la región acoplada desde el terminal de la segunda línea con número de secuencia igual a 1. Por defecto: 0,0  - `distance22`: Distancia al final de la región acoplada desde el terminal de la segunda línea con número de secuencia igual a 1. Por defecto: 0,0  - `g0ch`: Conductancia de acoplamiento mutuo de secuencia cero (carga), distribuida uniformemente, de toda la sección de la línea. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `r0`: Acoplamiento de impedancia mutua de secuencia cero rama a rama, resistencia. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser MutualCoupling  - `x0`: Acoplamiento de impedancia mutua de secuencia cero, reactancia. Por defecto: 0,0    
+- `First_Terminal`: El terminal inicial para el cálculo de las distancias a lo largo de la primera rama del acoplamiento mutuo.  Normalmente, MutualCoupling sólo se utilizaría para los terminales de los segmentos de línea de CA.  El primer y segundo terminal de un acoplamiento mutuo deben apuntar a diferentes segmentos de línea de CA. Por defecto: Ninguno  - `Second_Terminal`: El terminal inicial para el cálculo de las distancias a lo largo de la segunda rama del acoplamiento mutuo. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `b0ch`: Susceptancia de acoplamiento mutuo de secuencia cero (carga), distribuida uniformemente, de toda la sección de la línea. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `distance11`: Distancia al inicio de la región acoplada desde el terminal de la primera línea con número de secuencia igual a 1. Por defecto: 0,0  - `distance12`: Distancia al final de la región acoplada desde el terminal de la primera línea con número de secuencia igual a 1. Por defecto: 0,0  - `distance21`: Distancia al inicio de la región acoplada desde el terminal de la segunda línea con número de secuencia igual a 1. Por defecto: 0,0  - `distance22`: Distancia al final de la región acoplada desde el terminal de la segunda línea con número de secuencia igual a 1. Por defecto: 0,0  - `g0ch`: Conductancia de acoplamiento mutuo de secuencia cero (carga), distribuida uniformemente, de toda la sección de la línea. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `r0`: Acoplamiento de impedancia mutua de secuencia cero rama a rama, resistencia. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser MutualCoupling  - `x0`: Acoplamiento de impedancia mutua de secuencia cero, reactancia. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -26,30 +26,32 @@ MutualCoupling:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
