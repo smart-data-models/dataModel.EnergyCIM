@@ -1,50 +1,52 @@
 Entité : Switch  
 ===============  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Switch/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Dispositif générique conçu pour fermer, ou ouvrir, ou les deux, un ou plusieurs circuits électriques.  Tous les interrupteurs sont des dispositifs à deux bornes, y compris les interrupteurs de mise à la terre.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Switch/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Un dispositif générique conçu pour fermer ou ouvrir, ou les deux, un ou plusieurs circuits électriques.  Tous les interrupteurs sont des dispositifs à deux bornes, y compris les interrupteurs de mise à la terre**.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `SwitchSchedules`: Un SwitchSchedule est associé à un Switch. Par défaut : "list".  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `normalOpen`: L'attribut est utilisé dans les cas où il n'y a pas de mesure pour la valeur du statut. Si le commutateur a une mesure d'état, la valeur Discrete.normalValue devrait correspondre à la valeur Switch.normalOpen. Par défaut : False  - `open`: Cet attribut indique si le commutateur est considéré comme ouvert lorsqu'il est utilisé comme entrée dans le traitement de la topologie. Par défaut : False  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `ratedCurrent`: La capacité maximale de transport de courant continu en ampères est régie par le matériau et la construction de l'appareil. Par défaut : 0,0  - `retained`: La branche est conservée dans un modèle de branche de bus.  Le débit à travers les interrupteurs retenus sera normalement calculé en flux de puissance. Par défaut : Faux :  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type Switch    
+- `SwitchSchedules`: Un SwitchSchedule est associé à un Switch. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `normalOpen`: Cet attribut est utilisé dans les cas où aucune mesure de la valeur d'état n'est présente. Si l'interrupteur possède une mesure d'état, la Discrete.normalValue doit correspondre à la Switch.normalOpen. Valeur par défaut : False  - `open`: Cet attribut indique si le commutateur est considéré comme ouvert lorsqu'il est utilisé comme entrée pour le traitement de la topologie. Valeur par défaut : False  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `ratedCurrent`: La capacité maximale de transport de courant continu en ampères régie par le matériau et la construction du dispositif. Valeur par défaut : 0.0  - `retained`: La branche est retenue dans un modèle de branche de bus.  Le débit à travers les interrupteurs retenus sera normalement calculé en flux de puissance. Par défaut : Faux  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il faut que ce soit Switch    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Switch:    
   description: 'Adapted from CIM data models. A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches.'    
   properties:    
     SwitchSchedules:    
-      description: 'A SwitchSchedule is associated with a Switch. Default: "list"'    
+      description: 'A SwitchSchedule is associated with a Switch. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -279,7 +281,7 @@ Switch:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un Switch au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un Switch en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un Switch au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un Switch en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un Switch au format JSON en tant que key-values. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Switch au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un commutateur au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Switch au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
