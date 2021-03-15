@@ -1,15 +1,15 @@
 Entité : PssPTIST3  
 ==================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssPTIST3/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Stabilisateur à base de microprocesseur PTI type 3.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssPTIST3/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Stabilisateur à microprocesseur PTI type 3.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `a0`: Coefficient de filtrage (A0). Valeur par défaut : 0,0  - `a1`: Limiteur (Al). Valeur par défaut : 0.0  - `a2`: Coefficient de filtrage (A2). Valeur par défaut : 0,0  - `a3`: Coefficient de filtrage (A3). Valeur par défaut : 0,0  - `a4`: Coefficient de filtrage (A4). Valeur par défaut : 0,0  - `a5`: Coefficient de filtrage (A5). Valeur par défaut : 0,0  - `address`: L'adresse postale.  - `al`: Limiteur (Al). Valeur par défaut : 0.0  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `athres`: Valeur seuil au-dessus de laquelle la moyenne de la production sera contournée (Athres).  Valeur typique = 0,005. Valeur par défaut : 0,0  - `b0`: Coefficient de filtrage (B0). Valeur par défaut : 0,0  - `b1`: Coefficient de filtrage (B1). Valeur par défaut : 0,0  - `b2`: Coefficient de filtrage (B2). Valeur par défaut : 0,0  - `b3`: Coefficient de filtrage (B3). Valeur par défaut : 0,0  - `b4`: Coefficient de filtrage (B4). Valeur par défaut : 0,0  - `b5`: Coefficient de filtrage (B5). Valeur par défaut : 0,0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `dl`: Limiteur (Dl). Valeur par défaut : 0.0  - `dtc`: Pas de temps lié à l'activation des commandes (0,03 pour 50 Hz) (Dtc).  Valeur typique = 0,025. Valeur par défaut : 0  - `dtf`: Calcul de la fréquence des pas de temps (0,03 pour 50 Hz) (Dtf).  Valeur typique = 0,025. Valeur par défaut : 0  - `dtp`: Calcul de la puissance active par pas de temps (0,015 pour 50 Hz) (Dtp).  Valeur typique = 0,0125. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `isw`: Commutateur de sortie numérique/analogique (Isw). true = produire une sortie analogique false = convertir en sortie numérique, en utilisant le tableau de sélection des prises. Par défaut : False  - `k`: Gain (K).  Valeur typique = 9. Valeur par défaut : 0,0  - `location`:   - `lthres`: Valeur seuil (Lthres). Valeur par défaut : 0,0  - `m`: (M).  M=2*H.  Valeur typique = 5. Valeur par défaut : 0,0  - `name`: Le nom de cet article.  - `nav`: Nombre de sorties de contrôle par rapport à la moyenne (Nav) (1 <= Nav <= 16).  Valeur typique = 4. Valeur par défaut : 0,0  - `ncl`: Nombre de comptages à la limite de la fonction limite active (Ncl) (>0). Valeur par défaut : 0.0  - `ncr`: Nombre de comptages jusqu'à la réinitialisation après le déclenchement de la fonction de limite (Ncr). Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `pmin`: (Pmin). Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `t1`: Constante de temps (T1).  Valeur typique = 0,3. Valeur par défaut : 0  - `t2`: Constante de temps (T2).  Valeur typique = 1. Valeur par défaut : 0  - `t3`: Constante de temps (T3).  Valeur typique = 0,2. Valeur par défaut : 0  - `t4`: Constante de temps (T4).  Valeur typique = 0,05. Valeur par défaut : 0  - `t5`: Constante de temps (T5). Valeur par défaut : 0  - `t6`: Constante de temps (T6). Valeur par défaut : 0  - `tf`: Constante de temps (Tf).  Valeur typique = 0,2. Valeur par défaut : 0  - `tp`: Constante de temps (Tp).  Valeur typique = 0,2. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type PssPTIST3    
+- `a0`: Coefficient de filtrage (A0). Valeur par défaut : 0.0  - `a1`: Limiteur (Al). Valeur par défaut : 0.0  - `a2`: Coefficient de filtrage (A2). Valeur par défaut : 0.0  - `a3`: Coefficient de filtrage (A3). Valeur par défaut : 0.0  - `a4`: Coefficient de filtrage (A4). Valeur par défaut : 0.0  - `a5`: Coefficient de filtrage (A5). Valeur par défaut : 0.0  - `address`: L'adresse postale  - `al`: Limiteur (Al). Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `athres`: Valeur seuil au-dessus de laquelle le moyennage de sortie sera contourné (Athres).  Valeur typique = 0.005. Valeur par défaut : 0.0  - `b0`: Coefficient de filtrage (B0). Valeur par défaut : 0.0  - `b1`: Coefficient de filtrage (B1). Valeur par défaut : 0.0  - `b2`: Coefficient de filtrage (B2). Valeur par défaut : 0.0  - `b3`: Coefficient de filtrage (B3). Valeur par défaut : 0.0  - `b4`: Coefficient de filtrage (B4). Valeur par défaut : 0.0  - `b5`: Coefficient de filtrage (B5). Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dl`: Limiteur (Dl). Valeur par défaut : 0.0  - `dtc`: Pas de temps lié à l'activation des contrôles (0.03 pour 50 Hz) (Dtc).  Valeur typique = 0.025. Valeur par défaut : 0  - `dtf`: Calcul de la fréquence du pas de temps (0,03 pour 50 Hz) (Dtf).  Valeur typique = 0.025. Valeur par défaut : 0  - `dtp`: Calcul de la puissance active par pas de temps (0.015 pour 50 Hz) (Dtp).  Valeur typique = 0.0125. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `isw`: Commutateur de sortie numérique/analogique (Isw). true = produire une sortie analogique false = convertir en sortie numérique, en utilisant le tableau de sélection des robinets. Défaut : Faux  - `k`: Gain (K).  Valeur typique = 9. Valeur par défaut : 0.0  - `location`:   - `lthres`: Valeur du seuil (Lthres). Valeur par défaut : 0.0  - `m`: (M).  M=2*H.  Valeur typique = 5. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `nav`: Nombre de sorties de contrôle à moyenner (Nav) (1 <= Nav <= 16).  Valeur typique = 4. Valeur par défaut : 0.0  - `ncl`: Nombre de comptes à la limite pour activer la fonction de limite (Ncl) (>0). Valeur par défaut : 0.0  - `ncr`: Nombre de comptes jusqu'à la réinitialisation après le déclenchement de la fonction de limite (Ncr). Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pmin`: (Pmin). Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps (T1).  Valeur typique = 0,3. Valeur par défaut : 0  - `t2`: Constante de temps (T2).  Valeur typique = 1. Valeur par défaut : 0  - `t3`: Constante de temps (T3).  Valeur typique = 0,2. Valeur par défaut : 0  - `t4`: Constante de temps (T4).  Valeur typique = 0,05. Valeur par défaut : 0  - `t5`: Constante de temps (T5). Valeur par défaut : 0  - `t6`: Constante de temps (T6). Valeur par défaut : 0  - `tf`: Constante de temps (Tf).  Valeur typique = 0,2. Valeur par défaut : 0  - `tp`: Constante de temps (Tp).  Valeur typique = 0,2. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être PssPTIST3.    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PssPTIST3:    
@@ -46,30 +46,32 @@ PssPTIST3:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     al:    
       description: 'Limiter (Al). Default: 0.0'    
       type: number    
@@ -424,7 +426,7 @@ PssPTIST3:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un PssPTIST3 au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un PssPTIST3 en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un PssPTIST3 au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un PssPTIST3 en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un PssPTIST3 au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PssPTIST3 au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PssPTIST3 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PssPTIST3 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
