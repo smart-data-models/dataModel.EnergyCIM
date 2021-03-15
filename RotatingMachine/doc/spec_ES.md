@@ -5,7 +5,7 @@ Entidad: RotatingMachine
 
 ## Lista de propiedades  
 
-- `GeneratingUnit`: Una máquina síncrona puede funcionar como generador y, como tal, se convierte en miembro de una unidad generadora. Por defecto: Ninguno  - `HydroPump`: La máquina síncrona acciona la turbina que mueve el agua desde una cota baja hasta una cota más alta. El sentido de giro de la máquina para el bombeo puede ser o no el mismo que para la generación. Por defecto: Ninguno  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `p`: Inyección de potencia activa. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa el flujo de salida de un nodo. Valor inicial para una solución de estado estacionario. Por defecto: 0,0  - `q`: Inyección de potencia reactiva. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa el flujo de salida de un nodo. Valor inicial para una solución en estado estacionario. Por defecto: 0,0  - `ratedPowerFactor`: Factor de potencia (datos de la placa de características). Se utiliza principalmente para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: 0,0  - `ratedS`: Potencia nominal aparente de la unidad. El atributo deberá tener un valor positivo. Por defecto: 0,0  - `ratedU`: Tensión nominal (datos de la placa de características, Ur en IEC 60909-0). Se utiliza principalmente para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser RotatingMachine    
+- `GeneratingUnit`: Una máquina síncrona puede funcionar como generador y, como tal, se convierte en miembro de una unidad generadora. Por defecto: Ninguno  - `HydroPump`: La máquina síncrona acciona la turbina que mueve el agua desde una cota baja hasta una cota más alta. El sentido de giro de la máquina para el bombeo puede ser o no el mismo que para la generación. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `p`: Inyección de potencia activa. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa el flujo de salida de un nodo. Valor inicial para una solución de estado estacionario. Por defecto: 0,0  - `q`: Inyección de potencia reactiva. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa el flujo de salida de un nodo. Valor inicial para una solución en estado estacionario. Por defecto: 0,0  - `ratedPowerFactor`: Factor de potencia (datos de la placa de características). Se utiliza principalmente para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: 0,0  - `ratedS`: Potencia nominal aparente de la unidad. El atributo deberá tener un valor positivo. Por defecto: 0,0  - `ratedU`: Tensión nominal (datos de la placa de características, Ur en IEC 60909-0). Se utiliza principalmente para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser RotatingMachine    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -26,30 +26,32 @@ RotatingMachine:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
