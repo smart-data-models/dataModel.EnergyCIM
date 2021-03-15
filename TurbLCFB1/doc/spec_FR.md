@@ -1,45 +1,47 @@
 Entité : TurbLCFB1  
 ==================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TurbLCFB1/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Modèle de contrôleur de charge de turbine développé dans le WECC.  Ce modèle représente un régulateur de charge de turbine de supervision qui agit pour maintenir la puissance de la turbine à une valeur définie par un ajustement continu de la référence vitesse-charge du régulateur de turbine. Ce modèle est destiné à représenter les régulateurs à réarmement lent à "boucle extérieure" qui gèrent l'action du régulateur de turbine.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TurbLCFB1/LICENSE.md)  
+Description globale : **Adapté des modèles de données du CIM. Modèle de contrôleur de charge de turbine développé dans le WECC.  Ce modèle représente un contrôleur de charge de turbine de supervision qui agit pour maintenir la puissance de la turbine à une valeur définie par un ajustement continu de la référence vitesse-charge du régulateur de turbine. Ce modèle est destiné à représenter les contrôleurs à réinitialisation lente de la "boucle extérieure" qui gèrent l'action du régulateur de turbine.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `db`: Zone morte du contrôleur (db).  Valeur typique = 0, valeur par défaut : 0,0  - `description`: Une description de cet article  - `emax`: Erreur maximale de contrôle (Emax) (note 4).  Valeur typique = 0,02. Valeur par défaut : 0,0  - `fb`: Gain de biais de fréquence (Fb).  Valeur typique = 0, par défaut : 0,0  - `fbf`: Drapeau de biais de fréquence (Fbf). true = activer le biais de fréquence false = désactiver le biais de fréquence. Valeur typique = faux. Valeur par défaut : False  - `id`: Identifiant unique de l'entité  - `irmax`: Vitesse maximale de la turbine / biais de référence de la charge (Irmax) (note 3).  Valeur typique = 0, par défaut : 0,0  - `ki`: Gain intégral (Ki).  Valeur typique = 0, par défaut : 0,0  - `kp`: Gain proportionnel (Kp).  Valeur typique = 0, par défaut : 0,0  - `location`:   - `mwbase`: Base pour les valeurs de puissance (MWbase) (>0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `pbf`: Drapeau du contrôleur de puissance (Pbf). true = activer le contrôleur de charge false = désactiver le contrôleur de charge. Valeur typique = false. Valeur par défaut : False  - `pmwset`: Point de consigne du régulateur de puissance (Pmwset) (note 1).  Unité = MW. Valeur typique = 0, par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `speedReferenceGovernor`: Type de référence du régulateur de turbine (Type). vrai = régulateur de référence de vitesse faux = régulateur de référence de charge. Valeur typique = vrai. Par défaut : False  - `tpelec`: Constante de temps du transducteur de puissance (Tpelec).  Valeur typique = 0, par défaut : 0  - `type`: Type NGSI. Il doit être de type TurbLCFB1    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db`: Bande morte du contrôleur (db).  Valeur typique = 0. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `emax`: Erreur de contrôle maximale (Emax) (note 4).  Valeur typique = 0,02. Valeur par défaut : 0,0  - `fb`: Gain du biais de fréquence (Fb).  Valeur typique = 0. Valeur par défaut : 0.0  - `fbf`: Indicateur de biais de fréquence (Fbf). true = activer le biais de fréquence false = désactiver le biais de fréquence. Valeur typique = false. Valeur par défaut : False  - `id`: Identifiant unique de l'entité  - `irmax`: Biais de référence maximum de la vitesse/charge de la turbine (Irmax) (note 3).  Valeur typique = 0. Valeur par défaut : 0.0  - `ki`: Gain intégral (Ki).  Valeur typique = 0. Valeur par défaut : 0.0  - `kp`: Gain proportionnel (Kp).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `mwbase`: Base pour les valeurs de puissance (MWbase) (>0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pbf`: Drapeau du contrôleur de charge (Pbf). true = activer le contrôleur de charge false = désactiver le contrôleur de charge. Valeur typique = false. Valeur par défaut : False  - `pmwset`: Point de consigne du régulateur de puissance (Pmwset) (note 1).  Unité = MW. Valeur typique = 0. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `speedReferenceGovernor`: Type de référence du régulateur de turbine (Type). true = régulateur de référence de vitesse false = régulateur de référence de charge. Valeur typique = true. Valeur par défaut : False  - `tpelec`: Constante de temps du transducteur de puissance (Tpelec).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de TurbLCFB1.    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TurbLCFB1:    
   description: 'Adapted from CIM data models. Turbine Load Controller model developed in the WECC.  This model represents a supervisory turbine load controller that acts to maintain turbine power at a set value by continuous adjustment of the turbine governor speed-load reference. This model is intended to represent slow reset ''outer loop'' controllers managing the action of the turbine governor.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -314,7 +316,7 @@ TurbLCFB1:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un TurbLCFB1 en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un TurbLCFB1 au format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un TurbLCFB1 en format JSON-LD comme valeurs clés. Il est compatible avec le format JSON-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un TurbLCFB1 en format JSON-LD comme normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un TurbLCFB1 au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un TurbLCFB1 au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un TurbLCFB1 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un TurbLCFB1 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
