@@ -1,15 +1,15 @@
 Entité : ShuntCompensator  
 =========================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ShuntCompensator/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Un condensateur ou un réacteur shunt ou une batterie commutable de condensateurs ou de réacteurs shunt. Une section d'un compensateur shunt est un condensateur ou un réacteur individuel.  Une valeur négative pour reactivePerSection indique que le compensateur est un réacteur. Un compensateur shunt est un dispositif à une seule borne.  La masse est implicite.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ShuntCompensator/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Un condensateur ou une réactance shunt ou une banque commutable de condensateurs ou de réactances shunt. Une section d'un compensateur shunt est un condensateur ou un réacteur individuel.  Une valeur négative pour reactivePerSection indique que le compensateur est un réacteur. ShuntCompensator est un dispositif à une seule borne.  La mise à la terre est implicite.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `SvShuntCompensatorSections`: L'État pour le nombre de sections de compensateurs de shunt en service. Par défaut : Aucun  - `aVRDelay`: Délai nécessaire pour que l'appareil soit connecté ou déconnecté par régulation automatique de la tension (AVR). Valeur par défaut : 0  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `grounded`: Utilisé pour les connexions Yn et Zn. Vrai si le neutre est solidement mis à la terre. Par défaut : Faux :  - `id`: Identifiant unique de l'entité  - `location`:   - `maximumSections`: Le nombre maximum de sections qui peuvent être commutées. Valeur par défaut : 0  - `name`: Le nom de cet article.  - `nomU`: La tension à laquelle la puissance réactive nominale peut être calculée. Celle-ci devrait normalement se situer à 10 % près de la tension à laquelle le condensateur est connecté au réseau. Par défaut : 0,0  - `normalSections`: Le nombre normal de sections activées. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `sections`: Sections de compensateur de dérivation en service. Valeur de départ pour la solution en régime permanent. Les valeurs non entières sont autorisées pour prendre en charge les variables continues. Les raisons de la valeur continue sont de soutenir des cas d'étude où aucun compensateur de shunt discret n'a encore été conçu, une solution où une bande de tension étroite force les sections à osciller ou à s'accommoder d'une solution continue comme entrée. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `switchOnCount`: Le nombre d'allumages depuis la dernière réinitialisation ou initialisation du condensateur. Valeur par défaut : 0  - `switchOnDate`: La date et l'heure de la dernière mise en marche de la batterie de condensateurs. Par défaut : ''.  - `type`: Type NGSI. Il doit être de type ShuntCompensator  - `voltageSensitivity`: Sensibilité à la tension requise pour que le dispositif puisse réguler la tension du bus, en tension/puissance réactive. Valeur par défaut : 0,0    
+- `SvShuntCompensatorSections`: L'état pour le nombre de sections de compensateur shunt en service. Par défaut : Aucun  - `aVRDelay`: Délai nécessaire pour que le dispositif soit connecté ou déconnecté par la régulation automatique de tension (AVR). Valeur par défaut : 0  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `grounded`: Utilisé pour les connexions Yn et Zn. Vrai si le neutre est solidement mis à la terre. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`:   - `maximumSections`: Le nombre maximum de sections qui peuvent être commutées. Valeur par défaut : 0  - `name`: Le nom de cet élément.  - `nomU`: La tension à laquelle la puissance réactive nominale peut être calculée. Elle doit normalement se situer dans les 10% de la tension à laquelle le condensateur est connecté au réseau. Valeur par défaut : 0.0  - `normalSections`: Le nombre normal de sections activées. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `sections`: Sections du compensateur shunt en service. Valeur de départ pour la solution en régime permanent. Les valeurs non entières sont autorisées pour soutenir les variables continues. Les raisons de la valeur continue sont de soutenir les cas d'étude où aucun compensateur shunt discret n'a encore été conçu, une solution où une bande de tension étroite force les sections à osciller ou de s'adapter à une solution continue comme entrée. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `switchOnCount`: Le nombre d'allumages depuis la dernière réinitialisation ou initialisation du compteur de condensateurs. Valeur par défaut : 0  - `switchOnDate`: La date et l'heure de la dernière mise sous tension de la batterie de condensateurs. Valeur par défaut : ''.  - `type`: Type de NGSI. Il doit être ShuntCompensator.  - `voltageSensitivity`: Sensibilité de la tension requise pour que le dispositif puisse réguler la tension du bus, en tension/puissance réactive. Valeur par défaut : 0,0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ShuntCompensator:    
@@ -26,30 +26,32 @@ ShuntCompensator:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -304,7 +306,7 @@ ShuntCompensator:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ShuntCompensator au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ShuntCompensator en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ShuntCompensator en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un ShuntCompensator en format JSON-LD comme normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un ShuntCompensator au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ShuntCompensator au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ShuntCompensator au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ShuntCompensator au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
