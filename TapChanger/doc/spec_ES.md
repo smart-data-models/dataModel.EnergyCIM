@@ -5,7 +5,7 @@ Entidad: TapChanger
 
 ## Lista de propiedades  
 
-- `SvTapStep`: El estado del paso de toma asociado al cambiador de tomas. Por defecto: Ninguno  - `TapChangerControl`: Los cambiadores de tomas que participan en este esquema de control de tomas reguladoras. Por defecto: Ninguno  - `TapSchedules`: Un TapSchedule está asociado a un TapChanger. Por defecto: "lista"  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `controlEnabled`: Especifica el estado de regulación del equipo.  Verdadero es regulación, falso es no regulación. Por defecto: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `highStep`: La posición más alta posible del paso de rosca, avance desde el punto neutro. El atributo debe ser mayor que lowStep. Por defecto: 0  - `id`: Identificador único de la entidad  - `location`:   - `lowStep`: Posición de paso de toma más baja posible, retardo desde el punto muerto Predeterminado: 0  - `ltcFlag`: Especifica si un TapChanger tiene o no capacidad de cambio de tomas de carga. Por defecto: Falso  - `name`: El nombre de este artículo.  - `neutralStep`: La posición de paso de la toma neutra para este devanado. El atributo debe ser igual o mayor que lowStep e igual o menor que highStep. Por defecto: 0  - `neutralU`: Tensión a la que funciona el devanado en el ajuste de la toma neutra. Por defecto: 0,0  - `normalStep`: La posición del paso de toma utilizado en el funcionamiento `normal` de la red para este devanado. Para un cambiador de tomas fijo, indica la posición física actual de la toma. El atributo debe ser igual o mayor que lowStep e igual o menor que highStep. Por defecto: 0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `step`: Posición del cambiador de tomas. Paso inicial para una solución de estado estacionario. Se permiten valores no enteros para soportar variables de toma continuas. Las razones para el valor continuo son apoyar los casos de estudio en los que aún no se han diseñado cambiadores de tomas discretos, una solución en la que una banda de tensión estrecha obliga al paso de la toma a oscilar o acomodar una solución continua como entrada. El atributo deberá ser igual o mayor que lowStep e igual o menor que highStep. Por defecto: 0.0  - `type`: Tipo de NGSI. Tiene que ser TapChanger    
+- `SvTapStep`: El estado del paso de toma asociado al cambiador de tomas. Por defecto: Ninguno  - `TapChangerControl`: Los cambiadores de tomas que participan en este esquema de control de tomas reguladoras. Por defecto: Ninguno  - `TapSchedules`: Un TapSchedule está asociado a un TapChanger. Por defecto: 'list'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `controlEnabled`: Especifica el estado de regulación del equipo.  Verdadero es regulación, falso es no regulación. Por defecto: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `highStep`: La posición más alta posible del paso de rosca, avance desde el punto neutro. El atributo debe ser mayor que lowStep. Por defecto: 0  - `id`: Identificador único de la entidad  - `location`:   - `lowStep`: Posición de paso de toma más baja posible, retardo desde el punto muerto Predeterminado: 0  - `ltcFlag`: Especifica si un TapChanger tiene o no capacidad de cambio de tomas de carga. Por defecto: Falso  - `name`: El nombre de este artículo.  - `neutralStep`: La posición de paso de la toma neutra para este devanado. El atributo debe ser igual o mayor que lowStep e igual o menor que highStep. Por defecto: 0  - `neutralU`: Tensión a la que funciona el devanado en el ajuste de la toma neutra. Por defecto: 0,0  - `normalStep`: La posición del paso de toma utilizado en el funcionamiento `normal` de la red para este devanado. Para un cambiador de tomas fijo, indica la posición física actual de la toma. El atributo debe ser igual o mayor que lowStep e igual o menor que highStep. Por defecto: 0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `step`: Posición del cambiador de tomas. Paso inicial para una solución de estado estacionario. Se permiten valores no enteros para soportar variables de toma continuas. Las razones para el valor continuo son apoyar los casos de estudio en los que aún no se han diseñado cambiadores de tomas discretos, una solución en la que una banda de tensión estrecha obliga al paso de la toma a oscilar o acomodar una solución continua como entrada. El atributo deberá ser igual o mayor que lowStep e igual o menor que highStep. Por defecto: 0.0  - `type`: Tipo de NGSI. Tiene que ser TapChanger    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -26,35 +26,37 @@ TapChanger:
       x-ngsi:    
         model: https://schema.org/Number    
     TapSchedules:    
-      description: 'A TapSchedule is associated with a TapChanger. Default: "list"'    
+      description: 'A TapSchedule is associated with a TapChanger. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
