@@ -1,45 +1,47 @@
 Entité : TopologyBoundaryVersion  
 ================================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TopologyBoundaryVersion/LICENSE.md)  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TopologyBoundaryVersion/LICENSE.md)  
 Description globale : **Adapté des modèles de données CIM. Détails de la version.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `baseUML`: UML de base fourni par le gestionnaire de modèle CIM. Par défaut : '''.  - `baseURI`: Profil URI utilisé dans l'en-tête du Model Exchange et défini dans les normes CEI.  Il identifie de manière unique le profil et sa version. Il est donné à titre indicatif et pour identifier le profil CEI le plus proche auquel ce profil CGMES est basé. Valeur par défaut : ''.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `date`: La date de création du profil est AAAA-MM-JJ ; par exemple, pour le 5 janvier 2009, il s'agit du 2009-01-05. Par défaut : ''.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `differenceModelURI`: Modèle de différence URI défini par la norme IEC 61970-552. Par défaut : ''.  - `entsoeUML`: UML fourni par l'ENTSO-E. Par défaut : '''.  - `entsoeURI`: Profil URI défini par ENTSO-E et utilisé dans l'en-tête de l'échange de modèles.  Il identifie de manière unique le profil et sa version. Les deux derniers éléments de l'URI (http://entsoe.eu/CIM/TopologyBoundary/yy/zzz) indiquent les versions majeures et mineures où :  - yy - indique une version majeure ; - zzz - indique une version mineure. Par défaut : ''.  - `id`: Identifiant unique de l'entité  - `location`:   - `modelDescriptionURI`: Description du modèle URI défini par la norme IEC 61970-552. Par défaut : ''.  - `name`: Le nom de cet article.  - `namespaceRDF`: Espace de noms RDF. Par défaut : ''.  - `namespaceUML`: Espace de noms UML du CIM. Par défaut : ''.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `shortName`: Le nom court du profil utilisé dans la documentation du profil. Par défaut : ''.  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type TopologyBoundaryVersion    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `baseUML`: UML de base fourni par le gestionnaire de modèle CIM. Valeur par défaut : " ".  - `baseURI`: URI de profil utilisé dans l'en-tête d'échange de modèle et défini dans les normes CEI.  Il identifie de manière unique le profil et sa version. Il est donné à titre d'information uniquement et pour identifier le profil CEI le plus proche sur lequel ce profil CGMES est basé. Valeur par défaut : ''.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `date`: Date de création du profil Le format est YYYY-MM-DD par exemple pour le 5 janvier 2009 c'est 2009-01-05. Valeur par défaut : ''.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `differenceModelURI`: URI du modèle de différence défini par la norme IEC 61970-552. Valeur par défaut : " ".  - `entsoeUML`: UML fourni par ENTSO-E. Valeur par défaut : " ".  - `entsoeURI`: URI du profil défini par ENTSO-E et utilisé dans l'en-tête d'échange de modèle.  Il identifie de manière unique le profil et sa version. Les deux derniers éléments de l'URI (http://entsoe.eu/CIM/TopologyBoundary/yy/zzz) indiquent les versions majeures et mineures où :  - yy - indique une version majeure ; - zzz - indique une version mineure. Valeur par défaut : ''.  - `id`: Identifiant unique de l'entité  - `location`:   - `modelDescriptionURI`: URI de description du modèle défini par la norme IEC 61970-552. Valeur par défaut : " ".  - `name`: Le nom de cet élément.  - `namespaceRDF`: Espace de noms RDF. Valeur par défaut : '''  - `namespaceUML`: Espace de noms UML CIM. Valeur par défaut : '''  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `shortName`: Le nom court du profil utilisé dans la documentation du profil. Valeur par défaut : '''.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être TopologyBoundaryVersion.    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TopologyBoundaryVersion:    
   description: 'Adapted from CIM data models. Version details.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -304,7 +306,7 @@ TopologyBoundaryVersion:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'une TopologyBoundaryVersion au format JSON comme valeurs clés. Cette version est compatible avec NGSI V2 lorsqu'elle utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une TopologyBoundaryVersion en format JSON comme normalisé. Cette version est compatible avec NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une TopologyBoundaryVersion en format JSON-LD comme valeurs clés. Cette version est compatible avec le format NGSI-LD lorsqu'elle utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une TopologyBoundaryVersion en format JSON-LD comme normalisé. Ce format est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'une TopologyBoundaryVersion au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une TopologyBoundaryVersion au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une TopologyBoundaryVersion au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une TopologyBoundaryVersion au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-LD lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
