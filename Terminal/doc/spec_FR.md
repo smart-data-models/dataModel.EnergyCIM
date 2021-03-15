@@ -1,15 +1,15 @@
 Entité : Terminal  
 =================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Terminal/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Un point de connexion électrique CA à un équipement conducteur. Les terminaux sont connectés à des points de connexion physiques appelés nœuds de connectivité.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Terminal/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Un point de connexion électrique en courant alternatif à un équipement conducteur. Les bornes sont connectées à des points de connexion physiques appelés nœuds de connectivité**.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `ConductingEquipment`: L'équipement conducteur du terminal.  Les équipements conducteurs ont des terminaux qui peuvent être connectés à d'autres terminaux d'équipements conducteurs via des nœuds de connectivité ou des nœuds topologiques. Par défaut : Aucun  - `ConnectivityNode`: Terminaux interconnectés avec une impédance nulle à ce nœud de connectivité. Par défaut : Aucun  - `ConverterDCSides`: Point de la borne de couplage commune pour ce convertisseur côté courant continu. Il s'agit généralement de la borne du transformateur de puissance (ou interrupteur) la plus proche du réseau CA. La mesure du flux de puissance doit être la somme de tous les flux entrant dans le transformateur. Par défaut : "list".  - `HasFirstMutualCoupling`: Couplages mutuels associés à la branche comme première branche. Valeur par défaut : "list".  - `HasSecondMutualCoupling`: Couplages mutuels avec la branche associée comme première branche. Valeur par défaut : "list".  - `RegulatingControl`: Le terminal associé à ce contrôle de régulation.  Le terminal est associé à la place d'un nœud, puisque le terminal pourrait se connecter soit à un nœud topologique (modèle bus en branche), soit à un nœud de connectivité (modèle détaillé de commutateur).  Il est parfois utile de modéliser la régulation à un terminal d'un objet de barre omnibus, puisque la barre omnibus peut être présente à la fois dans un modèle de branche omnibus ou un modèle avec détail de commutateur. Par défaut : Aucun  - `RemoteInputSignal`: Signal d'entrée provenant de ce terminal. Par défaut : "liste".  - `SvPowerFlow`: La variable d'état du flux d'énergie associée au terminal. Par défaut : Aucune  - `TieFlow`: La zone de contrôle relie les flux auxquels ce terminal est associé. Par défaut : "liste".  - `TopologicalNode`: Les terminaux associés au nœud topologique.   Il peut être utilisé comme alternative au chemin du nœud de connectivité vers le terminal, ce qui rend inutile la modélisation des nœuds de connectivité dans certains cas.   Notez que si les nœuds de connectivité sont dans le modèle, cette association ne sera probablement pas utilisée comme spécification d'entrée. Par défaut : Aucune  - `TransformerEnd`: Toutes les extrémités des transformateurs sont connectées à cette borne. Par défaut : "liste".  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `phases`: Représente la condition de mise en phase normale du réseau. Si l'attribut est manquant, trois phases (ABC ou ABCN) sont supposées. Par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type Terminal    
+- `ConductingEquipment`: L'équipement conducteur du terminal.  Les équipements conducteurs ont des terminaux qui peuvent être connectés à d'autres terminaux d'équipements conducteurs via des nœuds de connectivité ou des nœuds topologiques. Valeur par défaut : Aucun  - `ConnectivityNode`: Bornes interconnectées avec une impédance nulle à ce nœud de connectivité. Valeur par défaut : Aucun  - `ConverterDCSides`: Borne du point de couplage commun pour le côté CC de ce convertisseur. Il s'agit généralement de la borne du transformateur de puissance (ou du commutateur) la plus proche du réseau CA. La mesure du flux de puissance doit être la somme de tous les flux dans le transformateur. Valeur par défaut : 'list'.  - `HasFirstMutualCoupling`: Couplages mutuels associés à la branche comme première branche. Valeur par défaut : 'list'.  - `HasSecondMutualCoupling`: Couplages mutuels avec la branche associée comme première branche. Valeur par défaut : 'list'.  - `RegulatingControl`: La borne associée à cette commande de régulation.  La borne est associée au lieu d'un nœud, car la borne pourrait se connecter soit à un nœud topologique (bus dans un modèle de bus-branche), soit à un nœud de connectivité (modèle détaillé d'interrupteur).  Il est parfois utile de modéliser la régulation au niveau d'une borne d'un objet de barre omnibus, car la barre omnibus peut être présente à la fois dans un modèle de branche omnibus et dans un modèle détaillé d'interrupteur. Valeur par défaut : Aucun  - `RemoteInputSignal`: Signal d'entrée provenant de ce terminal. Valeur par défaut : 'list'.  - `SvPowerFlow`: La variable d'état du flux de puissance associée au terminal. Valeur par défaut : Aucun  - `TieFlow`: Les flux d'attache de la zone de contrôle auxquels ce terminal s'associe. Valeur par défaut : "list".  - `TopologicalNode`: Les terminaux associés au noeud topologique.   Ceci peut être utilisé comme une alternative au chemin du nœud de connectivité vers le terminal, rendant ainsi inutile la modélisation des nœuds de connectivité dans certains cas.   Notez que si les noeuds de connectivité sont dans le modèle, cette association ne sera probablement pas utilisée comme spécification d'entrée. Par défaut : Aucun  - `TransformerEnd`: Toutes les extrémités du transformateur connectées à cette borne. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phases`: Représente la condition normale de mise en phase du réseau. Si l'attribut est absent, trois phases (ABC ou ABCN) sont supposées. Valeur par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit être Terminal    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Terminal:    
@@ -26,17 +26,17 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     ConverterDCSides:    
-      description: 'Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: "list"'    
+      description: 'Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     HasFirstMutualCoupling:    
-      description: 'Mutual couplings associated with the branch as the first branch. Default: "list"'    
+      description: 'Mutual couplings associated with the branch as the first branch. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     HasSecondMutualCoupling:    
-      description: 'Mutual couplings with the branch associated as the first branch. Default: "list"'    
+      description: 'Mutual couplings with the branch associated as the first branch. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -46,7 +46,7 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     RemoteInputSignal:    
-      description: 'Input signal coming from this terminal. Default: "list"'    
+      description: 'Input signal coming from this terminal. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -56,7 +56,7 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     TieFlow:    
-      description: 'The control area tie flows to which this terminal associates. Default: "list"'    
+      description: 'The control area tie flows to which this terminal associates. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -66,35 +66,37 @@ Terminal:
       x-ngsi:    
         model: https://schema.org/Number    
     TransformerEnd:    
-      description: 'All transformer ends connected at this terminal. Default: "list"'    
+      description: 'All transformer ends connected at this terminal. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -314,7 +316,7 @@ Terminal:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un terminal au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un terminal en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un terminal au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un terminal en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un Terminal au format JSON comme key-values. Ceci est compatible avec NGSI V2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Terminal au format JSON tel que normalisé. Ceci est compatible avec NGSI V2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Terminal au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Terminal au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
