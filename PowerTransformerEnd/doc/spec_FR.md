@@ -1,15 +1,15 @@
 Entité : PowerTransformerEnd  
 ============================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformerEnd/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Un PowerTransformerEnd est associé à chaque borne d'un transformateur de puissance. Les valeurs d'impédance r, r0, x, et x0 d'un PowerTransformerEnd représentent un équivalent en étoile comme suit 1) pour un PowerTransformerEnd à deux bornes, le PowerTransformerEnd à haute tension a des valeurs non nulles sur r, r0, x, et x0 alors que le PowerTransformerEnd à basse tension a des valeurs nulles sur r, r0, x, et x0. 2) pour un transformateur de puissance à trois bornes, les trois PowerTransformerEnds représentent un équivalent en étoile, chaque branche de l'étoile étant représentée par les valeurs r, r0, x et x0. 3) pour un transformateur de puissance avec plus de trois bornes, les valeurs d'impédance des PowerTransformerEnds ne peuvent pas être utilisées. Utilisez plutôt l'impédance du transformateur ou divisez le transformateur en plusieurs transformateurs de puissance**.  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformerEnd/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Un PowerTransformerEnd est associé à chaque borne d'un PowerTransformer. Les valeurs d'impédance r, r0, x et x0 d'un PowerTransformerEnd représentent un équivalent en étoile comme suit 1) pour un PowerTransformer à deux bornes, le PowerTransformerEnd haute tension a des valeurs non nulles pour r, r0, x et x0, tandis que le PowerTransformerEnd basse tension a des valeurs nulles pour r, r0, x et x0. 2) pour un PowerTransformer à trois bornes, les trois PowerTransformerEnds représentent un équivalent en étoile, chaque branche de l'étoile étant représentée par des valeurs r, r0, x et x0. 3) pour un PowerTransformer avec plus de trois Bornes, les valeurs d'impédance PowerTransformerEnd ne peuvent pas être utilisées. Utilisez plutôt l'impédance TransformerMeshImpedance ou divisez le transformateur en plusieurs PowerTransformers.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `PowerTransformer`: Les extrémités de ce transformateur de puissance. Par défaut : Aucun  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Susceptibilité des branches magnétisantes (B mag).  La valeur peut être positive ou négative. Valeur par défaut : 0.0  - `b0`: Susceptibilité des branches magnétisantes de séquence zéro. Valeur par défaut : 0.0  - `connectionKind`: Une sorte de lien. Par défaut : Aucun  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `g`: Magnétisation de la conductance des branches. Valeur par défaut : 0,0  - `g0`: Conductance de la branche magnétisante homopolaire (modèle en étoile). Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `phaseAngleClock`: Déplacement de l'angle de phase de la tension terminale où 360 degrés sont représentés avec les heures d'horloge. Les valeurs valables sont de 0 à 11. Par exemple, pour l'extrémité côté secondaire d'un transformateur dont le code de groupe de vecteurs est "Dyn11", spécifiez le type de connexion en étoile avec neutre et indiquez l'angle de phase de l'horloge comme étant 11.  La valeur de l'horloge du numéro de l'extrémité du transformateur spécifié comme étant 1, est supposée être zéro.  Notez que le numéro de fin de transformateur n'est pas supposé être le même que le numéro de séquence des bornes. Valeur par défaut : 0  - `r`: Résistance (modèle en étoile) de l'extrémité du transformateur. L'attribut doit être égal ou supérieur à zéro pour les transformateurs non équivalents. Valeur par défaut : 0,0  - `r0`: Résistance série homopolaire (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0,0  - `ratedS`: Puissance apparente normale. L'attribut doit être une valeur positive. Pour un transformateur à deux enroulements, les valeurs pour les côtés haute et basse tension doivent être identiques. Valeur par défaut : 0,0  - `ratedU`: Tension nominale : phase-phase pour les enroulements triphasés, et soit phase-phase soit phase-neutre pour les enroulements monophasés. Un côté haute tension, comme indiqué par le numéro de TransformerEnd.endNumber, doit avoir un U nominal supérieur ou égal à U nominal pour les côtés basse tension. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type PowerTransformerEnd  - `x`: Réactance série à séquence positive (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0,0  - `x0`: Réactance série zéro de l'extrémité du transformateur. Valeur par défaut : 0,0    
+- `PowerTransformer`: Les extrémités de ce transformateur de puissance. Par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Susceptance de la branche magnétisante (B mag).  La valeur peut être positive ou négative. Valeur par défaut : 0.0  - `b0`: Susceptance de la branche magnétisante homopolaire. Valeur par défaut : 0.0  - `connectionKind`: Type de connexion. Par défaut : Aucun  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `g`: Conductance de la branche magnétisante. Valeur par défaut : 0.0  - `g0`: Conductance de la branche magnétisante de séquence zéro (modèle en étoile). Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phaseAngleClock`: Déplacement de l'angle de phase de la tension aux bornes où les 360 degrés sont représentés par des heures d'horloge. Les valeurs valides sont de 0 à 11. Par exemple, pour l'extrémité secondaire d'un transformateur avec le code de groupe vectoriel `Dyn11`, spécifiez le type de connexion comme étant en étoile avec neutre et spécifiez l'angle de phase de l'horloge comme étant 11.  La valeur de l'horloge du numéro d'extrémité du transformateur spécifié comme 1, est supposée être zéro.  Notez que le numéro d'extrémité du transformateur n'est pas supposé être le même que le numéro de séquence de la borne. Valeur par défaut : 0  - `r`: Résistance (modèle en étoile) de l'extrémité du transformateur. Cet attribut doit être égal ou supérieur à zéro pour les transformateurs non équivalents. Valeur par défaut : 0,0  - `r0`: Résistance série homopolaire (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0.0  - `ratedS`: Puissance apparente normale. Cet attribut doit être une valeur positive. Pour un transformateur à deux enroulements, les valeurs des côtés haute et basse tension doivent être identiques. Valeur par défaut : 0,0  - `ratedU`: Tension nominale : phase-phase pour les enroulements triphasés, et soit phase-phase soit phase-neutre pour les enroulements monophasés. Un côté haute tension, tel que donné par TransformerEnd.endNumber, doit avoir un ratedU qui est supérieur ou égal à ratedU pour les côtés de tension inférieure. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de PowerTransformerEnd.  - `x`: Réactance série à séquence positive (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0.0  - `x0`: Réactance série homopolaire de l'extrémité du transformateur. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PowerTransformerEnd:    
@@ -21,30 +21,32 @@ PowerTransformerEnd:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -319,7 +321,7 @@ PowerTransformerEnd:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un PowerTransformerEnd au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un PowerTransformerEnd en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un PowerTransformerEnd au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un PowerTransformerEnd en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformerEnd au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformerEnd au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformerEnd au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformerEnd au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
