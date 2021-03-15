@@ -1,15 +1,15 @@
 Entité : WindPlantReactiveControlIEC  
 ====================================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindPlantReactiveControlIEC/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Modèle simplifié de contrôle de la tension et de la puissance réactive des centrales, à utiliser avec les modèles d'éoliennes de type 3 et 4.  Référence : Norme CEI 61400-27-1 Annexe E.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindPlantReactiveControlIEC/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Modèle simplifié de contrôle de la tension et de la puissance réactive de l'installation à utiliser avec les modèles d'éoliennes de type 3 et de type 4.  Référence : Norme CEI 61400-27-1 Annexe E.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `WindPlantIEC`: Modèle de centrale éolienne auquel est associé ce contrôle réactif du vent. Par défaut : Aucun  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kiwpx`: Gain intégral du contrôleur Plant Q (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0.0  - `kpwpx`: Gain proportionnel du contrôleur Q de l'usine (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0.0  - `kwpqu`: Contrôle de la tension de l'installation (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0.0  - `location`:   - `mwppf`: Sélecteur de modes de contrôle du facteur de puissance (). Utilisé uniquement si mwpu est réglé sur false. true = 1 : contrôle du facteur de puissance false = 0 : contrôle de la puissance réactive. Il s'agit d'un paramètre dépendant du projet. Par défaut : False  - `mwpu`: Sélecteur de modes de contrôle de la puissance réactive (). true = 1 : contrôle de la tension false = 0 : contrôle de la puissance réactive. Il s'agit d'un paramètre dépendant du projet. Par défaut : False  - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `twppfilt`: Constante de temps du filtre pour la mesure de la puissance active (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0  - `twpqfilt`: Constante de temps du filtre pour la mesure de la puissance réactive (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0  - `twpufilt`: Constante de temps du filtre pour la mesure de la tension (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0  - `txft`: Constante de délai dans la fonction de transfert de la valeur de référence (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0  - `txfv`: Constante de temps de retard dans la fonction de transfert de la valeur de référence (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type WindPlantReactiveControlIEC  - `uwpqdip`: Seuil de tension pour la détection de la TVDV dans le contrôle q (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0.0  - `xrefmax`: Demande maximale ( ou delta ) auprès du contrôleur de l'installation ( ). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0.0  - `xrefmin`: Demande minimale ( ou delta ) du contrôleur de l'installation ( ). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0.0    
+- `WindPlantIEC`: Modèle de centrale éolienne auquel ce contrôle réactif du vent est associé. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kiwpx`: Gain intégral du régulateur Q de l'usine (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpwpx`: Gain proportionnel du régulateur Q de l'installation (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kwpqu`: Statisme de contrôle de la tension de l'installation (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `location`:   - `mwppf`: Sélecteur des modes de contrôle du facteur de puissance (). Utilisé uniquement si mwpu est réglé sur false. true = 1 : contrôle du facteur de puissance false = 0 : contrôle de la puissance réactive. C'est un paramètre dépendant du projet. Par défaut : Faux  - `mwpu`: Sélecteur des modes de contrôle de la puissance réactive (). true = 1 : contrôle de la tension false = 0 : contrôle de la puissance réactive. C'est un paramètre dépendant du projet. Par défaut : Faux  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `twppfilt`: Constante de temps du filtre pour la mesure de la puissance active (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `twpqfilt`: Constante de temps du filtre pour la mesure de la puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `twpufilt`: Constante de temps du filtre pour la mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `txft`: Constante de temps dans la fonction de transfert de la valeur de référence (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `txfv`: Constante de temps de retard dans la fonction de transfert de la valeur de référence (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être WindPlantReactiveControlIEC.  - `uwpqdip`: Seuil de tension pour la détection du TAVG dans la commande q (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `xrefmax`: Demande maximale (ou delta) du contrôleur de l'installation (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0.0  - `xrefmin`: Demande minimale ( ou delta) du contrôleur de l'installation (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WindPlantReactiveControlIEC:    
@@ -21,30 +21,32 @@ WindPlantReactiveControlIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -324,7 +326,7 @@ WindPlantReactiveControlIEC:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un WindPlantReactiveControlIEC au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un WindPlantReactiveControlIEC en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un WindPlantReactiveControlIEC en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un WindPlantReactiveControlIEC en format JSON-LD comme normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un WindPlantReactiveControlIEC au format JSON comme valeurs-clés. Ceci est compatible avec la NGSI V2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindPlantReactiveControlIEC au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindPlantReactiveControlIEC au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindPlantReactiveControlIEC au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
