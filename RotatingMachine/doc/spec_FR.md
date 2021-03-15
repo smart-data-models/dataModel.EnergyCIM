@@ -1,15 +1,15 @@
 Entité : RotatingMachine  
 ========================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/RotatingMachine/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Une machine tournante qui peut être utilisée comme générateur ou moteur.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/RotatingMachine/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Une machine tournante qui peut être utilisée comme générateur ou comme moteur.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `GeneratingUnit`: Une machine synchrone peut fonctionner comme un générateur et, à ce titre, devient un élément d'une unité de production. Par défaut : Aucun  - `HydroPump`: La machine synchrone entraîne la turbine qui déplace l'eau d'une faible altitude à une altitude plus élevée. Le sens de rotation de la machine pour le pompage peut ou non être le même que pour la production. Par défaut : Aucun  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `p`: Injection de puissance active. La convention du signe de charge est utilisée, c'est-à-dire que le signe positif signifie que le flux sort d'un nœud. Valeur de départ pour une solution en régime permanent. Valeur par défaut : 0,0  - `q`: Injection de puissance réactive. La convention du signe de charge est utilisée, c'est-à-dire que le signe positif signifie le flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent. Valeur par défaut : 0,0  - `ratedPowerFactor`: Facteur de puissance (données de la plaque signalétique). Il est principalement utilisé pour l'échange de données de court-circuit selon la norme CEI 60909. Valeur par défaut : 0,0  - `ratedS`: La puissance apparente nominale de l'appareil est indiquée sur la plaque signalétique. L'attribut doit avoir une valeur positive. Valeur par défaut : 0,0  - `ratedU`: Tension nominale (données de la plaque signalétique, Ur dans CEI 60909-0). Elle est principalement utilisée pour l'échange de données de court-circuit selon la norme CEI 60909. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit s'agir d'une machine tournante    
+- `GeneratingUnit`: Une machine synchrone peut fonctionner comme un générateur et, en tant que tel, devient un membre d'une unité de production. Par défaut : Aucun  - `HydroPump`: La machine synchrone entraîne la turbine qui déplace l'eau d'une basse altitude à une altitude plus élevée. Le sens de rotation de la machine pour le pompage peut être ou non le même que pour la production. Par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `p`: Injection de puissance active. La convention de signe de la charge est utilisée, c'est-à-dire qu'un signe positif signifie un flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent. Valeur par défaut : 0.0  - `q`: Injection de puissance réactive. La convention de signe de charge est utilisée, c'est-à-dire qu'un signe positif signifie un flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent. Valeur par défaut : 0.0  - `ratedPowerFactor`: Facteur de puissance (données de la plaque signalétique). Il est principalement utilisé pour l'échange de données sur les courts-circuits conformément à la norme CEI 60909. Valeur par défaut : 0.0  - `ratedS`: Puissance apparente nominale de l'unité. Cet attribut doit avoir une valeur positive. Valeur par défaut : 0,0  - `ratedU`: Tension nominale (données de la plaque signalétique, Ur dans IEC 60909-0). Elle est principalement utilisée pour l'échange de données sur les courts-circuits conformément à la norme CEI 60909. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de RotatingMachine    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RotatingMachine:    
@@ -26,30 +26,32 @@ RotatingMachine:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -289,7 +291,7 @@ RotatingMachine:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'une RotatingMachine au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachine en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachine au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachine en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachine au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachine au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachine au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachine au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
