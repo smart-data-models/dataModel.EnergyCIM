@@ -5,7 +5,7 @@ Entidad: PssSH
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k`: Ganancia principal (K).  Valor típico = 1. Por defecto: 0,0  - `k0`: Ganancia 0 (K0).  Valor típico = 0,012. Por defecto: 0,0  - `k1`: Ganancia 1 (K1).  Valor típico = 0,488. Por defecto: 0,0  - `k2`: Ganancia 2 (K2).  Valor típico = 0,064. Por defecto: 0,0  - `k3`: Ganancia 3 (K3).  Valor típico = 0,224. Por defecto: 0,0  - `k4`: Ganancia 4 (K4).  Valor típico = 0,1. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo 1 (T1).  Valor típico = 0,076. Por defecto: 0  - `t2`: Constante de tiempo 2 (T2).  Valor típico = 0,086. Por defecto: 0  - `t3`: Constante de tiempo 3 (T3).   Valor típico = 1,068. Por defecto: 0  - `t4`: Constante de tiempo 4 (T4).  Valor típico = 1,913. Por defecto: 0  - `td`: Constante de tiempo de entrada (Td).  Valor típico = 10. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser PssSH  - `vsmax`: Límite máximo de salida (Vsmax).  Valor típico = 0,1. Por defecto: 0,0  - `vsmin`: Límite mínimo de salida (Vsmin).  Valor típico = -0,1. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k`: Ganancia principal (K).  Valor típico = 1. Por defecto: 0,0  - `k0`: Ganancia 0 (K0).  Valor típico = 0,012. Por defecto: 0,0  - `k1`: Ganancia 1 (K1).  Valor típico = 0,488. Por defecto: 0,0  - `k2`: Ganancia 2 (K2).  Valor típico = 0,064. Por defecto: 0,0  - `k3`: Ganancia 3 (K3).  Valor típico = 0,224. Por defecto: 0,0  - `k4`: Ganancia 4 (K4).  Valor típico = 0,1. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo 1 (T1).  Valor típico = 0,076. Por defecto: 0  - `t2`: Constante de tiempo 2 (T2).  Valor típico = 0,086. Por defecto: 0  - `t3`: Constante de tiempo 3 (T3).   Valor típico = 1,068. Por defecto: 0  - `t4`: Constante de tiempo 4 (T4).  Valor típico = 1,913. Por defecto: 0  - `td`: Constante de tiempo de entrada (Td).  Valor típico = 10. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser PssSH  - `vsmax`: Límite máximo de salida (Vsmax).  Valor típico = 0,1. Por defecto: 0,0  - `vsmin`: Límite mínimo de salida (Vsmin).  Valor típico = -0,1. Por defecto: 0,0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ PssSH:
   description: 'Adapted from CIM data models. Model for Siemens ''H infinity'' power system stabilizer with generator electrical power input.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
