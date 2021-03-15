@@ -1,45 +1,47 @@
 Entité : RotatingMachineDynamics  
 ================================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/RotatingMachineDynamics/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Classe parent abstraite pour tous les modèles standards de machines synchrones et asynchrones.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/RotatingMachineDynamics/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Classe mère abstraite pour tous les modèles standard de machines synchrones et asynchrones**.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `damping`: Coefficient de couple d'amortissement (D).  Une constante de proportionnalité qui, multipliée par la vitesse angulaire des pôles du rotor par rapport au champ magnétique (fréquence), donne le couple d'amortissement.  Cette valeur est souvent nulle lorsque les sources de couples d'amortissement (enroulements d'amortissement du générateur, effets d'amortissement de la charge, etc.) sont modélisées en détail.  Valeur typique = 0, valeur par défaut : 0,0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inertia`: Constante d'inertie du générateur ou du moteur et charge mécanique (H) (>0).  C'est la spécification de l'énergie stockée dans la masse en rotation lorsque le moteur fonctionne à sa vitesse nominale.  Pour un générateur, cela comprend le générateur plus tous les autres éléments (turbine, excitateur) sur le même arbre et a des unités de MW*sec.  Pour un moteur, cela comprend le moteur plus sa charge mécanique. Les unités conventionnelles sont par unité sur la base de la MVA du générateur, généralement exprimée en MW*sec/MVA ou juste en seconde.   Cette valeur est utilisée dans le cadre de référence de la puissance d'accélération pour les solutions de simulateurs de formation des opérateurs.  Valeur typique = 3. Valeur par défaut : 0  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `saturationFactor`: Facteur de saturation à la tension nominale aux bornes (S1) (> ou =0).  Non utilisé par le modèle simplifié.  Défini par S(E1) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0,02. Valeur par défaut : 0,0  - `saturationFactor120`: Facteur de saturation à 120% de la tension nominale aux bornes (S12) (> ou =S1). Non utilisé par le modèle simplifié, défini par S(E2) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0,12. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `statorLeakageReactance`: Réaction de fuite du stator (Xl) (> ou =0). Valeur typique = 0,15. Valeur par défaut : 0,0  - `statorResistance`: Résistance du stator (armature) (Rs) (> ou =0). Valeur typique = 0,005. Valeur par défaut : 0,0  - `type`: Type NGSI. Il doit s'agir de RotatingMachineDynamics    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `damping`: Coefficient de couple d'amortissement (D).  Constante de proportionnalité qui, lorsqu'elle est multipliée par la vitesse angulaire des pôles du rotor par rapport au champ magnétique (fréquence), donne le couple d'amortissement.  Cette valeur est souvent nulle lorsque les sources de couples d'amortissement (enroulements d'amortissement du générateur, effets d'amortissement de la charge, etc.) sont modélisées en détail.  Valeur typique = 0. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inertia`: Constante d'inertie du générateur ou du moteur et de la charge mécanique (H) (>0).  Il s'agit de la spécification de l'énergie stockée dans la masse rotative lorsqu'elle fonctionne à la vitesse nominale.  Pour un générateur, elle inclut le générateur et tous les autres éléments (turbine, excitateur) sur le même arbre et est exprimée en MW*sec.  Pour un moteur, elle comprend le moteur et sa charge mécanique. Les unités conventionnelles sont par unité sur la base du MVA du générateur, généralement exprimées en MW*seconde/MVA ou simplement seconde.   Cette valeur est utilisée dans le cadre de référence de la puissance d'accélération pour les solutions de simulateur de formation des opérateurs.  Valeur typique = 3. Valeur par défaut : 0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `saturationFactor`: Facteur de saturation à la tension nominale aux bornes (S1) (> ou =0).  Non utilisé par le modèle simplifié.  Défini par défini par S(E1) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0,02. Valeur par défaut : 0.0  - `saturationFactor120`: Facteur de saturation à 120% de la tension nominale aux bornes (S12) (> ou =S1). Non utilisé par le modèle simplifié, défini par S(E2) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0.12. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `statorLeakageReactance`: Réactance de fuite du stator (Xl) (> ou =0). Valeur typique = 0.15. Valeur par défaut : 0.0  - `statorResistance`: Résistance (Rs) du stator (armature) (> ou =0). Valeur typique = 0.005. Valeur par défaut : 0.0  - `type`: Type de NGSI. Il doit s'agir de RotatingMachineDynamics.    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RotatingMachineDynamics:    
   description: 'Adapted from CIM data models. Abstract parent class for all synchronous and asynchronous machine standard models.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -284,7 +286,7 @@ RotatingMachineDynamics:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'une RotatingMachineDynamics au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachineDynamics en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachineDynamics en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachineDynamics au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachineDynamics au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
