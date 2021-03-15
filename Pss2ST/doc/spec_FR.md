@@ -1,45 +1,47 @@
 Entité : Pss2ST  
 ===============  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss2ST/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Stabilisateur à base de microprocesseur PTI type 1.**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss2ST/LICENSE.md)  
+Description globale : **Adapté des modèles de données CIM. Stabilisateur à microprocesseur PTI de type 1.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inputSignal1Type`: Type de signal d'entrée #1.  Valeur typique = rotorAngularFrequencyDeviation. Par défaut : Aucun  - `inputSignal2Type`: Type de signal d'entrée #2.  Valeur typique = générateurElectricité. Par défaut : Aucun  - `k1`: Gain (K1). Valeur par défaut : 0,0  - `k2`: Gain (K2). Valeur par défaut : 0,0  - `location`:   - `lsmax`: Limiteur (Lsmax). Valeur par défaut : 0,0  - `lsmin`: Limiteur (Lsmin). Valeur par défaut : 0.0  - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `t1`: Constante de temps (T1). Valeur par défaut : 0  - `t10`: Constante de temps (T10). Valeur par défaut : 0  - `t2`: Constante de temps (T2). Valeur par défaut : 0  - `t3`: Constante de temps (T3). Valeur par défaut : 0  - `t4`: Constante de temps (T4). Valeur par défaut : 0  - `t5`: Constante de temps (T5). Valeur par défaut : 0  - `t6`: Constante de temps (T6). Valeur par défaut : 0  - `t7`: Constante de temps (T7). Valeur par défaut : 0  - `t8`: Constante de temps (T8). Valeur par défaut : 0  - `t9`: Constante de temps (T9). Valeur par défaut : 0  - `type`: Type NGSI. Il doit être de type Pss2ST  - `vcl`: Limiteur de coupure (Vcl). Valeur par défaut : 0.0  - `vcu`: Limiteur de coupure (Vcu). Valeur par défaut : 0,0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inputSignal1Type`: Type de signal d'entrée #1.  Valeur typique = rotorAngularFrequencyDeviation. Valeur par défaut : Aucun  - `inputSignal2Type`: Type de signal d'entrée n°2.  Valeur typique = generatorElectricalPower. Valeur par défaut : Aucun  - `k1`: Gain (K1). Valeur par défaut : 0.0  - `k2`: Gain (K2). Valeur par défaut : 0.0  - `location`:   - `lsmax`: Limiteur (Lsmax). Valeur par défaut : 0.0  - `lsmin`: Limiteur (Lsmin). Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps (T1). Valeur par défaut : 0  - `t10`: Constante de temps (T10). Valeur par défaut : 0  - `t2`: Constante de temps (T2). Valeur par défaut : 0  - `t3`: Constante de temps (T3). Valeur par défaut : 0  - `t4`: Constante de temps (T4). Valeur par défaut : 0  - `t5`: Constante de temps (T5). Valeur par défaut : 0  - `t6`: Constante de temps (T6). Valeur par défaut : 0  - `t7`: Constante de temps (T7). Valeur par défaut : 0  - `t8`: Constante de temps (T8). Valeur par défaut : 0  - `t9`: Constante de temps (T9). Valeur par défaut : 0  - `type`: Type de NGSI. Il faut que ce soit Pss2ST  - `vcl`: Limiteur de coupure (Vcl). Valeur par défaut : 0.0  - `vcu`: Limiteur de coupure (Vcu). Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pss2ST:    
   description: 'Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 1.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -344,7 +346,7 @@ Pss2ST:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un Pss2ST au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un Pss2ST en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un Pss2ST au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un Pss2ST en format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un Pss2ST au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Pss2ST au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Pss2ST au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Pss2ST au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
