@@ -5,7 +5,7 @@ Entity: WindPlantFreqPcontrolIEC
 
 ## List of properties  
 
-- `WindDynamicsLookupTable`: The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: "list"  - `WindPlantIEC`: Wind plant model with which this wind plant frequency and active power control is associated. Default: None  - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dprefmax`: Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0  - `dprefmin`: Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0  - `id`: Unique identifier of the entity  - `kiwpp`: Plant P controller integral gain (). It is type dependent parameter. Default: 0.0  - `kpwpp`: Plant P controller proportional gain (). It is type dependent parameter. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `prefmax`: Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0  - `prefmin`: Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tpft`: Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0  - `tpfv`: Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0  - `twpffilt`: Filter time constant for frequency measurement (). It is type dependent parameter. Default: 0  - `twppfilt`: Filter time constant for active power measurement (). It is type dependent parameter. Default: 0  - `type`: NGSI type. It has to be WindPlantFreqPcontrolIEC    
+- `WindDynamicsLookupTable`: The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 'list'  - `WindPlantIEC`: Wind plant model with which this wind plant frequency and active power control is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dprefmax`: Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0  - `dprefmin`: Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0  - `id`: Unique identifier of the entity  - `kiwpp`: Plant P controller integral gain (). It is type dependent parameter. Default: 0.0  - `kpwpp`: Plant P controller proportional gain (). It is type dependent parameter. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `prefmax`: Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0  - `prefmin`: Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tpft`: Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0  - `tpfv`: Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0  - `twpffilt`: Filter time constant for frequency measurement (). It is type dependent parameter. Default: 0  - `twppfilt`: Filter time constant for active power measurement (). It is type dependent parameter. Default: 0  - `type`: NGSI type. It has to be WindPlantFreqPcontrolIEC    
 Required properties  
 This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
 ## Data Model description of properties  
@@ -16,7 +16,7 @@ WindPlantFreqPcontrolIEC:
   description: 'Adapted from CIM data models. Frequency and active power controller model.  Reference: IEC Standard 61400-27-1 Annex E.'    
   properties:    
     WindDynamicsLookupTable:    
-      description: 'The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: "list"'    
+      description: 'The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -26,30 +26,32 @@ WindPlantFreqPcontrolIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
