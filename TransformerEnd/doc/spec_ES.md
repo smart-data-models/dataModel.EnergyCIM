@@ -5,7 +5,7 @@ Entidad: TransformerEnd
 
 ## Lista de propiedades  
 
-- `BaseVoltage`: Tensión de base del extremo del transformador.  Es esencial para el cálculo de la PU. Por defecto: Ninguno  - `PhaseTapChanger`: Extremo del transformador al que pertenece este cambiador de tomas de fase. Por defecto: Ninguno  - `RatioTapChanger`: Extremo del transformador al que pertenece este cambiador de tomas de relación. Por defecto: Ninguno  - `Terminal`: Terminal del transformador de potencia al que pertenece este extremo del transformador. Por defecto: Ninguno  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `endNumber`: Número de este extremo del transformador, correspondiente al orden del extremo en el grupo vectorial del transformador de potencia o número de reloj de ángulo de fase.  El devanado de mayor tensión debe ser el 1.  Cada extremo dentro de un transformador de potencia debe tener un único número de extremo posterior.   Tenga en cuenta que el número de extremo del transformador no tiene por qué coincidir con el número de secuencia del terminal. Por defecto: 0  - `grounded`: (para conexiones Yn y Zn) Verdadero si el neutro está sólidamente conectado a tierra. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rground`: (para conexiones Yn y Zn) Parte de la resistencia de la impedancia del neutro cuando "conectado a tierra" es verdadero. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser TransformerEnd  - `xground`: (para las conexiones Yn y Zn) Parte reactiva de la impedancia del neutro cuando "conectado a tierra" es verdadero. Por defecto: 0.0    
+- `BaseVoltage`: Tensión de base del extremo del transformador.  Es esencial para el cálculo de la PU. Por defecto: Ninguno  - `PhaseTapChanger`: Extremo del transformador al que pertenece este cambiador de tomas de fase. Por defecto: Ninguno  - `RatioTapChanger`: Extremo del transformador al que pertenece este cambiador de tomas de relación. Por defecto: Ninguno  - `Terminal`: Terminal del transformador de potencia al que pertenece este extremo del transformador. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `endNumber`: Número de este extremo del transformador, correspondiente al orden del extremo en el grupo vectorial del transformador de potencia o número de reloj de ángulo de fase.  El devanado de mayor tensión debe ser el 1.  Cada extremo dentro de un transformador de potencia debe tener un único número de extremo posterior.   Tenga en cuenta que el número de extremo del transformador no tiene por qué coincidir con el número de secuencia del terminal. Por defecto: 0  - `grounded`: (para conexiones Yn y Zn) Verdadero si el neutro está sólidamente conectado a tierra. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rground`: (para conexiones Yn y Zn) Parte de la resistencia de la impedancia del neutro cuando "conectado a tierra" es verdadero. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser TransformerEnd  - `xground`: (para las conexiones Yn y Zn) Parte reactiva de la impedancia del neutro cuando "conectado a tierra" es verdadero. Por defecto: 0.0    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -36,30 +36,32 @@ TransformerEnd:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
