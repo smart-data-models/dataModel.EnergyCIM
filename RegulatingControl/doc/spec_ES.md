@@ -5,7 +5,7 @@ Entidad: RegulatingControl
 
 ## Lista de propiedades  
 
-- `RegulatingCondEq`: Los equipos que participan en este esquema de control de regulación. Por defecto: "lista"  - `RegulationSchedule`: Horario para este control de regulación. Por defecto: "lista"  - `Terminal`: Los controles que regulan este terminal. Por defecto: Ninguno  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `discrete`: La regulación se realiza en modo discreto. Esto se aplica a los equipos con controles discretos, por ejemplo, cambiadores de tomas y compensadores en derivación. Por defecto: Falso  - `enabled`: La bandera indica si la regulación está habilitada. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `mode`: El modo de control de regulación actualmente disponible.  Esta especificación permite determinar el tipo de regulación sin necesidad de obtener las unidades de un programa. Por defecto: Ninguno  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `targetDeadband`: Se trata de una banda muerta que se utiliza con el control discreto para evitar una actualización excesiva de los controles como los cambiadores de tomas y los bancos de compensadores de derivación mientras se regula. Las unidades de las apropiadas para el modo. Por defecto: 0,0  - `targetValue`: El valor objetivo especificado para la entrada del caso.   Este valor puede ser utilizado para el valor objetivo sin el uso de horarios. El valor tiene las unidades apropiadas para el atributo de modo. Por defecto: 0.0  - `targetValueUnitMultiplier`: Especifica el multiplicador que se utilizará para el valor objetivo. Por defecto: Ninguno  - `type`: Tipo NGSI. Tiene que ser RegulatingControl    
+- `RegulatingCondEq`: Los equipos que participan en este esquema de control de regulación. Por defecto: "lista  - `RegulationSchedule`: Horario para este control de regulación. Por defecto: 'lista'  - `Terminal`: Los controles que regulan este terminal. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `discrete`: La regulación se realiza en modo discreto. Esto se aplica a los equipos con controles discretos, por ejemplo, cambiadores de tomas y compensadores en derivación. Por defecto: Falso  - `enabled`: La bandera indica si la regulación está habilitada. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `mode`: El modo de control de regulación actualmente disponible.  Esta especificación permite determinar el tipo de regulación sin necesidad de obtener las unidades de un programa. Por defecto: Ninguno  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `targetDeadband`: Se trata de una banda muerta que se utiliza con el control discreto para evitar una actualización excesiva de los controles como los cambiadores de tomas y los bancos de compensadores de derivación mientras se regula. Las unidades de las apropiadas para el modo. Por defecto: 0,0  - `targetValue`: El valor objetivo especificado para la entrada del caso.   Este valor puede ser utilizado para el valor objetivo sin el uso de horarios. El valor tiene las unidades apropiadas para el atributo de modo. Por defecto: 0.0  - `targetValueUnitMultiplier`: Especifica el multiplicador que se utilizará para el valor objetivo. Por defecto: Ninguno  - `type`: Tipo NGSI. Tiene que ser RegulatingControl    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,12 +16,12 @@ RegulatingControl:
   description: 'Adapted from CIM data models. Specifies a set of equipment that works together to control a power system quantity such as voltage or flow.  Remote bus voltage control is possible by specifying the controlled terminal located at some place remote from the controlling equipment. In case multiple equipment, possibly of different types, control same terminal there must be only one RegulatingControl at that terminal. The most specific subtype of RegulatingControl shall be used in case such equipment participate in the control, e.g. TapChangerControl for tap changers. For flow control  load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.'    
   properties:    
     RegulatingCondEq:    
-      description: 'The equipment that participates in this regulating control scheme. Default: "list"'    
+      description: 'The equipment that participates in this regulating control scheme. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     RegulationSchedule:    
-      description: 'Schedule for this Regulating regulating control. Default: "list"'    
+      description: 'Schedule for this Regulating regulating control. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -31,30 +31,32 @@ RegulatingControl:
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
