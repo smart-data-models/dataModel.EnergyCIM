@@ -5,7 +5,7 @@ Entidad: TopologyVersion
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `baseUML`: UML base proporcionado por el gestor de modelos CIM. Por defecto: ''  - `baseURI`: URI del perfil utilizado en la cabecera del intercambio de modelos y definido en las normas de la CEI.  Identifica de forma exclusiva el perfil y su versión. Se da sólo a título informativo y para identificar el perfil IEC más cercano en el que se basa este perfil CGMES. Por defecto: ''  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `date`: La fecha de creación del perfil es AAAA-MM-DD, por ejemplo, para el 5 de enero de 2009 es 2009-01-05. Por defecto: ''  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `differenceModelURI`: URI del modelo de diferencia definido por la IEC 61970-552. Por defecto: ''  - `entsoeUML`: UML proporcionado por ENTSO-E. Por defecto: ''  - `entsoeURI`: URI del Perfil definido por ENTSO-E y utilizado en la cabecera del Intercambio de Modelos.  Identifica de forma exclusiva el perfil y su versión. Los dos últimos elementos del URI (http://entsoe.eu/CIM/Topology/yy/zzz) indican las versiones mayor y menor, donde  - yy - indica una versión mayor; - zzz - indica una versión menor. Por defecto: ''  - `id`: Identificador único de la entidad  - `location`:   - `modelDescriptionURI`: URI de descripción del modelo definido por la norma IEC 61970-552. Por defecto: ''  - `name`: El nombre de este artículo.  - `namespaceRDF`: Espacio de nombres RDF. Por defecto: ''  - `namespaceUML`: Espacio de nombres UML de la CIM. Por defecto: ''  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortName`: El nombre corto del perfil utilizado en la documentación del perfil. Por defecto: ''  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser TopologyVersion    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `baseUML`: UML base proporcionado por el gestor de modelos CIM. Por defecto: ''  - `baseURI`: URI del perfil utilizado en la cabecera del intercambio de modelos y definido en las normas de la CEI.  Identifica de forma exclusiva el perfil y su versión. Se da sólo a título informativo y para identificar el perfil IEC más cercano en el que se basa este perfil CGMES. Por defecto: ''  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `date`: La fecha de creación del perfil es AAAA-MM-DD, por ejemplo, para el 5 de enero de 2009 es 2009-01-05. Por defecto: ''  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `differenceModelURI`: URI del modelo de diferencia definido por la IEC 61970-552. Por defecto: ''  - `entsoeUML`: UML proporcionado por ENTSO-E. Por defecto: ''  - `entsoeURI`: URI del Perfil definido por ENTSO-E y utilizado en la cabecera del Intercambio de Modelos.  Identifica de forma exclusiva el perfil y su versión. Los dos últimos elementos del URI (http://entsoe.eu/CIM/Topology/yy/zzz) indican las versiones mayor y menor, donde  - yy - indica una versión mayor; - zzz - indica una versión menor. Por defecto: ''  - `id`: Identificador único de la entidad  - `location`:   - `modelDescriptionURI`: URI de descripción del modelo definido por la norma IEC 61970-552. Por defecto: ''  - `name`: El nombre de este artículo.  - `namespaceRDF`: Espacio de nombres RDF. Por defecto: ''  - `namespaceUML`: Espacio de nombres UML de la CIM. Por defecto: ''  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortName`: El nombre corto del perfil utilizado en la documentación del perfil. Por defecto: ''  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser TopologyVersion    
 Propiedades requeridas  
 Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
 ## Descripción del modelo de datos de las propiedades  
@@ -16,30 +16,32 @@ TopologyVersion:
   description: 'Adapted from CIM data models. Version details.'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
