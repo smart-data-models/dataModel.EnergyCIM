@@ -1,50 +1,52 @@
 Entité : PowerTransformer  
 =========================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformer/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Dispositif électrique constitué de deux ou plusieurs enroulements couplés, avec ou sans noyau magnétique, pour introduire un couplage mutuel entre des circuits électriques. Les transformateurs peuvent être utilisés pour contrôler la tension et le déphasage (flux de puissance active). Un transformateur de puissance peut être composé de réservoirs de transformateur séparés qui n'ont pas besoin d'être identiques. Un transformateur de puissance peut être modélisé avec ou sans réservoirs et est destiné à être utilisé dans des représentations équilibrées et déséquilibrées.   Un transformateur de puissance a généralement deux bornes, mais peut en avoir une (mise à la terre), trois ou plus. L'association héritée ConductingEquipment.BaseVoltage ne doit pas être utilisée.  L'association TransformerEnd à BaseVoltage doit être utilisée à la place.**  
+Description globale : **Adapté des modèles de données CIM. Un dispositif électrique composé de deux ou plusieurs enroulements couplés, avec ou sans noyau magnétique, pour introduire un couplage mutuel entre des circuits électriques. Les transformateurs peuvent être utilisés pour contrôler la tension et le déphasage (flux de puissance actif). Un transformateur de puissance peut être composé de cuves de transformateur distinctes qui ne sont pas nécessairement identiques. Un transformateur de puissance peut être modélisé avec ou sans réservoirs et est destiné à être utilisé dans des représentations équilibrées et déséquilibrées.   Un transformateur de puissance a généralement deux bornes, mais il peut avoir une (mise à la terre), trois bornes ou plus. L'association héritée ConductingEquipment.BaseVoltage ne doit pas être utilisée.  L'association de TransformerEnd à BaseVoltage doit être utilisée à la place.**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `PowerTransformerEnd`: Le transformateur de puissance de cette extrémité de transformateur de puissance. Par défaut : "liste".  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `beforeShCircuitHighestOperatingCurrent`: Le courant de fonctionnement le plus élevé (Ib dans la norme CEI 60909-0) avant court-circuit (dépend de la configuration du réseau et de la philosophie de fiabilité pertinente). Il est utilisé pour le calcul du facteur de correction d'impédance KT défini dans la norme CEI 60909-0. Par défaut : 0,0  - `beforeShCircuitHighestOperatingVoltage`: La tension de fonctionnement la plus élevée (Ub dans la norme CEI 60909-0) avant court-circuit. Elle est utilisée pour le calcul du facteur de correction d'impédance KT défini dans la norme CEI 60909-0. Il s'agit de la tension la plus défavorable sur l'enroulement du côté bas (section 3.7.1 de la norme). Utilisé pour définir les conditions de fonctionnement. Par défaut : 0,0  - `beforeShortCircuitAnglePf`: L'angle du facteur de puissance avant court-circuit (phib dans la norme IEC 60909-0). Il est utilisé pour le calcul du facteur de correction d'impédance KT défini dans la norme CEI 60909-0. Il s'agit du facteur de puissance dans le pire des cas. Il est utilisé pour définir les conditions de fonctionnement. Par défaut : 0,0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `highSideMinOperatingU`: La tension de fonctionnement minimale (uQmin dans la norme CEI 60909-0) du côté haute tension (côté Q) du transformateur de l'unité de la centrale électrique. Une valeur bien établie à partir d'une longue expérience de fonctionnement du système. Elle est utilisée pour le calcul du facteur de correction d'impédance KG défini dans la norme CEI 60909-0 Défaut : 0,0  - `id`: Identifiant unique de l'entité  - `isPartOfGeneratorUnit`: Indique si la machine fait partie d'une unité de centrale électrique. Utilisé pour l'échange de données de court-circuit selon la norme IEC 60909 Défaut : Faux :  - `location`:   - `name`: Le nom de cet article.  - `operationalValuesConsidered`: Il est utilisé pour définir si les données (autres attributs liés à l'échange de données en court-circuit) définissent ou non des conditions opérationnelles à long terme. Utilisé pour l'échange de données sur les courts-circuits conformément à la norme CEI 60909. Par défaut : Faux :  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être de type PowerTransformer    
+- `PowerTransformerEnd`: Le transformateur de puissance de cette extrémité de transformateur de puissance. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `beforeShCircuitHighestOperatingCurrent`: Le courant de fonctionnement le plus élevé (Ib dans la CEI 60909-0) avant un court-circuit (dépend de la configuration du réseau et de la philosophie de fiabilité pertinente). Il est utilisé pour le calcul du facteur de correction d'impédance KT défini dans la norme IEC 60909-0. Valeur par défaut : 0.0  - `beforeShCircuitHighestOperatingVoltage`: La tension de fonctionnement la plus élevée (Ub dans la CEI 60909-0) avant le court-circuit. Elle est utilisée pour le calcul du facteur de correction d'impédance KT défini dans la norme IEC 60909-0. Il s'agit de la tension la plus défavorable sur l'enroulement du côté bas (section 3.7.1 de la norme). Utilisé pour définir les conditions de fonctionnement. Valeur par défaut : 0.0  - `beforeShortCircuitAnglePf`: L'angle du facteur de puissance avant court-circuit (phib dans la CEI 60909-0). Il est utilisé pour le calcul du facteur de correction d'impédance KT défini dans la norme CEI 60909-0. Il s'agit du facteur de puissance dans le pire des cas. Utilisé pour définir les conditions de fonctionnement. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `highSideMinOperatingU`: La tension minimale de fonctionnement (uQmin dans la norme CEI 60909-0) du côté haute tension (côté Q) du transformateur de l'unité de la centrale électrique. Une valeur bien établie à partir de l'expérience d'exploitation à long terme du système. Elle est utilisée pour le calcul du facteur de correction d'impédance KG défini dans la norme IEC 60909-0 Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `isPartOfGeneratorUnit`: Indique si la machine fait partie d'une unité de centrale électrique. Utilisé pour l'échange de données sur les courts-circuits selon la norme CEI 60909 Par défaut : Faux  - `location`:   - `name`: Le nom de cet élément.  - `operationalValuesConsidered`: Il est utilisé pour définir si les données (autres attributs liés à l'échange de données sur les circuits courts) définissent les conditions opérationnelles à long terme ou non. Utilisé pour l'échange de données de court-circuit selon la norme IEC 60909. Valeur par défaut : Faux  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de PowerTransformer    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle commun d'information (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. C'est le cas, pelase soulever un problème ou envoyer un mail à alberto.abella@fiware.org  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PowerTransformer:    
   description: 'Adapted from CIM data models. An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow). A power transformer may be composed of separate transformer tanks that need not be identical. A power transformer can be modeled with or without tanks and is intended for use in both balanced and unbalanced representations.   A power transformer typically has two terminals, but may have one (grounding), three or more terminals. The inherited association ConductingEquipment.BaseVoltage should not be used.  The association from TransformerEnd to BaseVoltage should be used instead.'    
   properties:    
     PowerTransformerEnd:    
-      description: 'The power transformer of this power transformer end. Default: "list"'    
+      description: 'The power transformer of this power transformer end. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -289,7 +291,7 @@ PowerTransformer:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un transformateur de puissance au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un transformateur de puissance au format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un transformateur de puissance au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-Non disponible l'exemple d'un transformateur de puissance au format JSON-LD comme normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformer au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformer au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformer au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PowerTransformer au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
