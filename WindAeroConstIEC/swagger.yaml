@@ -1,0 +1,52 @@
+---
+# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# 
+
+
+components:
+  schemas: 
+    WindAeroConstIEC: 
+      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/WindAeroConstIEC/model.yaml#/WindAeroConstIEC"
+info:
+  description:  |
+    Adapted from CIM data models. The constant aerodynamic torque model assumes that the aerodynamic torque is constant.  Reference: IEC Standard 61400-27-1 Section 6.6.1.1.
+  title: WindAeroConstIEC
+  version: "1.0.0"
+openapi: "3.0.0"
+
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - WindAeroConstIEC
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/WindAeroConstIEC/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/WindAeroConstIEC/examples/example-normalized.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
