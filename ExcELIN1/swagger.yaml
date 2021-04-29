@@ -1,0 +1,52 @@
+---
+# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# 
+
+
+components:
+  schemas: 
+    ExcELIN1: 
+      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/ExcELIN1/model.yaml#/ExcELIN1"
+info:
+  description:  |
+    Adapted from CIM data models. Static PI transformer fed excitation system: ELIN (VATECH) - simplified model.  This model represents an all-static excitation system. A PI voltage controller establishes a desired field current set point for a proportional current controller. The integrator of the PI controller has a follow-up input to match its signal to the present field current.  A power system stabilizer with power input is included in the model.
+  title: ExcELIN1
+  version: "1.0.0"
+openapi: "3.0.0"
+
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - ExcELIN1
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/ExcELIN1/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/ExcELIN1/examples/example-normalized.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
