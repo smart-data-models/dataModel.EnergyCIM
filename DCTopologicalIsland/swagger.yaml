@@ -1,0 +1,52 @@
+---
+# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# 
+
+
+components:
+  schemas: 
+    DCTopologicalIsland: 
+      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/DCTopologicalIsland/model.yaml#/DCTopologicalIsland"
+info:
+  description:  |
+    Adapted from CIM data models. An electrically connected subset of the network. DC topological islands can change as the current network state changes: e.g. due to  - disconnect switches or breakers change state in a SCADA/EMS - manual creation, change or deletion of topological nodes in a planning tool.
+  title: DCTopologicalIsland
+  version: "1.0.0"
+openapi: "3.0.0"
+
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - DCTopologicalIsland
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/DCTopologicalIsland/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/DCTopologicalIsland/examples/example-normalized.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
