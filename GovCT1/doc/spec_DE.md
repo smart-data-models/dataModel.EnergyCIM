@@ -1,0 +1,437 @@
+Entität: GovCT1  
+===============  
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovCT1/LICENSE.md)  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Allgemeines Modell für jede Antriebsmaschine mit einem PID-Regler, das hauptsächlich für Verbrennungsturbinen- und Kombianlagen verwendet wird. Dieses Modell kann zur Darstellung einer Vielzahl von Antriebsmaschinen verwendet werden, die durch PID-Regler gesteuert werden.  Es eignet sich z. B. für die Darstellung von Weitere Informationen zu diesem Modell finden Sie im IEEE-Bericht 2012, , Abschnitt 3.1.2.3 Seite 3-4 (GGOV1).**  
+
+## Liste der Eigenschaften  
+
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aset`: Sollwert des Beschleunigungsbegrenzers (Aset).  Einheit = VE/sec.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db`: Totzone des Drehzahlreglers in pro Geschwindigkeitseinheit (db).  In der Mehrzahl der Anwendungen wird empfohlen, diesen Wert auf Null zu setzen.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `dm`: Drehzahl-Empfindlichkeitskoeffizient (Dm).  Dm kann entweder die Veränderung der Motorleistung mit der Drehzahl oder die Veränderung der maximalen Leistungsfähigkeit mit der Drehzahl darstellen.  Wenn er positiv ist, beschreibt er die fallende Steigung der Motordrehzahl-Leistungs-Kennlinie bei steigender Drehzahl. Eine leicht fallende Kennlinie ist typisch für Hubkolbenmotoren und einige aero-derivative Turbinen.  Ist sie negativ, wird angenommen, dass die Motorleistung von der Drehzahl unbeeinflusst bleibt, aber der maximal zulässige Kraftstoffdurchsatz mit fallender Drehzahl abnimmt. Dies ist charakteristisch für einwellige Industrieturbinen aufgrund von Abgastemperaturgrenzen.  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Beschleunigungsbegrenzers (Ka).  Typischer Wert = 10. Voreinstellung: 0.0  - `kdgov`: Verstärkung der Reglerableitung (Kdgov).  Typischer Wert = 0. Voreinstellung: 0.0  - `kigov`: Integralverstärkung des Reglers (Kigov).  Typischer Wert = 2. Voreinstellung: 0.0  - `kiload`: Lastbegrenzer-Integralverstärkung für PI-Regler (Kiload).  Typischer Wert = 0,67. Voreinstellung: 0.0  - `kimw`: Verstärkung des Leistungsreglers (Reset) (Kimw).  Der Standardwert von 0,01 entspricht einer Nachstellzeit von 100 Sekunden.  Ein Wert von 0,001 entspricht einem relativ langsam wirkenden Lastregler.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `kpgov`: Proportionalverstärkung des Reglers (Kpgov).  Typischer Wert = 10. Voreinstellung: 0.0  - `kpload`: Lastbegrenzer-Proportionalverstärkung für PI-Regler (Kpload).  Typischer Wert = 2. Voreinstellung: 0.0  - `kturb`: Turbinenverstärkung (Kturb) (>0).  Typischer Wert = 1,5. Voreinstellung: 0,0  - `ldref`: Lastbegrenzer-Sollwert (Ldref).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`:   - `maxerr`: Maximalwert für Drehzahlfehlersignal (maxerr).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `minerr`: Minimaler Wert für das Drehzahlfehlersignal (minerr).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `r`: Permanenter Durchhang (R).  Typischer Wert = 0,04. Voreinstellung: 0,0  - `rclose`: Minimale Ventilschließrate (Rclose).  Einheit = VE/sec.  Typischer Wert = -0,1. Voreinstellung: 0,0  - `rdown`: Maximale Rate der Lastgrenzensenkung (Rdown).  Typischer Wert = -99. Voreinstellung: 0,0  - `ropen`: Maximale Ventilöffnungsrate (Ropen).  Einheit = VE/sec.  Typischer Wert = 0,10. Voreinstellung: 0,0  - `rselect`: Rückführsignal für P-Bereich (Rselect).  Typischer Wert = electricalPower. Voreinstellung: Keine  - `rup`: Maximale Rate der Lastgrenzenerhöhung (Rup).  Typischer Wert = 99. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Beschleunigungsbegrenzer-Zeitkonstante (Ta) (>0).  Typischer Wert = 0,1. Voreinstellung: 0  - `tact`: Aktor-Zeitkonstante (Tact).  Typischer Wert = 0,5. Voreinstellung: 0  - `tb`: Turbinen-Nachlaufzeitkonstante (Tb) (>0).  Typischer Wert = 0,5. Voreinstellung: 0  - `tc`: Turbinenvorlaufzeitkonstante (Tc).  Typischer Wert = 0. Voreinstellung: 0  - `tdgov`: Zeitkonstante des Reglervorlaufs (Tdgov).  Typischer Wert = 1. Voreinstellung: 0  - `teng`: Transportzeitverzögerung für Dieselmotoren, die bei der Darstellung von Dieselmotoren verwendet wird, bei denen es eine kleine, aber messbare Transportverzögerung zwischen einer Änderung der Kraftstoffdurchflusseinstellung und der Entwicklung des Drehmoments (Teng) gibt.  Teng sollte in allen außer speziellen Fällen, in denen diese Transportverzögerung von besonderer Bedeutung ist, Null sein.  Typischer Wert = 0. Voreinstellung: 0  - `tfload`: Lastbegrenzer-Zeitkonstante (Tfload) (>0).  Typischer Wert = 3. Voreinstellung: 0  - `tpelec`: Zeitkonstante des elektrischen Leistungswandlers (Tpelec) (>0).  Typischer Wert = 1. Voreinstellung: 0  - `tsa`: Vorlaufzeitkonstante der Temperaturerfassung (Tsa).  Typischer Wert = 4. Voreinstellung: 0  - `tsb`: Verzögerungszeitkonstante der Temperaturerfassung (Tsb).  Typischer Wert = 5. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovCT1 sein  - `vmax`: Maximale Ventilstellungsgrenze (Vmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `vmin`: Minimale Ventilstellungsgrenze (Vmin).  Typischer Wert = 0,15. Voreinstellung: 0.0  - `wfnl`: Kraftstofffluss ohne Last (Wfnl).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `wfspd`: Schalter für die Kraftstoffquellencharakteristik, um zu erkennen, dass der Kraftstoffdurchfluss bei einem bestimmten Kraftstoffventilhub proportional zur Motordrehzahl sein kann (Wfspd). true = Kraftstoffdurchfluss proportional zur Drehzahl (für einige Gasturbinen und Dieselmotoren mit Verdrängereinspritzdüsen) false = Kraftstoffregelsystem hält den Kraftstoffdurchfluss unabhängig von der Motordrehzahl. Typischer Wert = true. Voreinstellung: False    
+Erforderliche Eigenschaften  
+Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+## Datenmodell Beschreibung der Eigenschaften  
+Alphabetisch sortiert (für Details anklicken)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+GovCT1:    
+  description: 'Adapted from CIM data models. General model for any prime mover with a PID governor, used primarily for combustion turbine and combined cycle units. This model can be used to represent a variety of prime movers controlled by PID governors.  It is suitable, for example, for representation of     Additional information on this model is available in the 2012 IEEE report, , section 3.1.2.3 page 3-4 (GGOV1).'    
+  properties:    
+    address:    
+      description: 'The mailing address'    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
+    alternateName:    
+      description: 'An alternative name for this item'    
+      type: Property    
+    areaServed:    
+      description: 'The geographic area where a service or offered item is provided'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
+    aset:    
+      description: 'Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 0.01. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    dataProvider:    
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      type: Property    
+    dateCreated:    
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: Property    
+    dateModified:    
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: Property    
+    db:    
+      description: 'Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    description:    
+      description: 'A description of this item'    
+      type: Property    
+    dm:    
+      description: 'Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    id:    
+      anyOf: &govct1_-_properties_-_owner_-_items_-_anyof    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
+    ka:    
+      description: 'Acceleration limiter gain (Ka).  Typical Value = 10. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kdgov:    
+      description: 'Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kigov:    
+      description: 'Governor integral gain (Kigov).  Typical Value = 2. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kiload:    
+      description: 'Load limiter integral gain for PI controller (Kiload).  Typical Value = 0.67. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kimw:    
+      description: 'Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0.01. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kpgov:    
+      description: 'Governor proportional gain (Kpgov).  Typical Value = 10. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kpload:    
+      description: 'Load limiter proportional gain for PI controller (Kpload).  Typical Value = 2. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    kturb:    
+      description: 'Turbine gain (Kturb) (>0).  Typical Value = 1.5. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    ldref:    
+      description: 'Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    location:    
+      $id: https://geojson.org/schema/Geometry.json    
+      $schema: "http://json-schema.org/draft-07/schema#"    
+      oneOf:    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Point'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON LineString'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Polygon'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPoint'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiLineString'    
+          type: object    
+        - properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPolygon'    
+          type: object    
+      title: 'GeoJSON Geometry'    
+    maxerr:    
+      description: 'Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    minerr:    
+      description: 'Minimum value for speed error signal (minerr).  Typical Value = -0.05. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    mwbase:    
+      description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    name:    
+      description: 'The name of this item.'    
+      type: Property    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf: *govct1_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
+      type: Property    
+    r:    
+      description: 'Permanent droop (R).  Typical Value = 0.04. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    rclose:    
+      description: 'Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -0.1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    rdown:    
+      description: 'Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    ropen:    
+      description: 'Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 0.10. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    rselect:    
+      description: 'Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    rup:    
+      description: 'Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
+      oneOf:    
+        - items:    
+            - format: uri    
+              type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: Property    
+    ta:    
+      description: 'Acceleration limiter time constant (Ta) (>0).  Typical Value = 0.1. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tact:    
+      description: 'Actuator time constant (Tact).  Typical Value = 0.5. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tb:    
+      description: 'Turbine lag time constant (Tb) (>0).  Typical Value = 0.5. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tc:    
+      description: 'Turbine lead time constant (Tc).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tdgov:    
+      description: 'Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    teng:    
+      description: 'Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tfload:    
+      description: 'Load Limiter time constant (Tfload) (>0).  Typical Value = 3. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tpelec:    
+      description: 'Electrical power transducer time constant (Tpelec) (>0).  Typical Value = 1. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tsa:    
+      description: 'Temperature detection lead time constant (Tsa).  Typical Value = 4. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    tsb:    
+      description: 'Temperature detection lag time constant (Tsb).  Typical Value = 5. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    type:    
+      description: 'NGSI type. It has to be GovCT1'    
+      enum:    
+        - GovCT1    
+      type: Property    
+    vmax:    
+      description: 'Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    vmin:    
+      description: 'Minimum valve position limit (Vmin).  Typical Value = 0.15. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    wfnl:    
+      description: 'No load fuel flow (Wfnl).  Typical Value = 0.2. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+    wfspd:    
+      description: 'Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = true. Default: False'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+  required: []    
+  type: object    
+```  
+</details>    
+## Beispiel-Nutzlasten  
+Nicht verfügbar das Beispiel eines GovCT1 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel eines GovCT1 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel eines GovCT1 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel eines GovCT1 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
