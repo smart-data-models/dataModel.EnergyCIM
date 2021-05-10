@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbineGovernorDynamics/schema.json",
-  "title": " Smart Data Models - TurbineGovernorDynamics",
-  "description": "Adapted from CIM data models. Turbine-governor function block whose behavior is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TurbineGovernorDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be TurbineGovernorDynamics"
-    },
-    "AsynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine model with which this turbine-governor model is associated. Default: None",
-        "type": "number"
-    },
-    "SynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine-governor model associated with this synchronous machine model. Default: 'list'",
-        "type": "number"
-    },
-    "TurbineLoadControllerDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine load controller providing input to this turbine-governor. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbineGovernorDynamics/schema.json",
+    "title": " Smart Data Models - TurbineGovernorDynamics",
+    "description": "Adapted from CIM data models. Turbine-governor function block whose behavior is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TurbineGovernorDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be TurbineGovernorDynamics"
+                },
+                "AsynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine model with which this turbine-governor model is associated. Default: None",
+                    "type": "number"
+                },
+                "SynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine-governor model associated with this synchronous machine model. Default: 'list'",
+                    "type": "number"
+                },
+                "TurbineLoadControllerDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine load controller providing input to this turbine-governor. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
