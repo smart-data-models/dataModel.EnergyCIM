@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcitationSystemDynamics/schema.json",
-  "title": " Smart Data Models - ExcitationSystemDynamics",
-  "description": "Adapted from CIM data models. Excitation system function block whose behavior is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcitationSystemDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be ExcitationSystemDynamics"
-    },
-    "DiscontinuousExcitationControlDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Discontinuous excitation control model associated with this excitation system model. Default: None",
-        "type": "number"
-    },
-    "OverexcitationLimiterDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Overexcitation limiter model associated with this excitation system model. Default: None",
-        "type": "number"
-    },
-    "PFVArControllerType1Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type I model associated with this excitation system model. Default: None",
-        "type": "number"
-    },
-    "PFVArControllerType2Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type II model associated with this excitation system model. Default: None",
-        "type": "number"
-    },
-    "PowerSystemStabilizerDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Power system stabilizer model associated with this excitation system model. Default: None",
-        "type": "number"
-    },
-    "SynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this excitation system model is associated. Default: None",
-        "type": "number"
-    },
-    "UnderexcitationLimiterDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Undrexcitation limiter model associated with this excitation system model. Default: None",
-        "type": "number"
-    },
-    "VoltageCompensatorDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage compensator model associated with this excitation system model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcitationSystemDynamics/schema.json",
+    "title": " Smart Data Models - ExcitationSystemDynamics",
+    "description": "Adapted from CIM data models. Excitation system function block whose behavior is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcitationSystemDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcitationSystemDynamics"
+                },
+                "DiscontinuousExcitationControlDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Discontinuous excitation control model associated with this excitation system model. Default: None",
+                    "type": "number"
+                },
+                "OverexcitationLimiterDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Overexcitation limiter model associated with this excitation system model. Default: None",
+                    "type": "number"
+                },
+                "PFVArControllerType1Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type I model associated with this excitation system model. Default: None",
+                    "type": "number"
+                },
+                "PFVArControllerType2Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type II model associated with this excitation system model. Default: None",
+                    "type": "number"
+                },
+                "PowerSystemStabilizerDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power system stabilizer model associated with this excitation system model. Default: None",
+                    "type": "number"
+                },
+                "SynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this excitation system model is associated. Default: None",
+                    "type": "number"
+                },
+                "UnderexcitationLimiterDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Undrexcitation limiter model associated with this excitation system model. Default: None",
+                    "type": "number"
+                },
+                "VoltageCompensatorDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage compensator model associated with this excitation system model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
