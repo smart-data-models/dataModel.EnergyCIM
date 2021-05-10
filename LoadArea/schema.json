@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadArea/schema.json",
-  "title": " Smart Data Models - LoadArea",
-  "description": "Adapted from CIM data models. The class is the root or first level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "LoadArea"
-        ],
-        "description": "Property. NGSI type. It has to be LoadArea"
-    },
-    "SubLoadAreas": {
-        "description": "Property. Model:'https://schema.org/Number'. The SubLoadAreas in the LoadArea. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadArea/schema.json",
+    "title": " Smart Data Models - LoadArea",
+    "description": "Adapted from CIM data models. The class is the root or first level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "LoadArea"
+                    ],
+                    "description": "Property. NGSI type. It has to be LoadArea"
+                },
+                "SubLoadAreas": {
+                    "description": "Property. Model:'https://schema.org/Number'. The SubLoadAreas in the LoadArea. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
