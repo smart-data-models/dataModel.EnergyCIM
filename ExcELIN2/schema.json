@@ -1,136 +1,135 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcELIN2/schema.json",
-  "title": " Smart Data Models - ExcELIN2",
-  "description": "Adapted from CIM data models. Detailed Excitation System Model - ELIN (VATECH).  This model represents an all-static excitation system. A PI voltage controller establishes a desired field current set point for a proportional current controller. The integrator of the PI controller has a follow-up input to match its signal to the present field current.  Power system stabilizer models used in conjunction with this excitation system model: PssELIN2, PssIEEE2B, Pss2B.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcELIN2"
-        ],
-        "description": "Property. NGSI type. It has to be ExcELIN2"
-    },
-    "efdbas": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Efdbas).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "iefmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Iefmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "iefmax2": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum open circuit excitation voltage (Iefmax2).  Typical Value = -5. Default: 0.0",
-        "type": "number"
-    },
-    "iefmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Iefmin).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator input gain (K1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k1ec": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator input limit (K1ec).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K2).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K3).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "k4": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K4).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage controller derivative gain (Kd1).  Typical Value = 34.5. Default: 0.0",
-        "type": "number"
-    },
-    "ke2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Ke2).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "ketb": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Ketb).  Typical Value = 0.06. Default: 0.0",
-        "type": "number"
-    },
-    "pid1max": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller follow up gain (PID1max).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "seve1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve1, back of commutating reactance (Se[Ve1]).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "seve2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve2, back of commutating reactance (Se[Ve2]).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "tb1": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage controller derivative washout time constant (Tb1).  Typical Value = 12.45. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Te).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "te2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time Constant (Te2).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "ti1": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller follow up dead band (Ti1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ti3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ti3).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "ti4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ti4).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tr4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tr4).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "upmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Upmax).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "upmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Upmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ve1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "ve2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "xp": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation transformer effective reactance (Xp).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcELIN2/schema.json",
+    "title": " Smart Data Models - ExcELIN2",
+    "description": "Adapted from CIM data models. Detailed Excitation System Model - ELIN (VATECH).  This model represents an all-static excitation system. A PI voltage controller establishes a desired field current set point for a proportional current controller. The integrator of the PI controller has a follow-up input to match its signal to the present field current.  Power system stabilizer models used in conjunction with this excitation system model: PssELIN2, PssIEEE2B, Pss2B.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcELIN2"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcELIN2"
+                },
+                "efdbas": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Efdbas).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "iefmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Iefmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "iefmax2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum open circuit excitation voltage (Iefmax2).  Typical Value = -5. Default: 0.0",
+                    "type": "number"
+                },
+                "iefmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Iefmin).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator input gain (K1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k1ec": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator input limit (K1ec).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K2).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K3).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "k4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K4).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage controller derivative gain (Kd1).  Typical Value = 34.5. Default: 0.0",
+                    "type": "number"
+                },
+                "ke2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Ke2).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ketb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Ketb).  Typical Value = 0.06. Default: 0.0",
+                    "type": "number"
+                },
+                "pid1max": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller follow up gain (PID1max).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "seve1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve1, back of commutating reactance (Se[Ve1]).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "seve2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve2, back of commutating reactance (Se[Ve2]).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "tb1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage controller derivative washout time constant (Tb1).  Typical Value = 12.45. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Te).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "te2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time Constant (Te2).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "ti1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller follow up dead band (Ti1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ti3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ti3).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "ti4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ti4).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tr4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tr4).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "upmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Upmax).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "upmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Upmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ve1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "ve2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "xp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation transformer effective reactance (Xp).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
