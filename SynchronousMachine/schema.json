@@ -1,120 +1,112 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachine/schema.json",
-  "title": " Smart Data Models - SynchronousMachine",
-  "description": "Adapted from CIM data models. An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SynchronousMachine"
-        ],
-        "description": "Property. NGSI type. It has to be SynchronousMachine"
-    },
-    "InitialReactiveCapabilityCurve": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machines using this curve as default. Default: None",
-        "type": "number"
-    },
-    "SynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine dynamics model used to describe dynamic behavior of this synchronous machine. Default: None",
-        "type": "number"
-    },
-    "earthing": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909 Default: False",
-        "type": "number"
-    },
-    "earthingStarPointR": {
-        "description": "Property. Model:'https://schema.org/Number'. Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "earthingStarPointX": {
-        "description": "Property. Model:'https://schema.org/Number'. Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "ikk": {
-        "description": "Property. Model:'https://schema.org/Number'. Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit. - Ikk=0: Generator with no compound excitation. - Ikk?0: Generator with compound excitation. Ikk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation (Section 4.6.1.2 in the IEC 60909-0) Used only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0) Default: 0.0",
-        "type": "number"
-    },
-    "maxQ": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0",
-        "type": "number"
-    },
-    "minQ": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum reactive power limit for the unit. Default: 0.0",
-        "type": "number"
-    },
-    "mu": {
-        "description": "Property. Model:'https://schema.org/Number'. Factor to calculate the breaking current (Section 4.5.2.1 in the IEC 60909-0). Used only for single fed short circuit on a generator (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0",
-        "type": "number"
-    },
-    "operatingMode": {
-        "description": "Property. Model:'https://schema.org/Number'. Current mode of operation. Default: None",
-        "type": "number"
-    },
-    "qPercent": {
-        "description": "Property. Model:'https://schema.org/Number'. Percent of the coordinated reactive control that comes from this machine. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence resistance of the synchronous machine. Default: 0.0",
-        "type": "number"
-    },
-    "r2": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence resistance. Default: 0.0",
-        "type": "number"
-    },
-    "referencePriority": {
-        "description": "Property. Model:'https://schema.org/Number'. Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0",
-        "type": "number"
-    },
-    "satDirectSubtransX": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient reactance saturated, also known as Xd`sat. Default: 0.0",
-        "type": "number"
-    },
-    "satDirectSyncX": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0",
-        "type": "number"
-    },
-    "satDirectTransX": {
-        "description": "Property. Model:'https://schema.org/Number'. Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI. Default: 0.0",
-        "type": "number"
-    },
-    "shortCircuitRotorType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909. Default: None",
-        "type": "number"
-    },
-    "type": {
-        "description": "Property. Model:'https://schema.org/Number'. Modes that this synchronous machine can operate in. Default: None",
-        "type": "number"
-    },
-    "voltageRegulationRange": {
-        "description": "Property. Model:'https://schema.org/Number'. Range of generator voltage regulation (PG in the IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0 This attribute is used to describe the operating voltage of the generating unit. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence reactance of the synchronous machine. Default: 0.0",
-        "type": "number"
-    },
-    "x2": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence reactance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachine/schema.json",
+    "title": " Smart Data Models - SynchronousMachine",
+    "description": "Adapted from CIM data models. An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Modes that this synchronous machine can operate in. Default: None",
+                    "type": "number"
+                },
+                "InitialReactiveCapabilityCurve": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machines using this curve as default. Default: None",
+                    "type": "number"
+                },
+                "SynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine dynamics model used to describe dynamic behavior of this synchronous machine. Default: None",
+                    "type": "number"
+                },
+                "earthing": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909 Default: False",
+                    "type": "number"
+                },
+                "earthingStarPointR": {
+                    "description": "Property. Model:'https://schema.org/Number'. Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "earthingStarPointX": {
+                    "description": "Property. Model:'https://schema.org/Number'. Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "ikk": {
+                    "description": "Property. Model:'https://schema.org/Number'. Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit. - Ikk=0: Generator with no compound excitation. - Ikk?0: Generator with compound excitation. Ikk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation (Section 4.6.1.2 in the IEC 60909-0) Used only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0) Default: 0.0",
+                    "type": "number"
+                },
+                "maxQ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0",
+                    "type": "number"
+                },
+                "minQ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum reactive power limit for the unit. Default: 0.0",
+                    "type": "number"
+                },
+                "mu": {
+                    "description": "Property. Model:'https://schema.org/Number'. Factor to calculate the breaking current (Section 4.5.2.1 in the IEC 60909-0). Used only for single fed short circuit on a generator (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0",
+                    "type": "number"
+                },
+                "operatingMode": {
+                    "description": "Property. Model:'https://schema.org/Number'. Current mode of operation. Default: None",
+                    "type": "number"
+                },
+                "qPercent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Percent of the coordinated reactive control that comes from this machine. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence resistance of the synchronous machine. Default: 0.0",
+                    "type": "number"
+                },
+                "r2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "referencePriority": {
+                    "description": "Property. Model:'https://schema.org/Number'. Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0",
+                    "type": "number"
+                },
+                "satDirectSubtransX": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient reactance saturated, also known as Xd`sat. Default: 0.0",
+                    "type": "number"
+                },
+                "satDirectSyncX": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0",
+                    "type": "number"
+                },
+                "satDirectTransX": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI. Default: 0.0",
+                    "type": "number"
+                },
+                "shortCircuitRotorType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909. Default: None",
+                    "type": "number"
+                },
+                "voltageRegulationRange": {
+                    "description": "Property. Model:'https://schema.org/Number'. Range of generator voltage regulation (PG in the IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0 This attribute is used to describe the operating voltage of the generating unit. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence reactance of the synchronous machine. Default: 0.0",
+                    "type": "number"
+                },
+                "x2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence reactance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
