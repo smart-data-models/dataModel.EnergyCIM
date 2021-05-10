@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE1A/schema.json",
-  "title": " Smart Data Models - PssIEEE1A",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS1A power system stabilizer model. PSS1A is the generalized form of a PSS with a single input. Some common stabilizer input signals are speed, frequency, and power.  Reference: IEEE 1A 421.5-2005 Section 8.1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssIEEE1A"
-        ],
-        "description": "Property. NGSI type. It has to be PssIEEE1A"
-    },
-    "a1": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS signal conditioning frequency filter constant (A1).  Typical Value = 0.061. Default: 0.0",
-        "type": "number"
-    },
-    "a2": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS signal conditioning frequency filter constant (A2).  Typical Value = 0.0017. Default: 0.0",
-        "type": "number"
-    },
-    "inputSignalType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal.  Typical Value = rotorAngularFrequencyDeviation. Default: None",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer gain (Ks).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T1).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T2).  Typical Value = 0.03. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4).  Typical Value = 0.03. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (T5).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T6).  Typical Value = 0.01. Default: 0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum stabilizer output (Vrmax).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum stabilizer output (Vrmin).  Typical Value = -0.05. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE1A/schema.json",
+    "title": " Smart Data Models - PssIEEE1A",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS1A power system stabilizer model. PSS1A is the generalized form of a PSS with a single input. Some common stabilizer input signals are speed, frequency, and power.  Reference: IEEE 1A 421.5-2005 Section 8.1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssIEEE1A"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssIEEE1A"
+                },
+                "a1": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS signal conditioning frequency filter constant (A1).  Typical Value = 0.061. Default: 0.0",
+                    "type": "number"
+                },
+                "a2": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS signal conditioning frequency filter constant (A2).  Typical Value = 0.0017. Default: 0.0",
+                    "type": "number"
+                },
+                "inputSignalType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal.  Typical Value = rotorAngularFrequencyDeviation. Default: None",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer gain (Ks).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T1).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T2).  Typical Value = 0.03. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4).  Typical Value = 0.03. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (T5).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T6).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum stabilizer output (Vrmax).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum stabilizer output (Vrmin).  Typical Value = -0.05. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
