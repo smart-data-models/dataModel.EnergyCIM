@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType1or2IEC/schema.json",
-  "title": " Smart Data Models - WindTurbineType1or2IEC",
-  "description": "Adapted from CIM data models. Generator model for wind turbine of IEC Type 1 or Type 2 is a standard asynchronous generator model.  Reference: IEC Standard 614000-27-1 Section 6.6.3.1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindTurbineType1or2IEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindTurbineType1or2IEC"
-    },
-    "WindMechIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind mechanical model associated with this wind generator type 1 or 2 model. Default: None",
-        "type": "number"
-    },
-    "WindProtectionIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbune protection model associated with this wind generator type 1 or 2 model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType1or2IEC/schema.json",
+    "title": " Smart Data Models - WindTurbineType1or2IEC",
+    "description": "Adapted from CIM data models. Generator model for wind turbine of IEC Type 1 or Type 2 is a standard asynchronous generator model.  Reference: IEC Standard 614000-27-1 Section 6.6.3.1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindTurbineType1or2IEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindTurbineType1or2IEC"
+                },
+                "WindMechIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind mechanical model associated with this wind generator type 1 or 2 model. Default: None",
+                    "type": "number"
+                },
+                "WindProtectionIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbune protection model associated with this wind generator type 1 or 2 model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
