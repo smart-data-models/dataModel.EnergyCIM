@@ -1,84 +1,83 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro1/schema.json",
-  "title": " Smart Data Models - GovHydro1",
-  "description": "Adapted from CIM data models. Basic Hydro turbine governor model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovHydro1"
-        ],
-        "description": "Property. NGSI type. It has to be GovHydro1"
-    },
-    "at": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine gain (At) (>0).  Typical Value = 1.2. Default: 0.0",
-        "type": "number"
-    },
-    "dturb": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb) (>=0).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "gmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening (Gmax) (>0).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "gmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening (Gmin) (>=0).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "hdam": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine nominal head (hdam).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "qnl": {
-        "description": "Property. Model:'https://schema.org/Number'. No-load flow at nominal head (qnl) (>=0).  Typical Value = 0.08. Default: 0.0",
-        "type": "number"
-    },
-    "rperm": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R) (>0).  Typical Value = 0.04. Default: 0.0",
-        "type": "number"
-    },
-    "rtemp": {
-        "description": "Property. Model:'https://schema.org/Number'. Temporary droop (r) (>R).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant () (>0).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "tg": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tg) (>0).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "tr": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tr) (>0).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "tw": {
-        "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "velm": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate velocity (Vlem) (>0).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro1/schema.json",
+    "title": " Smart Data Models - GovHydro1",
+    "description": "Adapted from CIM data models. Basic Hydro turbine governor model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydro1"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydro1"
+                },
+                "at": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine gain (At) (>0).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "dturb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb) (>=0).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "gmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening (Gmax) (>0).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "gmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening (Gmin) (>=0).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "hdam": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine nominal head (hdam).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "qnl": {
+                    "description": "Property. Model:'https://schema.org/Number'. No-load flow at nominal head (qnl) (>=0).  Typical Value = 0.08. Default: 0.0",
+                    "type": "number"
+                },
+                "rperm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R) (>0).  Typical Value = 0.04. Default: 0.0",
+                    "type": "number"
+                },
+                "rtemp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temporary droop (r) (>R).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant () (>0).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tg) (>0).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tr) (>0).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "tw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "velm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate velocity (Vlem) (>0).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
