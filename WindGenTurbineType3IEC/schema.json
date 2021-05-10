@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType3IEC/schema.json",
-  "title": " Smart Data Models - WindGenTurbineType3IEC",
-  "description": "Adapted from CIM data models. Generator model for wind turbines of IEC type 3A and 3B.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindGenTurbineType3IEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindGenTurbineType3IEC"
-    },
-    "WindAeroLinearIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind aerodynamic model associated with this wind generator type 3 model. Default: None",
-        "type": "number"
-    },
-    "WindContPType3IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind control P type 3 model associated with this wind turbine type 3 model. Default: None",
-        "type": "number"
-    },
-    "WindContPitchAngleIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind control pitch angle model associated with this wind turbine type 3. Default: None",
-        "type": "number"
-    },
-    "WindMechIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind mechanical model associated with this wind turbine Type 3 model. Default: None",
-        "type": "number"
-    },
-    "dipmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum active current ramp rate (di). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "diqmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum reactive current ramp rate (di). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType3IEC/schema.json",
+    "title": " Smart Data Models - WindGenTurbineType3IEC",
+    "description": "Adapted from CIM data models. Generator model for wind turbines of IEC type 3A and 3B.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindGenTurbineType3IEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindGenTurbineType3IEC"
+                },
+                "WindAeroLinearIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind aerodynamic model associated with this wind generator type 3 model. Default: None",
+                    "type": "number"
+                },
+                "WindContPType3IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind control P type 3 model associated with this wind turbine type 3 model. Default: None",
+                    "type": "number"
+                },
+                "WindContPitchAngleIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind control pitch angle model associated with this wind turbine type 3. Default: None",
+                    "type": "number"
+                },
+                "WindMechIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind mechanical model associated with this wind turbine Type 3 model. Default: None",
+                    "type": "number"
+                },
+                "dipmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum active current ramp rate (di). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "diqmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum reactive current ramp rate (di). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
