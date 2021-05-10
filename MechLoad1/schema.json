@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MechLoad1/schema.json",
-  "title": " Smart Data Models - MechLoad1",
-  "description": "Adapted from CIM data models. Mechanical load model type 1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "MechLoad1"
-        ],
-        "description": "Property. NGSI type. It has to be MechLoad1"
-    },
-    "a": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed squared coefficient (a). Default: 0.0",
-        "type": "number"
-    },
-    "b": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed coefficient (b). Default: 0.0",
-        "type": "number"
-    },
-    "d": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed to the exponent coefficient (d). Default: 0.0",
-        "type": "number"
-    },
-    "e": {
-        "description": "Property. Model:'https://schema.org/Number'. Exponent (e). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MechLoad1/schema.json",
+    "title": " Smart Data Models - MechLoad1",
+    "description": "Adapted from CIM data models. Mechanical load model type 1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "MechLoad1"
+                    ],
+                    "description": "Property. NGSI type. It has to be MechLoad1"
+                },
+                "a": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed squared coefficient (a). Default: 0.0",
+                    "type": "number"
+                },
+                "b": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed coefficient (b). Default: 0.0",
+                    "type": "number"
+                },
+                "d": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed to the exponent coefficient (d). Default: 0.0",
+                    "type": "number"
+                },
+                "e": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exponent (e). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
