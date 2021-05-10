@@ -1,104 +1,103 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST4B/schema.json",
-  "title": " Smart Data Models - ExcST4B",
-  "description": "Adapted from CIM data models. Modified IEEE ST4B static excitation system with maximum inner loop feedback gain .",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcST4B"
-        ],
-        "description": "Property. NGSI type. It has to be ExcST4B"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.113. Default: 0.0",
-        "type": "number"
-    },
-    "kg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (Kg). Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (Ki).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kim": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain output (Kim).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kir": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (Kir).  Typical Value = 10.75. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (Kp).  Typical Value = 9.3. Default: 0.0",
-        "type": "number"
-    },
-    "kpm": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain output (Kpm).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kpr": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (Kpr).  Typical Value = 10.75. Default: 0.0",
-        "type": "number"
-    },
-    "lvgate": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector (LVgate). true = LVgate is part of the block diagram false = LVgate is not part of the block diagram.  Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "thetap": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "uel": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector (Uel). true = UEL is part of block diagram false = UEL is not part of block diagram.  Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "vbmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum excitation voltage (Vbmax).  Typical Value = 11.63. Default: 0.0",
-        "type": "number"
-    },
-    "vgmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop feedback voltage (Vgmax).  Typical Value = 5.8. Default: 0.0",
-        "type": "number"
-    },
-    "vmmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop output (Vmmax).  Typical Value = 99. Default: 0.0",
-        "type": "number"
-    },
-    "vmmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum inner loop output (Vmmin).  Typical Value = -99. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = -0.87. Default: 0.0",
-        "type": "number"
-    },
-    "xl": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactance associated with potential source (Xl).  Typical Value = 0.124. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST4B/schema.json",
+    "title": " Smart Data Models - ExcST4B",
+    "description": "Adapted from CIM data models. Modified IEEE ST4B static excitation system with maximum inner loop feedback gain .",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcST4B"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcST4B"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.113. Default: 0.0",
+                    "type": "number"
+                },
+                "kg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (Kg). Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (Ki).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kim": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain output (Kim).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kir": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (Kir).  Typical Value = 10.75. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (Kp).  Typical Value = 9.3. Default: 0.0",
+                    "type": "number"
+                },
+                "kpm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain output (Kpm).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kpr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (Kpr).  Typical Value = 10.75. Default: 0.0",
+                    "type": "number"
+                },
+                "lvgate": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector (LVgate). true = LVgate is part of the block diagram false = LVgate is not part of the block diagram.  Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "thetap": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "uel": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector (Uel). true = UEL is part of block diagram false = UEL is not part of block diagram.  Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "vbmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum excitation voltage (Vbmax).  Typical Value = 11.63. Default: 0.0",
+                    "type": "number"
+                },
+                "vgmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop feedback voltage (Vgmax).  Typical Value = 5.8. Default: 0.0",
+                    "type": "number"
+                },
+                "vmmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop output (Vmmax).  Typical Value = 99. Default: 0.0",
+                    "type": "number"
+                },
+                "vmmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum inner loop output (Vmmin).  Typical Value = -99. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = -0.87. Default: 0.0",
+                    "type": "number"
+                },
+                "xl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactance associated with potential source (Xl).  Typical Value = 0.124. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
