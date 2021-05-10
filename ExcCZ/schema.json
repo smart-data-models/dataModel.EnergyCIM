@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcCZ/schema.json",
-  "title": " Smart Data Models - ExcCZ",
-  "description": "Adapted from CIM data models. Czech Proportion/Integral Exciter.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcCZ"
-        ],
-        "description": "Property. NGSI type. It has to be ExcCZ"
-    },
-    "efdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output maximum limit (Efdmax). Default: 0.0",
-        "type": "number"
-    },
-    "efdmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output minimum limit (Efdmin). Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator gain (Ka). Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke). Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator proportional gain (Kp). Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator time constant (Ta). Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator integral time constant (Tc). Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te). Default: 0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator maximum limit (Vrmax). Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator minimum limit (Vrmin). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcCZ/schema.json",
+    "title": " Smart Data Models - ExcCZ",
+    "description": "Adapted from CIM data models. Czech Proportion/Integral Exciter.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcCZ"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcCZ"
+                },
+                "efdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output maximum limit (Efdmax). Default: 0.0",
+                    "type": "number"
+                },
+                "efdmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output minimum limit (Efdmin). Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator gain (Ka). Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke). Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator proportional gain (Kp). Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator time constant (Ta). Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator integral time constant (Tc). Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te). Default: 0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator maximum limit (Vrmax). Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator minimum limit (Vrmin). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
