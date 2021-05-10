@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RemoteInputSignal/schema.json",
-  "title": " Smart Data Models - RemoteInputSignal",
-  "description": "Adapted from CIM data models. Supports connection to a terminal associated with a remote bus from which an input signal of a specific type is coming.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RemoteInputSignal"
-        ],
-        "description": "Property. NGSI type. It has to be RemoteInputSignal"
-    },
-    "DiscontinuousExcitationControlDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Discontinuous excitation control model using this remote input signal. Default: None",
-        "type": "number"
-    },
-    "PFVArControllerType1Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type I model using this remote input signal. Default: None",
-        "type": "number"
-    },
-    "PowerSystemStabilizerDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Power system stabilizer model using this remote input signal. Default: None",
-        "type": "number"
-    },
-    "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. Remote terminal with which this input signal is associated. Default: None",
-        "type": "number"
-    },
-    "UnderexcitationLimiterDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Underexcitation limiter model using this remote input signal. Default: None",
-        "type": "number"
-    },
-    "VoltageCompensatorDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage compensator model using this remote input signal. Default: None",
-        "type": "number"
-    },
-    "WindPlantDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. The remote signal with which this power plant is associated. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType1or2Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator Type 1 or Type 2 model using this remote input signal. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType3or4Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Remote input signal used by these wind turbine Type 3 or 4 models. Default: None",
-        "type": "number"
-    },
-    "remoteSignalType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RemoteInputSignal/schema.json",
+    "title": " Smart Data Models - RemoteInputSignal",
+    "description": "Adapted from CIM data models. Supports connection to a terminal associated with a remote bus from which an input signal of a specific type is coming.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RemoteInputSignal"
+                    ],
+                    "description": "Property. NGSI type. It has to be RemoteInputSignal"
+                },
+                "DiscontinuousExcitationControlDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Discontinuous excitation control model using this remote input signal. Default: None",
+                    "type": "number"
+                },
+                "PFVArControllerType1Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type I model using this remote input signal. Default: None",
+                    "type": "number"
+                },
+                "PowerSystemStabilizerDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power system stabilizer model using this remote input signal. Default: None",
+                    "type": "number"
+                },
+                "Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. Remote terminal with which this input signal is associated. Default: None",
+                    "type": "number"
+                },
+                "UnderexcitationLimiterDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Underexcitation limiter model using this remote input signal. Default: None",
+                    "type": "number"
+                },
+                "VoltageCompensatorDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage compensator model using this remote input signal. Default: None",
+                    "type": "number"
+                },
+                "WindPlantDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. The remote signal with which this power plant is associated. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType1or2Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator Type 1 or Type 2 model using this remote input signal. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType3or4Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Remote input signal used by these wind turbine Type 3 or 4 models. Default: None",
+                    "type": "number"
+                },
+                "remoteSignalType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
