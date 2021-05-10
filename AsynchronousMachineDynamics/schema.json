@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineDynamics/schema.json",
-  "title": " Smart Data Models - AsynchronousMachineDynamics",
-  "description": "Adapted from CIM data models. Asynchronous machine whose behaviour is described by reference to a standard model expressed in either time constant reactance form or equivalent circuit form",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AsynchronousMachineDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be AsynchronousMachineDynamics"
-    },
-    "AsynchronousMachine": {
-        "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine to which this asynchronous machine dynamics model applies. Default: None",
-        "type": "number"
-    },
-    "MechanicalLoadDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Mechanical load model associated with this asynchronous machine model. Default: None",
-        "type": "number"
-    },
-    "TurbineGovernorDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine-governor model associated with this asynchronous machine model. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType1or2Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator type 1 or 2 model associated with this asynchronous machine model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineDynamics/schema.json",
+    "title": " Smart Data Models - AsynchronousMachineDynamics",
+    "description": "Adapted from CIM data models. Asynchronous machine whose behaviour is described by reference to a standard model expressed in either time constant reactance form or equivalent circuit form",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AsynchronousMachineDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be AsynchronousMachineDynamics"
+                },
+                "AsynchronousMachine": {
+                    "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine to which this asynchronous machine dynamics model applies. Default: None",
+                    "type": "number"
+                },
+                "MechanicalLoadDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Mechanical load model associated with this asynchronous machine model. Default: None",
+                    "type": "number"
+                },
+                "TurbineGovernorDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine-governor model associated with this asynchronous machine model. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType1or2Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator type 1 or 2 model associated with this asynchronous machine model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
