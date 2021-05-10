@@ -1,88 +1,87 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimIEEE1/schema.json",
-  "title": " Smart Data Models - UnderexcLimIEEE1",
-  "description": "Adapted from CIM data models. The class represents the Type UEL1 model which has a circular limit boundary when plotted in terms of machine reactive power vs. real power output.  Reference: IEEE UEL1 421.5-2005 Section 10.1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "UnderexcLimIEEE1"
-        ],
-        "description": "Property. NGSI type. It has to be UnderexcLimIEEE1"
-    },
-    "kuc": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL center setting (K).  Typical Value = 1.38. Default: 0.0",
-        "type": "number"
-    },
-    "kuf": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL excitation system stabilizer gain (K).  Typical Value = 3.3. Default: 0.0",
-        "type": "number"
-    },
-    "kui": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL integral gain (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kul": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL proportional gain (K).  Typical Value = 100. Default: 0.0",
-        "type": "number"
-    },
-    "kur": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL radius setting (K).  Typical Value = 1.95. Default: 0.0",
-        "type": "number"
-    },
-    "tu1": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tu2": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "tu3": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tu4": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vucmax": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL maximum limit for operating point phasor magnitude (V).  Typical Value = 5.8. Default: 0.0",
-        "type": "number"
-    },
-    "vuimax": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL integrator output maximum limit (V). Default: 0.0",
-        "type": "number"
-    },
-    "vuimin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL integrator output minimum limit (V). Default: 0.0",
-        "type": "number"
-    },
-    "vulmax": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL output maximum limit (V).  Typical Value = 18. Default: 0.0",
-        "type": "number"
-    },
-    "vulmin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL output minimum limit (V).  Typical Value = -18. Default: 0.0",
-        "type": "number"
-    },
-    "vurmax": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL maximum limit for radius phasor magnitude (V).  Typical Value = 5.8. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimIEEE1/schema.json",
+    "title": " Smart Data Models - UnderexcLimIEEE1",
+    "description": "Adapted from CIM data models. The class represents the Type UEL1 model which has a circular limit boundary when plotted in terms of machine reactive power vs. real power output.  Reference: IEEE UEL1 421.5-2005 Section 10.1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "UnderexcLimIEEE1"
+                    ],
+                    "description": "Property. NGSI type. It has to be UnderexcLimIEEE1"
+                },
+                "kuc": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL center setting (K).  Typical Value = 1.38. Default: 0.0",
+                    "type": "number"
+                },
+                "kuf": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL excitation system stabilizer gain (K).  Typical Value = 3.3. Default: 0.0",
+                    "type": "number"
+                },
+                "kui": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL integral gain (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kul": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL proportional gain (K).  Typical Value = 100. Default: 0.0",
+                    "type": "number"
+                },
+                "kur": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL radius setting (K).  Typical Value = 1.95. Default: 0.0",
+                    "type": "number"
+                },
+                "tu1": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tu2": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tu3": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tu4": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vucmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL maximum limit for operating point phasor magnitude (V).  Typical Value = 5.8. Default: 0.0",
+                    "type": "number"
+                },
+                "vuimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL integrator output maximum limit (V). Default: 0.0",
+                    "type": "number"
+                },
+                "vuimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL integrator output minimum limit (V). Default: 0.0",
+                    "type": "number"
+                },
+                "vulmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL output maximum limit (V).  Typical Value = 18. Default: 0.0",
+                    "type": "number"
+                },
+                "vulmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL output minimum limit (V).  Typical Value = -18. Default: 0.0",
+                    "type": "number"
+                },
+                "vurmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL maximum limit for radius phasor magnitude (V).  Typical Value = 5.8. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
