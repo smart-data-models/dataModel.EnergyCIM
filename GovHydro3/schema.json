@@ -1,172 +1,171 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro3/schema.json",
-  "title": " Smart Data Models - GovHydro3",
-  "description": "Adapted from CIM data models. Modified IEEE Hydro Governor-Turbine Model.  This model differs from that defined in the IEEE modeling guideline paper in that the limits on gate position and velocity do not permit wind up of the upstream signals.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovHydro3"
-        ],
-        "description": "Property. NGSI type. It has to be GovHydro3"
-    },
-    "at": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine gain (At).  Typical Value = 1.2. Default: 0.0",
-        "type": "number"
-    },
-    "db1": {
-        "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "db2": {
-        "description": "Property. Model:'https://schema.org/Number'. Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "dturb": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "eps": {
-        "description": "Property. Model:'https://schema.org/Number'. Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "governorControl": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor control flag (Cflag). true = PID control is active false = double derivative control is active. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "gv1": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv2": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv3": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv4": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv5": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv6": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "h0": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine nominal head (H0).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Derivative gain (K1).  Typical Value = 0.01. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Double derivative gain, if Cflag = -1 (K2).  Typical Value = 2.5. Default: 0.0",
-        "type": "number"
-    },
-    "kg": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate servo gain (Kg).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Integral gain (Ki).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pgv1": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv2": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv3": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv4": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv5": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv6": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "qnl": {
-        "description": "Property. Model:'https://schema.org/Number'. No-load turbine flow at nominal head (Qnl).  Typical Value = 0.08. Default: 0.0",
-        "type": "number"
-    },
-    "relec": {
-        "description": "Property. Model:'https://schema.org/Number'. Steady-state droop, PU, for electrical power feedback (Relec).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "rgate": {
-        "description": "Property. Model:'https://schema.org/Number'. Steady-state droop, PU, for governor output feedback (Rgate).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "td": {
-        "description": "Property. Model:'https://schema.org/Number'. Input filter time constant (Td).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tf).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "tp": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tp).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "tt": {
-        "description": "Property. Model:'https://schema.org/Number'. Power feedback time constant (Tt).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "tw": {
-        "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "velcl": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.2. Default: 0.0",
-        "type": "number"
-    },
-    "velop": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velop).  Unit = PU/sec. Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro3/schema.json",
+    "title": " Smart Data Models - GovHydro3",
+    "description": "Adapted from CIM data models. Modified IEEE Hydro Governor-Turbine Model.  This model differs from that defined in the IEEE modeling guideline paper in that the limits on gate position and velocity do not permit wind up of the upstream signals.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydro3"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydro3"
+                },
+                "at": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine gain (At).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "db1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "db2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "dturb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "eps": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "governorControl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor control flag (Cflag). true = PID control is active false = double derivative control is active. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "gv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "h0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine nominal head (H0).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative gain (K1).  Typical Value = 0.01. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Double derivative gain, if Cflag = -1 (K2).  Typical Value = 2.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo gain (Kg).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Integral gain (Ki).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "qnl": {
+                    "description": "Property. Model:'https://schema.org/Number'. No-load turbine flow at nominal head (Qnl).  Typical Value = 0.08. Default: 0.0",
+                    "type": "number"
+                },
+                "relec": {
+                    "description": "Property. Model:'https://schema.org/Number'. Steady-state droop, PU, for electrical power feedback (Relec).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "rgate": {
+                    "description": "Property. Model:'https://schema.org/Number'. Steady-state droop, PU, for governor output feedback (Rgate).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input filter time constant (Td).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tf).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tp).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power feedback time constant (Tt).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "tw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "velcl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "velop": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velop).  Unit = PU/sec. Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
