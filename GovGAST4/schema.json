@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST4/schema.json",
-  "title": " Smart Data Models - GovGAST4",
-  "description": "Adapted from CIM data models. Generic turbogas.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovGAST4"
-        ],
-        "description": "Property. NGSI type. It has to be GovGAST4"
-    },
-    "bp": {
-        "description": "Property. Model:'https://schema.org/Number'. Droop (bp).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "ktm": {
-        "description": "Property. Model:'https://schema.org/Number'. Compressor gain (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "mnef": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0",
-        "type": "number"
-    },
-    "mxef": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "rymn": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening (RYMN).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "rymx": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening (RYMX).  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (T).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (T).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "tcm": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel control time constant (T).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "tm": {
-        "description": "Property. Model:'https://schema.org/Number'. Compressor discharge volume time constant (T).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "tv": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of fuel valve positioner (T).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST4/schema.json",
+    "title": " Smart Data Models - GovGAST4",
+    "description": "Adapted from CIM data models. Generic turbogas.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovGAST4"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovGAST4"
+                },
+                "bp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Droop (bp).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "ktm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Compressor gain (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "mnef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "mxef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "rymn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening (RYMN).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "rymx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening (RYMX).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (T).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (T).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tcm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel control time constant (T).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Compressor discharge volume time constant (T).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "tv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of fuel valve positioner (T).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
