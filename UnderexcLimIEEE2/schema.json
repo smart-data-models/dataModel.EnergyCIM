@@ -1,188 +1,187 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimIEEE2/schema.json",
-  "title": " Smart Data Models - UnderexcLimIEEE2",
-  "description": "Adapted from CIM data models. The class represents the Type UEL2 which has either a straight-line or multi-segment characteristic when plotted in terms of machine reactive power output vs. real power output.  Reference: IEEE UEL2 421.5-2005 Section 10.2.  (Limit characteristic lookup table shown in Figure 10.4 (p 32) of the standard).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "UnderexcLimIEEE2"
-        ],
-        "description": "Property. NGSI type. It has to be UnderexcLimIEEE2"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL terminal voltage exponent applied to real power input to UEL limit look-up table (k1).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL terminal voltage exponent applied to reactive power output from UEL limit look-up table (k2).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "kfb": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain associated with optional integrator feedback input signal to UEL (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kuf": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL excitation system stabilizer gain (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kui": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL integral gain (K).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "kul": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL proportional gain (K).  Typical Value = 0.8. Default: 0.0",
-        "type": "number"
-    },
-    "p0": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "p1": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "p10": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
-        "type": "number"
-    },
-    "p2": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0.6. Default: 0.0",
-        "type": "number"
-    },
-    "p3": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0.9. Default: 0.0",
-        "type": "number"
-    },
-    "p4": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 1.02. Default: 0.0",
-        "type": "number"
-    },
-    "p5": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
-        "type": "number"
-    },
-    "p6": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
-        "type": "number"
-    },
-    "p7": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
-        "type": "number"
-    },
-    "p8": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
-        "type": "number"
-    },
-    "p9": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
-        "type": "number"
-    },
-    "q0": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.31. Default: 0.0",
-        "type": "number"
-    },
-    "q1": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.31. Default: 0.0",
-        "type": "number"
-    },
-    "q10": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
-        "type": "number"
-    },
-    "q2": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.28. Default: 0.0",
-        "type": "number"
-    },
-    "q3": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.21. Default: 0.0",
-        "type": "number"
-    },
-    "q4": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "q5": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
-        "type": "number"
-    },
-    "q6": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
-        "type": "number"
-    },
-    "q7": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
-        "type": "number"
-    },
-    "q8": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
-        "type": "number"
-    },
-    "q9": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
-        "type": "number"
-    },
-    "tu1": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tu2": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tu3": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tu4": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tul": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant associated with optional integrator feedback input signal to UEL (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tup": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power filter time constant (T).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "tuq": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power filter time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tuv": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage filter time constant (T).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "vuimax": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL integrator output maximum limit (V).  Typical Value = 0.25. Default: 0.0",
-        "type": "number"
-    },
-    "vuimin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL integrator output minimum limit (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vulmax": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL output maximum limit (V).  Typical Value = 0.25. Default: 0.0",
-        "type": "number"
-    },
-    "vulmin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL output minimum limit (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimIEEE2/schema.json",
+    "title": " Smart Data Models - UnderexcLimIEEE2",
+    "description": "Adapted from CIM data models. The class represents the Type UEL2 which has either a straight-line or multi-segment characteristic when plotted in terms of machine reactive power output vs. real power output.  Reference: IEEE UEL2 421.5-2005 Section 10.2.  (Limit characteristic lookup table shown in Figure 10.4 (p 32) of the standard).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "UnderexcLimIEEE2"
+                    ],
+                    "description": "Property. NGSI type. It has to be UnderexcLimIEEE2"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL terminal voltage exponent applied to real power input to UEL limit look-up table (k1).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL terminal voltage exponent applied to reactive power output from UEL limit look-up table (k2).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "kfb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain associated with optional integrator feedback input signal to UEL (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kuf": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL excitation system stabilizer gain (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kui": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL integral gain (K).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kul": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL proportional gain (K).  Typical Value = 0.8. Default: 0.0",
+                    "type": "number"
+                },
+                "p0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "p1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "p10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
+                    "type": "number"
+                },
+                "p2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0.6. Default: 0.0",
+                    "type": "number"
+                },
+                "p3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 0.9. Default: 0.0",
+                    "type": "number"
+                },
+                "p4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P).  Typical Value = 1.02. Default: 0.0",
+                    "type": "number"
+                },
+                "p5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
+                    "type": "number"
+                },
+                "p6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
+                    "type": "number"
+                },
+                "p7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
+                    "type": "number"
+                },
+                "p8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
+                    "type": "number"
+                },
+                "p9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power values for endpoints (P). Default: 0.0",
+                    "type": "number"
+                },
+                "q0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.31. Default: 0.0",
+                    "type": "number"
+                },
+                "q1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.31. Default: 0.0",
+                    "type": "number"
+                },
+                "q10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
+                    "type": "number"
+                },
+                "q2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.28. Default: 0.0",
+                    "type": "number"
+                },
+                "q3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = -0.21. Default: 0.0",
+                    "type": "number"
+                },
+                "q4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "q5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
+                    "type": "number"
+                },
+                "q6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
+                    "type": "number"
+                },
+                "q7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
+                    "type": "number"
+                },
+                "q8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
+                    "type": "number"
+                },
+                "q9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power values for endpoints (Q). Default: 0.0",
+                    "type": "number"
+                },
+                "tu1": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tu2": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tu3": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lead time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tu4": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tul": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant associated with optional integrator feedback input signal to UEL (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tup": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power filter time constant (T).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "tuq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power filter time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tuv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage filter time constant (T).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "vuimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL integrator output maximum limit (V).  Typical Value = 0.25. Default: 0.0",
+                    "type": "number"
+                },
+                "vuimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL integrator output minimum limit (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vulmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL output maximum limit (V).  Typical Value = 0.25. Default: 0.0",
+                    "type": "number"
+                },
+                "vulmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL output minimum limit (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
