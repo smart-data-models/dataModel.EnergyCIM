@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEAC8B/schema.json",
-  "title": " Smart Data Models - ExcIEEEAC8B",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type AC8B model. This model represents a PID voltage regulator with either a brushless exciter or dc exciter. The AVR in this model consists of PID control, with separate constants for the proportional (), integral (), and derivative () gains. The representation of the brushless exciter (, , , , ) is similar to the model Type AC2A. The Type AC8B model can be used to represent static voltage regulators applied to brushless excitation systems. Digitally based voltage regulators feeding dc rotating main exciters can be represented with the AC Type AC8B model with the parameters  and  set to 0.  For thyristor power stages fed from the generator terminals, the limits  and  should be a function of terminal voltage:  * and  * .     Reference: IEEE Standard 421.5-2005 Section 6.8.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcIEEEAC8B"
-        ],
-        "description": "Property. NGSI type. It has to be ExcIEEEAC8B"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.55. Default: 0.0",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Demagnetizing factor, a function of exciter alternator reactances (K).    Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "kdr": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator derivative gain (K).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kir": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (K).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "kpr": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (K).  Typical Value = 80. Default: 0.0",
-        "type": "number"
-    },
-    "seve1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "seve2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tdr": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.2. Default: 0",
-        "type": "number"
-    },
-    "ve1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (V) equals V (V).  Typical Value = 6.5. Default: 0.0",
-        "type": "number"
-    },
-    "ve2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 9. Default: 0.0",
-        "type": "number"
-    },
-    "vemin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum exciter voltage output (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vfemax": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter field current limit reference (V).  Typical Value = 6. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 35. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEAC8B/schema.json",
+    "title": " Smart Data Models - ExcIEEEAC8B",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type AC8B model. This model represents a PID voltage regulator with either a brushless exciter or dc exciter. The AVR in this model consists of PID control, with separate constants for the proportional (), integral (), and derivative () gains. The representation of the brushless exciter (, , , , ) is similar to the model Type AC2A. The Type AC8B model can be used to represent static voltage regulators applied to brushless excitation systems. Digitally based voltage regulators feeding dc rotating main exciters can be represented with the AC Type AC8B model with the parameters  and  set to 0.  For thyristor power stages fed from the generator terminals, the limits  and  should be a function of terminal voltage:  * and  * .     Reference: IEEE Standard 421.5-2005 Section 6.8.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcIEEEAC8B"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcIEEEAC8B"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.55. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Demagnetizing factor, a function of exciter alternator reactances (K).    Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "kdr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator derivative gain (K).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kir": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (K).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "kpr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (K).  Typical Value = 80. Default: 0.0",
+                    "type": "number"
+                },
+                "seve1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "seve2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tdr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.2. Default: 0",
+                    "type": "number"
+                },
+                "ve1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (V) equals V (V).  Typical Value = 6.5. Default: 0.0",
+                    "type": "number"
+                },
+                "ve2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 9. Default: 0.0",
+                    "type": "number"
+                },
+                "vemin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum exciter voltage output (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vfemax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter field current limit reference (V).  Typical Value = 6. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 35. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
