@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST/schema.json",
-  "title": " Smart Data Models - GovGAST",
-  "description": "Adapted from CIM data models. Single shaft gas turbine.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovGAST"
-        ],
-        "description": "Property. NGSI type. It has to be GovGAST"
-    },
-    "at": {
-        "description": "Property. Model:'https://schema.org/Number'. Ambient temperature load limit (Load Limit).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "dturb": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb).  Typical Value = 0.18. Default: 0.0",
-        "type": "number"
-    },
-    "kt": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0). Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.04. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of a the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine exhaust temperature time constant (T3).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST/schema.json",
+    "title": " Smart Data Models - GovGAST",
+    "description": "Adapted from CIM data models. Single shaft gas turbine.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovGAST"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovGAST"
+                },
+                "at": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ambient temperature load limit (Load Limit).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "dturb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb).  Typical Value = 0.18. Default: 0.0",
+                    "type": "number"
+                },
+                "kt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0). Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.04. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of a the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine exhaust temperature time constant (T3).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
