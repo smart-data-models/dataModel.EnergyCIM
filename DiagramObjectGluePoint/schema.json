@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramObjectGluePoint/schema.json",
-  "title": " Smart Data Models - DiagramObjectGluePoint",
-  "description": "Adapted from CIM data models. This is used for grouping diagram object points from different diagram objects that are considered to be glued together in a diagram even if they are not at the exact same coordinates.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DiagramObjectGluePoint"
-        ],
-        "description": "Property. NGSI type. It has to be DiagramObjectGluePoint"
-    },
-    "DiagramObjectPoints": {
-        "description": "Property. Model:'https://schema.org/Number'. The `glue` point to which this point is associated. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramObjectGluePoint/schema.json",
+    "title": " Smart Data Models - DiagramObjectGluePoint",
+    "description": "Adapted from CIM data models. This is used for grouping diagram object points from different diagram objects that are considered to be glued together in a diagram even if they are not at the exact same coordinates.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DiagramObjectGluePoint"
+                    ],
+                    "description": "Property. NGSI type. It has to be DiagramObjectGluePoint"
+                },
+                "DiagramObjectPoints": {
+                    "description": "Property. Model:'https://schema.org/Number'. The `glue` point to which this point is associated. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
