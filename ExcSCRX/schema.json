@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSCRX/schema.json",
-  "title": " Smart Data Models - ExcSCRX",
-  "description": "Adapted from CIM data models. Simple excitation system model representing generic characteristics of many excitation systems; intended for use where negative field current may be a problem.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcSCRX"
-        ],
-        "description": "Property. NGSI type. It has to be ExcSCRX"
-    },
-    "cswitch": {
-        "description": "Property. Model:'https://schema.org/Number'. Power source switch (Cswitch). true = fixed voltage of 1.0 PU false = generator terminal voltage. Default: False",
-        "type": "number"
-    },
-    "emax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum field voltage output (Emax).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "emin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum field voltage output (Emin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K) (>0).  Typical Value = 200. Default: 0.0",
-        "type": "number"
-    },
-    "rcrfd": {
-        "description": "Property. Model:'https://schema.org/Number'. Rc/Rfd - ratio of field discharge resistance to field winding resistance (RcRfd).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "tatb": {
-        "description": "Property. Model:'https://schema.org/Number'. Ta/Tb - gain reduction ratio of lag-lead element (TaTb). The parameter Ta is not defined explicitly.  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of gain block (Te) (>0).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSCRX/schema.json",
+    "title": " Smart Data Models - ExcSCRX",
+    "description": "Adapted from CIM data models. Simple excitation system model representing generic characteristics of many excitation systems; intended for use where negative field current may be a problem.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcSCRX"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcSCRX"
+                },
+                "cswitch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power source switch (Cswitch). true = fixed voltage of 1.0 PU false = generator terminal voltage. Default: False",
+                    "type": "number"
+                },
+                "emax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum field voltage output (Emax).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "emin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum field voltage output (Emin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K) (>0).  Typical Value = 200. Default: 0.0",
+                    "type": "number"
+                },
+                "rcrfd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rc/Rfd - ratio of field discharge resistance to field winding resistance (RcRfd).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "tatb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ta/Tb - gain reduction ratio of lag-lead element (TaTb). The parameter Ta is not defined explicitly.  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of gain block (Te) (>0).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
