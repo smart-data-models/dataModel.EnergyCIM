@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BaseVoltage/schema.json",
-  "title": " Smart Data Models - BaseVoltage",
-  "description": "Adapted from CIM data models. Defines a system base voltage which is referenced.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "BaseVoltage"
-        ],
-        "description": "Property. NGSI type. It has to be BaseVoltage"
-    },
-    "ConductingEquipment": {
-        "description": "Property. Model:'https://schema.org/Number'. Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: 'list'",
-        "type": "number"
-    },
-    "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The topological nodes at the base voltage. Default: 'list'",
-        "type": "number"
-    },
-    "TransformerEnds": {
-        "description": "Property. Model:'https://schema.org/Number'. Transformer ends at the base voltage.  This is essential for PU calculation. Default: 'list'",
-        "type": "number"
-    },
-    "VoltageLevel": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage levels having this base voltage. Default: 'list'",
-        "type": "number"
-    },
-    "nominalVoltage": {
-        "description": "Property. Model:'https://schema.org/Number'. The power system resource`s base voltage. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BaseVoltage/schema.json",
+    "title": " Smart Data Models - BaseVoltage",
+    "description": "Adapted from CIM data models. Defines a system base voltage which is referenced.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "BaseVoltage"
+                    ],
+                    "description": "Property. NGSI type. It has to be BaseVoltage"
+                },
+                "ConductingEquipment": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: 'list'",
+                    "type": "number"
+                },
+                "TopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The topological nodes at the base voltage. Default: 'list'",
+                    "type": "number"
+                },
+                "TransformerEnds": {
+                    "description": "Property. Model:'https://schema.org/Number'. Transformer ends at the base voltage.  This is essential for PU calculation. Default: 'list'",
+                    "type": "number"
+                },
+                "VoltageLevel": {
+                    "description": "Property. Model:'https://schema.org/Number'. The voltage levels having this base voltage. Default: 'list'",
+                    "type": "number"
+                },
+                "nominalVoltage": {
+                    "description": "Property. Model:'https://schema.org/Number'. The power system resource`s base voltage. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
