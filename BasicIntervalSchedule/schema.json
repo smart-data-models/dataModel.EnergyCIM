@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BasicIntervalSchedule/schema.json",
-  "title": " Smart Data Models - BasicIntervalSchedule",
-  "description": "Adapted from CIM data models. Schedule of values at points in time.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "BasicIntervalSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be BasicIntervalSchedule"
-    },
-    "startTime": {
-        "description": "Property. Model:'https://schema.org/Number'. The time for the first time point. Default: ''",
-        "type": "number"
-    },
-    "value1Unit": {
-        "description": "Property. Model:'https://schema.org/Number'. Value1 units of measure. Default: None",
-        "type": "number"
-    },
-    "value2Unit": {
-        "description": "Property. Model:'https://schema.org/Number'. Value2 units of measure. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BasicIntervalSchedule/schema.json",
+    "title": " Smart Data Models - BasicIntervalSchedule",
+    "description": "Adapted from CIM data models. Schedule of values at points in time.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "BasicIntervalSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be BasicIntervalSchedule"
+                },
+                "startTime": {
+                    "description": "Property. Model:'https://schema.org/Number'. The time for the first time point. Default: ''",
+                    "type": "number"
+                },
+                "value1Unit": {
+                    "description": "Property. Model:'https://schema.org/Number'. Value1 units of measure. Default: None",
+                    "type": "number"
+                },
+                "value2Unit": {
+                    "description": "Property. Model:'https://schema.org/Number'. Value2 units of measure. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
