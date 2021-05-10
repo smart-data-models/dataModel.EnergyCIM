@@ -1,160 +1,159 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGASTWD/schema.json",
-  "title": " Smart Data Models - GovGASTWD",
-  "description": "Adapted from CIM data models. Woodward Gas turbine governor model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovGASTWD"
-        ],
-        "description": "Property. NGSI type. It has to be GovGASTWD"
-    },
-    "a": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve positioner (). Default: 0.0",
-        "type": "number"
-    },
-    "af1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exhaust temperature Parameter (Af1). Default: 0.0",
-        "type": "number"
-    },
-    "af2": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient equal to 0.5(1-speed) (Af2). Default: 0.0",
-        "type": "number"
-    },
-    "b": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve positioner (). Default: 0.0",
-        "type": "number"
-    },
-    "bf1": {
-        "description": "Property. Model:'https://schema.org/Number'. (Bf1).  Bf1 = E(1-w) where E (speed sensitivity coefficient) is 0.55 to 0.65 x Tr. Default: 0.0",
-        "type": "number"
-    },
-    "bf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine Torque Coefficient K (depends on heating value of fuel stream in combustion chamber) (Bf2). Default: 0.0",
-        "type": "number"
-    },
-    "c": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve positioner (). Default: 0.0",
-        "type": "number"
-    },
-    "cf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient defining fuel flow where power output is 0% (Cf2).  Synchronous but no output.  Typically 0.23 x K(23% fuel flow). Default: 0.0",
-        "type": "number"
-    },
-    "ecr": {
-        "description": "Property. Model:'https://schema.org/Number'. Combustion reaction time delay (Ecr). Default: 0",
-        "type": "number"
-    },
-    "etd": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine and exhaust delay (Etd). Default: 0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Ratio of Fuel Adjustment (K3). Default: 0.0",
-        "type": "number"
-    },
-    "k4": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain of radiation shield (K4). Default: 0.0",
-        "type": "number"
-    },
-    "k5": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain of radiation shield (K5). Default: 0.0",
-        "type": "number"
-    },
-    "k6": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum fuel flow (K6). Default: 0.0",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Drop Governor Gain (Kd). Default: 0.0",
-        "type": "number"
-    },
-    "kdroop": {
-        "description": "Property. Model:'https://schema.org/Number'. (Kdroop). Default: 0.0",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel system feedback (Kf). Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Isochronous Governor Gain (Ki). Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. PID Proportional gain (Kp). Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "t": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel Control Time Constant (T). Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Radiation shield time constant (T3). Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Thermocouple time constant (T4). Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature control time constant (T5). Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature control (Tc). Default: 0.0",
-        "type": "number"
-    },
-    "tcd": {
-        "description": "Property. Model:'https://schema.org/Number'. Compressor discharge time constant (Tcd). Default: 0",
-        "type": "number"
-    },
-    "td": {
-        "description": "Property. Model:'https://schema.org/Number'. Power transducer time constant (Td). Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel system time constant (Tf). Default: 0",
-        "type": "number"
-    },
-    "tmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum Turbine limit (Tmax). Default: 0.0",
-        "type": "number"
-    },
-    "tmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum Turbine limit (Tmin). Default: 0.0",
-        "type": "number"
-    },
-    "tr": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated temperature (Tr). Default: 0.0",
-        "type": "number"
-    },
-    "trate": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine rating (Trate).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "tt": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature controller integration rate (Tt). Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGASTWD/schema.json",
+    "title": " Smart Data Models - GovGASTWD",
+    "description": "Adapted from CIM data models. Woodward Gas turbine governor model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovGASTWD"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovGASTWD"
+                },
+                "a": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve positioner (). Default: 0.0",
+                    "type": "number"
+                },
+                "af1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exhaust temperature Parameter (Af1). Default: 0.0",
+                    "type": "number"
+                },
+                "af2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient equal to 0.5(1-speed) (Af2). Default: 0.0",
+                    "type": "number"
+                },
+                "b": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve positioner (). Default: 0.0",
+                    "type": "number"
+                },
+                "bf1": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Bf1).  Bf1 = E(1-w) where E (speed sensitivity coefficient) is 0.55 to 0.65 x Tr. Default: 0.0",
+                    "type": "number"
+                },
+                "bf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine Torque Coefficient K (depends on heating value of fuel stream in combustion chamber) (Bf2). Default: 0.0",
+                    "type": "number"
+                },
+                "c": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve positioner (). Default: 0.0",
+                    "type": "number"
+                },
+                "cf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient defining fuel flow where power output is 0% (Cf2).  Synchronous but no output.  Typically 0.23 x K(23% fuel flow). Default: 0.0",
+                    "type": "number"
+                },
+                "ecr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Combustion reaction time delay (Ecr). Default: 0",
+                    "type": "number"
+                },
+                "etd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine and exhaust delay (Etd). Default: 0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ratio of Fuel Adjustment (K3). Default: 0.0",
+                    "type": "number"
+                },
+                "k4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain of radiation shield (K4). Default: 0.0",
+                    "type": "number"
+                },
+                "k5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain of radiation shield (K5). Default: 0.0",
+                    "type": "number"
+                },
+                "k6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum fuel flow (K6). Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Drop Governor Gain (Kd). Default: 0.0",
+                    "type": "number"
+                },
+                "kdroop": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Kdroop). Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel system feedback (Kf). Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Isochronous Governor Gain (Ki). Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. PID Proportional gain (Kp). Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "t": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel Control Time Constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Radiation shield time constant (T3). Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Thermocouple time constant (T4). Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature control time constant (T5). Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature control (Tc). Default: 0.0",
+                    "type": "number"
+                },
+                "tcd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Compressor discharge time constant (Tcd). Default: 0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power transducer time constant (Td). Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel system time constant (Tf). Default: 0",
+                    "type": "number"
+                },
+                "tmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum Turbine limit (Tmax). Default: 0.0",
+                    "type": "number"
+                },
+                "tmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum Turbine limit (Tmin). Default: 0.0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated temperature (Tr). Default: 0.0",
+                    "type": "number"
+                },
+                "trate": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine rating (Trate).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "tt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature controller integration rate (Tt). Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
