@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Analog/schema.json",
-  "title": " Smart Data Models - Analog",
-  "description": "Adapted from CIM data models. Analog represents an analog Measurement.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Analog"
-        ],
-        "description": "Property. NGSI type. It has to be Analog"
-    },
-    "AnalogValues": {
-        "description": "Property. Model:'https://schema.org/Number'. Measurement to which this value is connected. Default: 'list'",
-        "type": "number"
-    },
-    "LimitSets": {
-        "description": "Property. Model:'https://schema.org/Number'. The Measurements using the LimitSet. Default: 'list'",
-        "type": "number"
-    },
-    "positiveFlowIn": {
-        "description": "Property. Model:'https://schema.org/Number'. If true then this measurement is an active power, reactive power or current with the convention that a positive value measured at the Terminal means power is flowing into the related PowerSystemResource. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Analog/schema.json",
+    "title": " Smart Data Models - Analog",
+    "description": "Adapted from CIM data models. Analog represents an analog Measurement.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Analog"
+                    ],
+                    "description": "Property. NGSI type. It has to be Analog"
+                },
+                "AnalogValues": {
+                    "description": "Property. Model:'https://schema.org/Number'. Measurement to which this value is connected. Default: 'list'",
+                    "type": "number"
+                },
+                "LimitSets": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Measurements using the LimitSet. Default: 'list'",
+                    "type": "number"
+                },
+                "positiveFlowIn": {
+                    "description": "Property. Model:'https://schema.org/Number'. If true then this measurement is an active power, reactive power or current with the convention that a positive value measured at the Terminal means power is flowing into the related PowerSystemResource. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
