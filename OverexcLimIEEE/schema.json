@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLimIEEE/schema.json",
-  "title": " Smart Data Models - OverexcLimIEEE",
-  "description": "Adapted from CIM data models. The over excitation limiter model is intended to represent the significant features of OELs necessary for some large-scale system studies. It is the result of a pragmatic approach to obtain a model that can be widely applied with attainable data from generator owners. An attempt to include all variations in the functionality of OELs and duplicate how they interact with the rest of the excitation systems would likely result in a level of application insufficient for the studies for which they are intended.  Reference: IEEE OEL 421.5-2005 Section 9.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OverexcLimIEEE"
-        ],
-        "description": "Property. NGSI type. It has to be OverexcLimIEEE"
-    },
-    "hyst": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL pickup/drop-out hysteresis (HYST).  Typical Value = 0.03. Default: 0.0",
-        "type": "number"
-    },
-    "ifdlim": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL timed field current limit (I).  Typical Value = 1.05. Default: 0.0",
-        "type": "number"
-    },
-    "ifdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL instantaneous field current limit (I).  Typical Value = 1.5. Default: 0.0",
-        "type": "number"
-    },
-    "itfpu": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL timed field current limiter pickup level (I).  Typical Value = 1.05. Default: 0.0",
-        "type": "number"
-    },
-    "kcd": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL cooldown gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kramp": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL ramped limit rate (K).  Unit = PU/sec.  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLimIEEE/schema.json",
+    "title": " Smart Data Models - OverexcLimIEEE",
+    "description": "Adapted from CIM data models. The over excitation limiter model is intended to represent the significant features of OELs necessary for some large-scale system studies. It is the result of a pragmatic approach to obtain a model that can be widely applied with attainable data from generator owners. An attempt to include all variations in the functionality of OELs and duplicate how they interact with the rest of the excitation systems would likely result in a level of application insufficient for the studies for which they are intended.  Reference: IEEE OEL 421.5-2005 Section 9.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OverexcLimIEEE"
+                    ],
+                    "description": "Property. NGSI type. It has to be OverexcLimIEEE"
+                },
+                "hyst": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL pickup/drop-out hysteresis (HYST).  Typical Value = 0.03. Default: 0.0",
+                    "type": "number"
+                },
+                "ifdlim": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL timed field current limit (I).  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "ifdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL instantaneous field current limit (I).  Typical Value = 1.5. Default: 0.0",
+                    "type": "number"
+                },
+                "itfpu": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL timed field current limiter pickup level (I).  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "kcd": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL cooldown gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kramp": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL ramped limit rate (K).  Unit = PU/sec.  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
