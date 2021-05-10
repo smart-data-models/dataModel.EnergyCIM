@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EarthFaultCompensator/schema.json",
-  "title": " Smart Data Models - EarthFaultCompensator",
-  "description": "Adapted from CIM data models. A conducting equipment used to represent a connection to ground which is typically used to compensate earth faults..   An earth fault compensator device modeled with a single terminal implies a second terminal solidly connected to ground.  If two terminals are modeled, the ground is not assumed and normal connection rules apply.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EarthFaultCompensator"
-        ],
-        "description": "Property. NGSI type. It has to be EarthFaultCompensator"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Nominal resistance of device. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EarthFaultCompensator/schema.json",
+    "title": " Smart Data Models - EarthFaultCompensator",
+    "description": "Adapted from CIM data models. A conducting equipment used to represent a connection to ground which is typically used to compensate earth faults..   An earth fault compensator device modeled with a single terminal implies a second terminal solidly connected to ground.  If two terminals are modeled, the ground is not assumed and normal connection rules apply.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EarthFaultCompensator"
+                    ],
+                    "description": "Property. NGSI type. It has to be EarthFaultCompensator"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nominal resistance of device. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
