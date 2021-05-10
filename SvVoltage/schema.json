@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvVoltage/schema.json",
-  "title": " Smart Data Models - SvVoltage",
-  "description": "Adapted from CIM data models. State variable for voltage.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SvVoltage"
-        ],
-        "description": "Property. NGSI type. It has to be SvVoltage"
-    },
-    "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The state voltage associated with the topological node. Default: None",
-        "type": "number"
-    },
-    "angle": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage angle of the topological node complex voltage with respect to system reference. Default: 0.0",
-        "type": "number"
-    },
-    "v": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage magnitude of the topological node. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvVoltage/schema.json",
+    "title": " Smart Data Models - SvVoltage",
+    "description": "Adapted from CIM data models. State variable for voltage.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SvVoltage"
+                    ],
+                    "description": "Property. NGSI type. It has to be SvVoltage"
+                },
+                "TopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The state voltage associated with the topological node. Default: None",
+                    "type": "number"
+                },
+                "angle": {
+                    "description": "Property. Model:'https://schema.org/Number'. The voltage angle of the topological node complex voltage with respect to system reference. Default: 0.0",
+                    "type": "number"
+                },
+                "v": {
+                    "description": "Property. Model:'https://schema.org/Number'. The voltage magnitude of the topological node. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
