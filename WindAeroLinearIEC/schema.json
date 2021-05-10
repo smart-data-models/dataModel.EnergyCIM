@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindAeroLinearIEC/schema.json",
-  "title": " Smart Data Models - WindAeroLinearIEC",
-  "description": "Adapted from CIM data models. The linearised aerodynamic model.    Reference: IEC Standard 614000-27-1 Section 6.6.1.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindAeroLinearIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindAeroLinearIEC"
-    },
-    "WindGenTurbineType3IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator type 3 model with which this wind aerodynamic model is associated. Default: None",
-        "type": "number"
-    },
-    "dpomega": {
-        "description": "Property. Model:'https://schema.org/Number'. Partial derivative of aerodynamic power with respect to changes in WTR speed (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "dptheta": {
-        "description": "Property. Model:'https://schema.org/Number'. Partial derivative of aerodynamic power with respect to changes in pitch angle (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "omegazero": {
-        "description": "Property. Model:'https://schema.org/Number'. Rotor speed if the wind turbine is not derated (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "pavail": {
-        "description": "Property. Model:'https://schema.org/Number'. Available aerodynamic power (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "thetazero": {
-        "description": "Property. Model:'https://schema.org/Number'. Pitch angle if the wind turbine is not derated (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindAeroLinearIEC/schema.json",
+    "title": " Smart Data Models - WindAeroLinearIEC",
+    "description": "Adapted from CIM data models. The linearised aerodynamic model.    Reference: IEC Standard 614000-27-1 Section 6.6.1.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindAeroLinearIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindAeroLinearIEC"
+                },
+                "WindGenTurbineType3IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator type 3 model with which this wind aerodynamic model is associated. Default: None",
+                    "type": "number"
+                },
+                "dpomega": {
+                    "description": "Property. Model:'https://schema.org/Number'. Partial derivative of aerodynamic power with respect to changes in WTR speed (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "dptheta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Partial derivative of aerodynamic power with respect to changes in pitch angle (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "omegazero": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rotor speed if the wind turbine is not derated (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "pavail": {
+                    "description": "Property. Model:'https://schema.org/Number'. Available aerodynamic power (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "thetazero": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pitch angle if the wind turbine is not derated (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
