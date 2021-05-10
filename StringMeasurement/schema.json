@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/StringMeasurement/schema.json",
-  "title": " Smart Data Models - StringMeasurement",
-  "description": "Adapted from CIM data models. StringMeasurement represents a measurement with values of type string.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "StringMeasurement"
-        ],
-        "description": "Property. NGSI type. It has to be StringMeasurement"
-    },
-    "StringMeasurementValues": {
-        "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/StringMeasurement/schema.json",
+    "title": " Smart Data Models - StringMeasurement",
+    "description": "Adapted from CIM data models. StringMeasurement represents a measurement with values of type string.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "StringMeasurement"
+                    ],
+                    "description": "Property. NGSI type. It has to be StringMeasurement"
+                },
+                "StringMeasurementValues": {
+                    "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
