@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPitchContEmulIEC/schema.json",
-  "title": " Smart Data Models - WindPitchContEmulIEC",
-  "description": "Adapted from CIM data models. Pitch control emulator model.  Reference: IEC Standard 61400-27-1 Section 6.6.5.1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindPitchContEmulIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindPitchContEmulIEC"
-    },
-    "WindGenTurbineType2IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 2 model with which this Pitch control emulator model is associated. Default: None",
-        "type": "number"
-    },
-    "kdroop": {
-        "description": "Property. Model:'https://schema.org/Number'. Power error gain (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kipce": {
-        "description": "Property. Model:'https://schema.org/Number'. Pitch control emulator integral constant (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "komegaaero": {
-        "description": "Property. Model:'https://schema.org/Number'. Aerodynamic power change vs. omegachange (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kppce": {
-        "description": "Property. Model:'https://schema.org/Number'. Pitch control emulator proportional constant (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "omegaref": {
-        "description": "Property. Model:'https://schema.org/Number'. Rotor speed in initial steady state (omega). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "pimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum steady state power (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "pimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum steady state power (). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. First time constant in pitch control lag (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Second time constant in pitch control lag (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpe": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in generator air gap power lag (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPitchContEmulIEC/schema.json",
+    "title": " Smart Data Models - WindPitchContEmulIEC",
+    "description": "Adapted from CIM data models. Pitch control emulator model.  Reference: IEC Standard 61400-27-1 Section 6.6.5.1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindPitchContEmulIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindPitchContEmulIEC"
+                },
+                "WindGenTurbineType2IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 2 model with which this Pitch control emulator model is associated. Default: None",
+                    "type": "number"
+                },
+                "kdroop": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power error gain (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kipce": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pitch control emulator integral constant (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "komegaaero": {
+                    "description": "Property. Model:'https://schema.org/Number'. Aerodynamic power change vs. omegachange (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kppce": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pitch control emulator proportional constant (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "omegaref": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rotor speed in initial steady state (omega). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "pimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum steady state power (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "pimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum steady state power (). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. First time constant in pitch control lag (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Second time constant in pitch control lag (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in generator air gap power lag (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
