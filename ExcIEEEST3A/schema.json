@@ -1,108 +1,107 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST3A/schema.json",
-  "title": " Smart Data Models - ExcIEEEST3A",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST3A model.  Some static systems utilize a field voltage control loop to linearize the exciter control characteristic. This also makes the output independent of supply source variations until supply limitations are reached.  These systems utilize a variety of controlled-rectifier designs: full thyristor complements or hybrid bridges in either series or shunt configurations. The power source may consist of only a potential source, either fed from the machine terminals or from internal windings. Some designs may have compound power sources utilizing both machine potential and current. These power sources are represented as phasor combinations of machine terminal current and voltage and are accommodated by suitable parameters in model Type ST3A which is represented by ExcIEEEST3A.   Reference: IEEE Standard 421.5-2005 Section 7.3.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcIEEEST3A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcIEEEST3A"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "kg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "km": {
-        "description": "Property. Model:'https://schema.org/Number'. Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "thetap": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "tm": {
-        "description": "Property. Model:'https://schema.org/Number'. Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: 0",
-        "type": "number"
-    },
-    "vbmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum excitation voltage (V).  Typical Value = 6.9. Default: 0.0",
-        "type": "number"
-    },
-    "vgmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: 0.0",
-        "type": "number"
-    },
-    "vimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "vimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: 0.0",
-        "type": "number"
-    },
-    "vmmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop output (V).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vmmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum inner loop output (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "xl": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactance associated with potential source (X).  Typical Value = 0.081. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST3A/schema.json",
+    "title": " Smart Data Models - ExcIEEEST3A",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST3A model.  Some static systems utilize a field voltage control loop to linearize the exciter control characteristic. This also makes the output independent of supply source variations until supply limitations are reached.  These systems utilize a variety of controlled-rectifier designs: full thyristor complements or hybrid bridges in either series or shunt configurations. The power source may consist of only a potential source, either fed from the machine terminals or from internal windings. Some designs may have compound power sources utilizing both machine potential and current. These power sources are represented as phasor combinations of machine terminal current and voltage and are accommodated by suitable parameters in model Type ST3A which is represented by ExcIEEEST3A.   Reference: IEEE Standard 421.5-2005 Section 7.3.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcIEEEST3A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcIEEEST3A"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "kg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "km": {
+                    "description": "Property. Model:'https://schema.org/Number'. Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "thetap": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "tm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: 0",
+                    "type": "number"
+                },
+                "vbmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum excitation voltage (V).  Typical Value = 6.9. Default: 0.0",
+                    "type": "number"
+                },
+                "vgmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: 0.0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "vimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "vmmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop output (V).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum inner loop output (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "xl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactance associated with potential source (X).  Typical Value = 0.081. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
