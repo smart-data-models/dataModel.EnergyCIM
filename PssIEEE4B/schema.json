@@ -1,296 +1,295 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE4B/schema.json",
-  "title": " Smart Data Models - PssIEEE4B",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.  Reference: IEEE 4B 421.5-2005 Section 8.4.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssIEEE4B"
-        ],
-        "description": "Property. NGSI type. It has to be PssIEEE4B"
-    },
-    "bwh1": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (high-frequency band): Three dB bandwidth (B). Default: 0.0",
-        "type": "number"
-    },
-    "bwh2": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (high-frequency band): Three dB bandwidth (B). Default: 0.0",
-        "type": "number"
-    },
-    "bwl1": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (low-frequency band): Three dB bandwidth (B). Default: 0.0",
-        "type": "number"
-    },
-    "bwl2": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (low-frequency band): Three dB bandwidth (B). Default: 0.0",
-        "type": "number"
-    },
-    "kh": {
-        "description": "Property. Model:'https://schema.org/Number'. High band gain (K).  Typical Value = 120. Default: 0.0",
-        "type": "number"
-    },
-    "kh1": {
-        "description": "Property. Model:'https://schema.org/Number'. High band differential filter gain (K).  Typical Value = 66. Default: 0.0",
-        "type": "number"
-    },
-    "kh11": {
-        "description": "Property. Model:'https://schema.org/Number'. High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kh17": {
-        "description": "Property. Model:'https://schema.org/Number'. High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kh2": {
-        "description": "Property. Model:'https://schema.org/Number'. High band differential filter gain (K).  Typical Value = 66. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band gain (K).  Typical Value = 30. Default: 0.0",
-        "type": "number"
-    },
-    "ki1": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0",
-        "type": "number"
-    },
-    "ki11": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "ki17": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "ki2": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0",
-        "type": "number"
-    },
-    "kl": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band gain (K).  Typical Value = 7.5. Default: 0.0",
-        "type": "number"
-    },
-    "kl1": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band differential filter gain (K).  Typical Value = 66. Default: 0.0",
-        "type": "number"
-    },
-    "kl11": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kl17": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kl2": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band differential filter gain (K).  Typical Value = 66. Default: 0.0",
-        "type": "number"
-    },
-    "omeganh1": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (high-frequency band): filter frequency (omega). Default: 0.0",
-        "type": "number"
-    },
-    "omeganh2": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (high-frequency band): filter frequency (omega). Default: 0.0",
-        "type": "number"
-    },
-    "omeganl1": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (low-frequency band): filter frequency (omega). Default: 0.0",
-        "type": "number"
-    },
-    "omeganl2": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (low-frequency band): filter frequency (omega). Default: 0.0",
-        "type": "number"
-    },
-    "th1": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.01513. Default: 0",
-        "type": "number"
-    },
-    "th10": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th11": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th12": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th2": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.01816. Default: 0",
-        "type": "number"
-    },
-    "th3": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th4": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th5": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th6": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "th7": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.01816. Default: 0",
-        "type": "number"
-    },
-    "th8": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.02179. Default: 0",
-        "type": "number"
-    },
-    "th9": {
-        "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti1": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.173. Default: 0",
-        "type": "number"
-    },
-    "ti10": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti11": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti12": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti2": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0",
-        "type": "number"
-    },
-    "ti3": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti4": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti5": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti6": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ti7": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0",
-        "type": "number"
-    },
-    "ti8": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.2491. Default: 0",
-        "type": "number"
-    },
-    "ti9": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl1": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 1.73. Default: 0",
-        "type": "number"
-    },
-    "tl10": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl11": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl12": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl2": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 2.075. Default: 0",
-        "type": "number"
-    },
-    "tl3": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl4": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl5": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl6": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl7": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 2.075. Default: 0",
-        "type": "number"
-    },
-    "tl8": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 2.491. Default: 0",
-        "type": "number"
-    },
-    "tl9": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vhmax": {
-        "description": "Property. Model:'https://schema.org/Number'. High band output maximum limit (V).  Typical Value = 0.6. Default: 0.0",
-        "type": "number"
-    },
-    "vhmin": {
-        "description": "Property. Model:'https://schema.org/Number'. High band output minimum limit (V).  Typical Value = -0.6. Default: 0.0",
-        "type": "number"
-    },
-    "vimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band output maximum limit (V).  Typical Value = 0.6. Default: 0.0",
-        "type": "number"
-    },
-    "vimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate band output minimum limit (V).  Typical Value = -0.6. Default: 0.0",
-        "type": "number"
-    },
-    "vlmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band output maximum limit (V).  Typical Value = 0.075. Default: 0.0",
-        "type": "number"
-    },
-    "vlmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Low band output minimum limit (V).  Typical Value = -0.075. Default: 0.0",
-        "type": "number"
-    },
-    "vstmax": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS output maximum limit (V).  Typical Value = 0.15. Default: 0.0",
-        "type": "number"
-    },
-    "vstmin": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS output minimum limit (V).  Typical Value = -0.15. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE4B/schema.json",
+    "title": " Smart Data Models - PssIEEE4B",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.  Reference: IEEE 4B 421.5-2005 Section 8.4.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssIEEE4B"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssIEEE4B"
+                },
+                "bwh1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (high-frequency band): Three dB bandwidth (B). Default: 0.0",
+                    "type": "number"
+                },
+                "bwh2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (high-frequency band): Three dB bandwidth (B). Default: 0.0",
+                    "type": "number"
+                },
+                "bwl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (low-frequency band): Three dB bandwidth (B). Default: 0.0",
+                    "type": "number"
+                },
+                "bwl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (low-frequency band): Three dB bandwidth (B). Default: 0.0",
+                    "type": "number"
+                },
+                "kh": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band gain (K).  Typical Value = 120. Default: 0.0",
+                    "type": "number"
+                },
+                "kh1": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band differential filter gain (K).  Typical Value = 66. Default: 0.0",
+                    "type": "number"
+                },
+                "kh11": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kh17": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kh2": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band differential filter gain (K).  Typical Value = 66. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band gain (K).  Typical Value = 30. Default: 0.0",
+                    "type": "number"
+                },
+                "ki1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0",
+                    "type": "number"
+                },
+                "ki11": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "ki17": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "ki2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0",
+                    "type": "number"
+                },
+                "kl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band gain (K).  Typical Value = 7.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band differential filter gain (K).  Typical Value = 66. Default: 0.0",
+                    "type": "number"
+                },
+                "kl11": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kl17": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band differential filter gain (K).  Typical Value = 66. Default: 0.0",
+                    "type": "number"
+                },
+                "omeganh1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (high-frequency band): filter frequency (omega). Default: 0.0",
+                    "type": "number"
+                },
+                "omeganh2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (high-frequency band): filter frequency (omega). Default: 0.0",
+                    "type": "number"
+                },
+                "omeganl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 1 (low-frequency band): filter frequency (omega). Default: 0.0",
+                    "type": "number"
+                },
+                "omeganl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter 2 (low-frequency band): filter frequency (omega). Default: 0.0",
+                    "type": "number"
+                },
+                "th1": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.01513. Default: 0",
+                    "type": "number"
+                },
+                "th10": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th11": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th12": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th2": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.01816. Default: 0",
+                    "type": "number"
+                },
+                "th3": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th4": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th5": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th6": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "th7": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.01816. Default: 0",
+                    "type": "number"
+                },
+                "th8": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0.02179. Default: 0",
+                    "type": "number"
+                },
+                "th9": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.173. Default: 0",
+                    "type": "number"
+                },
+                "ti10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti11": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0",
+                    "type": "number"
+                },
+                "ti3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ti7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0",
+                    "type": "number"
+                },
+                "ti8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0.2491. Default: 0",
+                    "type": "number"
+                },
+                "ti9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 1.73. Default: 0",
+                    "type": "number"
+                },
+                "tl10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl11": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 2.075. Default: 0",
+                    "type": "number"
+                },
+                "tl3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 2.075. Default: 0",
+                    "type": "number"
+                },
+                "tl8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 2.491. Default: 0",
+                    "type": "number"
+                },
+                "tl9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vhmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band output maximum limit (V).  Typical Value = 0.6. Default: 0.0",
+                    "type": "number"
+                },
+                "vhmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. High band output minimum limit (V).  Typical Value = -0.6. Default: 0.0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band output maximum limit (V).  Typical Value = 0.6. Default: 0.0",
+                    "type": "number"
+                },
+                "vimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate band output minimum limit (V).  Typical Value = -0.6. Default: 0.0",
+                    "type": "number"
+                },
+                "vlmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band output maximum limit (V).  Typical Value = 0.075. Default: 0.0",
+                    "type": "number"
+                },
+                "vlmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low band output minimum limit (V).  Typical Value = -0.075. Default: 0.0",
+                    "type": "number"
+                },
+                "vstmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS output maximum limit (V).  Typical Value = 0.15. Default: 0.0",
+                    "type": "number"
+                },
+                "vstmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS output minimum limit (V).  Typical Value = -0.15. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
