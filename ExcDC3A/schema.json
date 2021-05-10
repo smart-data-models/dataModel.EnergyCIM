@@ -1,92 +1,91 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcDC3A/schema.json",
-  "title": " Smart Data Models - ExcDC3A",
-  "description": "Adapted from CIM data models. This is modified IEEE DC3A direct current commutator exciters with speed input, and death band.  DC old type 4.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcDC3A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcDC3A"
-    },
-    "edfmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage exciter output limiter (Efdmax).  Typical Value = 99. Default: 0.0",
-        "type": "number"
-    },
-    "efd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 2.6. Default: 0.0",
-        "type": "number"
-    },
-    "efd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 3.45. Default: 0.0",
-        "type": "number"
-    },
-    "efdlim": {
-        "description": "Property. Model:'https://schema.org/Number'. (Efdlim). true = exciter output limiter is active false = exciter output limiter not active. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "efdmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage exciter output limiter (Efdmin).  Typical Value = -99. Default: 0.0",
-        "type": "number"
-    },
-    "exclim": {
-        "description": "Property. Model:'https://schema.org/Number'. (exclim).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero not applied to integrator output. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kr": {
-        "description": "Property. Model:'https://schema.org/Number'. Death band (Kr).  If Kr is not zero, the voltage regulator input changes at a constant rate if Verr > Kr or Verr < -Kr as per the IEEE (1968) Type 4 model. If Kr is zero, the error signal drives the voltage regulator continuously as per the IEEE (1980) DC3 and IEEE (1992, 2005) DC3A models.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kv": {
-        "description": "Property. Model:'https://schema.org/Number'. Fast raise/lower contact setting (Kv).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "seefd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Eefd1]).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "seefd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd2 (Se[Efd2]).  Typical Value = 0.35. Default: 0.0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.83. Default: 0",
-        "type": "number"
-    },
-    "trh": {
-        "description": "Property. Model:'https://schema.org/Number'. Rheostat travel time (Trh).  Typical Value = 20. Default: 0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcDC3A/schema.json",
+    "title": " Smart Data Models - ExcDC3A",
+    "description": "Adapted from CIM data models. This is modified IEEE DC3A direct current commutator exciters with speed input, and death band.  DC old type 4.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcDC3A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcDC3A"
+                },
+                "edfmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage exciter output limiter (Efdmax).  Typical Value = 99. Default: 0.0",
+                    "type": "number"
+                },
+                "efd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 2.6. Default: 0.0",
+                    "type": "number"
+                },
+                "efd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 3.45. Default: 0.0",
+                    "type": "number"
+                },
+                "efdlim": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Efdlim). true = exciter output limiter is active false = exciter output limiter not active. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "efdmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage exciter output limiter (Efdmin).  Typical Value = -99. Default: 0.0",
+                    "type": "number"
+                },
+                "exclim": {
+                    "description": "Property. Model:'https://schema.org/Number'. (exclim).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero not applied to integrator output. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Death band (Kr).  If Kr is not zero, the voltage regulator input changes at a constant rate if Verr > Kr or Verr < -Kr as per the IEEE (1968) Type 4 model. If Kr is zero, the error signal drives the voltage regulator continuously as per the IEEE (1980) DC3 and IEEE (1992, 2005) DC3A models.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fast raise/lower contact setting (Kv).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "seefd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Eefd1]).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "seefd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd2 (Se[Efd2]).  Typical Value = 0.35. Default: 0.0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.83. Default: 0",
+                    "type": "number"
+                },
+                "trh": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rheostat travel time (Trh).  Typical Value = 20. Default: 0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
