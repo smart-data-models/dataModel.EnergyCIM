@@ -1,120 +1,119 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType3IEC/schema.json",
-  "title": " Smart Data Models - WindContPType3IEC",
-  "description": "Adapted from CIM data models. P control model Type 3.  Reference: IEC Standard 61400-27-1 Section 6.6.5.3.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindContPType3IEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindContPType3IEC"
-    },
-    "WindDynamicsLookupTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The P control type 3 model with which this wind dynamics lookup table is associated. Default: 'list'",
-        "type": "number"
-    },
-    "WindGenTurbineType3IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 3 model with which this Wind control P type 3 model is associated. Default: None",
-        "type": "number"
-    },
-    "dpmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "dtrisemaxlvrt": {
-        "description": "Property. Model:'https://schema.org/Number'. Limitation of torque rise rate during LVRT for S (d). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kdtd": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain for active drive train damping (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kip": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller integration parameter (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpp": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "mplvrt": {
-        "description": "Property. Model:'https://schema.org/Number'. Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False",
-        "type": "number"
-    },
-    "omegaoffset": {
-        "description": "Property. Model:'https://schema.org/Number'. Offset to reference value that limits controller action during rotor speed changes (omega). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "pdtdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum active drive train damping power (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "rramp": {
-        "description": "Property. Model:'https://schema.org/Number'. Ramp limitation of torque, required in some grid codes (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tdvs": {
-        "description": "Property. Model:'https://schema.org/Number'. Timedelay after deep voltage sags (T). It is project dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "temin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum electrical generator torque (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tomegafilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpfilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant for power measurement (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpord": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in power order lag (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tufilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tuscale": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage scaling factor of reset-torque (T). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "twref": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in speed reference filter (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "udvs": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage limit for hold LVRT status after deep voltage sags (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "updip": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage dip threshold for P-control ().  Part of turbine control, often different (e.g 0.8) from converter thresholds. It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "wdtd": {
-        "description": "Property. Model:'https://schema.org/Number'. Active drive train damping frequency (omega). It can be calculated from two mass model parameters. It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "zeta": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient for active drive train damping (zeta). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType3IEC/schema.json",
+    "title": " Smart Data Models - WindContPType3IEC",
+    "description": "Adapted from CIM data models. P control model Type 3.  Reference: IEC Standard 61400-27-1 Section 6.6.5.3.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindContPType3IEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindContPType3IEC"
+                },
+                "WindDynamicsLookupTable": {
+                    "description": "Property. Model:'https://schema.org/Number'. The P control type 3 model with which this wind dynamics lookup table is associated. Default: 'list'",
+                    "type": "number"
+                },
+                "WindGenTurbineType3IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 3 model with which this Wind control P type 3 model is associated. Default: None",
+                    "type": "number"
+                },
+                "dpmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "dtrisemaxlvrt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limitation of torque rise rate during LVRT for S (d). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kdtd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain for active drive train damping (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kip": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller integration parameter (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpp": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "mplvrt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False",
+                    "type": "number"
+                },
+                "omegaoffset": {
+                    "description": "Property. Model:'https://schema.org/Number'. Offset to reference value that limits controller action during rotor speed changes (omega). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "pdtdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum active drive train damping power (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "rramp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ramp limitation of torque, required in some grid codes (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tdvs": {
+                    "description": "Property. Model:'https://schema.org/Number'. Timedelay after deep voltage sags (T). It is project dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "temin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum electrical generator torque (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tomegafilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpfilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant for power measurement (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpord": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in power order lag (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tufilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tuscale": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage scaling factor of reset-torque (T). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "twref": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in speed reference filter (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "udvs": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage limit for hold LVRT status after deep voltage sags (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "updip": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage dip threshold for P-control ().  Part of turbine control, often different (e.g 0.8) from converter thresholds. It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "wdtd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active drive train damping frequency (omega). It can be calculated from two mass model parameters. It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "zeta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient for active drive train damping (zeta). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
