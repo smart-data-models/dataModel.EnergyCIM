@@ -1,84 +1,83 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR4/schema.json",
-  "title": " Smart Data Models - ExcAVR4",
-  "description": "Adapted from CIM data models. Italian excitation system. It represents static exciter and electric voltage regulator.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAVR4"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAVR4"
-    },
-    "imul": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR output voltage dependency selector (Imul). true = selector is connected false = selector is not connected. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR gain (K).  Typical Value = 300. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kif": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter internal reactance (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 4.8. Default: 0",
-        "type": "number"
-    },
-    "t1if": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter current feedback time constant (T).  Typical Value = 60. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 1.5. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tif": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter current feedback time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vfmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum exciter output (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vfmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum exciter output (V).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vrmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vrmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum AVR output (V).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR4/schema.json",
+    "title": " Smart Data Models - ExcAVR4",
+    "description": "Adapted from CIM data models. Italian excitation system. It represents static exciter and electric voltage regulator.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAVR4"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAVR4"
+                },
+                "imul": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR output voltage dependency selector (Imul). true = selector is connected false = selector is not connected. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR gain (K).  Typical Value = 300. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kif": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter internal reactance (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 4.8. Default: 0",
+                    "type": "number"
+                },
+                "t1if": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter current feedback time constant (T).  Typical Value = 60. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 1.5. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tif": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter current feedback time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vfmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum exciter output (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vfmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum exciter output (V).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum AVR output (V).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
