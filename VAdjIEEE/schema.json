@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VAdjIEEE/schema.json",
-  "title": " Smart Data Models - VAdjIEEE",
-  "description": "Adapted from CIM data models. The class represents IEEE Voltage Adjuster which is used to represent the voltage adjuster in either a power factor or var control system.  Reference: IEEE Standard 421.5-2005 Section 11.1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "VAdjIEEE"
-        ],
-        "description": "Property. NGSI type. It has to be VAdjIEEE"
-    },
-    "adjslew": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate at which output of adjuster changes ().  Unit = sec./PU.  Typical Value = 300. Default: 0.0",
-        "type": "number"
-    },
-    "taoff": {
-        "description": "Property. Model:'https://schema.org/Number'. Time that adjuster pulses are off ().  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "taon": {
-        "description": "Property. Model:'https://schema.org/Number'. Time that adjuster pulses are on ().  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "vadjf": {
-        "description": "Property. Model:'https://schema.org/Number'. Set high to provide a continuous raise or lower (). Default: 0.0",
-        "type": "number"
-    },
-    "vadjmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum output of the adjuster ().  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "vadjmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum output of the adjuster ().  Typical Value = 0.9. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VAdjIEEE/schema.json",
+    "title": " Smart Data Models - VAdjIEEE",
+    "description": "Adapted from CIM data models. The class represents IEEE Voltage Adjuster which is used to represent the voltage adjuster in either a power factor or var control system.  Reference: IEEE Standard 421.5-2005 Section 11.1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "VAdjIEEE"
+                    ],
+                    "description": "Property. NGSI type. It has to be VAdjIEEE"
+                },
+                "adjslew": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate at which output of adjuster changes ().  Unit = sec./PU.  Typical Value = 300. Default: 0.0",
+                    "type": "number"
+                },
+                "taoff": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time that adjuster pulses are off ().  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "taon": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time that adjuster pulses are on ().  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "vadjf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set high to provide a continuous raise or lower (). Default: 0.0",
+                    "type": "number"
+                },
+                "vadjmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum output of the adjuster ().  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vadjmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum output of the adjuster ().  Typical Value = 0.9. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
