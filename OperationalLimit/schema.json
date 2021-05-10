@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OperationalLimit/schema.json",
-  "title": " Smart Data Models - OperationalLimit",
-  "description": "Adapted from CIM data models. A value associated with a specific kind of limit.  The sub class value attribute shall be positive.  The sub class value attribute is inversely proportional to OperationalLimitType.acceptableDuration (acceptableDuration for short). A pair of value_x and acceptableDuration_x are related to each other as follows: if value_1 > value_2 > value_3 >... then acceptableDuration_1 < acceptableDuration_2 < acceptableDuration_3 < ... A value_x with direction='high' shall be greater than a value_y with direction='low'.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OperationalLimit"
-        ],
-        "description": "Property. NGSI type. It has to be OperationalLimit"
-    },
-    "OperationalLimitSet": {
-        "description": "Property. Model:'https://schema.org/Number'. Values of equipment limits. Default: None",
-        "type": "number"
-    },
-    "OperationalLimitType": {
-        "description": "Property. Model:'https://schema.org/Number'. The limit type associated with this limit. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OperationalLimit/schema.json",
+    "title": " Smart Data Models - OperationalLimit",
+    "description": "Adapted from CIM data models. A value associated with a specific kind of limit.  The sub class value attribute shall be positive.  The sub class value attribute is inversely proportional to OperationalLimitType.acceptableDuration (acceptableDuration for short). A pair of value_x and acceptableDuration_x are related to each other as follows: if value_1 > value_2 > value_3 >... then acceptableDuration_1 < acceptableDuration_2 < acceptableDuration_3 < ... A value_x with direction='high' shall be greater than a value_y with direction='low'.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OperationalLimit"
+                    ],
+                    "description": "Property. NGSI type. It has to be OperationalLimit"
+                },
+                "OperationalLimitSet": {
+                    "description": "Property. Model:'https://schema.org/Number'. Values of equipment limits. Default: None",
+                    "type": "number"
+                },
+                "OperationalLimitType": {
+                    "description": "Property. Model:'https://schema.org/Number'. The limit type associated with this limit. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
