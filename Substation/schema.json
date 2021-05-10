@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Substation/schema.json",
-  "title": " Smart Data Models - Substation",
-  "description": "Adapted from CIM data models. A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Substation"
-        ],
-        "description": "Property. NGSI type. It has to be Substation"
-    },
-    "DCConverterUnit": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    },
-    "Region": {
-        "description": "Property. Model:'https://schema.org/Number'. The SubGeographicalRegion containing the substation. Default: None",
-        "type": "number"
-    },
-    "VoltageLevels": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage levels within this substation. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Substation/schema.json",
+    "title": " Smart Data Models - Substation",
+    "description": "Adapted from CIM data models. A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Substation"
+                    ],
+                    "description": "Property. NGSI type. It has to be Substation"
+                },
+                "DCConverterUnit": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                },
+                "Region": {
+                    "description": "Property. Model:'https://schema.org/Number'. The SubGeographicalRegion containing the substation. Default: None",
+                    "type": "number"
+                },
+                "VoltageLevels": {
+                    "description": "Property. Model:'https://schema.org/Number'. The voltage levels within this substation. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
