@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadResponseCharacteristic/schema.json",
-  "title": " Smart Data Models - LoadResponseCharacteristic",
-  "description": "Adapted from CIM data models. Models the characteristic response of the load demand due to changes in system conditions such as voltage and frequency. This is not related to demand response.  If LoadResponseCharacteristic.exponentModel is True, the voltage exponents are specified and used as to calculate:  Active power component = Pnominal * (Voltage/cim:BaseVoltage.nominalVoltage) ** cim:LoadResponseCharacteristic.pVoltageExponent  Reactive power component = Qnominal * (Voltage/cim:BaseVoltage.nominalVoltage)** cim:LoadResponseCharacteristic.qVoltageExponent  Where  * means 'multiply' and ** is 'raised to power of'.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "LoadResponseCharacteristic"
-        ],
-        "description": "Property. NGSI type. It has to be LoadResponseCharacteristic"
-    },
-    "EnergyConsumer": {
-        "description": "Property. Model:'https://schema.org/Number'. The set of loads that have the response characteristics. Default: 'list'",
-        "type": "number"
-    },
-    "exponentModel": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates the exponential voltage dependency model is to be used.   If false, the coefficient model is to be used. The exponential voltage dependency model consist of the attributes - pVoltageExponent - qVoltageExponent. The coefficient model consist of the attributes - pConstantImpedance - pConstantCurrent - pConstantPower - qConstantImpedance - qConstantCurrent - qConstantPower. The sum of pConstantImpedance, pConstantCurrent and pConstantPower shall equal 1. The sum of qConstantImpedance, qConstantCurrent and qConstantPower shall equal 1. Default: False",
-        "type": "number"
-    },
-    "pConstantCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. Portion of active power load modeled as constant current. Default: 0.0",
-        "type": "number"
-    },
-    "pConstantImpedance": {
-        "description": "Property. Model:'https://schema.org/Number'. Portion of active power load modeled as constant impedance. Default: 0.0",
-        "type": "number"
-    },
-    "pConstantPower": {
-        "description": "Property. Model:'https://schema.org/Number'. Portion of active power load modeled as constant power. Default: 0.0",
-        "type": "number"
-    },
-    "pFrequencyExponent": {
-        "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit frequency effecting active power. Default: 0.0",
-        "type": "number"
-    },
-    "pVoltageExponent": {
-        "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit voltage effecting real power. Default: 0.0",
-        "type": "number"
-    },
-    "qConstantCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. Portion of reactive power load modeled as constant current. Default: 0.0",
-        "type": "number"
-    },
-    "qConstantImpedance": {
-        "description": "Property. Model:'https://schema.org/Number'. Portion of reactive power load modeled as constant impedance. Default: 0.0",
-        "type": "number"
-    },
-    "qConstantPower": {
-        "description": "Property. Model:'https://schema.org/Number'. Portion of reactive power load modeled as constant power. Default: 0.0",
-        "type": "number"
-    },
-    "qFrequencyExponent": {
-        "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit frequency effecting reactive power. Default: 0.0",
-        "type": "number"
-    },
-    "qVoltageExponent": {
-        "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit voltage effecting reactive power. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadResponseCharacteristic/schema.json",
+    "title": " Smart Data Models - LoadResponseCharacteristic",
+    "description": "Adapted from CIM data models. Models the characteristic response of the load demand due to changes in system conditions such as voltage and frequency. This is not related to demand response.  If LoadResponseCharacteristic.exponentModel is True, the voltage exponents are specified and used as to calculate:  Active power component = Pnominal * (Voltage/cim:BaseVoltage.nominalVoltage) ** cim:LoadResponseCharacteristic.pVoltageExponent  Reactive power component = Qnominal * (Voltage/cim:BaseVoltage.nominalVoltage)** cim:LoadResponseCharacteristic.qVoltageExponent  Where  * means 'multiply' and ** is 'raised to power of'.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "LoadResponseCharacteristic"
+                    ],
+                    "description": "Property. NGSI type. It has to be LoadResponseCharacteristic"
+                },
+                "EnergyConsumer": {
+                    "description": "Property. Model:'https://schema.org/Number'. The set of loads that have the response characteristics. Default: 'list'",
+                    "type": "number"
+                },
+                "exponentModel": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates the exponential voltage dependency model is to be used.   If false, the coefficient model is to be used. The exponential voltage dependency model consist of the attributes - pVoltageExponent - qVoltageExponent. The coefficient model consist of the attributes - pConstantImpedance - pConstantCurrent - pConstantPower - qConstantImpedance - qConstantCurrent - qConstantPower. The sum of pConstantImpedance, pConstantCurrent and pConstantPower shall equal 1. The sum of qConstantImpedance, qConstantCurrent and qConstantPower shall equal 1. Default: False",
+                    "type": "number"
+                },
+                "pConstantCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Portion of active power load modeled as constant current. Default: 0.0",
+                    "type": "number"
+                },
+                "pConstantImpedance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Portion of active power load modeled as constant impedance. Default: 0.0",
+                    "type": "number"
+                },
+                "pConstantPower": {
+                    "description": "Property. Model:'https://schema.org/Number'. Portion of active power load modeled as constant power. Default: 0.0",
+                    "type": "number"
+                },
+                "pFrequencyExponent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit frequency effecting active power. Default: 0.0",
+                    "type": "number"
+                },
+                "pVoltageExponent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit voltage effecting real power. Default: 0.0",
+                    "type": "number"
+                },
+                "qConstantCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Portion of reactive power load modeled as constant current. Default: 0.0",
+                    "type": "number"
+                },
+                "qConstantImpedance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Portion of reactive power load modeled as constant impedance. Default: 0.0",
+                    "type": "number"
+                },
+                "qConstantPower": {
+                    "description": "Property. Model:'https://schema.org/Number'. Portion of reactive power load modeled as constant power. Default: 0.0",
+                    "type": "number"
+                },
+                "qFrequencyExponent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit frequency effecting reactive power. Default: 0.0",
+                    "type": "number"
+                },
+                "qVoltageExponent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exponent of per unit voltage effecting reactive power. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
