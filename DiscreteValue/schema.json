@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiscreteValue/schema.json",
-  "title": " Smart Data Models - DiscreteValue",
-  "description": "Adapted from CIM data models. DiscreteValue represents a discrete MeasurementValue.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DiscreteValue"
-        ],
-        "description": "Property. NGSI type. It has to be DiscreteValue"
-    },
-    "Command": {
-        "description": "Property. Model:'https://schema.org/Number'. The MeasurementValue that is controlled. Default: None",
-        "type": "number"
-    },
-    "Discrete": {
-        "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'. The value to supervise. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiscreteValue/schema.json",
+    "title": " Smart Data Models - DiscreteValue",
+    "description": "Adapted from CIM data models. DiscreteValue represents a discrete MeasurementValue.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DiscreteValue"
+                    ],
+                    "description": "Property. NGSI type. It has to be DiscreteValue"
+                },
+                "Command": {
+                    "description": "Property. Model:'https://schema.org/Number'. The MeasurementValue that is controlled. Default: None",
+                    "type": "number"
+                },
+                "Discrete": {
+                    "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The value to supervise. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
