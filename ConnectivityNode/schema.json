@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConnectivityNode/schema.json",
-  "title": " Smart Data Models - ConnectivityNode",
-  "description": "Adapted from CIM data models. Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ConnectivityNode"
-        ],
-        "description": "Property. NGSI type. It has to be ConnectivityNode"
-    },
-    "ConnectivityNodeContainer": {
-        "description": "Property. Model:'https://schema.org/Number'. Container of this connectivity node. Default: None",
-        "type": "number"
-    },
-    "Terminals": {
-        "description": "Property. Model:'https://schema.org/Number'. The connectivity node to which this terminal connects with zero impedance. Default: 'list'",
-        "type": "number"
-    },
-    "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: None",
-        "type": "number"
-    },
-    "boundaryPoint": {
-        "description": "Property. Model:'https://schema.org/Number'. Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. Default: False",
-        "type": "number"
-    },
-    "fromEndIsoCode": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the ISO code of the region to which the `From` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
-        "type": "number"
-    },
-    "fromEndName": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
-        "type": "number"
-    },
-    "fromEndNameTso": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the name of the TSO to which the `From` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
-        "type": "number"
-    },
-    "toEndIsoCode": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the ISO code of the region to which the `To` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
-        "type": "number"
-    },
-    "toEndName": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
-        "type": "number"
-    },
-    "toEndNameTso": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the name of the TSO to which the `To` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConnectivityNode/schema.json",
+    "title": " Smart Data Models - ConnectivityNode",
+    "description": "Adapted from CIM data models. Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ConnectivityNode"
+                    ],
+                    "description": "Property. NGSI type. It has to be ConnectivityNode"
+                },
+                "ConnectivityNodeContainer": {
+                    "description": "Property. Model:'https://schema.org/Number'. Container of this connectivity node. Default: None",
+                    "type": "number"
+                },
+                "Terminals": {
+                    "description": "Property. Model:'https://schema.org/Number'. The connectivity node to which this terminal connects with zero impedance. Default: 'list'",
+                    "type": "number"
+                },
+                "TopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: None",
+                    "type": "number"
+                },
+                "boundaryPoint": {
+                    "description": "Property. Model:'https://schema.org/Number'. Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. Default: False",
+                    "type": "number"
+                },
+                "fromEndIsoCode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the ISO code of the region to which the `From` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
+                    "type": "number"
+                },
+                "fromEndName": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
+                    "type": "number"
+                },
+                "fromEndNameTso": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the name of the TSO to which the `From` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
+                    "type": "number"
+                },
+                "toEndIsoCode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the ISO code of the region to which the `To` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
+                    "type": "number"
+                },
+                "toEndName": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
+                    "type": "number"
+                },
+                "toEndNameTso": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used for an exchange of the name of the TSO to which the `To` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
