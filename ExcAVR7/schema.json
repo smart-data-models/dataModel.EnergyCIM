@@ -1,112 +1,111 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR7/schema.json",
-  "title": " Smart Data Models - ExcAVR7",
-  "description": "Adapted from CIM data models. IVO excitation system.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAVR7"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAVR7"
-    },
-    "a1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead coefficient (A1).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "a2": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag coefficient (A2).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "a3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead coefficient (A3).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "a4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag coefficient (A4).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "a5": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead coefficient (A5).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "a6": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag coefficient (A6).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K1).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K3).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "k5": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K5).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T1).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T2).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T3).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T4).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T5).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T6).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "vmax1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead-lag max. limit (Vmax1).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vmax3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead-lag max. limit (Vmax3).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vmax5": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead-lag max. limit (Vmax5).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vmin1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead-lag min. limit (Vmin1).  Typical Value = -5. Default: 0.0",
-        "type": "number"
-    },
-    "vmin3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead-lag min. limit (Vmin3).  Typical Value = -5. Default: 0.0",
-        "type": "number"
-    },
-    "vmin5": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead-lag min. limit (Vmin5).  Typical Value = -2. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR7/schema.json",
+    "title": " Smart Data Models - ExcAVR7",
+    "description": "Adapted from CIM data models. IVO excitation system.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAVR7"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAVR7"
+                },
+                "a1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead coefficient (A1).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "a2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag coefficient (A2).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "a3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead coefficient (A3).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "a4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag coefficient (A4).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "a5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead coefficient (A5).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "a6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag coefficient (A6).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K1).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K3).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "k5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K5).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T1).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T2).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T3).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T4).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T5).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T6).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "vmax1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead-lag max. limit (Vmax1).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vmax3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead-lag max. limit (Vmax3).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vmax5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead-lag max. limit (Vmax5).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead-lag min. limit (Vmin1).  Typical Value = -5. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead-lag min. limit (Vmin3).  Typical Value = -5. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead-lag min. limit (Vmin5).  Typical Value = -2. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
