@@ -1,64 +1,63 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACLineSegment/schema.json",
-  "title": " Smart Data Models - ACLineSegment",
-  "description": "Adapted from CIM data models. A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system. For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances. The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines  may have slightly different BaseVoltage.nominalVoltages and  variation is allowed. Larger voltage difference in general requires use of an equivalent branch.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ACLineSegment"
-        ],
-        "description": "Property. NGSI type. It has to be ACLineSegment"
-    },
-    "b0ch": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "bch": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.  This value represents the full charging over the full length of the line. Default: 0.0",
-        "type": "number"
-    },
-    "g0ch": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "gch": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "shortCircuitEndTemperature": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum permitted temperature at the end of SC for the calculation of minimum short-circuit currents. Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance of the entire line section. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACLineSegment/schema.json",
+    "title": " Smart Data Models - ACLineSegment",
+    "description": "Adapted from CIM data models. A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system. For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances. The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines  may have slightly different BaseVoltage.nominalVoltages and  variation is allowed. Larger voltage difference in general requires use of an equivalent branch.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ACLineSegment"
+                    ],
+                    "description": "Property. NGSI type. It has to be ACLineSegment"
+                },
+                "b0ch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "bch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.  This value represents the full charging over the full length of the line. Default: 0.0",
+                    "type": "number"
+                },
+                "g0ch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "gch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "shortCircuitEndTemperature": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum permitted temperature at the end of SC for the calculation of minimum short-circuit currents. Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance of the entire line section. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
