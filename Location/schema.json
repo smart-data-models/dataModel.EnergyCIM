@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Location/schema.json",
-  "title": " Smart Data Models - Location",
-  "description": "Adapted from CIM data models. The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more postition points (coordinates) in a given coordinate system.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Location"
-        ],
-        "description": "Property. NGSI type. It has to be Location"
-    },
-    "CoordinateSystem": {
-        "description": "Property. Model:'https://schema.org/Number'. Coordinate system used to describe position points of this location. Default: None",
-        "type": "number"
-    },
-    "PositionPoints": {
-        "description": "Property. Model:'https://schema.org/Number'. Sequence of position points describing this location, expressed in coordinate system `Location.CoordinateSystem`. Default: 'list'",
-        "type": "number"
-    },
-    "PowerSystemResources": {
-        "description": "Property. Model:'https://schema.org/Number'. All power system resources at this location. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Location/schema.json",
+    "title": " Smart Data Models - Location",
+    "description": "Adapted from CIM data models. The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more postition points (coordinates) in a given coordinate system.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Location"
+                    ],
+                    "description": "Property. NGSI type. It has to be Location"
+                },
+                "CoordinateSystem": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coordinate system used to describe position points of this location. Default: None",
+                    "type": "number"
+                },
+                "PositionPoints": {
+                    "description": "Property. Model:'https://schema.org/Number'. Sequence of position points describing this location, expressed in coordinate system `Location.CoordinateSystem`. Default: 'list'",
+                    "type": "number"
+                },
+                "PowerSystemResources": {
+                    "description": "Property. Model:'https://schema.org/Number'. All power system resources at this location. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
