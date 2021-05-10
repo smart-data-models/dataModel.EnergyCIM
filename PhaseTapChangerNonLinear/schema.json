@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PhaseTapChangerNonLinear/schema.json",
-  "title": " Smart Data Models - PhaseTapChangerNonLinear",
-  "description": "Adapted from CIM data models. The non-linear phase tap changer describes the non-linear behavior of a phase tap changer. This is a base class for the symmetrical and asymmetrical phase tap changer models. The details of these models can be found in the IEC 61970-301 document.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PhaseTapChangerNonLinear"
-        ],
-        "description": "Property. NGSI type. It has to be PhaseTapChangerNonLinear"
-    },
-    "voltageStepIncrement": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage step increment on the out of phase winding specified in percent of nominal voltage of the transformer end. Default: 0.0",
-        "type": "number"
-    },
-    "xMax": {
-        "description": "Property. Model:'https://schema.org/Number'. The reactance depend on the tap position according to a `u` shaped curve. The maximum reactance (xMax) appear at the low and high tap positions. Default: 0.0",
-        "type": "number"
-    },
-    "xMin": {
-        "description": "Property. Model:'https://schema.org/Number'. The reactance depend on the tap position according to a `u` shaped curve. The minimum reactance (xMin) appear at the mid tap position. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PhaseTapChangerNonLinear/schema.json",
+    "title": " Smart Data Models - PhaseTapChangerNonLinear",
+    "description": "Adapted from CIM data models. The non-linear phase tap changer describes the non-linear behavior of a phase tap changer. This is a base class for the symmetrical and asymmetrical phase tap changer models. The details of these models can be found in the IEC 61970-301 document.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PhaseTapChangerNonLinear"
+                    ],
+                    "description": "Property. NGSI type. It has to be PhaseTapChangerNonLinear"
+                },
+                "voltageStepIncrement": {
+                    "description": "Property. Model:'https://schema.org/Number'. The voltage step increment on the out of phase winding specified in percent of nominal voltage of the transformer end. Default: 0.0",
+                    "type": "number"
+                },
+                "xMax": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reactance depend on the tap position according to a `u` shaped curve. The maximum reactance (xMax) appear at the low and high tap positions. Default: 0.0",
+                    "type": "number"
+                },
+                "xMin": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reactance depend on the tap position according to a `u` shaped curve. The minimum reactance (xMin) appear at the mid tap position. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
