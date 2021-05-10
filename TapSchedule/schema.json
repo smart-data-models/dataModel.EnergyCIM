@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TapSchedule/schema.json",
-  "title": " Smart Data Models - TapSchedule",
-  "description": "Adapted from CIM data models. A pre-established pattern over time for a tap step.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TapSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be TapSchedule"
-    },
-    "TapChanger": {
-        "description": "Property. Model:'https://schema.org/Number'. A TapChanger can have TapSchedules. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TapSchedule/schema.json",
+    "title": " Smart Data Models - TapSchedule",
+    "description": "Adapted from CIM data models. A pre-established pattern over time for a tap step.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TapSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be TapSchedule"
+                },
+                "TapChanger": {
+                    "description": "Property. Model:'https://schema.org/Number'. A TapChanger can have TapSchedules. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
