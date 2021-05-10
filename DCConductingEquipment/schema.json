@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCConductingEquipment/schema.json",
-  "title": " Smart Data Models - DCConductingEquipment",
-  "description": "Adapted from CIM data models. The parts of the DC power system that are designed to carry current or that are conductively connected through DC terminals.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DCConductingEquipment"
-        ],
-        "description": "Property. NGSI type. It has to be DCConductingEquipment"
-    },
-    "DCTerminals": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCConductingEquipment/schema.json",
+    "title": " Smart Data Models - DCConductingEquipment",
+    "description": "Adapted from CIM data models. The parts of the DC power system that are designed to carry current or that are conductively connected through DC terminals.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DCConductingEquipment"
+                    ],
+                    "description": "Property. NGSI type. It has to be DCConductingEquipment"
+                },
+                "DCTerminals": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
