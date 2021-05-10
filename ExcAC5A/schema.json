@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC5A/schema.json",
-  "title": " Smart Data Models - ExcAC5A",
-  "description": "Adapted from CIM data models. Modified IEEE AC5A alternator-supplied rectifier excitation system with different minimum controller output.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAC5A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAC5A"
-    },
-    "a": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model (a).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "efd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 5.6. Default: 0.0",
-        "type": "number"
-    },
-    "efd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 4.2. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 400. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer gains (Kf).  Typical Value = 0.03. Default: 0.0",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "seefd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd1 (S[Efd1]).  Typical Value = 0.86. Default: 0.0",
-        "type": "number"
-    },
-    "seefd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd2 (S[Efd2]).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.8. Default: 0",
-        "type": "number"
-    },
-    "tf1": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf1).  Typical Value  = 1. Default: 0",
-        "type": "number"
-    },
-    "tf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf2).  Typical Value = 0.8. Default: 0",
-        "type": "number"
-    },
-    "tf3": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf3).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 7.3. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value =-7.3. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC5A/schema.json",
+    "title": " Smart Data Models - ExcAC5A",
+    "description": "Adapted from CIM data models. Modified IEEE AC5A alternator-supplied rectifier excitation system with different minimum controller output.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAC5A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAC5A"
+                },
+                "a": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model (a).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "efd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 5.6. Default: 0.0",
+                    "type": "number"
+                },
+                "efd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 4.2. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 400. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer gains (Kf).  Typical Value = 0.03. Default: 0.0",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "seefd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd1 (S[Efd1]).  Typical Value = 0.86. Default: 0.0",
+                    "type": "number"
+                },
+                "seefd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Efd2 (S[Efd2]).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.8. Default: 0",
+                    "type": "number"
+                },
+                "tf1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf1).  Typical Value  = 1. Default: 0",
+                    "type": "number"
+                },
+                "tf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf2).  Typical Value = 0.8. Default: 0",
+                    "type": "number"
+                },
+                "tf3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf3).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 7.3. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value =-7.3. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
