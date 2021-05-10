@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonlinearShuntCompensator/schema.json",
-  "title": " Smart Data Models - NonlinearShuntCompensator",
-  "description": "Adapted from CIM data models. A non linear shunt compensator has bank or section admittance values that differs.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "NonlinearShuntCompensator"
-        ],
-        "description": "Property. NGSI type. It has to be NonlinearShuntCompensator"
-    },
-    "NonlinearShuntCompensatorPoints": {
-        "description": "Property. Model:'https://schema.org/Number'. All points of the non-linear shunt compensator. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonlinearShuntCompensator/schema.json",
+    "title": " Smart Data Models - NonlinearShuntCompensator",
+    "description": "Adapted from CIM data models. A non linear shunt compensator has bank or section admittance values that differs.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "NonlinearShuntCompensator"
+                    ],
+                    "description": "Property. NGSI type. It has to be NonlinearShuntCompensator"
+                },
+                "NonlinearShuntCompensatorPoints": {
+                    "description": "Property. Model:'https://schema.org/Number'. All points of the non-linear shunt compensator. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
