@@ -1,92 +1,91 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEDC2A/schema.json",
-  "title": " Smart Data Models - ExcIEEEDC2A",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type DC2A model. This model represents represent field-controlled dc commutator exciters with continuously acting voltage regulators having supplies obtained from the generator or auxiliary bus.  It differs from the Type DC1A model only in the voltage regulator output limits, which are now proportional to terminal voltage . It is representative of solid-state replacements for various forms of older mechanical and rotating amplifier regulating equipment connected to dc commutator exciters.  Reference: IEEE Standard 421.5-2005 Section 5.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcIEEEDC2A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcIEEEDC2A"
-    },
-    "efd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (E).  Typical Value = 3.05. Default: 0.0",
-        "type": "number"
-    },
-    "efd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (E).  Typical Value = 2.29. Default: 0.0",
-        "type": "number"
-    },
-    "exclim": {
-        "description": "Property. Model:'https://schema.org/Number'. (exclim).  IEEE standard is ambiguous about lower limit on exciter output. Typical Value = - 999  which means that there is no limit applied. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (K).  Typical Value = 300. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer gain (K).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "seefd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.279. Default: 0.0",
-        "type": "number"
-    },
-    "seefd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.117. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0.01. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.33. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (T).  Typical Value = 0.675. Default: 0",
-        "type": "number"
-    },
-    "uelin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL input (uelin). true = input is connected to the HV gate false = input connects to the error signal. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 4.95. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -4.9. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEDC2A/schema.json",
+    "title": " Smart Data Models - ExcIEEEDC2A",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type DC2A model. This model represents represent field-controlled dc commutator exciters with continuously acting voltage regulators having supplies obtained from the generator or auxiliary bus.  It differs from the Type DC1A model only in the voltage regulator output limits, which are now proportional to terminal voltage . It is representative of solid-state replacements for various forms of older mechanical and rotating amplifier regulating equipment connected to dc commutator exciters.  Reference: IEEE Standard 421.5-2005 Section 5.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcIEEEDC2A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcIEEEDC2A"
+                },
+                "efd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (E).  Typical Value = 3.05. Default: 0.0",
+                    "type": "number"
+                },
+                "efd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter voltage at which exciter saturation is defined (E).  Typical Value = 2.29. Default: 0.0",
+                    "type": "number"
+                },
+                "exclim": {
+                    "description": "Property. Model:'https://schema.org/Number'. (exclim).  IEEE standard is ambiguous about lower limit on exciter output. Typical Value = - 999  which means that there is no limit applied. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (K).  Typical Value = 300. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer gain (K).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "seefd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.279. Default: 0.0",
+                    "type": "number"
+                },
+                "seefd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, E (S[E]).  Typical Value = 0.117. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.33. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (T).  Typical Value = 0.675. Default: 0",
+                    "type": "number"
+                },
+                "uelin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL input (uelin). true = input is connected to the HV gate false = input connects to the error signal. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 4.95. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -4.9. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
