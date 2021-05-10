@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SubLoadArea/schema.json",
-  "title": " Smart Data Models - SubLoadArea",
-  "description": "Adapted from CIM data models. The class is the second level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SubLoadArea"
-        ],
-        "description": "Property. NGSI type. It has to be SubLoadArea"
-    },
-    "LoadArea": {
-        "description": "Property. Model:'https://schema.org/Number'. The LoadArea where the SubLoadArea belongs. Default: None",
-        "type": "number"
-    },
-    "LoadGroups": {
-        "description": "Property. Model:'https://schema.org/Number'. The Loadgroups in the SubLoadArea. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SubLoadArea/schema.json",
+    "title": " Smart Data Models - SubLoadArea",
+    "description": "Adapted from CIM data models. The class is the second level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SubLoadArea"
+                    ],
+                    "description": "Property. NGSI type. It has to be SubLoadArea"
+                },
+                "LoadArea": {
+                    "description": "Property. Model:'https://schema.org/Number'. The LoadArea where the SubLoadArea belongs. Default: None",
+                    "type": "number"
+                },
+                "LoadGroups": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Loadgroups in the SubLoadArea. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
