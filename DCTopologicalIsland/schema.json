@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCTopologicalIsland/schema.json",
-  "title": " Smart Data Models - DCTopologicalIsland",
-  "description": "Adapted from CIM data models. An electrically connected subset of the network. DC topological islands can change as the current network state changes: e.g. due to  - disconnect switches or breakers change state in a SCADA/EMS - manual creation, change or deletion of topological nodes in a planning tool.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DCTopologicalIsland"
-        ],
-        "description": "Property. NGSI type. It has to be DCTopologicalIsland"
-    },
-    "DCTopologicalNodes": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCTopologicalIsland/schema.json",
+    "title": " Smart Data Models - DCTopologicalIsland",
+    "description": "Adapted from CIM data models. An electrically connected subset of the network. DC topological islands can change as the current network state changes: e.g. due to  - disconnect switches or breakers change state in a SCADA/EMS - manual creation, change or deletion of topological nodes in a planning tool.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DCTopologicalIsland"
+                    ],
+                    "description": "Property. NGSI type. It has to be DCTopologicalIsland"
+                },
+                "DCTopologicalNodes": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
