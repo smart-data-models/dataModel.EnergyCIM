@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArType1IEEEPFController/schema.json",
-  "title": " Smart Data Models - PFVArType1IEEEPFController",
-  "description": "Adapted from CIM data models. The class represents IEEE PF Controller Type 1 which operates by moving the voltage reference directly.  Reference: IEEE Standard 421.5-2005 Section 11.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PFVArType1IEEEPFController"
-        ],
-        "description": "Property. NGSI type. It has to be PFVArType1IEEEPFController"
-    },
-    "ovex": {
-        "description": "Property. Model:'https://schema.org/Number'. Overexcitation Flag () true = overexcited false = underexcited. Default: False",
-        "type": "number"
-    },
-    "tpfc": {
-        "description": "Property. Model:'https://schema.org/Number'. PF controller time delay ().  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "vitmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum machine terminal current needed to enable pf/var controller (). Default: 0.0",
-        "type": "number"
-    },
-    "vpf": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine power factor (). Default: 0.0",
-        "type": "number"
-    },
-    "vpfcbw": {
-        "description": "Property. Model:'https://schema.org/Number'. PF controller dead band ().  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "vpfref": {
-        "description": "Property. Model:'https://schema.org/Number'. PF controller reference (). Default: 0.0",
-        "type": "number"
-    },
-    "vvtmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: 0.0",
-        "type": "number"
-    },
-    "vvtmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum machine terminal voltage needed to enable pf/var controller (). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArType1IEEEPFController/schema.json",
+    "title": " Smart Data Models - PFVArType1IEEEPFController",
+    "description": "Adapted from CIM data models. The class represents IEEE PF Controller Type 1 which operates by moving the voltage reference directly.  Reference: IEEE Standard 421.5-2005 Section 11.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PFVArType1IEEEPFController"
+                    ],
+                    "description": "Property. NGSI type. It has to be PFVArType1IEEEPFController"
+                },
+                "ovex": {
+                    "description": "Property. Model:'https://schema.org/Number'. Overexcitation Flag () true = overexcited false = underexcited. Default: False",
+                    "type": "number"
+                },
+                "tpfc": {
+                    "description": "Property. Model:'https://schema.org/Number'. PF controller time delay ().  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "vitmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum machine terminal current needed to enable pf/var controller (). Default: 0.0",
+                    "type": "number"
+                },
+                "vpf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine power factor (). Default: 0.0",
+                    "type": "number"
+                },
+                "vpfcbw": {
+                    "description": "Property. Model:'https://schema.org/Number'. PF controller dead band ().  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "vpfref": {
+                    "description": "Property. Model:'https://schema.org/Number'. PF controller reference (). Default: 0.0",
+                    "type": "number"
+                },
+                "vvtmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: 0.0",
+                    "type": "number"
+                },
+                "vvtmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum machine terminal voltage needed to enable pf/var controller (). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
