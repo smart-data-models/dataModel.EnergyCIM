@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamSGO/schema.json",
-  "title": " Smart Data Models - GovSteamSGO",
-  "description": "Adapted from CIM data models. Simplified Steam turbine governor model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteamSGO"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteamSGO"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. One/per unit regulation (K1). Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction (K2). Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction (K3). Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Upper power limit (Pmax). Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Lower power limit (Pmin). Default: 0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller lag (T1). Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller lead compensation (T2). Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lag (T3) (>0). Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Delay due to steam inlet volumes associated with steam chest and inlet piping (T4). Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Reheater delay including hot and cold leads (T5). Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Delay due to IP-LP turbine, crossover pipes and LP end hoods (T6). Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamSGO/schema.json",
+    "title": " Smart Data Models - GovSteamSGO",
+    "description": "Adapted from CIM data models. Simplified Steam turbine governor model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteamSGO"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteamSGO"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. One/per unit regulation (K1). Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction (K2). Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction (K3). Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Upper power limit (Pmax). Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lower power limit (Pmin). Default: 0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller lag (T1). Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller lead compensation (T2). Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lag (T3) (>0). Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Delay due to steam inlet volumes associated with steam chest and inlet piping (T4). Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reheater delay including hot and cold leads (T5). Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Delay due to IP-LP turbine, crossover pipes and LP end hoods (T6). Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
