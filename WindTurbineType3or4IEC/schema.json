@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType3or4IEC/schema.json",
-  "title": " Smart Data Models - WindTurbineType3or4IEC",
-  "description": "Adapted from CIM data models. Parent class supporting relationships to IEC wind turbines Type 3 and 4 and wind plant including their control models.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindTurbineType3or4IEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindTurbineType3or4IEC"
-    },
-    "WIndContQIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind control Q model associated with this wind turbine type 3 or 4 model. Default: None",
-        "type": "number"
-    },
-    "WindContCurrLimIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind control current limitation model associated with this wind turbine type 3 or 4 model. Default: None",
-        "type": "number"
-    },
-    "WindProtectionIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbune protection model associated with this wind generator type 3 or 4 model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType3or4IEC/schema.json",
+    "title": " Smart Data Models - WindTurbineType3or4IEC",
+    "description": "Adapted from CIM data models. Parent class supporting relationships to IEC wind turbines Type 3 and 4 and wind plant including their control models.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindTurbineType3or4IEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindTurbineType3or4IEC"
+                },
+                "WIndContQIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind control Q model associated with this wind turbine type 3 or 4 model. Default: None",
+                    "type": "number"
+                },
+                "WindContCurrLimIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind control current limitation model associated with this wind turbine type 3 or 4 model. Default: None",
+                    "type": "number"
+                },
+                "WindProtectionIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbune protection model associated with this wind generator type 3 or 4 model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
