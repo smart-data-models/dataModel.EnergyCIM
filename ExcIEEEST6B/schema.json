@@ -1,84 +1,83 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST6B/schema.json",
-  "title": " Smart Data Models - ExcIEEEST6B",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST6B model. This model consists of a PI voltage regulator with an inner loop field voltage regulator and pre-control. The field voltage regulator implements a proportional control. The pre-control and the delay in the feedback circuit increase the dynamic response.  Reference: IEEE Standard 421.5-2005 Section 7.6.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcIEEEST6B"
-        ],
-        "description": "Property. NGSI type. It has to be ExcIEEEST6B"
-    },
-    "ilr": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output current limit reference (I).  Typical Value = 4.164. Default: 0.0",
-        "type": "number"
-    },
-    "kci": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output current limit adjustment (K).  Typical Value = 1.0577. Default: 0.0",
-        "type": "number"
-    },
-    "kff": {
-        "description": "Property. Model:'https://schema.org/Number'. Pre-control gain constant of the inner loop field regulator (K). Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kia": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (K).  Typical Value = 45.094. Default: 0.0",
-        "type": "number"
-    },
-    "klr": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output current limiter gain (K).  Typical Value = 17.33. Default: 0.0",
-        "type": "number"
-    },
-    "km": {
-        "description": "Property. Model:'https://schema.org/Number'. Forward gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kpa": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (K).  Typical Value = 18.038. Default: 0.0",
-        "type": "number"
-    },
-    "oelin": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL input selector (OELin). Typical Value = noOELinput. Default: None",
-        "type": "number"
-    },
-    "tg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback time constant of inner loop field voltage regulator (T). Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "vamax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 4.81. Default: 0.0",
-        "type": "number"
-    },
-    "vamin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -3.85. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 4.81. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -3.85. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST6B/schema.json",
+    "title": " Smart Data Models - ExcIEEEST6B",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST6B model. This model consists of a PI voltage regulator with an inner loop field voltage regulator and pre-control. The field voltage regulator implements a proportional control. The pre-control and the delay in the feedback circuit increase the dynamic response.  Reference: IEEE Standard 421.5-2005 Section 7.6.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcIEEEST6B"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcIEEEST6B"
+                },
+                "ilr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output current limit reference (I).  Typical Value = 4.164. Default: 0.0",
+                    "type": "number"
+                },
+                "kci": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output current limit adjustment (K).  Typical Value = 1.0577. Default: 0.0",
+                    "type": "number"
+                },
+                "kff": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pre-control gain constant of the inner loop field regulator (K). Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kia": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (K).  Typical Value = 45.094. Default: 0.0",
+                    "type": "number"
+                },
+                "klr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output current limiter gain (K).  Typical Value = 17.33. Default: 0.0",
+                    "type": "number"
+                },
+                "km": {
+                    "description": "Property. Model:'https://schema.org/Number'. Forward gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kpa": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (K).  Typical Value = 18.038. Default: 0.0",
+                    "type": "number"
+                },
+                "oelin": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL input selector (OELin). Typical Value = noOELinput. Default: None",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback time constant of inner loop field voltage regulator (T). Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "vamax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 4.81. Default: 0.0",
+                    "type": "number"
+                },
+                "vamin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -3.85. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 4.81. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -3.85. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
