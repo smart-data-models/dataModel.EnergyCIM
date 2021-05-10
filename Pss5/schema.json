@@ -1,96 +1,95 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss5/schema.json",
-  "title": " Smart Data Models - Pss5",
-  "description": "Adapted from CIM data models. Italian PSS - Detailed PSS.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Pss5"
-        ],
-        "description": "Property. NGSI type. It has to be Pss5"
-    },
-    "ctw2": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "deadband": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "isfreq": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "kpe": {
-        "description": "Property. Model:'https://schema.org/Number'. Electric power input gain (K).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "kpss": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmm": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0",
-        "type": "number"
-    },
-    "tl1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl2": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tl4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tpe": {
-        "description": "Property. Model:'https://schema.org/Number'. Electric power filter time constant (T).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "tw1": {
-        "description": "Property. Model:'https://schema.org/Number'. First WashOut (T).  Typical Value = 3.5. Default: 0",
-        "type": "number"
-    },
-    "tw2": {
-        "description": "Property. Model:'https://schema.org/Number'. Second WashOut (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vadat": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: False",
-        "type": "number"
-    },
-    "vsmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0",
-        "type": "number"
-    },
-    "vsmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss5/schema.json",
+    "title": " Smart Data Models - Pss5",
+    "description": "Adapted from CIM data models. Italian PSS - Detailed PSS.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Pss5"
+                    ],
+                    "description": "Property. NGSI type. It has to be Pss5"
+                },
+                "ctw2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "deadband": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "isfreq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "kpe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electric power input gain (K).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "kpss": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0",
+                    "type": "number"
+                },
+                "tl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tl4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tpe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electric power filter time constant (T).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tw1": {
+                    "description": "Property. Model:'https://schema.org/Number'. First WashOut (T).  Typical Value = 3.5. Default: 0",
+                    "type": "number"
+                },
+                "tw2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Second WashOut (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vadat": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: False",
+                    "type": "number"
+                },
+                "vsmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vsmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
