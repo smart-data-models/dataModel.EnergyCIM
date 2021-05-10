@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogValue/schema.json",
-  "title": " Smart Data Models - AnalogValue",
-  "description": "Adapted from CIM data models. AnalogValue represents an analog MeasurementValue.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AnalogValue"
-        ],
-        "description": "Property. NGSI type. It has to be AnalogValue"
-    },
-    "Analog": {
-        "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: None",
-        "type": "number"
-    },
-    "AnalogControl": {
-        "description": "Property. Model:'https://schema.org/Number'. The MeasurementValue that is controlled. Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'. The value to supervise. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogValue/schema.json",
+    "title": " Smart Data Models - AnalogValue",
+    "description": "Adapted from CIM data models. AnalogValue represents an analog MeasurementValue.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AnalogValue"
+                    ],
+                    "description": "Property. NGSI type. It has to be AnalogValue"
+                },
+                "Analog": {
+                    "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: None",
+                    "type": "number"
+                },
+                "AnalogControl": {
+                    "description": "Property. Model:'https://schema.org/Number'. The MeasurementValue that is controlled. Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The value to supervise. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
