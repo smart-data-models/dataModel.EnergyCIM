@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadGroup/schema.json",
-  "title": " Smart Data Models - LoadGroup",
-  "description": "Adapted from CIM data models. The class is the third level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "LoadGroup"
-        ],
-        "description": "Property. NGSI type. It has to be LoadGroup"
-    },
-    "SubLoadArea": {
-        "description": "Property. Model:'https://schema.org/Number'. The SubLoadArea where the Loadgroup belongs. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadGroup/schema.json",
+    "title": " Smart Data Models - LoadGroup",
+    "description": "Adapted from CIM data models. The class is the third level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "LoadGroup"
+                    ],
+                    "description": "Property. NGSI type. It has to be LoadGroup"
+                },
+                "SubLoadArea": {
+                    "description": "Property. Model:'https://schema.org/Number'. The SubLoadArea where the Loadgroup belongs. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
