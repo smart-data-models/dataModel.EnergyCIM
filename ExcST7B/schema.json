@@ -1,92 +1,91 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST7B/schema.json",
-  "title": " Smart Data Models - ExcST7B",
-  "description": "Adapted from CIM data models. Modified IEEE ST7B static excitation system without stator current limiter (SCL) and current compensator (DROOP) inputs.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcST7B"
-        ],
-        "description": "Property. NGSI type. It has to be ExcST7B"
-    },
-    "kh": {
-        "description": "Property. Model:'https://schema.org/Number'. High-value gate feedback gain (Kh).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kia": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (Kia).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kl": {
-        "description": "Property. Model:'https://schema.org/Number'. Low-value gate feedback gain (Kl).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kpa": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (Kpa).  Typical Value = 40. Default: 0.0",
-        "type": "number"
-    },
-    "oelin": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL input selector (OELin). Typical Value = noOELinput. Default: None",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator lag time constant (Tb).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator lead time constant (Tc).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback time constant of inner loop field voltage regulator (Tg).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tia": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback time constant (Tia).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "ts": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier firing time constant (Ts).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "uelin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL input selector (UELin). Typical Value = noUELinput. Default: None",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage reference signal (Vmax).  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage reference signal (Vmin).  Typical Value = 0.9. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = -4.5. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST7B/schema.json",
+    "title": " Smart Data Models - ExcST7B",
+    "description": "Adapted from CIM data models. Modified IEEE ST7B static excitation system without stator current limiter (SCL) and current compensator (DROOP) inputs.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcST7B"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcST7B"
+                },
+                "kh": {
+                    "description": "Property. Model:'https://schema.org/Number'. High-value gate feedback gain (Kh).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kia": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (Kia).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low-value gate feedback gain (Kl).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kpa": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (Kpa).  Typical Value = 40. Default: 0.0",
+                    "type": "number"
+                },
+                "oelin": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL input selector (OELin). Typical Value = noOELinput. Default: None",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator lag time constant (Tb).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator lead time constant (Tc).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback time constant of inner loop field voltage regulator (Tg).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tia": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback time constant (Tia).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "ts": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier firing time constant (Ts).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "uelin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL input selector (UELin). Typical Value = noUELinput. Default: None",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage reference signal (Vmax).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage reference signal (Vmin).  Typical Value = 0.9. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = -4.5. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
