@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OperationalLimitSet/schema.json",
-  "title": " Smart Data Models - OperationalLimitSet",
-  "description": "Adapted from CIM data models. A set of limits associated with equipment.  Sets of limits might apply to a specific temperature, or season for example. A set of limits may contain different severities of limit levels that would apply to the same equipment. The set may contain limits of different types such as apparent power and current limits or high and low voltage limits  that are logically applied together as a set.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OperationalLimitSet"
-        ],
-        "description": "Property. NGSI type. It has to be OperationalLimitSet"
-    },
-    "Equipment": {
-        "description": "Property. Model:'https://schema.org/Number'. The equipment to which the limit set applies. Default: None",
-        "type": "number"
-    },
-    "OperationalLimitValue": {
-        "description": "Property. Model:'https://schema.org/Number'. The limit set to which the limit values belong. Default: 'list'",
-        "type": "number"
-    },
-    "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OperationalLimitSet/schema.json",
+    "title": " Smart Data Models - OperationalLimitSet",
+    "description": "Adapted from CIM data models. A set of limits associated with equipment.  Sets of limits might apply to a specific temperature, or season for example. A set of limits may contain different severities of limit levels that would apply to the same equipment. The set may contain limits of different types such as apparent power and current limits or high and low voltage limits  that are logically applied together as a set.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OperationalLimitSet"
+                    ],
+                    "description": "Property. NGSI type. It has to be OperationalLimitSet"
+                },
+                "Equipment": {
+                    "description": "Property. Model:'https://schema.org/Number'. The equipment to which the limit set applies. Default: None",
+                    "type": "number"
+                },
+                "OperationalLimitValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. The limit set to which the limit values belong. Default: 'list'",
+                    "type": "number"
+                },
+                "Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
