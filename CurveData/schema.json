@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/CurveData/schema.json",
-  "title": " Smart Data Models - CurveData",
-  "description": "Adapted from CIM data models. Multi-purpose data points for defining a curve.  The use of this generic class is discouraged if a more specific class  can be used to specify the x and y axis values along with their specific data types.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "CurveData"
-        ],
-        "description": "Property. NGSI type. It has to be CurveData"
-    },
-    "Curve": {
-        "description": "Property. Model:'https://schema.org/Number'. The point data values that define this curve. Default: None",
-        "type": "number"
-    },
-    "xvalue": {
-        "description": "Property. Model:'https://schema.org/Number'. The data value of the X-axis variable,  depending on the X-axis units. Default: 0.0",
-        "type": "number"
-    },
-    "y1value": {
-        "description": "Property. Model:'https://schema.org/Number'. The data value of the  first Y-axis variable, depending on the Y-axis units. Default: 0.0",
-        "type": "number"
-    },
-    "y2value": {
-        "description": "Property. Model:'https://schema.org/Number'. The data value of the second Y-axis variable (if present), depending on the Y-axis units. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/CurveData/schema.json",
+    "title": " Smart Data Models - CurveData",
+    "description": "Adapted from CIM data models. Multi-purpose data points for defining a curve.  The use of this generic class is discouraged if a more specific class  can be used to specify the x and y axis values along with their specific data types.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "CurveData"
+                    ],
+                    "description": "Property. NGSI type. It has to be CurveData"
+                },
+                "Curve": {
+                    "description": "Property. Model:'https://schema.org/Number'. The point data values that define this curve. Default: None",
+                    "type": "number"
+                },
+                "xvalue": {
+                    "description": "Property. Model:'https://schema.org/Number'. The data value of the X-axis variable,  depending on the X-axis units. Default: 0.0",
+                    "type": "number"
+                },
+                "y1value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The data value of the  first Y-axis variable, depending on the Y-axis units. Default: 0.0",
+                    "type": "number"
+                },
+                "y2value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The data value of the second Y-axis variable (if present), depending on the Y-axis units. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
