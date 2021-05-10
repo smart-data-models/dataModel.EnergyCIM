@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LinearShuntCompensator/schema.json",
-  "title": " Smart Data Models - LinearShuntCompensator",
-  "description": "Adapted from CIM data models. A linear shunt compensator has banks or sections with equal admittance values.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "LinearShuntCompensator"
-        ],
-        "description": "Property. NGSI type. It has to be LinearShuntCompensator"
-    },
-    "b0PerSection": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) susceptance per section Default: 0.0",
-        "type": "number"
-    },
-    "bPerSection": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) susceptance per section Default: 0.0",
-        "type": "number"
-    },
-    "g0PerSection": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) conductance per section Default: 0.0",
-        "type": "number"
-    },
-    "gPerSection": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) conductance per section Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LinearShuntCompensator/schema.json",
+    "title": " Smart Data Models - LinearShuntCompensator",
+    "description": "Adapted from CIM data models. A linear shunt compensator has banks or sections with equal admittance values.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "LinearShuntCompensator"
+                    ],
+                    "description": "Property. NGSI type. It has to be LinearShuntCompensator"
+                },
+                "b0PerSection": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) susceptance per section Default: 0.0",
+                    "type": "number"
+                },
+                "bPerSection": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) susceptance per section Default: 0.0",
+                    "type": "number"
+                },
+                "g0PerSection": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) conductance per section Default: 0.0",
+                    "type": "number"
+                },
+                "gPerSection": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) conductance per section Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
