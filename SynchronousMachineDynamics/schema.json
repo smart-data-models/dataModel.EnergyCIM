@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineDynamics/schema.json",
-  "title": " Smart Data Models - SynchronousMachineDynamics",
-  "description": "Adapted from CIM data models. Synchronous machine whose behaviour is described by reference to a standard model expressed in one of the following forms:",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SynchronousMachineDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be SynchronousMachineDynamics"
-    },
-    "ExcitationSystemDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation system model associated with this synchronous machine model. Default: None",
-        "type": "number"
-    },
-    "GenICompensationForGenJ": {
-        "description": "Property. Model:'https://schema.org/Number'. Compensation of voltage compensator`s generator for current flow out of this  generator. Default: 'list'",
-        "type": "number"
-    },
-    "MechanicalLoadDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Mechanical load model associated with this synchronous machine model. Default: None",
-        "type": "number"
-    },
-    "SynchronousMachine": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine to which synchronous machine dynamics model applies. Default: None",
-        "type": "number"
-    },
-    "TurbineGovernorDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this turbine-governor model is associated. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineDynamics/schema.json",
+    "title": " Smart Data Models - SynchronousMachineDynamics",
+    "description": "Adapted from CIM data models. Synchronous machine whose behaviour is described by reference to a standard model expressed in one of the following forms:",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SynchronousMachineDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be SynchronousMachineDynamics"
+                },
+                "ExcitationSystemDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation system model associated with this synchronous machine model. Default: None",
+                    "type": "number"
+                },
+                "GenICompensationForGenJ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Compensation of voltage compensator`s generator for current flow out of this  generator. Default: 'list'",
+                    "type": "number"
+                },
+                "MechanicalLoadDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Mechanical load model associated with this synchronous machine model. Default: None",
+                    "type": "number"
+                },
+                "SynchronousMachine": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine to which synchronous machine dynamics model applies. Default: None",
+                    "type": "number"
+                },
+                "TurbineGovernorDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this turbine-governor model is associated. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
