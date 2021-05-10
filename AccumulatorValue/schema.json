@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AccumulatorValue/schema.json",
-  "title": " Smart Data Models - AccumulatorValue",
-  "description": "Adapted from CIM data models. AccumulatorValue represents an accumulated (counted) MeasurementValue.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AccumulatorValue"
-        ],
-        "description": "Property. NGSI type. It has to be AccumulatorValue"
-    },
-    "Accumulator": {
-        "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: None",
-        "type": "number"
-    },
-    "AccumulatorReset": {
-        "description": "Property. Model:'https://schema.org/Number'. The command that reset the accumulator value. Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'. The value to supervise. The value is positive. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AccumulatorValue/schema.json",
+    "title": " Smart Data Models - AccumulatorValue",
+    "description": "Adapted from CIM data models. AccumulatorValue represents an accumulated (counted) MeasurementValue.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AccumulatorValue"
+                    ],
+                    "description": "Property. NGSI type. It has to be AccumulatorValue"
+                },
+                "Accumulator": {
+                    "description": "Property. Model:'https://schema.org/Number'. The values connected to this measurement. Default: None",
+                    "type": "number"
+                },
+                "AccumulatorReset": {
+                    "description": "Property. Model:'https://schema.org/Number'. The command that reset the accumulator value. Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The value to supervise. The value is positive. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
