@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Bay/schema.json",
-  "title": " Smart Data Models - Bay",
-  "description": "Adapted from CIM data models. A collection of power system resources (within a given substation) including conducting equipment, protection relays, measurements, and telemetry.  A bay typically represents a physical grouping related to modularization of equipment.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Bay"
-        ],
-        "description": "Property. NGSI type. It has to be Bay"
-    },
-    "VoltageLevel": {
-        "description": "Property. Model:'https://schema.org/Number'. The voltage level containing this bay. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Bay/schema.json",
+    "title": " Smart Data Models - Bay",
+    "description": "Adapted from CIM data models. A collection of power system resources (within a given substation) including conducting equipment, protection relays, measurements, and telemetry.  A bay typically represents a physical grouping related to modularization of equipment.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Bay"
+                    ],
+                    "description": "Property. NGSI type. It has to be Bay"
+                },
+                "VoltageLevel": {
+                    "description": "Property. Model:'https://schema.org/Number'. The voltage level containing this bay. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
