@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcitationLimiterDynamics/schema.json",
-  "title": " Smart Data Models - OverexcitationLimiterDynamics",
-  "description": "Adapted from CIM data models. Overexcitation limiter function block whose behaviour is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OverexcitationLimiterDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be OverexcitationLimiterDynamics"
-    },
-    "ExcitationSystemDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation system model with which this overexcitation limiter model is associated. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcitationLimiterDynamics/schema.json",
+    "title": " Smart Data Models - OverexcitationLimiterDynamics",
+    "description": "Adapted from CIM data models. Overexcitation limiter function block whose behaviour is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OverexcitationLimiterDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be OverexcitationLimiterDynamics"
+                },
+                "ExcitationSystemDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation system model with which this overexcitation limiter model is associated. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
