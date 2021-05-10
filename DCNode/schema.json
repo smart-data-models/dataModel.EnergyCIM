@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCNode/schema.json",
-  "title": " Smart Data Models - DCNode",
-  "description": "Adapted from CIM data models. DC nodes are points where terminals of DC conducting equipment are connected together with zero impedance.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DCNode"
-        ],
-        "description": "Property. NGSI type. It has to be DCNode"
-    },
-    "DCEquipmentContainer": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "DCTerminals": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    },
-    "DCTopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. See association end TopologicalNode.ConnectivityNodes. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCNode/schema.json",
+    "title": " Smart Data Models - DCNode",
+    "description": "Adapted from CIM data models. DC nodes are points where terminals of DC conducting equipment are connected together with zero impedance.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DCNode"
+                    ],
+                    "description": "Property. NGSI type. It has to be DCNode"
+                },
+                "DCEquipmentContainer": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "DCTerminals": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                },
+                "DCTopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. See association end TopologicalNode.ConnectivityNodes. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
