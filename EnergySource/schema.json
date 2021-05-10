@@ -1,80 +1,79 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergySource/schema.json",
-  "title": " Smart Data Models - EnergySource",
-  "description": "Adapted from CIM data models. A generic equivalent for an energy supplier on a transmission or distribution voltage level.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EnergySource"
-        ],
-        "description": "Property. NGSI type. It has to be EnergySource"
-    },
-    "EnergySchedulingType": {
-        "description": "Property. Model:'https://schema.org/Number'. Energy Source of a particular Energy Scheduling Type Default: None",
-        "type": "number"
-    },
-    "WindTurbineType3or4Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator Type 3 or 4 dynamics model associated with this energy source. Default: None",
-        "type": "number"
-    },
-    "activePower": {
-        "description": "Property. Model:'https://schema.org/Number'. High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
-        "type": "number"
-    },
-    "nominalVoltage": {
-        "description": "Property. Model:'https://schema.org/Number'. Phase-to-phase nominal voltage. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence Thevenin resistance. Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence Thevenin resistance. Default: 0.0",
-        "type": "number"
-    },
-    "reactivePower": {
-        "description": "Property. Model:'https://schema.org/Number'. High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
-        "type": "number"
-    },
-    "rn": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence Thevenin resistance. Default: 0.0",
-        "type": "number"
-    },
-    "voltageAngle": {
-        "description": "Property. Model:'https://schema.org/Number'. Phase angle of a-phase open circuit. Default: 0.0",
-        "type": "number"
-    },
-    "voltageMagnitude": {
-        "description": "Property. Model:'https://schema.org/Number'. Phase-to-phase open circuit voltage magnitude. Default: 0.0",
-        "type": "number"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence Thevenin reactance. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence Thevenin reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xn": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence Thevenin reactance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergySource/schema.json",
+    "title": " Smart Data Models - EnergySource",
+    "description": "Adapted from CIM data models. A generic equivalent for an energy supplier on a transmission or distribution voltage level.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EnergySource"
+                    ],
+                    "description": "Property. NGSI type. It has to be EnergySource"
+                },
+                "EnergySchedulingType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Energy Source of a particular Energy Scheduling Type Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType3or4Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator Type 3 or 4 dynamics model associated with this energy source. Default: None",
+                    "type": "number"
+                },
+                "activePower": {
+                    "description": "Property. Model:'https://schema.org/Number'. High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
+                    "type": "number"
+                },
+                "nominalVoltage": {
+                    "description": "Property. Model:'https://schema.org/Number'. Phase-to-phase nominal voltage. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence Thevenin resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence Thevenin resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "reactivePower": {
+                    "description": "Property. Model:'https://schema.org/Number'. High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
+                    "type": "number"
+                },
+                "rn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence Thevenin resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "voltageAngle": {
+                    "description": "Property. Model:'https://schema.org/Number'. Phase angle of a-phase open circuit. Default: 0.0",
+                    "type": "number"
+                },
+                "voltageMagnitude": {
+                    "description": "Property. Model:'https://schema.org/Number'. Phase-to-phase open circuit voltage magnitude. Default: 0.0",
+                    "type": "number"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence Thevenin reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence Thevenin reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence Thevenin reactance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
