@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogLimit/schema.json",
-  "title": " Smart Data Models - AnalogLimit",
-  "description": "Adapted from CIM data models. Limit values for Analog measurements.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AnalogLimit"
-        ],
-        "description": "Property. NGSI type. It has to be AnalogLimit"
-    },
-    "LimitSet": {
-        "description": "Property. Model:'https://schema.org/Number'. The limit values used for supervision of Measurements. Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'. The value to supervise against. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogLimit/schema.json",
+    "title": " Smart Data Models - AnalogLimit",
+    "description": "Adapted from CIM data models. Limit values for Analog measurements.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AnalogLimit"
+                    ],
+                    "description": "Property. NGSI type. It has to be AnalogLimit"
+                },
+                "LimitSet": {
+                    "description": "Property. Model:'https://schema.org/Number'. The limit values used for supervision of Measurements. Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The value to supervise against. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
