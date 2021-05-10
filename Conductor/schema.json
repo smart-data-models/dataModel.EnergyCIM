@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Conductor/schema.json",
-  "title": " Smart Data Models - Conductor",
-  "description": "Adapted from CIM data models. Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Conductor"
-        ],
-        "description": "Property. NGSI type. It has to be Conductor"
-    },
-    "length": {
-        "description": "Property. Model:'https://schema.org/Number'. Segment length for calculating line section capabilities Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Conductor/schema.json",
+    "title": " Smart Data Models - Conductor",
+    "description": "Adapted from CIM data models. Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Conductor"
+                    ],
+                    "description": "Property. NGSI type. It has to be Conductor"
+                },
+                "length": {
+                    "description": "Property. Model:'https://schema.org/Number'. Segment length for calculating line section capabilities Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
