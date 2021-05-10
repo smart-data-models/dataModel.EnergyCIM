@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbLCFB1/schema.json",
-  "title": " Smart Data Models - TurbLCFB1",
-  "description": "Adapted from CIM data models. Turbine Load Controller model developed in the WECC.  This model represents a supervisory turbine load controller that acts to maintain turbine power at a set value by continuous adjustment of the turbine governor speed-load reference. This model is intended to represent slow reset 'outer loop' controllers managing the action of the turbine governor.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TurbLCFB1"
-        ],
-        "description": "Property. NGSI type. It has to be TurbLCFB1"
-    },
-    "db": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller dead band (db).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "emax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum control error (Emax) (note 4).  Typical Value = 0.02. Default: 0.0",
-        "type": "number"
-    },
-    "fb": {
-        "description": "Property. Model:'https://schema.org/Number'. Frequency bias gain (Fb).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "fbf": {
-        "description": "Property. Model:'https://schema.org/Number'. Frequency bias flag (Fbf). true = enable frequency bias false = disable frequency bias. Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "irmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum turbine speed/load reference bias (Irmax) (note 3).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Integral gain (Ki).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pbf": {
-        "description": "Property. Model:'https://schema.org/Number'. Power controller flag (Pbf). true = enable load controller false = disable load controller. Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "pmwset": {
-        "description": "Property. Model:'https://schema.org/Number'. Power controller setpoint (Pmwset) (note 1).  Unit = MW. Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "speedReferenceGovernor": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of turbine governor reference (Type). true = speed reference governor false = load reference governor. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "tpelec": {
-        "description": "Property. Model:'https://schema.org/Number'. Power transducer time constant (Tpelec).  Typical Value = 0. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbLCFB1/schema.json",
+    "title": " Smart Data Models - TurbLCFB1",
+    "description": "Adapted from CIM data models. Turbine Load Controller model developed in the WECC.  This model represents a supervisory turbine load controller that acts to maintain turbine power at a set value by continuous adjustment of the turbine governor speed-load reference. This model is intended to represent slow reset 'outer loop' controllers managing the action of the turbine governor.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TurbLCFB1"
+                    ],
+                    "description": "Property. NGSI type. It has to be TurbLCFB1"
+                },
+                "db": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller dead band (db).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "emax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum control error (Emax) (note 4).  Typical Value = 0.02. Default: 0.0",
+                    "type": "number"
+                },
+                "fb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency bias gain (Fb).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "fbf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency bias flag (Fbf). true = enable frequency bias false = disable frequency bias. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "irmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum turbine speed/load reference bias (Irmax) (note 3).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Integral gain (Ki).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pbf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power controller flag (Pbf). true = enable load controller false = disable load controller. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "pmwset": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power controller setpoint (Pmwset) (note 1).  Unit = MW. Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "speedReferenceGovernor": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of turbine governor reference (Type). true = speed reference governor false = load reference governor. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "tpelec": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power transducer time constant (Tpelec).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
