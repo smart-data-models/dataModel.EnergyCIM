@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Simple_Float/schema.json",
-  "title": " Smart Data Models - Simple_Float",
-  "description": "Adapted from CIM data models. A floating point number. The range is unspecified and not limited.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Simple_Float"
-        ],
-        "description": "Property. NGSI type. It has to be Simple_Float"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Simple_Float/schema.json",
+    "title": " Smart Data Models - Simple_Float",
+    "description": "Adapted from CIM data models. A floating point number. The range is unspecified and not limited.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Simple_Float"
+                    ],
+                    "description": "Property. NGSI type. It has to be Simple_Float"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
