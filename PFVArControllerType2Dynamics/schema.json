@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArControllerType2Dynamics/schema.json",
-  "title": " Smart Data Models - PFVArControllerType2Dynamics",
-  "description": "Adapted from CIM data models. Power Factor or VAr controller Type II function block whose behaviour is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PFVArControllerType2Dynamics"
-        ],
-        "description": "Property. NGSI type. It has to be PFVArControllerType2Dynamics"
-    },
-    "ExcitationSystemDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation system model with which this Power Factor or VAr controller Type II is associated. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArControllerType2Dynamics/schema.json",
+    "title": " Smart Data Models - PFVArControllerType2Dynamics",
+    "description": "Adapted from CIM data models. Power Factor or VAr controller Type II function block whose behaviour is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PFVArControllerType2Dynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be PFVArControllerType2Dynamics"
+                },
+                "ExcitationSystemDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation system model with which this Power Factor or VAr controller Type II is associated. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
