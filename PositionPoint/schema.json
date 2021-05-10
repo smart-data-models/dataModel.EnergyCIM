@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PositionPoint/schema.json",
-  "title": " Smart Data Models - PositionPoint",
-  "description": "Adapted from CIM data models. Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to desribe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PositionPoint"
-        ],
-        "description": "Property. NGSI type. It has to be PositionPoint"
-    },
-    "Location": {
-        "description": "Property. Model:'https://schema.org/Number'. Location described by this position point. Default: None",
-        "type": "number"
-    },
-    "sequenceNumber": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero-relative sequence number of this point within a series of points. Default: 0",
-        "type": "number"
-    },
-    "xPosition": {
-        "description": "Property. Model:'https://schema.org/Number'. X axis position. Default: ''",
-        "type": "number"
-    },
-    "yPosition": {
-        "description": "Property. Model:'https://schema.org/Number'. Y axis position. Default: ''",
-        "type": "number"
-    },
-    "zPosition": {
-        "description": "Property. Model:'https://schema.org/Number'. (if applicable) Z axis position. Default: ''",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PositionPoint/schema.json",
+    "title": " Smart Data Models - PositionPoint",
+    "description": "Adapted from CIM data models. Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to desribe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PositionPoint"
+                    ],
+                    "description": "Property. NGSI type. It has to be PositionPoint"
+                },
+                "Location": {
+                    "description": "Property. Model:'https://schema.org/Number'. Location described by this position point. Default: None",
+                    "type": "number"
+                },
+                "sequenceNumber": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero-relative sequence number of this point within a series of points. Default: 0",
+                    "type": "number"
+                },
+                "xPosition": {
+                    "description": "Property. Model:'https://schema.org/Number'. X axis position. Default: ''",
+                    "type": "number"
+                },
+                "yPosition": {
+                    "description": "Property. Model:'https://schema.org/Number'. Y axis position. Default: ''",
+                    "type": "number"
+                },
+                "zPosition": {
+                    "description": "Property. Model:'https://schema.org/Number'. (if applicable) Z axis position. Default: ''",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
