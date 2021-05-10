@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPlantFreqPcontrolIEC/schema.json",
-  "title": " Smart Data Models - WindPlantFreqPcontrolIEC",
-  "description": "Adapted from CIM data models. Frequency and active power controller model.  Reference: IEC Standard 61400-27-1 Annex E.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindPlantFreqPcontrolIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindPlantFreqPcontrolIEC"
-    },
-    "WindDynamicsLookupTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 'list'",
-        "type": "number"
-    },
-    "WindPlantIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind plant model with which this wind plant frequency and active power control is associated. Default: None",
-        "type": "number"
-    },
-    "dprefmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "dprefmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kiwpp": {
-        "description": "Property. Model:'https://schema.org/Number'. Plant P controller integral gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpwpp": {
-        "description": "Property. Model:'https://schema.org/Number'. Plant P controller proportional gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "prefmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "prefmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tpft": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpfv": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "twpffilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant for frequency measurement (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "twppfilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant for active power measurement (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPlantFreqPcontrolIEC/schema.json",
+    "title": " Smart Data Models - WindPlantFreqPcontrolIEC",
+    "description": "Adapted from CIM data models. Frequency and active power controller model.  Reference: IEC Standard 61400-27-1 Annex E.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindPlantFreqPcontrolIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindPlantFreqPcontrolIEC"
+                },
+                "WindDynamicsLookupTable": {
+                    "description": "Property. Model:'https://schema.org/Number'. The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 'list'",
+                    "type": "number"
+                },
+                "WindPlantIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind plant model with which this wind plant frequency and active power control is associated. Default: None",
+                    "type": "number"
+                },
+                "dprefmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "dprefmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kiwpp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Plant P controller integral gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpwpp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Plant P controller proportional gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "prefmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "prefmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tpft": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpfv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "twpffilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant for frequency measurement (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "twppfilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant for active power measurement (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
