@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExternalNetworkInjection/schema.json",
-  "title": " Smart Data Models - ExternalNetworkInjection",
-  "description": "Adapted from CIM data models. This class represents external network and it is used for IEC 60909 calculations.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExternalNetworkInjection"
-        ],
-        "description": "Property. NGSI type. It has to be ExternalNetworkInjection"
-    },
-    "governorSCD": {
-        "description": "Property. Model:'https://schema.org/Number'. Power Frequency Bias. This is the change in power injection divided by the change in frequency and negated.  A positive value of the power frequency bias provides additional power injection upon a drop in frequency. Default: 0.0",
-        "type": "number"
-    },
-    "ikSecond": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Default: False",
-        "type": "number"
-    },
-    "maxInitialSymShCCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum initial symmetrical short-circuit currents (Ik` max) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "maxP": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum active power of the injection. Default: 0.0",
-        "type": "number"
-    },
-    "maxQ": {
-        "description": "Property. Model:'https://schema.org/Number'. Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: 0.0",
-        "type": "number"
-    },
-    "maxR0ToX0Ratio": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "maxR1ToX1Ratio": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "maxZ0ToZ1Ratio": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "minInitialSymShCCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum initial symmetrical short-circuit currents (Ik` min) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "minP": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum active power of the injection. Default: 0.0",
-        "type": "number"
-    },
-    "minQ": {
-        "description": "Property. Model:'https://schema.org/Number'. Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: 0.0",
-        "type": "number"
-    },
-    "minR0ToX0Ratio": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Used for short circuit data exchange according to IEC 6090 Default: 0.0",
-        "type": "number"
-    },
-    "minR1ToX1Ratio": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "minZ0ToZ1Ratio": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "p": {
-        "description": "Property. Model:'https://schema.org/Number'. Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
-        "type": "number"
-    },
-    "q": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
-        "type": "number"
-    },
-    "referencePriority": {
-        "description": "Property. Model:'https://schema.org/Number'. Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0",
-        "type": "number"
-    },
-    "voltageFactor": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage factor in pu, which was used to calculate short-circuit current Ik` and power Sk`. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExternalNetworkInjection/schema.json",
+    "title": " Smart Data Models - ExternalNetworkInjection",
+    "description": "Adapted from CIM data models. This class represents external network and it is used for IEC 60909 calculations.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExternalNetworkInjection"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExternalNetworkInjection"
+                },
+                "governorSCD": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power Frequency Bias. This is the change in power injection divided by the change in frequency and negated.  A positive value of the power frequency bias provides additional power injection upon a drop in frequency. Default: 0.0",
+                    "type": "number"
+                },
+                "ikSecond": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Default: False",
+                    "type": "number"
+                },
+                "maxInitialSymShCCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum initial symmetrical short-circuit currents (Ik` max) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "maxP": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum active power of the injection. Default: 0.0",
+                    "type": "number"
+                },
+                "maxQ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: 0.0",
+                    "type": "number"
+                },
+                "maxR0ToX0Ratio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "maxR1ToX1Ratio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "maxZ0ToZ1Ratio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "minInitialSymShCCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum initial symmetrical short-circuit currents (Ik` min) in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "minP": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum active power of the injection. Default: 0.0",
+                    "type": "number"
+                },
+                "minQ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used Default: 0.0",
+                    "type": "number"
+                },
+                "minR0ToX0Ratio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik`). Used for short circuit data exchange according to IEC 6090 Default: 0.0",
+                    "type": "number"
+                },
+                "minR1ToX1Ratio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "minZ0ToZ1Ratio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "p": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
+                    "type": "number"
+                },
+                "q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
+                    "type": "number"
+                },
+                "referencePriority": {
+                    "description": "Property. Model:'https://schema.org/Number'. Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0",
+                    "type": "number"
+                },
+                "voltageFactor": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage factor in pu, which was used to calculate short-circuit current Ik` and power Sk`. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
