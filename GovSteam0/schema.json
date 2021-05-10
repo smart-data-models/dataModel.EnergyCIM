@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteam0/schema.json",
-  "title": " Smart Data Models - GovSteam0",
-  "description": "Adapted from CIM data models. A simplified steam turbine governor model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteam0"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteam0"
-    },
-    "dt": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine damping coefficient (Dt).  Unit = delta P / delta speed. Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase)  (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Steam bowl time constant (T1).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Numerator time constant of T2/T3 block (T2).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Reheater time constant (T3).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve position, PU of mwcap (Vmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum valve position, PU of mwcap (Vmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteam0/schema.json",
+    "title": " Smart Data Models - GovSteam0",
+    "description": "Adapted from CIM data models. A simplified steam turbine governor model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteam0"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteam0"
+                },
+                "dt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping coefficient (Dt).  Unit = delta P / delta speed. Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase)  (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Steam bowl time constant (T1).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Numerator time constant of T2/T3 block (T2).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reheater time constant (T3).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve position, PU of mwcap (Vmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve position, PU of mwcap (Vmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
