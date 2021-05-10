@@ -1,120 +1,119 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcPIC/schema.json",
-  "title": " Smart Data Models - ExcPIC",
-  "description": "Adapted from CIM data models. Proportional/Integral Regulator Excitation System Model.  This model can be used to represent excitation systems with a proportional-integral (PI) voltage regulator controller.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcPIC"
-        ],
-        "description": "Property. NGSI type. It has to be ExcPIC"
-    },
-    "e1": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage value 1 (E1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "e2": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage value 2 (E2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "efdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter maximum limit (Efdmax).  Typical Value = 8. Default: 0.0",
-        "type": "number"
-    },
-    "efdmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter minimum limit (Efdmin).  Typical Value = -0.87. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Ka).  Typical Value = 3.15. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter regulation factor (Kc).  Typical Value = 0.08. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant (Ke).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate feedback gain (Kf).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Current source gain (Ki).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential source gain (Kp).  Typical Value = 6.5. Default: 0.0",
-        "type": "number"
-    },
-    "se1": {
-        "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E1 (Se1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "se2": {
-        "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E2 (Se2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ta1": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller time constant (Ta1).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "ta2": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta2).  Typical Value = 0.01. Default: 0",
-        "type": "number"
-    },
-    "ta3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (Ta3).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ta4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (Ta4).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant (Te).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tf1": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate feedback time constant (Tf1).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate feedback lag time constant (Tf2).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vr1": {
-        "description": "Property. Model:'https://schema.org/Number'. PI maximum limit (Vr1).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vr2": {
-        "description": "Property. Model:'https://schema.org/Number'. PI minimum limit (Vr2).  Typical Value = -0.87. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator maximum limit (Vrmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator minimum limit (Vrmin).  Typical Value = -0.87. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcPIC/schema.json",
+    "title": " Smart Data Models - ExcPIC",
+    "description": "Adapted from CIM data models. Proportional/Integral Regulator Excitation System Model.  This model can be used to represent excitation systems with a proportional-integral (PI) voltage regulator controller.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcPIC"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcPIC"
+                },
+                "e1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage value 1 (E1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "e2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage value 2 (E2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "efdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter maximum limit (Efdmax).  Typical Value = 8. Default: 0.0",
+                    "type": "number"
+                },
+                "efdmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter minimum limit (Efdmin).  Typical Value = -0.87. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Ka).  Typical Value = 3.15. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter regulation factor (Kc).  Typical Value = 0.08. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant (Ke).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback gain (Kf).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Current source gain (Ki).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential source gain (Kp).  Typical Value = 6.5. Default: 0.0",
+                    "type": "number"
+                },
+                "se1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E1 (Se1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "se2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E2 (Se2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ta1": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller time constant (Ta1).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "ta2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta2).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "ta3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (Ta3).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ta4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (Ta4).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant (Te).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tf1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback time constant (Tf1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback lag time constant (Tf2).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vr1": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI maximum limit (Vr1).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vr2": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI minimum limit (Vr2).  Typical Value = -0.87. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator maximum limit (Vrmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator minimum limit (Vrmin).  Typical Value = -0.87. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
