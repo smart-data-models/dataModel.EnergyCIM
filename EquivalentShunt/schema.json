@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentShunt/schema.json",
-  "title": " Smart Data Models - EquivalentShunt",
-  "description": "Adapted from CIM data models. The class represents equivalent shunts.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EquivalentShunt"
-        ],
-        "description": "Property. NGSI type. It has to be EquivalentShunt"
-    },
-    "b": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt susceptance. Default: 0.0",
-        "type": "number"
-    },
-    "g": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt conductance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentShunt/schema.json",
+    "title": " Smart Data Models - EquivalentShunt",
+    "description": "Adapted from CIM data models. The class represents equivalent shunts.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EquivalentShunt"
+                    ],
+                    "description": "Property. NGSI type. It has to be EquivalentShunt"
+                },
+                "b": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt susceptance. Default: 0.0",
+                    "type": "number"
+                },
+                "g": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt conductance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
