@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindProtectionIEC/schema.json",
-  "title": " Smart Data Models - WindProtectionIEC",
-  "description": "Adapted from CIM data models. The grid protection model includes protection against over and under voltage, and against over and under frequency.  Reference: IEC Standard 614000-27-1 Section 6.6.6.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindProtectionIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindProtectionIEC"
-    },
-    "WindTurbineType1or2IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator type 1 or 2 model with which this wind turbine protection model is associated. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType3or4IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator type 3 or 4 model with which this wind turbine protection model is associated. Default: None",
-        "type": "number"
-    },
-    "fover": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine over frequency protection levels (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "funder": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine under frequency protection levels (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tfover": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine over frequency protection disconnection times (). It is project dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tfunder": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine under frequency protection disconnection times (). It is project dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tuover": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine over voltage protection disconnection times (). It is project dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tuunder": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine under voltage protection disconnection times (). It is project dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "uover": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine over voltage protection levels (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "uunder": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine under voltage protection levels (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindProtectionIEC/schema.json",
+    "title": " Smart Data Models - WindProtectionIEC",
+    "description": "Adapted from CIM data models. The grid protection model includes protection against over and under voltage, and against over and under frequency.  Reference: IEC Standard 614000-27-1 Section 6.6.6.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindProtectionIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindProtectionIEC"
+                },
+                "WindTurbineType1or2IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator type 1 or 2 model with which this wind turbine protection model is associated. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType3or4IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator type 3 or 4 model with which this wind turbine protection model is associated. Default: None",
+                    "type": "number"
+                },
+                "fover": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine over frequency protection levels (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "funder": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine under frequency protection levels (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tfover": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine over frequency protection disconnection times (). It is project dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tfunder": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine under frequency protection disconnection times (). It is project dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tuover": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine over voltage protection disconnection times (). It is project dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tuunder": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of corresponding wind turbine under voltage protection disconnection times (). It is project dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "uover": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine over voltage protection levels (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "uunder": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of wind turbine under voltage protection levels (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
