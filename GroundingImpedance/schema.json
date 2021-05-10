@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GroundingImpedance/schema.json",
-  "title": " Smart Data Models - GroundingImpedance",
-  "description": "Adapted from CIM data models. A fixed impedance device used for grounding.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GroundingImpedance"
-        ],
-        "description": "Property. NGSI type. It has to be GroundingImpedance"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactance of device. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GroundingImpedance/schema.json",
+    "title": " Smart Data Models - GroundingImpedance",
+    "description": "Adapted from CIM data models. A fixed impedance device used for grounding.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GroundingImpedance"
+                    ],
+                    "description": "Property. NGSI type. It has to be GroundingImpedance"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactance of device. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
