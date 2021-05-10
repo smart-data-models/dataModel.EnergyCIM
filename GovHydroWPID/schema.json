@@ -1,116 +1,115 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroWPID/schema.json",
-  "title": " Smart Data Models - GovHydroWPID",
-  "description": "Adapted from CIM data models. Woodward PID Hydro Governor.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovHydroWPID"
-        ],
-        "description": "Property. NGSI type. It has to be GovHydroWPID"
-    },
-    "d": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (D).  Unit = delta P / delta speed. Default: 0.0",
-        "type": "number"
-    },
-    "gatmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate opening Limit Maximum (Gatmax). Default: 0.0",
-        "type": "number"
-    },
-    "gatmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate opening Limit Minimum (Gatmin). Default: 0.0",
-        "type": "number"
-    },
-    "gv1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate position 1 (Gv1). Default: 0.0",
-        "type": "number"
-    },
-    "gv2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate position 2 (Gv2). Default: 0.0",
-        "type": "number"
-    },
-    "gv3": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate position 3 (Gv3). Default: 0.0",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Reset gain (Ki).  Typical Value = 0.36. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values  (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pgv1": {
-        "description": "Property. Model:'https://schema.org/Number'. Output at Gv1 PU of MWbase (Pgv1). Default: 0.0",
-        "type": "number"
-    },
-    "pgv2": {
-        "description": "Property. Model:'https://schema.org/Number'. Output at Gv2 PU of MWbase (Pgv2). Default: 0.0",
-        "type": "number"
-    },
-    "pgv3": {
-        "description": "Property. Model:'https://schema.org/Number'. Output at Gv3 PU of MWbase (Pgv3). Default: 0.0",
-        "type": "number"
-    },
-    "pmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum Power Output (Pmax). Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum Power Output (Pmin). Default: 0.0",
-        "type": "number"
-    },
-    "reg": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent drop (Reg). Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller time constant (Ta) (>0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tb) (>0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "treg": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed detector time constant (Treg). Default: 0",
-        "type": "number"
-    },
-    "tw": {
-        "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "velmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "velmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroWPID/schema.json",
+    "title": " Smart Data Models - GovHydroWPID",
+    "description": "Adapted from CIM data models. Woodward PID Hydro Governor.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydroWPID"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydroWPID"
+                },
+                "d": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (D).  Unit = delta P / delta speed. Default: 0.0",
+                    "type": "number"
+                },
+                "gatmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate opening Limit Maximum (Gatmax). Default: 0.0",
+                    "type": "number"
+                },
+                "gatmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate opening Limit Minimum (Gatmin). Default: 0.0",
+                    "type": "number"
+                },
+                "gv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate position 1 (Gv1). Default: 0.0",
+                    "type": "number"
+                },
+                "gv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate position 2 (Gv2). Default: 0.0",
+                    "type": "number"
+                },
+                "gv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate position 3 (Gv3). Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reset gain (Ki).  Typical Value = 0.36. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values  (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output at Gv1 PU of MWbase (Pgv1). Default: 0.0",
+                    "type": "number"
+                },
+                "pgv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output at Gv2 PU of MWbase (Pgv2). Default: 0.0",
+                    "type": "number"
+                },
+                "pgv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output at Gv3 PU of MWbase (Pgv3). Default: 0.0",
+                    "type": "number"
+                },
+                "pmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum Power Output (Pmax). Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum Power Output (Pmin). Default: 0.0",
+                    "type": "number"
+                },
+                "reg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent drop (Reg). Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller time constant (Ta) (>0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tb) (>0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "treg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed detector time constant (Treg). Default: 0",
+                    "type": "number"
+                },
+                "tw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "velmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "velmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
