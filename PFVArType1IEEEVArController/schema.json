@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArType1IEEEVArController/schema.json",
-  "title": " Smart Data Models - PFVArType1IEEEVArController",
-  "description": "Adapted from CIM data models. The class represents IEEE VAR Controller Type 1 which operates by moving the voltage reference directly.  Reference: IEEE Standard 421.5-2005 Section 11.3.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PFVArType1IEEEVArController"
-        ],
-        "description": "Property. NGSI type. It has to be PFVArType1IEEEVArController"
-    },
-    "tvarc": {
-        "description": "Property. Model:'https://schema.org/Number'. Var controller time delay ().  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "vvar": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine power factor (). Default: 0.0",
-        "type": "number"
-    },
-    "vvarcbw": {
-        "description": "Property. Model:'https://schema.org/Number'. Var controller dead band ().  Typical Value = 0.02. Default: 0.0",
-        "type": "number"
-    },
-    "vvarref": {
-        "description": "Property. Model:'https://schema.org/Number'. Var controller reference (). Default: 0.0",
-        "type": "number"
-    },
-    "vvtmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: 0.0",
-        "type": "number"
-    },
-    "vvtmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum machine terminal voltage needed to enable pf/var controller (). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArType1IEEEVArController/schema.json",
+    "title": " Smart Data Models - PFVArType1IEEEVArController",
+    "description": "Adapted from CIM data models. The class represents IEEE VAR Controller Type 1 which operates by moving the voltage reference directly.  Reference: IEEE Standard 421.5-2005 Section 11.3.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PFVArType1IEEEVArController"
+                    ],
+                    "description": "Property. NGSI type. It has to be PFVArType1IEEEVArController"
+                },
+                "tvarc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Var controller time delay ().  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "vvar": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine power factor (). Default: 0.0",
+                    "type": "number"
+                },
+                "vvarcbw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Var controller dead band ().  Typical Value = 0.02. Default: 0.0",
+                    "type": "number"
+                },
+                "vvarref": {
+                    "description": "Property. Model:'https://schema.org/Number'. Var controller reference (). Default: 0.0",
+                    "type": "number"
+                },
+                "vvtmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum machine terminal voltage needed for pf/var controller to be enabled (). Default: 0.0",
+                    "type": "number"
+                },
+                "vvtmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum machine terminal voltage needed to enable pf/var controller (). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
