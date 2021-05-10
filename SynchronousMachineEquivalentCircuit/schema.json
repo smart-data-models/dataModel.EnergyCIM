@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineEquivalentCircuit/schema.json",
-  "title": " Smart Data Models - SynchronousMachineEquivalentCircuit",
-  "description": "Adapted from CIM data models. The electrical equations for all variations of the synchronous models are based on the SynchronousEquivalentCircuit diagram for the direct and quadrature axes.    =  +   =  +  *  / ( + )  =  +  * *  / ( *  +  *  +  * )  =  +   =  +  *  / (+ )  =  +  **  / ( *  +  *  +  * )  = ( + ) / ( * )  = ( *  +  *  +  * ) / ( *  * ( + )  = ( + ) / ( * )  = ( *  +  *  +  * )/ ( *  * ( + ) Same equations using CIM attributes from SynchronousMachineTimeConstantReactance class on left of = sign and SynchronousMachineEquivalentCircuit class on right (except as noted): xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.statorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q)  tpdo = (xad + xfd) / (2*pi*nominal frequency * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi*nominal frequency * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi*nominal frequency * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi*nominal frequency * r2q * (xaq + x1q).  Are only valid for a simplified model where 'Canay' reactance is zero.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SynchronousMachineEquivalentCircuit"
-        ],
-        "description": "Property. NGSI type. It has to be SynchronousMachineEquivalentCircuit"
-    },
-    "r1d": {
-        "description": "Property. Model:'https://schema.org/Number'. D-axis damper 1 winding resistance. Default: 0.0",
-        "type": "number"
-    },
-    "r1q": {
-        "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 1 winding resistance. Default: 0.0",
-        "type": "number"
-    },
-    "r2q": {
-        "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 2 winding resistance. Default: 0.0",
-        "type": "number"
-    },
-    "rfd": {
-        "description": "Property. Model:'https://schema.org/Number'. Field winding resistance. Default: 0.0",
-        "type": "number"
-    },
-    "x1d": {
-        "description": "Property. Model:'https://schema.org/Number'. D-axis damper 1 winding leakage reactance. Default: 0.0",
-        "type": "number"
-    },
-    "x1q": {
-        "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 1 winding leakage reactance. Default: 0.0",
-        "type": "number"
-    },
-    "x2q": {
-        "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 2 winding leakage reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xad": {
-        "description": "Property. Model:'https://schema.org/Number'. D-axis mutual reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xaq": {
-        "description": "Property. Model:'https://schema.org/Number'. Q-axis mutual reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xf1d": {
-        "description": "Property. Model:'https://schema.org/Number'. Differential mutual (`Canay`) reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xfd": {
-        "description": "Property. Model:'https://schema.org/Number'. Field winding leakage reactance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineEquivalentCircuit/schema.json",
+    "title": " Smart Data Models - SynchronousMachineEquivalentCircuit",
+    "description": "Adapted from CIM data models. The electrical equations for all variations of the synchronous models are based on the SynchronousEquivalentCircuit diagram for the direct and quadrature axes.    =  +   =  +  *  / ( + )  =  +  * *  / ( *  +  *  +  * )  =  +   =  +  *  / (+ )  =  +  **  / ( *  +  *  +  * )  = ( + ) / ( * )  = ( *  +  *  +  * ) / ( *  * ( + )  = ( + ) / ( * )  = ( *  +  *  +  * )/ ( *  * ( + ) Same equations using CIM attributes from SynchronousMachineTimeConstantReactance class on left of = sign and SynchronousMachineEquivalentCircuit class on right (except as noted): xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.statorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q)  tpdo = (xad + xfd) / (2*pi*nominal frequency * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi*nominal frequency * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi*nominal frequency * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi*nominal frequency * r2q * (xaq + x1q).  Are only valid for a simplified model where 'Canay' reactance is zero.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SynchronousMachineEquivalentCircuit"
+                    ],
+                    "description": "Property. NGSI type. It has to be SynchronousMachineEquivalentCircuit"
+                },
+                "r1d": {
+                    "description": "Property. Model:'https://schema.org/Number'. D-axis damper 1 winding resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "r1q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 1 winding resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "r2q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 2 winding resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "rfd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field winding resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "x1d": {
+                    "description": "Property. Model:'https://schema.org/Number'. D-axis damper 1 winding leakage reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "x1q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 1 winding leakage reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "x2q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Q-axis damper 2 winding leakage reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xad": {
+                    "description": "Property. Model:'https://schema.org/Number'. D-axis mutual reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xaq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Q-axis mutual reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xf1d": {
+                    "description": "Property. Model:'https://schema.org/Number'. Differential mutual (`Canay`) reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xfd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field winding leakage reactance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
