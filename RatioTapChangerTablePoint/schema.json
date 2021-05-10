@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RatioTapChangerTablePoint/schema.json",
-  "title": " Smart Data Models - RatioTapChangerTablePoint",
-  "description": "Adapted from CIM data models. Describes each tap step in the ratio tap changer tabular curve.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RatioTapChangerTablePoint"
-        ],
-        "description": "Property. NGSI type. It has to be RatioTapChangerTablePoint"
-    },
-    "RatioTapChangerTable": {
-        "description": "Property. Model:'https://schema.org/Number'. Points of this table. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RatioTapChangerTablePoint/schema.json",
+    "title": " Smart Data Models - RatioTapChangerTablePoint",
+    "description": "Adapted from CIM data models. Describes each tap step in the ratio tap changer tabular curve.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RatioTapChangerTablePoint"
+                    ],
+                    "description": "Property. NGSI type. It has to be RatioTapChangerTablePoint"
+                },
+                "RatioTapChangerTable": {
+                    "description": "Property. Model:'https://schema.org/Number'. Points of this table. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
