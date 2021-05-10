@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPitchAngleIEC/schema.json",
-  "title": " Smart Data Models - WindContPitchAngleIEC",
-  "description": "Adapted from CIM data models. Pitch angle control model.  Reference: IEC Standard 61400-27-1 Section 6.6.5.8.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindContPitchAngleIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindContPitchAngleIEC"
-    },
-    "WindGenTurbineType3IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 3 model with which this pitch control model is associated. Default: None",
-        "type": "number"
-    },
-    "dthetamax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum pitch positive ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: 0.0",
-        "type": "number"
-    },
-    "dthetamin": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum pitch negative ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: 0.0",
-        "type": "number"
-    },
-    "kic": {
-        "description": "Property. Model:'https://schema.org/Number'. Power PI controller integration gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kiomega": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed PI controller integration gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpc": {
-        "description": "Property. Model:'https://schema.org/Number'. Power PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpomega": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpx": {
-        "description": "Property. Model:'https://schema.org/Number'. Pitch cross coupling gain (K). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "thetamax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum pitch angle (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "thetamin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum pitch angle (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "ttheta": {
-        "description": "Property. Model:'https://schema.org/Number'. Pitch time constant (t). It is type dependent parameter. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPitchAngleIEC/schema.json",
+    "title": " Smart Data Models - WindContPitchAngleIEC",
+    "description": "Adapted from CIM data models. Pitch angle control model.  Reference: IEC Standard 61400-27-1 Section 6.6.5.8.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindContPitchAngleIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindContPitchAngleIEC"
+                },
+                "WindGenTurbineType3IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 3 model with which this pitch control model is associated. Default: None",
+                    "type": "number"
+                },
+                "dthetamax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum pitch positive ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: 0.0",
+                    "type": "number"
+                },
+                "dthetamin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum pitch negative ramp rate (d). It is type dependent parameter. Unit = degrees/sec. Default: 0.0",
+                    "type": "number"
+                },
+                "kic": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power PI controller integration gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kiomega": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed PI controller integration gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpomega": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pitch cross coupling gain (K). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "thetamax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum pitch angle (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "thetamin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum pitch angle (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "ttheta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pitch time constant (t). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
