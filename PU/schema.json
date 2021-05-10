@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PU/schema.json",
-  "title": " Smart Data Models - PU",
-  "description": "Adapted from CIM data models. Per Unit - a positive or negative value referred to a defined base. Values typically range from -10 to +10.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PU"
-        ],
-        "description": "Property. NGSI type. It has to be PU"
-    },
-    "multiplier": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "unit": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PU/schema.json",
+    "title": " Smart Data Models - PU",
+    "description": "Adapted from CIM data models. Per Unit - a positive or negative value referred to a defined base. Values typically range from -10 to +10.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PU"
+                    ],
+                    "description": "Property. NGSI type. It has to be PU"
+                },
+                "multiplier": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "unit": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
