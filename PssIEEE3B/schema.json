@@ -1,104 +1,103 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE3B/schema.json",
-  "title": " Smart Data Models - PssIEEE3B",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS3B power system stabilizer model. The PSS model PSS3B has dual inputs of electrical power and rotor angular frequency deviation. The signals are used to derive an equivalent mechanical power signal.  Reference: IEEE 3B 421.5-2005 Section 8.3.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssIEEE3B"
-        ],
-        "description": "Property. NGSI type. It has to be PssIEEE3B"
-    },
-    "a1": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A1).  Typical Value = 0.359. Default: 0.0",
-        "type": "number"
-    },
-    "a2": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A2).  Typical Value = 0.586. Default: 0.0",
-        "type": "number"
-    },
-    "a3": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A3).  Typical Value = 0.429. Default: 0.0",
-        "type": "number"
-    },
-    "a4": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A4).  Typical Value = 0.564. Default: 0.0",
-        "type": "number"
-    },
-    "a5": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A5).  Typical Value = 0.001. Default: 0.0",
-        "type": "number"
-    },
-    "a6": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A6).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "a7": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A7).  Typical Value = 0.031. Default: 0.0",
-        "type": "number"
-    },
-    "a8": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A8).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "inputSignal1Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1.  Typical Value = generatorElectricalPower. Default: None",
-        "type": "number"
-    },
-    "inputSignal2Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2.  Typical Value = rotorSpeed. Default: None",
-        "type": "number"
-    },
-    "ks1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain on signal # 1 (Ks1).  Typical Value = -0.602. Default: 0.0",
-        "type": "number"
-    },
-    "ks2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain on signal # 2 (Ks2).  Typical Value = 30.12. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T1).  Typical Value = 0.012. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T2).  Typical Value = 0.012. Default: 0",
-        "type": "number"
-    },
-    "tw1": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tw1).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "tw2": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tw2).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "tw3": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tw3).  Typical Value = 0.6. Default: 0",
-        "type": "number"
-    },
-    "vstmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "vstmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE3B/schema.json",
+    "title": " Smart Data Models - PssIEEE3B",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS3B power system stabilizer model. The PSS model PSS3B has dual inputs of electrical power and rotor angular frequency deviation. The signals are used to derive an equivalent mechanical power signal.  Reference: IEEE 3B 421.5-2005 Section 8.3.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssIEEE3B"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssIEEE3B"
+                },
+                "a1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A1).  Typical Value = 0.359. Default: 0.0",
+                    "type": "number"
+                },
+                "a2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A2).  Typical Value = 0.586. Default: 0.0",
+                    "type": "number"
+                },
+                "a3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A3).  Typical Value = 0.429. Default: 0.0",
+                    "type": "number"
+                },
+                "a4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A4).  Typical Value = 0.564. Default: 0.0",
+                    "type": "number"
+                },
+                "a5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A5).  Typical Value = 0.001. Default: 0.0",
+                    "type": "number"
+                },
+                "a6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A6).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "a7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A7).  Typical Value = 0.031. Default: 0.0",
+                    "type": "number"
+                },
+                "a8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A8).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "inputSignal1Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1.  Typical Value = generatorElectricalPower. Default: None",
+                    "type": "number"
+                },
+                "inputSignal2Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2.  Typical Value = rotorSpeed. Default: None",
+                    "type": "number"
+                },
+                "ks1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain on signal # 1 (Ks1).  Typical Value = -0.602. Default: 0.0",
+                    "type": "number"
+                },
+                "ks2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain on signal # 2 (Ks2).  Typical Value = 30.12. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T1).  Typical Value = 0.012. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T2).  Typical Value = 0.012. Default: 0",
+                    "type": "number"
+                },
+                "tw1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tw1).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "tw2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tw2).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "tw3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tw3).  Typical Value = 0.6. Default: 0",
+                    "type": "number"
+                },
+                "vstmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vstmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
