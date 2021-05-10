@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReportingGroup/schema.json",
-  "title": " Smart Data Models - ReportingGroup",
-  "description": "Adapted from CIM data models. A reporting group is used for various ad-hoc groupings used for reporting.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ReportingGroup"
-        ],
-        "description": "Property. NGSI type. It has to be ReportingGroup"
-    },
-    "BusNameMarker": {
-        "description": "Property. Model:'https://schema.org/Number'. The reporting group to which this bus name marker belongs. Default: 'list'",
-        "type": "number"
-    },
-    "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The reporting group to which the topological node belongs. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReportingGroup/schema.json",
+    "title": " Smart Data Models - ReportingGroup",
+    "description": "Adapted from CIM data models. A reporting group is used for various ad-hoc groupings used for reporting.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ReportingGroup"
+                    ],
+                    "description": "Property. NGSI type. It has to be ReportingGroup"
+                },
+                "BusNameMarker": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reporting group to which this bus name marker belongs. Default: 'list'",
+                    "type": "number"
+                },
+                "TopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reporting group to which the topological node belongs. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
