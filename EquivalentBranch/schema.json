@@ -1,92 +1,91 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentBranch/schema.json",
-  "title": " Smart Data Models - EquivalentBranch",
-  "description": "Adapted from CIM data models. The class represents equivalent branches.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EquivalentBranch"
-        ],
-        "description": "Property. NGSI type. It has to be EquivalentBranch"
-    },
-    "negativeR12": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "negativeR21": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "negativeX12": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "negativeX21": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909. Usage: EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "positiveR12": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance from terminal sequence  1 to terminal sequence 2 . Used for short circuit data exchange according to IEC 60909.  EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "positiveR21": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "positiveX12": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "positiveX21": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance of the reduced branch. Default: 0.0",
-        "type": "number"
-    },
-    "r21": {
-        "description": "Property. Model:'https://schema.org/Number'. Resistance from terminal sequence 2 to terminal sequence 1 .Used for steady state power flow. This attribute is optional and represent unbalanced network such as off-nominal phase shifter. If only EquivalentBranch.r is given, then EquivalentBranch.r21 is assumed equal to EquivalentBranch.r. Usage rule : EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance of the reduced branch. Default: 0.0",
-        "type": "number"
-    },
-    "x21": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactance from terminal sequence 2 to terminal sequence 1 .Used for steady state power flow. This attribute is optional and represent unbalanced network such as off-nominal phase shifter. If only EquivalentBranch.x is given, then EquivalentBranch.x21 is assumed equal to EquivalentBranch.x. Usage rule : EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "zeroR12": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "zeroR21": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance from terminal sequence  2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "zeroX12": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    },
-    "zeroX21": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentBranch/schema.json",
+    "title": " Smart Data Models - EquivalentBranch",
+    "description": "Adapted from CIM data models. The class represents equivalent branches.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EquivalentBranch"
+                    ],
+                    "description": "Property. NGSI type. It has to be EquivalentBranch"
+                },
+                "negativeR12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "negativeR21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "negativeX12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "negativeX21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909. Usage: EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "positiveR12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance from terminal sequence  1 to terminal sequence 2 . Used for short circuit data exchange according to IEC 60909.  EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "positiveR21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "positiveX12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "positiveX21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series resistance of the reduced branch. Default: 0.0",
+                    "type": "number"
+                },
+                "r21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Resistance from terminal sequence 2 to terminal sequence 1 .Used for steady state power flow. This attribute is optional and represent unbalanced network such as off-nominal phase shifter. If only EquivalentBranch.r is given, then EquivalentBranch.r21 is assumed equal to EquivalentBranch.r. Usage rule : EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance of the reduced branch. Default: 0.0",
+                    "type": "number"
+                },
+                "x21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactance from terminal sequence 2 to terminal sequence 1 .Used for steady state power flow. This attribute is optional and represent unbalanced network such as off-nominal phase shifter. If only EquivalentBranch.x is given, then EquivalentBranch.x21 is assumed equal to EquivalentBranch.x. Usage rule : EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "zeroR12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "zeroR21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance from terminal sequence  2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "zeroX12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                },
+                "zeroX21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
