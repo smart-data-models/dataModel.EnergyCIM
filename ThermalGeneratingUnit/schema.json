@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ThermalGeneratingUnit/schema.json",
-  "title": " Smart Data Models - ThermalGeneratingUnit",
-  "description": "Adapted from CIM data models. A generating unit whose prime mover could be a steam turbine, combustion turbine, or diesel engine.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ThermalGeneratingUnit"
-        ],
-        "description": "Property. NGSI type. It has to be ThermalGeneratingUnit"
-    },
-    "FossilFuels": {
-        "description": "Property. Model:'https://schema.org/Number'. A thermal generating unit may have one or more fossil fuels. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ThermalGeneratingUnit/schema.json",
+    "title": " Smart Data Models - ThermalGeneratingUnit",
+    "description": "Adapted from CIM data models. A generating unit whose prime mover could be a steam turbine, combustion turbine, or diesel engine.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ThermalGeneratingUnit"
+                    ],
+                    "description": "Property. NGSI type. It has to be ThermalGeneratingUnit"
+                },
+                "FossilFuels": {
+                    "description": "Property. Model:'https://schema.org/Number'. A thermal generating unit may have one or more fossil fuels. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
