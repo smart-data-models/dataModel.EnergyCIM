@@ -1,64 +1,63 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegulatingControl/schema.json",
-  "title": " Smart Data Models - RegulatingControl",
-  "description": "Adapted from CIM data models. Specifies a set of equipment that works together to control a power system quantity such as voltage or flow.  Remote bus voltage control is possible by specifying the controlled terminal located at some place remote from the controlling equipment. In case multiple equipment, possibly of different types, control same terminal there must be only one RegulatingControl at that terminal. The most specific subtype of RegulatingControl shall be used in case such equipment participate in the control, e.g. TapChangerControl for tap changers. For flow control  load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RegulatingControl"
-        ],
-        "description": "Property. NGSI type. It has to be RegulatingControl"
-    },
-    "RegulatingCondEq": {
-        "description": "Property. Model:'https://schema.org/Number'. The equipment that participates in this regulating control scheme. Default: 'list'",
-        "type": "number"
-    },
-    "RegulationSchedule": {
-        "description": "Property. Model:'https://schema.org/Number'. Schedule for this Regulating regulating control. Default: 'list'",
-        "type": "number"
-    },
-    "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The controls regulating this terminal. Default: None",
-        "type": "number"
-    },
-    "discrete": {
-        "description": "Property. Model:'https://schema.org/Number'. The regulation is performed in a discrete mode. This applies to equipment with discrete controls, e.g. tap changers and shunt compensators. Default: False",
-        "type": "number"
-    },
-    "enabled": {
-        "description": "Property. Model:'https://schema.org/Number'. The flag tells if regulation is enabled. Default: False",
-        "type": "number"
-    },
-    "mode": {
-        "description": "Property. Model:'https://schema.org/Number'. The regulating control mode presently available.  This specification allows for determining the kind of regulation without need for obtaining the units from a schedule. Default: None",
-        "type": "number"
-    },
-    "targetDeadband": {
-        "description": "Property. Model:'https://schema.org/Number'. This is a deadband used with discrete control to avoid excessive update of controls like tap changers and shunt compensator banks while regulating. The units of those appropriate for the mode. Default: 0.0",
-        "type": "number"
-    },
-    "targetValue": {
-        "description": "Property. Model:'https://schema.org/Number'. The target value specified for case input.   This value can be used for the target value without the use of schedules. The value has the units appropriate to the mode attribute. Default: 0.0",
-        "type": "number"
-    },
-    "targetValueUnitMultiplier": {
-        "description": "Property. Model:'https://schema.org/Number'. Specify the multiplier for used for the targetValue. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegulatingControl/schema.json",
+    "title": " Smart Data Models - RegulatingControl",
+    "description": "Adapted from CIM data models. Specifies a set of equipment that works together to control a power system quantity such as voltage or flow.  Remote bus voltage control is possible by specifying the controlled terminal located at some place remote from the controlling equipment. In case multiple equipment, possibly of different types, control same terminal there must be only one RegulatingControl at that terminal. The most specific subtype of RegulatingControl shall be used in case such equipment participate in the control, e.g. TapChangerControl for tap changers. For flow control  load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RegulatingControl"
+                    ],
+                    "description": "Property. NGSI type. It has to be RegulatingControl"
+                },
+                "RegulatingCondEq": {
+                    "description": "Property. Model:'https://schema.org/Number'. The equipment that participates in this regulating control scheme. Default: 'list'",
+                    "type": "number"
+                },
+                "RegulationSchedule": {
+                    "description": "Property. Model:'https://schema.org/Number'. Schedule for this Regulating regulating control. Default: 'list'",
+                    "type": "number"
+                },
+                "Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The controls regulating this terminal. Default: None",
+                    "type": "number"
+                },
+                "discrete": {
+                    "description": "Property. Model:'https://schema.org/Number'. The regulation is performed in a discrete mode. This applies to equipment with discrete controls, e.g. tap changers and shunt compensators. Default: False",
+                    "type": "number"
+                },
+                "enabled": {
+                    "description": "Property. Model:'https://schema.org/Number'. The flag tells if regulation is enabled. Default: False",
+                    "type": "number"
+                },
+                "mode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The regulating control mode presently available.  This specification allows for determining the kind of regulation without need for obtaining the units from a schedule. Default: None",
+                    "type": "number"
+                },
+                "targetDeadband": {
+                    "description": "Property. Model:'https://schema.org/Number'. This is a deadband used with discrete control to avoid excessive update of controls like tap changers and shunt compensator banks while regulating. The units of those appropriate for the mode. Default: 0.0",
+                    "type": "number"
+                },
+                "targetValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. The target value specified for case input.   This value can be used for the target value without the use of schedules. The value has the units appropriate to the mode attribute. Default: 0.0",
+                    "type": "number"
+                },
+                "targetValueUnitMultiplier": {
+                    "description": "Property. Model:'https://schema.org/Number'. Specify the multiplier for used for the targetValue. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
