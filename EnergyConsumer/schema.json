@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergyConsumer/schema.json",
-  "title": " Smart Data Models - EnergyConsumer",
-  "description": "Adapted from CIM data models. Generic user of energy - a  point of consumption on the power system model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EnergyConsumer"
-        ],
-        "description": "Property. NGSI type. It has to be EnergyConsumer"
-    },
-    "LoadDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Load dynamics model used to describe dynamic behavior of this energy consumer. Default: None",
-        "type": "number"
-    },
-    "LoadResponse": {
-        "description": "Property. Model:'https://schema.org/Number'. The load response characteristic of this load.  If missing, this load is assumed to be constant power. Default: None",
-        "type": "number"
-    },
-    "p": {
-        "description": "Property. Model:'https://schema.org/Number'. Active power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: 0.0",
-        "type": "number"
-    },
-    "pfixed": {
-        "description": "Property. Model:'https://schema.org/Number'. Active power of the load that is a fixed quantity. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
-        "type": "number"
-    },
-    "pfixedPct": {
-        "description": "Property. Model:'https://schema.org/Number'. Fixed active power as per cent of load group fixed active power. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
-        "type": "number"
-    },
-    "q": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: 0.0",
-        "type": "number"
-    },
-    "qfixed": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power of the load that is a fixed quantity. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
-        "type": "number"
-    },
-    "qfixedPct": {
-        "description": "Property. Model:'https://schema.org/Number'. Fixed reactive power as per cent of load group fixed reactive power. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergyConsumer/schema.json",
+    "title": " Smart Data Models - EnergyConsumer",
+    "description": "Adapted from CIM data models. Generic user of energy - a  point of consumption on the power system model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EnergyConsumer"
+                    ],
+                    "description": "Property. NGSI type. It has to be EnergyConsumer"
+                },
+                "LoadDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Load dynamics model used to describe dynamic behavior of this energy consumer. Default: None",
+                    "type": "number"
+                },
+                "LoadResponse": {
+                    "description": "Property. Model:'https://schema.org/Number'. The load response characteristic of this load.  If missing, this load is assumed to be constant power. Default: None",
+                    "type": "number"
+                },
+                "p": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: 0.0",
+                    "type": "number"
+                },
+                "pfixed": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active power of the load that is a fixed quantity. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
+                    "type": "number"
+                },
+                "pfixedPct": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fixed active power as per cent of load group fixed active power. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
+                    "type": "number"
+                },
+                "q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power of the load. Load sign convention is used, i.e. positive sign means flow out from a node. For voltage dependent loads the value is at rated voltage. Starting value for a steady state solution. Default: 0.0",
+                    "type": "number"
+                },
+                "qfixed": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power of the load that is a fixed quantity. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
+                    "type": "number"
+                },
+                "qfixedPct": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fixed reactive power as per cent of load group fixed reactive power. Load sign convention is used, i.e. positive sign means flow out from a node. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
