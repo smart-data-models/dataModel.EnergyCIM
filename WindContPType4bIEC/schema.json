@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType4bIEC/schema.json",
-  "title": " Smart Data Models - WindContPType4bIEC",
-  "description": "Adapted from CIM data models. P control model Type 4B.  Reference: IEC Standard 61400-27-1 Section 6.6.5.5.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindContPType4bIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindContPType4bIEC"
-    },
-    "WindTurbineType4bIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 4B model with which this wind control P type 4B model is associated. Default: None",
-        "type": "number"
-    },
-    "dpmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tpaero": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in aerodynamic power response (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpord": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in power order lag (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tufilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage measurement filter time constant (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType4bIEC/schema.json",
+    "title": " Smart Data Models - WindContPType4bIEC",
+    "description": "Adapted from CIM data models. P control model Type 4B.  Reference: IEC Standard 61400-27-1 Section 6.6.5.5.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindContPType4bIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindContPType4bIEC"
+                },
+                "WindTurbineType4bIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 4B model with which this wind control P type 4B model is associated. Default: None",
+                    "type": "number"
+                },
+                "dpmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tpaero": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in aerodynamic power response (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpord": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in power order lag (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tufilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage measurement filter time constant (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
