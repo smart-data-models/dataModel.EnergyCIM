@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PowerSystemResource/schema.json",
-  "title": " Smart Data Models - PowerSystemResource",
-  "description": "Adapted from CIM data models. A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PowerSystemResource"
-        ],
-        "description": "Property. NGSI type. It has to be PowerSystemResource"
-    },
-    "Controls": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulating device governed by this control output. Default: 'list'",
-        "type": "number"
-    },
-    "Location": {
-        "description": "Property. Model:'https://schema.org/Number'. Location of this power system resource. Default: None",
-        "type": "number"
-    },
-    "Measurements": {
-        "description": "Property. Model:'https://schema.org/Number'. The power system resource that contains the measurement. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PowerSystemResource/schema.json",
+    "title": " Smart Data Models - PowerSystemResource",
+    "description": "Adapted from CIM data models. A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PowerSystemResource"
+                    ],
+                    "description": "Property. NGSI type. It has to be PowerSystemResource"
+                },
+                "Controls": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulating device governed by this control output. Default: 'list'",
+                    "type": "number"
+                },
+                "Location": {
+                    "description": "Property. Model:'https://schema.org/Number'. Location of this power system resource. Default: None",
+                    "type": "number"
+                },
+                "Measurements": {
+                    "description": "Property. Model:'https://schema.org/Number'. The power system resource that contains the measurement. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
