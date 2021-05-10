@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSB4/schema.json",
-  "title": " Smart Data Models - PssSB4",
-  "description": "Adapted from CIM data models. Power sensitive stabilizer model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssSB4"
-        ],
-        "description": "Property. NGSI type. It has to be PssSB4"
-    },
-    "kx": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Kx). Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ta). Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tb). Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tc). Default: 0",
-        "type": "number"
-    },
-    "td": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Td). Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Te). Default: 0",
-        "type": "number"
-    },
-    "tt": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tt). Default: 0",
-        "type": "number"
-    },
-    "tx1": {
-        "description": "Property. Model:'https://schema.org/Number'. Reset time constant (Tx1). Default: 0",
-        "type": "number"
-    },
-    "tx2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tx2). Default: 0",
-        "type": "number"
-    },
-    "vsmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Vsmax). Default: 0.0",
-        "type": "number"
-    },
-    "vsmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Vsmin). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSB4/schema.json",
+    "title": " Smart Data Models - PssSB4",
+    "description": "Adapted from CIM data models. Power sensitive stabilizer model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssSB4"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssSB4"
+                },
+                "kx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Kx). Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ta). Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tb). Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tc). Default: 0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Td). Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Te). Default: 0",
+                    "type": "number"
+                },
+                "tt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tt). Default: 0",
+                    "type": "number"
+                },
+                "tx1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reset time constant (Tx1). Default: 0",
+                    "type": "number"
+                },
+                "tx2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tx2). Default: 0",
+                    "type": "number"
+                },
+                "vsmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Vsmax). Default: 0.0",
+                    "type": "number"
+                },
+                "vsmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Vsmin). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
