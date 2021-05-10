@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteam2/schema.json",
-  "title": " Smart Data Models - GovSteam2",
-  "description": "Adapted from CIM data models. Simplified governor model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteam2"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteam2"
-    },
-    "dbf": {
-        "description": "Property. Model:'https://schema.org/Number'. Frequency dead band (DBF).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor gain (reciprocal of droop) (K).  Typical Value = 20. Default: 0.0",
-        "type": "number"
-    },
-    "mnef": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum negative error value (MN).  Typical Value = -1. Default: 0.0",
-        "type": "number"
-    },
-    "mxef": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum positive error value (MX).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum fuel flow (P).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum fuel flow (P).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T) (>0).  Typical Value = 0.45. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T) (may be 0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteam2/schema.json",
+    "title": " Smart Data Models - GovSteam2",
+    "description": "Adapted from CIM data models. Simplified governor model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteam2"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteam2"
+                },
+                "dbf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency dead band (DBF).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor gain (reciprocal of droop) (K).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "mnef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum negative error value (MN).  Typical Value = -1. Default: 0.0",
+                    "type": "number"
+                },
+                "mxef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum positive error value (MX).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum fuel flow (P).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum fuel flow (P).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T) (>0).  Typical Value = 0.45. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T) (may be 0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
