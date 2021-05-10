@@ -1,112 +1,111 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamIEEE1/schema.json",
-  "title": " Smart Data Models - GovSteamIEEE1",
-  "description": "Adapted from CIM data models. IEEE steam turbine governor model.  Ref",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteamIEEE1"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteamIEEE1"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor gain (reciprocal of droop) (K) (> 0).  Typical Value = 25. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after first boiler pass (K2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after second boiler pass (K3).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "k4": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after second boiler pass (K4).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k5": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after third boiler pass (K5).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "k6": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after third boiler pass (K6).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k7": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after fourth boiler pass (K7).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "k8": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after fourth boiler pass (K8).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0) Default: 0.0",
-        "type": "number"
-    },
-    "pmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening (Pmax) (> Pmin).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening (Pmin) (>= 0).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T1).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T2).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve positioner time constant (T3) (> 0).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Inlet piping/steam bowl time constant (T4).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of second boiler pass (T5).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of third boiler pass (T6).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t7": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of fourth boiler pass (T7).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "uc": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve closing velocity (Uc) (< 0).  Unit = PU/sec.  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "uo": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening velocity (Uo) (> 0).  Unit = PU/sec.  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamIEEE1/schema.json",
+    "title": " Smart Data Models - GovSteamIEEE1",
+    "description": "Adapted from CIM data models. IEEE steam turbine governor model.  Ref",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteamIEEE1"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteamIEEE1"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor gain (reciprocal of droop) (K) (> 0).  Typical Value = 25. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after first boiler pass (K2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after second boiler pass (K3).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "k4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after second boiler pass (K4).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after third boiler pass (K5).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "k6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after third boiler pass (K6).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of HP shaft power after fourth boiler pass (K7).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "k8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of LP shaft power after fourth boiler pass (K8).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0) Default: 0.0",
+                    "type": "number"
+                },
+                "pmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening (Pmax) (> Pmin).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening (Pmin) (>= 0).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T2).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve positioner time constant (T3) (> 0).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inlet piping/steam bowl time constant (T4).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of second boiler pass (T5).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of third boiler pass (T6).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of fourth boiler pass (T7).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "uc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve closing velocity (Uc) (< 0).  Unit = PU/sec.  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "uo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening velocity (Uo) (> 0).  Unit = PU/sec.  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
