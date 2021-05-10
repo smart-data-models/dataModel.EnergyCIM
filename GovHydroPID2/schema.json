@@ -1,116 +1,115 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroPID2/schema.json",
-  "title": " Smart Data Models - GovHydroPID2",
-  "description": "Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight forward penstock configurations and three term electro-hydraulic governors (i.e. Woodard electronic).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovHydroPID2"
-        ],
-        "description": "Property. NGSI type. It has to be GovHydroPID2"
-    },
-    "atw": {
-        "description": "Property. Model:'https://schema.org/Number'. Factor multiplying Tw (Atw).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "d": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (D).  Unit = delta P / delta speed.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "feedbackSignal": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback signal type flag (Flag). true = use gate position feedback signal false = use Pe. Default: False",
-        "type": "number"
-    },
-    "g0": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate opening at speed no load (G0).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "g1": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate gate opening (G1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "g2": {
-        "description": "Property. Model:'https://schema.org/Number'. Intermediate gate opening (G2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening (Gmax).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening (Gmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Derivative gain (Kd).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Reset gain (Ki).  Unit = PU/ sec.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "p1": {
-        "description": "Property. Model:'https://schema.org/Number'. Power at gate opening G1 (P1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "p2": {
-        "description": "Property. Model:'https://schema.org/Number'. Power at gate opening G2 (P2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "p3": {
-        "description": "Property. Model:'https://schema.org/Number'. Power at full opened gate (P3).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "rperm": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent drop (Rperm).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller time constant (Ta) (>0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tb) (>0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "treg": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed detector time constant (Treg).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tw": {
-        "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "velmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "velmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroPID2/schema.json",
+    "title": " Smart Data Models - GovHydroPID2",
+    "description": "Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight forward penstock configurations and three term electro-hydraulic governors (i.e. Woodard electronic).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydroPID2"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydroPID2"
+                },
+                "atw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Factor multiplying Tw (Atw).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "d": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (D).  Unit = delta P / delta speed.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "feedbackSignal": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback signal type flag (Flag). true = use gate position feedback signal false = use Pe. Default: False",
+                    "type": "number"
+                },
+                "g0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate opening at speed no load (G0).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "g1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate gate opening (G1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "g2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intermediate gate opening (G2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening (Gmax).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening (Gmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative gain (Kd).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reset gain (Ki).  Unit = PU/ sec.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "p1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power at gate opening G1 (P1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "p2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power at gate opening G2 (P2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "p3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power at full opened gate (P3).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "rperm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent drop (Rperm).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller time constant (Ta) (>0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tb) (>0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "treg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed detector time constant (Treg).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "velmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "velmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
