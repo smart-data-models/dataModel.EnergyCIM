@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MechanicalLoadDynamics/schema.json",
-  "title": " Smart Data Models - MechanicalLoadDynamics",
-  "description": "Adapted from CIM data models. Mechanical load function block whose behavior is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "MechanicalLoadDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be MechanicalLoadDynamics"
-    },
-    "AsynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine model with which this mechanical load model is associated. Default: None",
-        "type": "number"
-    },
-    "SynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this mechanical load model is associated. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MechanicalLoadDynamics/schema.json",
+    "title": " Smart Data Models - MechanicalLoadDynamics",
+    "description": "Adapted from CIM data models. Mechanical load function block whose behavior is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "MechanicalLoadDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be MechanicalLoadDynamics"
+                },
+                "AsynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine model with which this mechanical load model is associated. Default: None",
+                    "type": "number"
+                },
+                "SynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Synchronous machine model with which this mechanical load model is associated. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
