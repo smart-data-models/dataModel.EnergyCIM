@@ -1,64 +1,63 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC4A/schema.json",
-  "title": " Smart Data Models - ExcAC4A",
-  "description": "Adapted from CIM data models. Modified IEEE AC4A alternator-supplied rectifier excitation system with different minimum controller output.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAC4A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAC4A"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 200. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.015. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "vimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (Vimax).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "vimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (Vimin).  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 5.64. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = -4.53. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC4A/schema.json",
+    "title": " Smart Data Models - ExcAC4A",
+    "description": "Adapted from CIM data models. Modified IEEE AC4A alternator-supplied rectifier excitation system with different minimum controller output.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAC4A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAC4A"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 200. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.015. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (Vimax).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "vimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (Vimin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 5.64. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = -4.53. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
