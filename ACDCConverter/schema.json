@@ -1,104 +1,103 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCConverter/schema.json",
-  "title": " Smart Data Models - ACDCConverter",
-  "description": "Adapted from CIM data models. A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ACDCConverter"
-        ],
-        "description": "Property. NGSI type. It has to be ACDCConverter"
-    },
-    "DCTerminals": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    },
-    "PccTerminal": {
-        "description": "Property. Model:'https://schema.org/Number'. All converters` DC sides linked to this point of common coupling terminal. Default: None",
-        "type": "number"
-    },
-    "baseS": {
-        "description": "Property. Model:'https://schema.org/Number'. Base apparent power of the converter pole. Default: 0.0",
-        "type": "number"
-    },
-    "idc": {
-        "description": "Property. Model:'https://schema.org/Number'. Converter DC current, also called Id. Converter state variable, result from power flow. Default: 0.0",
-        "type": "number"
-    },
-    "idleLoss": {
-        "description": "Property. Model:'https://schema.org/Number'. Active power loss in pole at no power transfer. Converter configuration data used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "maxUdc": {
-        "description": "Property. Model:'https://schema.org/Number'. The maximum voltage on the DC side at which the converter should operate. Converter configuration data used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "minUdc": {
-        "description": "Property. Model:'https://schema.org/Number'. Min allowed converter DC voltage. Converter configuration data used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "numberOfValves": {
-        "description": "Property. Model:'https://schema.org/Number'. Number of valves in the converter. Used in loss calculations. Default: 0",
-        "type": "number"
-    },
-    "p": {
-        "description": "Property. Model:'https://schema.org/Number'. Active power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: 0.0",
-        "type": "number"
-    },
-    "poleLossP": {
-        "description": "Property. Model:'https://schema.org/Number'. The active power loss at a DC Pole  = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 For lossless operation Pdc=Pac For rectifier operation with losses Pdc=Pac-lossP For inverter operation with losses Pdc=Pac+lossP Converter state variable used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "q": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: 0.0",
-        "type": "number"
-    },
-    "ratedUdc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated converter DC voltage, also called UdN. Converter configuration data used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "resistiveLoss": {
-        "description": "Property. Model:'https://schema.org/Number'. Converter configuration data used in power flow. Refer to poleLossP. Default: 0.0",
-        "type": "number"
-    },
-    "switchingLoss": {
-        "description": "Property. Model:'https://schema.org/Number'. Switching losses, relative to the base apparent power `baseS`. Refer to poleLossP. Default: 0.0",
-        "type": "number"
-    },
-    "targetPpcc": {
-        "description": "Property. Model:'https://schema.org/Number'. Real power injection target in AC grid, at point of common coupling. Default: 0.0",
-        "type": "number"
-    },
-    "targetUdc": {
-        "description": "Property. Model:'https://schema.org/Number'. Target value for DC voltage magnitude. Default: 0.0",
-        "type": "number"
-    },
-    "uc": {
-        "description": "Property. Model:'https://schema.org/Number'. Converter voltage, the voltage at the AC side of the bridge. Converter state variable, result from power flow. Default: 0.0",
-        "type": "number"
-    },
-    "udc": {
-        "description": "Property. Model:'https://schema.org/Number'. Converter voltage at the DC side, also called Ud. Converter state variable, result from power flow. Default: 0.0",
-        "type": "number"
-    },
-    "valveU0": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve threshold voltage. Forward voltage drop when the valve is conducting. Used in loss calculations, i.e. the switchLoss depend on numberOfValves * valveU0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCConverter/schema.json",
+    "title": " Smart Data Models - ACDCConverter",
+    "description": "Adapted from CIM data models. A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ACDCConverter"
+                    ],
+                    "description": "Property. NGSI type. It has to be ACDCConverter"
+                },
+                "DCTerminals": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                },
+                "PccTerminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. All converters` DC sides linked to this point of common coupling terminal. Default: None",
+                    "type": "number"
+                },
+                "baseS": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base apparent power of the converter pole. Default: 0.0",
+                    "type": "number"
+                },
+                "idc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Converter DC current, also called Id. Converter state variable, result from power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "idleLoss": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active power loss in pole at no power transfer. Converter configuration data used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "maxUdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. The maximum voltage on the DC side at which the converter should operate. Converter configuration data used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "minUdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Min allowed converter DC voltage. Converter configuration data used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "numberOfValves": {
+                    "description": "Property. Model:'https://schema.org/Number'. Number of valves in the converter. Used in loss calculations. Default: 0",
+                    "type": "number"
+                },
+                "p": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: 0.0",
+                    "type": "number"
+                },
+                "poleLossP": {
+                    "description": "Property. Model:'https://schema.org/Number'. The active power loss at a DC Pole  = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 For lossless operation Pdc=Pac For rectifier operation with losses Pdc=Pac-lossP For inverter operation with losses Pdc=Pac+lossP Converter state variable used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution in the case a simplified power flow model is used. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedUdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated converter DC voltage, also called UdN. Converter configuration data used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "resistiveLoss": {
+                    "description": "Property. Model:'https://schema.org/Number'. Converter configuration data used in power flow. Refer to poleLossP. Default: 0.0",
+                    "type": "number"
+                },
+                "switchingLoss": {
+                    "description": "Property. Model:'https://schema.org/Number'. Switching losses, relative to the base apparent power `baseS`. Refer to poleLossP. Default: 0.0",
+                    "type": "number"
+                },
+                "targetPpcc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Real power injection target in AC grid, at point of common coupling. Default: 0.0",
+                    "type": "number"
+                },
+                "targetUdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Target value for DC voltage magnitude. Default: 0.0",
+                    "type": "number"
+                },
+                "uc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Converter voltage, the voltage at the AC side of the bridge. Converter state variable, result from power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "udc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Converter voltage at the DC side, also called Ud. Converter state variable, result from power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "valveU0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve threshold voltage. Forward voltage drop when the valve is conducting. Used in loss calculations, i.e. the switchLoss depend on numberOfValves * valveU0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
