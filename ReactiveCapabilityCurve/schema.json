@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReactiveCapabilityCurve/schema.json",
-  "title": " Smart Data Models - ReactiveCapabilityCurve",
-  "description": "Adapted from CIM data models. Reactive power rating envelope versus the synchronous machine's active power, in both the generating and motoring modes. For each active power value there is a corresponding high and low reactive power limit  value. Typically there will be a separate curve for each coolant condition, such as hydrogen pressure.  The Y1 axis values represent reactive minimum and the Y2 axis values represent reactive maximum.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ReactiveCapabilityCurve"
-        ],
-        "description": "Property. NGSI type. It has to be ReactiveCapabilityCurve"
-    },
-    "EquivalentInjection": {
-        "description": "Property. Model:'https://schema.org/Number'. The reactive capability curve used by this equivalent injection. Default: 'list'",
-        "type": "number"
-    },
-    "InitiallyUsedBySynchronousMachines": {
-        "description": "Property. Model:'https://schema.org/Number'. The default reactive capability curve for use by a synchronous machine. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReactiveCapabilityCurve/schema.json",
+    "title": " Smart Data Models - ReactiveCapabilityCurve",
+    "description": "Adapted from CIM data models. Reactive power rating envelope versus the synchronous machine's active power, in both the generating and motoring modes. For each active power value there is a corresponding high and low reactive power limit  value. Typically there will be a separate curve for each coolant condition, such as hydrogen pressure.  The Y1 axis values represent reactive minimum and the Y2 axis values represent reactive maximum.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ReactiveCapabilityCurve"
+                    ],
+                    "description": "Property. NGSI type. It has to be ReactiveCapabilityCurve"
+                },
+                "EquivalentInjection": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reactive capability curve used by this equivalent injection. Default: 'list'",
+                    "type": "number"
+                },
+                "InitiallyUsedBySynchronousMachines": {
+                    "description": "Property. Model:'https://schema.org/Number'. The default reactive capability curve for use by a synchronous machine. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
