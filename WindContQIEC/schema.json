@@ -1,136 +1,135 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContQIEC/schema.json",
-  "title": " Smart Data Models - WindContQIEC",
-  "description": "Adapted from CIM data models. Q control model.  Reference: IEC Standard 61400-27-1 Section 6.6.5.6.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindContQIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindContQIEC"
-    },
-    "WindTurbineType3or4IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 3 or 4 model with which this reactive control mode is associated. Default: None",
-        "type": "number"
-    },
-    "iqh1": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum reactive current injection during dip (i). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "iqmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum reactive current injection (i). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "iqmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum reactive current injection (i). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "iqpost": {
-        "description": "Property. Model:'https://schema.org/Number'. Post fault reactive current injection (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kiq": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power PI controller integration gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kiu": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage PI controller integration gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpq": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kpu": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "kqv": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage scaling factor for LVRT current (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "qmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum reactive power (q). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "qmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum reactive power (q). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "rdroop": {
-        "description": "Property. Model:'https://schema.org/Number'. Resistive component of voltage drop impedance (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "tiq": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in reactive current lag (T). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpfilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Power measurement filter time constant (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tpost": {
-        "description": "Property. Model:'https://schema.org/Number'. Length of time period where post fault reactive power is injected (). It is project dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tqord": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant in reactive power order lag (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "tufilt": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage measurement filter time constant (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "udb1": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage dead band lower limit (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "udb2": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage dead band upper limit (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "umax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage in voltage PI controller integral term (u). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "umin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage in voltage PI controller integral term (u). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "uqdip": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage threshold for LVRT detection in q control (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "uref0": {
-        "description": "Property. Model:'https://schema.org/Number'. User defined bias in voltage reference (), used when  =. It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "windLVRTQcontrolModesType": {
-        "description": "Property. Model:'https://schema.org/Number'. Types of LVRT Q control modes (). It is project dependent parameter. Default: None",
-        "type": "number"
-    },
-    "windQcontrolModesType": {
-        "description": "Property. Model:'https://schema.org/Number'. Types of general wind turbine Q control modes ().  It is project dependent parameter. Default: None",
-        "type": "number"
-    },
-    "xdroop": {
-        "description": "Property. Model:'https://schema.org/Number'. Inductive component of voltage drop impedance (). It is project dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContQIEC/schema.json",
+    "title": " Smart Data Models - WindContQIEC",
+    "description": "Adapted from CIM data models. Q control model.  Reference: IEC Standard 61400-27-1 Section 6.6.5.6.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindContQIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindContQIEC"
+                },
+                "WindTurbineType3or4IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 3 or 4 model with which this reactive control mode is associated. Default: None",
+                    "type": "number"
+                },
+                "iqh1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum reactive current injection during dip (i). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "iqmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum reactive current injection (i). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "iqmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum reactive current injection (i). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "iqpost": {
+                    "description": "Property. Model:'https://schema.org/Number'. Post fault reactive current injection (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kiq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power PI controller integration gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kiu": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage PI controller integration gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kpu": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage PI controller proportional gain (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "kqv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage scaling factor for LVRT current (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "qmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum reactive power (q). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "qmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum reactive power (q). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "rdroop": {
+                    "description": "Property. Model:'https://schema.org/Number'. Resistive component of voltage drop impedance (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "tiq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in reactive current lag (T). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpfilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power measurement filter time constant (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tpost": {
+                    "description": "Property. Model:'https://schema.org/Number'. Length of time period where post fault reactive power is injected (). It is project dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tqord": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant in reactive power order lag (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "tufilt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage measurement filter time constant (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "udb1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage dead band lower limit (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "udb2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage dead band upper limit (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "umax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage in voltage PI controller integral term (u). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "umin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage in voltage PI controller integral term (u). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "uqdip": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage threshold for LVRT detection in q control (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "uref0": {
+                    "description": "Property. Model:'https://schema.org/Number'. User defined bias in voltage reference (), used when  =. It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "windLVRTQcontrolModesType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Types of LVRT Q control modes (). It is project dependent parameter. Default: None",
+                    "type": "number"
+                },
+                "windQcontrolModesType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Types of general wind turbine Q control modes ().  It is project dependent parameter. Default: None",
+                    "type": "number"
+                },
+                "xdroop": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inductive component of voltage drop impedance (). It is project dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
