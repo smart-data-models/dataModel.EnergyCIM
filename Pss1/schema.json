@@ -1,88 +1,87 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss1/schema.json",
-  "title": " Smart Data Models - Pss1",
-  "description": "Adapted from CIM data models. Italian PSS - three input PSS (speed, frequency, power).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Pss1"
-        ],
-        "description": "Property. NGSI type. It has to be Pss1"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Frequency power input gain (K).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "kpe": {
-        "description": "Property. Model:'https://schema.org/Number'. Electric power input gain (K).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kw": {
-        "description": "Property. Model:'https://schema.org/Number'. Shaft speed power input gain (K).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0",
-        "type": "number"
-    },
-    "t10": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout (T).  Typical Value = 3.5. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t7": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t8": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t9": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tpe": {
-        "description": "Property. Model:'https://schema.org/Number'. Electric power filter time constant (T).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "vadat": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: False",
-        "type": "number"
-    },
-    "vsmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (V).  Typical Value = -0.06. Default: 0.0",
-        "type": "number"
-    },
-    "vsmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (V).  Typical Value = 0.06. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss1/schema.json",
+    "title": " Smart Data Models - Pss1",
+    "description": "Adapted from CIM data models. Italian PSS - three input PSS (speed, frequency, power).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Pss1"
+                    ],
+                    "description": "Property. NGSI type. It has to be Pss1"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency power input gain (K).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "kpe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electric power input gain (K).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Shaft speed power input gain (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0",
+                    "type": "number"
+                },
+                "t10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout (T).  Typical Value = 3.5. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tpe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electric power filter time constant (T).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "vadat": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: False",
+                    "type": "number"
+                },
+                "vsmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (V).  Typical Value = -0.06. Default: 0.0",
+                    "type": "number"
+                },
+                "vsmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (V).  Typical Value = 0.06. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
