@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LimitSet/schema.json",
-  "title": " Smart Data Models - LimitSet",
-  "description": "Adapted from CIM data models. Specifies a set of Limits that are associated with a Measurement. A Measurement may have several LimitSets corresponding to seasonal or other changing conditions. The condition is captured in the name and description attributes. The same LimitSet may be used for several Measurements. In particular percentage limits are used this way.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "LimitSet"
-        ],
-        "description": "Property. NGSI type. It has to be LimitSet"
-    },
-    "isPercentageLimits": {
-        "description": "Property. Model:'https://schema.org/Number'. Tells if the limit values are in percentage of normalValue or the specified Unit for Measurements and Controls. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LimitSet/schema.json",
+    "title": " Smart Data Models - LimitSet",
+    "description": "Adapted from CIM data models. Specifies a set of Limits that are associated with a Measurement. A Measurement may have several LimitSets corresponding to seasonal or other changing conditions. The condition is captured in the name and description attributes. The same LimitSet may be used for several Measurements. In particular percentage limits are used this way.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "LimitSet"
+                    ],
+                    "description": "Property. NGSI type. It has to be LimitSet"
+                },
+                "isPercentageLimits": {
+                    "description": "Property. Model:'https://schema.org/Number'. Tells if the limit values are in percentage of normalValue or the specified Unit for Measurements and Controls. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
