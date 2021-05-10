@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGeneratingUnit/schema.json",
-  "title": " Smart Data Models - WindGeneratingUnit",
-  "description": "Adapted from CIM data models. A wind driven generating unit.  May be used to represent a single turbine or an aggregation.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindGeneratingUnit"
-        ],
-        "description": "Property. NGSI type. It has to be WindGeneratingUnit"
-    },
-    "windGenUnitType": {
-        "description": "Property. Model:'https://schema.org/Number'. The kind of wind generating unit Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGeneratingUnit/schema.json",
+    "title": " Smart Data Models - WindGeneratingUnit",
+    "description": "Adapted from CIM data models. A wind driven generating unit.  May be used to represent a single turbine or an aggregation.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindGeneratingUnit"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindGeneratingUnit"
+                },
+                "windGenUnitType": {
+                    "description": "Property. Model:'https://schema.org/Number'. The kind of wind generating unit Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
