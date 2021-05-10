@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RatioTapChanger/schema.json",
-  "title": " Smart Data Models - RatioTapChanger",
-  "description": "Adapted from CIM data models. A tap changer that changes the voltage ratio impacting the voltage magnitude but not the phase angle across the transformer.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RatioTapChanger"
-        ],
-        "description": "Property. NGSI type. It has to be RatioTapChanger"
-    },
-    "RatioTapChangerTable": {
-        "description": "Property. Model:'https://schema.org/Number'. The ratio tap changer of this tap ratio table. Default: None",
-        "type": "number"
-    },
-    "TransformerEnd": {
-        "description": "Property. Model:'https://schema.org/Number'. Ratio tap changer associated with this transformer end. Default: None",
-        "type": "number"
-    },
-    "stepVoltageIncrement": {
-        "description": "Property. Model:'https://schema.org/Number'. Tap step increment, in per cent of nominal voltage, per step position. Default: 0.0",
-        "type": "number"
-    },
-    "tculControlMode": {
-        "description": "Property. Model:'https://schema.org/Number'. Specifies the regulation control mode (voltage or reactive) of the RatioTapChanger. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RatioTapChanger/schema.json",
+    "title": " Smart Data Models - RatioTapChanger",
+    "description": "Adapted from CIM data models. A tap changer that changes the voltage ratio impacting the voltage magnitude but not the phase angle across the transformer.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RatioTapChanger"
+                    ],
+                    "description": "Property. NGSI type. It has to be RatioTapChanger"
+                },
+                "RatioTapChangerTable": {
+                    "description": "Property. Model:'https://schema.org/Number'. The ratio tap changer of this tap ratio table. Default: None",
+                    "type": "number"
+                },
+                "TransformerEnd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ratio tap changer associated with this transformer end. Default: None",
+                    "type": "number"
+                },
+                "stepVoltageIncrement": {
+                    "description": "Property. Model:'https://schema.org/Number'. Tap step increment, in per cent of nominal voltage, per step position. Default: 0.0",
+                    "type": "number"
+                },
+                "tculControlMode": {
+                    "description": "Property. Model:'https://schema.org/Number'. Specifies the regulation control mode (voltage or reactive) of the RatioTapChanger. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
