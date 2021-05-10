@@ -1,136 +1,135 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC8B/schema.json",
-  "title": " Smart Data Models - ExcAC8B",
-  "description": "Adapted from CIM data models. Modified IEEE AC8B alternator-supplied rectifier excitation system with speed input and input limiter.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAC8B"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAC8B"
-    },
-    "inlim": {
-        "description": "Property. Model:'https://schema.org/Number'. Input limiter indicator. true = input limiter Vimax and Vimin is considered false = input limiter Vimax and Vimin is not considered. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.55. Default: 0.0",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Demagnetizing factor, a function of exciter alternator reactances (Kd).  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "kdr": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator derivative gain (Kdr).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kir": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (Kir).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "kpr": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (Kpr).  Typical Value = 80. Default: 0.0",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pidlim": {
-        "description": "Property. Model:'https://schema.org/Number'. PID limiter indicator. true = input limiter Vpidmax and Vpidmin is considered false = input limiter Vpidmax and Vpidmin is not considered. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "seve1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve, back of commutating reactance (Se[Ve1]).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "seve2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve, back of commutating reactance (Se[Ve2]).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tdr": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (Tdr).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.2. Default: 0",
-        "type": "number"
-    },
-    "telim": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector for the limiter on the block [1/sTe].  See diagram for meaning of true and false. Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "ve1": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve) equals V (Ve1).  Typical Value = 6.5. Default: 0.0",
-        "type": "number"
-    },
-    "ve2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve).  Typical Value = 9. Default: 0.0",
-        "type": "number"
-    },
-    "vemin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum exciter voltage output (Vemin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vfemax": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter field current limit reference (Vfemax).  Typical Value = 6. Default: 0.0",
-        "type": "number"
-    },
-    "vimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal maximum (Vimax).  Typical Value = 35. Default: 0.0",
-        "type": "number"
-    },
-    "vimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal minimum (Vimin).  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "vpidmax": {
-        "description": "Property. Model:'https://schema.org/Number'. PID maximum controller output (Vpidmax).  Typical Value = 35. Default: 0.0",
-        "type": "number"
-    },
-    "vpidmin": {
-        "description": "Property. Model:'https://schema.org/Number'. PID minimum controller output (Vpidmin).  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax). Typical Value = 35. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vtmult": {
-        "description": "Property. Model:'https://schema.org/Number'. Multiply by generator`s terminal voltage indicator. true =the limits Vrmax and Vrmin are multiplied by the generator`s terminal voltage to represent a thyristor power stage fed from the generator terminals false = limits are not multiplied by generator`s terminal voltage.  Typical Value = false. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC8B/schema.json",
+    "title": " Smart Data Models - ExcAC8B",
+    "description": "Adapted from CIM data models. Modified IEEE AC8B alternator-supplied rectifier excitation system with speed input and input limiter.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAC8B"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAC8B"
+                },
+                "inlim": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input limiter indicator. true = input limiter Vimax and Vimin is considered false = input limiter Vimax and Vimin is not considered. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.55. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Demagnetizing factor, a function of exciter alternator reactances (Kd).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "kdr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator derivative gain (Kdr).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kir": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (Kir).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "kpr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (Kpr).  Typical Value = 80. Default: 0.0",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pidlim": {
+                    "description": "Property. Model:'https://schema.org/Number'. PID limiter indicator. true = input limiter Vpidmax and Vpidmin is considered false = input limiter Vpidmax and Vpidmin is not considered. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "seve1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve, back of commutating reactance (Se[Ve1]).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "seve2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter saturation function value at the corresponding exciter voltage, Ve, back of commutating reactance (Se[Ve2]).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tdr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (Tdr).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.2. Default: 0",
+                    "type": "number"
+                },
+                "telim": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector for the limiter on the block [1/sTe].  See diagram for meaning of true and false. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "ve1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve) equals V (Ve1).  Typical Value = 6.5. Default: 0.0",
+                    "type": "number"
+                },
+                "ve2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve).  Typical Value = 9. Default: 0.0",
+                    "type": "number"
+                },
+                "vemin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum exciter voltage output (Vemin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vfemax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter field current limit reference (Vfemax).  Typical Value = 6. Default: 0.0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal maximum (Vimax).  Typical Value = 35. Default: 0.0",
+                    "type": "number"
+                },
+                "vimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal minimum (Vimin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "vpidmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. PID maximum controller output (Vpidmax).  Typical Value = 35. Default: 0.0",
+                    "type": "number"
+                },
+                "vpidmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. PID minimum controller output (Vpidmin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax). Typical Value = 35. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vtmult": {
+                    "description": "Property. Model:'https://schema.org/Number'. Multiply by generator`s terminal voltage indicator. true =the limits Vrmax and Vrmin are multiplied by the generator`s terminal voltage to represent a thyristor power stage fed from the generator terminals false = limits are not multiplied by generator`s terminal voltage.  Typical Value = false. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
