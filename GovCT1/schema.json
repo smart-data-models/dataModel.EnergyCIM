@@ -1,168 +1,167 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovCT1/schema.json",
-  "title": " Smart Data Models - GovCT1",
-  "description": "Adapted from CIM data models. General model for any prime mover with a PID governor, used primarily for combustion turbine and combined cycle units. This model can be used to represent a variety of prime movers controlled by PID governors.  It is suitable, for example, for representation of     Additional information on this model is available in the 2012 IEEE report, , section 3.1.2.3 page 3-4 (GGOV1).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovCT1"
-        ],
-        "description": "Property. NGSI type. It has to be GovCT1"
-    },
-    "aset": {
-        "description": "Property. Model:'https://schema.org/Number'. Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 0.01. Default: 0.0",
-        "type": "number"
-    },
-    "db": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "dm": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Acceleration limiter gain (Ka).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "kdgov": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kigov": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor integral gain (Kigov).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "kiload": {
-        "description": "Property. Model:'https://schema.org/Number'. Load limiter integral gain for PI controller (Kiload).  Typical Value = 0.67. Default: 0.0",
-        "type": "number"
-    },
-    "kimw": {
-        "description": "Property. Model:'https://schema.org/Number'. Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0.01. Default: 0.0",
-        "type": "number"
-    },
-    "kpgov": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor proportional gain (Kpgov).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "kpload": {
-        "description": "Property. Model:'https://schema.org/Number'. Load limiter proportional gain for PI controller (Kpload).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "kturb": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine gain (Kturb) (>0).  Typical Value = 1.5. Default: 0.0",
-        "type": "number"
-    },
-    "ldref": {
-        "description": "Property. Model:'https://schema.org/Number'. Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "maxerr": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "minerr": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum value for speed error signal (minerr).  Typical Value = -0.05. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.04. Default: 0.0",
-        "type": "number"
-    },
-    "rclose": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -0.1. Default: 0.0",
-        "type": "number"
-    },
-    "rdown": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0",
-        "type": "number"
-    },
-    "ropen": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 0.10. Default: 0.0",
-        "type": "number"
-    },
-    "rselect": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None",
-        "type": "number"
-    },
-    "rup": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Acceleration limiter time constant (Ta) (>0).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "tact": {
-        "description": "Property. Model:'https://schema.org/Number'. Actuator time constant (Tact).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine lag time constant (Tb) (>0).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine lead time constant (Tc).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tdgov": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "teng": {
-        "description": "Property. Model:'https://schema.org/Number'. Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tfload": {
-        "description": "Property. Model:'https://schema.org/Number'. Load Limiter time constant (Tfload) (>0).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "tpelec": {
-        "description": "Property. Model:'https://schema.org/Number'. Electrical power transducer time constant (Tpelec) (>0).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tsa": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature detection lead time constant (Tsa).  Typical Value = 4. Default: 0",
-        "type": "number"
-    },
-    "tsb": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature detection lag time constant (Tsb).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum valve position limit (Vmin).  Typical Value = 0.15. Default: 0.0",
-        "type": "number"
-    },
-    "wfnl": {
-        "description": "Property. Model:'https://schema.org/Number'. No load fuel flow (Wfnl).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "wfspd": {
-        "description": "Property. Model:'https://schema.org/Number'. Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = true. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovCT1/schema.json",
+    "title": " Smart Data Models - GovCT1",
+    "description": "Adapted from CIM data models. General model for any prime mover with a PID governor, used primarily for combustion turbine and combined cycle units. This model can be used to represent a variety of prime movers controlled by PID governors.  It is suitable, for example, for representation of     Additional information on this model is available in the 2012 IEEE report, , section 3.1.2.3 page 3-4 (GGOV1).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovCT1"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovCT1"
+                },
+                "aset": {
+                    "description": "Property. Model:'https://schema.org/Number'. Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 0.01. Default: 0.0",
+                    "type": "number"
+                },
+                "db": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "dm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Acceleration limiter gain (Ka).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "kdgov": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kigov": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor integral gain (Kigov).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "kiload": {
+                    "description": "Property. Model:'https://schema.org/Number'. Load limiter integral gain for PI controller (Kiload).  Typical Value = 0.67. Default: 0.0",
+                    "type": "number"
+                },
+                "kimw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0.01. Default: 0.0",
+                    "type": "number"
+                },
+                "kpgov": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor proportional gain (Kpgov).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "kpload": {
+                    "description": "Property. Model:'https://schema.org/Number'. Load limiter proportional gain for PI controller (Kpload).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "kturb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine gain (Kturb) (>0).  Typical Value = 1.5. Default: 0.0",
+                    "type": "number"
+                },
+                "ldref": {
+                    "description": "Property. Model:'https://schema.org/Number'. Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "maxerr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "minerr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value for speed error signal (minerr).  Typical Value = -0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.04. Default: 0.0",
+                    "type": "number"
+                },
+                "rclose": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "rdown": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0",
+                    "type": "number"
+                },
+                "ropen": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 0.10. Default: 0.0",
+                    "type": "number"
+                },
+                "rselect": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None",
+                    "type": "number"
+                },
+                "rup": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Acceleration limiter time constant (Ta) (>0).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tact": {
+                    "description": "Property. Model:'https://schema.org/Number'. Actuator time constant (Tact).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine lag time constant (Tb) (>0).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine lead time constant (Tc).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tdgov": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "teng": {
+                    "description": "Property. Model:'https://schema.org/Number'. Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tfload": {
+                    "description": "Property. Model:'https://schema.org/Number'. Load Limiter time constant (Tfload) (>0).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "tpelec": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electrical power transducer time constant (Tpelec) (>0).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tsa": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature detection lead time constant (Tsa).  Typical Value = 4. Default: 0",
+                    "type": "number"
+                },
+                "tsb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature detection lag time constant (Tsb).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve position limit (Vmin).  Typical Value = 0.15. Default: 0.0",
+                    "type": "number"
+                },
+                "wfnl": {
+                    "description": "Property. Model:'https://schema.org/Number'. No load fuel flow (Wfnl).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "wfspd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = true. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
