@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonConformLoadSchedule/schema.json",
-  "title": " Smart Data Models - NonConformLoadSchedule",
-  "description": "Adapted from CIM data models. An active power (Y1-axis) and reactive power (Y2-axis) schedule (curves) versus time (X-axis) for non-conforming loads, e.g., large industrial load or power station service (where modeled).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "NonConformLoadSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be NonConformLoadSchedule"
-    },
-    "NonConformLoadGroup": {
-        "description": "Property. Model:'https://schema.org/Number'. The NonConformLoadGroup where the NonConformLoadSchedule belongs. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonConformLoadSchedule/schema.json",
+    "title": " Smart Data Models - NonConformLoadSchedule",
+    "description": "Adapted from CIM data models. An active power (Y1-axis) and reactive power (Y2-axis) schedule (curves) versus time (X-axis) for non-conforming loads, e.g., large industrial load or power station service (where modeled).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "NonConformLoadSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be NonConformLoadSchedule"
+                },
+                "NonConformLoadGroup": {
+                    "description": "Property. Model:'https://schema.org/Number'. The NonConformLoadGroup where the NonConformLoadSchedule belongs. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
