@@ -1,56 +1,55 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PetersenCoil/schema.json",
-  "title": " Smart Data Models - PetersenCoil",
-  "description": "Adapted from CIM data models. A tunable impedance device normally used to offset line charging during single line faults in an ungrounded section of network.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PetersenCoil"
-        ],
-        "description": "Property. NGSI type. It has to be PetersenCoil"
-    },
-    "mode": {
-        "description": "Property. Model:'https://schema.org/Number'. The mode of operation of the Petersen coil. Default: None",
-        "type": "number"
-    },
-    "nominalU": {
-        "description": "Property. Model:'https://schema.org/Number'. The nominal voltage for which the coil is designed. Default: 0.0",
-        "type": "number"
-    },
-    "offsetCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. The offset current that the Petersen coil controller is operating from the resonant point.  This is normally a fixed amount for which the controller is configured and could be positive or negative.  Typically 0 to 60 Amperes depending on voltage and resonance conditions. Default: 0.0",
-        "type": "number"
-    },
-    "positionCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. The control current used to control the Petersen coil also known as the position current.  Typically in the range of 20-200mA. Default: 0.0",
-        "type": "number"
-    },
-    "xGroundMax": {
-        "description": "Property. Model:'https://schema.org/Number'. The maximum reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xGroundMin": {
-        "description": "Property. Model:'https://schema.org/Number'. The minimum reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xGroundNominal": {
-        "description": "Property. Model:'https://schema.org/Number'. The nominal reactance.  This is the operating point (normally over compensation) that is defined based on the resonance point in the healthy network condition.  The impedance is calculated based on nominal voltage divided by position current. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PetersenCoil/schema.json",
+    "title": " Smart Data Models - PetersenCoil",
+    "description": "Adapted from CIM data models. A tunable impedance device normally used to offset line charging during single line faults in an ungrounded section of network.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PetersenCoil"
+                    ],
+                    "description": "Property. NGSI type. It has to be PetersenCoil"
+                },
+                "mode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The mode of operation of the Petersen coil. Default: None",
+                    "type": "number"
+                },
+                "nominalU": {
+                    "description": "Property. Model:'https://schema.org/Number'. The nominal voltage for which the coil is designed. Default: 0.0",
+                    "type": "number"
+                },
+                "offsetCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. The offset current that the Petersen coil controller is operating from the resonant point.  This is normally a fixed amount for which the controller is configured and could be positive or negative.  Typically 0 to 60 Amperes depending on voltage and resonance conditions. Default: 0.0",
+                    "type": "number"
+                },
+                "positionCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. The control current used to control the Petersen coil also known as the position current.  Typically in the range of 20-200mA. Default: 0.0",
+                    "type": "number"
+                },
+                "xGroundMax": {
+                    "description": "Property. Model:'https://schema.org/Number'. The maximum reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xGroundMin": {
+                    "description": "Property. Model:'https://schema.org/Number'. The minimum reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xGroundNominal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The nominal reactance.  This is the operating point (normally over compensation) that is defined based on the resonance point in the healthy network condition.  The impedance is calculated based on nominal voltage divided by position current. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
