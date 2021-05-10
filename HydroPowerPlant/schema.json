@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/HydroPowerPlant/schema.json",
-  "title": " Smart Data Models - HydroPowerPlant",
-  "description": "Adapted from CIM data models. A hydro power station which can generate or pump. When generating, the generator turbines receive water from an upper reservoir. When pumping, the pumps receive their water from a lower reservoir.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "HydroPowerPlant"
-        ],
-        "description": "Property. NGSI type. It has to be HydroPowerPlant"
-    },
-    "HydroGeneratingUnits": {
-        "description": "Property. Model:'https://schema.org/Number'. The hydro generating unit belongs to a hydro power plant. Default: 'list'",
-        "type": "number"
-    },
-    "HydroPumps": {
-        "description": "Property. Model:'https://schema.org/Number'. The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: 'list'",
-        "type": "number"
-    },
-    "hydroPlantStorageType": {
-        "description": "Property. Model:'https://schema.org/Number'. The type of hydro power plant water storage. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/HydroPowerPlant/schema.json",
+    "title": " Smart Data Models - HydroPowerPlant",
+    "description": "Adapted from CIM data models. A hydro power station which can generate or pump. When generating, the generator turbines receive water from an upper reservoir. When pumping, the pumps receive their water from a lower reservoir.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "HydroPowerPlant"
+                    ],
+                    "description": "Property. NGSI type. It has to be HydroPowerPlant"
+                },
+                "HydroGeneratingUnits": {
+                    "description": "Property. Model:'https://schema.org/Number'. The hydro generating unit belongs to a hydro power plant. Default: 'list'",
+                    "type": "number"
+                },
+                "HydroPumps": {
+                    "description": "Property. Model:'https://schema.org/Number'. The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: 'list'",
+                    "type": "number"
+                },
+                "hydroPlantStorageType": {
+                    "description": "Property. Model:'https://schema.org/Number'. The type of hydro power plant water storage. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
