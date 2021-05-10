@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType3bIEC/schema.json",
-  "title": " Smart Data Models - WindGenTurbineType3bIEC",
-  "description": "Adapted from CIM data models. IEC Type 3B generator set model.  Reference: IEC Standard 61400-27-1 Section 6.6.3.3.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindGenTurbineType3bIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindGenTurbineType3bIEC"
-    },
-    "fducw": {
-        "description": "Property. Model:'https://schema.org/Number'. Crowbar duration versus voltage variation look-up table (f()). It is case dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "mwtcwp": {
-        "description": "Property. Model:'https://schema.org/Number'. Crowbar control mode ().   The parameter is case dependent parameter. Default: False",
-        "type": "number"
-    },
-    "tg": {
-        "description": "Property. Model:'https://schema.org/Number'. Current generation Time constant (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "two": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant for crowbar washout filter (). It is case dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "xs": {
-        "description": "Property. Model:'https://schema.org/Number'. Electromagnetic transient reactance (x). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType3bIEC/schema.json",
+    "title": " Smart Data Models - WindGenTurbineType3bIEC",
+    "description": "Adapted from CIM data models. IEC Type 3B generator set model.  Reference: IEC Standard 61400-27-1 Section 6.6.3.3.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindGenTurbineType3bIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindGenTurbineType3bIEC"
+                },
+                "fducw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Crowbar duration versus voltage variation look-up table (f()). It is case dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "mwtcwp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Crowbar control mode ().   The parameter is case dependent parameter. Default: False",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Current generation Time constant (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "two": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant for crowbar washout filter (). It is case dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "xs": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electromagnetic transient reactance (x). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
