@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArType2Common1/schema.json",
-  "title": " Smart Data Models - PFVArType2Common1",
-  "description": "Adapted from CIM data models. Power factor / Reactive power regulator. This model represents the power factor or reactive power controller such as the Basler SCP-250. The controller measures power factor or reactive power (PU on generator rated power) and compares it with the operator's set point.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PFVArType2Common1"
-        ],
-        "description": "Property. NGSI type. It has to be PFVArType2Common1"
-    },
-    "j": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector (J). true = control mode for reactive power false = control mode for power factor. Default: False",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Reset gain (Ki). Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp). Default: 0.0",
-        "type": "number"
-    },
-    "max": {
-        "description": "Property. Model:'https://schema.org/Number'. Output limit (max). Default: 0.0",
-        "type": "number"
-    },
-    "ref": {
-        "description": "Property. Model:'https://schema.org/Number'. Reference value of reactive power or power factor (Ref). The reference value is initialised by this model. This initialisation may override the value exchanged by this attribute to represent a plant operator`s change of the reference setting. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArType2Common1/schema.json",
+    "title": " Smart Data Models - PFVArType2Common1",
+    "description": "Adapted from CIM data models. Power factor / Reactive power regulator. This model represents the power factor or reactive power controller such as the Basler SCP-250. The controller measures power factor or reactive power (PU on generator rated power) and compares it with the operator's set point.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PFVArType2Common1"
+                    ],
+                    "description": "Property. NGSI type. It has to be PFVArType2Common1"
+                },
+                "j": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector (J). true = control mode for reactive power false = control mode for power factor. Default: False",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reset gain (Ki). Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp). Default: 0.0",
+                    "type": "number"
+                },
+                "max": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output limit (max). Default: 0.0",
+                    "type": "number"
+                },
+                "ref": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reference value of reactive power or power factor (Ref). The reference value is initialised by this model. This initialisation may override the value exchanged by this attribute to represent a plant operator`s change of the reference setting. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
