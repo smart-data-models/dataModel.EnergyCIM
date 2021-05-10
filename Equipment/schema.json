@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Equipment/schema.json",
-  "title": " Smart Data Models - Equipment",
-  "description": "Adapted from CIM data models. The parts of a power system that are physical devices, electronic or mechanical.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Equipment"
-        ],
-        "description": "Property. NGSI type. It has to be Equipment"
-    },
-    "EquipmentContainer": {
-        "description": "Property. Model:'https://schema.org/Number'. Container of this equipment. Default: None",
-        "type": "number"
-    },
-    "OperationalLimitSet": {
-        "description": "Property. Model:'https://schema.org/Number'. The operational limit sets associated with this equipment. Default: 'list'",
-        "type": "number"
-    },
-    "aggregate": {
-        "description": "Property. Model:'https://schema.org/Number'. The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or synchronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Equipment/schema.json",
+    "title": " Smart Data Models - Equipment",
+    "description": "Adapted from CIM data models. The parts of a power system that are physical devices, electronic or mechanical.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Equipment"
+                    ],
+                    "description": "Property. NGSI type. It has to be Equipment"
+                },
+                "EquipmentContainer": {
+                    "description": "Property. Model:'https://schema.org/Number'. Container of this equipment. Default: None",
+                    "type": "number"
+                },
+                "OperationalLimitSet": {
+                    "description": "Property. Model:'https://schema.org/Number'. The operational limit sets associated with this equipment. Default: 'list'",
+                    "type": "number"
+                },
+                "aggregate": {
+                    "description": "Property. Model:'https://schema.org/Number'. The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or synchronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
