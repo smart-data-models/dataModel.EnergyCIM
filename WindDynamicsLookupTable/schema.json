@@ -1,60 +1,59 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindDynamicsLookupTable/schema.json",
-  "title": " Smart Data Models - WindDynamicsLookupTable",
-  "description": "Adapted from CIM data models. The class models a look up table for the purpose of wind standard models.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindDynamicsLookupTable"
-        ],
-        "description": "Property. NGSI type. It has to be WindDynamicsLookupTable"
-    },
-    "WindContCurrLimIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this current control limitation model. Default: None",
-        "type": "number"
-    },
-    "WindContPType3IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this P control type 3 model. Default: None",
-        "type": "number"
-    },
-    "WindContRotorRIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. The rotor resistance control model with which this wind dynamics lookup table is associated. Default: None",
-        "type": "number"
-    },
-    "WindPlantFreqPcontrolIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this frequency and active power wind plant model. Default: None",
-        "type": "number"
-    },
-    "input": {
-        "description": "Property. Model:'https://schema.org/Number'. Input value (x) for the lookup table function. Default: 0.0",
-        "type": "number"
-    },
-    "lookupTableFunctionType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of the lookup table function. Default: None",
-        "type": "number"
-    },
-    "output": {
-        "description": "Property. Model:'https://schema.org/Number'. Output value (y) for the lookup table function. Default: 0.0",
-        "type": "number"
-    },
-    "sequence": {
-        "description": "Property. Model:'https://schema.org/Number'. Sequence numbers of the pairs of the input (x) and the output (y) of the lookup table function. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindDynamicsLookupTable/schema.json",
+    "title": " Smart Data Models - WindDynamicsLookupTable",
+    "description": "Adapted from CIM data models. The class models a look up table for the purpose of wind standard models.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindDynamicsLookupTable"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindDynamicsLookupTable"
+                },
+                "WindContCurrLimIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this current control limitation model. Default: None",
+                    "type": "number"
+                },
+                "WindContPType3IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this P control type 3 model. Default: None",
+                    "type": "number"
+                },
+                "WindContRotorRIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. The rotor resistance control model with which this wind dynamics lookup table is associated. Default: None",
+                    "type": "number"
+                },
+                "WindPlantFreqPcontrolIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. The wind dynamics lookup table associated with this frequency and active power wind plant model. Default: None",
+                    "type": "number"
+                },
+                "input": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input value (x) for the lookup table function. Default: 0.0",
+                    "type": "number"
+                },
+                "lookupTableFunctionType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of the lookup table function. Default: None",
+                    "type": "number"
+                },
+                "output": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output value (y) for the lookup table function. Default: 0.0",
+                    "type": "number"
+                },
+                "sequence": {
+                    "description": "Property. Model:'https://schema.org/Number'. Sequence numbers of the pairs of the input (x) and the output (y) of the lookup table function. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
