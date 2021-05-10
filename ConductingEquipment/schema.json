@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConductingEquipment/schema.json",
-  "title": " Smart Data Models - ConductingEquipment",
-  "description": "Adapted from CIM data models. The parts of the AC power system that are designed to carry current or that are conductively connected through terminals.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ConductingEquipment"
-        ],
-        "description": "Property. NGSI type. It has to be ConductingEquipment"
-    },
-    "BaseVoltage": {
-        "description": "Property. Model:'https://schema.org/Number'. All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: None",
-        "type": "number"
-    },
-    "SvStatus": {
-        "description": "Property. Model:'https://schema.org/Number'. The status state variable associated with this conducting equipment. Default: None",
-        "type": "number"
-    },
-    "Terminals": {
-        "description": "Property. Model:'https://schema.org/Number'. Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConductingEquipment/schema.json",
+    "title": " Smart Data Models - ConductingEquipment",
+    "description": "Adapted from CIM data models. The parts of the AC power system that are designed to carry current or that are conductively connected through terminals.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ConductingEquipment"
+                    ],
+                    "description": "Property. NGSI type. It has to be ConductingEquipment"
+                },
+                "BaseVoltage": {
+                    "description": "Property. Model:'https://schema.org/Number'. All conducting equipment with this base voltage.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers. Default: None",
+                    "type": "number"
+                },
+                "SvStatus": {
+                    "description": "Property. Model:'https://schema.org/Number'. The status state variable associated with this conducting equipment. Default: None",
+                    "type": "number"
+                },
+                "Terminals": {
+                    "description": "Property. Model:'https://schema.org/Number'. Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
