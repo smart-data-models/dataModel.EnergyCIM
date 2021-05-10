@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramObjectPoint/schema.json",
-  "title": " Smart Data Models - DiagramObjectPoint",
-  "description": "Adapted from CIM data models. A point in a given space defined by 3 coordinates and associated to a diagram object.  The coordinates may be positive or negative as the origin does not have to be in the corner of a diagram.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DiagramObjectPoint"
-        ],
-        "description": "Property. NGSI type. It has to be DiagramObjectPoint"
-    },
-    "DiagramObject": {
-        "description": "Property. Model:'https://schema.org/Number'. The diagram object with which the points are associated. Default: None",
-        "type": "number"
-    },
-    "DiagramObjectGluePoint": {
-        "description": "Property. Model:'https://schema.org/Number'. A diagram object glue point is associated with 2 or more object points that are considered to be `glued` together. Default: None",
-        "type": "number"
-    },
-    "sequenceNumber": {
-        "description": "Property. Model:'https://schema.org/Number'. The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point. Default: 0",
-        "type": "number"
-    },
-    "xPosition": {
-        "description": "Property. Model:'https://schema.org/Number'. The X coordinate of this point. Default: 0.0",
-        "type": "number"
-    },
-    "yPosition": {
-        "description": "Property. Model:'https://schema.org/Number'. The Y coordinate of this point. Default: 0.0",
-        "type": "number"
-    },
-    "zPosition": {
-        "description": "Property. Model:'https://schema.org/Number'. The Z coordinate of this point. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramObjectPoint/schema.json",
+    "title": " Smart Data Models - DiagramObjectPoint",
+    "description": "Adapted from CIM data models. A point in a given space defined by 3 coordinates and associated to a diagram object.  The coordinates may be positive or negative as the origin does not have to be in the corner of a diagram.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DiagramObjectPoint"
+                    ],
+                    "description": "Property. NGSI type. It has to be DiagramObjectPoint"
+                },
+                "DiagramObject": {
+                    "description": "Property. Model:'https://schema.org/Number'. The diagram object with which the points are associated. Default: None",
+                    "type": "number"
+                },
+                "DiagramObjectGluePoint": {
+                    "description": "Property. Model:'https://schema.org/Number'. A diagram object glue point is associated with 2 or more object points that are considered to be `glued` together. Default: None",
+                    "type": "number"
+                },
+                "sequenceNumber": {
+                    "description": "Property. Model:'https://schema.org/Number'. The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point. Default: 0",
+                    "type": "number"
+                },
+                "xPosition": {
+                    "description": "Property. Model:'https://schema.org/Number'. The X coordinate of this point. Default: 0.0",
+                    "type": "number"
+                },
+                "yPosition": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Y coordinate of this point. Default: 0.0",
+                    "type": "number"
+                },
+                "zPosition": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Z coordinate of this point. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
