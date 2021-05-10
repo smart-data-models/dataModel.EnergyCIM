@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegularTimePoint/schema.json",
-  "title": " Smart Data Models - RegularTimePoint",
-  "description": "Adapted from CIM data models. Time point for a schedule where the time between the consecutive points is constant.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RegularTimePoint"
-        ],
-        "description": "Property. NGSI type. It has to be RegularTimePoint"
-    },
-    "IntervalSchedule": {
-        "description": "Property. Model:'https://schema.org/Number'. Regular interval schedule containing this time point. Default: None",
-        "type": "number"
-    },
-    "sequenceNumber": {
-        "description": "Property. Model:'https://schema.org/Number'. The position of the regular time point in the sequence. Note that time points don`t have to be sequential, i.e. time points may be omitted. The actual time for a RegularTimePoint is computed by multiplying the associated regular interval schedule`s time step with the regular time point sequence number and adding the associated schedules start time. Default: 0",
-        "type": "number"
-    },
-    "value1": {
-        "description": "Property. Model:'https://schema.org/Number'. The first value at the time. The meaning of the value is defined by the derived type of the associated schedule. Default: 0.0",
-        "type": "number"
-    },
-    "value2": {
-        "description": "Property. Model:'https://schema.org/Number'. The second value at the time. The meaning of the value is defined by the derived type of the associated schedule. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegularTimePoint/schema.json",
+    "title": " Smart Data Models - RegularTimePoint",
+    "description": "Adapted from CIM data models. Time point for a schedule where the time between the consecutive points is constant.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RegularTimePoint"
+                    ],
+                    "description": "Property. NGSI type. It has to be RegularTimePoint"
+                },
+                "IntervalSchedule": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regular interval schedule containing this time point. Default: None",
+                    "type": "number"
+                },
+                "sequenceNumber": {
+                    "description": "Property. Model:'https://schema.org/Number'. The position of the regular time point in the sequence. Note that time points don`t have to be sequential, i.e. time points may be omitted. The actual time for a RegularTimePoint is computed by multiplying the associated regular interval schedule`s time step with the regular time point sequence number and adding the associated schedules start time. Default: 0",
+                    "type": "number"
+                },
+                "value1": {
+                    "description": "Property. Model:'https://schema.org/Number'. The first value at the time. The meaning of the value is defined by the derived type of the associated schedule. Default: 0.0",
+                    "type": "number"
+                },
+                "value2": {
+                    "description": "Property. Model:'https://schema.org/Number'. The second value at the time. The meaning of the value is defined by the derived type of the associated schedule. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
