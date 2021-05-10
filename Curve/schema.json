@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Curve/schema.json",
-  "title": " Smart Data Models - Curve",
-  "description": "Adapted from CIM data models. A multi-purpose curve or functional relationship between an independent variable (X-axis) and dependent (Y-axis) variables.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Curve"
-        ],
-        "description": "Property. NGSI type. It has to be Curve"
-    },
-    "CurveDatas": {
-        "description": "Property. Model:'https://schema.org/Number'. The curve of  this curve data point. Default: 'list'",
-        "type": "number"
-    },
-    "curveStyle": {
-        "description": "Property. Model:'https://schema.org/Number'. The style or shape of the curve. Default: None",
-        "type": "number"
-    },
-    "xUnit": {
-        "description": "Property. Model:'https://schema.org/Number'. The X-axis units of measure. Default: None",
-        "type": "number"
-    },
-    "y1Unit": {
-        "description": "Property. Model:'https://schema.org/Number'. The Y1-axis units of measure. Default: None",
-        "type": "number"
-    },
-    "y2Unit": {
-        "description": "Property. Model:'https://schema.org/Number'. The Y2-axis units of measure. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Curve/schema.json",
+    "title": " Smart Data Models - Curve",
+    "description": "Adapted from CIM data models. A multi-purpose curve or functional relationship between an independent variable (X-axis) and dependent (Y-axis) variables.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Curve"
+                    ],
+                    "description": "Property. NGSI type. It has to be Curve"
+                },
+                "CurveDatas": {
+                    "description": "Property. Model:'https://schema.org/Number'. The curve of  this curve data point. Default: 'list'",
+                    "type": "number"
+                },
+                "curveStyle": {
+                    "description": "Property. Model:'https://schema.org/Number'. The style or shape of the curve. Default: None",
+                    "type": "number"
+                },
+                "xUnit": {
+                    "description": "Property. Model:'https://schema.org/Number'. The X-axis units of measure. Default: None",
+                    "type": "number"
+                },
+                "y1Unit": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Y1-axis units of measure. Default: None",
+                    "type": "number"
+                },
+                "y2Unit": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Y2-axis units of measure. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
