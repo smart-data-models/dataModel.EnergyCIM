@@ -1,56 +1,55 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RotatingMachine/schema.json",
-  "title": " Smart Data Models - RotatingMachine",
-  "description": "Adapted from CIM data models. A rotating machine which may be used as a generator or motor.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RotatingMachine"
-        ],
-        "description": "Property. NGSI type. It has to be RotatingMachine"
-    },
-    "GeneratingUnit": {
-        "description": "Property. Model:'https://schema.org/Number'. A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: None",
-        "type": "number"
-    },
-    "HydroPump": {
-        "description": "Property. Model:'https://schema.org/Number'. The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: None",
-        "type": "number"
-    },
-    "p": {
-        "description": "Property. Model:'https://schema.org/Number'. Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0",
-        "type": "number"
-    },
-    "q": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0",
-        "type": "number"
-    },
-    "ratedPowerFactor": {
-        "description": "Property. Model:'https://schema.org/Number'. Power factor (nameplate data). It is primarily used for short circuit data exchange according to IEC 60909. Default: 0.0",
-        "type": "number"
-    },
-    "ratedS": {
-        "description": "Property. Model:'https://schema.org/Number'. Nameplate apparent power rating for the unit. The attribute shall have a positive value. Default: 0.0",
-        "type": "number"
-    },
-    "ratedU": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RotatingMachine/schema.json",
+    "title": " Smart Data Models - RotatingMachine",
+    "description": "Adapted from CIM data models. A rotating machine which may be used as a generator or motor.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RotatingMachine"
+                    ],
+                    "description": "Property. NGSI type. It has to be RotatingMachine"
+                },
+                "GeneratingUnit": {
+                    "description": "Property. Model:'https://schema.org/Number'. A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: None",
+                    "type": "number"
+                },
+                "HydroPump": {
+                    "description": "Property. Model:'https://schema.org/Number'. The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: None",
+                    "type": "number"
+                },
+                "p": {
+                    "description": "Property. Model:'https://schema.org/Number'. Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0",
+                    "type": "number"
+                },
+                "q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for a steady state solution. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedPowerFactor": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power factor (nameplate data). It is primarily used for short circuit data exchange according to IEC 60909. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedS": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nameplate apparent power rating for the unit. The attribute shall have a positive value. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedU": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated voltage (nameplate data, Ur in IEC 60909-0). It is primarily used for short circuit data exchange according to IEC 60909. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
