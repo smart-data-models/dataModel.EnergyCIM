@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SwitchSchedule/schema.json",
-  "title": " Smart Data Models - SwitchSchedule",
-  "description": "Adapted from CIM data models. A schedule of switch positions.  If RegularTimePoint.value1 is 0, the switch is open.  If 1, the switch is closed.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SwitchSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be SwitchSchedule"
-    },
-    "Switch": {
-        "description": "Property. Model:'https://schema.org/Number'. A Switch can be associated with SwitchSchedules. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SwitchSchedule/schema.json",
+    "title": " Smart Data Models - SwitchSchedule",
+    "description": "Adapted from CIM data models. A schedule of switch positions.  If RegularTimePoint.value1 is 0, the switch is open.  If 1, the switch is closed.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SwitchSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be SwitchSchedule"
+                },
+                "Switch": {
+                    "description": "Property. Model:'https://schema.org/Number'. A Switch can be associated with SwitchSchedules. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
