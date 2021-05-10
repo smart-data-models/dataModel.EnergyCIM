@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssPTIST1/schema.json",
-  "title": " Smart Data Models - PssPTIST1",
-  "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssPTIST1"
-        ],
-        "description": "Property. NGSI type. It has to be PssPTIST1"
-    },
-    "dtc": {
-        "description": "Property. Model:'https://schema.org/Number'. Time step related to activation of controls (Dtc).  Typical Value = 0.025. Default: 0",
-        "type": "number"
-    },
-    "dtf": {
-        "description": "Property. Model:'https://schema.org/Number'. Time step frequency calculation (Dtf).  Typical Value = 0.025. Default: 0",
-        "type": "number"
-    },
-    "dtp": {
-        "description": "Property. Model:'https://schema.org/Number'. Time step active power calculation (Dtp).  Typical Value = 0.0125. Default: 0",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 9. Default: 0.0",
-        "type": "number"
-    },
-    "m": {
-        "description": "Property. Model:'https://schema.org/Number'. (M).  M=2*H.  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T1).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T2).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T3).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T4).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tf).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "tp": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssPTIST1/schema.json",
+    "title": " Smart Data Models - PssPTIST1",
+    "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssPTIST1"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssPTIST1"
+                },
+                "dtc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time step related to activation of controls (Dtc).  Typical Value = 0.025. Default: 0",
+                    "type": "number"
+                },
+                "dtf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time step frequency calculation (Dtf).  Typical Value = 0.025. Default: 0",
+                    "type": "number"
+                },
+                "dtp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time step active power calculation (Dtp).  Typical Value = 0.0125. Default: 0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 9. Default: 0.0",
+                    "type": "number"
+                },
+                "m": {
+                    "description": "Property. Model:'https://schema.org/Number'. (M).  M=2*H.  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T1).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T2).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T3).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T4).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tf).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
