@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegularIntervalSchedule/schema.json",
-  "title": " Smart Data Models - RegularIntervalSchedule",
-  "description": "Adapted from CIM data models. The schedule has time points where the time between them is constant.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RegularIntervalSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be RegularIntervalSchedule"
-    },
-    "TimePoints": {
-        "description": "Property. Model:'https://schema.org/Number'. The regular interval time point data values that define this schedule. Default: 'list'",
-        "type": "number"
-    },
-    "endTime": {
-        "description": "Property. Model:'https://schema.org/Number'. The time for the last time point. Default: ''",
-        "type": "number"
-    },
-    "timeStep": {
-        "description": "Property. Model:'https://schema.org/Number'. The time between each pair of subsequent regular time points in sequence order. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegularIntervalSchedule/schema.json",
+    "title": " Smart Data Models - RegularIntervalSchedule",
+    "description": "Adapted from CIM data models. The schedule has time points where the time between them is constant.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RegularIntervalSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be RegularIntervalSchedule"
+                },
+                "TimePoints": {
+                    "description": "Property. Model:'https://schema.org/Number'. The regular interval time point data values that define this schedule. Default: 'list'",
+                    "type": "number"
+                },
+                "endTime": {
+                    "description": "Property. Model:'https://schema.org/Number'. The time for the last time point. Default: ''",
+                    "type": "number"
+                },
+                "timeStep": {
+                    "description": "Property. Model:'https://schema.org/Number'. The time between each pair of subsequent regular time points in sequence order. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
