@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcHU/schema.json",
-  "title": " Smart Data Models - ExcHU",
-  "description": "Adapted from CIM data models. Hungarian Excitation System Model, with built-in voltage transducer.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcHU"
-        ],
-        "description": "Property. NGSI type. It has to be ExcHU"
-    },
-    "ae": {
-        "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag gain factor (Ae).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "ai": {
-        "description": "Property. Model:'https://schema.org/Number'. Minor loop PI tag gain factor (Ai).  Typical Value = 22. Default: 0.0",
-        "type": "number"
-    },
-    "atr": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR constant (Atr).  Typical Value = 2.19. Default: 0.0",
-        "type": "number"
-    },
-    "emax": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage control signal upper limit on AVR base (Emax).  Typical Value = 0.996. Default: 0.0",
-        "type": "number"
-    },
-    "emin": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage control signal lower limit on AVR base (Emin).  Typical Value = -0.866. Default: 0.0",
-        "type": "number"
-    },
-    "imax": {
-        "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag output signal upper limit (Imax).  Typical Value = 2.19. Default: 0.0",
-        "type": "number"
-    },
-    "imin": {
-        "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag output signal lower limit (Imin).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "ke": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage base conversion constant (Ke).  Typical Value = 4.666. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Current base conversion constant (Ki).  Typical Value = 0.21428. Default: 0.0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag integration time constant (Te).  Typical Value = 0.154. Default: 0",
-        "type": "number"
-    },
-    "ti": {
-        "description": "Property. Model:'https://schema.org/Number'. Minor loop PI control tag integration time constant (Ti).  Typical Value = 0.01333. Default: 0",
-        "type": "number"
-    },
-    "tr": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant (Tr). If a voltage compensator is used in conjunction with this excitation system model, Tr should be set to 0.  Typical Value = 0.01. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcHU/schema.json",
+    "title": " Smart Data Models - ExcHU",
+    "description": "Adapted from CIM data models. Hungarian Excitation System Model, with built-in voltage transducer.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcHU"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcHU"
+                },
+                "ae": {
+                    "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag gain factor (Ae).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "ai": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minor loop PI tag gain factor (Ai).  Typical Value = 22. Default: 0.0",
+                    "type": "number"
+                },
+                "atr": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR constant (Atr).  Typical Value = 2.19. Default: 0.0",
+                    "type": "number"
+                },
+                "emax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage control signal upper limit on AVR base (Emax).  Typical Value = 0.996. Default: 0.0",
+                    "type": "number"
+                },
+                "emin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage control signal lower limit on AVR base (Emin).  Typical Value = -0.866. Default: 0.0",
+                    "type": "number"
+                },
+                "imax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag output signal upper limit (Imax).  Typical Value = 2.19. Default: 0.0",
+                    "type": "number"
+                },
+                "imin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag output signal lower limit (Imin).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage base conversion constant (Ke).  Typical Value = 4.666. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Current base conversion constant (Ki).  Typical Value = 0.21428. Default: 0.0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Major loop PI tag integration time constant (Te).  Typical Value = 0.154. Default: 0",
+                    "type": "number"
+                },
+                "ti": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minor loop PI control tag integration time constant (Ti).  Typical Value = 0.01333. Default: 0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant (Tr). If a voltage compensator is used in conjunction with this excitation system model, Tr should be set to 0.  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
