@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType1IEC/schema.json",
-  "title": " Smart Data Models - WindGenTurbineType1IEC",
-  "description": "Adapted from CIM data models. Wind turbine IEC Type 1.  Reference: IEC Standard 61400-27-1, section 6.5.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindGenTurbineType1IEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindGenTurbineType1IEC"
-    },
-    "WindAeroConstIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind aerodynamic model associated with this wind turbine type 1 model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType1IEC/schema.json",
+    "title": " Smart Data Models - WindGenTurbineType1IEC",
+    "description": "Adapted from CIM data models. Wind turbine IEC Type 1.  Reference: IEC Standard 61400-27-1, section 6.5.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindGenTurbineType1IEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindGenTurbineType1IEC"
+                },
+                "WindAeroConstIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind aerodynamic model associated with this wind turbine type 1 model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
