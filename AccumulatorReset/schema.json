@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AccumulatorReset/schema.json",
-  "title": " Smart Data Models - AccumulatorReset",
-  "description": "Adapted from CIM data models. This command reset the counter value to zero.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AccumulatorReset"
-        ],
-        "description": "Property. NGSI type. It has to be AccumulatorReset"
-    },
-    "AccumulatorValue": {
-        "description": "Property. Model:'https://schema.org/Number'. The accumulator value that is reset by the command. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AccumulatorReset/schema.json",
+    "title": " Smart Data Models - AccumulatorReset",
+    "description": "Adapted from CIM data models. This command reset the counter value to zero.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AccumulatorReset"
+                    ],
+                    "description": "Property. NGSI type. It has to be AccumulatorReset"
+                },
+                "AccumulatorValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. The accumulator value that is reset by the command. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
