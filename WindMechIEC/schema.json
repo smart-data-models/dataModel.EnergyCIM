@@ -1,56 +1,55 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindMechIEC/schema.json",
-  "title": " Smart Data Models - WindMechIEC",
-  "description": "Adapted from CIM data models. Two mass model.  Reference: IEC Standard 61400-27-1 Section 6.6.2.1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindMechIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindMechIEC"
-    },
-    "WindGenTurbineType3IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine Type 3 model with which this wind mechanical model is associated. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType1or2IEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind generator type 1 or 2 model with which this wind mechanical model is associated. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType4bIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 4B model with which this wind mechanical model is associated. Default: None",
-        "type": "number"
-    },
-    "cdrt": {
-        "description": "Property. Model:'https://schema.org/Number'. Drive train damping (. It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    },
-    "hgen": {
-        "description": "Property. Model:'https://schema.org/Number'. Inertia constant of generator (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "hwtr": {
-        "description": "Property. Model:'https://schema.org/Number'. Inertia constant of wind turbine rotor (). It is type dependent parameter. Default: 0",
-        "type": "number"
-    },
-    "kdrt": {
-        "description": "Property. Model:'https://schema.org/Number'. Drive train stiffness (). It is type dependent parameter. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindMechIEC/schema.json",
+    "title": " Smart Data Models - WindMechIEC",
+    "description": "Adapted from CIM data models. Two mass model.  Reference: IEC Standard 61400-27-1 Section 6.6.2.1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindMechIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindMechIEC"
+                },
+                "WindGenTurbineType3IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine Type 3 model with which this wind mechanical model is associated. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType1or2IEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind generator type 1 or 2 model with which this wind mechanical model is associated. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType4bIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind turbine type 4B model with which this wind mechanical model is associated. Default: None",
+                    "type": "number"
+                },
+                "cdrt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Drive train damping (. It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                },
+                "hgen": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inertia constant of generator (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "hwtr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inertia constant of wind turbine rotor (). It is type dependent parameter. Default: 0",
+                    "type": "number"
+                },
+                "kdrt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Drive train stiffness (). It is type dependent parameter. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
