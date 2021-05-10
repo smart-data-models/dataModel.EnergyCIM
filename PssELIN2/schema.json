@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssELIN2/schema.json",
-  "title": " Smart Data Models - PssELIN2",
-  "description": "Adapted from CIM data models. Power system stabilizer typically associated with ExcELIN2 (though PssIEEE2B or Pss2B can also be used).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssELIN2"
-        ],
-        "description": "Property. NGSI type. It has to be PssELIN2"
-    },
-    "apss": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient (a_PSS).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "ks1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Ks1).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "ks2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Ks2).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "ppss": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient (p_PSS) (>=0 and <=4).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "psslim": {
-        "description": "Property. Model:'https://schema.org/Number'. PSS limiter (psslim).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "ts1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts1).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ts2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts2).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "ts3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts3).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "ts4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts4).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "ts5": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts5).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ts6": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts6).  Typical Value = 1. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssELIN2/schema.json",
+    "title": " Smart Data Models - PssELIN2",
+    "description": "Adapted from CIM data models. Power system stabilizer typically associated with ExcELIN2 (though PssIEEE2B or Pss2B can also be used).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssELIN2"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssELIN2"
+                },
+                "apss": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient (a_PSS).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ks1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Ks1).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "ks2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Ks2).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ppss": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient (p_PSS) (>=0 and <=4).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "psslim": {
+                    "description": "Property. Model:'https://schema.org/Number'. PSS limiter (psslim).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ts1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ts2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts2).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "ts3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts3).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "ts4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts4).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "ts5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts5).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ts6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ts6).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
