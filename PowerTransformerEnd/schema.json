@@ -1,80 +1,79 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PowerTransformerEnd/schema.json",
-  "title": " Smart Data Models - PowerTransformerEnd",
-  "description": "Adapted from CIM data models. A PowerTransformerEnd is associated with each Terminal of a PowerTransformer. The impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows 1) for a two Terminal PowerTransformer the high voltage PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage PowerTransformerEnd has zero values for r, r0, x, and x0. 2) for a three Terminal PowerTransformer the three PowerTransformerEnds represents a star equivalent with each leg in the star represented by r, r0, x, and x0 values. 3) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PowerTransformerEnd"
-        ],
-        "description": "Property. NGSI type. It has to be PowerTransformerEnd"
-    },
-    "PowerTransformer": {
-        "description": "Property. Model:'https://schema.org/Number'. The ends of this power transformer. Default: None",
-        "type": "number"
-    },
-    "b": {
-        "description": "Property. Model:'https://schema.org/Number'. Magnetizing branch susceptance (B mag).  The value can be positive or negative. Default: 0.0",
-        "type": "number"
-    },
-    "b0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence magnetizing branch susceptance. Default: 0.0",
-        "type": "number"
-    },
-    "connectionKind": {
-        "description": "Property. Model:'https://schema.org/Number'. Kind of connection. Default: None",
-        "type": "number"
-    },
-    "g": {
-        "description": "Property. Model:'https://schema.org/Number'. Magnetizing branch conductance. Default: 0.0",
-        "type": "number"
-    },
-    "g0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence magnetizing branch conductance (star-model). Default: 0.0",
-        "type": "number"
-    },
-    "phaseAngleClock": {
-        "description": "Property. Model:'https://schema.org/Number'. Terminal voltage phase angle displacement where 360 degrees are represented with clock hours. The valid values are 0 to 11. For example, for the secondary side end of a transformer with vector group code of `Dyn11`, specify the connection kind as wye with neutral and specify the phase angle of the clock as 11.  The clock value of the transformer end number specified as 1, is assumed to be zero.  Note the transformer end number is not assumed to be the same as the terminal sequence number. Default: 0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Resistance (star-model) of the transformer end. The attribute shall be equal or greater than zero for non-equivalent transformers. Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance (star-model) of the transformer end. Default: 0.0",
-        "type": "number"
-    },
-    "ratedS": {
-        "description": "Property. Model:'https://schema.org/Number'. Normal apparent power rating. The attribute shall be a positive value. For a two-winding transformer the values for the high and low voltage sides shall be identical. Default: 0.0",
-        "type": "number"
-    },
-    "ratedU": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings. A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater or equal than ratedU for the lower voltage sides. Default: 0.0",
-        "type": "number"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance (star-model) of the transformer end. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance of the transformer end. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PowerTransformerEnd/schema.json",
+    "title": " Smart Data Models - PowerTransformerEnd",
+    "description": "Adapted from CIM data models. A PowerTransformerEnd is associated with each Terminal of a PowerTransformer. The impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows 1) for a two Terminal PowerTransformer the high voltage PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage PowerTransformerEnd has zero values for r, r0, x, and x0. 2) for a three Terminal PowerTransformer the three PowerTransformerEnds represents a star equivalent with each leg in the star represented by r, r0, x, and x0 values. 3) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PowerTransformerEnd"
+                    ],
+                    "description": "Property. NGSI type. It has to be PowerTransformerEnd"
+                },
+                "PowerTransformer": {
+                    "description": "Property. Model:'https://schema.org/Number'. The ends of this power transformer. Default: None",
+                    "type": "number"
+                },
+                "b": {
+                    "description": "Property. Model:'https://schema.org/Number'. Magnetizing branch susceptance (B mag).  The value can be positive or negative. Default: 0.0",
+                    "type": "number"
+                },
+                "b0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence magnetizing branch susceptance. Default: 0.0",
+                    "type": "number"
+                },
+                "connectionKind": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kind of connection. Default: None",
+                    "type": "number"
+                },
+                "g": {
+                    "description": "Property. Model:'https://schema.org/Number'. Magnetizing branch conductance. Default: 0.0",
+                    "type": "number"
+                },
+                "g0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence magnetizing branch conductance (star-model). Default: 0.0",
+                    "type": "number"
+                },
+                "phaseAngleClock": {
+                    "description": "Property. Model:'https://schema.org/Number'. Terminal voltage phase angle displacement where 360 degrees are represented with clock hours. The valid values are 0 to 11. For example, for the secondary side end of a transformer with vector group code of `Dyn11`, specify the connection kind as wye with neutral and specify the phase angle of the clock as 11.  The clock value of the transformer end number specified as 1, is assumed to be zero.  Note the transformer end number is not assumed to be the same as the terminal sequence number. Default: 0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Resistance (star-model) of the transformer end. The attribute shall be equal or greater than zero for non-equivalent transformers. Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series resistance (star-model) of the transformer end. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedS": {
+                    "description": "Property. Model:'https://schema.org/Number'. Normal apparent power rating. The attribute shall be a positive value. For a two-winding transformer the values for the high and low voltage sides shall be identical. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedU": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings. A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater or equal than ratedU for the lower voltage sides. Default: 0.0",
+                    "type": "number"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence series reactance (star-model) of the transformer end. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence series reactance of the transformer end. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
