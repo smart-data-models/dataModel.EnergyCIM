@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegulationSchedule/schema.json",
-  "title": " Smart Data Models - RegulationSchedule",
-  "description": "Adapted from CIM data models. A pre-established pattern over time for a controlled variable, e.g., busbar voltage.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RegulationSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be RegulationSchedule"
-    },
-    "RegulatingControl": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulating controls that have this Schedule. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegulationSchedule/schema.json",
+    "title": " Smart Data Models - RegulationSchedule",
+    "description": "Adapted from CIM data models. A pre-established pattern over time for a controlled variable, e.g., busbar voltage.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RegulationSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be RegulationSchedule"
+                },
+                "RegulatingControl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulating controls that have this Schedule. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
