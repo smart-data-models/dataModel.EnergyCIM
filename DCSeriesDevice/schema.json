@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCSeriesDevice/schema.json",
-  "title": " Smart Data Models - DCSeriesDevice",
-  "description": "Adapted from CIM data models. A series device within the DC system, typically a reactor used for filtering or smoothing.  Needed for transient and short circuit studies.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DCSeriesDevice"
-        ],
-        "description": "Property. NGSI type. It has to be DCSeriesDevice"
-    },
-    "inductance": {
-        "description": "Property. Model:'https://schema.org/Number'. Inductance of the device. Default: 0.0",
-        "type": "number"
-    },
-    "ratedUdc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated DC device voltage. Converter configuration data used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "resistance": {
-        "description": "Property. Model:'https://schema.org/Number'. Resistance of the DC device. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCSeriesDevice/schema.json",
+    "title": " Smart Data Models - DCSeriesDevice",
+    "description": "Adapted from CIM data models. A series device within the DC system, typically a reactor used for filtering or smoothing.  Needed for transient and short circuit studies.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DCSeriesDevice"
+                    ],
+                    "description": "Property. NGSI type. It has to be DCSeriesDevice"
+                },
+                "inductance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inductance of the device. Default: 0.0",
+                    "type": "number"
+                },
+                "ratedUdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated DC device voltage. Converter configuration data used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "resistance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Resistance of the DC device. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
