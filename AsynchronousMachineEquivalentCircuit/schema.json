@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineEquivalentCircuit/schema.json",
-  "title": " Smart Data Models - AsynchronousMachineEquivalentCircuit",
-  "description": "Adapted from CIM data models. The electrical equations of all variations of the asynchronous model are based on the AsynchronousEquivalentCircuit diagram for the direct and quadrature axes, with two equivalent rotor windings in each axis.      =  +   =  +  *  / ( + )  =  +  * *  / ( *  +  *  +  * )  = ( + ) / ( * )  = ( *  +  *  +  * ) / ( *  * (+ ) Same equations using CIM attributes from AsynchronousMachineTimeConstantReactance class on left of = sign and AsynchronousMachineEquivalentCircuit class on right (except as noted): xs = xm + RotatingMachineDynamics.statorLeakageReactance xp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1 / (xm + xlr1) xpp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1* xlr2 / (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) tpo = (xm + xlr1) / (2*pi*nominal frequency * rr1) tppo = (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) / (2*pi*nominal frequency * rr2 * (xm + xlr1).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AsynchronousMachineEquivalentCircuit"
-        ],
-        "description": "Property. NGSI type. It has to be AsynchronousMachineEquivalentCircuit"
-    },
-    "rr1": {
-        "description": "Property. Model:'https://schema.org/Number'. Damper 1 winding resistance. Default: 0.0",
-        "type": "number"
-    },
-    "rr2": {
-        "description": "Property. Model:'https://schema.org/Number'. Damper 2 winding resistance. Default: 0.0",
-        "type": "number"
-    },
-    "xlr1": {
-        "description": "Property. Model:'https://schema.org/Number'. Damper 1 winding leakage reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xlr2": {
-        "description": "Property. Model:'https://schema.org/Number'. Damper 2 winding leakage reactance. Default: 0.0",
-        "type": "number"
-    },
-    "xm": {
-        "description": "Property. Model:'https://schema.org/Number'. Magnetizing reactance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineEquivalentCircuit/schema.json",
+    "title": " Smart Data Models - AsynchronousMachineEquivalentCircuit",
+    "description": "Adapted from CIM data models. The electrical equations of all variations of the asynchronous model are based on the AsynchronousEquivalentCircuit diagram for the direct and quadrature axes, with two equivalent rotor windings in each axis.      =  +   =  +  *  / ( + )  =  +  * *  / ( *  +  *  +  * )  = ( + ) / ( * )  = ( *  +  *  +  * ) / ( *  * (+ ) Same equations using CIM attributes from AsynchronousMachineTimeConstantReactance class on left of = sign and AsynchronousMachineEquivalentCircuit class on right (except as noted): xs = xm + RotatingMachineDynamics.statorLeakageReactance xp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1 / (xm + xlr1) xpp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1* xlr2 / (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) tpo = (xm + xlr1) / (2*pi*nominal frequency * rr1) tppo = (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) / (2*pi*nominal frequency * rr2 * (xm + xlr1).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AsynchronousMachineEquivalentCircuit"
+                    ],
+                    "description": "Property. NGSI type. It has to be AsynchronousMachineEquivalentCircuit"
+                },
+                "rr1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Damper 1 winding resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "rr2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Damper 2 winding resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "xlr1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Damper 1 winding leakage reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xlr2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Damper 2 winding leakage reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "xm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Magnetizing reactance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
