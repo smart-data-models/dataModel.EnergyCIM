@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramObjectStyle/schema.json",
-  "title": " Smart Data Models - DiagramObjectStyle",
-  "description": "Adapted from CIM data models. A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and color.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DiagramObjectStyle"
-        ],
-        "description": "Property. NGSI type. It has to be DiagramObjectStyle"
-    },
-    "StyledObjects": {
-        "description": "Property. Model:'https://schema.org/Number'. A style can be assigned to multiple diagram objects. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramObjectStyle/schema.json",
+    "title": " Smart Data Models - DiagramObjectStyle",
+    "description": "Adapted from CIM data models. A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and color.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DiagramObjectStyle"
+                    ],
+                    "description": "Property. NGSI type. It has to be DiagramObjectStyle"
+                },
+                "StyledObjects": {
+                    "description": "Property. Model:'https://schema.org/Number'. A style can be assigned to multiple diagram objects. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
