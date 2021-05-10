@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLimX2/schema.json",
-  "title": " Smart Data Models - OverexcLimX2",
-  "description": "Adapted from CIM data models. Field Voltage or Current overexcitation limiter designed to protect the generator field of an AC machine with automatic excitation control from overheating due to prolonged overexcitation.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OverexcLimX2"
-        ],
-        "description": "Property. NGSI type. It has to be OverexcLimX2"
-    },
-    "efd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Low voltage or current point on the inverse time characteristic (EFD).  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "efd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Mid voltage or current point on the inverse time characteristic (EFD).  Typical Value = 1.2. Default: 0.0",
-        "type": "number"
-    },
-    "efd3": {
-        "description": "Property. Model:'https://schema.org/Number'. High voltage or current point on the inverse time characteristic (EFD).  Typical Value = 1.5. Default: 0.0",
-        "type": "number"
-    },
-    "efddes": {
-        "description": "Property. Model:'https://schema.org/Number'. Desired field voltage if m=F or field current if m=T (EFD).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "efdrated": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated field voltage if m=F or field current if m=T (EFD).  Typical Value = 1.05. Default: 0.0",
-        "type": "number"
-    },
-    "kmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 0.002. Default: 0.0",
-        "type": "number"
-    },
-    "m": {
-        "description": "Property. Model:'https://schema.org/Number'. (m). true = IFD limiting false = EFD limiting. Default: False",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the low voltage or current point on the inverse time characteristic (TIME).  Typical Value = 120. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the mid voltage or current point on the inverse time characteristic (TIME).  Typical Value = 40. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the high voltage or current point on the inverse time characteristic (TIME).  Typical Value = 15. Default: 0",
-        "type": "number"
-    },
-    "vlow": {
-        "description": "Property. Model:'https://schema.org/Number'. Low voltage limit (V) (>0). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLimX2/schema.json",
+    "title": " Smart Data Models - OverexcLimX2",
+    "description": "Adapted from CIM data models. Field Voltage or Current overexcitation limiter designed to protect the generator field of an AC machine with automatic excitation control from overheating due to prolonged overexcitation.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OverexcLimX2"
+                    ],
+                    "description": "Property. NGSI type. It has to be OverexcLimX2"
+                },
+                "efd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low voltage or current point on the inverse time characteristic (EFD).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "efd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Mid voltage or current point on the inverse time characteristic (EFD).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "efd3": {
+                    "description": "Property. Model:'https://schema.org/Number'. High voltage or current point on the inverse time characteristic (EFD).  Typical Value = 1.5. Default: 0.0",
+                    "type": "number"
+                },
+                "efddes": {
+                    "description": "Property. Model:'https://schema.org/Number'. Desired field voltage if m=F or field current if m=T (EFD).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "efdrated": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated field voltage if m=F or field current if m=T (EFD).  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "kmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 0.002. Default: 0.0",
+                    "type": "number"
+                },
+                "m": {
+                    "description": "Property. Model:'https://schema.org/Number'. (m). true = IFD limiting false = EFD limiting. Default: False",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the low voltage or current point on the inverse time characteristic (TIME).  Typical Value = 120. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the mid voltage or current point on the inverse time characteristic (TIME).  Typical Value = 40. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the high voltage or current point on the inverse time characteristic (TIME).  Typical Value = 15. Default: 0",
+                    "type": "number"
+                },
+                "vlow": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low voltage limit (V) (>0). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
