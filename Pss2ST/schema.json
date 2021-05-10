@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss2ST/schema.json",
-  "title": " Smart Data Models - Pss2ST",
-  "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 1.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Pss2ST"
-        ],
-        "description": "Property. NGSI type. It has to be Pss2ST"
-    },
-    "inputSignal1Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1.  Typical Value = rotorAngularFrequencyDeviation. Default: None",
-        "type": "number"
-    },
-    "inputSignal2Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K1). Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K2). Default: 0.0",
-        "type": "number"
-    },
-    "lsmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Lsmax). Default: 0.0",
-        "type": "number"
-    },
-    "lsmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Lsmin). Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T1). Default: 0",
-        "type": "number"
-    },
-    "t10": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T10). Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T2). Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T3). Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T4). Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T5). Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T6). Default: 0",
-        "type": "number"
-    },
-    "t7": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T7). Default: 0",
-        "type": "number"
-    },
-    "t8": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T8). Default: 0",
-        "type": "number"
-    },
-    "t9": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T9). Default: 0",
-        "type": "number"
-    },
-    "vcl": {
-        "description": "Property. Model:'https://schema.org/Number'. Cutoff limiter (Vcl). Default: 0.0",
-        "type": "number"
-    },
-    "vcu": {
-        "description": "Property. Model:'https://schema.org/Number'. Cutoff limiter (Vcu). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss2ST/schema.json",
+    "title": " Smart Data Models - Pss2ST",
+    "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 1.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Pss2ST"
+                    ],
+                    "description": "Property. NGSI type. It has to be Pss2ST"
+                },
+                "inputSignal1Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1.  Typical Value = rotorAngularFrequencyDeviation. Default: None",
+                    "type": "number"
+                },
+                "inputSignal2Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K1). Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K2). Default: 0.0",
+                    "type": "number"
+                },
+                "lsmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Lsmax). Default: 0.0",
+                    "type": "number"
+                },
+                "lsmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Lsmin). Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T1). Default: 0",
+                    "type": "number"
+                },
+                "t10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T10). Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T2). Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T3). Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T4). Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T5). Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T6). Default: 0",
+                    "type": "number"
+                },
+                "t7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T7). Default: 0",
+                    "type": "number"
+                },
+                "t8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T8). Default: 0",
+                    "type": "number"
+                },
+                "t9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T9). Default: 0",
+                    "type": "number"
+                },
+                "vcl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Cutoff limiter (Vcl). Default: 0.0",
+                    "type": "number"
+                },
+                "vcu": {
+                    "description": "Property. Model:'https://schema.org/Number'. Cutoff limiter (Vcu). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
