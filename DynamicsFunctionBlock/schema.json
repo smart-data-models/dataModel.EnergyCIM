@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DynamicsFunctionBlock/schema.json",
-  "title": " Smart Data Models - DynamicsFunctionBlock",
-  "description": "Adapted from CIM data models. Abstract parent class for all Dynamics function blocks.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DynamicsFunctionBlock"
-        ],
-        "description": "Property. NGSI type. It has to be DynamicsFunctionBlock"
-    },
-    "enabled": {
-        "description": "Property. Model:'https://schema.org/Number'. Function block used indicator. true = use of function block is enabled false = use of function block is disabled. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DynamicsFunctionBlock/schema.json",
+    "title": " Smart Data Models - DynamicsFunctionBlock",
+    "description": "Adapted from CIM data models. Abstract parent class for all Dynamics function blocks.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DynamicsFunctionBlock"
+                    ],
+                    "description": "Property. NGSI type. It has to be DynamicsFunctionBlock"
+                },
+                "enabled": {
+                    "description": "Property. Model:'https://schema.org/Number'. Function block used indicator. true = use of function block is enabled false = use of function block is disabled. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
