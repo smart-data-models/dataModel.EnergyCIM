@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Command/schema.json",
-  "title": " Smart Data Models - Command",
-  "description": "Adapted from CIM data models. A Command is a discrete control used for supervisory control.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Command"
-        ],
-        "description": "Property. NGSI type. It has to be Command"
-    },
-    "DiscreteValue": {
-        "description": "Property. Model:'https://schema.org/Number'. The Control variable associated with the MeasurementValue. Default: None",
-        "type": "number"
-    },
-    "ValueAliasSet": {
-        "description": "Property. Model:'https://schema.org/Number'. The ValueAliasSet used for translation of a Control value to a name. Default: None",
-        "type": "number"
-    },
-    "normalValue": {
-        "description": "Property. Model:'https://schema.org/Number'. Normal value for Control.value e.g. used for percentage scaling. Default: 0",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'. The value representing the actuator output. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Command/schema.json",
+    "title": " Smart Data Models - Command",
+    "description": "Adapted from CIM data models. A Command is a discrete control used for supervisory control.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Command"
+                    ],
+                    "description": "Property. NGSI type. It has to be Command"
+                },
+                "DiscreteValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Control variable associated with the MeasurementValue. Default: None",
+                    "type": "number"
+                },
+                "ValueAliasSet": {
+                    "description": "Property. Model:'https://schema.org/Number'. The ValueAliasSet used for translation of a Control value to a name. Default: None",
+                    "type": "number"
+                },
+                "normalValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. Normal value for Control.value e.g. used for percentage scaling. Default: 0",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The value representing the actuator output. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
