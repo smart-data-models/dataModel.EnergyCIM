@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GenICompensationForGenJ/schema.json",
-  "title": " Smart Data Models - GenICompensationForGenJ",
-  "description": "Adapted from CIM data models. This class provides the resistive and reactive components of compensation for the generator associated with the IEEE Type 2 voltage compensator for current flow out of one of the other generators in the interconnection.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GenICompensationForGenJ"
-        ],
-        "description": "Property. NGSI type. It has to be GenICompensationForGenJ"
-    },
-    "SynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Standard synchronous machine out of which current flow is being compensated for. Default: None",
-        "type": "number"
-    },
-    "VcompIEEEType2": {
-        "description": "Property. Model:'https://schema.org/Number'. The standard IEEE Type 2 voltage compensator of this compensation. Default: None",
-        "type": "number"
-    },
-    "rcij": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    },
-    "xcij": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GenICompensationForGenJ/schema.json",
+    "title": " Smart Data Models - GenICompensationForGenJ",
+    "description": "Adapted from CIM data models. This class provides the resistive and reactive components of compensation for the generator associated with the IEEE Type 2 voltage compensator for current flow out of one of the other generators in the interconnection.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GenICompensationForGenJ"
+                    ],
+                    "description": "Property. NGSI type. It has to be GenICompensationForGenJ"
+                },
+                "SynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Standard synchronous machine out of which current flow is being compensated for. Default: None",
+                    "type": "number"
+                },
+                "VcompIEEEType2": {
+                    "description": "Property. Model:'https://schema.org/Number'. The standard IEEE Type 2 voltage compensator of this compensation. Default: None",
+                    "type": "number"
+                },
+                "rcij": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                },
+                "xcij": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
