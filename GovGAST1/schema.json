@@ -1,164 +1,163 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST1/schema.json",
-  "title": " Smart Data Models - GovGAST1",
-  "description": "Adapted from CIM data models. Modified single shaft gas turbine.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovGAST1"
-        ],
-        "description": "Property. NGSI type. It has to be GovGAST1"
-    },
-    "a": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant numerator scale factor (a).  Typical Value = 0.8. Default: 0.0",
-        "type": "number"
-    },
-    "b": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant denominator scale factor (b).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "db1": {
-        "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "db2": {
-        "description": "Property. Model:'https://schema.org/Number'. Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "eps": {
-        "description": "Property. Model:'https://schema.org/Number'. Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "fidle": {
-        "description": "Property. Model:'https://schema.org/Number'. Fuel flow at zero power output (Fidle).  Typical Value = 0.18. Default: 0.0",
-        "type": "number"
-    },
-    "gv1": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv2": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2,PU gv (Gv2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv3": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv4": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv5": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "gv6": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor gain (Ka).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kt": {
-        "description": "Property. Model:'https://schema.org/Number'. Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0",
-        "type": "number"
-    },
-    "lmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Ambient temperature load limit (Lmax).  Lmax is the turbine power output corresponding to the limiting exhaust gas temperature.  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "loadinc": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve position change allowed at fast rate (Loadinc).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "ltrate": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pgv1": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv2": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv3": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv4": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv5": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "pgv6": {
-        "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.04. Default: 0.0",
-        "type": "number"
-    },
-    "rmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum fuel valve opening rate (Rmax).  Unit = PU/sec.  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine exhaust temperature time constant (T3).  T3 represents delay in the exhaust temperature and load limiting system. Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T4).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T5).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tltr": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve position averaging time constant (Tltr).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST1/schema.json",
+    "title": " Smart Data Models - GovGAST1",
+    "description": "Adapted from CIM data models. Modified single shaft gas turbine.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovGAST1"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovGAST1"
+                },
+                "a": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant numerator scale factor (a).  Typical Value = 0.8. Default: 0.0",
+                    "type": "number"
+                },
+                "b": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant denominator scale factor (b).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "db1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "db2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "eps": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "fidle": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow at zero power output (Fidle).  Typical Value = 0.18. Default: 0.0",
+                    "type": "number"
+                },
+                "gv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2,PU gv (Gv2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor gain (Ka).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "lmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ambient temperature load limit (Lmax).  Lmax is the turbine power output corresponding to the limiting exhaust gas temperature.  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "loadinc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve position change allowed at fast rate (Loadinc).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "ltrate": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop (R).  Typical Value = 0.04. Default: 0.0",
+                    "type": "number"
+                },
+                "rmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum fuel valve opening rate (Rmax).  Unit = PU/sec.  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine exhaust temperature time constant (T3).  T3 represents delay in the exhaust temperature and load limiting system. Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T4).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T5).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tltr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve position averaging time constant (Tltr).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
