@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MutualCoupling/schema.json",
-  "title": " Smart Data Models - MutualCoupling",
-  "description": "Adapted from CIM data models. This class represents the zero sequence line mutual coupling.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "MutualCoupling"
-        ],
-        "description": "Property. NGSI type. It has to be MutualCoupling"
-    },
-    "First_Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments. Default: None",
-        "type": "number"
-    },
-    "Second_Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The starting terminal for the calculation of distances along the second branch of the mutual coupling. Default: None",
-        "type": "number"
-    },
-    "b0ch": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "distance11": {
-        "description": "Property. Model:'https://schema.org/Number'. Distance to the start of the coupled region from the first line`s terminal having sequence number equal to 1. Default: 0.0",
-        "type": "number"
-    },
-    "distance12": {
-        "description": "Property. Model:'https://schema.org/Number'. Distance to the end of the coupled region from the first line`s terminal with sequence number equal to 1. Default: 0.0",
-        "type": "number"
-    },
-    "distance21": {
-        "description": "Property. Model:'https://schema.org/Number'. Distance to the start of coupled region from the second line`s terminal with sequence number equal to 1. Default: 0.0",
-        "type": "number"
-    },
-    "distance22": {
-        "description": "Property. Model:'https://schema.org/Number'. Distance to the end of coupled region from the second line`s terminal with sequence number equal to 1. Default: 0.0",
-        "type": "number"
-    },
-    "g0ch": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence branch-to-branch mutual impedance coupling, resistance. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence branch-to-branch mutual impedance coupling, reactance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MutualCoupling/schema.json",
+    "title": " Smart Data Models - MutualCoupling",
+    "description": "Adapted from CIM data models. This class represents the zero sequence line mutual coupling.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "MutualCoupling"
+                    ],
+                    "description": "Property. NGSI type. It has to be MutualCoupling"
+                },
+                "First_Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments. Default: None",
+                    "type": "number"
+                },
+                "Second_Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The starting terminal for the calculation of distances along the second branch of the mutual coupling. Default: None",
+                    "type": "number"
+                },
+                "b0ch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "distance11": {
+                    "description": "Property. Model:'https://schema.org/Number'. Distance to the start of the coupled region from the first line`s terminal having sequence number equal to 1. Default: 0.0",
+                    "type": "number"
+                },
+                "distance12": {
+                    "description": "Property. Model:'https://schema.org/Number'. Distance to the end of the coupled region from the first line`s terminal with sequence number equal to 1. Default: 0.0",
+                    "type": "number"
+                },
+                "distance21": {
+                    "description": "Property. Model:'https://schema.org/Number'. Distance to the start of coupled region from the second line`s terminal with sequence number equal to 1. Default: 0.0",
+                    "type": "number"
+                },
+                "distance22": {
+                    "description": "Property. Model:'https://schema.org/Number'. Distance to the end of coupled region from the second line`s terminal with sequence number equal to 1. Default: 0.0",
+                    "type": "number"
+                },
+                "g0ch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section. Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence branch-to-branch mutual impedance coupling, resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence branch-to-branch mutual impedance coupling, reactance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
