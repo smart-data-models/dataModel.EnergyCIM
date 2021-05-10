@@ -1,104 +1,103 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV3/schema.json",
-  "title": " Smart Data Models - GovSteamFV3",
-  "description": "Adapted from CIM data models. Simplified GovSteamIEEE1 Steam turbine governor model with Prmax limit and fast valving.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteamFV3"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteamFV3"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor gain, (reciprocal of droop) (K).  Typical Value = 20. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of turbine power developed after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of turbine power developed after second boiler pass (K2).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of hp turbine power developed after crossover or third boiler pass (K3). Typical Value = 0.6. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "prmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Max. pressure in reheater (Prmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T1).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T2).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Valve positioner time constant (T3).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Inlet piping/steam bowl time constant (T4).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of second boiler pass (i.e. reheater) (T5).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of crossover or third boiler pass (T6).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to close intercept valve (IV) (Ta).  Typical Value = 0.97. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Time until IV starts to reopen (Tb).  Typical Value = 0.98. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Time until IV is fully open (Tc).  Typical Value = 0.99. Default: 0",
-        "type": "number"
-    },
-    "uc": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve closing velocity (Uc).  Unit = PU/sec.  Typical Value = -1. Default: 0.0",
-        "type": "number"
-    },
-    "uo": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening velocity (Uo).  Unit = PU/sec.  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV3/schema.json",
+    "title": " Smart Data Models - GovSteamFV3",
+    "description": "Adapted from CIM data models. Simplified GovSteamIEEE1 Steam turbine governor model with Prmax limit and fast valving.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteamFV3"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteamFV3"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor gain, (reciprocal of droop) (K).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of turbine power developed after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of turbine power developed after second boiler pass (K2).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of hp turbine power developed after crossover or third boiler pass (K3). Typical Value = 0.6. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "prmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Max. pressure in reheater (Prmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lead time constant (T1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor lag time constant (T2).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Valve positioner time constant (T3).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inlet piping/steam bowl time constant (T4).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of second boiler pass (i.e. reheater) (T5).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of crossover or third boiler pass (T6).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to close intercept valve (IV) (Ta).  Typical Value = 0.97. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time until IV starts to reopen (Tb).  Typical Value = 0.98. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time until IV is fully open (Tc).  Typical Value = 0.99. Default: 0",
+                    "type": "number"
+                },
+                "uc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve closing velocity (Uc).  Unit = PU/sec.  Typical Value = -1. Default: 0.0",
+                    "type": "number"
+                },
+                "uo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening velocity (Uo).  Unit = PU/sec.  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
