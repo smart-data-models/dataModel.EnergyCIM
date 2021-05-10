@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSK/schema.json",
-  "title": " Smart Data Models - PssSK",
-  "description": "Adapted from CIM data models. PSS Slovakian type - three inputs.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssSK"
-        ],
-        "description": "Property. NGSI type. It has to be PssSK"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain P (K1).  Typical Value = -0.3. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain fe (K2).  Typical Value = -0.15. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain If (K3).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Denominator time constant (T1).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T2).  Typical Value = 0.35. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Denominator time constant (T3).  Typical Value = 0.22. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T4).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Denominator time constant (T5).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T6).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "vsmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (Vsmax).  Typical Value = 0.4. Default: 0.0",
-        "type": "number"
-    },
-    "vsmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (Vsmin).  Typical Value = -0.4. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSK/schema.json",
+    "title": " Smart Data Models - PssSK",
+    "description": "Adapted from CIM data models. PSS Slovakian type - three inputs.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssSK"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssSK"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain P (K1).  Typical Value = -0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain fe (K2).  Typical Value = -0.15. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain If (K3).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Denominator time constant (T1).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T2).  Typical Value = 0.35. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Denominator time constant (T3).  Typical Value = 0.22. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T4).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Denominator time constant (T5).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter time constant (T6).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "vsmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (Vsmax).  Typical Value = 0.4. Default: 0.0",
+                    "type": "number"
+                },
+                "vsmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (Vsmin).  Typical Value = -0.4. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
