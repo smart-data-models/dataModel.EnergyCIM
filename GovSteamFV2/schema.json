@@ -1,80 +1,79 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV2/schema.json",
-  "title": " Smart Data Models - GovSteamFV2",
-  "description": "Adapted from CIM data models. Steam turbine governor with reheat time constants and modeling of the effects of fast valve closing to reduce mechanical power.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteamFV2"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteamFV2"
-    },
-    "dt": {
-        "description": "Property. Model:'https://schema.org/Number'. (Dt). Default: 0.0",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of the turbine power developed by turbine sections not involved in fast valving (K). Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Alternate Base used instead of Machine base in equipment model if necessary (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. (R). Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor time constant (T1). Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Reheater time constant (T3). Default: 0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Time after initial time for valve to close (Ta). Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Time after initial time for valve to begin opening (Tb). Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Time after initial time for valve to become fully open (Tc). Default: 0",
-        "type": "number"
-    },
-    "ti": {
-        "description": "Property. Model:'https://schema.org/Number'. Initial time to begin fast valving (Ti). Default: 0",
-        "type": "number"
-    },
-    "tt": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant with which power falls off after intercept valve closure (Tt). Default: 0",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. (Vmax). Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. (Vmin). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV2/schema.json",
+    "title": " Smart Data Models - GovSteamFV2",
+    "description": "Adapted from CIM data models. Steam turbine governor with reheat time constants and modeling of the effects of fast valve closing to reduce mechanical power.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteamFV2"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteamFV2"
+                },
+                "dt": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Dt). Default: 0.0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of the turbine power developed by turbine sections not involved in fast valving (K). Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Alternate Base used instead of Machine base in equipment model if necessary (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. (R). Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor time constant (T1). Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reheater time constant (T3). Default: 0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time after initial time for valve to close (Ta). Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time after initial time for valve to begin opening (Tb). Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time after initial time for valve to become fully open (Tc). Default: 0",
+                    "type": "number"
+                },
+                "ti": {
+                    "description": "Property. Model:'https://schema.org/Number'. Initial time to begin fast valving (Ti). Default: 0",
+                    "type": "number"
+                },
+                "tt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant with which power falls off after intercept valve closure (Tt). Default: 0",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Vmax). Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Vmin). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
