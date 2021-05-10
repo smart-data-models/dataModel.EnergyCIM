@@ -1,88 +1,87 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST7B/schema.json",
-  "title": " Smart Data Models - ExcIEEEST7B",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST7B model. This model is representative of static potential-source excitation systems. In this system, the AVR consists of a PI voltage regulator. A phase lead-lag filter in series allows introduction of a derivative function, typically used with brushless excitation systems. In that case, the regulator is of the PID type. In addition, the terminal voltage channel includes a phase lead-lag filter.  The AVR includes the appropriate inputs on its reference for overexcitation limiter (OEL1), underexcitation limiter (UEL), stator current limiter (SCL), and current compensator (DROOP). All these limitations, when they work at voltage reference level, keep the PSS (VS signal from Type PSS1A, PSS2A, or PSS2B) in operation. However, the UEL limitation can also be transferred to the high value (HV) gate acting on the output signal. In addition, the output signal passes through a low value (LV) gate for a ceiling overexcitation limiter (OEL2).  Reference: IEEE Standard 421.5-2005 Section 7.7.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcIEEEST7B"
-        ],
-        "description": "Property. NGSI type. It has to be ExcIEEEST7B"
-    },
-    "kh": {
-        "description": "Property. Model:'https://schema.org/Number'. High-value gate feedback gain (K).  Typical Value 1. Default: 0.0",
-        "type": "number"
-    },
-    "kia": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kl": {
-        "description": "Property. Model:'https://schema.org/Number'. Low-value gate feedback gain (K).  Typical Value 1. Default: 0.0",
-        "type": "number"
-    },
-    "kpa": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (K).  Typical Value = 40. Default: 0.0",
-        "type": "number"
-    },
-    "oelin": {
-        "description": "Property. Model:'https://schema.org/Number'. OEL input selector (OELin). Typical Value = noOELinput. Default: None",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator lag time constant (T).  Typical Value 1. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator lead time constant (T).  Typical Value 1. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (T).  Typical Value 1. Default: 0",
-        "type": "number"
-    },
-    "tg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback time constant of inner loop field voltage regulator (T). Typical Value 1. Default: 0",
-        "type": "number"
-    },
-    "tia": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback time constant (T).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "uelin": {
-        "description": "Property. Model:'https://schema.org/Number'. UEL input selector (UELin). Typical Value = noUELinput. Default: None",
-        "type": "number"
-    },
-    "vmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage reference signal (V).  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "vmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage reference signal (V).  Typical Value = 0.9. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -4.5. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST7B/schema.json",
+    "title": " Smart Data Models - ExcIEEEST7B",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST7B model. This model is representative of static potential-source excitation systems. In this system, the AVR consists of a PI voltage regulator. A phase lead-lag filter in series allows introduction of a derivative function, typically used with brushless excitation systems. In that case, the regulator is of the PID type. In addition, the terminal voltage channel includes a phase lead-lag filter.  The AVR includes the appropriate inputs on its reference for overexcitation limiter (OEL1), underexcitation limiter (UEL), stator current limiter (SCL), and current compensator (DROOP). All these limitations, when they work at voltage reference level, keep the PSS (VS signal from Type PSS1A, PSS2A, or PSS2B) in operation. However, the UEL limitation can also be transferred to the high value (HV) gate acting on the output signal. In addition, the output signal passes through a low value (LV) gate for a ceiling overexcitation limiter (OEL2).  Reference: IEEE Standard 421.5-2005 Section 7.7.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcIEEEST7B"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcIEEEST7B"
+                },
+                "kh": {
+                    "description": "Property. Model:'https://schema.org/Number'. High-value gate feedback gain (K).  Typical Value 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kia": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator integral gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low-value gate feedback gain (K).  Typical Value 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kpa": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator proportional gain (K).  Typical Value = 40. Default: 0.0",
+                    "type": "number"
+                },
+                "oelin": {
+                    "description": "Property. Model:'https://schema.org/Number'. OEL input selector (OELin). Typical Value = noOELinput. Default: None",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator lag time constant (T).  Typical Value 1. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator lead time constant (T).  Typical Value 1. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (T).  Typical Value 1. Default: 0",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback time constant of inner loop field voltage regulator (T). Typical Value 1. Default: 0",
+                    "type": "number"
+                },
+                "tia": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback time constant (T).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "uelin": {
+                    "description": "Property. Model:'https://schema.org/Number'. UEL input selector (UELin). Typical Value = noUELinput. Default: None",
+                    "type": "number"
+                },
+                "vmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage reference signal (V).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage reference signal (V).  Typical Value = 0.9. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (V).  Typical Value = -4.5. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
