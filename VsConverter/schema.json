@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VsConverter/schema.json",
-  "title": " Smart Data Models - VsConverter",
-  "description": "Adapted from CIM data models. DC side of the voltage source converter (VSC).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "VsConverter"
-        ],
-        "description": "Property. NGSI type. It has to be VsConverter"
-    },
-    "CapabilityCurve": {
-        "description": "Property. Model:'https://schema.org/Number'. All converters with this capability curve. Default: None",
-        "type": "number"
-    },
-    "delta": {
-        "description": "Property. Model:'https://schema.org/Number'. Angle between uf and uc. Converter state variable used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "droop": {
-        "description": "Property. Model:'https://schema.org/Number'. Droop constant; pu value is obtained as D [kV^2 / MW] x Sb / Ubdc^2. Default: 0.0",
-        "type": "number"
-    },
-    "droopCompensation": {
-        "description": "Property. Model:'https://schema.org/Number'. Compensation (resistance) constant. Used to compensate for voltage drop when controlling voltage at a distant bus. Default: 0.0",
-        "type": "number"
-    },
-    "maxModulationIndex": {
-        "description": "Property. Model:'https://schema.org/Number'. The max quotient between the AC converter voltage (Uc) and DC voltage (Ud). A factor typically less than 1. VSC configuration data used in power flow. Default: 0.0",
-        "type": "number"
-    },
-    "maxValveCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. The maximum current through a valve. This current limit is the basis for calculating the capability diagram. VSC  configuration data. Default: 0.0",
-        "type": "number"
-    },
-    "pPccControl": {
-        "description": "Property. Model:'https://schema.org/Number'. Kind of control of real power and/or DC voltage. Default: None",
-        "type": "number"
-    },
-    "qPccControl": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "qShare": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power sharing factor among parallel converters on Uac control. Default: 0.0",
-        "type": "number"
-    },
-    "targetQpcc": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactive power injection target in AC grid, at point of common coupling. Default: 0.0",
-        "type": "number"
-    },
-    "targetUpcc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage target in AC grid, at point of common coupling. Default: 0.0",
-        "type": "number"
-    },
-    "uf": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter bus voltage. Converter state variable, result from power flow. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VsConverter/schema.json",
+    "title": " Smart Data Models - VsConverter",
+    "description": "Adapted from CIM data models. DC side of the voltage source converter (VSC).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "VsConverter"
+                    ],
+                    "description": "Property. NGSI type. It has to be VsConverter"
+                },
+                "CapabilityCurve": {
+                    "description": "Property. Model:'https://schema.org/Number'. All converters with this capability curve. Default: None",
+                    "type": "number"
+                },
+                "delta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Angle between uf and uc. Converter state variable used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "droop": {
+                    "description": "Property. Model:'https://schema.org/Number'. Droop constant; pu value is obtained as D [kV^2 / MW] x Sb / Ubdc^2. Default: 0.0",
+                    "type": "number"
+                },
+                "droopCompensation": {
+                    "description": "Property. Model:'https://schema.org/Number'. Compensation (resistance) constant. Used to compensate for voltage drop when controlling voltage at a distant bus. Default: 0.0",
+                    "type": "number"
+                },
+                "maxModulationIndex": {
+                    "description": "Property. Model:'https://schema.org/Number'. The max quotient between the AC converter voltage (Uc) and DC voltage (Ud). A factor typically less than 1. VSC configuration data used in power flow. Default: 0.0",
+                    "type": "number"
+                },
+                "maxValveCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. The maximum current through a valve. This current limit is the basis for calculating the capability diagram. VSC  configuration data. Default: 0.0",
+                    "type": "number"
+                },
+                "pPccControl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kind of control of real power and/or DC voltage. Default: None",
+                    "type": "number"
+                },
+                "qPccControl": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "qShare": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power sharing factor among parallel converters on Uac control. Default: 0.0",
+                    "type": "number"
+                },
+                "targetQpcc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactive power injection target in AC grid, at point of common coupling. Default: 0.0",
+                    "type": "number"
+                },
+                "targetUpcc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage target in AC grid, at point of common coupling. Default: 0.0",
+                    "type": "number"
+                },
+                "uf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter bus voltage. Converter state variable, result from power flow. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
