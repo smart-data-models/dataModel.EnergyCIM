@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR5/schema.json",
-  "title": " Smart Data Models - ExcAVR5",
-  "description": "Adapted from CIM data models. Manual excitation control with field circuit resistance. This model can be used as a very simple representation of manual voltage control.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAVR5"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAVR5"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (Ka). Default: 0.0",
-        "type": "number"
-    },
-    "rex": {
-        "description": "Property. Model:'https://schema.org/Number'. Effective Output Resistance (Rex). Rex represents the effective output resistance seen by the excitation system. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Ta). Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR5/schema.json",
+    "title": " Smart Data Models - ExcAVR5",
+    "description": "Adapted from CIM data models. Manual excitation control with field circuit resistance. This model can be used as a very simple representation of manual voltage control.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAVR5"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAVR5"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (Ka). Default: 0.0",
+                    "type": "number"
+                },
+                "rex": {
+                    "description": "Property. Model:'https://schema.org/Number'. Effective Output Resistance (Rex). Rex represents the effective output resistance seen by the excitation system. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Ta). Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
