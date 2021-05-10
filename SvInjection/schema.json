@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvInjection/schema.json",
-  "title": " Smart Data Models - SvInjection",
-  "description": "Adapted from CIM data models. The SvInjection is reporting the calculated bus injection minus the sum of the terminal flows. The terminal flow is positive out from the bus (load sign convention) and bus injection has positive flow into the bus. SvInjection may have the remainder after state estimation or slack after power flow calculation.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SvInjection"
-        ],
-        "description": "Property. NGSI type. It has to be SvInjection"
-    },
-    "TopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The injection flows state variables associated with the topological node. Default: None",
-        "type": "number"
-    },
-    "pInjection": {
-        "description": "Property. Model:'https://schema.org/Number'. The active power injected into the bus in addition to injections from equipment terminals.  Positive sign means injection into the TopologicalNode (bus). Default: 0.0",
-        "type": "number"
-    },
-    "qInjection": {
-        "description": "Property. Model:'https://schema.org/Number'. The reactive power injected into the bus in addition to injections from equipment terminals. Positive sign means injection into the TopologicalNode (bus). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvInjection/schema.json",
+    "title": " Smart Data Models - SvInjection",
+    "description": "Adapted from CIM data models. The SvInjection is reporting the calculated bus injection minus the sum of the terminal flows. The terminal flow is positive out from the bus (load sign convention) and bus injection has positive flow into the bus. SvInjection may have the remainder after state estimation or slack after power flow calculation.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SvInjection"
+                    ],
+                    "description": "Property. NGSI type. It has to be SvInjection"
+                },
+                "TopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The injection flows state variables associated with the topological node. Default: None",
+                    "type": "number"
+                },
+                "pInjection": {
+                    "description": "Property. Model:'https://schema.org/Number'. The active power injected into the bus in addition to injections from equipment terminals.  Positive sign means injection into the TopologicalNode (bus). Default: 0.0",
+                    "type": "number"
+                },
+                "qInjection": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reactive power injected into the bus in addition to injections from equipment terminals. Positive sign means injection into the TopologicalNode (bus). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
