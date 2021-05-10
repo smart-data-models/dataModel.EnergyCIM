@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbineLoadControllerDynamics/schema.json",
-  "title": " Smart Data Models - TurbineLoadControllerDynamics",
-  "description": "Adapted from CIM data models. Turbine load controller function block whose behavior is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TurbineLoadControllerDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be TurbineLoadControllerDynamics"
-    },
-    "TurbineGovernorDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Turbine-governor controlled by this turbine load controller. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbineLoadControllerDynamics/schema.json",
+    "title": " Smart Data Models - TurbineLoadControllerDynamics",
+    "description": "Adapted from CIM data models. Turbine load controller function block whose behavior is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TurbineLoadControllerDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be TurbineLoadControllerDynamics"
+                },
+                "TurbineGovernorDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine-governor controlled by this turbine load controller. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
