@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPlantDynamics/schema.json",
-  "title": " Smart Data Models - WindPlantDynamics",
-  "description": "Adapted from CIM data models. Parent class supporting relationships to wind turbines Type 3 and 4 and wind plant IEC and user defined wind plants including their control models.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindPlantDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be WindPlantDynamics"
-    },
-    "RemoteInputSignal": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind plant using the remote signal. Default: None",
-        "type": "number"
-    },
-    "WindTurbineType3or4Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. The wind turbine type 3 or 4 associated with this wind plant. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPlantDynamics/schema.json",
+    "title": " Smart Data Models - WindPlantDynamics",
+    "description": "Adapted from CIM data models. Parent class supporting relationships to wind turbines Type 3 and 4 and wind plant IEC and user defined wind plants including their control models.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindPlantDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindPlantDynamics"
+                },
+                "RemoteInputSignal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The wind plant using the remote signal. Default: None",
+                    "type": "number"
+                },
+                "WindTurbineType3or4Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. The wind turbine type 3 or 4 associated with this wind plant. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
