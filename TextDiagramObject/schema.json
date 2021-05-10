@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TextDiagramObject/schema.json",
-  "title": " Smart Data Models - TextDiagramObject",
-  "description": "Adapted from CIM data models. A diagram object for placing free-text or text derived from an associated domain object.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TextDiagramObject"
-        ],
-        "description": "Property. NGSI type. It has to be TextDiagramObject"
-    },
-    "text": {
-        "description": "Property. Model:'https://schema.org/Number'. The text that is displayed by this text diagram object. Default: ''",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TextDiagramObject/schema.json",
+    "title": " Smart Data Models - TextDiagramObject",
+    "description": "Adapted from CIM data models. A diagram object for placing free-text or text derived from an associated domain object.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TextDiagramObject"
+                    ],
+                    "description": "Property. NGSI type. It has to be TextDiagramObject"
+                },
+                "text": {
+                    "description": "Property. Model:'https://schema.org/Number'. The text that is displayed by this text diagram object. Default: ''",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
