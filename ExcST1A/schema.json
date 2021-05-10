@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST1A/schema.json",
-  "title": " Smart Data Models - ExcST1A",
-  "description": "Adapted from CIM data models. Modification of an old IEEE ST1A static excitation system without overexcitation limiter (OEL) and underexcitation limiter (UEL).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcST1A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcST1A"
-    },
-    "ilr": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output current limit reference (Ilr).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 190. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer gains (Kf).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "klr": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter output current limiter gain (Klr).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "tb1": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tc1": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "vamax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vamax).  Typical Value = 999. Default: 0.0",
-        "type": "number"
-    },
-    "vamin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vamin).  Typical Value = -999. Default: 0.0",
-        "type": "number"
-    },
-    "vimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (Vimax).  Typical Value = 999. Default: 0.0",
-        "type": "number"
-    },
-    "vimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (Vimin).  Typical Value = -999. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator outputs (Vrmax).  Typical Value = 7.8. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator outputs (Vrmin).  Typical Value = -6.7. Default: 0.0",
-        "type": "number"
-    },
-    "xe": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation xfmr effective reactance (Xe).  Typical Value = 0.04. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST1A/schema.json",
+    "title": " Smart Data Models - ExcST1A",
+    "description": "Adapted from CIM data models. Modification of an old IEEE ST1A static excitation system without overexcitation limiter (OEL) and underexcitation limiter (UEL).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcST1A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcST1A"
+                },
+                "ilr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output current limit reference (Ilr).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator gain (Ka).  Typical Value = 190. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer gains (Kf).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "klr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter output current limiter gain (Klr).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "tb1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tc1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "vamax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vamax).  Typical Value = 999. Default: 0.0",
+                    "type": "number"
+                },
+                "vamin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vamin).  Typical Value = -999. Default: 0.0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (Vimax).  Typical Value = 999. Default: 0.0",
+                    "type": "number"
+                },
+                "vimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (Vimin).  Typical Value = -999. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator outputs (Vrmax).  Typical Value = 7.8. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator outputs (Vrmin).  Typical Value = -6.7. Default: 0.0",
+                    "type": "number"
+                },
+                "xe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation xfmr effective reactance (Xe).  Typical Value = 0.04. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
