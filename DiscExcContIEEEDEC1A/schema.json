@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiscExcContIEEEDEC1A/schema.json",
-  "title": " Smart Data Models - DiscExcContIEEEDEC1A",
-  "description": "Adapted from CIM data models. The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.  Reference: IEEE Standard 421.5-2005 Section 12.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DiscExcContIEEEDEC1A"
-        ],
-        "description": "Property. NGSI type. It has to be DiscExcContIEEEDEC1A"
-    },
-    "esc": {
-        "description": "Property. Model:'https://schema.org/Number'. Speed change reference ().  Typical Value = 0.0015. Default: 0.0",
-        "type": "number"
-    },
-    "kan": {
-        "description": "Property. Model:'https://schema.org/Number'. Discontinuous controller gain ().  Typical Value = 400. Default: 0.0",
-        "type": "number"
-    },
-    "ketl": {
-        "description": "Property. Model:'https://schema.org/Number'. Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0",
-        "type": "number"
-    },
-    "tan": {
-        "description": "Property. Model:'https://schema.org/Number'. Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0",
-        "type": "number"
-    },
-    "td": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant ().  Typical Value = 0.03. Default: 0",
-        "type": "number"
-    },
-    "tl1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant ().  Typical Value = 0.025. Default: 0",
-        "type": "number"
-    },
-    "tl2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant ().  Typical Value = 1.25. Default: 0",
-        "type": "number"
-    },
-    "tw5": {
-        "description": "Property. Model:'https://schema.org/Number'. DEC washout time constant ().  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "val": {
-        "description": "Property. Model:'https://schema.org/Number'. Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0",
-        "type": "number"
-    },
-    "vanmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter for Van (). Default: 0.0",
-        "type": "number"
-    },
-    "vomax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "vomin": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "vsmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "vsmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = -0.066. Default: 0.0",
-        "type": "number"
-    },
-    "vtc": {
-        "description": "Property. Model:'https://schema.org/Number'. Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0",
-        "type": "number"
-    },
-    "vtlmt": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage reference ().  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "vtm": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage limits ().  Typical Value = 1.13. Default: 0.0",
-        "type": "number"
-    },
-    "vtn": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage limits ().  Typical Value = 1.12. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiscExcContIEEEDEC1A/schema.json",
+    "title": " Smart Data Models - DiscExcContIEEEDEC1A",
+    "description": "Adapted from CIM data models. The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.  Reference: IEEE Standard 421.5-2005 Section 12.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DiscExcContIEEEDEC1A"
+                    ],
+                    "description": "Property. NGSI type. It has to be DiscExcContIEEEDEC1A"
+                },
+                "esc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed change reference ().  Typical Value = 0.0015. Default: 0.0",
+                    "type": "number"
+                },
+                "kan": {
+                    "description": "Property. Model:'https://schema.org/Number'. Discontinuous controller gain ().  Typical Value = 400. Default: 0.0",
+                    "type": "number"
+                },
+                "ketl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0",
+                    "type": "number"
+                },
+                "tan": {
+                    "description": "Property. Model:'https://schema.org/Number'. Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant ().  Typical Value = 0.03. Default: 0",
+                    "type": "number"
+                },
+                "tl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant ().  Typical Value = 0.025. Default: 0",
+                    "type": "number"
+                },
+                "tl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant ().  Typical Value = 1.25. Default: 0",
+                    "type": "number"
+                },
+                "tw5": {
+                    "description": "Property. Model:'https://schema.org/Number'. DEC washout time constant ().  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "val": {
+                    "description": "Property. Model:'https://schema.org/Number'. Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0",
+                    "type": "number"
+                },
+                "vanmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter for Van (). Default: 0.0",
+                    "type": "number"
+                },
+                "vomax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "vomin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vsmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "vsmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter ().  Typical Value = -0.066. Default: 0.0",
+                    "type": "number"
+                },
+                "vtc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0",
+                    "type": "number"
+                },
+                "vtlmt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage reference ().  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vtm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage limits ().  Typical Value = 1.13. Default: 0.0",
+                    "type": "number"
+                },
+                "vtn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage limits ().  Typical Value = 1.12. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
