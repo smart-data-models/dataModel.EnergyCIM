@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Control/schema.json",
-  "title": " Smart Data Models - Control",
-  "description": "Adapted from CIM data models. Control is used for supervisory/device control. It represents control outputs that are used to change the state in a process, e.g. close or open breaker, a set point value or a raise lower command.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Control"
-        ],
-        "description": "Property. NGSI type. It has to be Control"
-    },
-    "PowerSystemResource": {
-        "description": "Property. Model:'https://schema.org/Number'. The controller outputs used to actually govern a regulating device, e.g. the magnetization of a synchronous machine or capacitor bank breaker actuator. Default: None",
-        "type": "number"
-    },
-    "controlType": {
-        "description": "Property. Model:'https://schema.org/Number'. Specifies the type of Control, e.g. BreakerOn/Off, GeneratorVoltageSetPoint, TieLineFlow etc. The ControlType.name shall be unique among all specified types and describe the type. Default: ''",
-        "type": "number"
-    },
-    "operationInProgress": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates that a client is currently sending control commands that has not completed. Default: False",
-        "type": "number"
-    },
-    "timeStamp": {
-        "description": "Property. Model:'https://schema.org/Number'. The last time a control output was sent. Default: ''",
-        "type": "number"
-    },
-    "unitMultiplier": {
-        "description": "Property. Model:'https://schema.org/Number'. The unit multiplier of the controlled quantity. Default: None",
-        "type": "number"
-    },
-    "unitSymbol": {
-        "description": "Property. Model:'https://schema.org/Number'. The unit of measure of the controlled quantity. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Control/schema.json",
+    "title": " Smart Data Models - Control",
+    "description": "Adapted from CIM data models. Control is used for supervisory/device control. It represents control outputs that are used to change the state in a process, e.g. close or open breaker, a set point value or a raise lower command.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Control"
+                    ],
+                    "description": "Property. NGSI type. It has to be Control"
+                },
+                "PowerSystemResource": {
+                    "description": "Property. Model:'https://schema.org/Number'. The controller outputs used to actually govern a regulating device, e.g. the magnetization of a synchronous machine or capacitor bank breaker actuator. Default: None",
+                    "type": "number"
+                },
+                "controlType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Specifies the type of Control, e.g. BreakerOn/Off, GeneratorVoltageSetPoint, TieLineFlow etc. The ControlType.name shall be unique among all specified types and describe the type. Default: ''",
+                    "type": "number"
+                },
+                "operationInProgress": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates that a client is currently sending control commands that has not completed. Default: False",
+                    "type": "number"
+                },
+                "timeStamp": {
+                    "description": "Property. Model:'https://schema.org/Number'. The last time a control output was sent. Default: ''",
+                    "type": "number"
+                },
+                "unitMultiplier": {
+                    "description": "Property. Model:'https://schema.org/Number'. The unit multiplier of the controlled quantity. Default: None",
+                    "type": "number"
+                },
+                "unitSymbol": {
+                    "description": "Property. Model:'https://schema.org/Number'. The unit of measure of the controlled quantity. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
