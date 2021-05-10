@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergySchedulingType/schema.json",
-  "title": " Smart Data Models - EnergySchedulingType",
-  "description": "Adapted from CIM data models. Used to define the type of generation for scheduling purposes.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EnergySchedulingType"
-        ],
-        "description": "Property. NGSI type. It has to be EnergySchedulingType"
-    },
-    "EnergySource": {
-        "description": "Property. Model:'https://schema.org/Number'. Energy Scheduling Type of an Energy Source Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergySchedulingType/schema.json",
+    "title": " Smart Data Models - EnergySchedulingType",
+    "description": "Adapted from CIM data models. Used to define the type of generation for scheduling purposes.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EnergySchedulingType"
+                    ],
+                    "description": "Property. NGSI type. It has to be EnergySchedulingType"
+                },
+                "EnergySource": {
+                    "description": "Property. Model:'https://schema.org/Number'. Energy Scheduling Type of an Energy Source Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
