@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConformLoad/schema.json",
-  "title": " Smart Data Models - ConformLoad",
-  "description": "Adapted from CIM data models. ConformLoad represent loads that follow a daily load change pattern where the pattern can be used to scale the load with a system load.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ConformLoad"
-        ],
-        "description": "Property. NGSI type. It has to be ConformLoad"
-    },
-    "LoadGroup": {
-        "description": "Property. Model:'https://schema.org/Number'. Group of this ConformLoad. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConformLoad/schema.json",
+    "title": " Smart Data Models - ConformLoad",
+    "description": "Adapted from CIM data models. ConformLoad represent loads that follow a daily load change pattern where the pattern can be used to scale the load with a system load.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ConformLoad"
+                    ],
+                    "description": "Property. NGSI type. It has to be ConformLoad"
+                },
+                "LoadGroup": {
+                    "description": "Property. Model:'https://schema.org/Number'. Group of this ConformLoad. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
