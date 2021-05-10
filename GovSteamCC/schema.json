@@ -1,96 +1,95 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamCC/schema.json",
-  "title": " Smart Data Models - GovSteamCC",
-  "description": "Adapted from CIM data models. Cross compound turbine governor model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovSteamCC"
-        ],
-        "description": "Property. NGSI type. It has to be GovSteamCC"
-    },
-    "dhp": {
-        "description": "Property. Model:'https://schema.org/Number'. HP damping factor (Dhp).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "dlp": {
-        "description": "Property. Model:'https://schema.org/Number'. LP damping factor (Dlp).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "fhp": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of HP power ahead of reheater (Fhp).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    },
-    "flp": {
-        "description": "Property. Model:'https://schema.org/Number'. Fraction of LP power ahead of reheater (Flp).  Typical Value = 0.7. Default: 0.0",
-        "type": "number"
-    },
-    "mwbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
-        "type": "number"
-    },
-    "pmaxhp": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum HP value position (Pmaxhp).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "pmaxlp": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum LP value position (Pmaxlp).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "rhp": {
-        "description": "Property. Model:'https://schema.org/Number'. HP governor droop (Rhp).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "rlp": {
-        "description": "Property. Model:'https://schema.org/Number'. LP governor droop (Rlp).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "t1hp": {
-        "description": "Property. Model:'https://schema.org/Number'. HP governor time constant (T1hp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t1lp": {
-        "description": "Property. Model:'https://schema.org/Number'. LP governor time constant (T1lp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t3hp": {
-        "description": "Property. Model:'https://schema.org/Number'. HP turbine time constant (T3hp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t3lp": {
-        "description": "Property. Model:'https://schema.org/Number'. LP turbine time constant (T3lp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t4hp": {
-        "description": "Property. Model:'https://schema.org/Number'. HP turbine time constant (T4hp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t4lp": {
-        "description": "Property. Model:'https://schema.org/Number'. LP turbine time constant (T4lp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "t5hp": {
-        "description": "Property. Model:'https://schema.org/Number'. HP reheater time constant (T5hp).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "t5lp": {
-        "description": "Property. Model:'https://schema.org/Number'. LP reheater time constant (T5lp).  Typical Value = 10. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamCC/schema.json",
+    "title": " Smart Data Models - GovSteamCC",
+    "description": "Adapted from CIM data models. Cross compound turbine governor model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteamCC"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteamCC"
+                },
+                "dhp": {
+                    "description": "Property. Model:'https://schema.org/Number'. HP damping factor (Dhp).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "dlp": {
+                    "description": "Property. Model:'https://schema.org/Number'. LP damping factor (Dlp).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "fhp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of HP power ahead of reheater (Fhp).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "flp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction of LP power ahead of reheater (Flp).  Typical Value = 0.7. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pmaxhp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum HP value position (Pmaxhp).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "pmaxlp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum LP value position (Pmaxlp).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "rhp": {
+                    "description": "Property. Model:'https://schema.org/Number'. HP governor droop (Rhp).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "rlp": {
+                    "description": "Property. Model:'https://schema.org/Number'. LP governor droop (Rlp).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "t1hp": {
+                    "description": "Property. Model:'https://schema.org/Number'. HP governor time constant (T1hp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t1lp": {
+                    "description": "Property. Model:'https://schema.org/Number'. LP governor time constant (T1lp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t3hp": {
+                    "description": "Property. Model:'https://schema.org/Number'. HP turbine time constant (T3hp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t3lp": {
+                    "description": "Property. Model:'https://schema.org/Number'. LP turbine time constant (T3lp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t4hp": {
+                    "description": "Property. Model:'https://schema.org/Number'. HP turbine time constant (T4hp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t4lp": {
+                    "description": "Property. Model:'https://schema.org/Number'. LP turbine time constant (T4lp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "t5hp": {
+                    "description": "Property. Model:'https://schema.org/Number'. HP reheater time constant (T5hp).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "t5lp": {
+                    "description": "Property. Model:'https://schema.org/Number'. LP reheater time constant (T5lp).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
