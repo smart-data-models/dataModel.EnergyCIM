@@ -1,116 +1,115 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss1A/schema.json",
-  "title": " Smart Data Models - Pss1A",
-  "description": "Adapted from CIM data models. Single input power system stabilizer. It is a modified version in order to allow representation of various vendors' implementations on PSS type 1A.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Pss1A"
-        ],
-        "description": "Property. NGSI type. It has to be Pss1A"
-    },
-    "a1": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A1). Default: 0.0",
-        "type": "number"
-    },
-    "a2": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A2). Default: 0.0",
-        "type": "number"
-    },
-    "a3": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A3). Default: 0.0",
-        "type": "number"
-    },
-    "a4": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A4). Default: 0.0",
-        "type": "number"
-    },
-    "a5": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A5). Default: 0.0",
-        "type": "number"
-    },
-    "a6": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A6). Default: 0.0",
-        "type": "number"
-    },
-    "a7": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A7). Default: 0.0",
-        "type": "number"
-    },
-    "a8": {
-        "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A8). Default: 0.0",
-        "type": "number"
-    },
-    "inputSignalType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal. Default: None",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector (Kd).  true = e used false = e not used. Default: False",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer gain (Ks). Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T1). Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T2). Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3). Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4). Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Washout time constant (T5). Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T6). Default: 0",
-        "type": "number"
-    },
-    "tdelay": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tdelay). Default: 0",
-        "type": "number"
-    },
-    "vcl": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer input cutoff threshold (Vcl). Default: 0.0",
-        "type": "number"
-    },
-    "vcu": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer input cutoff threshold (Vcu). Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum stabilizer output (Vrmax). Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum stabilizer output (Vrmin). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss1A/schema.json",
+    "title": " Smart Data Models - Pss1A",
+    "description": "Adapted from CIM data models. Single input power system stabilizer. It is a modified version in order to allow representation of various vendors' implementations on PSS type 1A.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Pss1A"
+                    ],
+                    "description": "Property. NGSI type. It has to be Pss1A"
+                },
+                "a1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A1). Default: 0.0",
+                    "type": "number"
+                },
+                "a2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A2). Default: 0.0",
+                    "type": "number"
+                },
+                "a3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A3). Default: 0.0",
+                    "type": "number"
+                },
+                "a4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A4). Default: 0.0",
+                    "type": "number"
+                },
+                "a5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A5). Default: 0.0",
+                    "type": "number"
+                },
+                "a6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A6). Default: 0.0",
+                    "type": "number"
+                },
+                "a7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A7). Default: 0.0",
+                    "type": "number"
+                },
+                "a8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Notch filter parameter (A8). Default: 0.0",
+                    "type": "number"
+                },
+                "inputSignalType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal. Default: None",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector (Kd).  true = e used false = e not used. Default: False",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer gain (Ks). Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T1). Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T2). Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3). Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4). Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (T5). Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Transducer time constant (T6). Default: 0",
+                    "type": "number"
+                },
+                "tdelay": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tdelay). Default: 0",
+                    "type": "number"
+                },
+                "vcl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer input cutoff threshold (Vcl). Default: 0.0",
+                    "type": "number"
+                },
+                "vcu": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer input cutoff threshold (Vcu). Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum stabilizer output (Vrmax). Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum stabilizer output (Vrmin). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
