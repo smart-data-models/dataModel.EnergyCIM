@@ -1,56 +1,55 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLim2Simplified/schema.json",
-  "title": " Smart Data Models - UnderexcLim2Simplified",
-  "description": "Adapted from CIM data models. This model can be derived from UnderexcLimIEEE2. The limit characteristic (look -up table) is a single straight-line, the same as UnderexcLimIEEE2 (see Figure 10.4 (p 32), IEEE 421.5-2005 Section 10.2).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "UnderexcLim2Simplified"
-        ],
-        "description": "Property. NGSI type. It has to be UnderexcLim2Simplified"
-    },
-    "kui": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain Under excitation limiter (Kui).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "p0": {
-        "description": "Property. Model:'https://schema.org/Number'. Segment P initial point (P0).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "p1": {
-        "description": "Property. Model:'https://schema.org/Number'. Segment P end point (P1).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "q0": {
-        "description": "Property. Model:'https://schema.org/Number'. Segment Q initial point (Q0).  Typical Value = -0.31. Default: 0.0",
-        "type": "number"
-    },
-    "q1": {
-        "description": "Property. Model:'https://schema.org/Number'. Segment Q end point (Q1).  Typical Value = -0.1. Default: 0.0",
-        "type": "number"
-    },
-    "vuimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum error signal (V).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vuimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum error signal (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLim2Simplified/schema.json",
+    "title": " Smart Data Models - UnderexcLim2Simplified",
+    "description": "Adapted from CIM data models. This model can be derived from UnderexcLimIEEE2. The limit characteristic (look -up table) is a single straight-line, the same as UnderexcLimIEEE2 (see Figure 10.4 (p 32), IEEE 421.5-2005 Section 10.2).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "UnderexcLim2Simplified"
+                    ],
+                    "description": "Property. NGSI type. It has to be UnderexcLim2Simplified"
+                },
+                "kui": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain Under excitation limiter (Kui).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "p0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Segment P initial point (P0).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "p1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Segment P end point (P1).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "q0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Segment Q initial point (Q0).  Typical Value = -0.31. Default: 0.0",
+                    "type": "number"
+                },
+                "q1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Segment Q end point (Q1).  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vuimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum error signal (V).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vuimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum error signal (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
