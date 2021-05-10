@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PhaseTapChangerTable/schema.json",
-  "title": " Smart Data Models - PhaseTapChangerTable",
-  "description": "Adapted from CIM data models. Describes a tabular curve for how the phase angle difference and impedance varies with the tap step.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PhaseTapChangerTable"
-        ],
-        "description": "Property. NGSI type. It has to be PhaseTapChangerTable"
-    },
-    "PhaseTapChangerTablePoint": {
-        "description": "Property. Model:'https://schema.org/Number'. The points of this table. Default: 'list'",
-        "type": "number"
-    },
-    "PhaseTapChangerTabular": {
-        "description": "Property. Model:'https://schema.org/Number'. The phase tap changers to which this phase tap table applies. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PhaseTapChangerTable/schema.json",
+    "title": " Smart Data Models - PhaseTapChangerTable",
+    "description": "Adapted from CIM data models. Describes a tabular curve for how the phase angle difference and impedance varies with the tap step.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PhaseTapChangerTable"
+                    ],
+                    "description": "Property. NGSI type. It has to be PhaseTapChangerTable"
+                },
+                "PhaseTapChangerTablePoint": {
+                    "description": "Property. Model:'https://schema.org/Number'. The points of this table. Default: 'list'",
+                    "type": "number"
+                },
+                "PhaseTapChangerTabular": {
+                    "description": "Property. Model:'https://schema.org/Number'. The phase tap changers to which this phase tap table applies. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
