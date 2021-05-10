@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramLayoutVersion/schema.json",
-  "title": " Smart Data Models - DiagramLayoutVersion",
-  "description": "Adapted from CIM data models. Version details.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DiagramLayoutVersion"
-        ],
-        "description": "Property. NGSI type. It has to be DiagramLayoutVersion"
-    },
-    "baseUML": {
-        "description": "Property. Model:'https://schema.org/Number'. Base UML provided by CIM model manager. Default: ''",
-        "type": "number"
-    },
-    "baseURI": {
-        "description": "Property. Model:'https://schema.org/Number'. Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on. Default: ''",
-        "type": "number"
-    },
-    "date": {
-        "description": "Property. Model:'https://schema.org/Number'. Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''",
-        "type": "number"
-    },
-    "differenceModelURI": {
-        "description": "Property. Model:'https://schema.org/Number'. Difference model URI defined by IEC 61970-552. Default: ''",
-        "type": "number"
-    },
-    "entsoeUML": {
-        "description": "Property. Model:'https://schema.org/Number'. UML provided by ENTSO-E. Default: ''",
-        "type": "number"
-    },
-    "entsoeURI": {
-        "description": "Property. Model:'https://schema.org/Number'. Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/DiagramLayout/yy/zzz) indicate major and minor versions where:  - yy - indicates a major version; - zzz - indicates a minor version. Default: ''",
-        "type": "number"
-    },
-    "modelDescriptionURI": {
-        "description": "Property. Model:'https://schema.org/Number'. Model Description URI defined by IEC 61970-552. Default: ''",
-        "type": "number"
-    },
-    "namespaceRDF": {
-        "description": "Property. Model:'https://schema.org/Number'. RDF namespace. Default: ''",
-        "type": "number"
-    },
-    "namespaceUML": {
-        "description": "Property. Model:'https://schema.org/Number'. CIM UML namespace. Default: ''",
-        "type": "number"
-    },
-    "shortName": {
-        "description": "Property. Model:'https://schema.org/Number'. The short name of the profile used in profile documentation. Default: ''",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramLayoutVersion/schema.json",
+    "title": " Smart Data Models - DiagramLayoutVersion",
+    "description": "Adapted from CIM data models. Version details.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DiagramLayoutVersion"
+                    ],
+                    "description": "Property. NGSI type. It has to be DiagramLayoutVersion"
+                },
+                "baseUML": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base UML provided by CIM model manager. Default: ''",
+                    "type": "number"
+                },
+                "baseURI": {
+                    "description": "Property. Model:'https://schema.org/Number'. Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on. Default: ''",
+                    "type": "number"
+                },
+                "date": {
+                    "description": "Property. Model:'https://schema.org/Number'. Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''",
+                    "type": "number"
+                },
+                "differenceModelURI": {
+                    "description": "Property. Model:'https://schema.org/Number'. Difference model URI defined by IEC 61970-552. Default: ''",
+                    "type": "number"
+                },
+                "entsoeUML": {
+                    "description": "Property. Model:'https://schema.org/Number'. UML provided by ENTSO-E. Default: ''",
+                    "type": "number"
+                },
+                "entsoeURI": {
+                    "description": "Property. Model:'https://schema.org/Number'. Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/DiagramLayout/yy/zzz) indicate major and minor versions where:  - yy - indicates a major version; - zzz - indicates a minor version. Default: ''",
+                    "type": "number"
+                },
+                "modelDescriptionURI": {
+                    "description": "Property. Model:'https://schema.org/Number'. Model Description URI defined by IEC 61970-552. Default: ''",
+                    "type": "number"
+                },
+                "namespaceRDF": {
+                    "description": "Property. Model:'https://schema.org/Number'. RDF namespace. Default: ''",
+                    "type": "number"
+                },
+                "namespaceUML": {
+                    "description": "Property. Model:'https://schema.org/Number'. CIM UML namespace. Default: ''",
+                    "type": "number"
+                },
+                "shortName": {
+                    "description": "Property. Model:'https://schema.org/Number'. The short name of the profile used in profile documentation. Default: ''",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
