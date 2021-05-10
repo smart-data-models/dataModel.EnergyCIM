@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RaiseLowerCommand/schema.json",
-  "title": " Smart Data Models - RaiseLowerCommand",
-  "description": "Adapted from CIM data models. An analog control that increase or decrease a set point value with pulses.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "RaiseLowerCommand"
-        ],
-        "description": "Property. NGSI type. It has to be RaiseLowerCommand"
-    },
-    "ValueAliasSet": {
-        "description": "Property. Model:'https://schema.org/Number'. The ValueAliasSet used for translation of a Control value to a name. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RaiseLowerCommand/schema.json",
+    "title": " Smart Data Models - RaiseLowerCommand",
+    "description": "Adapted from CIM data models. An analog control that increase or decrease a set point value with pulses.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RaiseLowerCommand"
+                    ],
+                    "description": "Property. NGSI type. It has to be RaiseLowerCommand"
+                },
+                "ValueAliasSet": {
+                    "description": "Property. Model:'https://schema.org/Number'. The ValueAliasSet used for translation of a Control value to a name. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
