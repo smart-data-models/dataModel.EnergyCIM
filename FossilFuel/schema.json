@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/FossilFuel/schema.json",
-  "title": " Smart Data Models - FossilFuel",
-  "description": "Adapted from CIM data models. The fossil fuel consumed by the non-nuclear thermal generating unit.   For example, coal, oil, gas, etc.   This a the specific fuels that the generating unit can consume.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "FossilFuel"
-        ],
-        "description": "Property. NGSI type. It has to be FossilFuel"
-    },
-    "ThermalGeneratingUnit": {
-        "description": "Property. Model:'https://schema.org/Number'. A thermal generating unit may have one or more fossil fuels. Default: None",
-        "type": "number"
-    },
-    "fossilFuelType": {
-        "description": "Property. Model:'https://schema.org/Number'. The type of fossil fuel, such as coal, oil, or gas. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/FossilFuel/schema.json",
+    "title": " Smart Data Models - FossilFuel",
+    "description": "Adapted from CIM data models. The fossil fuel consumed by the non-nuclear thermal generating unit.   For example, coal, oil, gas, etc.   This a the specific fuels that the generating unit can consume.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "FossilFuel"
+                    ],
+                    "description": "Property. NGSI type. It has to be FossilFuel"
+                },
+                "ThermalGeneratingUnit": {
+                    "description": "Property. Model:'https://schema.org/Number'. A thermal generating unit may have one or more fossil fuels. Default: None",
+                    "type": "number"
+                },
+                "fossilFuelType": {
+                    "description": "Property. Model:'https://schema.org/Number'. The type of fossil fuel, such as coal, oil, or gas. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
