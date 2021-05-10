@@ -1,92 +1,91 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentInjection/schema.json",
-  "title": " Smart Data Models - EquivalentInjection",
-  "description": "Adapted from CIM data models. This class represents equivalent injections (generation or load).  Voltage regulation is allowed only at the point of connection.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EquivalentInjection"
-        ],
-        "description": "Property. NGSI type. It has to be EquivalentInjection"
-    },
-    "ReactiveCapabilityCurve": {
-        "description": "Property. Model:'https://schema.org/Number'. The equivalent injection using this reactive capability curve. Default: None",
-        "type": "number"
-    },
-    "maxP": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum active power of the injection. Default: 0.0",
-        "type": "number"
-    },
-    "maxQ": {
-        "description": "Property. Model:'https://schema.org/Number'. Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0",
-        "type": "number"
-    },
-    "minP": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum active power of the injection. Default: 0.0",
-        "type": "number"
-    },
-    "minQ": {
-        "description": "Property. Model:'https://schema.org/Number'. Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0",
-        "type": "number"
-    },
-    "p": {
-        "description": "Property. Model:'https://schema.org/Number'. Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
-        "type": "number"
-    },
-    "q": {
-        "description": "Property. Model:'https://schema.org/Number'. Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "r2": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "regulationCapability": {
-        "description": "Property. Model:'https://schema.org/Number'. Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage. Default: False",
-        "type": "number"
-    },
-    "regulationStatus": {
-        "description": "Property. Model:'https://schema.org/Number'. Specifies the default regulation status of the EquivalentInjection.  True is regulating.  False is not regulating. Default: False",
-        "type": "number"
-    },
-    "regulationTarget": {
-        "description": "Property. Model:'https://schema.org/Number'. The target voltage for voltage regulation. Default: 0.0",
-        "type": "number"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    },
-    "x2": {
-        "description": "Property. Model:'https://schema.org/Number'. Negative sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentInjection/schema.json",
+    "title": " Smart Data Models - EquivalentInjection",
+    "description": "Adapted from CIM data models. This class represents equivalent injections (generation or load).  Voltage regulation is allowed only at the point of connection.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EquivalentInjection"
+                    ],
+                    "description": "Property. NGSI type. It has to be EquivalentInjection"
+                },
+                "ReactiveCapabilityCurve": {
+                    "description": "Property. Model:'https://schema.org/Number'. The equivalent injection using this reactive capability curve. Default: None",
+                    "type": "number"
+                },
+                "maxP": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum active power of the injection. Default: 0.0",
+                    "type": "number"
+                },
+                "maxQ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0",
+                    "type": "number"
+                },
+                "minP": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum active power of the injection. Default: 0.0",
+                    "type": "number"
+                },
+                "minQ": {
+                    "description": "Property. Model:'https://schema.org/Number'. Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0",
+                    "type": "number"
+                },
+                "p": {
+                    "description": "Property. Model:'https://schema.org/Number'. Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
+                    "type": "number"
+                },
+                "q": {
+                    "description": "Property. Model:'https://schema.org/Number'. Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "r2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "regulationCapability": {
+                    "description": "Property. Model:'https://schema.org/Number'. Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage. Default: False",
+                    "type": "number"
+                },
+                "regulationStatus": {
+                    "description": "Property. Model:'https://schema.org/Number'. Specifies the default regulation status of the EquivalentInjection.  True is regulating.  False is not regulating. Default: False",
+                    "type": "number"
+                },
+                "regulationTarget": {
+                    "description": "Property. Model:'https://schema.org/Number'. The target voltage for voltage regulation. Default: 0.0",
+                    "type": "number"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                },
+                "x2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Negative sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
