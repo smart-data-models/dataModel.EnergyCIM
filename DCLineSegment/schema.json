@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCLineSegment/schema.json",
-  "title": " Smart Data Models - DCLineSegment",
-  "description": "Adapted from CIM data models. A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DCLineSegment"
-        ],
-        "description": "Property. NGSI type. It has to be DCLineSegment"
-    },
-    "PerLengthParameter": {
-        "description": "Property. Model:'https://schema.org/Number'. Set of per-length parameters for this line segment. Default: None",
-        "type": "number"
-    },
-    "capacitance": {
-        "description": "Property. Model:'https://schema.org/Number'. Capacitance of the DC line segment. Significant for cables only. Default: 0.0",
-        "type": "number"
-    },
-    "inductance": {
-        "description": "Property. Model:'https://schema.org/Number'. Inductance of the DC line segment. Neglectable compared with DCSeriesDevice used for smoothing. Default: 0.0",
-        "type": "number"
-    },
-    "length": {
-        "description": "Property. Model:'https://schema.org/Number'. Segment length for calculating line section capabilities. Default: 0.0",
-        "type": "number"
-    },
-    "resistance": {
-        "description": "Property. Model:'https://schema.org/Number'. Resistance of the DC line segment. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCLineSegment/schema.json",
+    "title": " Smart Data Models - DCLineSegment",
+    "description": "Adapted from CIM data models. A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DCLineSegment"
+                    ],
+                    "description": "Property. NGSI type. It has to be DCLineSegment"
+                },
+                "PerLengthParameter": {
+                    "description": "Property. Model:'https://schema.org/Number'. Set of per-length parameters for this line segment. Default: None",
+                    "type": "number"
+                },
+                "capacitance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Capacitance of the DC line segment. Significant for cables only. Default: 0.0",
+                    "type": "number"
+                },
+                "inductance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inductance of the DC line segment. Neglectable compared with DCSeriesDevice used for smoothing. Default: 0.0",
+                    "type": "number"
+                },
+                "length": {
+                    "description": "Property. Model:'https://schema.org/Number'. Segment length for calculating line section capabilities. Default: 0.0",
+                    "type": "number"
+                },
+                "resistance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Resistance of the DC line segment. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
