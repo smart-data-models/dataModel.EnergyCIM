@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCTerminal/schema.json",
-  "title": " Smart Data Models - ACDCTerminal",
-  "description": "Adapted from CIM data models. An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ACDCTerminal"
-        ],
-        "description": "Property. NGSI type. It has to be ACDCTerminal"
-    },
-    "BusNameMarker": {
-        "description": "Property. Model:'https://schema.org/Number'. The bus name marker used to name the bus (topological node). Default: None",
-        "type": "number"
-    },
-    "Measurements": {
-        "description": "Property. Model:'https://schema.org/Number'. Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: 'list'",
-        "type": "number"
-    },
-    "OperationalLimitSet": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    },
-    "connected": {
-        "description": "Property. Model:'https://schema.org/Number'. The connected status is related to a bus-branch model and the topological node to terminal relation.  True implies the terminal is connected to the related topological node and false implies it is not.  In a bus-branch model, the connected status is used to tell if equipment is disconnected without having to change the connectivity described by the topological node to terminal relation. A valid case is that conducting equipment can be connected in one end and open in the other. In particular for an AC line segment, where the reactive line charging can be significant, this is a relevant case. Default: False",
-        "type": "number"
-    },
-    "sequenceNumber": {
-        "description": "Property. Model:'https://schema.org/Number'. The orientation of the terminal connections for a multiple terminal conducting equipment.  The sequence numbering starts with 1 and additional terminals should follow in increasing order.   The first terminal is the `starting point` for a two terminal branch. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCTerminal/schema.json",
+    "title": " Smart Data Models - ACDCTerminal",
+    "description": "Adapted from CIM data models. An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ACDCTerminal"
+                    ],
+                    "description": "Property. NGSI type. It has to be ACDCTerminal"
+                },
+                "BusNameMarker": {
+                    "description": "Property. Model:'https://schema.org/Number'. The bus name marker used to name the bus (topological node). Default: None",
+                    "type": "number"
+                },
+                "Measurements": {
+                    "description": "Property. Model:'https://schema.org/Number'. Measurements associated with this terminal defining  where the measurement is placed in the network topology.  It may be used, for instance, to capture the sensor position, such as a voltage transformer (PT) at a busbar or a current transformer (CT) at the bar between a breaker and an isolator. Default: 'list'",
+                    "type": "number"
+                },
+                "OperationalLimitSet": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                },
+                "connected": {
+                    "description": "Property. Model:'https://schema.org/Number'. The connected status is related to a bus-branch model and the topological node to terminal relation.  True implies the terminal is connected to the related topological node and false implies it is not.  In a bus-branch model, the connected status is used to tell if equipment is disconnected without having to change the connectivity described by the topological node to terminal relation. A valid case is that conducting equipment can be connected in one end and open in the other. In particular for an AC line segment, where the reactive line charging can be significant, this is a relevant case. Default: False",
+                    "type": "number"
+                },
+                "sequenceNumber": {
+                    "description": "Property. Model:'https://schema.org/Number'. The orientation of the terminal connections for a multiple terminal conducting equipment.  The sequence numbering starts with 1 and additional terminals should follow in increasing order.   The first terminal is the `starting point` for a two terminal branch. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
