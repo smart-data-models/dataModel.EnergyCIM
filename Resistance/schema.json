@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Resistance/schema.json",
-  "title": " Smart Data Models - Resistance",
-  "description": "Adapted from CIM data models. Resistance (real part of impedance).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Resistance"
-        ],
-        "description": "Property. NGSI type. It has to be Resistance"
-    },
-    "multiplier": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "unit": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Resistance/schema.json",
+    "title": " Smart Data Models - Resistance",
+    "description": "Adapted from CIM data models. Resistance (real part of impedance).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Resistance"
+                    ],
+                    "description": "Property. NGSI type. It has to be Resistance"
+                },
+                "multiplier": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "unit": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
