@@ -1,76 +1,75 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR1/schema.json",
-  "title": " Smart Data Models - ExcAVR1",
-  "description": "Adapted from CIM data models. Italian excitation system corresponding to IEEE (1968) Type 1 Model. It represents exciter dynamo and electromechanical regulator.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcAVR1"
-        ],
-        "description": "Property. NGSI type. It has to be ExcAVR1"
-    },
-    "e1": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage value 1  (E1).  Typical Value = 4.18. Default: 0.0",
-        "type": "number"
-    },
-    "e2": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage value 2 (E2).  Typical Value = 3.14. Default: 0.0",
-        "type": "number"
-    },
-    "ka": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR gain (K).  Typical Value = 500. Default: 0.0",
-        "type": "number"
-    },
-    "kf": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate feedback gain (K).  Typical Value = 0.02. Default: 0.0",
-        "type": "number"
-    },
-    "se1": {
-        "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E1 (S(E1)).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "se2": {
-        "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E2 (S(E2)).  Typical Value = 0.03. Default: 0.0",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant (T).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate feedback time constant (T).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "vrmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (V).  Typical Value = -6. Default: 0.0",
-        "type": "number"
-    },
-    "vrmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum AVR output (V).  Typical Value = 7. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR1/schema.json",
+    "title": " Smart Data Models - ExcAVR1",
+    "description": "Adapted from CIM data models. Italian excitation system corresponding to IEEE (1968) Type 1 Model. It represents exciter dynamo and electromechanical regulator.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcAVR1"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcAVR1"
+                },
+                "e1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage value 1  (E1).  Typical Value = 4.18. Default: 0.0",
+                    "type": "number"
+                },
+                "e2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage value 2 (E2).  Typical Value = 3.14. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR gain (K).  Typical Value = 500. Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback gain (K).  Typical Value = 0.02. Default: 0.0",
+                    "type": "number"
+                },
+                "se1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E1 (S(E1)).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "se2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E2 (S(E2)).  Typical Value = 0.03. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR time constant (T).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant (T).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback time constant (T).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "vrmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (V).  Typical Value = -6. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum AVR output (V).  Typical Value = 7. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
