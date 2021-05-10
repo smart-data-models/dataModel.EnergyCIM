@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvPowerFlow/schema.json",
-  "title": " Smart Data Models - SvPowerFlow",
-  "description": "Adapted from CIM data models. State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SvPowerFlow"
-        ],
-        "description": "Property. NGSI type. It has to be SvPowerFlow"
-    },
-    "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The terminal associated with the power flow state variable. Default: None",
-        "type": "number"
-    },
-    "p": {
-        "description": "Property. Model:'https://schema.org/Number'. The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0",
-        "type": "number"
-    },
-    "q": {
-        "description": "Property. Model:'https://schema.org/Number'. The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvPowerFlow/schema.json",
+    "title": " Smart Data Models - SvPowerFlow",
+    "description": "Adapted from CIM data models. State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SvPowerFlow"
+                    ],
+                    "description": "Property. NGSI type. It has to be SvPowerFlow"
+                },
+                "Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The terminal associated with the power flow state variable. Default: None",
+                    "type": "number"
+                },
+                "p": {
+                    "description": "Property. Model:'https://schema.org/Number'. The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0",
+                    "type": "number"
+                },
+                "q": {
+                    "description": "Property. Model:'https://schema.org/Number'. The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
