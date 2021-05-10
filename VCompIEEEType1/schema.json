@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VCompIEEEType1/schema.json",
-  "title": " Smart Data Models - VCompIEEEType1",
-  "description": "Adapted from CIM data models. Reference: IEEE Standard 421.5-2005 Section 4.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "VCompIEEEType1"
-        ],
-        "description": "Property. NGSI type. It has to be VCompIEEEType1"
-    },
-    "rc": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    },
-    "tr": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0",
-        "type": "number"
-    },
-    "xc": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VCompIEEEType1/schema.json",
+    "title": " Smart Data Models - VCompIEEEType1",
+    "description": "Adapted from CIM data models. Reference: IEEE Standard 421.5-2005 Section 4.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "VCompIEEEType1"
+                    ],
+                    "description": "Property. NGSI type. It has to be VCompIEEEType1"
+                },
+                "rc": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0",
+                    "type": "number"
+                },
+                "xc": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
