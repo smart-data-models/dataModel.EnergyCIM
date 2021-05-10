@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VoltageAdjusterDynamics/schema.json",
-  "title": " Smart Data Models - VoltageAdjusterDynamics",
-  "description": "Adapted from CIM data models. Voltage adjuster function block whose behaviour is described by reference to a standard model",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "VoltageAdjusterDynamics"
-        ],
-        "description": "Property. NGSI type. It has to be VoltageAdjusterDynamics"
-    },
-    "PFVArControllerType1Dynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type I model with which this voltage adjuster is associated. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VoltageAdjusterDynamics/schema.json",
+    "title": " Smart Data Models - VoltageAdjusterDynamics",
+    "description": "Adapted from CIM data models. Voltage adjuster function block whose behaviour is described by reference to a standard model",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "VoltageAdjusterDynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be VoltageAdjusterDynamics"
+                },
+                "PFVArControllerType1Dynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Power Factor or VAr controller Type I model with which this voltage adjuster is associated. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
