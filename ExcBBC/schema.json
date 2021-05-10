@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcBBC/schema.json",
-  "title": " Smart Data Models - ExcBBC",
-  "description": "Adapted from CIM data models. Transformer fed static excitation system (static with ABB regulator). This model represents a static excitation system in which a gated thyristor bridge fed by a transformer at the main generator terminals feeds the main generator directly.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcBBC"
-        ],
-        "description": "Property. NGSI type. It has to be ExcBBC"
-    },
-    "efdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum open circuit exciter voltage (Efdmax).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "efdmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum open circuit exciter voltage (Efdmin).  Typical Value = -5. Default: 0.0",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Steady state gain (K).  Typical Value = 300. Default: 0.0",
-        "type": "number"
-    },
-    "switch": {
-        "description": "Property. Model:'https://schema.org/Number'. Supplementary signal routing selector (switch). true = Vs connected to 3rd summing point false =  Vs connected to 1st summing point (see diagram). Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller time constant (T1).  Typical Value = 6. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Controller time constant (T2).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4).  Typical Value = 0.01. Default: 0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum control element output (Vrmax).  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum control element output (Vrmin).  Typical Value = -5. Default: 0.0",
-        "type": "number"
-    },
-    "xe": {
-        "description": "Property. Model:'https://schema.org/Number'. Effective excitation transformer reactance (Xe).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcBBC/schema.json",
+    "title": " Smart Data Models - ExcBBC",
+    "description": "Adapted from CIM data models. Transformer fed static excitation system (static with ABB regulator). This model represents a static excitation system in which a gated thyristor bridge fed by a transformer at the main generator terminals feeds the main generator directly.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcBBC"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcBBC"
+                },
+                "efdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum open circuit exciter voltage (Efdmax).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "efdmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum open circuit exciter voltage (Efdmin).  Typical Value = -5. Default: 0.0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Steady state gain (K).  Typical Value = 300. Default: 0.0",
+                    "type": "number"
+                },
+                "switch": {
+                    "description": "Property. Model:'https://schema.org/Number'. Supplementary signal routing selector (switch). true = Vs connected to 3rd summing point false =  Vs connected to 1st summing point (see diagram). Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller time constant (T1).  Typical Value = 6. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Controller time constant (T2).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum control element output (Vrmax).  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum control element output (Vrmin).  Typical Value = -5. Default: 0.0",
+                    "type": "number"
+                },
+                "xe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Effective excitation transformer reactance (Xe).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
