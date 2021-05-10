@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogControl/schema.json",
-  "title": " Smart Data Models - AnalogControl",
-  "description": "Adapted from CIM data models. An analog control used for supervisory control.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AnalogControl"
-        ],
-        "description": "Property. NGSI type. It has to be AnalogControl"
-    },
-    "AnalogValue": {
-        "description": "Property. Model:'https://schema.org/Number'. The Control variable associated with the MeasurementValue. Default: None",
-        "type": "number"
-    },
-    "maxValue": {
-        "description": "Property. Model:'https://schema.org/Number'. Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0",
-        "type": "number"
-    },
-    "minValue": {
-        "description": "Property. Model:'https://schema.org/Number'. Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogControl/schema.json",
+    "title": " Smart Data Models - AnalogControl",
+    "description": "Adapted from CIM data models. An analog control used for supervisory control.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AnalogControl"
+                    ],
+                    "description": "Property. NGSI type. It has to be AnalogControl"
+                },
+                "AnalogValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. The Control variable associated with the MeasurementValue. Default: None",
+                    "type": "number"
+                },
+                "maxValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0",
+                    "type": "number"
+                },
+                "minValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
