@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ApparentPowerLimit/schema.json",
-  "title": " Smart Data Models - ApparentPowerLimit",
-  "description": "Adapted from CIM data models. Apparent power limit.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ApparentPowerLimit"
-        ],
-        "description": "Property. NGSI type. It has to be ApparentPowerLimit"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'. The apparent power limit. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ApparentPowerLimit/schema.json",
+    "title": " Smart Data Models - ApparentPowerLimit",
+    "description": "Adapted from CIM data models. Apparent power limit.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ApparentPowerLimit"
+                    ],
+                    "description": "Property. NGSI type. It has to be ApparentPowerLimit"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'. The apparent power limit. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
