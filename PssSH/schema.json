@@ -1,80 +1,79 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSH/schema.json",
-  "title": " Smart Data Models - PssSH",
-  "description": "Adapted from CIM data models. Model for Siemens 'H infinity' power system stabilizer with generator electrical power input.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssSH"
-        ],
-        "description": "Property. NGSI type. It has to be PssSH"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Main gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "k0": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain 0 (K0).  Typical Value = 0.012. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain 1 (K1).  Typical Value = 0.488. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain 2 (K2).  Typical Value = 0.064. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain 3 (K3).  Typical Value = 0.224. Default: 0.0",
-        "type": "number"
-    },
-    "k4": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain 4 (K4).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant 1 (T1).  Typical Value = 0.076. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant 2 (T2).  Typical Value = 0.086. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant 3 (T3).   Typical Value = 1.068. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant 4 (T4).  Typical Value = 1.913. Default: 0",
-        "type": "number"
-    },
-    "td": {
-        "description": "Property. Model:'https://schema.org/Number'. Input time constant (Td).  Typical Value = 10. Default: 0",
-        "type": "number"
-    },
-    "vsmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Output maximum limit (Vsmax).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "vsmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Output minimum limit (Vsmin).  Typical Value = -0.1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSH/schema.json",
+    "title": " Smart Data Models - PssSH",
+    "description": "Adapted from CIM data models. Model for Siemens 'H infinity' power system stabilizer with generator electrical power input.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssSH"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssSH"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Main gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "k0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain 0 (K0).  Typical Value = 0.012. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain 1 (K1).  Typical Value = 0.488. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain 2 (K2).  Typical Value = 0.064. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain 3 (K3).  Typical Value = 0.224. Default: 0.0",
+                    "type": "number"
+                },
+                "k4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain 4 (K4).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant 1 (T1).  Typical Value = 0.076. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant 2 (T2).  Typical Value = 0.086. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant 3 (T3).   Typical Value = 1.068. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant 4 (T4).  Typical Value = 1.913. Default: 0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input time constant (Td).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "vsmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output maximum limit (Vsmax).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vsmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Output minimum limit (Vsmin).  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
