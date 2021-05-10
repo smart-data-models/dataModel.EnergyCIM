@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MeasurementValue/schema.json",
-  "title": " Smart Data Models - MeasurementValue",
-  "description": "Adapted from CIM data models. The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "MeasurementValue"
-        ],
-        "description": "Property. NGSI type. It has to be MeasurementValue"
-    },
-    "MeasurementValueQuality": {
-        "description": "Property. Model:'https://schema.org/Number'. A MeasurementValue has a MeasurementValueQuality associated with it. Default: None",
-        "type": "number"
-    },
-    "MeasurementValueSource": {
-        "description": "Property. Model:'https://schema.org/Number'. The MeasurementValues updated by the source. Default: None",
-        "type": "number"
-    },
-    "sensorAccuracy": {
-        "description": "Property. Model:'https://schema.org/Number'. The limit, expressed as a percentage of the sensor maximum, that errors will not exceed when the sensor is used under  reference conditions. Default: 0.0",
-        "type": "number"
-    },
-    "timeStamp": {
-        "description": "Property. Model:'https://schema.org/Number'. The time when the value was last updated Default: ''",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MeasurementValue/schema.json",
+    "title": " Smart Data Models - MeasurementValue",
+    "description": "Adapted from CIM data models. The current state for a measurement. A state value is an instance of a measurement from a specific source. Measurements can be associated with many state values, each representing a different source for the measurement.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "MeasurementValue"
+                    ],
+                    "description": "Property. NGSI type. It has to be MeasurementValue"
+                },
+                "MeasurementValueQuality": {
+                    "description": "Property. Model:'https://schema.org/Number'. A MeasurementValue has a MeasurementValueQuality associated with it. Default: None",
+                    "type": "number"
+                },
+                "MeasurementValueSource": {
+                    "description": "Property. Model:'https://schema.org/Number'. The MeasurementValues updated by the source. Default: None",
+                    "type": "number"
+                },
+                "sensorAccuracy": {
+                    "description": "Property. Model:'https://schema.org/Number'. The limit, expressed as a percentage of the sensor maximum, that errors will not exceed when the sensor is used under  reference conditions. Default: 0.0",
+                    "type": "number"
+                },
+                "timeStamp": {
+                    "description": "Property. Model:'https://schema.org/Number'. The time when the value was last updated Default: ''",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
