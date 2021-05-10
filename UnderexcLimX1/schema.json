@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimX1/schema.json",
-  "title": " Smart Data Models - UnderexcLimX1",
-  "description": "Adapted from CIM data models. ",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "UnderexcLimX1"
-        ],
-        "description": "Property. NGSI type. It has to be UnderexcLimX1"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit slope (K) (>0). Default: 0.0",
-        "type": "number"
-    },
-    "kf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Differential gain (Kf2). Default: 0.0",
-        "type": "number"
-    },
-    "km": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit gain (Km). Default: 0.0",
-        "type": "number"
-    },
-    "melmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit value (MELMAX). Default: 0.0",
-        "type": "number"
-    },
-    "tf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Differential time constant (Tf2) (>0). Default: 0",
-        "type": "number"
-    },
-    "tm": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit time constant (Tm). Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimX1/schema.json",
+    "title": " Smart Data Models - UnderexcLimX1",
+    "description": "Adapted from CIM data models. ",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "UnderexcLimX1"
+                    ],
+                    "description": "Property. NGSI type. It has to be UnderexcLimX1"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit slope (K) (>0). Default: 0.0",
+                    "type": "number"
+                },
+                "kf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Differential gain (Kf2). Default: 0.0",
+                    "type": "number"
+                },
+                "km": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit gain (Km). Default: 0.0",
+                    "type": "number"
+                },
+                "melmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit value (MELMAX). Default: 0.0",
+                    "type": "number"
+                },
+                "tf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Differential time constant (Tf2) (>0). Default: 0",
+                    "type": "number"
+                },
+                "tm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit time constant (Tm). Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
