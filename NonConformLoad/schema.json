@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonConformLoad/schema.json",
-  "title": " Smart Data Models - NonConformLoad",
-  "description": "Adapted from CIM data models. NonConformLoad represent loads that do not follow a daily load change pattern and changes are not correlated with the daily load change pattern.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "NonConformLoad"
-        ],
-        "description": "Property. NGSI type. It has to be NonConformLoad"
-    },
-    "LoadGroup": {
-        "description": "Property. Model:'https://schema.org/Number'. Conform loads assigned to this ConformLoadGroup. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonConformLoad/schema.json",
+    "title": " Smart Data Models - NonConformLoad",
+    "description": "Adapted from CIM data models. NonConformLoad represent loads that do not follow a daily load change pattern and changes are not correlated with the daily load change pattern.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "NonConformLoad"
+                    ],
+                    "description": "Property. NGSI type. It has to be NonConformLoad"
+                },
+                "LoadGroup": {
+                    "description": "Property. Model:'https://schema.org/Number'. Conform loads assigned to this ConformLoadGroup. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
