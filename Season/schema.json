@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Season/schema.json",
-  "title": " Smart Data Models - Season",
-  "description": "Adapted from CIM data models. A specified time period of the year.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Season"
-        ],
-        "description": "Property. NGSI type. It has to be Season"
-    },
-    "SeasonDayTypeSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. Season for the Schedule. Default: 'list'",
-        "type": "number"
-    },
-    "endDate": {
-        "description": "Property. Model:'https://schema.org/Number'. Date season ends. Default: 0.0",
-        "type": "number"
-    },
-    "startDate": {
-        "description": "Property. Model:'https://schema.org/Number'. Date season starts. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Season/schema.json",
+    "title": " Smart Data Models - Season",
+    "description": "Adapted from CIM data models. A specified time period of the year.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Season"
+                    ],
+                    "description": "Property. NGSI type. It has to be Season"
+                },
+                "SeasonDayTypeSchedules": {
+                    "description": "Property. Model:'https://schema.org/Number'. Season for the Schedule. Default: 'list'",
+                    "type": "number"
+                },
+                "endDate": {
+                    "description": "Property. Model:'https://schema.org/Number'. Date season ends. Default: 0.0",
+                    "type": "number"
+                },
+                "startDate": {
+                    "description": "Property. Model:'https://schema.org/Number'. Date season starts. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
