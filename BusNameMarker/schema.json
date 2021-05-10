@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BusNameMarker/schema.json",
-  "title": " Smart Data Models - BusNameMarker",
-  "description": "Adapted from CIM data models. Used to apply user standard names to topology buses. Typically used for bus/branch case generation. Associated with one or more terminals that are normally connected with the bus name. The associated terminals are normally connected by non-retained switches. For a ring bus station configuration, all busbar terminals in the ring are typically associated. For a breaker and a half scheme, both busbars would normally be associated.  For a ring bus, all busbars would normally be associated.  For a 'straight' busbar configuration, normally only the main terminal at the busbar would be associated.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "BusNameMarker"
-        ],
-        "description": "Property. NGSI type. It has to be BusNameMarker"
-    },
-    "ReportingGroup": {
-        "description": "Property. Model:'https://schema.org/Number'. The bus name markers that belong to this reporting group. Default: None",
-        "type": "number"
-    },
-    "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The terminals associated with this bus name marker. Default: 'list'",
-        "type": "number"
-    },
-    "priority": {
-        "description": "Property. Model:'https://schema.org/Number'. Priority of bus name marker for use as topology bus name.  Use 0 for don t care.  Use 1 for highest priority.  Use 2 as priority is less than 1 and so on. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BusNameMarker/schema.json",
+    "title": " Smart Data Models - BusNameMarker",
+    "description": "Adapted from CIM data models. Used to apply user standard names to topology buses. Typically used for bus/branch case generation. Associated with one or more terminals that are normally connected with the bus name. The associated terminals are normally connected by non-retained switches. For a ring bus station configuration, all busbar terminals in the ring are typically associated. For a breaker and a half scheme, both busbars would normally be associated.  For a ring bus, all busbars would normally be associated.  For a 'straight' busbar configuration, normally only the main terminal at the busbar would be associated.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "BusNameMarker"
+                    ],
+                    "description": "Property. NGSI type. It has to be BusNameMarker"
+                },
+                "ReportingGroup": {
+                    "description": "Property. Model:'https://schema.org/Number'. The bus name markers that belong to this reporting group. Default: None",
+                    "type": "number"
+                },
+                "Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The terminals associated with this bus name marker. Default: 'list'",
+                    "type": "number"
+                },
+                "priority": {
+                    "description": "Property. Model:'https://schema.org/Number'. Priority of bus name marker for use as topology bus name.  Use 0 for don t care.  Use 1 for highest priority.  Use 2 as priority is less than 1 and so on. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
