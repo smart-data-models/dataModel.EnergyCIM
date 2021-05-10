@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType4aIEC/schema.json",
-  "title": " Smart Data Models - WindTurbineType4aIEC",
-  "description": "Adapted from CIM data models. Wind turbine IEC Type 4A.  Reference: IEC Standard 61400-27-1, section 6.5.5.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindTurbineType4aIEC"
-        ],
-        "description": "Property. NGSI type. It has to be WindTurbineType4aIEC"
-    },
-    "WindContPType4aIEC": {
-        "description": "Property. Model:'https://schema.org/Number'. Wind control P type 4A model associated with this wind turbine type 4A model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType4aIEC/schema.json",
+    "title": " Smart Data Models - WindTurbineType4aIEC",
+    "description": "Adapted from CIM data models. Wind turbine IEC Type 4A.  Reference: IEC Standard 61400-27-1, section 6.5.5.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindTurbineType4aIEC"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindTurbineType4aIEC"
+                },
+                "WindContPType4aIEC": {
+                    "description": "Property. Model:'https://schema.org/Number'. Wind control P type 4A model associated with this wind turbine type 4A model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
