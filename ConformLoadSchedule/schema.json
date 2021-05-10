@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConformLoadSchedule/schema.json",
-  "title": " Smart Data Models - ConformLoadSchedule",
-  "description": "Adapted from CIM data models. A curve of load  versus time (X-axis) showing the active power values (Y1-axis) and reactive power (Y2-axis) for each unit of the period covered. This curve represents a typical pattern of load over the time period for a given day type and season.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ConformLoadSchedule"
-        ],
-        "description": "Property. NGSI type. It has to be ConformLoadSchedule"
-    },
-    "ConformLoadGroup": {
-        "description": "Property. Model:'https://schema.org/Number'. The ConformLoadGroup where the ConformLoadSchedule belongs. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConformLoadSchedule/schema.json",
+    "title": " Smart Data Models - ConformLoadSchedule",
+    "description": "Adapted from CIM data models. A curve of load  versus time (X-axis) showing the active power values (Y1-axis) and reactive power (Y2-axis) for each unit of the period covered. This curve represents a typical pattern of load over the time period for a given day type and season.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ConformLoadSchedule"
+                    ],
+                    "description": "Property. NGSI type. It has to be ConformLoadSchedule"
+                },
+                "ConformLoadGroup": {
+                    "description": "Property. Model:'https://schema.org/Number'. The ConformLoadGroup where the ConformLoadSchedule belongs. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
