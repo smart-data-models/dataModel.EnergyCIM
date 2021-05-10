@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCTopologicalNode/schema.json",
-  "title": " Smart Data Models - DCTopologicalNode",
-  "description": "Adapted from CIM data models. DC bus.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "DCTopologicalNode"
-        ],
-        "description": "Property. NGSI type. It has to be DCTopologicalNode"
-    },
-    "DCEquipmentContainer": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "DCNodes": {
-        "description": "Property. Model:'https://schema.org/Number'. See association end ConnectivityNode.TopologicalNode. Default: 'list'",
-        "type": "number"
-    },
-    "DCTerminals": {
-        "description": "Property. Model:'https://schema.org/Number'. See association end Terminal.TopologicalNode. Default: 'list'",
-        "type": "number"
-    },
-    "DCTopologicalIsland": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCTopologicalNode/schema.json",
+    "title": " Smart Data Models - DCTopologicalNode",
+    "description": "Adapted from CIM data models. DC bus.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "DCTopologicalNode"
+                    ],
+                    "description": "Property. NGSI type. It has to be DCTopologicalNode"
+                },
+                "DCEquipmentContainer": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "DCNodes": {
+                    "description": "Property. Model:'https://schema.org/Number'. See association end ConnectivityNode.TopologicalNode. Default: 'list'",
+                    "type": "number"
+                },
+                "DCTerminals": {
+                    "description": "Property. Model:'https://schema.org/Number'. See association end Terminal.TopologicalNode. Default: 'list'",
+                    "type": "number"
+                },
+                "DCTopologicalIsland": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
