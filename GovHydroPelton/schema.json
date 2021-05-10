@@ -1,140 +1,139 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroPelton/schema.json",
-  "title": " Smart Data Models - GovHydroPelton",
-  "description": "Adapted from CIM data models. Detailed hydro unit - Pelton model.  This model can be used to represent the dynamic related to water tunnel and surge chamber. A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is located under the GovHydroFrancis class.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "GovHydroPelton"
-        ],
-        "description": "Property. NGSI type. It has to be GovHydroPelton"
-    },
-    "av0": {
-        "description": "Property. Model:'https://schema.org/Number'. Area of the surge tank (A). Unit = m. Typical Value = 30. Default: 0.0",
-        "type": "number"
-    },
-    "av1": {
-        "description": "Property. Model:'https://schema.org/Number'. Area of the compensation tank (A). Unit = m. Typical Value = 700. Default: 0.0",
-        "type": "number"
-    },
-    "bp": {
-        "description": "Property. Model:'https://schema.org/Number'. Droop (bp).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "db1": {
-        "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (DB1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "db2": {
-        "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width of valve opening error (DB2). Unit = Hz.  Typical Value = 0.01. Default: 0.0",
-        "type": "number"
-    },
-    "h1": {
-        "description": "Property. Model:'https://schema.org/Number'. Head of compensation chamber water level with respect to the level of penstock (H).  Unit = m. Typical Value = 4. Default: 0.0",
-        "type": "number"
-    },
-    "h2": {
-        "description": "Property. Model:'https://schema.org/Number'. Head of surge tank water level with respect to the level of penstock (H).  Unit = m. Typical Value = 40. Default: 0.0",
-        "type": "number"
-    },
-    "hn": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated hydraulic head (H).  Unit = m. Typical Value = 250. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Penstock loss coefficient (due to friction) (Kc).  Typical Value = 0.025. Default: 0.0",
-        "type": "number"
-    },
-    "kg": {
-        "description": "Property. Model:'https://schema.org/Number'. Water tunnel and surge chamber loss coefficient (due to friction) (Kg).  Typical Value = -0.025. Default: 0.0",
-        "type": "number"
-    },
-    "qc0": {
-        "description": "Property. Model:'https://schema.org/Number'. No-load turbine flow at nominal head (Qc0).  Typical Value = 0.05. Default: 0.0",
-        "type": "number"
-    },
-    "qn": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated flow (Q). Unit = m/s. Typical Value = 40. Default: 0.0",
-        "type": "number"
-    },
-    "simplifiedPelton": {
-        "description": "Property. Model:'https://schema.org/Number'. Simplified Pelton model simulation (Sflag). true = enable of simplified Pelton model simulation false = enable of complete Pelton model simulation (non linear gain). Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "staticCompensating": {
-        "description": "Property. Model:'https://schema.org/Number'. Static compensating characteristic (Cflag). true = enable of static compensating characteristic  false = inhibit of static compensating characteristic. Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "ta": {
-        "description": "Property. Model:'https://schema.org/Number'. Derivative gain (accelerometer time constant) (Ta).  Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "ts": {
-        "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Ts).  Typical Value = 0.15. Default: 0",
-        "type": "number"
-    },
-    "tv": {
-        "description": "Property. Model:'https://schema.org/Number'. Servomotor integrator time constant (TV).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "twnc": {
-        "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Twnc).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "twng": {
-        "description": "Property. Model:'https://schema.org/Number'. Water tunnel and surge chamber inertia time constant (Twng). Typical Value = 3. Default: 0",
-        "type": "number"
-    },
-    "tx": {
-        "description": "Property. Model:'https://schema.org/Number'. Electronic integrator time constant (Tx).  Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "va": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Va).  Unit = PU/sec.  Typical Value = 0.016. Default: 0.0",
-        "type": "number"
-    },
-    "valvmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening (ValvMax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "valvmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening (ValvMin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "vav": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum servomotor valve opening velocity (Vav).  Typical Value = 0.017. Default: 0.0",
-        "type": "number"
-    },
-    "vc": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Vc).  Unit = PU/sec.  Typical Value = -0.016. Default: 0.0",
-        "type": "number"
-    },
-    "vcv": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum servomotor valve closing velocity (Vcv).  Typical Value = -0.017. Default: 0.0",
-        "type": "number"
-    },
-    "waterTunnelSurgeChamberSimulation": {
-        "description": "Property. Model:'https://schema.org/Number'. Water tunnel and surge chamber simulation (Tflag). true = enable of water tunnel and surge chamber simulation false = inhibit of water tunnel and surge chamber simulation. Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "zsfc": {
-        "description": "Property. Model:'https://schema.org/Number'. Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m. Typical Value = 25. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroPelton/schema.json",
+    "title": " Smart Data Models - GovHydroPelton",
+    "description": "Adapted from CIM data models. Detailed hydro unit - Pelton model.  This model can be used to represent the dynamic related to water tunnel and surge chamber. A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is located under the GovHydroFrancis class.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydroPelton"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydroPelton"
+                },
+                "av0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Area of the surge tank (A). Unit = m. Typical Value = 30. Default: 0.0",
+                    "type": "number"
+                },
+                "av1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Area of the compensation tank (A). Unit = m. Typical Value = 700. Default: 0.0",
+                    "type": "number"
+                },
+                "bp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Droop (bp).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "db1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (DB1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "db2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width of valve opening error (DB2). Unit = Hz.  Typical Value = 0.01. Default: 0.0",
+                    "type": "number"
+                },
+                "h1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Head of compensation chamber water level with respect to the level of penstock (H).  Unit = m. Typical Value = 4. Default: 0.0",
+                    "type": "number"
+                },
+                "h2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Head of surge tank water level with respect to the level of penstock (H).  Unit = m. Typical Value = 40. Default: 0.0",
+                    "type": "number"
+                },
+                "hn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated hydraulic head (H).  Unit = m. Typical Value = 250. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Penstock loss coefficient (due to friction) (Kc).  Typical Value = 0.025. Default: 0.0",
+                    "type": "number"
+                },
+                "kg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water tunnel and surge chamber loss coefficient (due to friction) (Kg).  Typical Value = -0.025. Default: 0.0",
+                    "type": "number"
+                },
+                "qc0": {
+                    "description": "Property. Model:'https://schema.org/Number'. No-load turbine flow at nominal head (Qc0).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "qn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated flow (Q). Unit = m/s. Typical Value = 40. Default: 0.0",
+                    "type": "number"
+                },
+                "simplifiedPelton": {
+                    "description": "Property. Model:'https://schema.org/Number'. Simplified Pelton model simulation (Sflag). true = enable of simplified Pelton model simulation false = enable of complete Pelton model simulation (non linear gain). Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "staticCompensating": {
+                    "description": "Property. Model:'https://schema.org/Number'. Static compensating characteristic (Cflag). true = enable of static compensating characteristic  false = inhibit of static compensating characteristic. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative gain (accelerometer time constant) (Ta).  Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "ts": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Ts).  Typical Value = 0.15. Default: 0",
+                    "type": "number"
+                },
+                "tv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Servomotor integrator time constant (TV).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "twnc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Twnc).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "twng": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water tunnel and surge chamber inertia time constant (Twng). Typical Value = 3. Default: 0",
+                    "type": "number"
+                },
+                "tx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electronic integrator time constant (Tx).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "va": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Va).  Unit = PU/sec.  Typical Value = 0.016. Default: 0.0",
+                    "type": "number"
+                },
+                "valvmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening (ValvMax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "valvmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening (ValvMin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vav": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum servomotor valve opening velocity (Vav).  Typical Value = 0.017. Default: 0.0",
+                    "type": "number"
+                },
+                "vc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Vc).  Unit = PU/sec.  Typical Value = -0.016. Default: 0.0",
+                    "type": "number"
+                },
+                "vcv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum servomotor valve closing velocity (Vcv).  Typical Value = -0.017. Default: 0.0",
+                    "type": "number"
+                },
+                "waterTunnelSurgeChamberSimulation": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water tunnel and surge chamber simulation (Tflag). true = enable of water tunnel and surge chamber simulation false = inhibit of water tunnel and surge chamber simulation. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "zsfc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m. Typical Value = 25. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
