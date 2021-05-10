@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType1or2Dynamics/schema.json",
-  "title": " Smart Data Models - WindTurbineType1or2Dynamics",
-  "description": "Adapted from CIM data models. Parent class supporting relationships to wind turbines Type 1 and 2 and their control models.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "WindTurbineType1or2Dynamics"
-        ],
-        "description": "Property. NGSI type. It has to be WindTurbineType1or2Dynamics"
-    },
-    "AsynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine model with which this wind generator type 1 or 2 model is associated. Default: None",
-        "type": "number"
-    },
-    "RemoteInputSignal": {
-        "description": "Property. Model:'https://schema.org/Number'. Remote input signal used by this wind generator Type 1 or Type 2 model. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType1or2Dynamics/schema.json",
+    "title": " Smart Data Models - WindTurbineType1or2Dynamics",
+    "description": "Adapted from CIM data models. Parent class supporting relationships to wind turbines Type 1 and 2 and their control models.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "WindTurbineType1or2Dynamics"
+                    ],
+                    "description": "Property. NGSI type. It has to be WindTurbineType1or2Dynamics"
+                },
+                "AsynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine model with which this wind generator type 1 or 2 model is associated. Default: None",
+                    "type": "number"
+                },
+                "RemoteInputSignal": {
+                    "description": "Property. Model:'https://schema.org/Number'. Remote input signal used by this wind generator Type 1 or Type 2 model. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
