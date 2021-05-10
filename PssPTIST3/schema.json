@@ -1,164 +1,163 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssPTIST3/schema.json",
-  "title": " Smart Data Models - PssPTIST3",
-  "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 3.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssPTIST3"
-        ],
-        "description": "Property. NGSI type. It has to be PssPTIST3"
-    },
-    "a0": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A0). Default: 0.0",
-        "type": "number"
-    },
-    "a1": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Al). Default: 0.0",
-        "type": "number"
-    },
-    "a2": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A2). Default: 0.0",
-        "type": "number"
-    },
-    "a3": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A3). Default: 0.0",
-        "type": "number"
-    },
-    "a4": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A4). Default: 0.0",
-        "type": "number"
-    },
-    "a5": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A5). Default: 0.0",
-        "type": "number"
-    },
-    "al": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Al). Default: 0.0",
-        "type": "number"
-    },
-    "athres": {
-        "description": "Property. Model:'https://schema.org/Number'. Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0",
-        "type": "number"
-    },
-    "b0": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B0). Default: 0.0",
-        "type": "number"
-    },
-    "b1": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B1). Default: 0.0",
-        "type": "number"
-    },
-    "b2": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B2). Default: 0.0",
-        "type": "number"
-    },
-    "b3": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B3). Default: 0.0",
-        "type": "number"
-    },
-    "b4": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B4). Default: 0.0",
-        "type": "number"
-    },
-    "b5": {
-        "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B5). Default: 0.0",
-        "type": "number"
-    },
-    "dl": {
-        "description": "Property. Model:'https://schema.org/Number'. Limiter (Dl). Default: 0.0",
-        "type": "number"
-    },
-    "dtc": {
-        "description": "Property. Model:'https://schema.org/Number'. Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0",
-        "type": "number"
-    },
-    "dtf": {
-        "description": "Property. Model:'https://schema.org/Number'. Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0",
-        "type": "number"
-    },
-    "dtp": {
-        "description": "Property. Model:'https://schema.org/Number'. Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0",
-        "type": "number"
-    },
-    "isw": {
-        "description": "Property. Model:'https://schema.org/Number'. Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 9. Default: 0.0",
-        "type": "number"
-    },
-    "lthres": {
-        "description": "Property. Model:'https://schema.org/Number'. Threshold value (Lthres). Default: 0.0",
-        "type": "number"
-    },
-    "m": {
-        "description": "Property. Model:'https://schema.org/Number'. (M).  M=2*H.  Typical Value = 5. Default: 0.0",
-        "type": "number"
-    },
-    "nav": {
-        "description": "Property. Model:'https://schema.org/Number'. Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0",
-        "type": "number"
-    },
-    "ncl": {
-        "description": "Property. Model:'https://schema.org/Number'. Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0",
-        "type": "number"
-    },
-    "ncr": {
-        "description": "Property. Model:'https://schema.org/Number'. Number of counts until reset after limit function is triggered (Ncr). Default: 0.0",
-        "type": "number"
-    },
-    "pmin": {
-        "description": "Property. Model:'https://schema.org/Number'. (Pmin). Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T1).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T2).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T3).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T4).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T5). Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T6). Default: 0",
-        "type": "number"
-    },
-    "tf": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tf).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "tp": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssPTIST3/schema.json",
+    "title": " Smart Data Models - PssPTIST3",
+    "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 3.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssPTIST3"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssPTIST3"
+                },
+                "a0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A0). Default: 0.0",
+                    "type": "number"
+                },
+                "a1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Al). Default: 0.0",
+                    "type": "number"
+                },
+                "a2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A2). Default: 0.0",
+                    "type": "number"
+                },
+                "a3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A3). Default: 0.0",
+                    "type": "number"
+                },
+                "a4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A4). Default: 0.0",
+                    "type": "number"
+                },
+                "a5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (A5). Default: 0.0",
+                    "type": "number"
+                },
+                "al": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Al). Default: 0.0",
+                    "type": "number"
+                },
+                "athres": {
+                    "description": "Property. Model:'https://schema.org/Number'. Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0",
+                    "type": "number"
+                },
+                "b0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B0). Default: 0.0",
+                    "type": "number"
+                },
+                "b1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B1). Default: 0.0",
+                    "type": "number"
+                },
+                "b2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B2). Default: 0.0",
+                    "type": "number"
+                },
+                "b3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B3). Default: 0.0",
+                    "type": "number"
+                },
+                "b4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B4). Default: 0.0",
+                    "type": "number"
+                },
+                "b5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Filter coefficient (B5). Default: 0.0",
+                    "type": "number"
+                },
+                "dl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limiter (Dl). Default: 0.0",
+                    "type": "number"
+                },
+                "dtc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0",
+                    "type": "number"
+                },
+                "dtf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0",
+                    "type": "number"
+                },
+                "dtp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0",
+                    "type": "number"
+                },
+                "isw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 9. Default: 0.0",
+                    "type": "number"
+                },
+                "lthres": {
+                    "description": "Property. Model:'https://schema.org/Number'. Threshold value (Lthres). Default: 0.0",
+                    "type": "number"
+                },
+                "m": {
+                    "description": "Property. Model:'https://schema.org/Number'. (M).  M=2*H.  Typical Value = 5. Default: 0.0",
+                    "type": "number"
+                },
+                "nav": {
+                    "description": "Property. Model:'https://schema.org/Number'. Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0",
+                    "type": "number"
+                },
+                "ncl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0",
+                    "type": "number"
+                },
+                "ncr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Number of counts until reset after limit function is triggered (Ncr). Default: 0.0",
+                    "type": "number"
+                },
+                "pmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. (Pmin). Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T1).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T2).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T3).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T4).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T5). Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T6). Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tf).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
