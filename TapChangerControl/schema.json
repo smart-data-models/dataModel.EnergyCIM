@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TapChangerControl/schema.json",
-  "title": " Smart Data Models - TapChangerControl",
-  "description": "Adapted from CIM data models. Describes behavior specific to tap changers, e.g. how the voltage at the end of a line varies with the load level and compensation of the voltage drop by tap adjustment.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TapChangerControl"
-        ],
-        "description": "Property. NGSI type. It has to be TapChangerControl"
-    },
-    "TapChanger": {
-        "description": "Property. Model:'https://schema.org/Number'. The regulating control scheme in which this tap changer participates. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TapChangerControl/schema.json",
+    "title": " Smart Data Models - TapChangerControl",
+    "description": "Adapted from CIM data models. Describes behavior specific to tap changers, e.g. how the voltage at the end of a line varies with the load level and compensation of the voltage drop by tap adjustment.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TapChangerControl"
+                    ],
+                    "description": "Property. NGSI type. It has to be TapChangerControl"
+                },
+                "TapChanger": {
+                    "description": "Property. Model:'https://schema.org/Number'. The regulating control scheme in which this tap changer participates. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
