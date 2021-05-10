@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MeasurementValueQuality/schema.json",
-  "title": " Smart Data Models - MeasurementValueQuality",
-  "description": "Adapted from CIM data models. Measurement quality flags. Bits 0-10 are defined for substation automation in draft IEC 61850 part 7-3. Bits 11-15 are reserved for future expansion by that document. Bits 16-31 are reserved for EMS applications.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "MeasurementValueQuality"
-        ],
-        "description": "Property. NGSI type. It has to be MeasurementValueQuality"
-    },
-    "MeasurementValue": {
-        "description": "Property. Model:'https://schema.org/Number'. A MeasurementValue has a MeasurementValueQuality associated with it. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MeasurementValueQuality/schema.json",
+    "title": " Smart Data Models - MeasurementValueQuality",
+    "description": "Adapted from CIM data models. Measurement quality flags. Bits 0-10 are defined for substation automation in draft IEC 61850 part 7-3. Bits 11-15 are reserved for future expansion by that document. Bits 16-31 are reserved for EMS applications.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "MeasurementValueQuality"
+                    ],
+                    "description": "Property. NGSI type. It has to be MeasurementValueQuality"
+                },
+                "MeasurementValue": {
+                    "description": "Property. Model:'https://schema.org/Number'. A MeasurementValue has a MeasurementValueQuality associated with it. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
