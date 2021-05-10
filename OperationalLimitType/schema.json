@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OperationalLimitType/schema.json",
-  "title": " Smart Data Models - OperationalLimitType",
-  "description": "Adapted from CIM data models. The operational meaning of a category of limits.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OperationalLimitType"
-        ],
-        "description": "Property. NGSI type. It has to be OperationalLimitType"
-    },
-    "OperationalLimit": {
-        "description": "Property. Model:'https://schema.org/Number'. The operational limits associated with this type of limit. Default: 'list'",
-        "type": "number"
-    },
-    "acceptableDuration": {
-        "description": "Property. Model:'https://schema.org/Number'. The nominal acceptable duration of the limit.  Limits are commonly expressed in terms of the a time limit for which the limit is normally acceptable.   The actual acceptable duration of a specific limit may depend on other local factors such as temperature or wind speed. Default: 0",
-        "type": "number"
-    },
-    "direction": {
-        "description": "Property. Model:'https://schema.org/Number'. The direction of the limit. Default: None",
-        "type": "number"
-    },
-    "limitType": {
-        "description": "Property. Model:'https://schema.org/Number'. Types of limits defined in the ENTSO-E Operational Handbook Policy 3. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OperationalLimitType/schema.json",
+    "title": " Smart Data Models - OperationalLimitType",
+    "description": "Adapted from CIM data models. The operational meaning of a category of limits.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OperationalLimitType"
+                    ],
+                    "description": "Property. NGSI type. It has to be OperationalLimitType"
+                },
+                "OperationalLimit": {
+                    "description": "Property. Model:'https://schema.org/Number'. The operational limits associated with this type of limit. Default: 'list'",
+                    "type": "number"
+                },
+                "acceptableDuration": {
+                    "description": "Property. Model:'https://schema.org/Number'. The nominal acceptable duration of the limit.  Limits are commonly expressed in terms of the a time limit for which the limit is normally acceptable.   The actual acceptable duration of a specific limit may depend on other local factors such as temperature or wind speed. Default: 0",
+                    "type": "number"
+                },
+                "direction": {
+                    "description": "Property. Model:'https://schema.org/Number'. The direction of the limit. Default: None",
+                    "type": "number"
+                },
+                "limitType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Types of limits defined in the ENTSO-E Operational Handbook Policy 3. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
