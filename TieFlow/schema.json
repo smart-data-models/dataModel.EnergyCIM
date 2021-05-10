@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TieFlow/schema.json",
-  "title": " Smart Data Models - TieFlow",
-  "description": "Adapted from CIM data models. A flow specification in terms of location and direction for a control area.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TieFlow"
-        ],
-        "description": "Property. NGSI type. It has to be TieFlow"
-    },
-    "ControlArea": {
-        "description": "Property. Model:'https://schema.org/Number'. The control area of the tie flows. Default: None",
-        "type": "number"
-    },
-    "Terminal": {
-        "description": "Property. Model:'https://schema.org/Number'. The terminal to which this tie flow belongs. Default: None",
-        "type": "number"
-    },
-    "positiveFlowIn": {
-        "description": "Property. Model:'https://schema.org/Number'. True if the flow into the terminal (load convention) is also flow into the control area.  For example, this attribute should be true if using the tie line terminal further away from the control area. For example to represent a tie to a shunt component (like a load or generator) in another area, this is the near end of a branch and this attribute would be specified as false. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TieFlow/schema.json",
+    "title": " Smart Data Models - TieFlow",
+    "description": "Adapted from CIM data models. A flow specification in terms of location and direction for a control area.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TieFlow"
+                    ],
+                    "description": "Property. NGSI type. It has to be TieFlow"
+                },
+                "ControlArea": {
+                    "description": "Property. Model:'https://schema.org/Number'. The control area of the tie flows. Default: None",
+                    "type": "number"
+                },
+                "Terminal": {
+                    "description": "Property. Model:'https://schema.org/Number'. The terminal to which this tie flow belongs. Default: None",
+                    "type": "number"
+                },
+                "positiveFlowIn": {
+                    "description": "Property. Model:'https://schema.org/Number'. True if the flow into the terminal (load convention) is also flow into the control area.  For example, this attribute should be true if using the tie line terminal further away from the control area. For example to represent a tie to a shunt component (like a load or generator) in another area, this is the near end of a branch and this attribute would be specified as false. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
