@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentNetwork/schema.json",
-  "title": " Smart Data Models - EquivalentNetwork",
-  "description": "Adapted from CIM data models. A class that represents an external meshed network that has been reduced to an electrically equivalent model. The ConnectivityNodes contained in the equivalent are intended to reflect internal nodes of the equivalent. The boundary Connectivity nodes where the equivalent connects outside itself are NOT contained by the equivalent.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EquivalentNetwork"
-        ],
-        "description": "Property. NGSI type. It has to be EquivalentNetwork"
-    },
-    "EquivalentEquipments": {
-        "description": "Property. Model:'https://schema.org/Number'. The equivalent where the reduced model belongs. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentNetwork/schema.json",
+    "title": " Smart Data Models - EquivalentNetwork",
+    "description": "Adapted from CIM data models. A class that represents an external meshed network that has been reduced to an electrically equivalent model. The ConnectivityNodes contained in the equivalent are intended to reflect internal nodes of the equivalent. The boundary Connectivity nodes where the equivalent connects outside itself are NOT contained by the equivalent.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EquivalentNetwork"
+                    ],
+                    "description": "Property. NGSI type. It has to be EquivalentNetwork"
+                },
+                "EquivalentEquipments": {
+                    "description": "Property. Model:'https://schema.org/Number'. The equivalent where the reduced model belongs. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
