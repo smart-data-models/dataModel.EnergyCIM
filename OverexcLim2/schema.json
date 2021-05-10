@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLim2/schema.json",
-  "title": " Smart Data Models - OverexcLim2",
-  "description": "Adapted from CIM data models. Different from LimIEEEOEL, LimOEL2 has a fixed pickup threshold and reduces the excitation set-point by mean of non-windup integral regulator. Irated is the rated machine excitation current (calculated from nameplate conditions: V, P, CosPhi).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OverexcLim2"
-        ],
-        "description": "Property. NGSI type. It has to be OverexcLim2"
-    },
-    "ifdlim": {
-        "description": "Property. Model:'https://schema.org/Number'. Limit value of rated field current (I).  Typical Value = 1.05. Default: 0.0",
-        "type": "number"
-    },
-    "koi": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain Over excitation limiter (K).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "voimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum error signal (V).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "voimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum error signal (V).  Typical Value = -9999. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLim2/schema.json",
+    "title": " Smart Data Models - OverexcLim2",
+    "description": "Adapted from CIM data models. Different from LimIEEEOEL, LimOEL2 has a fixed pickup threshold and reduces the excitation set-point by mean of non-windup integral regulator. Irated is the rated machine excitation current (calculated from nameplate conditions: V, P, CosPhi).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OverexcLim2"
+                    ],
+                    "description": "Property. NGSI type. It has to be OverexcLim2"
+                },
+                "ifdlim": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limit value of rated field current (I).  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "koi": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain Over excitation limiter (K).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "voimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum error signal (V).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "voimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum error signal (V).  Typical Value = -9999. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
