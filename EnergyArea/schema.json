@@ -1,32 +1,31 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergyArea/schema.json",
-  "title": " Smart Data Models - EnergyArea",
-  "description": "Adapted from CIM data models. Describes an area having energy production or consumption.  Specializations are intended to support the load allocation function as typically required in energy management systems or planning studies to allocate hypothesized load levels to individual load points for power flow analysis.  Often the energy area can be linked to both measured and forecast load levels.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "EnergyArea"
-        ],
-        "description": "Property. NGSI type. It has to be EnergyArea"
-    },
-    "ControlArea": {
-        "description": "Property. Model:'https://schema.org/Number'. The control area specification that is used for the load forecast. Default: None",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergyArea/schema.json",
+    "title": " Smart Data Models - EnergyArea",
+    "description": "Adapted from CIM data models. Describes an area having energy production or consumption.  Specializations are intended to support the load allocation function as typically required in energy management systems or planning studies to allocate hypothesized load levels to individual load points for power flow analysis.  Often the energy area can be linked to both measured and forecast load levels.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "EnergyArea"
+                    ],
+                    "description": "Property. NGSI type. It has to be EnergyArea"
+                },
+                "ControlArea": {
+                    "description": "Property. Model:'https://schema.org/Number'. The control area specification that is used for the load forecast. Default: None",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
