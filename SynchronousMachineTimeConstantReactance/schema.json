@@ -1,84 +1,83 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineTimeConstantReactance/schema.json",
-  "title": " Smart Data Models - SynchronousMachineTimeConstantReactance",
-  "description": "Adapted from CIM data models. Synchronous machine detailed modelling types are defined by the combination of the attributes SynchronousMachineTimeConstantReactance.modelType and SynchronousMachineTimeConstantReactance.rotorType.     The parameters used for models expressed in time constant reactance form include:",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SynchronousMachineTimeConstantReactance"
-        ],
-        "description": "Property. NGSI type. It has to be SynchronousMachineTimeConstantReactance"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Saturation loading correction factor (Ks) (>= 0).  Used only by Type J model.  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "modelType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of synchronous machine model used in Dynamic simulation applications. Default: None",
-        "type": "number"
-    },
-    "rotorType": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of rotor on physical machine. Default: None",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Damping time constant for `Canay` reactance.  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "tpdo": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axis transient rotor time constant (T`do) (> T``do).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "tppdo": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient rotor time constant (T``do) (> 0).  Typical Value = 0.03. Default: 0",
-        "type": "number"
-    },
-    "tppqo": {
-        "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis subtransient rotor time constant (T``qo) (> 0). Typical Value = 0.03. Default: 0",
-        "type": "number"
-    },
-    "tpqo": {
-        "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis transient rotor time constant (T`qo) (> T``qo). Typical Value = 0.5. Default: 0",
-        "type": "number"
-    },
-    "xDirectSubtrans": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient reactance (unsaturated) (X``d) (> Xl).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "xDirectSync": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axis synchronous reactance (Xd) (>= X`d). The quotient of a sustained value of that AC component of armature voltage that is produced by the total direct-axis flux due to direct-axis armature current and the value of the AC component of this current, the machine running at rated speed. Typical Value = 1.8. Default: 0.0",
-        "type": "number"
-    },
-    "xDirectTrans": {
-        "description": "Property. Model:'https://schema.org/Number'. Direct-axis transient reactance (unsaturated) (X`d) (> =X``d).  Typical Value = 0.5. Default: 0.0",
-        "type": "number"
-    },
-    "xQuadSubtrans": {
-        "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis subtransient reactance (X``q) (> Xl).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "xQuadSync": {
-        "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis synchronous reactance (Xq) (> =X`q). The ratio of the component of reactive armature voltage, due to the quadrature-axis component of armature current, to this component of current, under steady state conditions and at rated frequency.  Typical Value = 1.6. Default: 0.0",
-        "type": "number"
-    },
-    "xQuadTrans": {
-        "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis transient reactance (X`q) (> =X``q).  Typical Value = 0.3. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineTimeConstantReactance/schema.json",
+    "title": " Smart Data Models - SynchronousMachineTimeConstantReactance",
+    "description": "Adapted from CIM data models. Synchronous machine detailed modelling types are defined by the combination of the attributes SynchronousMachineTimeConstantReactance.modelType and SynchronousMachineTimeConstantReactance.rotorType.     The parameters used for models expressed in time constant reactance form include:",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SynchronousMachineTimeConstantReactance"
+                    ],
+                    "description": "Property. NGSI type. It has to be SynchronousMachineTimeConstantReactance"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation loading correction factor (Ks) (>= 0).  Used only by Type J model.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "modelType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of synchronous machine model used in Dynamic simulation applications. Default: None",
+                    "type": "number"
+                },
+                "rotorType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of rotor on physical machine. Default: None",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Damping time constant for `Canay` reactance.  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tpdo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis transient rotor time constant (T`do) (> T``do).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "tppdo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient rotor time constant (T``do) (> 0).  Typical Value = 0.03. Default: 0",
+                    "type": "number"
+                },
+                "tppqo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis subtransient rotor time constant (T``qo) (> 0). Typical Value = 0.03. Default: 0",
+                    "type": "number"
+                },
+                "tpqo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis transient rotor time constant (T`qo) (> T``qo). Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "xDirectSubtrans": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient reactance (unsaturated) (X``d) (> Xl).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "xDirectSync": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis synchronous reactance (Xd) (>= X`d). The quotient of a sustained value of that AC component of armature voltage that is produced by the total direct-axis flux due to direct-axis armature current and the value of the AC component of this current, the machine running at rated speed. Typical Value = 1.8. Default: 0.0",
+                    "type": "number"
+                },
+                "xDirectTrans": {
+                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis transient reactance (unsaturated) (X`d) (> =X``d).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "xQuadSubtrans": {
+                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis subtransient reactance (X``q) (> Xl).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "xQuadSync": {
+                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis synchronous reactance (Xq) (> =X`q). The ratio of the component of reactive armature voltage, due to the quadrature-axis component of armature current, to this component of current, under steady state conditions and at rated frequency.  Typical Value = 1.6. Default: 0.0",
+                    "type": "number"
+                },
+                "xQuadTrans": {
+                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis transient reactance (X`q) (> =X``q).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
