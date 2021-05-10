@@ -1,48 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Switch/schema.json",
-  "title": " Smart Data Models - Switch",
-  "description": "Adapted from CIM data models. A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "Switch"
-        ],
-        "description": "Property. NGSI type. It has to be Switch"
-    },
-    "SwitchSchedules": {
-        "description": "Property. Model:'https://schema.org/Number'. A SwitchSchedule is associated with a Switch. Default: 'list'",
-        "type": "number"
-    },
-    "normalOpen": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen. Default: False",
-        "type": "number"
-    },
-    "open": {
-        "description": "Property. Model:'https://schema.org/Number'. The attribute tells if the switch is considered open when used as input to topology processing. Default: False",
-        "type": "number"
-    },
-    "ratedCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. The maximum continuous current carrying capacity in amps governed by the device material and construction. Default: 0.0",
-        "type": "number"
-    },
-    "retained": {
-        "description": "Property. Model:'https://schema.org/Number'. Branch is retained in a bus branch model.  The flow through retained switches will normally be calculated in power flow. Default: False",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Switch/schema.json",
+    "title": " Smart Data Models - Switch",
+    "description": "Adapted from CIM data models. A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Switch"
+                    ],
+                    "description": "Property. NGSI type. It has to be Switch"
+                },
+                "SwitchSchedules": {
+                    "description": "Property. Model:'https://schema.org/Number'. A SwitchSchedule is associated with a Switch. Default: 'list'",
+                    "type": "number"
+                },
+                "normalOpen": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen. Default: False",
+                    "type": "number"
+                },
+                "open": {
+                    "description": "Property. Model:'https://schema.org/Number'. The attribute tells if the switch is considered open when used as input to topology processing. Default: False",
+                    "type": "number"
+                },
+                "ratedCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. The maximum continuous current carrying capacity in amps governed by the device material and construction. Default: 0.0",
+                    "type": "number"
+                },
+                "retained": {
+                    "description": "Property. Model:'https://schema.org/Number'. Branch is retained in a bus branch model.  The flow through retained switches will normally be calculated in power flow. Default: False",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
