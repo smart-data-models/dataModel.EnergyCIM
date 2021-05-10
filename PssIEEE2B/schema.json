@@ -1,136 +1,135 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE2B/schema.json",
-  "title": " Smart Data Models - PssIEEE2B",
-  "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. This stabilizer model is designed to represent a variety of dual-input stabilizers, which normally use combinations of power and speed or frequency to derive the stabilizing signal.  Reference: IEEE 2B 421.5-2005 Section 8.2.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssIEEE2B"
-        ],
-        "description": "Property. NGSI type. It has to be PssIEEE2B"
-    },
-    "inputSignal1Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1.  Typical Value = rotorSpeed. Default: None",
-        "type": "number"
-    },
-    "inputSignal2Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None",
-        "type": "number"
-    },
-    "ks1": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer gain (Ks1).  Typical Value = 12. Default: 0.0",
-        "type": "number"
-    },
-    "ks2": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "ks3": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "m": {
-        "description": "Property. Model:'https://schema.org/Number'. Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0",
-        "type": "number"
-    },
-    "n": {
-        "description": "Property. Model:'https://schema.org/Number'. Order of ramp tracking filter (N).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T1).  Typical Value = 0.12. Default: 0",
-        "type": "number"
-    },
-    "t10": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T10).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t11": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T11).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T2).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4).  Typical Value = 0.02. Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant on signal #1 (T6).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t7": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant on signal #2 (T7).  Typical Value = 2. Default: 0",
-        "type": "number"
-    },
-    "t8": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: 0",
-        "type": "number"
-    },
-    "t9": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "tw1": {
-        "description": "Property. Model:'https://schema.org/Number'. First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0",
-        "type": "number"
-    },
-    "tw2": {
-        "description": "Property. Model:'https://schema.org/Number'. Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0",
-        "type": "number"
-    },
-    "tw3": {
-        "description": "Property. Model:'https://schema.org/Number'. First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0",
-        "type": "number"
-    },
-    "tw4": {
-        "description": "Property. Model:'https://schema.org/Number'. Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "vsi1max": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "vsi1min": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0",
-        "type": "number"
-    },
-    "vsi2max": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0",
-        "type": "number"
-    },
-    "vsi2min": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0",
-        "type": "number"
-    },
-    "vstmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0",
-        "type": "number"
-    },
-    "vstmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE2B/schema.json",
+    "title": " Smart Data Models - PssIEEE2B",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. This stabilizer model is designed to represent a variety of dual-input stabilizers, which normally use combinations of power and speed or frequency to derive the stabilizing signal.  Reference: IEEE 2B 421.5-2005 Section 8.2.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssIEEE2B"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssIEEE2B"
+                },
+                "inputSignal1Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1.  Typical Value = rotorSpeed. Default: None",
+                    "type": "number"
+                },
+                "inputSignal2Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None",
+                    "type": "number"
+                },
+                "ks1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer gain (Ks1).  Typical Value = 12. Default: 0.0",
+                    "type": "number"
+                },
+                "ks2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "ks3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "m": {
+                    "description": "Property. Model:'https://schema.org/Number'. Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "n": {
+                    "description": "Property. Model:'https://schema.org/Number'. Order of ramp tracking filter (N).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T1).  Typical Value = 0.12. Default: 0",
+                    "type": "number"
+                },
+                "t10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T10).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t11": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T11).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T2).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead/lag time constant (T4).  Typical Value = 0.02. Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant on signal #1 (T6).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant on signal #2 (T7).  Typical Value = 2. Default: 0",
+                    "type": "number"
+                },
+                "t8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "t9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tw1": {
+                    "description": "Property. Model:'https://schema.org/Number'. First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0",
+                    "type": "number"
+                },
+                "tw2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0",
+                    "type": "number"
+                },
+                "tw3": {
+                    "description": "Property. Model:'https://schema.org/Number'. First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0",
+                    "type": "number"
+                },
+                "tw4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vsi1max": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "vsi1min": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0",
+                    "type": "number"
+                },
+                "vsi2max": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "vsi2min": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0",
+                    "type": "number"
+                },
+                "vstmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vstmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
