@@ -1,56 +1,55 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SeriesCompensator/schema.json",
-  "title": " Smart Data Models - SeriesCompensator",
-  "description": "Adapted from CIM data models. A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SeriesCompensator"
-        ],
-        "description": "Property. NGSI type. It has to be SeriesCompensator"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence resistance. Default: 0.0",
-        "type": "number"
-    },
-    "r0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence resistance. Default: 0.0",
-        "type": "number"
-    },
-    "varistorPresent": {
-        "description": "Property. Model:'https://schema.org/Number'. Describe if a metal oxide varistor (mov) for over voltage protection is configured at the series compensator. Default: False",
-        "type": "number"
-    },
-    "varistorRatedCurrent": {
-        "description": "Property. Model:'https://schema.org/Number'. The maximum current the varistor is designed to handle at specified duration. Default: 0.0",
-        "type": "number"
-    },
-    "varistorVoltageThreshold": {
-        "description": "Property. Model:'https://schema.org/Number'. The dc voltage at which the varistor start conducting. Default: 0.0",
-        "type": "number"
-    },
-    "x": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence reactance. Default: 0.0",
-        "type": "number"
-    },
-    "x0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence reactance. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SeriesCompensator/schema.json",
+    "title": " Smart Data Models - SeriesCompensator",
+    "description": "Adapted from CIM data models. A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SeriesCompensator"
+                    ],
+                    "description": "Property. NGSI type. It has to be SeriesCompensator"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "r0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence resistance. Default: 0.0",
+                    "type": "number"
+                },
+                "varistorPresent": {
+                    "description": "Property. Model:'https://schema.org/Number'. Describe if a metal oxide varistor (mov) for over voltage protection is configured at the series compensator. Default: False",
+                    "type": "number"
+                },
+                "varistorRatedCurrent": {
+                    "description": "Property. Model:'https://schema.org/Number'. The maximum current the varistor is designed to handle at specified duration. Default: 0.0",
+                    "type": "number"
+                },
+                "varistorVoltageThreshold": {
+                    "description": "Property. Model:'https://schema.org/Number'. The dc voltage at which the varistor start conducting. Default: 0.0",
+                    "type": "number"
+                },
+                "x": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence reactance. Default: 0.0",
+                    "type": "number"
+                },
+                "x0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence reactance. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
