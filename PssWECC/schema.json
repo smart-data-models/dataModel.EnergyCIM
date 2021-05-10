@@ -1,100 +1,99 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssWECC/schema.json",
-  "title": " Smart Data Models - PssWECC",
-  "description": "Adapted from CIM data models. Dual input Power System Stabilizer, based on IEEE type 2, with modified output limiter defined by WECC (Western Electricity Coordinating Council, USA).",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PssWECC"
-        ],
-        "description": "Property. NGSI type. It has to be PssWECC"
-    },
-    "inputSignal1Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1. Default: None",
-        "type": "number"
-    },
-    "inputSignal2Type": {
-        "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2. Default: None",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal 1 gain  (K). Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal 2 gain (K). Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal 1 transducer time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t10": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Input signal 2 transducer time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer washout time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t4": {
-        "description": "Property. Model:'https://schema.org/Number'. Stabilizer washout time lag constant (T) (>0). Default: 0",
-        "type": "number"
-    },
-    "t5": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t6": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t7": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t8": {
-        "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T). Default: 0",
-        "type": "number"
-    },
-    "t9": {
-        "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T). Default: 0",
-        "type": "number"
-    },
-    "vcl": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum value for voltage compensator output (V). Default: 0.0",
-        "type": "number"
-    },
-    "vcu": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum value for voltage compensator output (V). Default: 0.0",
-        "type": "number"
-    },
-    "vsmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum output signal (Vsmax). Default: 0.0",
-        "type": "number"
-    },
-    "vsmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum output signal (Vsmin). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssWECC/schema.json",
+    "title": " Smart Data Models - PssWECC",
+    "description": "Adapted from CIM data models. Dual input Power System Stabilizer, based on IEEE type 2, with modified output limiter defined by WECC (Western Electricity Coordinating Council, USA).",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PssWECC"
+                    ],
+                    "description": "Property. NGSI type. It has to be PssWECC"
+                },
+                "inputSignal1Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #1. Default: None",
+                    "type": "number"
+                },
+                "inputSignal2Type": {
+                    "description": "Property. Model:'https://schema.org/Number'. Type of input signal #2. Default: None",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal 1 gain  (K). Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal 2 gain (K). Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal 1 transducer time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Input signal 2 transducer time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer washout time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Stabilizer washout time lag constant (T) (>0). Default: 0",
+                    "type": "number"
+                },
+                "t5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "t9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (T). Default: 0",
+                    "type": "number"
+                },
+                "vcl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value for voltage compensator output (V). Default: 0.0",
+                    "type": "number"
+                },
+                "vcu": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum value for voltage compensator output (V). Default: 0.0",
+                    "type": "number"
+                },
+                "vsmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum output signal (Vsmax). Default: 0.0",
+                    "type": "number"
+                },
+                "vsmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum output signal (Vsmin). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
