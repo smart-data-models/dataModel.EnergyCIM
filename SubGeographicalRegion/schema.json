@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SubGeographicalRegion/schema.json",
-  "title": " Smart Data Models - SubGeographicalRegion",
-  "description": "Adapted from CIM data models. A subset of a geographical region of a power system network model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "SubGeographicalRegion"
-        ],
-        "description": "Property. NGSI type. It has to be SubGeographicalRegion"
-    },
-    "DCLines": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
-        "type": "number"
-    },
-    "Lines": {
-        "description": "Property. Model:'https://schema.org/Number'. The lines within the sub-geographical region. Default: 'list'",
-        "type": "number"
-    },
-    "Region": {
-        "description": "Property. Model:'https://schema.org/Number'. The geographical region to which this sub-geographical region is within. Default: None",
-        "type": "number"
-    },
-    "Substations": {
-        "description": "Property. Model:'https://schema.org/Number'. The substations in this sub-geographical region. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SubGeographicalRegion/schema.json",
+    "title": " Smart Data Models - SubGeographicalRegion",
+    "description": "Adapted from CIM data models. A subset of a geographical region of a power system network model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "SubGeographicalRegion"
+                    ],
+                    "description": "Property. NGSI type. It has to be SubGeographicalRegion"
+                },
+                "DCLines": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 'list'",
+                    "type": "number"
+                },
+                "Lines": {
+                    "description": "Property. Model:'https://schema.org/Number'. The lines within the sub-geographical region. Default: 'list'",
+                    "type": "number"
+                },
+                "Region": {
+                    "description": "Property. Model:'https://schema.org/Number'. The geographical region to which this sub-geographical region is within. Default: None",
+                    "type": "number"
+                },
+                "Substations": {
+                    "description": "Property. Model:'https://schema.org/Number'. The substations in this sub-geographical region. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
