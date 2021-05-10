@@ -1,40 +1,39 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReactivePower/schema.json",
-  "title": " Smart Data Models - ReactivePower",
-  "description": "Adapted from CIM data models. Product of RMS value of the voltage and the RMS value of the quadrature component of the current.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ReactivePower"
-        ],
-        "description": "Property. NGSI type. It has to be ReactivePower"
-    },
-    "multiplier": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "unit": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: None",
-        "type": "number"
-    },
-    "value": {
-        "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReactivePower/schema.json",
+    "title": " Smart Data Models - ReactivePower",
+    "description": "Adapted from CIM data models. Product of RMS value of the voltage and the RMS value of the quadrature component of the current.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ReactivePower"
+                    ],
+                    "description": "Property. NGSI type. It has to be ReactivePower"
+                },
+                "multiplier": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "unit": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: None",
+                    "type": "number"
+                },
+                "value": {
+                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
