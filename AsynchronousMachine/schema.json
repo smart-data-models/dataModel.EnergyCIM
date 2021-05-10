@@ -1,72 +1,71 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachine/schema.json",
-  "title": " Smart Data Models - AsynchronousMachine",
-  "description": "Adapted from CIM data models. A rotating machine whose shaft rotates asynchronously with the electrical field.  Also known as an induction machine with no external connection to the rotor windings, e.g squirrel-cage induction machine.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "AsynchronousMachine"
-        ],
-        "description": "Property. NGSI type. It has to be AsynchronousMachine"
-    },
-    "AsynchronousMachineDynamics": {
-        "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine dynamics model used to describe dynamic behavior of this asynchronous machine. Default: None",
-        "type": "number"
-    },
-    "asynchronousMachineType": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates the type of Asynchronous Machine (motor or generator). Default: None",
-        "type": "number"
-    },
-    "converterFedDrive": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates whether the machine is a converter fed drive. Used for short circuit data exchange according to IEC 60909 Default: False",
-        "type": "number"
-    },
-    "efficiency": {
-        "description": "Property. Model:'https://schema.org/Number'. Efficiency of the asynchronous machine at nominal operation in percent. Indicator for converter drive motors. Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "iaIrRatio": {
-        "description": "Property. Model:'https://schema.org/Number'. Ratio of locked-rotor current to the rated current of the motor (Ia/Ir). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    },
-    "nominalFrequency": {
-        "description": "Property. Model:'https://schema.org/Number'. Nameplate data indicates if the machine is 50 or 60 Hz. Default: 0.0",
-        "type": "number"
-    },
-    "nominalSpeed": {
-        "description": "Property. Model:'https://schema.org/Number'. Nameplate data.  Depends on the slip and number of pole pairs. Default: 0.0",
-        "type": "number"
-    },
-    "polePairNumber": {
-        "description": "Property. Model:'https://schema.org/Number'. Number of pole pairs of stator. Used for short circuit data exchange according to IEC 60909 Default: 0",
-        "type": "number"
-    },
-    "ratedMechanicalPower": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated mechanical power (Pr in the IEC 60909-0). Used for short circuit data exchange according to IEC 60909. Default: 0.0",
-        "type": "number"
-    },
-    "reversible": {
-        "description": "Property. Model:'https://schema.org/Number'. Indicates for converter drive motors if the power can be reversible. Used for short circuit data exchange according to IEC 60909 Default: False",
-        "type": "number"
-    },
-    "rxLockedRotorRatio": {
-        "description": "Property. Model:'https://schema.org/Number'. Locked rotor ratio (R/X). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachine/schema.json",
+    "title": " Smart Data Models - AsynchronousMachine",
+    "description": "Adapted from CIM data models. A rotating machine whose shaft rotates asynchronously with the electrical field.  Also known as an induction machine with no external connection to the rotor windings, e.g squirrel-cage induction machine.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "AsynchronousMachine"
+                    ],
+                    "description": "Property. NGSI type. It has to be AsynchronousMachine"
+                },
+                "AsynchronousMachineDynamics": {
+                    "description": "Property. Model:'https://schema.org/Number'. Asynchronous machine dynamics model used to describe dynamic behavior of this asynchronous machine. Default: None",
+                    "type": "number"
+                },
+                "asynchronousMachineType": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates the type of Asynchronous Machine (motor or generator). Default: None",
+                    "type": "number"
+                },
+                "converterFedDrive": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates whether the machine is a converter fed drive. Used for short circuit data exchange according to IEC 60909 Default: False",
+                    "type": "number"
+                },
+                "efficiency": {
+                    "description": "Property. Model:'https://schema.org/Number'. Efficiency of the asynchronous machine at nominal operation in percent. Indicator for converter drive motors. Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "iaIrRatio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ratio of locked-rotor current to the rated current of the motor (Ia/Ir). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                },
+                "nominalFrequency": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nameplate data indicates if the machine is 50 or 60 Hz. Default: 0.0",
+                    "type": "number"
+                },
+                "nominalSpeed": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nameplate data.  Depends on the slip and number of pole pairs. Default: 0.0",
+                    "type": "number"
+                },
+                "polePairNumber": {
+                    "description": "Property. Model:'https://schema.org/Number'. Number of pole pairs of stator. Used for short circuit data exchange according to IEC 60909 Default: 0",
+                    "type": "number"
+                },
+                "ratedMechanicalPower": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated mechanical power (Pr in the IEC 60909-0). Used for short circuit data exchange according to IEC 60909. Default: 0.0",
+                    "type": "number"
+                },
+                "reversible": {
+                    "description": "Property. Model:'https://schema.org/Number'. Indicates for converter drive motors if the power can be reversible. Used for short circuit data exchange according to IEC 60909 Default: False",
+                    "type": "number"
+                },
+                "rxLockedRotorRatio": {
+                    "description": "Property. Model:'https://schema.org/Number'. Locked rotor ratio (R/X). Used for short circuit data exchange according to IEC 60909 Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
