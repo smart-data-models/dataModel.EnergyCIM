@@ -1,44 +1,43 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PerLengthDCLineParameter/schema.json",
-  "title": " Smart Data Models - PerLengthDCLineParameter",
-  "description": "Adapted from CIM data models. ",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "PerLengthDCLineParameter"
-        ],
-        "description": "Property. NGSI type. It has to be PerLengthDCLineParameter"
-    },
-    "DCLineSegments": {
-        "description": "Property. Model:'https://schema.org/Number'. All line segments described by this set of per-length parameters. Default: 'list'",
-        "type": "number"
-    },
-    "capacitance": {
-        "description": "Property. Model:'https://schema.org/Number'. Capacitance per unit of length of the DC line segment; significant for cables only. Default: 0.0",
-        "type": "number"
-    },
-    "inductance": {
-        "description": "Property. Model:'https://schema.org/Number'. Inductance per unit of length of the DC line segment. Default: 0.0",
-        "type": "number"
-    },
-    "resistance": {
-        "description": "Property. Model:'https://schema.org/Number'. Resistance per length of the DC line segment. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PerLengthDCLineParameter/schema.json",
+    "title": " Smart Data Models - PerLengthDCLineParameter",
+    "description": "Adapted from CIM data models. ",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "PerLengthDCLineParameter"
+                    ],
+                    "description": "Property. NGSI type. It has to be PerLengthDCLineParameter"
+                },
+                "DCLineSegments": {
+                    "description": "Property. Model:'https://schema.org/Number'. All line segments described by this set of per-length parameters. Default: 'list'",
+                    "type": "number"
+                },
+                "capacitance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Capacitance per unit of length of the DC line segment; significant for cables only. Default: 0.0",
+                    "type": "number"
+                },
+                "inductance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Inductance per unit of length of the DC line segment. Default: 0.0",
+                    "type": "number"
+                },
+                "resistance": {
+                    "description": "Property. Model:'https://schema.org/Number'. Resistance per length of the DC line segment. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
