@@ -1,108 +1,107 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST3A/schema.json",
-  "title": " Smart Data Models - ExcST3A",
-  "description": "Adapted from CIM data models. Modified IEEE ST3A static excitation system with added speed multiplier.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcST3A"
-        ],
-        "description": "Property. NGSI type. It has to be ExcST3A"
-    },
-    "efdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (Efdmax).  Typical Value = 6.9. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "kg": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "ki": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (Ki).  Typical Value = 4.83. Default: 0.0",
-        "type": "number"
-    },
-    "kj": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR gain (Kj).  Typical Value = 200. Default: 0.0",
-        "type": "number"
-    },
-    "km": {
-        "description": "Property. Model:'https://schema.org/Number'. Forward gain constant of the inner loop field regulator (Km).  Typical Value = 7.04. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential source gain (Kp) (>0).  Typical Value = 4.37. Default: 0.0",
-        "type": "number"
-    },
-    "ks": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "ks1": {
-        "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks1).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 6.67. Default: 0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "thetap": {
-        "description": "Property. Model:'https://schema.org/Number'. Potential circuit phase angle (thetap).  Typical Value = 20. Default: 0.0",
-        "type": "number"
-    },
-    "tm": {
-        "description": "Property. Model:'https://schema.org/Number'. Forward time constant of inner loop field regulator (Tm).  Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "vbmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum excitation voltage (Vbmax).  Typical Value = 8.63. Default: 0.0",
-        "type": "number"
-    },
-    "vgmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop feedback voltage (Vgmax).  Typical Value = 6.53. Default: 0.0",
-        "type": "number"
-    },
-    "vimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (Vimax).  Typical Value = 0.2. Default: 0.0",
-        "type": "number"
-    },
-    "vimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (Vimin).  Typical Value = -0.2. Default: 0.0",
-        "type": "number"
-    },
-    "vrmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "vrmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "xl": {
-        "description": "Property. Model:'https://schema.org/Number'. Reactance associated with potential source (Xl).  Typical Value = 0.09. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST3A/schema.json",
+    "title": " Smart Data Models - ExcST3A",
+    "description": "Adapted from CIM data models. Modified IEEE ST3A static excitation system with added speed multiplier.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcST3A"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcST3A"
+                },
+                "efdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (Efdmax).  Typical Value = 6.9. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "kg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit gain coefficient (Ki).  Typical Value = 4.83. Default: 0.0",
+                    "type": "number"
+                },
+                "kj": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR gain (Kj).  Typical Value = 200. Default: 0.0",
+                    "type": "number"
+                },
+                "km": {
+                    "description": "Property. Model:'https://schema.org/Number'. Forward gain constant of the inner loop field regulator (Km).  Typical Value = 7.04. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential source gain (Kp) (>0).  Typical Value = 4.37. Default: 0.0",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ks1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tb).  Typical Value = 6.67. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "thetap": {
+                    "description": "Property. Model:'https://schema.org/Number'. Potential circuit phase angle (thetap).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "tm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Forward time constant of inner loop field regulator (Tm).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "vbmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum excitation voltage (Vbmax).  Typical Value = 8.63. Default: 0.0",
+                    "type": "number"
+                },
+                "vgmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum inner loop feedback voltage (Vgmax).  Typical Value = 6.53. Default: 0.0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator input limit (Vimax).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "vimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator input limit (Vimin).  Typical Value = -0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "xl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reactance associated with potential source (Xl).  Typical Value = 0.09. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
