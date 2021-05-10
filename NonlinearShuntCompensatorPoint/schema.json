@@ -1,52 +1,51 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonlinearShuntCompensatorPoint/schema.json",
-  "title": " Smart Data Models - NonlinearShuntCompensatorPoint",
-  "description": "Adapted from CIM data models. A non linear shunt compensator bank or section admittance value.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "NonlinearShuntCompensatorPoint"
-        ],
-        "description": "Property. NGSI type. It has to be NonlinearShuntCompensatorPoint"
-    },
-    "NonlinearShuntCompensator": {
-        "description": "Property. Model:'https://schema.org/Number'. Non-linear shunt compensator owning this point. Default: None",
-        "type": "number"
-    },
-    "b": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) susceptance per section Default: 0.0",
-        "type": "number"
-    },
-    "b0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) susceptance per section Default: 0.0",
-        "type": "number"
-    },
-    "g": {
-        "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) conductance per section Default: 0.0",
-        "type": "number"
-    },
-    "g0": {
-        "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) conductance per section Default: 0.0",
-        "type": "number"
-    },
-    "sectionNumber": {
-        "description": "Property. Model:'https://schema.org/Number'. The number of the section. Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonlinearShuntCompensatorPoint/schema.json",
+    "title": " Smart Data Models - NonlinearShuntCompensatorPoint",
+    "description": "Adapted from CIM data models. A non linear shunt compensator bank or section admittance value.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "NonlinearShuntCompensatorPoint"
+                    ],
+                    "description": "Property. NGSI type. It has to be NonlinearShuntCompensatorPoint"
+                },
+                "NonlinearShuntCompensator": {
+                    "description": "Property. Model:'https://schema.org/Number'. Non-linear shunt compensator owning this point. Default: None",
+                    "type": "number"
+                },
+                "b": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) susceptance per section Default: 0.0",
+                    "type": "number"
+                },
+                "b0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) susceptance per section Default: 0.0",
+                    "type": "number"
+                },
+                "g": {
+                    "description": "Property. Model:'https://schema.org/Number'. Positive sequence shunt (charging) conductance per section Default: 0.0",
+                    "type": "number"
+                },
+                "g0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Zero sequence shunt (charging) conductance per section Default: 0.0",
+                    "type": "number"
+                },
+                "sectionNumber": {
+                    "description": "Property. Model:'https://schema.org/Number'. The number of the section. Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
