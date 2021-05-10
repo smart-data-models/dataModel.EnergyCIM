@@ -1,156 +1,155 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSK/schema.json",
-  "title": " Smart Data Models - ExcSK",
-  "description": "Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcSK"
-        ],
-        "description": "Property. NGSI type. It has to be ExcSK"
-    },
-    "efdmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage clipping limit (Efdmax). Default: 0.0",
-        "type": "number"
-    },
-    "efdmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Field voltage clipping limit (Efdmin). Default: 0.0",
-        "type": "number"
-    },
-    "emax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0",
-        "type": "number"
-    },
-    "emin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0",
-        "type": "number"
-    },
-    "k": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "k1": {
-        "description": "Property. Model:'https://schema.org/Number'. Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0",
-        "type": "number"
-    },
-    "kc": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kc).  Typical Value = 70. Default: 0.0",
-        "type": "number"
-    },
-    "kce": {
-        "description": "Property. Model:'https://schema.org/Number'. Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kd": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kgob": {
-        "description": "Property. Model:'https://schema.org/Number'. P controller gain (Kgob).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "kp": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kp).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "kqi": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "kqob": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate of rise of the reactive power (Kqob). Default: 0.0",
-        "type": "number"
-    },
-    "kqp": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kqp).  Typical Value = 0. Default: 0.0",
-        "type": "number"
-    },
-    "nq": {
-        "description": "Property. Model:'https://schema.org/Number'. Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0",
-        "type": "number"
-    },
-    "qconoff": {
-        "description": "Property. Model:'https://schema.org/Number'. Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False",
-        "type": "number"
-    },
-    "qz": {
-        "description": "Property. Model:'https://schema.org/Number'. Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0",
-        "type": "number"
-    },
-    "remote": {
-        "description": "Property. Model:'https://schema.org/Number'. Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False",
-        "type": "number"
-    },
-    "sbase": {
-        "description": "Property. Model:'https://schema.org/Number'. Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0",
-        "type": "number"
-    },
-    "tc": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0",
-        "type": "number"
-    },
-    "te": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant of gain block (Te).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "ti": {
-        "description": "Property. Model:'https://schema.org/Number'. PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0",
-        "type": "number"
-    },
-    "tp": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.1. Default: 0",
-        "type": "number"
-    },
-    "tr": {
-        "description": "Property. Model:'https://schema.org/Number'. Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0",
-        "type": "number"
-    },
-    "uimax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum error (Uimax).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "uimin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum error (UImin).  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "urmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum controller output (URmax).  Typical Value = 10. Default: 0.0",
-        "type": "number"
-    },
-    "urmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum controller output (URmin).  Typical Value = -10. Default: 0.0",
-        "type": "number"
-    },
-    "vtmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0",
-        "type": "number"
-    },
-    "vtmin": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0",
-        "type": "number"
-    },
-    "yp": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSK/schema.json",
+    "title": " Smart Data Models - ExcSK",
+    "description": "Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcSK"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcSK"
+                },
+                "efdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage clipping limit (Efdmax). Default: 0.0",
+                    "type": "number"
+                },
+                "efdmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage clipping limit (Efdmin). Default: 0.0",
+                    "type": "number"
+                },
+                "emax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "emin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kc).  Typical Value = 70. Default: 0.0",
+                    "type": "number"
+                },
+                "kce": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kgob": {
+                    "description": "Property. Model:'https://schema.org/Number'. P controller gain (Kgob).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kp).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kqi": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kqob": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate of rise of the reactive power (Kqob). Default: 0.0",
+                    "type": "number"
+                },
+                "kqp": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kqp).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "nq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0",
+                    "type": "number"
+                },
+                "qconoff": {
+                    "description": "Property. Model:'https://schema.org/Number'. Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "qz": {
+                    "description": "Property. Model:'https://schema.org/Number'. Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0",
+                    "type": "number"
+                },
+                "remote": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "sbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of gain block (Te).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "ti": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "uimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum error (Uimax).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "uimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum error (UImin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "urmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum controller output (URmax).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "urmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum controller output (URmin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "vtmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "vtmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0",
+                    "type": "number"
+                },
+                "yp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
