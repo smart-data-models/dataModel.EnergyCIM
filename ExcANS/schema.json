@@ -1,84 +1,83 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcANS/schema.json",
-  "title": " Smart Data Models - ExcANS",
-  "description": "Adapted from CIM data models. Italian excitation system. It represents static field voltage or excitation current feedback excitation system.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "ExcANS"
-        ],
-        "description": "Property. NGSI type. It has to be ExcANS"
-    },
-    "blint": {
-        "description": "Property. Model:'https://schema.org/Number'. Governor Control Flag (BLINT).  0 = lead-lag regulator 1 = proportional integral regulator. Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "ifmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum exciter current (I).  Typical Value = -5.2. Default: 0.0",
-        "type": "number"
-    },
-    "ifmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum exciter current (I).  Typical Value = 6.5. Default: 0.0",
-        "type": "number"
-    },
-    "k2": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter gain (K).  Typical Value = 20. Default: 0.0",
-        "type": "number"
-    },
-    "k3": {
-        "description": "Property. Model:'https://schema.org/Number'. AVR gain (K).  Typical Value = 1000. Default: 0.0",
-        "type": "number"
-    },
-    "kce": {
-        "description": "Property. Model:'https://schema.org/Number'. Ceiling factor (K).  Typical Value = 1. Default: 0.0",
-        "type": "number"
-    },
-    "krvecc": {
-        "description": "Property. Model:'https://schema.org/Number'. Feedback enabling (K).  0 = Open loop control 1 = Closed loop control. Typical Value = 1. Default: 0",
-        "type": "number"
-    },
-    "kvfif": {
-        "description": "Property. Model:'https://schema.org/Number'. Rate feedback signal flag (K).  0 = output voltage of the exciter 1 = exciter field current. Typical Value = 0. Default: 0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T).  Typical Value = 20. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T).  Typical Value = 0.05. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time constant (T).  Typical Value = 1.6. Default: 0",
-        "type": "number"
-    },
-    "tb": {
-        "description": "Property. Model:'https://schema.org/Number'. Exciter time constant (T).  Typical Value = 0.04. Default: 0",
-        "type": "number"
-    },
-    "vrmn": {
-        "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (V).  Typical Value = -5.2. Default: 0.0",
-        "type": "number"
-    },
-    "vrmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum AVR output (V).  Typical Value = 6.5. Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcANS/schema.json",
+    "title": " Smart Data Models - ExcANS",
+    "description": "Adapted from CIM data models. Italian excitation system. It represents static field voltage or excitation current feedback excitation system.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcANS"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcANS"
+                },
+                "blint": {
+                    "description": "Property. Model:'https://schema.org/Number'. Governor Control Flag (BLINT).  0 = lead-lag regulator 1 = proportional integral regulator. Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "ifmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum exciter current (I).  Typical Value = -5.2. Default: 0.0",
+                    "type": "number"
+                },
+                "ifmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum exciter current (I).  Typical Value = 6.5. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter gain (K).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "k3": {
+                    "description": "Property. Model:'https://schema.org/Number'. AVR gain (K).  Typical Value = 1000. Default: 0.0",
+                    "type": "number"
+                },
+                "kce": {
+                    "description": "Property. Model:'https://schema.org/Number'. Ceiling factor (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "krvecc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback enabling (K).  0 = Open loop control 1 = Closed loop control. Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "kvfif": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback signal flag (K).  0 = output voltage of the exciter 1 = exciter field current. Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T).  Typical Value = 20. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (T).  Typical Value = 1.6. Default: 0",
+                    "type": "number"
+                },
+                "tb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter time constant (T).  Typical Value = 0.04. Default: 0",
+                    "type": "number"
+                },
+                "vrmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum AVR output (V).  Typical Value = -5.2. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum AVR output (V).  Typical Value = 6.5. Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
