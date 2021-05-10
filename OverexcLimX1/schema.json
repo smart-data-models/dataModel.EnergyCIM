@@ -1,68 +1,67 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLimX1/schema.json",
-  "title": " Smart Data Models - OverexcLimX1",
-  "description": "Adapted from CIM data models. Field voltage over excitation limiter.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "OverexcLimX1"
-        ],
-        "description": "Property. NGSI type. It has to be OverexcLimX1"
-    },
-    "efd1": {
-        "description": "Property. Model:'https://schema.org/Number'. Low voltage point on the inverse time characteristic (EFD).  Typical Value = 1.1. Default: 0.0",
-        "type": "number"
-    },
-    "efd2": {
-        "description": "Property. Model:'https://schema.org/Number'. Mid voltage point on the inverse time characteristic (EFD).  Typical Value = 1.2. Default: 0.0",
-        "type": "number"
-    },
-    "efd3": {
-        "description": "Property. Model:'https://schema.org/Number'. High voltage point on the inverse time characteristic (EFD).  Typical Value = 1.5. Default: 0.0",
-        "type": "number"
-    },
-    "efddes": {
-        "description": "Property. Model:'https://schema.org/Number'. Desired field voltage (EFD).  Typical Value = 0.9. Default: 0.0",
-        "type": "number"
-    },
-    "efdrated": {
-        "description": "Property. Model:'https://schema.org/Number'. Rated field voltage (EFD).  Typical Value = 1.05. Default: 0.0",
-        "type": "number"
-    },
-    "kmx": {
-        "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 0.01. Default: 0.0",
-        "type": "number"
-    },
-    "t1": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the low voltage point on the inverse time characteristic (TIME).  Typical Value = 120. Default: 0",
-        "type": "number"
-    },
-    "t2": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the mid voltage point on the inverse time characteristic (TIME).  Typical Value = 40. Default: 0",
-        "type": "number"
-    },
-    "t3": {
-        "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the high voltage point on the inverse time characteristic (TIME).  Typical Value = 15. Default: 0",
-        "type": "number"
-    },
-    "vlow": {
-        "description": "Property. Model:'https://schema.org/Number'. Low voltage limit (V) (>0). Default: 0.0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/OverexcLimX1/schema.json",
+    "title": " Smart Data Models - OverexcLimX1",
+    "description": "Adapted from CIM data models. Field voltage over excitation limiter.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "OverexcLimX1"
+                    ],
+                    "description": "Property. NGSI type. It has to be OverexcLimX1"
+                },
+                "efd1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low voltage point on the inverse time characteristic (EFD).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "efd2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Mid voltage point on the inverse time characteristic (EFD).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "efd3": {
+                    "description": "Property. Model:'https://schema.org/Number'. High voltage point on the inverse time characteristic (EFD).  Typical Value = 1.5. Default: 0.0",
+                    "type": "number"
+                },
+                "efddes": {
+                    "description": "Property. Model:'https://schema.org/Number'. Desired field voltage (EFD).  Typical Value = 0.9. Default: 0.0",
+                    "type": "number"
+                },
+                "efdrated": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rated field voltage (EFD).  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "kmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 0.01. Default: 0.0",
+                    "type": "number"
+                },
+                "t1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the low voltage point on the inverse time characteristic (TIME).  Typical Value = 120. Default: 0",
+                    "type": "number"
+                },
+                "t2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the mid voltage point on the inverse time characteristic (TIME).  Typical Value = 40. Default: 0",
+                    "type": "number"
+                },
+                "t3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time to trip the exciter at the high voltage point on the inverse time characteristic (TIME).  Typical Value = 15. Default: 0",
+                    "type": "number"
+                },
+                "vlow": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low voltage limit (V) (>0). Default: 0.0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
