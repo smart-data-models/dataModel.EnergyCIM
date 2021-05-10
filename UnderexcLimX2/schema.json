@@ -1,56 +1,55 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimX2/schema.json",
-  "title": " Smart Data Models - UnderexcLimX2",
-  "description": "Adapted from CIM data models. ",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "UnderexcLimX2"
-        ],
-        "description": "Property. NGSI type. It has to be UnderexcLimX2"
-    },
-    "kf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Differential gain (Kf2). Default: 0.0",
-        "type": "number"
-    },
-    "km": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit gain (Km). Default: 0.0",
-        "type": "number"
-    },
-    "melmax": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit value (MELMAX). Default: 0.0",
-        "type": "number"
-    },
-    "qo": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation center setting (Qo). Default: 0.0",
-        "type": "number"
-    },
-    "r": {
-        "description": "Property. Model:'https://schema.org/Number'. Excitation radius (R). Default: 0.0",
-        "type": "number"
-    },
-    "tf2": {
-        "description": "Property. Model:'https://schema.org/Number'. Differential time constant (Tf2) (>0). Default: 0",
-        "type": "number"
-    },
-    "tm": {
-        "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit time constant (Tm). Default: 0",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimX2/schema.json",
+    "title": " Smart Data Models - UnderexcLimX2",
+    "description": "Adapted from CIM data models. ",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "UnderexcLimX2"
+                    ],
+                    "description": "Property. NGSI type. It has to be UnderexcLimX2"
+                },
+                "kf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Differential gain (Kf2). Default: 0.0",
+                    "type": "number"
+                },
+                "km": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit gain (Km). Default: 0.0",
+                    "type": "number"
+                },
+                "melmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit value (MELMAX). Default: 0.0",
+                    "type": "number"
+                },
+                "qo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation center setting (Qo). Default: 0.0",
+                    "type": "number"
+                },
+                "r": {
+                    "description": "Property. Model:'https://schema.org/Number'. Excitation radius (R). Default: 0.0",
+                    "type": "number"
+                },
+                "tf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Differential time constant (Tf2) (>0). Default: 0",
+                    "type": "number"
+                },
+                "tm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum excitation limit time constant (Tm). Default: 0",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
