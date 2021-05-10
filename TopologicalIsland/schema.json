@@ -1,36 +1,35 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TopologicalIsland/schema.json",
-  "title": " Smart Data Models - TopologicalIsland",
-  "description": "Adapted from CIM data models. An electrically connected subset of the network. Topological islands can change as the current network state changes: e.g. due to  - disconnect switches or breakers change state in a SCADA/EMS - manual creation, change or deletion of topological nodes in a planning tool.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    { 
-    "properties": 
-    {
-    "type": {
-        "type": "string",
-        "enum": [
-            "TopologicalIsland"
-        ],
-        "description": "Property. NGSI type. It has to be TopologicalIsland"
-    },
-    "AngleRefTopologicalNode": {
-        "description": "Property. Model:'https://schema.org/Number'. The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional. Default: None",
-        "type": "number"
-    },
-    "TopologicalNodes": {
-        "description": "Property. Model:'https://schema.org/Number'. A topological node belongs to a topological island. Default: 'list'",
-        "type": "number"
-    }
-}
-    }
-  ]
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TopologicalIsland/schema.json",
+    "title": " Smart Data Models - TopologicalIsland",
+    "description": "Adapted from CIM data models. An electrically connected subset of the network. Topological islands can change as the current network state changes: e.g. due to  - disconnect switches or breakers change state in a SCADA/EMS - manual creation, change or deletion of topological nodes in a planning tool.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "TopologicalIsland"
+                    ],
+                    "description": "Property. NGSI type. It has to be TopologicalIsland"
+                },
+                "AngleRefTopologicalNode": {
+                    "description": "Property. Model:'https://schema.org/Number'. The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional. Default: None",
+                    "type": "number"
+                },
+                "TopologicalNodes": {
+                    "description": "Property. Model:'https://schema.org/Number'. A topological node belongs to a topological island. Default: 'list'",
+                    "type": "number"
+                }
+            }
+        }
+    ]
 }
