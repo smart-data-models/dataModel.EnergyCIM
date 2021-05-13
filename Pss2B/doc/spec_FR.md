@@ -1,13 +1,14 @@
 Entité : Pss2B  
 ==============  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss2B/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Modèle IEEE PSS2B modifié.  Bloc supplémentaire d'avance/retard (ou taux) ajouté à la fin (jusqu'à 4 avance/retard au total).**  
 
 ## Liste des propriétés  
 
 - `a`: Constante du numérateur (a).  Valeur typique = 1. Valeur par défaut : 0.0  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inputSignal1Type`: Type de signal d'entrée #1.  Valeur typique = rotorSpeed. Valeur par défaut : Aucun  - `inputSignal2Type`: Type de signal d'entrée n°2.  Valeur typique = generatorElectricalPower. Valeur par défaut : Aucun  - `ks1`: Gain du stabilisateur (Ks1).  Valeur typique = 12. Valeur par défaut : 0.0  - `ks2`: Gain sur le signal #2 (Ks2).  Valeur typique = 0.2. Valeur par défaut : 0.0  - `ks3`: Gain sur l'entrée du signal #2 avant le filtre de suivi de rampe (Ks3).  Valeur typique = 1. Valeur par défaut : 0.0  - `ks4`: Gain sur l'entrée du signal n°2 après le filtre de suivi de rampe (Ks4).  Valeur typique = 1. Valeur par défaut : 0.0  - `location`:   - `m`: Ordre du dénominateur du filtre de suivi de rampe (M).  Valeur typique = 5. Valeur par défaut : 0  - `n`: Ordre du filtre de suivi de rampe (N).  Valeur typique = 1. Valeur par défaut : 0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps d'avance/retard (T1).  Valeur typique = 0.12. Valeur par défaut : 0  - `t10`: Constante de temps d'avance/retard (T10).  Valeur typique = 0. Valeur par défaut : 0  - `t11`: Constante de temps d'avance/retard (T11).  Valeur typique = 0. Valeur par défaut : 0  - `t2`: Constante de temps d'avance/retard (T2).  Valeur typique = 0,02. Valeur par défaut : 0  - `t3`: Constante de temps d'avance/retard (T3).  Valeur typique = 0,3. Valeur par défaut : 0  - `t4`: Constante de temps d'avance/retard (T4).  Valeur typique = 0,02. Valeur par défaut : 0  - `t6`: Constante de temps sur le signal #1 (T6).  Valeur typique = 0. Valeur par défaut : 0  - `t7`: Constante de temps sur le signal #2 (T7).  Valeur typique = 2. Valeur par défaut : 0  - `t8`: Plomb du filtre de suivi de rampe (T8).  Valeur typique = 0,2. Valeur par défaut : 0  - `t9`: Retard du filtre de suivi de rampe (T9).  Valeur typique = 0,1. Valeur par défaut : 0  - `ta`: Constante de plomb (Ta).  Valeur typique = 0. Valeur par défaut : 0  - `tb`: Constante de temps du retard (Tb).  Valeur typique = 0. Valeur par défaut : 0  - `tw1`: Premier washout sur le signal #1 (Tw1).  Valeur typique = 2. Valeur par défaut : 0  - `tw2`: Second washout sur le signal #1 (Tw2).  Valeur typique = 2. Valeur par défaut : 0  - `tw3`: Premier washout sur le signal n°2 (Tw3).  Valeur typique = 2. Valeur par défaut : 0  - `tw4`: Second washout sur le signal #2 (Tw4).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type de NGSI. Il faut que ce soit Pss2B  - `vsi1max`: Limite maximale du signal d'entrée #1 (Vsi1max).  Valeur typique = 2. Valeur par défaut : 0.0  - `vsi1min`: Limite min du signal d'entrée #1 (Vsi1min).  Valeur typique = -2. Valeur par défaut : 0.0  - `vsi2max`: Limite maximale du signal d'entrée #2 (Vsi2max).  Valeur typique = 2. Valeur par défaut : 0.0  - `vsi2min`: Signal d'entrée #2 limite min (Vsi2min).  Valeur typique = -2. Valeur par défaut : 0.0  - `vstmax`: Limite maximale de la sortie du stabilisateur (Vstmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vstmin`: Limite min de la sortie du stabilisateur (Vstmin).  Valeur typique = -0.1. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,14 +33,11 @@ Pss2B:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -281,8 +279,8 @@ Pss2B:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -411,7 +409,7 @@ Pss2B:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un Pss2B au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un Pss2B au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Pss2B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Pss2B au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Pss2B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Pss2B au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
