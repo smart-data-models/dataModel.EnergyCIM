@@ -1,13 +1,14 @@
 Entität: SynchronMachineEquivalentCircuit  
 =========================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SynchronousMachineEquivalentCircuit/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Die elektrischen Gleichungen für alle Varianten der Synchronmodelle basieren auf dem SynchronousEquivalentCircuit-Diagramm für die Direkt- und Quadraturachse.    = + = + * / ( + ) = + * * / ( * + * + * ) = + = + * / (+ ) = + ** / ( * + * + * ) = ( + ) / ( * ) = ( * + * + * ) / ( * * ( + ) = ( + ) / ( * ) = ( * + * +  * )/ ( * * ( + ) Gleiche Gleichungen unter Verwendung von CIM-Attributen aus der Klasse SynchronousMachineTimeConstantReactance auf der linken Seite des =-Zeichens und der Klasse SynchronousMachineEquivalentCircuit auf der rechten Seite (außer wie angegeben): xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.statorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.StatorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q) tpdo = (xad + xfd) / (2*pi*Nennfrequenz * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi*Nennfrequenz * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi*Nennfrequenz * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi*Nennfrequenz * r2q * (xaq + x1q).  Gelten nur für ein vereinfachtes Modell, bei dem die 'Canay'-Reaktanz Null ist.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `r1d`: D-Achsen-Dämpfer 1 Wicklungswiderstand. Voreinstellung: 0,0  - `r1q`: Wicklungswiderstand der Q-Achse Dämpfer 1. Voreinstellung: 0,0  - `r2q`: Q-Achsen-Dämpfer 2 Wicklungswiderstand. Voreinstellung: 0,0  - `rfd`: Widerstand der Feldwicklung. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss SynchronousMachineEquivalentCircuit sein  - `x1d`: D-Achsen-Dämpfer 1 Wicklungsleckreaktanz. Voreinstellung: 0,0  - `x1q`: Q-Achsendämpfer 1 Wicklungsleckreaktanz. Voreinstellung: 0,0  - `x2q`: Q-Achsen-Dämpfer 2 Wicklungsleckreaktanz. Voreinstellung: 0,0  - `xad`: Gegenseitige Reaktanz der D-Achse. Voreinstellung: 0,0  - `xaq`: Gegenseitige Reaktanz der Q-Achse. Voreinstellung: 0,0  - `xf1d`: Differentiale gegenseitige (`Canay`) Reaktanz. Voreinstellung: 0,0  - `xfd`: Streureaktanz der Feldwicklung. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ SynchronousMachineEquivalentCircuit:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -256,8 +254,8 @@ SynchronousMachineEquivalentCircuit:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
