@@ -1,13 +1,14 @@
 Entität: PssPTIST3  
 ==================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssPTIST3/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. PTI Mikroprozessorgestützter Stabilisator Typ 3.**  
 
 ## Liste der Eigenschaften  
 
 - `a0`: Filterkoeffizient (A0). Voreinstellung: 0,0  - `a1`: Begrenzer (Al). Voreinstellung: 0,0  - `a2`: Filterkoeffizient (A2). Voreinstellung: 0,0  - `a3`: Filterkoeffizient (A3). Voreinstellung: 0,0  - `a4`: Filterkoeffizient (A4). Voreinstellung: 0,0  - `a5`: Filterkoeffizient (A5). Voreinstellung: 0,0  - `address`: Die Postanschrift  - `al`: Begrenzer (Al). Voreinstellung: 0,0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `athres`: Schwellenwert, über dem die Ausgangsmittelwertbildung umgangen wird (Athres).  Typischer Wert = 0,005. Voreinstellung: 0,0  - `b0`: Filterkoeffizient (B0). Voreinstellung: 0,0  - `b1`: Filterkoeffizient (B1). Voreinstellung: 0,0  - `b2`: Filterkoeffizient (B2). Voreinstellung: 0,0  - `b3`: Filterkoeffizient (B3). Voreinstellung: 0,0  - `b4`: Filterkoeffizient (B4). Voreinstellung: 0,0  - `b5`: Filterkoeffizient (B5). Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dl`: Begrenzer (Dl). Voreinstellung: 0.0  - `dtc`: Zeitschritt bezogen auf die Aktivierung der Steuerung (0,03 für 50 Hz) (Dtc).  Typischer Wert = 0,025. Voreinstellung: 0  - `dtf`: Berechnung der Zeitschrittfrequenz (0,03 für 50 Hz) (Dtf).  Typischer Wert = 0,025. Voreinstellung: 0  - `dtp`: Zeitschritt Wirkleistungsberechnung (0,015 für 50 Hz) (Dtp).  Typischer Wert = 0,0125. Voreinstellung: 0  - `id`: Eindeutiger Bezeichner der Entität  - `isw`: Schalter für digitalen/analogen Ausgang (Isw). true = analogen Ausgang erzeugen false = in digitalen Ausgang umwandeln, unter Verwendung der Stufenauswahltabelle. Voreinstellung: Falsch  - `k`: Verstärkung (K).  Typischer Wert = 9. Voreinstellung: 0.0  - `location`:   - `lthres`: Schwellwert (Lthres). Voreinstellung: 0,0  - `m`: (M).  M=2*H.  Typischer Wert = 5. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `nav`: Anzahl der zu mittelnden Steuerausgänge (Nav) (1 <= Nav <= 16).  Typischer Wert = 4. Voreinstellung: 0.0  - `ncl`: Anzahl der Zählungen am Limit zur aktiven Limitfunktion (Ncl) (>0). Voreinstellung: 0.0  - `ncr`: Anzahl der Zählungen bis zum Reset nach Auslösen der Grenzwertfunktion (Ncr). Voreinstellung: 0.0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmin`: (Pmin). Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Zeitkonstante (T1).  Typischer Wert = 0,3. Voreinstellung: 0  - `t2`: Zeitkonstante (T2).  Typischer Wert = 1. Voreinstellung: 0  - `t3`: Zeitkonstante (T3).  Typischer Wert = 0,2. Voreinstellung: 0  - `t4`: Zeitkonstante (T4).  Typischer Wert = 0,05. Voreinstellung: 0  - `t5`: Zeitkonstante (T5). Voreinstellung: 0  - `t6`: Zeitkonstante (T6). Voreinstellung: 0  - `tf`: Zeitkonstante (Tf).  Typischer Wert = 0,2. Voreinstellung: 0  - `tp`: Zeitkonstante (Tp).  Typischer Wert = 0,2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss PssPTIST3 sein    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -57,14 +58,11 @@ PssPTIST3:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -366,8 +364,8 @@ PssPTIST3:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -427,6 +425,6 @@ PssPTIST3:
 </details>    
 ## Beispiel-Nutzlasten  
 Nicht verfügbar das Beispiel eines PssPTIST3 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines PssPTIST3 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel eines PssPTIST3 im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel eines PssPTIST3 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel eines PssPTIST3 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
