@@ -1,13 +1,14 @@
 Entität: ExcIEEEST4B  
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST4B/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Die Klasse repräsentiert das Modell IEEE Std 421.5-2005 Typ ST4B. Dieses Modell ist eine Variation des Modells vom Typ ST3A, wobei ein Proportional- plus Integral- (PI-) Reglerblock die im Modell ST3A enthaltene Schleppzeiger-Reglercharakteristik ersetzt. Es werden sowohl Potential- als auch Compound-Source-Gleichrichter-Erregersysteme modelliert.  Die PI-Reglerblöcke haben Nicht-Windup-Grenzen, die dargestellt werden. Der Spannungsregler dieses Modells ist typischerweise digital implementiert.  Referenz: IEEE-Standard 421.5-2005 Abschnitt 7.4.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (K). Typischer Wert = 0,113. Voreinstellung: 0,0  - `kg`: Rückkopplungsverstärkungskonstante des Feldreglers der inneren Schleife (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `ki`: Potentialkreis-Verstärkungskoeffizient (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kim`: Integralverstärkungsausgang des Spannungsreglers (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kir`: Integrale Verstärkung des Spannungsreglers (K).  Typischer Wert = 10,75. Voreinstellung: 0.0  - `kp`: Potentialkreis-Verstärkungskoeffizient (K).  Typischer Wert = 9,3. Voreinstellung: 0,0  - `kpm`: Spannungsregler Proportionalverstärkungsausgang (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kpr`: Spannungsregler Proportionalverstärkung (K).  Typischer Wert = 10,75. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0,02. Voreinstellung: 0  - `thetap`: Phasenwinkel des Potentialkreises (thetap).  Typischer Wert = 0. Voreinstellung: 0.0  - `type`: NGSI-Typ. Es muss ExcIEEEST4B sein  - `vbmax`: Maximale Erregerspannung (V).  Typischer Wert = 11,63. Voreinstellung: 0.0  - `vmmax`: Maximaler Ausgang der inneren Schleife (V).  Typischer Wert = 99. Voreinstellung: 0.0  - `vmmin`: Minimaler Ausgang der inneren Schleife (V).  Typischer Wert = -99. Voreinstellung: 0,0  - `vrmax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 1. Voreinstellung: 0.0  - `vrmin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -0,87. Voreinstellung: 0,0  - `xl`: Reaktanz in Verbindung mit der Potenzialquelle (X).  Typischer Wert = 0,124. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcIEEEST4B:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -276,8 +274,8 @@ ExcIEEEST4B:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
