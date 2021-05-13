@@ -1,13 +1,14 @@
 Entidad: PssIEEE3B  
 ==================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssIEEE3B/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. La clase representa el modelo de estabilizador del sistema de potencia IEEE Std 421.5-2005 tipo PSS3B. El modelo PSS3B tiene dos entradas de potencia eléctrica y desviación de la frecuencia angular del rotor. Las señales se utilizan para derivar una señal de potencia mecánica equivalente.  Referencia: IEEE 3B 421.5-2005 Sección 8.3.**  
 
 ## Lista de propiedades  
 
 - `a1`: Parámetro del filtro Notch (A1).  Valor típico = 0,359. Por defecto: 0,0  - `a2`: Parámetro del filtro Notch (A2).  Valor típico = 0,586. Por defecto: 0,0  - `a3`: Parámetro del filtro Notch (A3).  Valor típico = 0,429. Por defecto: 0,0  - `a4`: Parámetro del filtro Notch (A4).  Valor típico = 0,564. Por defecto: 0,0  - `a5`: Parámetro del filtro Notch (A5).  Valor típico = 0,001. Por defecto: 0,0  - `a6`: Parámetro del filtro Notch (A6).  Valor típico = 0. Por defecto: 0.0  - `a7`: Parámetro del filtro Notch (A7).  Valor típico = 0,031. Por defecto: 0,0  - `a8`: Parámetro del filtro Notch (A8).  Valor típico = 0. Por defecto: 0.0  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `inputSignal1Type`: Tipo de señal de entrada #1.  Valor típico = generatorElectricalPower. Por defecto: Ninguno  - `inputSignal2Type`: Tipo de señal de entrada #2.  Valor típico = rotorSpeed. Por defecto: Ninguno  - `ks1`: Ganancia en la señal nº 1 (Ks1).  Valor típico = -0,602. Por defecto: 0,0  - `ks2`: Ganancia en la señal nº 2 (Ks2).  Valor típico = 30,12. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del transductor (T1).  Valor típico = 0,012. Por defecto: 0  - `t2`: Constante de tiempo del transductor (T2).  Valor típico = 0,012. Por defecto: 0  - `tw1`: Constante de tiempo de lavado (Tw1).  Valor típico = 0,3. Por defecto: 0  - `tw2`: Constante de tiempo de lavado (Tw2).  Valor típico = 0,3. Por defecto: 0  - `tw3`: Constante de tiempo de lavado (Tw3).  Valor típico = 0,6. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser PssIEEE3B  - `vstmax`: Límite máximo de salida del estabilizador (Vstmax).  Valor típico = 0,1. Por defecto: 0,0  - `vstmin`: Límite mínimo de salida del estabilizador (Vstmin).  Valor típico = -0,1. Por defecto: 0,0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -67,14 +68,11 @@ PssIEEE3B:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -296,8 +294,8 @@ PssIEEE3B:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -351,7 +349,7 @@ PssIEEE3B:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de una PssIEEE3B en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un PssIEEE3B en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una PssIEEE3B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un PssIEEE3B en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de una PssIEEE3B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un PssIEEE3B en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
