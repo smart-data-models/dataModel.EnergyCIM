@@ -1,13 +1,14 @@
 Entität: IdentifiedObject  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Dies ist eine Stammklasse, die eine gemeinsame Identifikation für alle Klassen bietet, die Identifikations- und Benennungsattribute benötigen.**  
 
 ## Liste der Eigenschaften  
 
 - `DiagramObjects`: Das Domänenobjekt, mit dem dieses Diagrammobjekt verknüpft ist. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Die Beschreibung ist ein freier, von Menschen lesbarer Text, der das Objekt beschreibt oder benennt. Er darf nicht eindeutig sein und muss nicht mit einer Namenshierarchie korrelieren. Standard: ''  - `energyIdentCodeEic`: Das Attribut wird für einen Austausch des EIC-Codes (Energy identification Code) verwendet. Die Länge der Zeichenkette beträgt 16 Zeichen, wie durch den EIC-Code definiert. Referenzen: Standard: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `mRID`: Master Resource Identifier, der von einer Modellautorität vergeben wird. Der mRID ist innerhalb eines Austauschkontexts global eindeutig. Die globale Eindeutigkeit wird einfach durch die Verwendung einer UUID, wie in RFC 4122 spezifiziert, für die mRID erreicht.  Die Verwendung von UUID wird dringend empfohlen. Für CIMXML-Datendateien in RDF-Syntax gemäß IEC 61970-552 Edition 1 wird die mRID auf die Attribute rdf:ID oder rdf:about abgebildet, die CIM-Objektelemente identifizieren. Voreinstellung: ''  - `name`: Der Name ist ein beliebiger freier, menschenlesbarer und möglicherweise nicht eindeutiger Text, der das Objekt benennt. Standard: ''  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortName`: Das Attribut wird für den Austausch eines menschenlesbaren Kurznamens mit einer Länge der Zeichenkette von maximal 12 Zeichen verwendet. Standard: ''  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss IdentifiedObject sein    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,14 +33,11 @@ IdentifiedObject:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -255,8 +253,8 @@ IdentifiedObject:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
