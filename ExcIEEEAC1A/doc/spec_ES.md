@@ -1,13 +1,14 @@
 Entidad: ExcIEEEAC1A  
 ====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEAC1A/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. La clase representa el modelo IEEE Std 421.5-2005 tipo AC1A. El modelo representa los sistemas de excitación del alternador-rectificador controlados por el campo designados como tipo AC1A. Estos sistemas de excitación constan de un excitador principal de alternador con rectificadores no controlados.  Referencia: Norma IEEE 421.5-2005, apartado 6.1.**  
 
 ## Lista de propiedades  
 
 - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 400. Por defecto: 0,0  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (K).  Valor típico = 0,2. Por defecto: 0,0  - `kd`: Factor de desmagnetización, en función de las reactancias del alternador de la excitadora (K).  Valor típico = 0,38. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de la excitación (K).  Valor típico = 0,03. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seve1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, V, detrás de la reactancia de conmutación (S[V]).  Valor típico = 0,1. Por defecto: 0,0  - `seve2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, V, detrás de la reactancia de conmutación (S[V]).  Valor típico = 0,03. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0,02. Por defecto: 0  - `tb`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tc`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 0,8. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEAC1A  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 14,5. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -14,5. Por defecto: 0,0  - `ve1`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (V).  Valor típico = 4,18. Por defecto: 0,0  - `ve2`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (V).  Valor típico = 3,14. Por defecto: 0,0  - `vrmax`: Salidas máximas del regulador de tensión (V).  Valor típico = 6,03. Por defecto: 0,0  - `vrmin`: Salidas mínimas del regulador de tensión (V).  Valor típico = -5,43. Por defecto: 0,0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcIEEEAC1A:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -261,8 +259,8 @@ ExcIEEEAC1A:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -346,7 +344,7 @@ ExcIEEEAC1A:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de una ExcIEEEAC1A en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcIEEEAC1A en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una ExcIEEEAC1A en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcIEEEAC1A en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de una ExcIEEEAC1A en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEAC1A en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
