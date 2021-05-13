@@ -1,13 +1,14 @@
 Entität: EquipmentVersion  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/EquipmentVersion/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Adaptiert von CIM-Datenmodellen. Details zur Version.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `baseUML`: Vom CIM-Modell-Manager bereitgestellte Basis-UML. Standard: ''  - `baseURIcore`: Profil-URI, die im Model Exchange Header verwendet wird und in IEC-Normen definiert ist.  Er identifiziert das Profil und seine Version eindeutig. Er wird nur zur Information angegeben und um das nächstgelegene IEC-Profil zu identifizieren, auf dem dieses CGMES-Profil basiert. Voreinstellung: ''  - `baseURIoperation`: Profil-URI, die im Model Exchange Header verwendet wird und in IEC-Normen definiert ist.  Er identifiziert das Profil und seine Version eindeutig. Er wird nur zur Information angegeben und um das nächstgelegene IEC-Profil zu identifizieren, auf dem dieses CGMES-Profil basiert. Voreinstellung: ''  - `baseURIshortCircuit`: Profil-URI, die im Model Exchange Header verwendet wird und in IEC-Normen definiert ist.  Er identifiziert das Profil und seine Version eindeutig. Er wird nur zur Information angegeben und um das nächstgelegene IEC-Profil zu identifizieren, auf dem dieses CGMES-Profil basiert. Voreinstellung: ''  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `date`: Profilerstellungsdatum Das Formular ist JJJJ-MM-TT, z. B. für den 5. Januar 2009 ist es der 2009-01-05. Standard: ''  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `differenceModelURI`: Differenzmodell-URI definiert durch IEC 61970-552. Standard: ''  - `entsoeUML`: UML, bereitgestellt von ENTSO-E. Standard: ''  - `entsoeURIcore`: Von ENTSO-E definierter Profil-URI, der im Header des Model Exchange verwendet wird.  Er identifiziert das Profil und seine Version eindeutig. Die letzten beiden Elemente im URI (http://entsoe.eu/CIM/EquipmentCore/yy/zzz) geben Haupt- und Nebenversionen an, wobei:  - yy - zeigt eine Hauptversion an; - zzz - zeigt eine Nebenversion an. Voreinstellung: ''  - `entsoeURIoperation`: Von ENTSO-E definierter Profil-URI, der im Header des Model Exchange verwendet wird.  Er identifiziert das Profil und seine Version eindeutig. Die letzten beiden Elemente im URI (http://entsoe.eu/CIM/EquipmentOperation/yy/zzz) geben Haupt- und Nebenversionen an, wobei:  - yy - zeigt eine Hauptversion an; - zzz - zeigt eine Nebenversion an. Voreinstellung: ''  - `entsoeURIshortCircuit`: Von ENTSO-E definierter Profil-URI, der im Header des Model Exchange verwendet wird.  Er identifiziert das Profil und seine Version eindeutig. Die letzten beiden Elemente im URI (http://entsoe.eu/CIM/EquipmentShortCircuit/yy/zzz) geben Haupt- und Nebenversionen an, wobei:  - yy - zeigt eine Hauptversion an; - zzz - zeigt eine Nebenversion an. Voreinstellung: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `modelDescriptionURI`: Modellbeschreibungs-URI definiert durch IEC 61970-552. Standard: ''  - `name`: Der Name dieses Elements.  - `namespaceRDF`: RDF-Namespace. Standard: ''  - `namespaceUML`: CIM UML-Namespace. Standard: ''  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortName`: Der Kurzname des Profils, der in der Profildokumentation verwendet wird. Standard: ''  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss EquipmentVersion sein    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ EquipmentVersion:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -301,8 +299,8 @@ EquipmentVersion:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
