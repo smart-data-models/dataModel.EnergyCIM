@@ -1,13 +1,14 @@
 Entität: ConnectivityNode  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ConnectivityNode/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Verbindungsknoten sind Punkte, an denen Klemmen von wechselstromführenden Geräten impedanzfrei miteinander verbunden sind.**  
 
 ## Liste der Eigenschaften  
 
 - `ConnectivityNodeContainer`: Container dieses Verbindungsknotens. Voreinstellung: Keine  - `Terminals`: Der Verbindungsknoten, mit dem sich diese Klemme impedanzfrei verbindet. Standard: 'list'  - `TopologicalNode`: Die Konnektivitätsknoten schließen sich zu diesem topologischen Knoten zusammen.  Kann vom aktuellen Zustand der Switches im Netzwerk abhängen. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `boundaryPoint`: Gibt an, ob ein Knoten ein BoundaryPoint ist. Bei boundaryPoint=true stellt der ConnectivityNode oder der TopologicalNode einen BoundaryPoint dar. Voreinstellung: False  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fromEndIsoCode`: Das Attribut dient zum Austausch des ISO-Codes der Region, zu der die "Von"-Seite des Begrenzungspunktes gehört oder mit der er verbunden ist. Der ISO-Code ist ein zweistelliger Ländercode gemäß ISO 3166 (). Die Länge des Strings beträgt maximal 2 Zeichen. Das Attribut ist ein erforderliches Attribut für das Boundary Model Authority Set, wobei dieses Attribut nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `fromEndName`: Das Attribut wird für den Austausch eines menschenlesbaren Namens mit einer Länge der Zeichenkette von maximal 32 Zeichen verwendet. Das Attribut deckt zwei Fälle ab:  Das Attribut wird für das Boundary Model Authority Set benötigt, wo es nur für den TopologicalNode im Profil Boundary Topology und ConnectivityNode im Profil Boundary Equipment verwendet wird. Voreinstellung: ''  - `fromEndNameTso`: Das Attribut dient zum Austausch des Namens des TSO, zu dem die "Von"-Seite des Begrenzungspunktes gehört oder mit dem er verbunden ist. Die Länge des Strings beträgt maximal 32 Zeichen. Das Attribut ist für das Boundary Model Authority Set erforderlich, wo es nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `toEndIsoCode`: Das Attribut dient zum Austausch des ISO-Codes der Region, zu der die "To"-Seite des Begrenzungspunktes gehört oder mit der er verbunden ist. Der ISO-Code ist ein zweistelliger Ländercode gemäß ISO 3166 (). Die Länge des Strings beträgt maximal 2 Zeichen. Das Attribut ist ein erforderliches Attribut für das Boundary Model Authority Set, wobei dieses Attribut nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `toEndName`: Das Attribut wird für den Austausch eines menschenlesbaren Namens mit einer Länge der Zeichenkette von maximal 32 Zeichen verwendet. Das Attribut deckt zwei Fälle ab:  Das Attribut wird für das Boundary Model Authority Set benötigt, wo es nur für den TopologicalNode im Profil Boundary Topology und ConnectivityNode im Profil Boundary Equipment verwendet wird. Voreinstellung: ''  - `toEndNameTso`: Das Attribut dient zum Austausch des Namens des TSO, zu dem die "To"-Seite des Boundary-Points gehört oder mit dem er verbunden ist. Die Länge des Strings beträgt maximal 32 Zeichen. Das Attribut ist für das Boundary Model Authority Set erforderlich, wo es nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `type`: NGSI-Typ. Es muss ConnectivityNode sein    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -42,14 +43,11 @@ ConnectivityNode:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -271,8 +269,8 @@ ConnectivityNode:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
