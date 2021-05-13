@@ -1,13 +1,14 @@
 Entidad: AsynchronousMachine  
 ============================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/AsynchronousMachine/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Máquina rotativa cuyo eje gira de forma asíncrona con el campo eléctrico.  También se conoce como máquina de inducción sin conexión externa a los devanados del rotor, por ejemplo, máquina de inducción de jaula de ardilla.**  
 
 ## Lista de propiedades  
 
 - `AsynchronousMachineDynamics`: Modelo de dinámica de la máquina asíncrona utilizado para describir el comportamiento dinámico de esta máquina asíncrona. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `asynchronousMachineType`: Indica el tipo de máquina asíncrona (motor o generador). Por defecto: Ninguno  - `converterFedDrive`: Indica si la máquina es un convertidor alimentado. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efficiency`: Eficiencia de la máquina asíncrona en funcionamiento nominal en porcentaje. Indicador para motores de accionamiento de convertidores. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  - `iaIrRatio`: Relación entre la corriente del rotor bloqueado y la corriente nominal del motor (Ia/Ir). Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `nominalFrequency`: Los datos de la placa de características indican si la máquina es de 50 o 60 Hz. Por defecto: 0.0  - `nominalSpeed`: Datos de la placa de características.  Depende del deslizamiento y del número de pares de polos. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `polePairNumber`: Número de pares de polos del estator. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  - `ratedMechanicalPower`: Potencia mecánica nominal (Pr en la IEC 60909-0). Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909. Por defecto: 0,0  - `reversible`: Indica para los motores de accionamiento del convertidor si la potencia puede ser reversible. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Por defecto: Falso  - `rxLockedRotorRatio`: Relación del rotor bloqueado (R/X). Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser AsynchronousMachine    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,14 +33,11 @@ AsynchronousMachine:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -291,8 +289,8 @@ AsynchronousMachine:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -311,7 +309,7 @@ AsynchronousMachine:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de una AsynchronousMachine en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una AsynchronousMachine en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una AsynchronousMachine en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una AsynchronousMachine en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de una AsynchronousMachine en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de una AsynchronousMachine en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
