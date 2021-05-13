@@ -1,13 +1,14 @@
 Entität: GovHydroDD  
 ===================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydroDD/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Doppelt abgeleiteter Hydroregler und Turbine.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aturb`: Turbinenzähler-Multiplikator (Aturb) (Hinweis 3).  Typischer Wert = -1. Standard: 0.0  - `bturb`: Turbinen-Nenner-Multiplikator (Bturb) (Hinweis 3).  Typischer Wert = 0,5. Standard: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Ungewolltes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gmax`: Maximale Toröffnung (Gmax).  Typischer Wert = 0. Voreinstellung: 0.0  - `gmin`: Minimale Toröffnung (Gmin).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv3`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv4`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv5`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv6`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `inputSignal`: Eingangssignalschalter (Flag). true = Pe-Eingang wird verwendet false = Rückmeldung wird von CV empfangen. Flag ist normalerweise abhängig von Tt.  Wenn Tf Null ist, wird Flag auf false gesetzt. Wenn Tf nicht Null ist, wird Flag auf true gesetzt.   Typischer Wert = true. Voreinstellung: Falsch  - `k1`: Einzelne Ableitungsverstärkung (K1).  Typischer Wert = 3,6. Voreinstellung: 0,0  - `k2`: Doppelte Ableitungsverstärkung (K2).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `kg`: Gate-Servo-Verstärkung (Kg).  Typischer Wert = 3. Voreinstellung: 0.0  - `ki`: Integrale Verstärkung (Ki).  Typischer Wert = 1. Voreinstellung: 0,0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv3`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv4`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv5`: Nichtlinearer Verstärkungspunkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv6`: Nichtlinearer Verstärkungspunkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Toröffnung, VE der MW-Basis (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Toröffnung, PU der MW-Basis (Pmin).  Typischer Wert = 0. Voreinstellung: 0.0  - `r`: Steady State Droop (R).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `td`: Eingangsfilter-Zeitkonstante (Td).  Typischer Wert = 0. Voreinstellung: 0  - `tf`: Auswaschzeitkonstante (Tf).  Typischer Wert = 0,1. Voreinstellung: 0  - `tp`: Gate-Servo-Zeitkonstante (Tp).  Typischer Wert = 0,35. Voreinstellung: 0  - `tt`: Zeitkonstante der Leistungsrückführung (Tt).  Typischer Wert = 0,02. Voreinstellung: 0  - `tturb`: Turbinenzeitkonstante (Tturb) (Hinweis 3).  Typischer Wert = 0,8. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydroDD sein  - `velcl`: Maximale Torschließgeschwindigkeit (Velcl).  Einheit = VE/sec.  Typischer Wert = -0,14. Voreinstellung: 0.0  - `velop`: Maximale Toröffnungsgeschwindigkeit (Velop).  Einheit = VE/sec.  Typischer Wert = 0,09. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ GovHydroDD:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -376,8 +374,8 @@ GovHydroDD:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
