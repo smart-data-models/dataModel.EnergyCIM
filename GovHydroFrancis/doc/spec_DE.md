@@ -1,13 +1,14 @@
 Entität: GovHydroFrancis  
 ========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydroFrancis/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Detaillierte Hydroeinheit - Francis-Modell.  Mit diesem Modell lassen sich drei Arten von Reglern darstellen. Eine schematische Darstellung des hydraulischen Systems von detaillierten Hydroaggregat-Modellen, wie Francis und Pelton, wird im Diagramm DetailedHydroModelHydraulicSystem bereitgestellt.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `am`: Öffnungsquerschnitt S bei maximalem Wirkungsgrad (Am).  Typischer Wert = 0,7. Voreinstellung: 0,0  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `av0`: Fläche des Wasserschlosses (A). Einheit = m. Typischer Wert = 30. Voreinstellung: 0.0  - `av1`: Fläche des Ausgleichsbehälters (A). Einheit = m. Typischer Wert = 700. Voreinstellung: 0.0  - `bp`: Droop (Bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (DB1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `etamax`: Maximaler Wirkungsgrad (EtaMax).  Typischer Wert = 1,05. Voreinstellung: 0,0  - `governorControl`: Reglersteuerungs-Flag (Cflag).  Typischer Wert = mechanicHydrolicTachoAccelerator. Voreinstellung: Keine  - `h1`: Höhe des Wasserspiegels der Ausgleichskammer in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 4. Voreinstellung: 0.0  - `h2`: Wasserspiegelhöhe des Wasserschlosses in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 40. Voreinstellung: 0.0  - `hn`: Hydraulische Nennförderhöhe (H).  Einheit = m. Typischer Wert = 250. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kc`: Verlustkoeffizient der Druckleitung (aufgrund von Reibung) (Kc).  Typischer Wert = 0,025. Standard: 0,0  - `kg`: Verlustkoeffizient von Wassertunnel und Wasserschloss (aufgrund von Reibung) (Kg).  Typischer Wert = 0,025. Voreinstellung: 0,0  - `kt`: Auswaschverstärkung (Kt).  Typischer Wert = 0,25. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qc0`: Leerlaufdurchfluss der Turbine bei Nennhöhe (Qc0).  Typischer Wert = 0,21. Voreinstellung: 0,0  - `qn`: Nenndurchfluss (Q). Einheit = m/s. Typischer Wert = 40. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Abgeleitete Verstärkung (Ta).  Typischer Wert = 3. Voreinstellung: 0  - `td`: Auswaschzeitkonstante (Td).  Typischer Wert = 3. Voreinstellung: 0  - `ts`: Gate-Servo-Zeitkonstante (Ts).  Typischer Wert = 0,5. Voreinstellung: 0  - `twnc`: Wasserträgheitszeitkonstante (Twnc).  Typischer Wert = 1. Voreinstellung: 0  - `twng`: Wassertunnel und Wasserschloss Trägheitszeitkonstante (Twng). Typischer Wert = 3. Voreinstellung: 0  - `tx`: Abgeleitete Rückkopplungsverstärkung (Tx).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydroFrancis sein  - `va`: Maximale Toröffnungsgeschwindigkeit (Va).  Einheit = VE/sec.  Typischer Wert = 0,011. Voreinstellung: 0,0  - `valvmax`: Maximale Toröffnung (ValvMax).  Typischer Wert = 1. Voreinstellung: 0.0  - `valvmin`: Minimale Toröffnung (ValvMin).  Typischer Wert = 0. Voreinstellung: 0.0  - `vc`: Maximale Torschließgeschwindigkeit (Vc).  Einheit = VE/sec.  Typischer Wert = -0,011. Voreinstellung: 0.0  - `waterTunnelSurgeChamberSimulation`: Wassertunnel- und Wasserschloss-Simulation (Tflag). true = Freigabe der Wassertunnel- und Wasserschloss-Simulation false = Sperrung der Wassertunnel- und Wasserschloss-Simulation. Typischer Wert = false. Voreinstellung: False  - `zsfc`: Höhe des oberen Wasserspiegels in Bezug auf die Höhe der Druckleitung (Zsfc).  Einheit = m. Typischer Wert = 25. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ GovHydroFrancis:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -311,8 +309,8 @@ GovHydroFrancis:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
