@@ -1,13 +1,14 @@
 Entidad: ExcREXS  
 ================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcREXS/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Modelo de sistema de excitación rotativo de uso general.  Este modelo puede utilizarse para representar una amplia gama de sistemas de excitación cuya fuente de energía de CC es un generador de CA o CC. Abarca los modelos de sistemas de excitación de tipo IEEE AC1, AC2, DC1 y DC2.**  
 
 ## Lista de propiedades  
 
 - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `e1`: Valor de la tensión de campo 1 (E1).  Valor típico = 3. Por defecto: 0,0  - `e2`: Valor de la tensión de campo 2 (E2).  Valor típico = 4. Por defecto: 0,0  - `fbf`: Bandera de señal de retroalimentación de velocidad (Fbf). Valor típico = fieldCurrent. Por defecto: Ninguno  - `flimf`: Bandera de tipo de límite (Flimf).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `kc`: Factor de regulación del rectificador (Kc).  Valor típico = 0,05. Por defecto: 0,0  - `kd`: Factor de regulación del excitador (Kd).  Valor típico = 2. Por defecto: 0,0  - `ke`: Constante proporcional de campo del excitador (Ke).  Valor típico = 1. Por defecto: 0,0  - `kefd`: Ganancia de retroalimentación de la tensión de campo (Kefd).  Valor típico = 0. Por defecto: 0.0  - `kf`: Ganancia de retroalimentación de velocidad (Kf).  Valor típico = 0,05. Por defecto: 0  - `kh`: Ganancia de retroalimentación del controlador de tensión de campo (Kh).  Valor típico = 0. Por defecto: 0.0  - `kii`: Ganancia integral del regulador de corriente de campo (Kii).  Valor típico = 0. Por defecto: 0.0  - `kip`: Ganancia proporcional del regulador de corriente de campo (Kip).  Valor típico = 1. Por defecto: 0,0  - `ks`: Coeficiente para permitir un uso diferente del coeficiente de velocidad del modelo (Ks).  Valor típico = 0. Por defecto: 0.0  - `kvi`: Ganancia integral del regulador de tensión (Kvi).  Valor típico = 0. Por defecto: 0.0  - `kvp`: Ganancia proporcional del regulador de tensión (Kvp).  Valor típico = 2800. Por defecto: 0,0  - `kvphz`: Ganancia del limitador V/Hz (Kvphz).  Valor típico = 0. Por defecto: 0.0  - `location`:   - `name`: El nombre de este artículo.  - `nvphz`: Velocidad de captación del limitador V/Hz (Nvphz).  Valor típico = 0. Por defecto: 0.0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `se1`: Factor de saturación en E1 (Se1).  Valor típico = 0,0001. Por defecto: 0,0  - `se2`: Factor de saturación en E2 (Se2).  Valor típico = 0,001. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (Ta).  Valor típico = 0,01. Por defecto: 0  - `tb1`: Constante de tiempo de retardo (Tb1).  Valor típico = 0. Por defecto: 0  - `tb2`: Constante de tiempo de retardo (Tb2).  Valor típico = 0. Por defecto: 0  - `tc1`: Constante de tiempo de espera (Tc1).  Valor típico = 0. Por defecto: 0  - `tc2`: Constante de tiempo de espera (Tc2).  Valor típico = 0. Por defecto: 0  - `te`: Constante de tiempo del campo excitador (Te).  Valor típico = 1,2. Por defecto: 0  - `tf`: Constante de tiempo de retroalimentación de la tasa (Tf).  Valor típico = 1. Por defecto: 0  - `tf1`: Constante de tiempo de retroalimentación (Tf1).  Valor típico = 0. Por defecto: 0  - `tf2`: Constante de tiempo de retardo de retroalimentación (Tf2).  Valor típico = 0. Por defecto: 0  - `tp`: Constante de tiempo del puente de corriente de campo (Tp).  Valor típico = 0. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcREXS  - `vcmax`: Tensión máxima de composición (Vcmax).  Valor típico = 0. Por defecto: 0.0  - `vfmax`: Corriente de campo máxima del excitador (Vfmax).  Valor típico = 47. Por defecto: 0,0  - `vfmin`: Corriente mínima de campo del excitador (Vfmin).  Valor típico = -20. Por defecto: 0,0  - `vimax`: Límite de entrada del regulador de tensión (Vimax).  Valor típico = 0,1. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador (Vrmax).  Valor típico = 47. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador (Vrmin).  Valor típico = -20. Por defecto: 0,0  - `xc`: Reactancia de composición del excitador (Xc).  Valor típico = 0. Por defecto: 0.0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcREXS:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -331,8 +329,8 @@ ExcREXS:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -436,7 +434,7 @@ ExcREXS:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcREXS en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcREXS en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcREXS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcREXS en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcREXS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcREXS en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
