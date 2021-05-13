@@ -1,13 +1,14 @@
 Entität: SynchronousMachine  
 ===========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SynchronousMachine/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Ein elektromechanisches Gerät, das mit einer Welle arbeitet, die sich synchron mit dem Netz dreht. Es handelt sich um eine einzelne Maschine, die entweder als Generator oder als synchroner Kondensator oder Pumpe arbeitet.**  
 
 ## Liste der Eigenschaften  
 
 - `InitialReactiveCapabilityCurve`: Synchrone Maschinen verwenden diese Kurve als Standard. Voreinstellung: Keine  - `SynchronousMachineDynamics`: Dynamikmodell der Synchronmaschine, das zur Beschreibung des dynamischen Verhaltens dieser Synchronmaschine verwendet wird. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `earthing`: Zeigt an, ob der Generator geerdet ist oder nicht. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Default: False  - `earthingStarPointR`: Generator-Sternpunkt-Erdungswiderstand (Re). Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Default: 0.0  - `earthingStarPointX`: Generator-Sternpunkt-Erdungsreaktanz (Xe). Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet Default: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ikk`: Stationärer Kurzschlussstrom (in A für das Profil) des Generators mit Verbunderregung bei 3-phasigem Kurzschluss. - Ikk=0: Generator ohne Fremderregung. - Ikk?0: Generator mit Verbunderregung. Ikk wird zur Berechnung des minimalen stationären Kurzschlussstroms für Generatoren mit Verbunderregung verwendet (Abschnitt 4.6.1.2 in der IEC 60909-0). Wird nur bei einphasigem Kurzschluss eines Generators verwendet. (Abschnitt 4.3.4.2. in der IEC 60909-0) Default: 0.0  - `location`:   - `maxQ`: Maximale Blindleistungsgrenze. Dies ist der maximale Grenzwert (Typenschild) für das Gerät. Voreinstellung: 0,0  - `minQ`: Minimale Blindleistungsgrenze für das Gerät. Voreinstellung: 0,0  - `mu`: Faktor zur Berechnung des Ausschaltstroms (Abschnitt 4.5.2.1 in der IEC 60909-0). Wird nur bei einseitig gespeistem Kurzschluss an einem Generator verwendet (Abschnitt 4.3.4.2. in der IEC 60909-0). Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `operatingMode`: Aktuelle Betriebsart. Voreinstellung: Keine  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qPercent`: Prozentsatz der koordinierten Blindsteuerung, der von dieser Maschine stammt. Standard: 0,0  - `r`: Äquivalenzwiderstand (RG) des Generators. RG wird bei der Berechnung aller Ströme berücksichtigt, außer bei der Berechnung des Spitzenstroms ip. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Default: 0.0  - `r0`: Nullfolgewiderstand der Synchronmaschine. Voreinstellung: 0,0  - `r2`: Negativer Sequenzwiderstand. Voreinstellung: 0,0  - `referencePriority`: Priorität der Einheit für die Verwendung als Leistungsfluss-Spannungs-Phasenwinkel-Referenzbus-Auswahl. 0 = don t care (Voreinstellung) 1 = höchste Priorität. 2 ist kleiner als 1 und so weiter. Voreinstellung: 0  - `satDirectSubtransX`: Subtransiente Reaktanz der direkten Achse gesättigt, auch bekannt als Xd`sat. Voreinstellung: 0,0  - `satDirectSyncX`: Direktachsige gesättigte synchrone Reaktanz (xdsat); Kehrwert des Kurzschlussverhältnisses. Wird für den Kurzschlussdatenaustausch verwendet, nur für einseitig gespeiste Kurzschlüsse an einem Generator. (Abschnitt 4.3.4.2. in der IEC 60909-0). Voreinstellung: 0.0  - `satDirectTransX`: Gesättigter transienter Blindwiderstand der direkten Achse. Das Attribut wird hauptsächlich für Kurzschlussberechnungen nach ANSI verwendet. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortCircuitRotorType`: Typ des Rotors, der bei Kurzschlussanwendungen verwendet wird, nur bei einseitig gespeistem Kurzschluss gemäß IEC 60909. Voreinstellung: Keine  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Modi, in denen diese Synchronmaschine arbeiten kann. Voreinstellung: Keine  - `voltageRegulationRange`: Bereich der Generatorspannungsregelung (PG in der IEC 60909-0), der für die Berechnung des in der IEC 60909-0 definierten Impedanzkorrekturfaktors KG verwendet wird Dieses Attribut wird verwendet, um die Betriebsspannung der Erzeugungseinheit zu beschreiben. Voreinstellung: 0.0  - `x0`: Verlagerungsreaktanz der Synchronmaschine. Voreinstellung: 0,0  - `x2`: Gegenläufige Reaktanz. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -37,14 +38,11 @@ SynchronousMachine:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -326,8 +324,8 @@ SynchronousMachine:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
