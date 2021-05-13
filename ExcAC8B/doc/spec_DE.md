@@ -1,13 +1,14 @@
 Entität: ExcAC8B  
 ================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcAC8B/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Modifiziertes IEEE AC8B-Gleichrichter-Erregersystem mit Drehzahleingang und Eingangsbegrenzer.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inlim`: Eingangsbegrenzer-Anzeige. true = Eingangsbegrenzer Vimax und Vimin wird berücksichtigt false = Eingangsbegrenzer Vimax und Vimin wird nicht berücksichtigt. Typischer Wert = true. Voreinstellung: Falsch  - `ka`: Verstärkung des Spannungsreglers (Ka).  Typischer Wert = 1. Voreinstellung: 0,0  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (Kc). Typischer Wert = 0,55. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (Kd).  Typischer Wert = 1,1. Voreinstellung: 0,0  - `kdr`: Ableitungsverstärkung des Spannungsreglers (Kdr).  Typischer Wert = 10. Voreinstellung: 0,0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (Ke).  Typischer Wert = 1. Voreinstellung: 0,0  - `kir`: Spannungsregler integrale Verstärkung (Kir).  Typischer Wert = 5. Voreinstellung: 0,0  - `kpr`: Spannungsregler Proportionalverstärkung (Kpr).  Typischer Wert = 80. Voreinstellung: 0,0  - `ks`: Koeffizient, um eine unterschiedliche Verwendung des Modell-Geschwindigkeitskoeffizienten (Ks) zu ermöglichen.  Typischer Wert = 0. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pidlim`: PID-Begrenzer-Anzeige. true = Eingangsbegrenzer Vpidmax und Vpidmin wird berücksichtigt false = Eingangsbegrenzer Vpidmax und Vpidmin wird nicht berücksichtigt. Typischer Wert = true. Voreinstellung: Falsch  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve, hinter der Kommutierungsreaktanz (Se[Ve1]).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve, hinter der Kommutierungsreaktanz (Se[Ve2]).  Typischer Wert = 3. Voreinstellung: 0.0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (Ta).  Typischer Wert = 0. Voreinstellung: 0  - `tdr`: Nachlaufzeitkonstante (Tdr).  Typischer Wert = 0,1. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (Te).  Typischer Wert = 1,2. Voreinstellung: 0  - `telim`: Wahlschalter für den Begrenzer am Block [1/sTe].  Siehe Diagramm für die Bedeutung von true und false. Typischer Wert = false. Voreinstellung: Falsch  - `type`: NGSI-Typ. Es muss ExcAC8B sein  - `ve1`: Die Ausgangsspannung des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve), ist gleich V (Ve1).  Typischer Wert = 6,5. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve).  Typischer Wert = 9. Voreinstellung: 0,0  - `vemin`: Minimaler Erregerspannungsausgang (Vemin).  Typischer Wert = 0. Voreinstellung: 0.0  - `vfemax`: Erregerfeldstrom-Grenzsollwert (Vfemax).  Typischer Wert = 6. Voreinstellung: 0.0  - `vimax`: Maximales Eingangssignal (Vimax).  Typischer Wert = 35. Voreinstellung: 0,0  - `vimin`: Eingangssignal Minimum (Vimin).  Typischer Wert = -10. Voreinstellung: 0,0  - `vpidmax`: Maximaler PID-Reglerausgang (Vpidmax).  Typischer Wert = 35. Voreinstellung: 0.0  - `vpidmin`: Minimaler PID-Reglerausgang (Vpidmin).  Typischer Wert = -10. Voreinstellung: 0.0  - `vrmax`: Maximaler Spannungsreglerausgang (Vrmax). Typischer Wert = 35. Voreinstellung: 0,0  - `vrmin`: Minimaler Spannungsreglerausgang (Vrmin).  Typischer Wert = 0. Voreinstellung: 0.0  - `vtmult`: Anzeige der Multiplikation mit der Klemmenspannung des Generators. true = die Grenzwerte Vrmax und Vrmin werden mit der Klemmenspannung des Generators multipliziert, um eine von den Generatorklemmen gespeiste Thyristorendstufe darzustellen false = die Grenzwerte werden nicht mit der Klemmenspannung des Generators multipliziert.  Typischer Wert = false. Voreinstellung: False    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcAC8B:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -286,8 +284,8 @@ ExcAC8B:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
