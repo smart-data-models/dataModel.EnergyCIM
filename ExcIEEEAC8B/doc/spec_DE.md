@@ -1,13 +1,14 @@
 Entität: ExcIEEEAC8B  
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEAC8B/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Die Klasse repräsentiert das Modell IEEE Std 421.5-2005 Typ AC8B. Dieses Modell repräsentiert einen PID-Spannungsregler mit entweder einem bürstenlosen Erreger oder einem Gleichstromerreger. Der Spannungsregler in diesem Modell besteht aus einer PID-Regelung mit separaten Konstanten für die proportionale (), integrale () und derivative () Verstärkung. Die Darstellung des bürstenlosen Erregers (, , , , ) ist ähnlich wie beim Modell Typ AC2A. Das Modell Typ AC8B kann zur Darstellung von statischen Spannungsreglern verwendet werden, die bei bürstenlosen Erregersystemen eingesetzt werden. Digital basierte Spannungsregler, die gleichstrombetriebene rotierende Haupterreger speisen, können mit dem Modell Typ AC8B dargestellt werden, wobei die Parameter und auf 0 gesetzt werden. Für Thyristor-Leistungsstufen, die von den Generatorklemmen gespeist werden, sollten die Grenzen und eine Funktion der Klemmenspannung sein:  * und * .     Referenz: IEEE Standard 421.5-2005 Abschnitt 6.8.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (K). Typischer Wert = 0,55. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (K).    Typischer Wert = 1,1. Voreinstellung: 0,0  - `kdr`: Ableitungsverstärkung des Spannungsreglers (K).  Typischer Wert = 10. Voreinstellung: 0.0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kir`: Integrale Verstärkung des Spannungsreglers (K).  Typischer Wert = 5. Voreinstellung: 0,0  - `kpr`: Spannungsregler Proportionalverstärkung (K).  Typischer Wert = 80. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, V, hinter der Kommutierungsreaktanz (S[V]).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, V, hinter der Kommutierungsreaktanz (S[V]).  Typischer Wert = 3. Voreinstellung: 0.0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0. Voreinstellung: 0  - `tdr`: Nachlaufzeitkonstante (T).  Typischer Wert = 0,1. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (T).  Typischer Wert = 1,2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcIEEEAC8B sein  - `ve1`: Die Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (V), sind gleich V (V).  Typischer Wert = 6,5. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei denen die Sättigung definiert ist (V).  Typischer Wert = 9. Voreinstellung: 0.0  - `vemin`: Minimaler Erregerspannungsausgang (V).  Typischer Wert = 0. Voreinstellung: 0.0  - `vfemax`: Referenz für die Erregerfeldstromgrenze (V).  Typischer Wert = 6. Voreinstellung: 0.0  - `vrmax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 35. Voreinstellung: 0,0  - `vrmin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = 0. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcIEEEAC8B:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -271,8 +269,8 @@ ExcIEEEAC8B:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
