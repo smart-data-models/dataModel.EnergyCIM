@@ -1,13 +1,14 @@
 Entité : ExcAC1A  
 ================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcAC1A/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données du CIM. Système d'excitation redresseur alimenté par un alternateur IEEE AC1A modifié avec une source de rétroaction à taux différent.**  
 
 ## Liste des propriétés  
 
 - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `hvlvgates`: Indique si la porte HV et la porte LV sont actives (HVLVgates). true = les portes sont utilisées false = les portes ne sont pas utilisées. Valeur typique = true. Valeur par défaut : False  - `id`: Identifiant unique de l'entité  - `ka`: Gain du régulateur de tension (Ka).  Valeur typique = 400. Valeur par défaut : 0.0  - `kc`: Facteur de charge du redresseur proportionnel à la réactance de commutation (Kc). Valeur typique = 0.2. Valeur par défaut : 0.0  - `kd`: Facteur de démagnétisation, fonction des réactances de l'alternateur excitateur (Kd).  Valeur typique = 0.38. Valeur par défaut : 0.0  - `ke`: Constante d'excitation liée au champ auto-excité (Ke).  Valeur typique = 1. Valeur par défaut : 0.0  - `kf`: Gains des stabilisateurs du système de contrôle d'excitation (Kf).  Valeur typique = 0.03. Valeur par défaut : 0.0  - `kf1`: Coefficient permettant une utilisation différente du modèle (Kf1).  Valeur typique = 0. Valeur par défaut : 0.0  - `kf2`: Coefficient permettant une utilisation différente du modèle (Kf2).  Valeur typique = 1. Valeur par défaut : 0.0  - `ks`: Coefficient permettant une utilisation différente du coefficient de vitesse du modèle (Ks).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seve1`: Valeur de la fonction de saturation de l'excitatrice à la tension d'excitation correspondante, Ve1, en arrière de la réactance de commutation (Se[Ve1]).  Valeur typique = 0,1. Valeur par défaut : 0.0  - `seve2`: Valeur de la fonction de saturation de l'excitatrice à la tension d'excitation correspondante, Ve2, en arrière de la réactance de commutation (Se[Ve2]).  Valeur typique = 0.03. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.02. Valeur par défaut : 0  - `tb`: Constante de temps du régulateur de tension (Tb).  Valeur typique = 0. Valeur par défaut : 0  - `tc`: Constante de temps du régulateur de tension (T).  Valeur typique = 0. Valeur par défaut : 0  - `te`: Constante de temps de l'excitateur, taux d'intégration associé à la commande de l'excitateur (Te).  Valeur typique = 0,8. Valeur par défaut : 0  - `tf`: Constante de temps du stabilisateur du système de contrôle d'excitation (Tf).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il doit s'agir de ExcAC1A  - `vamax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 14,5. Valeur par défaut : 0.0  - `vamin`: Tension minimale de sortie du régulateur (V).  Valeur typique = -14,5. Valeur par défaut : 0.0  - `ve1`: Tensions de sortie de l'alternateur d'excitation en arrière de la réactance de commutation à laquelle la saturation est définie (Ve1).  Valeur typique = 4.18. Valeur par défaut : 0.0  - `ve2`: Tensions de sortie de l'alternateur d'excitation en arrière de la réactance de commutation à laquelle la saturation est définie (Ve2).  Valeur typique = 3.14. Valeur par défaut : 0.0  - `vrmax`: Sorties maximales du régulateur de tension (Vrmax).  Valeur typique = 6.03. Valeur par défaut : 0.0  - `vrmin`: Sorties minimales du régulateur de tension (Rrmin).  Valeur typique = -5.43. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcAC1A:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -281,8 +279,8 @@ ExcAC1A:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -366,7 +364,7 @@ ExcAC1A:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcAC1A au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un ExcAC1A au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcAC1A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcAC1A au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcAC1A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcAC1A au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
