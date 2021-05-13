@@ -1,13 +1,14 @@
 Entidad: ExcELIN2  
 =================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcELIN2/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Modelo detallado del sistema de excitación - ELIN (VATECH).  Este modelo representa un sistema de excitación totalmente estático. Un controlador de tensión PI establece un punto de ajuste de corriente de campo deseado para un controlador de corriente proporcional. El integrador del controlador PI tiene una entrada de seguimiento para ajustar su señal a la corriente de campo actual.  Los modelos de estabilizadores del sistema de potencia utilizados junto con este modelo de sistema de excitación: PssELIN2, PssIEEE2B, Pss2B.**  
 
 ## Lista de propiedades  
 
 - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdbas`: Ganancia (Efdbas).  Valor típico = 0,1. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `iefmax`: Limitador (Iefmax).  Valor típico = 1. Por defecto: 0,0  - `iefmax2`: Tensión mínima de excitación en circuito abierto (Iefmax2).  Valor típico = -5. Por defecto: 0,0  - `iefmin`: Limitador (Iefmin).  Valor típico = 1. Por defecto: 0,0  - `k1`: Ganancia de entrada del regulador de tensión (K1).  Valor típico = 0. Por defecto: 0.0  - `k1ec`: Límite de entrada del regulador de tensión (K1ec).  Valor típico = 2. Por defecto: 0,0  - `k2`: Ganancia (K2).  Valor típico = 5. Por defecto: 0,0  - `k3`: Ganancia (K3).  Valor típico = 0,1. Por defecto: 0,0  - `k4`: Ganancia (K4).  Valor típico = 0. Por defecto: 0.0  - `kd1`: Ganancia derivativa del regulador de tensión (Kd1).  Valor típico = 34,5. Por defecto: 0,0  - `ke2`: Ganancia (Ke2).  Valor típico = 0,1. Por defecto: 0,0  - `ketb`: Ganancia (Ketb).  Valor típico = 0,06. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pid1max`: Ganancia de seguimiento del regulador (PID1max).  Valor típico = 2. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seve1`: Valor de la función de saturación del excitador en la tensión correspondiente del excitador, Ve1, detrás de la reactancia de conmutación (Se[Ve1]).  Valor típico = 0. Por defecto: 0.0  - `seve2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, Ve2, detrás de la reactancia de conmutación (Se[Ve2]).  Valor típico = 1. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tb1`: Constante de tiempo de lavado derivado del regulador de tensión (Tb1).  Valor típico = 12,45. Por defecto: 0  - `te`: Constante de tiempo (Te).  Valor típico = 0. Por defecto: 0  - `te2`: Constante de tiempo (Te2).  Valor típico = 1. Por defecto: 0  - `ti1`: Banda muerta de seguimiento del regulador (Ti1).  Valor típico = 0. Por defecto: 0.0  - `ti3`: Constante de tiempo (Ti3).  Valor típico = 3. Por defecto: 0  - `ti4`: Constante de tiempo (Ti4).  Valor típico = 0. Por defecto: 0  - `tr4`: Constante de tiempo (Tr4).  Valor típico = 1. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcELIN2  - `upmax`: Limitador (Upmax).  Valor típico = 3. Por defecto: 0,0  - `upmin`: Limitador (Upmin).  Valor típico = 0. Por defecto: 0.0  - `ve1`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (Ve1).  Valor típico = 3. Por defecto: 0,0  - `ve2`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (Ve2).  Valor típico = 0. Por defecto: 0.0  - `xp`: Reactancia efectiva del transformador de excitación (Xp).  Valor típico = 1. Por defecto: 0,0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcELIN2:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -301,8 +299,8 @@ ExcELIN2:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -391,7 +389,7 @@ ExcELIN2:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcELIN2 en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcELIN2 en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcELIN2 en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcELIN2 en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcELIN2 en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcELIN2 en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
