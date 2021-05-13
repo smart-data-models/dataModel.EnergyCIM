@@ -1,13 +1,14 @@
 Entidad: ExcDC3A  
 ================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcDC3A/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Se trata de excitadores de corriente continua IEEE DC3A modificados con entrada de velocidad, y banda de muerte.  DC tipo antiguo 4.**  
 
 ## Lista de propiedades  
 
 - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `edfmax`: Limitador de salida de tensión máxima del excitador (Efdmax).  Valor típico = 99. Por defecto: 0,0  - `efd1`: Tensión de excitación a la que se define la saturación del excitador (Efd1).  Valor típico = 2,6. Por defecto: 0,0  - `efd2`: Tensión de excitación a la que se define la saturación del excitador (Efd2).  Valor típico = 3,45. Por defecto: 0,0  - `efdlim`: (Efdlim). verdadero = el limitador de salida del excitador está activo falso = el limitador de salida del excitador no está activo. Valor típico = verdadero. Por defecto: Falso  - `efdmin`: Limitador de salida de tensión mínima del excitador (Efdmin).  Valor típico = -99. Por defecto: 0,0  - `exclim`: (exclim).  La norma IEEE es ambigua sobre el límite inferior de la salida del excitador. true = se aplica un límite inferior de cero a la salida del integrador false = no se aplica un límite inferior de cero a la salida del integrador. Valor típico = verdadero. Por defecto: Falso  - `id`: Identificador único de la entidad  - `ke`: Constante de excitación relacionada con el campo autoexcitado (Ke).  Valor típico = 1. Por defecto: 0,0  - `kr`: Banda de muerte (Kr).  Si Kr no es cero, la entrada del regulador de tensión cambia a una velocidad constante si Verr > Kr o Verr < -Kr según el modelo IEEE (1968) Tipo 4. Si Kr es cero, la señal de error acciona el regulador de tensión de forma continua según los modelos IEEE (1980) DC3 e IEEE (1992, 2005) DC3A.  Valor típico = 0. Por defecto: 0,0  - `ks`: Coeficiente para permitir un uso diferente del coeficiente de velocidad del modelo (Ks).  Valor típico = 0. Por defecto: 0.0  - `kv`: Ajuste del contacto de subida/bajada rápida (Kv).  Valor típico = 0,05. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seefd1`: Valor de la función de saturación del excitador en la tensión de excitación correspondiente, Efd1 (Se[Eefd1]).  Valor típico = 0,1. Por defecto: 0,0  - `seefd2`: Valor de la función de saturación del excitador en la tensión de excitación correspondiente, Efd2 (Se[Efd2]).  Valor típico = 0,35. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (Te).  Valor típico = 1,83. Por defecto: 0  - `trh`: Tiempo de recorrido del reóstato (Trh).  Valor típico = 20. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcDC3A  - `vrmax`: Salida máxima del regulador de tensión (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (Vrmin).  Valor típico = 0. Por defecto: 0.0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcDC3A:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -286,8 +284,8 @@ ExcDC3A:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -336,7 +334,7 @@ ExcDC3A:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcDC3A en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcDC3A en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcDC3A en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcDC3A en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcDC3A en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcDC3A en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
