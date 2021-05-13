@@ -1,13 +1,14 @@
 Entité : SynchronousMachineTimeConstantReactance  
 ================================================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SynchronousMachineTimeConstantReactance/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Les types de modélisation détaillée des machines synchrones sont définis par la combinaison des attributs SynchronousMachineTimeConstantReactance.modelType et SynchronousMachineTimeConstantReactance.rotorType.     Les paramètres utilisés pour les modèles exprimés sous forme de réactance constante dans le temps comprennent :**  
 
 ## Liste des propriétés  
 
 - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ks`: Facteur de correction de la charge de saturation (Ks) (>= 0).  Utilisé uniquement par le modèle de type J.  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `modelType`: Type de modèle de machine synchrone utilisé dans les applications de simulation dynamique. Valeur par défaut : Aucun  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotorType`: Type de rotor sur la machine physique. Par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tc`: Constante de temps d'amortissement pour la réactance `Canay`.  Valeur typique = 0. Valeur par défaut : 0  - `tpdo`: Constante de temps transitoire du rotor sur l'axe direct (T`do) (> T``do).  Valeur typique = 5. Valeur par défaut : 0  - `tppdo`: Constante de temps subtransitoire du rotor sur l'axe direct (T``do) (> 0).  Valeur typique = 0,03. Valeur par défaut : 0  - `tppqo`: Constante de temps subtransitoire du rotor sur l'axe en quadrature (T``qo) (> 0). Valeur typique = 0,03. Valeur par défaut : 0  - `tpqo`: Constante de temps transitoire du rotor sur l'axe en quadrature (T`qo) (> T``qo). Valeur typique = 0,5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être SynchronousMachineTimeConstantReactance.  - `xDirectSubtrans`: Réactance subtransitoire à axe direct (non saturée) (X``d) (> Xl).  Valeur typique = 0.2. Valeur par défaut : 0.0  - `xDirectSync`: Réactance synchrone à axe direct (Xd) (>= X`d). Le quotient d'une valeur soutenue de la composante alternative de la tension d'induit qui est produite par le flux total de l'axe direct dû au courant d'induit de l'axe direct et la valeur de la composante alternative de ce courant, la machine fonctionnant à la vitesse nominale. Valeur typique = 1,8. Valeur par défaut : 0,0  - `xDirectTrans`: Réactance transitoire de l'axe direct (non saturé) (X`d) (> =X``d).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `xQuadSubtrans`: Réactance subtransitoire de l'axe en quadrature (X``q) (> Xl).  Valeur typique = 0,2. Valeur par défaut : 0.0  - `xQuadSync`: Réactance synchrone d'axe de quadrature (Xq) (> =X`q). Rapport de la composante de la tension réactive de l'induit, due à la composante du courant d'induit en quadrature, à cette composante du courant, en régime permanent et à la fréquence nominale.  Valeur typique = 1,6. Valeur par défaut : 0.0  - `xQuadTrans`: Réactance transitoire de l'axe en quadrature (X`q) (> =X``q).  Valeur typique = 0.3. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ SynchronousMachineTimeConstantReactance:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -251,8 +249,8 @@ SynchronousMachineTimeConstantReactance:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -326,7 +324,7 @@ SynchronousMachineTimeConstantReactance:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un SynchronousMachineTimeConstantReactance au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un SynchronousMachineTimeConstantReactance au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
