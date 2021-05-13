@@ -1,13 +1,14 @@
 Entität: PowerTransformer  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformer/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Ein elektrisches Gerät, das aus zwei oder mehr gekoppelten Wicklungen mit oder ohne Magnetkern besteht, um eine gegenseitige Kopplung zwischen Stromkreisen herzustellen. Transformatoren können zur Steuerung von Spannung und Phasenverschiebung (Wirkleistungsfluss) verwendet werden. Ein Leistungstransformator kann aus einzelnen Transformatorentanks bestehen, die nicht identisch sein müssen. Ein Leistungstransformator kann mit oder ohne Tanks modelliert werden und ist sowohl für die Verwendung in symmetrischen als auch unsymmetrischen Darstellungen vorgesehen.   Ein Leistungstransformator hat in der Regel zwei Anschlüsse, kann aber auch einen (Erdung), drei oder mehr Anschlüsse haben. Die geerbte Assoziation ConductingEquipment.BaseVoltage sollte nicht verwendet werden.  Stattdessen sollte die Assoziation von TransformerEnd zu BaseVoltage verwendet werden.**  
 
 ## Liste der Eigenschaften  
 
 - `PowerTransformerEnd`: Der Stromwandler dieses Stromwandlerendes. Voreinstellung: 'list'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `beforeShCircuitHighestOperatingCurrent`: Der höchste Betriebsstrom (Ib in der IEC 60909-0) vor Kurzschluss (abhängig von der Netzkonfiguration und der jeweiligen Zuverlässigkeitsphilosophie). Er wird zur Berechnung des in der IEC 60909-0 definierten Impedanzkorrekturfaktors KT verwendet. Voreinstellung: 0,0  - `beforeShCircuitHighestOperatingVoltage`: Die höchste Betriebsspannung (Ub in der IEC 60909-0) vor dem Kurzschluss. Sie wird für die Berechnung des in der IEC 60909-0 definierten Impedanzkorrekturfaktors KT verwendet. Dies ist die Worst-Case-Spannung an der Wicklung auf der Niederspannungsseite (Abschnitt 3.7.1 in der Norm). Wird verwendet, um die Betriebsbedingungen zu definieren. Voreinstellung: 0,0  - `beforeShortCircuitAnglePf`: Der Winkel des Leistungsfaktors vor dem Kurzschluss (phib in der IEC 60909-0). Er wird zur Berechnung des in der IEC 60909-0 definierten Impedanzkorrekturfaktors KT verwendet. Dies ist der Leistungsfaktor für den ungünstigsten Fall. Wird verwendet, um Betriebsbedingungen zu definieren. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `highSideMinOperatingU`: Die minimale Betriebsspannung (uQmin in der IEC 60909-0) an der Hochspannungsseite (Q-Seite) des Blocktransformators des Kraftwerksblocks. Ein aus der langjährigen Betriebserfahrung der Anlage gut ermittelter Wert. Er wird zur Berechnung des in der IEC 60909-0 definierten Impedanzkorrekturfaktors KG verwendet Default: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `isPartOfGeneratorUnit`: Zeigt an, ob die Maschine Teil einer Power Station Unit ist. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Default: False  - `location`:   - `name`: Der Name dieses Elements.  - `operationalValuesConsidered`: Es wird verwendet, um zu definieren, ob die Daten (andere Attribute in Bezug auf den Kurzschlussdatenaustausch) langfristige Betriebsbedingungen definieren oder nicht. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet. Voreinstellung: False  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss PowerTransformer sein    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,14 +33,11 @@ PowerTransformer:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -271,8 +269,8 @@ PowerTransformer:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -294,4 +292,4 @@ PowerTransformer:
 Nicht verfügbar das Beispiel eines PowerTransformers im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel eines PowerTransformers im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel eines PowerTransformers im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines PowerTransformers im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel eines PowerTransformers im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
