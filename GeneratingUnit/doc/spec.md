@@ -1,13 +1,14 @@
 Entity: GeneratingUnit  
 ======================  
 [Open License](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GeneratingUnit/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **Adapted from CIM data models. A single or set of synchronous machines for converting mechanical power into alternating-current power. For example, individual machines within a set may be defined for scheduling purposes while a single control signal is derived for the set. In this case there would be a GeneratingUnit for each member of the set and an additional GeneratingUnit corresponding to the set.**  
 
 ## List of properties  
 
 - `ControlAreaGeneratingUnit`: ControlArea specifications for this generating unit. Default: 'list'  - `GrossToNetActivePowerCurves`: A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: 'list'  - `RotatingMachine`: A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: 'list'  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `genControlSource`: The source of controls for a generating unit. Default: None  - `governorSCD`: Governor Speed Changer Droop.   This is the change in generator power output divided by the change in frequency normalized by the nominal power of the generator and the nominal frequency and expressed in percent and negated. A positive value of speed change droop provides additional generator output upon a drop in frequency. Default: 0.0  - `id`: Unique identifier of the entity  - `initialP`: Default initial active power  which is used to store a powerflow result for the initial active power for this unit in this network configuration. Default: 0.0  - `location`:   - `longPF`: Generating unit long term economic participation factor. Default: 0.0  - `maxOperatingP`: This is the maximum operating active power limit the dispatcher can enter for this unit. Default: 0.0  - `maximumAllowableSpinningReserve`: Maximum allowable spinning reserve. Spinning reserve will never be considered greater than this value regardless of the current operating point. Default: 0.0  - `minOperatingP`: This is the minimum operating active power limit the dispatcher can enter for this unit. Default: 0.0  - `name`: The name of this item.  - `nominalP`: The nominal power of the generating unit.  Used to give precise meaning to percentage based attributes such as the governor speed change droop (governorSCD attribute). The attribute shall be a positive value equal or less than RotatingMachine.ratedS. Default: 0.0  - `normalPF`: Generating unit economic participation factor. Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `ratedGrossMaxP`: The unit`s gross rated maximum capacity (book value). Default: 0.0  - `ratedGrossMinP`: The gross rated minimum generation level which the unit can safely operate at while delivering power to the transmission grid. Default: 0.0  - `ratedNetMaxP`: The net rated maximum capacity determined by subtracting the auxiliary power used to operate the internal plant machinery from the rated gross maximum capacity. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `shortPF`: Generating unit short term economic participation factor. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startupCost`: The initial startup cost incurred for each start of the GeneratingUnit. Default: 0.0  - `totalEfficiency`: The efficiency of the unit in converting the fuel into electrical energy. Default: 0.0  - `type`: NGSI type. It has to be GeneratingUnit  - `variableCost`: The variable cost component of production per unit of ActivePower. Default: 0.0    
 Required properties  
-This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
+Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -42,14 +43,11 @@ GeneratingUnit:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -311,8 +309,8 @@ GeneratingUnit:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -351,7 +349,7 @@ GeneratingUnit:
 ```  
 </details>    
 ## Example payloads    
-Not available the example of a GeneratingUnit in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
-Not available the example of a GeneratingUnit in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
+Not available the example of a GeneratingUnit in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+Not available the example of a GeneratingUnit in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 Not available the example of a GeneratingUnit in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a GeneratingUnit in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
