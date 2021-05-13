@@ -1,13 +1,14 @@
 Entidad: ExcIEEEST6B  
 ====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST6B/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. La clase representa el modelo IEEE Std 421.5-2005 tipo ST6B. Este modelo consiste en un regulador de tensión PI con un regulador de tensión de campo de bucle interno y un pre-control. El regulador de tensión de campo implementa un control proporcional. El precontrol y el retardo en el circuito de realimentación aumentan la respuesta dinámica.  Referencia: Norma IEEE 421.5-2005, sección 7.6.**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ilr`: Referencia de límite de corriente de salida del excitador (I).  Valor típico = 4,164. Por defecto: 0,0  - `kci`: Ajuste del límite de corriente de salida del excitador (K).  Valor típico = 1,0577. Por defecto: 0,0  - `kff`: Constante de ganancia de precontrol del regulador de campo del bucle interior (K). Valor típico = 1. Por defecto: 0,0  - `kg`: Constante de ganancia de retroalimentación del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 45,094. Por defecto: 0,0  - `klr`: Ganancia del limitador de corriente de salida del excitador (K).  Valor típico = 17,33. Por defecto: 0,0  - `km`: Constante de ganancia de avance del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 18,038. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (T). Valor típico = 0,02. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST6B  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ilr`: Referencia de límite de corriente de salida del excitador (I).  Valor típico = 4,164. Por defecto: 0,0  - `kci`: Ajuste del límite de corriente de salida del excitador (K).  Valor típico = 1,0577. Por defecto: 0,0  - `kff`: Constante de ganancia de precontrol del regulador de campo del bucle interior (K). Valor típico = 1. Por defecto: 0,0  - `kg`: Constante de ganancia de retroalimentación del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 45,094. Por defecto: 0,0  - `klr`: Ganancia del limitador de corriente de salida del excitador (K).  Valor típico = 17,33. Por defecto: 0,0  - `km`: Constante de ganancia de avance del regulador de campo del bucle interior (K).  Valor típico = 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 18,038. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (T). Valor típico = 0,02. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST6B  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 4,81. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -3,85. Por defecto: 0,0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcIEEEST6B:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -281,8 +279,8 @@ ExcIEEEST6B:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -326,7 +324,7 @@ ExcIEEEST6B:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcIEEEST6B en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcIEEEST6B en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcIEEEST6B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcIEEEST6B en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST6B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST6B en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
