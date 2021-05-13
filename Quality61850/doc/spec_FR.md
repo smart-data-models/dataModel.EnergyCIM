@@ -1,13 +1,14 @@
 Entité : Quality61850  
 =====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adaptés des modèles de données CIM. Les drapeaux de qualité dans cette classe sont tels que définis dans la norme IEC 61850, à l'exception de estimatorReplaced, qui a été inclus dans cette classe pour des raisons de commodité**.  
 
 ## Liste des propriétés  
 
 - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `badReference`: La valeur de mesure peut être incorrecte en raison d'une référence non calibrée. Valeur par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `estimatorReplaced`: La valeur a été remplacée par State Estimator. estimatorReplaced n'est pas un bit de qualité IEC61850 mais a été mis dans cette classe pour des raisons de commodité. Par défaut : False  - `failure`: Cet identifiant indique qu'une fonction de supervision a détecté une défaillance interne ou externe, par exemple une défaillance de communication. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `oldData`: La valeur de mesure est ancienne et peut-être invalide, car elle n'a pas été mise à jour avec succès pendant un intervalle de temps spécifié. Valeur par défaut : False  - `operatorBlocked`: La valeur de mesure est bloquée et donc indisponible pour la transmission. Par défaut : Faux  - `oscillatory`: Pour éviter une surcharge de la communication, il est judicieux de détecter et de supprimer les entrées binaires oscillantes (à variation rapide). Si un signal change dans un temps défini (tosc) deux fois dans la même direction (de 0 à 1 ou de 1 à 0), l'oscillation est détectée et l'identificateur de qualité de détail "oscillatoire" est activé. S'il est détecté, un nombre configuré de changements transitoires peut être passé. Pendant ce temps, l'état de validité `questionnable` est défini. Si après ce nombre défini de changements, le signal est toujours dans l'état oscillant, la valeur doit être fixée soit à l'état opposé de la valeur stable précédente, soit à une valeur par défaut définie. Dans ce cas, l'état de validité "questionnable" est remis à zéro et "invalide" est activé tant que le signal oscille. S'il est configuré de telle sorte qu'aucun changement transitoire ne doit passer, alors l'état de validité `invalide` est défini immédiatement en plus de l'identificateur de qualité détaillé `oscillatoire` (utilisé pour les informations d'état uniquement). Par défaut : False  - `outOfRange`: La valeur mesurée est au-delà d'une plage de valeurs prédéfinie. Valeur par défaut : Faux  - `overFlow`: La valeur de la mesure dépasse la capacité d'être représentée correctement. Par exemple, la valeur d'un compteur déborde du comptage maximum pour atteindre une valeur de zéro. Valeur par défaut : Faux  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: La source donne des informations relatives à l'origine d'une valeur. La valeur peut être acquise à partir du processus, proposée par défaut ou substituée. Par défaut : Aucun  - `suspect`: Une fonction de corrélation a détecté que la valeur n'est pas cohérente avec d'autres valeurs. Généralement défini par un estimateur d'état du réseau. Par défaut : False  - `test`: La valeur de la mesure est transmise à des fins de test. Valeur par défaut : Faux  - `type`: Type NGSI. Il doit être Quality61850  - `validity`: Validité de la valeur de mesure. Valeur par défaut : Aucun    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ Quality61850:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -276,8 +274,8 @@ Quality61850:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -313,7 +311,7 @@ Quality61850:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un Quality61850 au format JSON comme valeurs-clés. Ceci est compatible avec la NGSI V2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un Quality61850 au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Quality61850 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un Quality61850 au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Quality61850 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Quality61850 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
