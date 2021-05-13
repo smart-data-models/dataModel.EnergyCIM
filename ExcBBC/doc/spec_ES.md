@@ -1,13 +1,14 @@
 Entidad: ExcBBC  
 ===============  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcBBC/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Sistema de excitación estática alimentado por transformador (estático con regulador ABB). Este modelo representa un sistema de excitación estática en el que un puente de tiristores alimentado por un transformador en los terminales del generador principal alimenta directamente al generador principal.**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Tensión máxima de excitación en circuito abierto (Efdmax).  Valor típico = 5. Por defecto: 0,0  - `efdmin`: Tensión mínima de excitación en circuito abierto (Efdmin).  Valor típico = -5. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `k`: Ganancia en estado estacionario (K).  Valor típico = 300. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `switch`: Selector de enrutamiento de la señal suplementaria (interruptor). verdadero = Vs conectado al 3er punto de suma falso = Vs conectado al 1er punto de suma (ver diagrama). Valor típico = verdadero. Por defecto: Falso  - `t1`: Constante de tiempo del regulador (T1).  Valor típico = 6. Por defecto: 0  - `t2`: Constante de tiempo del regulador (T2).  Valor típico = 1. Por defecto: 0  - `t3`: Constante de tiempo de avance/retraso (T3).  Valor típico = 0,05. Por defecto: 0  - `t4`: Constante de tiempo de avance/retraso (T4).  Valor típico = 0,01. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcBBC  - `vrmax`: Salida máxima del elemento de control (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del elemento de control (Vrmin).  Valor típico = -5. Por defecto: 0,0  - `xe`: Reactancia efectiva del transformador de excitación (Xe).  Valor típico = 0,05. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Tensión máxima de excitación en circuito abierto (Efdmax).  Valor típico = 5. Por defecto: 0,0  - `efdmin`: Tensión mínima de excitación en circuito abierto (Efdmin).  Valor típico = -5. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `k`: Ganancia en estado estacionario (K).  Valor típico = 300. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `switch`: Selector de enrutamiento de la señal suplementaria (interruptor). verdadero = Vs conectado al 3er punto de suma falso = Vs conectado al 1er punto de suma (ver diagrama). Valor típico = verdadero. Por defecto: Falso  - `t1`: Constante de tiempo del regulador (T1).  Valor típico = 6. Por defecto: 0  - `t2`: Constante de tiempo del regulador (T2).  Valor típico = 1. Por defecto: 0  - `t3`: Constante de tiempo de avance/retraso (T3).  Valor típico = 0,05. Por defecto: 0  - `t4`: Constante de tiempo de avance/retraso (T4).  Valor típico = 0,01. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcBBC  - `vrmax`: Salida máxima del elemento de control (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del elemento de control (Vrmin).  Valor típico = -5. Por defecto: 0,0  - `xe`: Reactancia efectiva del transformador de excitación (Xe).  Valor típico = 0,05. Por defecto: 0,0    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcBBC:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -251,8 +249,8 @@ ExcBBC:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -311,7 +309,7 @@ ExcBBC:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcBBC en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcBBC en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una ExcBBC en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ExcBBC en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de una ExcBBC en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcBBC en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
