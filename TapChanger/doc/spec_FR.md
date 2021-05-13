@@ -1,13 +1,14 @@
 Entité : TapChanger  
 ===================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TapChanger/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Mécanisme de changement de position des prises de l'enroulement du transformateur**.  
 
 ## Liste des propriétés  
 
 - `SvTapStep`: L'état du pas de robinet associé au changeur de robinet. Par défaut : Aucun  - `TapChangerControl`: Le changeur de prises qui participe à ce schéma de contrôle des prises de régulation. Par défaut : Aucun  - `TapSchedules`: Un TapSchedule est associé à un TapChanger. Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `controlEnabled`: Spécifie le statut de régulation de l'équipement.  True est régulé, false est non régulé. Par défaut : False  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `highStep`: Position la plus élevée possible du pas de robinet, en avance sur le point mort. L'attribut doit être supérieur à lowStep. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `location`:   - `lowStep`: Position la plus basse possible du pas de robinet, retard par rapport au neutre Défaut : 0  - `ltcFlag`: Indique si un TapChanger a ou non des capacités de changement de prise en charge. Valeur par défaut : False  - `name`: Le nom de cet élément.  - `neutralStep`: La position du pas de prise neutre pour cet enroulement. L'attribut doit être égal ou supérieur à lowStep et égal ou inférieur à highStep. Valeur par défaut : 0  - `neutralU`: Tension à laquelle l'enroulement fonctionne au réglage de la prise neutre. Valeur par défaut : 0.0  - `normalStep`: La position du pas de prise utilisée dans le fonctionnement normal du réseau pour cet enroulement. Pour un changeur de prise `Fixed`, indique le réglage physique actuel de la prise. L'attribut doit être égal ou supérieur à lowStep et égal ou inférieur à highStep. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `step`: Position du changeur de prises. Étape de départ pour une solution en régime permanent. Des valeurs non entières sont autorisées pour supporter des variables de prise continues. Les raisons de la valeur continue sont de prendre en charge les cas d'étude pour lesquels aucun changeur de prises discret n'a encore été conçu, les solutions pour lesquelles une bande de tension étroite force le pas de prise à osciller ou l'adaptation à une solution continue en entrée. L'attribut doit être égal ou supérieur à lowStep et égal ou inférieur à highStep. Valeur par défaut : 0,0  - `type`: Type de NGSI. Il doit s'agir de TapChanger    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -42,14 +43,11 @@ TapChanger:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -286,8 +284,8 @@ TapChanger:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -311,7 +309,7 @@ TapChanger:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un TapChanger au format JSON en tant que key-values. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un TapChanger au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un TapChanger au format JSON-LD comme key-values. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un TapChanger au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un TapChanger au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un TapChanger au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
