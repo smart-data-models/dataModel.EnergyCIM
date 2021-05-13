@@ -1,13 +1,14 @@
 Entidad: ACDCTerminal  
 =====================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ACDCTerminal/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Punto de conexión eléctrica (CA o CC) a un equipo conductor. Los terminales se conectan en puntos de conexión físicos llamados nodos de conectividad.**  
 
 ## Lista de propiedades  
 
-- `BusNameMarker`: El marcador de nombre de bus utilizado para nombrar el bus (nodo topológico). Por defecto: Ninguno  - `Measurements`: Las medidas asociadas a este terminal definen el lugar en el que se sitúa la medida en la topología de la red.  Puede utilizarse, por ejemplo, para capturar la posición del sensor, como un transformador de tensión (PT) en una barra o un transformador de corriente (CT) en la barra entre un interruptor y un seccionador. Por defecto: 'lista'  - `OperationalLimitSet`:  Por defecto: "lista  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `connected`: El estado de conexión está relacionado con un modelo de rama de bus y la relación nodo topológico a terminal.  Verdadero implica que el terminal está conectado al nodo topológico relacionado y falso implica que no lo está.  En un modelo de rama de bus, el estado conectado se utiliza para saber si el equipo está desconectado sin tener que cambiar la conectividad descrita por la relación nodo topológico-terminal. Un caso válido es que un equipo conductor puede estar conectado en un extremo y abierto en el otro. En particular, para un segmento de línea de CA, donde la carga reactiva de la línea puede ser significativa, este es un caso relevante. Por defecto: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequenceNumber`: La orientación de las conexiones de los terminales para un equipo conductor de terminales múltiples.  La numeración secuencial comienza con el 1 y los terminales adicionales deben seguir en orden creciente.   El primer terminal es el "punto de partida" para una rama de dos terminales. Por defecto: 0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser ACDCTerminal    
+- `BusNameMarker`: El marcador de nombre de bus utilizado para nombrar el bus (nodo topológico). Por defecto: Ninguno  - `Measurements`: Las medidas asociadas a este terminal definen el lugar en el que se sitúa la medida en la topología de la red.  Puede utilizarse, por ejemplo, para capturar la posición del sensor, como un transformador de tensión (PT) en una barra o un transformador de corriente (CT) en la barra entre un interruptor y un seccionador. Por defecto: 'lista'  - `OperationalLimitSet`:  Por defecto: "lista  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `connected`: El estado de conexión está relacionado con un modelo de rama de bus y la relación nodo topológico a terminal.  Verdadero implica que el terminal está conectado al nodo topológico relacionado y falso implica que no lo está.  En un modelo de rama de bus, el estado conectado se utiliza para saber si el equipo está desconectado sin tener que cambiar la conectividad descrita por la relación nodo topológico-terminal. Un caso válido es que un equipo conductor puede estar conectado en un extremo y abierto en el otro. En particular, para un segmento de línea de CA, donde la carga reactiva de la línea puede ser significativa, este es un caso relevante. Por defecto: Falso  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequenceNumber`: La orientación de las conexiones de los terminales para un equipo conductor de terminales múltiples.  La numeración secuencial comienza con el 1 y los terminales adicionales deben seguir en orden creciente.   El primer terminal es el "punto de partida" para una rama de dos terminales. Por defecto: 0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser ACDCTerminal    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -42,14 +43,11 @@ ACDCTerminal:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -256,8 +254,8 @@ ACDCTerminal:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -281,7 +279,7 @@ ACDCTerminal:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ACDCTerminal en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ACDCTerminal en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ACDCTerminal en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un ACDCTerminal en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ACDCTerminal en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ACDCTerminal en formato JSON-LD como normalizado. Es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
