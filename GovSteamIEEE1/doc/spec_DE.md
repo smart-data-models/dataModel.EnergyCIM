@@ -1,13 +1,14 @@
 Entität: GovSteamIEEE1  
 ======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovSteamIEEE1/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. IEEE-Dampfturbinenregler-Modell.  Ref**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Verstärkung des Reglers (Kehrwert des P-Bereichs) (K) (> 0).  Typischer Wert = 25. Voreinstellung: 0.0  - `k1`: Bruchteil der HP-Wellenleistung nach dem ersten Kesseldurchgang (K1).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k2`: Bruchteil der LP-Wellenleistung nach dem ersten Kesseldurchgang (K2).  Typischer Wert = 0. Voreinstellung: 0.0  - `k3`: Bruchteil der HP-Wellenleistung nach dem zweiten Kesseldurchgang (K3).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `k4`: Bruchteil der LP-Wellenleistung nach dem zweiten Kesseldurchgang (K4).  Typischer Wert = 0. Voreinstellung: 0.0  - `k5`: Bruchteil der HP-Wellenleistung nach dem dritten Kesseldurchgang (K5).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `k6`: Bruchteil der LP-Wellenleistung nach dem dritten Kesseldurchgang (K6).  Typischer Wert = 0. Voreinstellung: 0.0  - `k7`: Bruchteil der HP-Wellenleistung nach dem vierten Kesseldurchgang (K7).  Typischer Wert = 0. Voreinstellung: 0.0  - `k8`: Bruchteil der LP-Wellenleistung nach dem vierten Kesseldurchgang (K8).  Typischer Wert = 0. Voreinstellung: 0.0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (> 0) Default: 0.0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Maximale Ventilöffnung (Pmax) (> Pmin).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Ventilöffnung (Pmin) (>= 0).  Typischer Wert = 0. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Verzögerungszeitkonstante des Reglers (T1).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Reglervorlaufzeitkonstante (T2).  Typischer Wert = 0. Voreinstellung: 0  - `t3`: Zeitkonstante des Ventilstellungsreglers (T3) (> 0).  Typischer Wert = 0,1. Voreinstellung: 0  - `t4`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,3. Voreinstellung: 0  - `t5`: Zeitkonstante des zweiten Kesseldurchgangs (T5).  Typischer Wert = 5. Voreinstellung: 0  - `t6`: Zeitkonstante des dritten Kesseldurchgangs (T6).  Typischer Wert = 0,5. Voreinstellung: 0  - `t7`: Zeitkonstante des vierten Kesseldurchgangs (T7).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamIEEE1 sein  - `uc`: Maximale Ventilschließgeschwindigkeit (Uc) (< 0).  Einheit = PU/sec.  Typischer Wert = -10. Voreinstellung: 0.0  - `uo`: Maximale Ventilöffnungsgeschwindigkeit (Uo) (> 0).  Einheit = PU/sec.  Typischer Wert = 1. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ GovSteamIEEE1:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -296,8 +294,8 @@ GovSteamIEEE1:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
