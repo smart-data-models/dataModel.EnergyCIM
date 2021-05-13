@@ -1,13 +1,14 @@
 Entité : EquipmentVersion  
 =========================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/EquipmentVersion/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Détails de la version.**  
 
 ## Liste des propriétés  
 
 - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `baseUML`: UML de base fourni par le gestionnaire de modèle CIM. Valeur par défaut : " ".  - `baseURIcore`: URI de profil utilisé dans l'en-tête d'échange de modèle et défini dans les normes CEI.  Il identifie de manière unique le profil et sa version. Il est donné à titre d'information uniquement et pour identifier le profil CEI le plus proche sur lequel ce profil CGMES est basé. Valeur par défaut : ''.  - `baseURIoperation`: URI de profil utilisé dans l'en-tête d'échange de modèle et défini dans les normes CEI.  Il identifie de manière unique le profil et sa version. Il est donné à titre d'information uniquement et pour identifier le profil CEI le plus proche sur lequel ce profil CGMES est basé. Valeur par défaut : ''.  - `baseURIshortCircuit`: URI de profil utilisé dans l'en-tête d'échange de modèle et défini dans les normes CEI.  Il identifie de manière unique le profil et sa version. Il est donné à titre d'information uniquement et pour identifier le profil CEI le plus proche sur lequel ce profil CGMES est basé. Valeur par défaut : ''.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `date`: Date de création du profil Le format est YYYY-MM-DD par exemple pour le 5 janvier 2009 c'est 2009-01-05. Valeur par défaut : ''.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `differenceModelURI`: URI du modèle de différence défini par la norme IEC 61970-552. Valeur par défaut : " ".  - `entsoeUML`: UML fourni par ENTSO-E. Valeur par défaut : " ".  - `entsoeURIcore`: URI du profil défini par ENTSO-E et utilisé dans l'en-tête d'échange de modèle.  Il identifie de manière unique le profil et sa version. Les deux derniers éléments de l'URI (http://entsoe.eu/CIM/EquipmentCore/yy/zzz) indiquent les versions majeures et mineures où :  - yy - indique une version majeure ; - zzz - indique une version mineure. Valeur par défaut : ''.  - `entsoeURIoperation`: URI du profil défini par ENTSO-E et utilisé dans l'en-tête d'échange de modèle.  Il identifie de manière unique le profil et sa version. Les deux derniers éléments de l'URI (http://entsoe.eu/CIM/EquipmentOperation/yy/zzz) indiquent les versions majeures et mineures où :  - yy - indique une version majeure ; - zzz - indique une version mineure. Valeur par défaut : ''.  - `entsoeURIshortCircuit`: URI du profil défini par ENTSO-E et utilisé dans l'en-tête d'échange de modèle.  Il identifie de manière unique le profil et sa version. Les deux derniers éléments de l'URI (http://entsoe.eu/CIM/EquipmentShortCircuit/yy/zzz) indiquent les versions majeures et mineures où :  - yy - indique une version majeure ; - zzz - indique une version mineure. Valeur par défaut : ''.  - `id`: Identifiant unique de l'entité  - `location`:   - `modelDescriptionURI`: URI de description du modèle défini par la norme IEC 61970-552. Valeur par défaut : " ".  - `name`: Le nom de cet élément.  - `namespaceRDF`: Espace de noms RDF. Valeur par défaut : '''  - `namespaceUML`: Espace de noms UML CIM. Valeur par défaut : '''  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `shortName`: Le nom court du profil utilisé dans la documentation du profil. Valeur par défaut : '''.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de EquipmentVersion    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ EquipmentVersion:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -301,8 +299,8 @@ EquipmentVersion:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -326,7 +324,7 @@ EquipmentVersion:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un EquipmentVersion au format JSON comme valeurs-clés. Ceci est compatible avec la NGSI V2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un EquipmentVersion au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un EquipmentVersion au format JSON-LD comme valeurs-clés. Ceci est compatible avec la NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un EquipmentVersion au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un EquipmentVersion au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un EquipmentVersion au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
