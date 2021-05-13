@@ -1,13 +1,14 @@
 Entität: Qualität61850  
 ======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Adaptiert von CIM-Datenmodellen. Qualitätsflags in dieser Klasse sind wie in IEC 61850 definiert, mit Ausnahme von estimatorReplaced, das der Einfachheit halber in diese Klasse aufgenommen wurde.**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `badReference`: Der Messwert kann falsch sein, weil eine Referenz nicht kalibriert ist. Voreinstellung: Falsch  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `estimatorReplaced`: Wert wurde durch State Estimator ersetzt. estimatorReplaced ist kein IEC61850-Qualitätsbit, wurde aber der Einfachheit halber in diese Klasse aufgenommen. Voreinstellung: False  - `failure`: Dieser Identifier zeigt an, dass eine Überwachungsfunktion einen internen oder externen Fehler erkannt hat, z. B. einen Kommunikationsfehler. Voreinstellung: False  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `oldData`: Messwert ist alt und möglicherweise ungültig, da er in einem bestimmten Zeitintervall nicht erfolgreich aktualisiert wurde. Voreinstellung: False  - `operatorBlocked`: Messwert ist blockiert und damit für die Übertragung nicht verfügbar. Voreinstellung: False  - `oscillatory`: Um eine Überlastung der Kommunikation zu verhindern, ist es sinnvoll, oszillierende (schnell wechselnde) Binäreingänge zu erkennen und zu unterdrücken. Ändert sich ein Signal in einer definierten Zeit (tosc) zweimal in die gleiche Richtung (von 0 nach 1 oder von 1 nach 0), so wird ein Schwingen erkannt und die Detailgütekennung `oszillatorisch` gesetzt. Wenn es erkannt wird, kann eine konfigurierte Anzahl von transienten Änderungen vergehen. In dieser Zeit wird der Gültigkeitsstatus `questionable` gesetzt. Befindet sich das Signal nach dieser definierten Anzahl von Änderungen immer noch im schwingenden Zustand, so wird der Wert entweder auf den entgegengesetzten Zustand des vorherigen stabilen Wertes oder auf einen definierten Standardwert gesetzt. In diesem Fall wird der Gültigkeitsstatus `questionable` zurückgesetzt und `invalid` gesetzt, solange das Signal schwingt. Wenn es so konfiguriert ist, dass keine transienten Änderungen durchlaufen werden sollen, dann wird zusätzlich zur Detailqualitätskennung `oscillatory` (dient nur zur Statusinformation) sofort der Gültigkeitsstatus `invalid` gesetzt. Voreinstellung: False  - `outOfRange`: Messwert liegt außerhalb eines vordefinierten Wertebereichs. Voreinstellung: Falsch  - `overFlow`: Der Messwert kann nicht mehr richtig dargestellt werden. Zum Beispiel überläuft ein Zählerwert vom maximalen Zählerstand zurück auf einen Wert von Null. Voreinstellung: Falsch  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Quelle gibt Informationen über die Herkunft eines Wertes. Der Wert kann vom Prozess übernommen, vorgegeben oder ersetzt werden. Vorgabe: Keine  - `suspect`: Eine Korrelationsfunktion hat festgestellt, dass der Wert nicht mit anderen Werten konsistent ist. Wird typischerweise von einem Netzwerk State Estimator gesetzt. Voreinstellung: Falsch  - `test`: Messwert wird zu Testzwecken übertragen. Voreinstellung: Falsch  - `type`: NGSI-Typ. Es muss Qualität61850 sein  - `validity`: Gültigkeitsdauer des Messwerts. Voreinstellung: Keine    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ Quality61850:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -276,8 +274,8 @@ Quality61850:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
