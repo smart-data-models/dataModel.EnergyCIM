@@ -1,13 +1,14 @@
 Entité : SynchronousMachineEquivalentCircuit  
 ============================================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SynchronousMachineEquivalentCircuit/LICENSE.md)  
-Description globale : **Adapté des modèles de données CIM. Les équations électriques de toutes les variantes des modèles synchrones sont basées sur le schéma SynchronousEquivalentCircuit pour les axes directs et en quadrature.    = + = + * / ( + ) = + * * / ( * + * + * ) = + = + * / (+ ) = + ** / ( * + * + * ) = ( + ) / ( * ) = ( * + * + * ) / ( * * ( + ) = ( + ) / ( * ) = ( * + * +  * )/ ( * * ( + ) Mêmes équations utilisant les attributs CIM de la classe SynchronousMachineTimeConstantReactance à gauche du signe = et de la classe SynchronousMachineEquivalentCircuit à droite (sauf indication contraire) : xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.StatorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.StatorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q) tpdo = (xad + xfd) / (2*pi* fréquence nominale * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi* fréquence nominale * rfd) (2*pi* fréquence nominale * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi* fréquence nominale * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi* fréquence nominale * r2q * (xaq + x1q).  Ne sont valables que pour un modèle simplifié où la réactance 'Canay' est nulle.**  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Adapté des modèles de données CIM. Les équations électriques de toutes les variantes des modèles synchrones sont basées sur le schéma SynchronousEquivalentCircuit pour les axes directs et en quadrature.    = + = + * / ( + ) = + * * / ( * + * + * ) = + = + * / (+ ) = + ** / ( * + * + * ) = ( + ) / ( * ) = ( * + * + * ) / ( * * ( + ) = ( + ) / ( * ) = ( * + * +  * )/ ( * * ( + ) Mêmes équations utilisant les attributs CIM de la classe SynchronousMachineTimeConstantReactance à gauche du signe = et de la classe SynchronousMachineEquivalentCircuit à droite (sauf indication contraire) : xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.StatorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q) tpdo = (xad + xfd) / (2*pi* fréquence nominale * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi* fréquence nominale * rfd) (2*pi* fréquence nominale * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi* fréquence nominale * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi* fréquence nominale * r2q * (xaq + x1q).  Ne sont valables que pour un modèle simplifié où la réactance 'Canay' est nulle.**  
 
 ## Liste des propriétés  
 
 - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `r1d`: Résistance du bobinage de l'amortisseur 1 de l'axe D. Valeur par défaut : 0.0  - `r1q`: Résistance du bobinage de l'amortisseur de l'axe Q 1. Valeur par défaut : 0.0  - `r2q`: Résistance du bobinage de l'amortisseur de l'axe Q 2. Valeur par défaut : 0.0  - `rfd`: Résistance de l'enroulement de champ. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de SynchronousMachineEquivalentCircuit.  - `x1d`: Réactance de fuite de l'enroulement de l'amortisseur de l'axe D 1. Valeur par défaut : 0.0  - `x1q`: Réactance de fuite de l'enroulement de l'amortisseur de l'axe Q 1. Valeur par défaut : 0.0  - `x2q`: Réactance de fuite de l'enroulement 2 de l'amortisseur de l'axe Q. Valeur par défaut : 0.0  - `xad`: Réactance mutuelle de l'axe D. Valeur par défaut : 0.0  - `xaq`: Réactance mutuelle de l'axe Q. Valeur par défaut : 0.0  - `xf1d`: Réactance mutuelle différentielle (`Canay`). Valeur par défaut : 0.0  - `xfd`: Réactance de fuite de l'enroulement de champ. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ SynchronousMachineEquivalentCircuit:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -256,8 +254,8 @@ SynchronousMachineEquivalentCircuit:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -311,7 +309,7 @@ SynchronousMachineEquivalentCircuit:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un SynchronousMachineEquivalentCircuit au format JSON comme valeurs-clés. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un SynchronousMachineEquivalentCircuit au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un SynchronousMachineEquivalentCircuit au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un SynchronousMachineEquivalentCircuit au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un SynchronousMachineEquivalentCircuit au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un SynchronousMachineEquivalentCircuit au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
