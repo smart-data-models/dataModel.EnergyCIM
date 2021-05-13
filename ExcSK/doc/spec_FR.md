@@ -1,13 +1,14 @@
 Entité : ExcSK  
 ==============  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcSK/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Modèle slovaque du système d'excitation.  Le limiteur de sous-excitation et le contrôle de la tension secondaire sont inclus dans ce modèle. Lorsque ce modèle est utilisé, il ne peut y avoir de modèle séparé de limiteur de sous-excitation ou de contrôleur de VAr**.  
 
 ## Liste des propriétés  
 
 - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efdmax`: Limite d'écrêtage de la tension de champ (Efdmax). Valeur par défaut : 0.0  - `efdmin`: Limite d'écrêtage de la tension de champ (Efdmin). Valeur par défaut : 0.0  - `emax`: Tension de sortie maximale du champ (Emax).  Valeur typique = 20. Valeur par défaut : 0.0  - `emin`: Sortie de tension de champ minimale (Emin).  Valeur typique = -20. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `k`: Gain (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `k1`: Paramètre de la limite de sous-excitation (K1).  Valeur typique = 0.1364. Valeur par défaut : 0.0  - `k2`: Paramètre de la limite de sous-excitation (K2).  Valeur typique = -0.3861. Valeur par défaut : 0.0  - `kc`: Gain du contrôleur PI (Kc).  Valeur typique = 70. Valeur par défaut : 0.0  - `kce`: Facteur de régulation du redresseur (Kce).  Valeur typique = 0. Valeur par défaut : 0.0  - `kd`: Réactance interne de l'excitateur (Kd).  Valeur typique = 0. Valeur par défaut : 0.0  - `kgob`: Gain du régulateur P (Kgob).  Valeur typique = 10. Valeur par défaut : 0.0  - `kp`: Gain du contrôleur PI (Kp).  Valeur typique = 1. Valeur par défaut : 0.0  - `kqi`: Gain du contrôleur PI de la composante intégrale (Kqi).  Valeur typique = 0. Valeur par défaut : 0.0  - `kqob`: Taux d'augmentation de la puissance réactive (Kqob). Valeur par défaut : 0.0  - `kqp`: Gain du contrôleur PI (Kqp).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `nq`: Bande morte de la puissance réactive (nq).  Détermine la plage de sensibilité.  Valeur typique = 0.001. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qconoff`: État de la commande de tension secondaire (Qc_on_off). true = la commande de tension secondaire est ON false = la commande de tension secondaire est OFF. Valeur typique = false. Valeur par défaut : Faux  - `qz`: Valeur souhaitée (point de consigne) de la puissance réactive, réglage manuel (Qz). Valeur par défaut : 0.0  - `remote`: Sélecteur pour appliquer le calcul automatique dans le modèle de régulateur secondaire. true = le calcul automatique est activé false = le réglage manuel est actif ; l'utilisation de la valeur désirée de la puissance réactive (Qz) est requise. Valeur typique = true. Valeur par défaut : False  - `sbase`: Puissance apparente de l'unité (Sbase).  Unité = MVA.  Valeur typique = 259. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tc`: Constante de temps de l'avance de phase du contrôleur PI (Tc).  Valeur typique = 8. Valeur par défaut : 0  - `te`: Constante de temps du bloc de gain (Te).  Valeur typique = 0,1. Valeur par défaut : 0  - `ti`: Constante de temps de l'avance de phase du contrôleur PI (Ti).  Valeur typique = 2. Valeur par défaut : 0  - `tp`: Constante de temps (Tp).  Valeur typique = 0,1. Valeur par défaut : 0  - `tr`: Constante de temps du transducteur de tension (Tr).  Valeur typique = 0.01. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être ExcSK  - `uimax`: Erreur maximale (Uimax).  Valeur typique = 10. Valeur par défaut : 0.0  - `uimin`: Erreur minimale (UImin).  Valeur typique = -10. Valeur par défaut : 0.0  - `urmax`: Sortie maximale du régulateur (URmax).  Valeur typique = 10. Valeur par défaut : 0.0  - `urmin`: Sortie minimale du contrôleur (URmin).  Valeur typique = -10. Valeur par défaut : 0.0  - `vtmax`: Entrée de la tension maximale de la borne (Vtmax).  Détermine la plage de la bande morte de la tension.  Valeur typique = 1.05. Valeur par défaut : 0.0  - `vtmin`: Entrée de tension minimale aux bornes (Vtmin).  Détermine la plage de la bande morte de la tension.  Valeur typique = 0.95. Valeur par défaut : 0.0  - `yp`: Sortie maximale (Yp).  Sortie minimale = 0. Valeur typique = 1. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ ExcSK:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -336,8 +334,8 @@ ExcSK:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -416,7 +414,7 @@ ExcSK:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcSK au format JSON comme valeurs de clé. Ceci est compatible avec NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un ExcSK au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcSK au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcSK au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcSK au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcSK au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
