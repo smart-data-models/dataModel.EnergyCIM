@@ -2,7 +2,7 @@ Entité : TransformerEnd
 =======================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TransformerEnd/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adapté des modèles de données CIM. Un point de connexion conducteur d'un transformateur de puissance. Il correspond à une borne physique de l'enroulement du transformateur.  Dans les versions antérieures du CIM, la classe TransformerWinding servait un objectif similaire, mais cette classe est plus flexible car elle s'associe à la borne mais n'est pas une spécialisation de ConductingEquipment**.  
+Description globale : **Adapté des modèles de données CIM. Un point de connexion conducteur d'un transformateur de puissance. Il correspond à une borne physique de l'enroulement du transformateur.  Dans les versions antérieures du CIM, la classe TransformerWinding servait un objectif similaire, mais cette classe est plus flexible car elle s'associe au terminal mais n'est pas une spécialisation de ConductingEquipment.**  
 
 ## Liste des propriétés  
 
