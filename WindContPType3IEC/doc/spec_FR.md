@@ -1,13 +1,14 @@
 Entité : WindContPType3IEC  
 ==========================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindContPType3IEC/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Modèle de contrôle P de type 3.  Référence : Norme CEI 61400-27-1, section 6.6.5.3.**.  
 
 ## Liste des propriétés  
 
 - `WindDynamicsLookupTable`: Le modèle de type 3 de la commande P auquel cette table de consultation de la dynamique du vent est associée. Valeur par défaut : 'list'.  - `WindGenTurbineType3IEC`: Modèle d'éolienne de type 3 auquel est associé ce modèle Wind control P de type 3. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dpmax`: Taux de rampe de la puissance maximale de l'éolienne (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0,0  - `dtrisemaxlvrt`: Limitation du taux d'augmentation du couple pendant la LVRT pour S (d). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `kdtd`: Gain pour l'amortissement actif de la chaîne cinématique (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0  - `kip`: Paramètre d'intégration du contrôleur PI (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpp`: Gain proportionnel du régulateur PI (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `location`:   - `mplvrt`: Active le mode de contrôle de puissance LVRT (M vrai = 1 : contrôle de tension faux = 0 : contrôle de puissance réactive.  C'est un paramètre dépendant du projet. Par défaut : Faux  - `name`: Le nom de cet élément.  - `omegaoffset`: Décalage de la valeur de référence qui limite l'action du contrôleur pendant les changements de vitesse du rotor (oméga). Il s'agit d'un paramètre dépendant du cas. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pdtdmax`: Puissance d'amortissement active maximale de la chaîne cinématique (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0  - `rramp`: Limitation de la rampe du couple, requise dans certains codes de réseau (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tdvs`: Délai après des chutes de tension importantes (T). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0  - `temin`: Couple minimal du générateur électrique (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `tomegafilt`: Constante de temps du filtre pour la mesure de la vitesse du générateur (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpfilt`: Constante de temps du filtre pour la mesure de la puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpord`: Constante de temps dans le retard de l'ordre de puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `tufilt`: Constante de temps du filtre pour la mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tuscale`: Facteur d'échelle de tension du couple de réinitialisation (T). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `twref`: Constante de temps dans le filtre de référence de vitesse (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être WindContPType3IEC.  - `udvs`: Limite de tension pour le maintien du statut LVRT après des chutes de tension importantes (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `updip`: Seuil de chute de tension pour le contrôle P ().  Partie du contrôle de la turbine, souvent différente (par exemple 0,8) des seuils du convertisseur. C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `wdtd`: Fréquence d'amortissement actif de la chaîne cinématique (oméga). Elle peut être calculée à partir de deux paramètres du modèle de masse. C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `zeta`: Coefficient d'amortissement actif de la chaîne cinématique (zeta). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -37,14 +38,11 @@ WindContPType3IEC:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -291,8 +289,8 @@ WindContPType3IEC:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -371,7 +369,7 @@ WindContPType3IEC:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un WindContPType3IEC au format JSON comme valeurs-clés. Ceci est compatible avec la NGSI V2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un WindContPType3IEC au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindContPType3IEC au format JSON-LD comme valeurs-clés. Ceci est compatible avec la NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindContPType3IEC au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un WindContPType3IEC au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un WindContPType3IEC au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
