@@ -1,13 +1,14 @@
 Entité : VsConverter  
 ====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/VsConverter/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Côté DC du convertisseur de source de tension (VSC).**  
 
 ## Liste des propriétés  
 
 - `CapabilityCurve`: Tous les convertisseurs avec cette courbe de capacité. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `delta`: Angle entre uf et uc. Variable d'état du convertisseur utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `droop`: Constante de statisme ; la valeur pu est obtenue par D [kV^2 / MW] x Sb / Ubdc^2. Valeur par défaut : 0.0  - `droopCompensation`: Constante de compensation (résistance). Utilisée pour compenser la chute de tension lors du contrôle de la tension sur un bus distant. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `location`:   - `maxModulationIndex`: Le quotient maximal entre la tension du convertisseur CA (Uc) et la tension CC (Ud). Un facteur généralement inférieur à 1. Données de configuration du VSC utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `maxValveCurrent`: Le courant maximum à travers une vanne. Cette limite de courant est la base du calcul du diagramme de capacité. Données de configuration du VSC. Valeur par défaut : 0,0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pPccControl`: Type de contrôle de la puissance réelle et/ou de la tension CC. Par défaut : Aucun  - `qPccControl`:  Par défaut : Aucun  - `qShare`: Facteur de partage de la puissance réactive entre les convertisseurs parallèles sur la commande Uac. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `targetQpcc`: Cible d'injection de puissance réactive dans le réseau CA, au point de couplage commun. Valeur par défaut : 0.0  - `targetUpcc`: Objectif de tension dans le réseau CA, au point de couplage commun. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit s'agir de VsConverter  - `uf`: Tension du bus du filtre. Variable d'état du convertisseur, résultat du flux de puissance. Valeur par défaut : 0.0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,14 +33,11 @@ VsConverter:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -281,8 +279,8 @@ VsConverter:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -316,7 +314,7 @@ VsConverter:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un VsConverter au format JSON comme key-values. Ceci est compatible avec NGSI V2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un VsConverter au format JSON tel que normalisé. Il est compatible avec la NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un VsConverter au format JSON-LD comme key-values. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un VsConverter au format JSON-LD tel que normalisé. Il est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un VsConverter au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un VsConverter au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
