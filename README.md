@@ -825,5 +825,3 @@ The following entity types are available:
 
 ### Contribution
 You can raise an [issue](https://github.com/smart-data-models/dataModel.EnergyCIM/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.EnergyCIM/pulls) on existing data models
-
-
