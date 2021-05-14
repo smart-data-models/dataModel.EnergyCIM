@@ -2,7 +2,7 @@ Entité : PowerSystemResource
 ============================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerSystemResource/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adapté des modèles de données CIM. Une ressource de système électrique peut être un élément d'équipement tel qu'un commutateur, un conteneur d'équipement contenant de nombreux éléments d'équipement individuels tels qu'une sous-station, ou une entité organisationnelle telle qu'une zone de sous-contrôle. Des mesures peuvent être associées aux ressources du système électrique.  
+Description globale : **Adapté des modèles de données CIM. Une ressource de système électrique peut être un élément d'équipement tel qu'un commutateur, un conteneur d'équipement contenant de nombreux éléments individuels d'équipement tels qu'une sous-station, ou une entité organisationnelle telle qu'une zone de sous-contrôle. Des mesures peuvent être associées aux ressources du système électrique.  
 
 ## Liste des propriétés  
 
