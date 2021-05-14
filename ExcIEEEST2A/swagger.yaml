@@ -1,0 +1,52 @@
+---
+# Copyleft (c) 2021 Contributors to Smart Data Models initiative
+# 
+
+
+components:
+  schemas: 
+    ExcIEEEST2A: 
+      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/ExcIEEEST2A/model.yaml#/ExcIEEEST2A"
+info:
+  description:  |
+    Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST2A model. Some static systems utilize both current and voltage sources (generator terminal quantities) to comprise the power source.  The regulator controls the exciter output through controlled saturation of the power transformer components.  These compound-source rectifier excitation systems are designated Type ST2A and are represented by ExcIEEEST2A.  Reference: IEEE Standard 421.5-2005 Section 7.2.
+  title: ExcIEEEST2A
+  version: "1.0.0"
+openapi: "3.0.0"
+
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - ExcIEEEST2A
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/ExcIEEEST2A/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.EnergyCIM/ExcIEEEST2A/examples/example-normalized.jsonld"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
