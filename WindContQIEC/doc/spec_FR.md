@@ -1,13 +1,14 @@
 Entité : WindContQIEC  
 =====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindContQIEC/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Adapté des modèles de données CIM. Modèle de contrôle Q.  Référence : Norme CEI 61400-27-1, section 6.6.5.6.**.  
 
 ## Liste des propriétés  
 
 - `WindTurbineType3or4IEC`: Modèle d'éolienne de type 3 ou 4 auquel ce mode de contrôle réactif est associé. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `iqh1`: Injection maximale de courant réactif pendant le creux (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqmax`: Injection maximale de courant réactif (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqmin`: Injection minimale de courant réactif (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqpost`: Injection de courant réactif après défaut (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `kiq`: Gain d'intégration du régulateur PI de puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kiu`: Gain d'intégration du régulateur PI de tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `kpq`: Gain proportionnel du régulateur PI de puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpu`: Gain proportionnel du régulateur PI en tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `kqv`: Facteur d'échelle de tension pour le courant LVRT (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qmax`: Puissance réactive maximale (q). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `qmin`: Puissance réactive minimale (q). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `rdroop`: Composante résistive de l'impédance de chute de tension (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tiq`: Constante de temps dans le retard du courant réactif (T). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpfilt`: Constante de temps du filtre de mesure de la puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpost`: Durée de la période pendant laquelle la puissance réactive post-défaut est injectée (). C'est un paramètre dépendant du projet. Valeur par défaut : 0  - `tqord`: Constante de temps dans le retard d'ordre de la puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tufilt`: Constante de temps du filtre de mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de WindContQIEC  - `udb1`: Limite inférieure de la bande morte de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `udb2`: Limite supérieure de la bande morte de tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `umax`: Tension maximale dans le terme intégral du régulateur PI de tension (u). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `umin`: Tension minimale dans le terme intégral du régulateur PI de tension (u). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `uqdip`: Seuil de tension pour la détection du TAVG dans la commande q (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `uref0`: Biais défini par l'utilisateur dans la référence de tension (), utilisé lorsque =. C'est un paramètre dépendant du cas. Valeur par défaut : 0.0  - `windLVRTQcontrolModesType`: Types de modes de contrôle LVRT Q (). Il s'agit d'un paramètre dépendant du projet. Par défaut : Aucun  - `windQcontrolModesType`: Types de modes de contrôle Q généraux des éoliennes ().  C'est un paramètre dépendant du projet. Par défaut : Aucun  - `xdroop`: Composante inductive de l'impédance de chute de tension (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0    
 Propriétés requises  
-Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un type incorrect. Si tel était le cas, veuillez soulever un problème ou envoyer un message à alberto.abella@fiware.org.  
+Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,14 +33,11 @@ WindContQIEC:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -301,8 +299,8 @@ WindContQIEC:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -391,7 +389,7 @@ WindContQIEC:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un WindContQIEC au format JSON comme valeurs-clés. Ceci est compatible avec la NGSI V2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un WindContQIEC au format JSON tel que normalisé. Ceci est compatible avec la NGSI V2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindContQIEC au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un WindContQIEC au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un WindContQIEC au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un WindContQIEC au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
