@@ -1,13 +1,14 @@
 Entität: WindPlantFreqPcontrolIEC  
 =================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindPlantFreqPcontrolIEC/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Frequenz- und Wirkleistungsregler-Modell.  Referenz: IEC-Norm 61400-27-1 Anhang E.**  
 
 ## Liste der Eigenschaften  
 
 - `WindDynamicsLookupTable`: Das Frequenz- und Wirkleistungs-Windanlagenregelungsmodell, mit dem diese Winddynamik-Nachschlagetabelle verknüpft ist. Voreinstellung: 'list'  - `WindPlantIEC`: Windanlagenmodell, mit dem diese Windanlagenfrequenz- und Wirkleistungsregelung verbunden ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dprefmax`: Maximale Rampenrate der Anforderung von der Anlagensteuerung an die Windturbinen (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0.0  - `dprefmin`: Minimale (negative) Rampenrate der Anforderung vom Anlagenregler an die Windturbinen (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kiwpp`: Integralverstärkung des Reglers der Anlage P (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kpwpp`: Proportionalverstärkung des Reglers der Anlage P (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `prefmax`: Maximale Anforderung vom Anlagenregler an die Windturbinen (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `prefmin`: Minimale Anforderung vom Anlagenregler an die Windturbinen (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tpft`: Vorlaufzeitkonstante in der Sollwertübertragungsfunktion (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tpfv`: Nachlaufzeitkonstante in der Sollwertübertragungsfunktion (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `twpffilt`: Filterzeitkonstante für die Frequenzmessung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `twppfilt`: Filterzeitkonstante für die Wirkleistungsmessung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss WindPlantFreqPcontrolIEC sein    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -37,14 +38,11 @@ WindPlantFreqPcontrolIEC:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -276,8 +274,8 @@ WindPlantFreqPcontrolIEC:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
