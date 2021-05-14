@@ -1,13 +1,14 @@
 Entität: UnderexcLimIEEE2  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/UnderexcLimIEEE2/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Die Klasse repräsentiert den Typ UEL2, der entweder eine geradlinige oder mehrsegmentige Kennlinie aufweist, wenn er in Bezug auf die Maschinenblindleistung gegenüber der Wirkleistung aufgetragen wird.  Referenz: IEEE UEL2 421.5-2005 Abschnitt 10.2. (Grenzkennlinien-Nachschlagtabelle in Abbildung 10.4 (S. 32) der Norm).**  
 
 ## Liste der Eigenschaften  
 
 - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `k1`: UEL-Klemmenspannungsexponent, der auf die Wirkleistungseingabe in die UEL-Grenzwertnachschlagetabelle (k1) angewendet wird.  Typischer Wert = 2. Voreinstellung: 0,0  - `k2`: UEL-Klemmenspannungsexponent, der auf den Blindleistungsausgang aus der UEL-Grenzwert-Nachschlagetabelle (k2) angewendet wird.  Typischer Wert = 2. Voreinstellung: 0,0  - `kfb`: Verstärkung in Verbindung mit dem optionalen Integrator-Rückkopplungseingangssignal an UEL (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kuf`: UEL-Erregersystem-Stabilisatorverstärkung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kui`: UEL integrale Verstärkung (K).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `kul`: UEL-Proportionalverstärkung (K).  Typischer Wert = 0,8. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `p0`: Wirkleistungswerte für Endpunkte (P).  Typischer Wert = 0. Voreinstellung: 0.0  - `p1`: Wirkleistungswerte für Endpunkte (P).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `p10`: Wirkleistungswerte für Endpunkte (P). Voreinstellung: 0.0  - `p2`: Wirkleistungswerte für Endpunkte (P).  Typischer Wert = 0,6. Voreinstellung: 0,0  - `p3`: Wirkleistungswerte für Endpunkte (P).  Typischer Wert = 0,9. Voreinstellung: 0,0  - `p4`: Wirkleistungswerte für Endpunkte (P).  Typischer Wert = 1,02. Voreinstellung: 0.0  - `p5`: Wirkleistungswerte für Endpunkte (P). Voreinstellung: 0.0  - `p6`: Wirkleistungswerte für Endpunkte (P). Voreinstellung: 0.0  - `p7`: Wirkleistungswerte für Endpunkte (P). Voreinstellung: 0.0  - `p8`: Wirkleistungswerte für Endpunkte (P). Voreinstellung: 0.0  - `p9`: Wirkleistungswerte für Endpunkte (P). Voreinstellung: 0.0  - `q0`: Blindleistungswerte für Endpunkte (Q).  Typischer Wert = -0,31. Voreinstellung: 0,0  - `q1`: Blindleistungswerte für Endpunkte (Q).  Typischer Wert = -0,31. Voreinstellung: 0,0  - `q10`: Blindleistungswerte für Endpunkte (Q). Voreinstellung: 0,0  - `q2`: Blindleistungswerte für Endpunkte (Q).  Typischer Wert = -0,28. Voreinstellung: 0,0  - `q3`: Blindleistungswerte für Endpunkte (Q).  Typischer Wert = -0,21. Voreinstellung: 0,0  - `q4`: Blindleistungswerte für Endpunkte (Q).  Typischer Wert = 0. Voreinstellung: 0.0  - `q5`: Blindleistungswerte für Endpunkte (Q). Voreinstellung: 0,0  - `q6`: Blindleistungswerte für Endpunkte (Q). Voreinstellung: 0,0  - `q7`: Blindleistungswerte für Endpunkte (Q). Voreinstellung: 0,0  - `q8`: Blindleistungswerte für Endpunkte (Q). Voreinstellung: 0,0  - `q9`: Blindleistungswerte für Endpunkte (Q). Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tu1`: UEL-Vorlaufzeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tu2`: UEL-Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tu3`: UEL-Vorlaufzeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tu4`: UEL-Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tul`: Zeitkonstante in Verbindung mit dem optionalen Integrator-Rückkopplungseingangssignal an UEL (T).  Typischer Wert = 0. Voreinstellung: 0  - `tup`: Wirkleistungsfilter-Zeitkonstante (T).  Typischer Wert = 5. Voreinstellung: 0  - `tuq`: Blindleistungsfilter-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tuv`: Spannungsfilter-Zeitkonstante (T).  Typischer Wert = 5. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss UnderexcLimIEEE2 sein  - `vuimax`: Maximaler Grenzwert des UEL-Integratorausgangs (V).  Typischer Wert = 0,25. Voreinstellung: 0,0  - `vuimin`: Minimaler Grenzwert des UEL-Integratorausgangs (V).  Typischer Wert = 0. Voreinstellung: 0.0  - `vulmax`: Maximaler Grenzwert des UEL-Ausgangs (V).  Typischer Wert = 0,25. Voreinstellung: 0,0  - `vulmin`: Minimaler Grenzwert des UEL-Ausgangs (V).  Typischer Wert = 0. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von diesen Einrichtungen entwickelt Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), EON Energy Research Center (EONERC) und RWTH Aachen, Deutschland. einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte melden Sie einen Fehler oder senden Sie eine E-Mail an alberto.abella@fiware.org  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert wurde, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ UnderexcLimIEEE2:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -376,8 +374,8 @@ UnderexcLimIEEE2:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -457,6 +455,6 @@ UnderexcLimIEEE2:
 </details>    
 ## Beispiel-Nutzlasten  
 Nicht verfügbar ist das Beispiel einer UnderexcLimIEEE2 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel einer UnderexcLimIEEE2 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel einer UnderexcLimIEEE2 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer UnderexcLimIEEE2 im JSON-LD-Format als Key-Values. Dies ist bei Verwendung von `options=keyValues` kompatibel mit NGSI-LD und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel einer UnderexcLimIEEE2 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
