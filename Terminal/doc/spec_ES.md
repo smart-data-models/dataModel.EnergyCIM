@@ -1,13 +1,14 @@
 Entidad: Terminal  
 =================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Terminal/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Adaptado de los modelos de datos CIM. Punto de conexión eléctrica de corriente alterna a un equipo conductor. Los terminales se conectan en puntos de conexión físicos llamados nodos de conectividad.**  
 
 ## Lista de propiedades  
 
 - `ConductingEquipment`: El equipo conductor del terminal.  Los equipos conductores tienen terminales que pueden estar conectados a otros terminales de equipos conductores mediante nodos de conectividad o nodos topológicos. Por defecto: Ninguno  - `ConnectivityNode`: Terminales interconectados con impedancia cero en este nodo de conectividad. Por defecto: Ninguno  - `ConverterDCSides`: Terminal de acoplamiento común para el lado de CC de este convertidor. Suele ser el terminal del transformador de potencia (o interruptor) más cercano a la red de CA. La medición del flujo de potencia debe ser la suma de todos los flujos que entran en el transformador. Por defecto: "lista".  - `HasFirstMutualCoupling`: Acoplamientos mutuos asociados a la rama como la primera rama. Por defecto: 'lista'  - `HasSecondMutualCoupling`: Acoplamientos mutuos con la rama asociada como primera rama. Por defecto: 'lista'  - `RegulatingControl`: El terminal asociado a este control de regulación.  El terminal se asocia en lugar de un nodo, ya que el terminal podría conectarse a un nodo topológico (bus en el modelo de rama de bus) o a un nodo de conectividad (modelo con detalle de interruptor).  A veces es útil modelar la regulación en un terminal de un objeto barra de bus, ya que la barra de bus puede estar presente tanto en un modelo de rama de bus como en un modelo con detalle de interruptor. Por defecto: Ninguno  - `RemoteInputSignal`: Señal de entrada procedente de este terminal. Por defecto: 'list'  - `SvPowerFlow`: La variable de estado del flujo de energía asociada al terminal. Por defecto: Ninguno  - `TieFlow`: Los flujos de enlace del área de control a los que se asocia este terminal. Por defecto: "lista".  - `TopologicalNode`: Los terminales asociados al nodo topológico.   Puede utilizarse como alternativa a la ruta del nodo de conectividad a la terminal, lo que hace innecesario modelar los nodos de conectividad en algunos casos.   Tenga en cuenta que si los nodos de conectividad están en el modelo, esta asociación probablemente no se utilizará como especificación de entrada. Por defecto: Ninguno  - `TransformerEnd`: Todos los extremos del transformador conectados en este terminal. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `phases`: Representa la condición de fase normal de la red. Si falta el atributo, se asumirán tres fases (ABC o ABCN). Por defecto: Ninguno  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de NGSI. Tiene que ser de tipo Terminal    
 Propiedades requeridas  
-Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee un problema o envíe un correo a alberto.abella@fiware.org  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -82,14 +83,11 @@ Terminal:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -296,8 +294,8 @@ Terminal:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -316,7 +314,7 @@ Terminal:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un Terminal en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un Terminal en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un Terminal en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un Terminal en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un Terminal en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un Terminal en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
