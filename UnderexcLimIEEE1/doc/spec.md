@@ -1,13 +1,14 @@
 Entity: UnderexcLimIEEE1  
 ========================  
 [Open License](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/UnderexcLimIEEE1/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **Adapted from CIM data models. The class represents the Type UEL1 model which has a circular limit boundary when plotted in terms of machine reactive power vs. real power output.  Reference: IEEE UEL1 421.5-2005 Section 10.1.**  
 
 ## List of properties  
 
 - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kuc`: UEL center setting (K).  Typical Value = 1.38. Default: 0.0  - `kuf`: UEL excitation system stabilizer gain (K).  Typical Value = 3.3. Default: 0.0  - `kui`: UEL integral gain (K).  Typical Value = 0. Default: 0.0  - `kul`: UEL proportional gain (K).  Typical Value = 100. Default: 0.0  - `kur`: UEL radius setting (K).  Typical Value = 1.95. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tu1`: UEL lead time constant (T).  Typical Value = 0. Default: 0  - `tu2`: UEL lag time constant (T).  Typical Value = 0.05. Default: 0  - `tu3`: UEL lead time constant (T).  Typical Value = 0. Default: 0  - `tu4`: UEL lag time constant (T).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be UnderexcLimIEEE1  - `vucmax`: UEL maximum limit for operating point phasor magnitude (V).  Typical Value = 5.8. Default: 0.0  - `vuimax`: UEL integrator output maximum limit (V). Default: 0.0  - `vuimin`: UEL integrator output minimum limit (V). Default: 0.0  - `vulmax`: UEL output maximum limit (V).  Typical Value = 18. Default: 0.0  - `vulmin`: UEL output minimum limit (V).  Typical Value = -18. Default: 0.0  - `vurmax`: UEL maximum limit for radius phasor magnitude (V).  Typical Value = 5.8. Default: 0.0    
 Required properties  
-This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. some properties can have wrong type. This was the case, pelase raise an issue or send mail to alberto.abella@fiware.org  
+Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -27,14 +28,11 @@ UnderexcLimIEEE1:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -261,8 +259,8 @@ UnderexcLimIEEE1:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -331,7 +329,7 @@ UnderexcLimIEEE1:
 ```  
 </details>    
 ## Example payloads    
-Not available the example of a UnderexcLimIEEE1 in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
-Not available the example of a UnderexcLimIEEE1 in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
+Not available the example of a UnderexcLimIEEE1 in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+Not available the example of a UnderexcLimIEEE1 in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 Not available the example of a UnderexcLimIEEE1 in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a UnderexcLimIEEE1 in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
