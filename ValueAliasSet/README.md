@@ -5,15 +5,15 @@
 Adapted from CIM data models. Describes the translation of a set of values into a name and is intendend to facilitate cusom translations. Each ValueAliasSet has a name, description etc. A specific Measurement may represent a discrete state like Open, Closed, Intermediate etc. This requires a translation from the MeasurementValue.value number to a string, e.g. 0->'Invalid', 1->'Open', 2->'Closed', 3->'Intermediate'. Each ValueToAlias member in ValueAliasSet.Value describe a mapping for one particular value to a name.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/ValueAliasSet/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ValueAliasSet/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/ValueAliasSet/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ValueAliasSet/doc/spec.md)
 
-Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.EnergyCIM/ValueAliasSet/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ValueAliasSet/doc/spec_ES.md)
 
-Link to the [specification in French](https://smart-data-models.github.io/dataModel.EnergyCIM/ValueAliasSet/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ValueAliasSet/doc/spec_FR.md)
 
-Link to the [specification in German](https://smart-data-models.github.io/dataModel.EnergyCIM/ValueAliasSet/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ValueAliasSet/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
