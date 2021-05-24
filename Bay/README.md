@@ -5,15 +5,15 @@
 Adapted from CIM data models. A collection of power system resources (within a given substation) including conducting equipment, protection relays, measurements, and telemetry.  A bay typically represents a physical grouping related to modularization of equipment.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/Bay/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Bay/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/Bay/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Bay/doc/spec.md)
 
-Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.EnergyCIM/Bay/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Bay/doc/spec_ES.md)
 
-Link to the [specification in French](https://smart-data-models.github.io/dataModel.EnergyCIM/Bay/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Bay/doc/spec_FR.md)
 
-Link to the [specification in German](https://smart-data-models.github.io/dataModel.EnergyCIM/Bay/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Bay/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
