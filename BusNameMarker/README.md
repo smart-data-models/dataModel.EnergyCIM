@@ -5,15 +5,15 @@
 Adapted from CIM data models. Used to apply user standard names to topology buses. Typically used for bus/branch case generation. Associated with one or more terminals that are normally connected with the bus name. The associated terminals are normally connected by non-retained switches. For a ring bus station configuration, all busbar terminals in the ring are typically associated. For a breaker and a half scheme, both busbars would normally be associated.  For a ring bus, all busbars would normally be associated.  For a 'straight' busbar configuration, normally only the main terminal at the busbar would be associated.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/BusNameMarker/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusNameMarker/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/BusNameMarker/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusNameMarker/doc/spec.md)
 
-Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.EnergyCIM/BusNameMarker/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusNameMarker/doc/spec_ES.md)
 
-Link to the [specification in French](https://smart-data-models.github.io/dataModel.EnergyCIM/BusNameMarker/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusNameMarker/doc/spec_FR.md)
 
-Link to the [specification in German](https://smart-data-models.github.io/dataModel.EnergyCIM/BusNameMarker/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusNameMarker/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
