@@ -5,15 +5,15 @@
 Adapted from CIM data models. A control area generating unit. This class is needed so that alternate control area definitions may include the same generating unit.   Note only one instance within a control area should reference a specific generating unit.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/ControlAreaGeneratingUnit/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlAreaGeneratingUnit/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/ControlAreaGeneratingUnit/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlAreaGeneratingUnit/doc/spec.md)
 
-Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.EnergyCIM/ControlAreaGeneratingUnit/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlAreaGeneratingUnit/doc/spec_ES.md)
 
-Link to the [specification in French](https://smart-data-models.github.io/dataModel.EnergyCIM/ControlAreaGeneratingUnit/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlAreaGeneratingUnit/doc/spec_FR.md)
 
-Link to the [specification in German](https://smart-data-models.github.io/dataModel.EnergyCIM/ControlAreaGeneratingUnit/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlAreaGeneratingUnit/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
