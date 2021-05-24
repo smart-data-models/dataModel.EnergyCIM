@@ -5,15 +5,15 @@
 Adapted from CIM data models. A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation.  Voltage measurements are typically obtained from VoltageTransformers that are connected to busbar sections. A bus bar section may have many physical terminals but for analysis is modelled with exactly one logical terminal.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/BusbarSection/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusbarSection/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/BusbarSection/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusbarSection/doc/spec.md)
 
-Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.EnergyCIM/BusbarSection/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusbarSection/doc/spec_ES.md)
 
-Link to the [specification in French](https://smart-data-models.github.io/dataModel.EnergyCIM/BusbarSection/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusbarSection/doc/spec_FR.md)
 
-Link to the [specification in German](https://smart-data-models.github.io/dataModel.EnergyCIM/BusbarSection/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/BusbarSection/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
