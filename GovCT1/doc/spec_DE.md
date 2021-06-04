@@ -6,7 +6,7 @@ Entität: GovCT1
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aset`: Sollwert des Beschleunigungsbegrenzers (Aset).  Einheit = VE/sec.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db`: Totzone des Drehzahlreglers in pro Geschwindigkeitseinheit (db).  In der Mehrzahl der Anwendungen wird empfohlen, diesen Wert auf Null zu setzen.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `dm`: Drehzahl-Empfindlichkeitskoeffizient (Dm).  Dm kann entweder die Veränderung der Motorleistung mit der Drehzahl oder die Veränderung der maximalen Leistungsfähigkeit mit der Drehzahl darstellen.  Wenn er positiv ist, beschreibt er die fallende Steigung der Motordrehzahl-Leistungs-Kennlinie bei steigender Drehzahl. Eine leicht fallende Kennlinie ist typisch für Hubkolbenmotoren und einige aero-derivative Turbinen.  Ist sie negativ, wird angenommen, dass die Motorleistung von der Drehzahl unbeeinflusst bleibt, aber der maximal zulässige Kraftstoffdurchsatz mit fallender Drehzahl sinkt. Dies ist charakteristisch für einwellige Industrieturbinen aufgrund von Abgastemperaturgrenzen.  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Beschleunigungsbegrenzers (Ka).  Typischer Wert = 10. Voreinstellung: 0.0  - `kdgov`: Verstärkung der Reglerableitung (Kdgov).  Typischer Wert = 0. Voreinstellung: 0.0  - `kigov`: Integralverstärkung des Reglers (Kigov).  Typischer Wert = 2. Voreinstellung: 0.0  - `kiload`: Lastbegrenzer-Integralverstärkung für PI-Regler (Kiload).  Typischer Wert = 0,67. Voreinstellung: 0.0  - `kimw`: Verstärkung des Leistungsreglers (Reset) (Kimw).  Der Standardwert von 0,01 entspricht einer Nachstellzeit von 100 Sekunden.  Ein Wert von 0,001 entspricht einem relativ langsam wirkenden Lastregler.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `kpgov`: Proportionalverstärkung des Reglers (Kpgov).  Typischer Wert = 10. Voreinstellung: 0.0  - `kpload`: Lastbegrenzer-Proportionalverstärkung für PI-Regler (Kpload).  Typischer Wert = 2. Voreinstellung: 0.0  - `kturb`: Turbinenverstärkung (Kturb) (>0).  Typischer Wert = 1,5. Voreinstellung: 0,0  - `ldref`: Lastbegrenzer-Sollwert (Ldref).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`:   - `maxerr`: Maximalwert für Drehzahlfehlersignal (maxerr).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `minerr`: Minimaler Wert für das Drehzahlfehlersignal (minerr).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `r`: Permanenter Durchhang (R).  Typischer Wert = 0,04. Voreinstellung: 0,0  - `rclose`: Minimale Ventilschließrate (Rclose).  Einheit = VE/sec.  Typischer Wert = -0,1. Voreinstellung: 0,0  - `rdown`: Maximale Rate der Lastgrenzensenkung (Rdown).  Typischer Wert = -99. Voreinstellung: 0,0  - `ropen`: Maximale Ventilöffnungsrate (Ropen).  Einheit = VE/sec.  Typischer Wert = 0,10. Voreinstellung: 0,0  - `rselect`: Rückführsignal für P-Bereich (Rselect).  Typischer Wert = electricalPower. Voreinstellung: Keine  - `rup`: Maximale Rate der Lastgrenzenerhöhung (Rup).  Typischer Wert = 99. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Beschleunigungsbegrenzer-Zeitkonstante (Ta) (>0).  Typischer Wert = 0,1. Voreinstellung: 0  - `tact`: Aktor-Zeitkonstante (Tact).  Typischer Wert = 0,5. Voreinstellung: 0  - `tb`: Turbinen-Nachlaufzeitkonstante (Tb) (>0).  Typischer Wert = 0,5. Voreinstellung: 0  - `tc`: Turbinenvorlaufzeitkonstante (Tc).  Typischer Wert = 0. Voreinstellung: 0  - `tdgov`: Zeitkonstante des Reglervorlaufs (Tdgov).  Typischer Wert = 1. Voreinstellung: 0  - `teng`: Transportzeitverzögerung für Dieselmotoren, die bei der Darstellung von Dieselmotoren verwendet wird, bei denen es eine kleine, aber messbare Transportverzögerung zwischen einer Änderung der Kraftstoffdurchflusseinstellung und der Entwicklung des Drehmoments (Teng) gibt.  Teng sollte in allen außer speziellen Fällen, in denen diese Transportverzögerung von besonderer Bedeutung ist, Null sein.  Typischer Wert = 0. Voreinstellung: 0  - `tfload`: Lastbegrenzer-Zeitkonstante (Tfload) (>0).  Typischer Wert = 3. Voreinstellung: 0  - `tpelec`: Zeitkonstante des elektrischen Leistungswandlers (Tpelec) (>0).  Typischer Wert = 1. Voreinstellung: 0  - `tsa`: Vorlaufzeitkonstante der Temperaturerfassung (Tsa).  Typischer Wert = 4. Voreinstellung: 0  - `tsb`: Verzögerungszeitkonstante der Temperaturerfassung (Tsb).  Typischer Wert = 5. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovCT1 sein  - `vmax`: Maximale Ventilstellungsgrenze (Vmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `vmin`: Minimale Ventilstellungsgrenze (Vmin).  Typischer Wert = 0,15. Voreinstellung: 0.0  - `wfnl`: Kraftstofffluss ohne Last (Wfnl).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `wfspd`: Schalter für die Kraftstoffquellencharakteristik, um zu erkennen, dass der Kraftstoffdurchfluss bei einem bestimmten Kraftstoffventilhub proportional zur Motordrehzahl sein kann (Wfspd). true = Kraftstoffdurchfluss proportional zur Drehzahl (für einige Gasturbinen und Dieselmotoren mit Verdrängereinspritzdüsen) false = Kraftstoffregelsystem hält den Kraftstoffdurchfluss unabhängig von der Motordrehzahl. Typischer Wert = true. Voreinstellung: False    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aset`: Sollwert des Beschleunigungsbegrenzers (Aset).  Einheit = VE/sec.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db`: Totzone des Drehzahlreglers in pro Geschwindigkeitseinheit (db).  In der Mehrzahl der Anwendungen wird empfohlen, diesen Wert auf Null zu setzen.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `dm`: Drehzahl-Empfindlichkeitskoeffizient (Dm).  Dm kann entweder die Veränderung der Motorleistung mit der Drehzahl oder die Veränderung der maximalen Leistungsfähigkeit mit der Drehzahl darstellen.  Wenn er positiv ist, beschreibt er die fallende Steigung der Motordrehzahl-Leistungs-Kennlinie bei steigender Drehzahl. Eine leicht fallende Kennlinie ist typisch für Hubkolbenmotoren und einige aero-derivative Turbinen.  Ist sie negativ, wird angenommen, dass die Motorleistung von der Drehzahl unbeeinflusst bleibt, aber der maximal zulässige Kraftstoffdurchsatz mit fallender Drehzahl sinkt. Dies ist charakteristisch für einwellige Industrieturbinen aufgrund von Abgastemperaturgrenzen.  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Beschleunigungsbegrenzers (Ka).  Typischer Wert = 10. Voreinstellung: 0.0  - `kdgov`: Verstärkung der Reglerableitung (Kdgov).  Typischer Wert = 0. Voreinstellung: 0.0  - `kigov`: Integralverstärkung des Reglers (Kigov).  Typischer Wert = 2. Voreinstellung: 0.0  - `kiload`: Lastbegrenzer-Integralverstärkung für PI-Regler (Kiload).  Typischer Wert = 0,67. Voreinstellung: 0.0  - `kimw`: Verstärkung des Leistungsreglers (Reset) (Kimw).  Der Standardwert von 0,01 entspricht einer Nachstellzeit von 100 Sekunden.  Ein Wert von 0,001 entspricht einem relativ langsam wirkenden Lastregler.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `kpgov`: Proportionalverstärkung des Reglers (Kpgov).  Typischer Wert = 10. Voreinstellung: 0.0  - `kpload`: Lastbegrenzer-Proportionalverstärkung für PI-Regler (Kpload).  Typischer Wert = 2. Voreinstellung: 0.0  - `kturb`: Turbinenverstärkung (Kturb) (>0).  Typischer Wert = 1,5. Voreinstellung: 0,0  - `ldref`: Lastbegrenzer-Sollwert (Ldref).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxerr`: Maximalwert für Drehzahlfehlersignal (maxerr).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `minerr`: Minimaler Wert für das Drehzahlfehlersignal (minerr).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `r`: Permanenter Durchhang (R).  Typischer Wert = 0,04. Voreinstellung: 0,0  - `rclose`: Minimale Ventilschließrate (Rclose).  Einheit = VE/sec.  Typischer Wert = -0,1. Voreinstellung: 0,0  - `rdown`: Maximale Rate der Lastgrenzensenkung (Rdown).  Typischer Wert = -99. Voreinstellung: 0,0  - `ropen`: Maximale Ventilöffnungsrate (Ropen).  Einheit = VE/sec.  Typischer Wert = 0,10. Voreinstellung: 0,0  - `rselect`: Rückführsignal für P-Bereich (Rselect).  Typischer Wert = electricalPower. Voreinstellung: Keine  - `rup`: Maximale Rate der Lastgrenzenerhöhung (Rup).  Typischer Wert = 99. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Beschleunigungsbegrenzer-Zeitkonstante (Ta) (>0).  Typischer Wert = 0,1. Voreinstellung: 0  - `tact`: Aktor-Zeitkonstante (Tact).  Typischer Wert = 0,5. Voreinstellung: 0  - `tb`: Turbinen-Nachlaufzeitkonstante (Tb) (>0).  Typischer Wert = 0,5. Voreinstellung: 0  - `tc`: Turbinenvorlaufzeitkonstante (Tc).  Typischer Wert = 0. Voreinstellung: 0  - `tdgov`: Zeitkonstante des Reglervorlaufs (Tdgov).  Typischer Wert = 1. Voreinstellung: 0  - `teng`: Transportzeitverzögerung für Dieselmotoren, die bei der Darstellung von Dieselmotoren verwendet wird, bei denen es eine kleine, aber messbare Transportverzögerung zwischen einer Änderung der Kraftstoffdurchflusseinstellung und der Entwicklung des Drehmoments (Teng) gibt.  Teng sollte in allen außer speziellen Fällen, in denen diese Transportverzögerung von besonderer Bedeutung ist, Null sein.  Typischer Wert = 0. Voreinstellung: 0  - `tfload`: Lastbegrenzer-Zeitkonstante (Tfload) (>0).  Typischer Wert = 3. Voreinstellung: 0  - `tpelec`: Zeitkonstante des elektrischen Leistungswandlers (Tpelec) (>0).  Typischer Wert = 1. Voreinstellung: 0  - `tsa`: Vorlaufzeitkonstante der Temperaturerfassung (Tsa).  Typischer Wert = 4. Voreinstellung: 0  - `tsb`: Verzögerungszeitkonstante der Temperaturerfassung (Tsb).  Typischer Wert = 5. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovCT1 sein  - `vmax`: Maximale Ventilstellungsgrenze (Vmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `vmin`: Minimale Ventilstellungsgrenze (Vmin).  Typischer Wert = 0,15. Voreinstellung: 0.0  - `wfnl`: Kraftstofffluss ohne Last (Wfnl).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `wfspd`: Schalter für die Kraftstoffquellencharakteristik, um zu erkennen, dass der Kraftstoffdurchfluss bei einem bestimmten Kraftstoffventilhub proportional zur Motordrehzahl sein kann (Wfspd). true = Kraftstoffdurchfluss proportional zur Drehzahl (für einige Gasturbinen und Dieselmotoren mit Verdrängereinspritzdüsen) false = Kraftstoffregelsystem hält den Kraftstoffdurchfluss unabhängig von der Motordrehzahl. Typischer Wert = true. Voreinstellung: False    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -135,10 +135,10 @@ GovCT1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxerr:    
       description: 'Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0'    
       type: number    
