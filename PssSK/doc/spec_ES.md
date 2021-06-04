@@ -6,7 +6,7 @@ Entidad: PssSK
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k1`: Ganancia P (K1).  Valor típico = -0,3. Por defecto: 0,0  - `k2`: Ganancia fe (K2).  Valor típico = -0,15. Por defecto: 0,0  - `k3`: Ganancia Si (K3).  Valor típico = 10. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del denominador (T1).  Valor típico = 0,3. Por defecto: 0  - `t2`: Constante de tiempo del filtro (T2).  Valor típico = 0,35. Por defecto: 0  - `t3`: Constante de tiempo del denominador (T3).  Valor típico = 0,22. Por defecto: 0  - `t4`: Constante de tiempo del filtro (T4).  Valor típico = 0,02. Por defecto: 0  - `t5`: Constante de tiempo del denominador (T5).  Valor típico = 0,02. Por defecto: 0  - `t6`: Constante de tiempo del filtro (T6).  Valor típico = 0,02. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser PssSK  - `vsmax`: Límite máximo de salida del estabilizador (Vsmax).  Valor típico = 0,4. Por defecto: 0,0  - `vsmin`: Límite mínimo de salida del estabilizador (Vsmin).  Valor típico = -0,4. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k1`: Ganancia P (K1).  Valor típico = -0,3. Por defecto: 0,0  - `k2`: Ganancia fe (K2).  Valor típico = -0,15. Por defecto: 0,0  - `k3`: Ganancia Si (K3).  Valor típico = 10. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del denominador (T1).  Valor típico = 0,3. Por defecto: 0  - `t2`: Constante de tiempo del filtro (T2).  Valor típico = 0,35. Por defecto: 0  - `t3`: Constante de tiempo del denominador (T3).  Valor típico = 0,22. Por defecto: 0  - `t4`: Constante de tiempo del filtro (T4).  Valor típico = 0,02. Por defecto: 0  - `t5`: Constante de tiempo del denominador (T5).  Valor típico = 0,02. Por defecto: 0  - `t6`: Constante de tiempo del filtro (T6).  Valor típico = 0,02. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser PssSK  - `vsmax`: Límite máximo de salida del estabilizador (Vsmax).  Valor típico = 0,4. Por defecto: 0,0  - `vsmin`: Límite mínimo de salida del estabilizador (Vsmin).  Valor típico = -0,4. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -90,10 +90,10 @@ PssSK:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ PssSK:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ PssSK:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ PssSK:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ PssSK:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ PssSK:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ PssSK:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
