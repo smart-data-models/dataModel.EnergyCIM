@@ -6,7 +6,7 @@ Entidad: LoadStatic
 
 ## Lista de propiedades  
 
-- `LoadAggregate`: Carga agregada a la que pertenece esta carga estática agregada. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `ep1`: Exponente de tensión del primer término para la potencia activa (Ep1).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `ep2`: Exponente de tensión del segundo término de la potencia activa (Ep2).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `ep3`: Exponente de tensión del tercer término para la potencia activa (Ep3).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `eq1`: Exponente de tensión del primer término para la potencia reactiva (Ec1).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `eq2`: Exponente del segundo término de la tensión para la potencia reactiva (Ec2).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `eq3`: Exponente de tensión del tercer término para la potencia reactiva (Ec3).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `kp1`: Coeficiente de tensión del primer término de la potencia activa (Kp1).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kp2`: Coeficiente de tensión del segundo término de la potencia activa (Kp2).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kp3`: Coeficiente de tensión del tercer término para la potencia activa (Kp3).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kp4`: Coeficiente de frecuencia para la potencia activa (Kp4).  Debe ser distinto de cero cuando .staticLoadModelType = ZIP2.  No se utiliza para todos los demás valores de .staticLoadModelType. Por defecto: 0,0  - `kpf`: Coeficiente de desviación de frecuencia para la potencia activa (Kpf).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq1`: Coeficiente de tensión del primer término para la potencia reactiva (Kq1).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq2`: Coeficiente de tensión del segundo término para la potencia reactiva (Kq2).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq3`: Coeficiente de tensión del tercer término para la potencia reactiva (Kq3).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq4`: Coeficiente de frecuencia para la potencia reactiva (Kq4).  Debe ser distinto de cero cuando .staticLoadModelType = ZIP2.  No se utiliza para todos los demás valores de .staticLoadModelType. Por defecto: 0,0  - `kqf`: Coeficiente de desviación de frecuencia para la potencia reactiva (Kqf).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `staticLoadModelType`: Tipo de modelo de carga estática.  Valor típico = constanteZ. Por defecto: Ninguno  - `type`: Tipo de NGSI. Tiene que ser LoadStatic    
+- `LoadAggregate`: Carga agregada a la que pertenece esta carga estática agregada. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `ep1`: Exponente de tensión del primer término para la potencia activa (Ep1).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `ep2`: Exponente de tensión del segundo término de la potencia activa (Ep2).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `ep3`: Exponente de tensión del tercer término para la potencia activa (Ep3).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `eq1`: Exponente de tensión del primer término para la potencia reactiva (Ec1).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `eq2`: Exponente del segundo término de la tensión para la potencia reactiva (Ec2).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `eq3`: Exponente de tensión del tercer término para la potencia reactiva (Ec3).  Sólo se utiliza cuando .staticLoadModelType = exponencial. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `kp1`: Coeficiente de tensión del primer término de la potencia activa (Kp1).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kp2`: Coeficiente de tensión del segundo término de la potencia activa (Kp2).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kp3`: Coeficiente de tensión del tercer término para la potencia activa (Kp3).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kp4`: Coeficiente de frecuencia para la potencia activa (Kp4).  Debe ser distinto de cero cuando .staticLoadModelType = ZIP2.  No se utiliza para todos los demás valores de .staticLoadModelType. Por defecto: 0,0  - `kpf`: Coeficiente de desviación de frecuencia para la potencia activa (Kpf).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq1`: Coeficiente de tensión del primer término para la potencia reactiva (Kq1).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq2`: Coeficiente de tensión del segundo término para la potencia reactiva (Kq2).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq3`: Coeficiente de tensión del tercer término para la potencia reactiva (Kq3).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `kq4`: Coeficiente de frecuencia para la potencia reactiva (Kq4).  Debe ser distinto de cero cuando .staticLoadModelType = ZIP2.  No se utiliza para todos los demás valores de .staticLoadModelType. Por defecto: 0,0  - `kqf`: Coeficiente de desviación de frecuencia para la potencia reactiva (Kqf).  No se utiliza cuando .staticLoadModelType = constantZ. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `staticLoadModelType`: Tipo de modelo de carga estática.  Valor típico = constanteZ. Por defecto: Ninguno  - `type`: Tipo NGSI. Tiene que ser LoadStatic    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -160,10 +160,10 @@ LoadStatic:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +183,8 @@ LoadStatic:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +207,8 @@ LoadStatic:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -231,7 +233,8 @@ LoadStatic:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +256,8 @@ LoadStatic:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -278,7 +282,8 @@ LoadStatic:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -305,7 +310,7 @@ LoadStatic:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
