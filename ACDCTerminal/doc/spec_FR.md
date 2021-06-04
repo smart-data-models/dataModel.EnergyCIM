@@ -6,7 +6,7 @@ Entité : ACDCTerminal
 
 ## Liste des propriétés  
 
-- `BusNameMarker`: Le marqueur de nom de bus utilisé pour nommer le bus (nœud topologique). Valeur par défaut : Aucun  - `Measurements`: Les mesures associées à cette borne définissent l'endroit où la mesure est placée dans la topologie du réseau.  Elle peut être utilisée, par exemple, pour capturer la position du capteur, comme un transformateur de tension (PT) sur un jeu de barres ou un transformateur de courant (CT) sur la barre entre un disjoncteur et un isolateur. Valeur par défaut : "list".  - `OperationalLimitSet`:  Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `connected`: L'état connecté est lié à un modèle de bus-branche et à la relation topologique nœud-terminal.  Vrai signifie que le terminal est connecté au nœud topologique correspondant et faux signifie qu'il ne l'est pas.  Dans un modèle bus-branche, l'état connecté est utilisé pour indiquer si un équipement est déconnecté sans avoir à modifier la connectivité décrite par la relation topologique nœud à borne. Un cas valide est que l'équipement conducteur peut être connecté à une extrémité et ouvert à l'autre. En particulier pour un segment de ligne CA, où la charge réactive de la ligne peut être importante, c'est un cas pertinent. Par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sequenceNumber`: L'orientation des connexions des bornes pour un équipement conducteur à bornes multiples.  La numérotation de la séquence commence par 1 et les bornes supplémentaires doivent suivre dans un ordre croissant.   La première borne est le "point de départ" d'une branche à deux bornes. Valeur par défaut : 0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être ACDCTerminal    
+- `BusNameMarker`: Le marqueur de nom de bus utilisé pour nommer le bus (nœud topologique). Valeur par défaut : Aucun  - `Measurements`: Les mesures associées à cette borne définissent l'endroit où la mesure est placée dans la topologie du réseau.  Elle peut être utilisée, par exemple, pour capturer la position du capteur, comme un transformateur de tension (PT) sur un jeu de barres ou un transformateur de courant (CT) sur la barre entre un disjoncteur et un isolateur. Valeur par défaut : "list".  - `OperationalLimitSet`:  Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `connected`: L'état connecté est lié à un modèle de bus-branche et à la relation topologique nœud-terminal.  Vrai signifie que le terminal est connecté au nœud topologique correspondant et faux signifie qu'il ne l'est pas.  Dans un modèle bus-branche, l'état connecté est utilisé pour indiquer si un équipement est déconnecté sans avoir à modifier la connectivité décrite par la relation topologique nœud à borne. Un cas valide est que l'équipement conducteur peut être connecté à une extrémité et ouvert à l'autre. En particulier pour un segment de ligne CA, où la charge réactive de la ligne peut être importante, c'est un cas pertinent. Par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sequenceNumber`: L'orientation des connexions des bornes pour un équipement conducteur à bornes multiples.  La numérotation de la séquence commence par 1 et les bornes supplémentaires doivent suivre dans un ordre croissant.   La première borne est le "point de départ" d'une branche à deux bornes. Valeur par défaut : 0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être ACDCTerminal    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -95,10 +95,10 @@ ACDCTerminal:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ ACDCTerminal:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ ACDCTerminal:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ ACDCTerminal:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ ACDCTerminal:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ ACDCTerminal:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ ACDCTerminal:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
