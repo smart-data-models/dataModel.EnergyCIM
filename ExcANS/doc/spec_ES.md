@@ -6,7 +6,7 @@ Entidad: ExcANS
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `blint`: Indicador de control del regulador (BLINT).  0 = regulador lead-lag 1 = regulador proporcional integral. Valor típico = 0. Por defecto: 0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ifmn`: Corriente mínima de excitación (I).  Valor típico = -5,2. Por defecto: 0,0  - `ifmx`: Corriente máxima de excitación (I).  Valor típico = 6,5. Por defecto: 0,0  - `k2`: Ganancia del excitador (K).  Valor típico = 20. Por defecto: 0,0  - `k3`: Ganancia del regulador (K).  Valor típico = 1000. Por defecto: 0,0  - `kce`: Factor de techo (K).  Valor típico = 1. Por defecto: 0,0  - `krvecc`: Habilitación de la retroalimentación (K).  0 = Control de bucle abierto 1 = Control de bucle cerrado. Valor típico = 1. Por defecto: 0  - `kvfif`: Indicador de señal de retroalimentación de velocidad (K).  0 = tensión de salida del excitador 1 = corriente de campo del excitador. Valor típico = 0. Por defecto: 0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo (T).  Valor típico = 20. Por defecto: 0  - `t2`: Constante de tiempo (T).  Valor típico = 0,05. Por defecto: 0  - `t3`: Constante de tiempo (T).  Valor típico = 1,6. Por defecto: 0  - `tb`: Constante de tiempo del excitador (T).  Valor típico = 0,04. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcANS  - `vrmn`: Salida máxima del regulador (V).  Valor típico = -5,2. Por defecto: 0,0  - `vrmx`: Salida mínima del regulador (V).  Valor típico = 6,5. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `blint`: Indicador de control del regulador (BLINT).  0 = regulador lead-lag 1 = regulador proporcional integral. Valor típico = 0. Por defecto: 0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ifmn`: Corriente mínima de excitación (I).  Valor típico = -5,2. Por defecto: 0,0  - `ifmx`: Corriente máxima de excitación (I).  Valor típico = 6,5. Por defecto: 0,0  - `k2`: Ganancia del excitador (K).  Valor típico = 20. Por defecto: 0,0  - `k3`: Ganancia del regulador (K).  Valor típico = 1000. Por defecto: 0,0  - `kce`: Factor de techo (K).  Valor típico = 1. Por defecto: 0,0  - `krvecc`: Habilitación de la retroalimentación (K).  0 = Control de bucle abierto 1 = Control de bucle cerrado. Valor típico = 1. Por defecto: 0  - `kvfif`: Indicador de señal de retroalimentación de velocidad (K).  0 = tensión de salida del excitador 1 = corriente de campo del excitador. Valor típico = 0. Por defecto: 0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo (T).  Valor típico = 20. Por defecto: 0  - `t2`: Constante de tiempo (T).  Valor típico = 0,05. Por defecto: 0  - `t3`: Constante de tiempo (T).  Valor típico = 1,6. Por defecto: 0  - `tb`: Constante de tiempo del excitador (T).  Valor típico = 0,04. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcANS  - `vrmn`: Salida máxima del regulador (V).  Valor típico = -5,2. Por defecto: 0,0  - `vrmx`: Salida mínima del regulador (V).  Valor típico = 6,5. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -115,10 +115,10 @@ ExcANS:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ ExcANS:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ ExcANS:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ ExcANS:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ ExcANS:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ ExcANS:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ ExcANS:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
