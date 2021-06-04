@@ -2,11 +2,11 @@ Entität: Messung
 ================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Measurement/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Eine Messung stellt eine gemessene, berechnete oder nicht gemessene, nicht berechnete Größe dar. Jedes Gerät kann Messungen enthalten, z. B. kann ein Umspannwerk Temperaturmessungen und Türöffnungsanzeigen haben, ein Transformator kann Öltemperatur- und Tankdruckmessungen haben, ein Schaltfeld kann eine Reihe von Leistungsflussmessungen enthalten und ein Leistungsschalter kann eine Schalterstatusmessung enthalten.  Die Assoziation PSR - Messung soll diese Verwendung von Messungen erfassen und ist in der auf EquipmentContainer basierenden Benennungshierarchie enthalten. Die Namenshierarchie hat typischerweise Measurements als Blätter, z. B. Substation-VoltageLevel-Bay-Switch-Measurement. Einige Measurements repräsentieren Größen, die sich auf einen bestimmten Sensorstandort im Netz beziehen, z. B. einen Spannungswandler (PT) an einer Sammelschiene oder einen Stromwandler (CT) an der Schiene zwischen einem Leistungsschalter und einem Trennschalter. Die Fühlerposition wird nicht in der Assoziation PSR - Messung erfasst. Stattdessen wird sie von der Assoziation Messung - Klemme erfasst, die zur Definition des Messortes in der Netztopologie verwendet wird. Der Ort wird durch die Verbindung der Klemme mit ConductingEquipment definiert.  Wenn sowohl ein Terminal als auch ein PSR assoziiert sind und der PSR vom Typ ConductingEquipment ist, sollte das assoziierte Terminal zu dieser ConductingEquipment-Instanz gehören. Wenn der Sensorstandort benötigt wird, werden sowohl Measurement-PSR als auch Measurement-Terminal verwendet. Die Assoziation "Measurement-Terminal" wird nie allein verwendet.  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Eine Messung repräsentiert jede gemessene, berechnete oder nicht gemessene, nicht berechnete Größe. Jedes Gerät kann Messungen enthalten, z. B. kann ein Umspannwerk Temperaturmessungen und Türöffnungsanzeigen haben, ein Transformator kann Öltemperatur- und Tankdruckmessungen haben, ein Schaltfeld kann eine Reihe von Leistungsflussmessungen enthalten und ein Leistungsschalter kann eine Schalterstatusmessung enthalten.  Die Assoziation PSR - Messung soll diese Verwendung von Messungen erfassen und ist in der auf EquipmentContainer basierenden Benennungshierarchie enthalten. Die Namenshierarchie hat typischerweise Measurements als Blätter, z. B. Substation-VoltageLevel-Bay-Switch-Measurement. Einige Measurements repräsentieren Größen, die sich auf einen bestimmten Sensorstandort im Netz beziehen, z. B. einen Spannungswandler (PT) an einer Sammelschiene oder einen Stromwandler (CT) an der Schiene zwischen einem Leistungsschalter und einem Trennschalter. Die Fühlerposition wird nicht in der Assoziation PSR - Messung erfasst. Stattdessen wird sie von der Assoziation Messung - Klemme erfasst, die zur Definition des Messortes in der Netztopologie verwendet wird. Der Ort wird durch die Verbindung der Klemme mit ConductingEquipment definiert.  Wenn sowohl ein Terminal als auch ein PSR assoziiert sind und der PSR vom Typ ConductingEquipment ist, sollte das assoziierte Terminal zu dieser ConductingEquipment-Instanz gehören. Wenn der Sensorstandort benötigt wird, werden sowohl Measurement-PSR als auch Measurement-Terminal verwendet. Die Assoziation "Measurement-Terminal" wird nie allein verwendet.  
 
 ## Liste der Eigenschaften  
 
-- `PowerSystemResource`: Die mit dieser Netzressource verbundenen Messungen. Voreinstellung: Keine  - `Terminal`: Eine oder mehrere Messungen können einem Terminal im Netzwerk zugeordnet werden. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `measurementType`: Gibt den Typ der Messung an.  Damit wird z. B. festgelegt, ob die Messung eine Innentemperatur, Außentemperatur, Busspannung, Leitungsfluss usw. darstellt. Voreinstellung: ''  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `phases`: Zeigt an, für welche Phasen die Messung gilt und vermeidet die Notwendigkeit, mit `measurementType` auch Phaseninformationen zu kodieren (was die Typen sprengen würde). Die Phaseninformation in Measurement, zusammen mit `measurementType` und `phases`, definiert eindeutig eine Messung für ein Gerät, basierend auf der normalen Netzphase. Ihre Bedeutung ändert sich nicht, wenn die berechnete Netzphase aufgrund von Steckbrücken oder aus anderen Gründen geändert wird. Fehlt das Attribut, so wird von drei Phasen (ABC) ausgegangen. Voreinstellung: Keine  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss Messung sein  - `unitMultiplier`: Der Einheitenmultiplikator der Messgröße. Voreinstellung: Keine  - `unitSymbol`: Die Maßeinheit der Messgröße. Voreinstellung: Keine    
+- `PowerSystemResource`: Die mit dieser Netzressource verbundenen Messungen. Voreinstellung: Keine  - `Terminal`: Eine oder mehrere Messungen können einem Terminal im Netzwerk zugeordnet werden. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurementType`: Gibt den Typ der Messung an.  Damit wird z. B. festgelegt, ob die Messung eine Innentemperatur, Außentemperatur, Busspannung, Leitungsfluss usw. darstellt. Voreinstellung: ''  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `phases`: Zeigt an, für welche Phasen die Messung gilt und vermeidet die Notwendigkeit, mit `measurementType` auch Phaseninformationen zu kodieren (was die Typen sprengen würde). Die Phaseninformation in Measurement, zusammen mit `measurementType` und `phases`, definiert eindeutig eine Messung für ein Gerät, basierend auf der normalen Netzphase. Ihre Bedeutung ändert sich nicht, wenn die berechnete Netzphase aufgrund von Steckbrücken oder aus anderen Gründen geändert wird. Fehlt das Attribut, so wird von drei Phasen (ABC) ausgegangen. Voreinstellung: Keine  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss Messung sein  - `unitMultiplier`: Der Einheitenmultiplikator der Messgröße. Voreinstellung: Keine  - `unitSymbol`: Die Maßeinheit der Messgröße. Voreinstellung: Keine    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -85,10 +85,10 @@ Measurement:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ Measurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measurementType:    
       description: 'Specifies the type of measurement.  For example, this specifies if the measurement represents an indoor temperature, outdoor temperature, bus voltage, line flow, etc. Default: '''''    
       type: number    
