@@ -6,7 +6,7 @@ Entité : ACDCConverter
 
 ## Liste des propriétés  
 
-- `DCTerminals`:  Valeur par défaut : "list".  - `PccTerminal`: Tous les côtés DC des convertisseurs sont reliés à ce point de couplage commun. Par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `baseS`: Puissance apparente de base du pôle du convertisseur. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `idc`: Courant continu du convertisseur, également appelé Id. Variable d'état du convertisseur, résultat du flux de puissance. Valeur par défaut : 0.0  - `idleLoss`: Perte de puissance active dans le pôle sans transfert de puissance. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `location`:   - `maxUdc`: La tension maximale du côté DC à laquelle le convertisseur doit fonctionner. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `minUdc`: Tension CC minimale autorisée du convertisseur. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `numberOfValves`: Nombre de vannes dans le convertisseur. Utilisé dans les calculs de pertes. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `p`: Puissance active au point de couplage commun. La convention de signe de charge est utilisée, c'est-à-dire qu'un signe positif signifie un flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent dans le cas où un modèle simplifié de flux de puissance est utilisé. Valeur par défaut : 0.0  - `poleLossP`: La perte de puissance active à un pôle DC = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Pour un fonctionnement sans perte Pdc=Pac Pour un fonctionnement en redresseur avec pertes Pdc=Pac-lossP Pour un fonctionnement en onduleur avec pertes Pdc=Pac+lossP Variable d'état du convertisseur utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `q`: Puissance réactive au point de couplage commun. La convention de signe de charge est utilisée, c'est-à-dire qu'un signe positif signifie un flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent dans le cas où un modèle simplifié de flux de puissance est utilisé. Valeur par défaut : 0.0  - `ratedUdc`: Tension continue nominale du convertisseur, également appelée UdN. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `resistiveLoss`: Données de configuration du convertisseur utilisées dans le flux de puissance. Se référer à poleLossP. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `switchingLoss`: Pertes de commutation, par rapport à la puissance apparente de base `baseS`. Se référer à poleLossP. Valeur par défaut : 0.0  - `targetPpcc`: Cible d'injection de puissance réelle dans le réseau CA, au point de couplage commun. Valeur par défaut : 0.0  - `targetUdc`: Valeur cible pour l'amplitude de la tension CC. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit s'agir d'un ACDCConverter.  - `uc`: Tension du convertisseur, la tension du côté CA du pont. Variable d'état du convertisseur, résultat du flux de puissance. Valeur par défaut : 0.0  - `udc`: Tension du convertisseur du côté DC, également appelée variable d'état du convertisseur Ud., résultant du flux de puissance. Valeur par défaut : 0.0  - `valveU0`: Tension de seuil de la valve. Chute de tension directe lorsque la valve est conductrice. Utilisée dans les calculs de perte, c'est-à-dire que le switchLoss dépend du numberOfValves * valveU0. Valeur par défaut : 0.0    
+- `DCTerminals`:  Valeur par défaut : "list".  - `PccTerminal`: Tous les côtés DC des convertisseurs sont reliés à ce point de couplage commun. Par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `baseS`: Puissance apparente de base du pôle du convertisseur. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `idc`: Courant continu du convertisseur, également appelé Id. Variable d'état du convertisseur, résultat du flux de puissance. Valeur par défaut : 0.0  - `idleLoss`: Perte de puissance active dans le pôle sans transfert de puissance. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxUdc`: La tension maximale du côté DC à laquelle le convertisseur doit fonctionner. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `minUdc`: Tension CC minimale autorisée du convertisseur. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `numberOfValves`: Nombre de vannes dans le convertisseur. Utilisé dans les calculs de pertes. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `p`: Puissance active au point de couplage commun. La convention de signe de charge est utilisée, c'est-à-dire qu'un signe positif signifie un flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent dans le cas où un modèle simplifié de flux de puissance est utilisé. Valeur par défaut : 0.0  - `poleLossP`: La perte de puissance active à un pôle DC = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Pour un fonctionnement sans perte Pdc=Pac Pour un fonctionnement en redresseur avec pertes Pdc=Pac-lossP Pour un fonctionnement en onduleur avec pertes Pdc=Pac+lossP Variable d'état du convertisseur utilisée dans le flux de puissance. Valeur par défaut : 0.0  - `q`: Puissance réactive au point de couplage commun. La convention de signe de charge est utilisée, c'est-à-dire qu'un signe positif signifie un flux sortant d'un nœud. Valeur de départ pour une solution en régime permanent dans le cas où un modèle simplifié de flux de puissance est utilisé. Valeur par défaut : 0.0  - `ratedUdc`: Tension continue nominale du convertisseur, également appelée UdN. Données de configuration du convertisseur utilisées dans le flux de puissance. Valeur par défaut : 0.0  - `resistiveLoss`: Données de configuration du convertisseur utilisées dans le flux de puissance. Se référer à poleLossP. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `switchingLoss`: Pertes de commutation, par rapport à la puissance apparente de base `baseS`. Se référer à poleLossP. Valeur par défaut : 0.0  - `targetPpcc`: Cible d'injection de puissance réelle dans le réseau CA, au point de couplage commun. Valeur par défaut : 0.0  - `targetUdc`: Valeur cible pour l'amplitude de la tension CC. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit s'agir d'un ACDCConverter.  - `uc`: Tension du convertisseur, la tension du côté CA du pont. Variable d'état du convertisseur, résultat du flux de puissance. Valeur par défaut : 0.0  - `udc`: Tension du convertisseur du côté DC, également appelée variable d'état du convertisseur Ud., résultant du flux de puissance. Valeur par défaut : 0.0  - `valveU0`: Tension de seuil de la valve. Chute de tension directe lorsque la valve est conductrice. Utilisée dans les calculs de perte, c'est-à-dire que le switchLoss dépend du numberOfValves * valveU0. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -100,10 +100,10 @@ ACDCConverter:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxUdc:    
       description: 'The maximum voltage on the DC side at which the converter should operate. Converter configuration data used in power flow. Default: 0.0'    
       type: number    
