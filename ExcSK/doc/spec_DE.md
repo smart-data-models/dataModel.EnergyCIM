@@ -6,9 +6,9 @@ Entität: ExcSK
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `efdmax`: Begrenzung der Feldspannungsbegrenzung (Efdmax). Voreinstellung: 0,0  - `efdmin`: Grenzwert für die Begrenzung der Feldspannung (Efdmin). Voreinstellung: 0,0  - `emax`: Maximaler Feldspannungsausgang (Emax).  Typischer Wert = 20. Voreinstellung: 0,0  - `emin`: Minimaler Feldspannungsausgang (Emin).  Typischer Wert = -20. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Verstärkung (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `k1`: Parameter der Untererregungsgrenze (K1).  Typischer Wert = 0,1364. Voreinstellung: 0,0  - `k2`: Parameter der Untererregungsgrenze (K2).  Typischer Wert = -0,3861. Voreinstellung: 0,0  - `kc`: Verstärkung des PI-Reglers (Kc).  Typischer Wert = 70. Voreinstellung: 0,0  - `kce`: Regelungsfaktor des Gleichrichters (Kce).  Typischer Wert = 0. Voreinstellung: 0.0  - `kd`: Interne Reaktanz des Erregers (Kd).  Typischer Wert = 0. Voreinstellung: 0.0  - `kgob`: P-Regler-Verstärkung (Kgob).  Typischer Wert = 10. Voreinstellung: 0.0  - `kp`: Verstärkung des PI-Reglers (Kp).  Typischer Wert = 1. Voreinstellung: 0,0  - `kqi`: PI-Reglerverstärkung des Integralanteils (Kqi).  Typischer Wert = 0. Voreinstellung: 0.0  - `kqob`: Anstiegsgeschwindigkeit der Blindleistung (Kqob). Voreinstellung: 0,0  - `kqp`: Verstärkung des PI-Reglers (Kqp).  Typischer Wert = 0. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `nq`: Totzone der Blindleistung (nq).  Legt den Bereich der Empfindlichkeit fest.  Typischer Wert = 0,001. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qconoff`: Zustand der Sekundärspannungsregelung (Qc_on_off). true = Sekundärspannungsregelung ist EIN false = Sekundärspannungsregelung ist AUS. Typischer Wert = false. Voreinstellung: Falsch  - `qz`: Gewünschter Wert (Sollwert) der Blindleistung, manuelle Einstellung (Qz). Voreinstellung: 0,0  - `remote`: Wahlschalter zur Anwendung der automatischen Berechnung im sekundären Reglermodell. true = automatische Berechnung ist aktiviert false = manuelle Einstellung ist aktiv; die Verwendung des Sollwerts der Blindleistung (Qz) ist erforderlich. Typischer Wert = true. Voreinstellung: False  - `sbase`: Scheinleistung des Gerätes (Sbase).  Einheit = MVA.  Typischer Wert = 259. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tc`: PI-Regler Phasenvorlaufzeitkonstante (Tc).  Typischer Wert = 8. Voreinstellung: 0  - `te`: Zeitkonstante des Verstärkungsblocks (Te).  Typischer Wert = 0,1. Voreinstellung: 0  - `ti`: PI-Regler Phasenvorlaufzeitkonstante (Ti).  Typischer Wert = 2. Voreinstellung: 0  - `tp`: Zeitkonstante (Tp).  Typischer Wert = 0,1. Voreinstellung: 0  - `tr`: Zeitkonstante des Spannungswandlers (Tr).  Typischer Wert = 0,01. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcSK sein  - `uimax`: Maximaler Fehler (Uimax).  Typischer Wert = 10. Voreinstellung: 0,0  - `uimin`: Minimaler Fehler (UImin).  Typischer Wert = -10. Voreinstellung: 0,0  - `urmax`: Maximaler Reglerausgang (URmax).  Typischer Wert = 10. Voreinstellung: 0.0  - `urmin`: Minimaler Reglerausgang (URmin).  Typischer Wert = -10. Voreinstellung: 0.0  - `vtmax`: Maximaler Klemmenspannungseingang (Vtmax).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 1,05. Voreinstellung: 0,0  - `vtmin`: Minimaler Klemmenspannungseingang (Vtmin).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 0,95. Voreinstellung: 0,0  - `yp`: Maximaler Ausgang (Yp).  Minimaler Ausgang = 0. Typischer Wert = 1. Voreinstellung: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `efdmax`: Begrenzung der Feldspannungsbegrenzung (Efdmax). Voreinstellung: 0,0  - `efdmin`: Grenzwert für die Begrenzung der Feldspannung (Efdmin). Voreinstellung: 0,0  - `emax`: Maximaler Feldspannungsausgang (Emax).  Typischer Wert = 20. Voreinstellung: 0,0  - `emin`: Minimaler Feldspannungsausgang (Emin).  Typischer Wert = -20. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Verstärkung (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `k1`: Parameter der Untererregungsgrenze (K1).  Typischer Wert = 0,1364. Voreinstellung: 0,0  - `k2`: Parameter der Untererregungsgrenze (K2).  Typischer Wert = -0,3861. Voreinstellung: 0,0  - `kc`: Verstärkung des PI-Reglers (Kc).  Typischer Wert = 70. Voreinstellung: 0,0  - `kce`: Regelungsfaktor des Gleichrichters (Kce).  Typischer Wert = 0. Voreinstellung: 0.0  - `kd`: Interne Reaktanz des Erregers (Kd).  Typischer Wert = 0. Voreinstellung: 0.0  - `kgob`: P-Regler-Verstärkung (Kgob).  Typischer Wert = 10. Voreinstellung: 0.0  - `kp`: Verstärkung des PI-Reglers (Kp).  Typischer Wert = 1. Voreinstellung: 0,0  - `kqi`: PI-Reglerverstärkung des Integralanteils (Kqi).  Typischer Wert = 0. Voreinstellung: 0.0  - `kqob`: Anstiegsgeschwindigkeit der Blindleistung (Kqob). Voreinstellung: 0,0  - `kqp`: Verstärkung des PI-Reglers (Kqp).  Typischer Wert = 0. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `nq`: Totzone der Blindleistung (nq).  Legt den Bereich der Empfindlichkeit fest.  Typischer Wert = 0,001. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qconoff`: Zustand der Sekundärspannungsregelung (Qc_on_off). true = Sekundärspannungsregelung ist EIN false = Sekundärspannungsregelung ist AUS. Typischer Wert = false. Voreinstellung: Falsch  - `qz`: Gewünschter Wert (Sollwert) der Blindleistung, manuelle Einstellung (Qz). Voreinstellung: 0,0  - `remote`: Wahlschalter zur Anwendung der automatischen Berechnung im sekundären Reglermodell. true = automatische Berechnung ist aktiviert false = manuelle Einstellung ist aktiv; die Verwendung des Sollwerts der Blindleistung (Qz) ist erforderlich. Typischer Wert = true. Voreinstellung: False  - `sbase`: Scheinleistung des Gerätes (Sbase).  Einheit = MVA.  Typischer Wert = 259. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tc`: PI-Regler Phasenvorlaufzeitkonstante (Tc).  Typischer Wert = 8. Voreinstellung: 0  - `te`: Zeitkonstante des Verstärkungsblocks (Te).  Typischer Wert = 0,1. Voreinstellung: 0  - `ti`: PI-Regler Phasenvorlaufzeitkonstante (Ti).  Typischer Wert = 2. Voreinstellung: 0  - `tp`: Zeitkonstante (Tp).  Typischer Wert = 0,1. Voreinstellung: 0  - `tr`: Zeitkonstante des Spannungswandlers (Tr).  Typischer Wert = 0,01. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcSK sein  - `uimax`: Maximaler Fehler (Uimax).  Typischer Wert = 10. Voreinstellung: 0,0  - `uimin`: Minimaler Fehler (UImin).  Typischer Wert = -10. Voreinstellung: 0,0  - `urmax`: Maximaler Reglerausgang (URmax).  Typischer Wert = 10. Voreinstellung: 0.0  - `urmin`: Minimaler Reglerausgang (URmin).  Typischer Wert = -10. Voreinstellung: 0.0  - `vtmax`: Maximaler Klemmenspannungseingang (Vtmax).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 1,05. Voreinstellung: 0,0  - `vtmin`: Minimaler Klemmenspannungseingang (Vtmin).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 0,95. Voreinstellung: 0,0  - `yp`: Maximaler Ausgang (Yp).  Minimaler Ausgang = 0. Typischer Wert = 1. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert wurde, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -150,10 +150,10 @@ ExcSK:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +173,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +197,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -221,7 +223,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +246,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +272,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -295,7 +300,7 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
