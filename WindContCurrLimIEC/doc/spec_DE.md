@@ -6,7 +6,7 @@ Entität: WindContCurrLimIEC
 
 ## Liste der Eigenschaften  
 
-- `WindDynamicsLookupTable`: Das aktuelle Regelungsbegrenzungsmodell, mit dem diese Winddynamik-Lookup-Tabelle verknüpft ist. Voreinstellung: 'list'  - `WindTurbineType3or4IEC`: Modell des Windturbinentyps 3 oder 4, mit dem dieses Modell der Strombegrenzung der Windsteuerung verknüpft ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `imax`: Maximaler Dauerstrom an den Klemmen der Windturbine (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `imaxdip`: Maximaler Strom während des Spannungseinbruchs an den Klemmen der Windkraftanlage (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0.0  - `location`:   - `mdfslim`: Begrenzung des Statorstroms Typ 3 (): - false=0: Gesamtstrombegrenzung, - true=1: Statorstrombegrenzung).  Es ist ein typabhängiger Parameter. Voreinstellung: False  - `mqpri`: Priorisierung der q-Regelung während LVRT (): - true = 1: Blindleistungspriorität, - false = 0: Wirkleistungspriorität.  Es ist ein projektabhängiger Parameter. Voreinstellung: False  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tufilt`: Zeitkonstante des Spannungsmessungsfilters (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss WindContCurrLimIEC sein    
+- `WindDynamicsLookupTable`: Das aktuelle Regelungsbegrenzungsmodell, mit dem diese Winddynamik-Lookup-Tabelle verknüpft ist. Voreinstellung: 'list'  - `WindTurbineType3or4IEC`: Modell des Windturbinentyps 3 oder 4, mit dem dieses Modell der Strombegrenzung der Windsteuerung verknüpft ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `imax`: Maximaler Dauerstrom an den Klemmen der Windturbine (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `imaxdip`: Maximaler Strom während des Spannungseinbruchs an den Klemmen der Windkraftanlage (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mdfslim`: Begrenzung des Statorstroms Typ 3 (): - false=0: Gesamtstrombegrenzung, - true=1: Statorstrombegrenzung).  Es ist ein typabhängiger Parameter. Voreinstellung: False  - `mqpri`: Priorisierung der q-Regelung während LVRT (): - wahr = 1: Blindleistungspriorität, - falsch = 0: Wirkleistungspriorität.  Es ist ein projektabhängiger Parameter. Voreinstellung: False  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tufilt`: Zeitkonstante des Spannungsmessungsfilters (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss WindContCurrLimIEC sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -95,10 +95,10 @@ WindContCurrLimIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ WindContCurrLimIEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ WindContCurrLimIEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ WindContCurrLimIEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ WindContCurrLimIEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ WindContCurrLimIEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ WindContCurrLimIEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mdfslim:    
       description: 'Limitation of type 3 stator current  ():  - false=0: total current limitation,  - true=1: stator current limitation).  It is type dependent parameter. Default: False'    
       type: number    
