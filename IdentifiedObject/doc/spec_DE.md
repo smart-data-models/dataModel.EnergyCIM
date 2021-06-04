@@ -6,7 +6,7 @@ Entität: IdentifiedObject
 
 ## Liste der Eigenschaften  
 
-- `DiagramObjects`: Das Domänenobjekt, mit dem dieses Diagrammobjekt verknüpft ist. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Die Beschreibung ist ein freier, von Menschen lesbarer Text, der das Objekt beschreibt oder benennt. Er darf nicht eindeutig sein und muss nicht mit einer Namenshierarchie korrelieren. Standard: ''  - `energyIdentCodeEic`: Das Attribut wird für einen Austausch des EIC-Codes (Energy identification Code) verwendet. Die Länge der Zeichenkette beträgt 16 Zeichen, wie durch den EIC-Code definiert. Referenzen: Standard: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `mRID`: Master Resource Identifier, der von einer Modellautorität vergeben wird. Der mRID ist innerhalb eines Austauschkontexts global eindeutig. Die globale Eindeutigkeit wird einfach durch die Verwendung einer UUID, wie in RFC 4122 spezifiziert, für die mRID erreicht.  Die Verwendung von UUID wird dringend empfohlen. Für CIMXML-Datendateien in RDF-Syntax gemäß IEC 61970-552 Edition 1 wird die mRID auf die Attribute rdf:ID oder rdf:about abgebildet, die CIM-Objektelemente identifizieren. Voreinstellung: ''  - `name`: Der Name ist ein beliebiger freier, menschenlesbarer und möglicherweise nicht eindeutiger Text, der das Objekt benennt. Standard: ''  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortName`: Das Attribut wird für den Austausch eines menschenlesbaren Kurznamens mit einer Länge der Zeichenkette von maximal 12 Zeichen verwendet. Standard: ''  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss IdentifiedObject sein    
+- `DiagramObjects`: Das Domänenobjekt, mit dem dieses Diagrammobjekt verknüpft ist. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Die Beschreibung ist ein freier, von Menschen lesbarer Text, der das Objekt beschreibt oder benennt. Er darf nicht eindeutig sein und muss nicht mit einer Namenshierarchie korrelieren. Standard: ''  - `energyIdentCodeEic`: Das Attribut wird für einen Austausch des EIC-Codes (Energy identification Code) verwendet. Die Länge der Zeichenkette beträgt 16 Zeichen, wie durch den EIC-Code definiert. Referenzen: Standard: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mRID`: Master Resource Identifier, der von einer Modellautorität vergeben wird. Der mRID ist innerhalb eines Austauschkontextes global eindeutig. Die globale Eindeutigkeit wird einfach durch die Verwendung einer UUID, wie in RFC 4122 spezifiziert, für die mRID erreicht.  Die Verwendung von UUID wird dringend empfohlen. Für CIMXML-Datendateien in RDF-Syntax gemäß IEC 61970-552 Edition 1 wird die mRID auf die Attribute rdf:ID oder rdf:about abgebildet, die CIM-Objektelemente identifizieren. Voreinstellung: ''  - `name`: Der Name ist ein beliebiger freier, menschenlesbarer und möglicherweise nicht eindeutiger Text, der das Objekt benennt. Standard: ''  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortName`: Das Attribut wird für den Austausch eines menschenlesbaren Kurznamens mit einer Länge der Zeichenkette von maximal 12 Zeichen verwendet. Standard: ''  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss IdentifiedObject sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -87,10 +87,10 @@ IdentifiedObject:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -110,7 +110,8 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +134,8 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +160,8 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -180,7 +183,8 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -205,7 +209,8 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -232,7 +237,7 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mRID:    
       description: 'Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended. For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements. Default: '''''    
       type: number    
