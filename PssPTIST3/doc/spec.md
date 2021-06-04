@@ -6,7 +6,7 @@ Entity: PssPTIST3
 
 ## List of properties  
 
-- `a0`: Filter coefficient (A0). Default: 0.0  - `a1`: Limiter (Al). Default: 0.0  - `a2`: Filter coefficient (A2). Default: 0.0  - `a3`: Filter coefficient (A3). Default: 0.0  - `a4`: Filter coefficient (A4). Default: 0.0  - `a5`: Filter coefficient (A5). Default: 0.0  - `address`: The mailing address  - `al`: Limiter (Al). Default: 0.0  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `athres`: Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0  - `b0`: Filter coefficient (B0). Default: 0.0  - `b1`: Filter coefficient (B1). Default: 0.0  - `b2`: Filter coefficient (B2). Default: 0.0  - `b3`: Filter coefficient (B3). Default: 0.0  - `b4`: Filter coefficient (B4). Default: 0.0  - `b5`: Filter coefficient (B5). Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dl`: Limiter (Dl). Default: 0.0  - `dtc`: Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0  - `dtf`: Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0  - `dtp`: Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0  - `id`: Unique identifier of the entity  - `isw`: Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False  - `k`: Gain (K).  Typical Value = 9. Default: 0.0  - `location`:   - `lthres`: Threshold value (Lthres). Default: 0.0  - `m`: (M).  M=2*H.  Typical Value = 5. Default: 0.0  - `name`: The name of this item.  - `nav`: Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0  - `ncl`: Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0  - `ncr`: Number of counts until reset after limit function is triggered (Ncr). Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmin`: (Pmin). Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1`: Time constant (T1).  Typical Value = 0.3. Default: 0  - `t2`: Time constant (T2).  Typical Value = 1. Default: 0  - `t3`: Time constant (T3).  Typical Value = 0.2. Default: 0  - `t4`: Time constant (T4).  Typical Value = 0.05. Default: 0  - `t5`: Time constant (T5). Default: 0  - `t6`: Time constant (T6). Default: 0  - `tf`: Time constant (Tf).  Typical Value = 0.2. Default: 0  - `tp`: Time constant (Tp).  Typical Value = 0.2. Default: 0  - `type`: NGSI type. It has to be PssPTIST3    
+- `a0`: Filter coefficient (A0). Default: 0.0  - `a1`: Limiter (Al). Default: 0.0  - `a2`: Filter coefficient (A2). Default: 0.0  - `a3`: Filter coefficient (A3). Default: 0.0  - `a4`: Filter coefficient (A4). Default: 0.0  - `a5`: Filter coefficient (A5). Default: 0.0  - `address`: The mailing address  - `al`: Limiter (Al). Default: 0.0  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `athres`: Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0  - `b0`: Filter coefficient (B0). Default: 0.0  - `b1`: Filter coefficient (B1). Default: 0.0  - `b2`: Filter coefficient (B2). Default: 0.0  - `b3`: Filter coefficient (B3). Default: 0.0  - `b4`: Filter coefficient (B4). Default: 0.0  - `b5`: Filter coefficient (B5). Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dl`: Limiter (Dl). Default: 0.0  - `dtc`: Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0  - `dtf`: Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0  - `dtp`: Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0  - `id`: Unique identifier of the entity  - `isw`: Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False  - `k`: Gain (K).  Typical Value = 9. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `lthres`: Threshold value (Lthres). Default: 0.0  - `m`: (M).  M=2*H.  Typical Value = 5. Default: 0.0  - `name`: The name of this item.  - `nav`: Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0  - `ncl`: Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0  - `ncr`: Number of counts until reset after limit function is triggered (Ncr). Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmin`: (Pmin). Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1`: Time constant (T1).  Typical Value = 0.3. Default: 0  - `t2`: Time constant (T2).  Typical Value = 1. Default: 0  - `t3`: Time constant (T3).  Typical Value = 0.2. Default: 0  - `t4`: Time constant (T4).  Typical Value = 0.05. Default: 0  - `t5`: Time constant (T5). Default: 0  - `t6`: Time constant (T6). Default: 0  - `tf`: Time constant (Tf).  Typical Value = 0.2. Default: 0  - `tp`: Time constant (Tp).  Typical Value = 0.2. Default: 0  - `type`: NGSI type. It has to be PssPTIST3    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -175,10 +175,10 @@ PssPTIST3:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +198,8 @@ PssPTIST3:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -221,7 +222,8 @@ PssPTIST3:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -246,7 +248,8 @@ PssPTIST3:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +271,8 @@ PssPTIST3:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -293,7 +297,8 @@ PssPTIST3:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -320,7 +325,7 @@ PssPTIST3:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     lthres:    
       description: 'Threshold value (Lthres). Default: 0.0'    
       type: number    
