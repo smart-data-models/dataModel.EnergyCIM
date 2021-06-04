@@ -6,7 +6,7 @@ Entidad: GovHydro4
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `at`: Ganancia de la turbina (At).  Valor típico = 1,2. Por defecto: 0,0  - `bgv0`: Punto 0 del servo de la pala Kaplan (Bgv0).  Valor típico = 0. Por defecto: 0.0  - `bgv1`: Servopunto 1 de las palas Kaplan (Bgv1).  Valor típico = 0. Por defecto: 0.0  - `bgv2`: Servopunto 2 de la pala Kaplan (Bgv2). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 0,1. Por defecto: 0,0  - `bgv3`: Punto 3 del servo de la pala Kaplan (Bgv3). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 0,667. Por defecto: 0.0  - `bgv4`: Servopunto 4 de las palas Kaplan (Bgv4).  Valor típico = 0. Valor típico Francisco = 0, Kaplan = 0,9. Por defecto: 0,0  - `bgv5`: Punto 5 del servo de la pala Kaplan (Bgv5). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 1. Por defecto: 0.0  - `bmax`: Factor de ajuste máximo de las palas (Bmax). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 1,1276. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `dturb`: Factor de amortiguación de la turbina (Dturb).  Unidad = delta P (PU de MWbase) / delta velocidad (PU). Valor típico = 0,5.  Valor típico Francis = 1,1, Kaplan = 1,1. Por defecto: 0,0  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `gmax`: Apertura máxima de la puerta, PU de MWbase (Gmax).  Valor típico = 1. Por defecto: 0,0  - `gmin`: Apertura mínima de la puerta, PU de MWbase (Gmin).  Valor típico = 0. Por defecto: 0.0  - `gv0`: Punto de ganancia no lineal 0, PU gv (Gv0). Valor típico = 0. Valor típico Francisco = 0,1, Kaplan = 0,1. Por defecto: 0,0  - `gv1`: Punto de ganancia no lineal 1, PU gv (Gv1). Valor típico = 0. Valor típico Francisco = 0,4, Kaplan = 0,4. Por defecto: 0,0  - `gv2`: Punto de ganancia no lineal 2, PU gv (Gv2). Valor típico = 0. Valor típico Francisco = 0,5, Kaplan = 0,5. Por defecto: 0,0  - `gv3`: Punto de ganancia no lineal 3, PU gv (Gv3). Valor típico = 0. Valor típico Francisco = 0,7, Kaplan = 0,7. Por defecto: 0,0  - `gv4`: Punto de ganancia no lineal 4, PU gv (Gv4). Valor típico = 0. Valor típico Francisco = 0,8, Kaplan = 0,8. Por defecto: 0,0  - `gv5`: Punto de ganancia no lineal 5, PU gv (Gv5). Valor típico = 0. Valor típico Francisco = 0,9, Kaplan = 0,9. Por defecto: 0,0  - `hdam`: Altura disponible en la presa (hdam).  Valor típico = 1. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`:   - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv0`: Punto de ganancia no lineal 0, potencia PU (Pgv0).  Valor típico = 0. Por defecto: 0.0  - `pgv1`: Punto de ganancia no lineal 1, potencia PU (Pgv1). Valor típico = 0. Valor típico Francisco = 0,42, Kaplan = 0,35. Por defecto: 0,0  - `pgv2`: Punto de ganancia no lineal 2, potencia PU (Pgv2). Valor típico = 0. Valor típico Francisco = 0,56, Kaplan = 0,468. Por defecto: 0,0  - `pgv3`: Punto de ganancia no lineal 3, potencia PU (Pgv3). Valor típico = 0. Valor típico Francisco = 0,8, Kaplan = 0,796. Por defecto: 0,0  - `pgv4`: Punto de ganancia no lineal 4, potencia PU (Pgv4). Valor típico = 0. Valor típico Francisco = 0,9, Kaplan = 0,917. Por defecto: 0,0  - `pgv5`: Punto de ganancia no lineal 5, potencia PU (Pgv5).  Valor típico = 0. Valor típico Francisco = 0,97, Kaplan = 0,99. Por defecto: 0,0  - `qn1`: Caudal en vacío a la altura nominal (Qnl). Valor típico = 0,08.  Valor típico Francisco = 0, Kaplan = 0. Por defecto: 0,0  - `rperm`: Estatismo permanente (Rperm).  Valor típico = 0,05. Por defecto: 0  - `rtemp`: Estatismo temporal (Rtemp).  Valor típico = 0,3. Por defecto: 0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tblade`: Constante de tiempo del servo de la pala (Tblade).  Valor típico = 100. Por defecto: 0  - `tg`: Constante de tiempo del servo de la puerta (Tg) (>0).  Valor típico = 0,5. Por defecto: 0  - `tp`: Constante de tiempo del servo piloto (Tp).  Valor típico = 0,1. Por defecto: 0  - `tr`: Constante de tiempo del amortiguador (Tr) (>0).  Valor típico = 5. Por defecto: 0  - `tw`: Constante de tiempo de inercia del agua (Tw) (>0).  Valor típico = 1. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovHydro4  - `uc`: Velocidad máxima de cierre de la puerta (Uc).  Valor típico = 0,2. Por defecto: 0,0  - `uo`: Velocidad máxima de apertura de la puerta (Uo).  Vlaue típico = 0,2. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `at`: Ganancia de la turbina (At).  Valor típico = 1,2. Por defecto: 0,0  - `bgv0`: Punto 0 del servo de la pala Kaplan (Bgv0).  Valor típico = 0. Por defecto: 0.0  - `bgv1`: Servopunto 1 de las palas Kaplan (Bgv1).  Valor típico = 0. Por defecto: 0.0  - `bgv2`: Servopunto 2 de la pala Kaplan (Bgv2). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 0,1. Por defecto: 0,0  - `bgv3`: Punto 3 del servo de la pala Kaplan (Bgv3). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 0,667. Por defecto: 0.0  - `bgv4`: Servopunto 4 de las palas Kaplan (Bgv4).  Valor típico = 0. Valor típico Francisco = 0, Kaplan = 0,9. Por defecto: 0,0  - `bgv5`: Punto 5 del servo de la pala Kaplan (Bgv5). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 1. Por defecto: 0.0  - `bmax`: Factor de ajuste máximo de las palas (Bmax). Valor típico = 0. Valor típico Francisco = 0, Kaplan = 1,1276. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `dturb`: Factor de amortiguación de la turbina (Dturb).  Unidad = delta P (PU de MWbase) / delta velocidad (PU). Valor típico = 0,5.  Valor típico Francis = 1,1, Kaplan = 1,1. Por defecto: 0,0  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `gmax`: Apertura máxima de la puerta, PU de MWbase (Gmax).  Valor típico = 1. Por defecto: 0,0  - `gmin`: Apertura mínima de la puerta, PU de MWbase (Gmin).  Valor típico = 0. Por defecto: 0.0  - `gv0`: Punto de ganancia no lineal 0, PU gv (Gv0). Valor típico = 0. Valor típico Francisco = 0,1, Kaplan = 0,1. Por defecto: 0,0  - `gv1`: Punto de ganancia no lineal 1, PU gv (Gv1). Valor típico = 0. Valor típico Francisco = 0,4, Kaplan = 0,4. Por defecto: 0,0  - `gv2`: Punto de ganancia no lineal 2, PU gv (Gv2). Valor típico = 0. Valor típico Francisco = 0,5, Kaplan = 0,5. Por defecto: 0,0  - `gv3`: Punto de ganancia no lineal 3, PU gv (Gv3). Valor típico = 0. Valor típico Francisco = 0,7, Kaplan = 0,7. Por defecto: 0,0  - `gv4`: Punto de ganancia no lineal 4, PU gv (Gv4). Valor típico = 0. Valor típico Francisco = 0,8, Kaplan = 0,8. Por defecto: 0,0  - `gv5`: Punto de ganancia no lineal 5, PU gv (Gv5). Valor típico = 0. Valor típico Francisco = 0,9, Kaplan = 0,9. Por defecto: 0,0  - `hdam`: Altura disponible en la presa (hdam).  Valor típico = 1. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv0`: Punto de ganancia no lineal 0, potencia PU (Pgv0).  Valor típico = 0. Por defecto: 0.0  - `pgv1`: Punto de ganancia no lineal 1, potencia PU (Pgv1). Valor típico = 0. Valor típico Francisco = 0,42, Kaplan = 0,35. Por defecto: 0,0  - `pgv2`: Punto de ganancia no lineal 2, potencia PU (Pgv2). Valor típico = 0. Valor típico Francisco = 0,56, Kaplan = 0,468. Por defecto: 0,0  - `pgv3`: Punto de ganancia no lineal 3, potencia PU (Pgv3). Valor típico = 0. Valor típico Francisco = 0,8, Kaplan = 0,796. Por defecto: 0,0  - `pgv4`: Punto de ganancia no lineal 4, potencia PU (Pgv4). Valor típico = 0. Valor típico Francisco = 0,9, Kaplan = 0,917. Por defecto: 0,0  - `pgv5`: Punto de ganancia no lineal 5, potencia PU (Pgv5).  Valor típico = 0. Valor típico Francisco = 0,97, Kaplan = 0,99. Por defecto: 0,0  - `qn1`: Caudal en vacío a la altura nominal (Qnl). Valor típico = 0,08.  Valor típico Francisco = 0, Kaplan = 0. Por defecto: 0,0  - `rperm`: Estatismo permanente (Rperm).  Valor típico = 0,05. Por defecto: 0  - `rtemp`: Estatismo temporal (Rtemp).  Valor típico = 0,3. Por defecto: 0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tblade`: Constante de tiempo del servo de la pala (Tblade).  Valor típico = 100. Por defecto: 0  - `tg`: Constante de tiempo del servo de la puerta (Tg) (>0).  Valor típico = 0,5. Por defecto: 0  - `tp`: Constante de tiempo del servo piloto (Tp).  Valor típico = 0,1. Por defecto: 0  - `tr`: Constante de tiempo del amortiguador (Tr) (>0).  Valor típico = 5. Por defecto: 0  - `tw`: Constante de tiempo de inercia del agua (Tw) (>0).  Valor típico = 1. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovHydro4  - `uc`: Velocidad máxima de cierre de la puerta (Uc).  Valor típico = 0,2. Por defecto: 0,0  - `uo`: Velocidad máxima de apertura de la puerta (Uo).  Vlaue típico = 0,2. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -180,10 +180,10 @@ GovHydro4:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +203,8 @@ GovHydro4:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +227,8 @@ GovHydro4:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -251,7 +253,8 @@ GovHydro4:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +276,8 @@ GovHydro4:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -298,7 +302,8 @@ GovHydro4:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -325,7 +330,7 @@ GovHydro4:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
