@@ -6,7 +6,7 @@ Entité : Quality61850
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `badReference`: La valeur de mesure peut être incorrecte en raison d'une référence non calibrée. Valeur par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `estimatorReplaced`: La valeur a été remplacée par State Estimator. estimatorReplaced n'est pas un bit de qualité IEC61850 mais a été mis dans cette classe pour des raisons de commodité. Par défaut : False  - `failure`: Cet identifiant indique qu'une fonction de supervision a détecté une défaillance interne ou externe, par exemple une défaillance de communication. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `oldData`: La valeur de mesure est ancienne et peut-être invalide, car elle n'a pas été mise à jour avec succès pendant un intervalle de temps spécifié. Valeur par défaut : False  - `operatorBlocked`: La valeur de mesure est bloquée et donc indisponible pour la transmission. Par défaut : Faux  - `oscillatory`: Pour éviter une surcharge de la communication, il est judicieux de détecter et de supprimer les entrées binaires oscillantes (à variation rapide). Si un signal change dans un temps défini (tosc) deux fois dans la même direction (de 0 à 1 ou de 1 à 0), l'oscillation est détectée et l'identificateur de qualité de détail "oscillatoire" est activé. S'il est détecté, un nombre configuré de changements transitoires peut être passé. Pendant ce temps, l'état de validité `questionnable` est défini. Si après ce nombre défini de changements, le signal est toujours dans l'état oscillant, la valeur doit être fixée soit à l'état opposé de la valeur stable précédente, soit à une valeur par défaut définie. Dans ce cas, l'état de validité "questionnable" est remis à zéro et "invalide" est activé tant que le signal oscille. S'il est configuré de telle sorte qu'aucun changement transitoire ne doit passer, alors l'état de validité `invalide` est défini immédiatement en plus de l'identificateur de qualité détaillé `oscillatoire` (utilisé pour les informations d'état uniquement). Par défaut : False  - `outOfRange`: La valeur mesurée est au-delà d'une plage de valeurs prédéfinie. Valeur par défaut : Faux  - `overFlow`: La valeur de la mesure dépasse la capacité d'être représentée correctement. Par exemple, la valeur d'un compteur déborde du comptage maximum pour atteindre une valeur de zéro. Valeur par défaut : Faux  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: La source donne des informations relatives à l'origine d'une valeur. La valeur peut être acquise à partir du processus, proposée par défaut ou substituée. Par défaut : Aucun  - `suspect`: Une fonction de corrélation a détecté que la valeur n'est pas cohérente avec d'autres valeurs. Généralement défini par un estimateur d'état du réseau. Par défaut : False  - `test`: La valeur de la mesure est transmise à des fins de test. Valeur par défaut : Faux  - `type`: Type NGSI. Il doit être Quality61850  - `validity`: Validité de la valeur de mesure. Valeur par défaut : Aucun    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `badReference`: La valeur de mesure peut être incorrecte en raison d'une référence non calibrée. Valeur par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `estimatorReplaced`: La valeur a été remplacée par State Estimator. estimatorReplaced n'est pas un bit de qualité IEC61850 mais a été mis dans cette classe pour des raisons de commodité. Par défaut : False  - `failure`: Cet identifiant indique qu'une fonction de supervision a détecté une défaillance interne ou externe, par exemple une défaillance de communication. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `oldData`: La valeur de mesure est ancienne et peut-être invalide, car elle n'a pas été mise à jour avec succès pendant un intervalle de temps spécifié. Valeur par défaut : False  - `operatorBlocked`: La valeur de mesure est bloquée et donc indisponible pour la transmission. Par défaut : Faux  - `oscillatory`: Pour éviter une surcharge de la communication, il est judicieux de détecter et de supprimer les entrées binaires oscillantes (à variation rapide). Si un signal change dans un temps défini (tosc) deux fois dans la même direction (de 0 à 1 ou de 1 à 0), l'oscillation est détectée et l'identificateur de qualité de détail "oscillatoire" est activé. S'il est détecté, un nombre configuré de changements transitoires peut être passé. Pendant ce temps, l'état de validité `questionnable` est défini. Si après ce nombre défini de changements, le signal est toujours dans l'état oscillant, la valeur doit être fixée soit à l'état opposé de la valeur stable précédente, soit à une valeur par défaut définie. Dans ce cas, l'état de validité "questionnable" est remis à zéro et "invalide" est activé tant que le signal oscille. S'il est configuré de telle sorte qu'aucun changement transitoire ne doit passer, alors l'état de validité `invalide` est défini immédiatement en plus de l'identificateur de qualité détaillé `oscillatoire` (utilisé pour les informations d'état uniquement). Par défaut : False  - `outOfRange`: La valeur mesurée est au-delà d'une plage de valeurs prédéfinie. Valeur par défaut : Faux  - `overFlow`: La valeur de la mesure dépasse la capacité d'être représentée correctement. Par exemple, la valeur d'un compteur déborde du comptage maximum pour atteindre une valeur de zéro. Valeur par défaut : Faux  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: La source donne des informations relatives à l'origine d'une valeur. La valeur peut être acquise à partir du processus, proposée par défaut ou substituée. Par défaut : Aucun  - `suspect`: Une fonction de corrélation a détecté que la valeur n'est pas cohérente avec d'autres valeurs. Généralement défini par un estimateur d'état du réseau. Par défaut : False  - `test`: La valeur de la mesure est transmise à des fins de test. Valeur par défaut : Faux  - `type`: Type NGSI. Il doit être Quality61850  - `validity`: Validité de la valeur de mesure. Valeur par défaut : Aucun    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -90,10 +90,10 @@ Quality61850:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
