@@ -6,7 +6,7 @@ Entität: ExcHU
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `ae`: Verstärkungsfaktor (Ae) der Hauptschleife PI-Tag.  Typischer Wert = 3. Voreinstellung: 0,0  - `ai`: PI-Verstärkungsfaktor (Ai) für die Nebenschleife.  Typischer Wert = 22. Voreinstellung: 0.0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `atr`: AVR-Konstante (Atr).  Typischer Wert = 2,19. Voreinstellung: 0.0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `emax`: Obere Grenze des Feldspannungs-Steuersignals an der AVR-Basis (Emax).  Typischer Wert = 0,996. Voreinstellung: 0.0  - `emin`: Untere Grenze des Feldspannungs-Steuersignals an der AVR-Basis (Emin).  Typischer Wert = -0,866. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `imax`: Obere Grenze des PI-Tag-Ausgangssignals der Hauptschleife (Imax).  Typischer Wert = 2,19. Voreinstellung: 0,0  - `imin`: Untere Grenze des PI-Tag-Ausgangssignals der Hauptschleife (Imin).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `ke`: Spannungsbasis-Umwandlungskonstante (Ke).  Typischer Wert = 4,666. Voreinstellung: 0,0  - `ki`: Strombasis-Umwandlungskonstante (Ki).  Typischer Wert = 0,21428. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `te`: Integrationszeitkonstante (Te) der PI-Variable der Hauptschleife.  Typischer Wert = 0,154. Voreinstellung: 0  - `ti`: Integrationszeitkonstante (Ti) der PI-Regelungsfahne der kleinen Schleife.  Typischer Wert = 0,01333. Voreinstellung: 0  - `tr`: Filterzeitkonstante (Tr). Wenn ein Spannungskompensator in Verbindung mit diesem Erregersystemmodell verwendet wird, sollte Tr auf 0 gesetzt werden. Typischer Wert = 0,01. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcHU sein    
+- `address`: Die Postanschrift  - `ae`: Verstärkungsfaktor (Ae) der Hauptschleife PI-Tag.  Typischer Wert = 3. Voreinstellung: 0,0  - `ai`: PI-Verstärkungsfaktor (Ai) für die Nebenschleife.  Typischer Wert = 22. Voreinstellung: 0.0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `atr`: AVR-Konstante (Atr).  Typischer Wert = 2,19. Voreinstellung: 0.0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `emax`: Obere Grenze des Feldspannungs-Steuersignals an der AVR-Basis (Emax).  Typischer Wert = 0,996. Voreinstellung: 0.0  - `emin`: Untere Grenze des Feldspannungs-Steuersignals an der AVR-Basis (Emin).  Typischer Wert = -0,866. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `imax`: Obere Grenze des PI-Tag-Ausgangssignals der Hauptschleife (Imax).  Typischer Wert = 2,19. Voreinstellung: 0,0  - `imin`: Untere Grenze des PI-Tag-Ausgangssignals der Hauptschleife (Imin).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `ke`: Spannungsbasis-Umwandlungskonstante (Ke).  Typischer Wert = 4,666. Voreinstellung: 0,0  - `ki`: Strombasis-Umwandlungskonstante (Ki).  Typischer Wert = 0,21428. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `te`: Integrationszeitkonstante (Te) der PI-Variable der Hauptschleife.  Typischer Wert = 0,154. Voreinstellung: 0  - `ti`: Integrationszeitkonstante (Ti) der PI-Regelungsfahne der kleinen Schleife.  Typischer Wert = 0,01333. Voreinstellung: 0  - `tr`: Filterzeitkonstante (Tr). Wenn ein Spannungskompensator in Verbindung mit diesem Erregersystemmodell verwendet wird, sollte Tr auf 0 gesetzt werden. Typischer Wert = 0,01. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcHU sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -120,10 +120,10 @@ ExcHU:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -143,7 +143,8 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +167,8 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -191,7 +193,8 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +216,8 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -238,7 +242,8 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -265,7 +270,7 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
