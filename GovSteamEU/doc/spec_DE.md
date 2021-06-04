@@ -6,7 +6,7 @@ Entität: GovSteamEU
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `chc`: Grenzwert für die Schließgeschwindigkeit der Regelventile (Chc).  Einheit = VE/sec.  Typischer Wert = -3,3. Voreinstellung: 0,0  - `cho`: Grenzwert für die Öffnungsrate der Regelventile (Cho).  Einheit = VE/sec.  Typischer Wert = 0,17. Voreinstellung: 0,0  - `cic`: Intercept Ventile Rate Schließgrenze (Cic).  Typischer Wert = -2,2. Voreinstellung: 0,0  - `cio`: Intercept Ventile Rate Öffnungsgrenze (Cio).  Typischer Wert = 0,123. Voreinstellung: 0.0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Totzone des Frequenzumrichters (db1).  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Totzone des Drehzahlreglers (db2).  Typischer Wert = 0,0004. Voreinstellung: 0,0  - `description`: Eine Beschreibung dieses Artikels  - `hhpmax`: Maximale Regelventilposition (Hhpmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ke`: Verstärkung des Leistungsreglers (Ke).  Typischer Wert = 0,65. Voreinstellung: 0,0  - `kfcor`: Verstärkung des Frequenzumrichters (Kfcor).  Typischer Wert = 20. Voreinstellung: 0.0  - `khp`: Anteil der vom HP-Teil erzeugten Gesamtleistung der Turbine (Khp).  Typischer Wert = 0,277. Voreinstellung: 0.0  - `klp`: Anteil der vom HD-Teil erzeugten Gesamtleistung der Turbine (Klp).  Typischer Wert = 0,723. Voreinstellung: 0,0  - `kwcor`: Verstärkung des Drehzahlreglers (Kwcor).  Typischer Wert = 20. Voreinstellung: 0.0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Maximale Wirkleistung der Turbine (Pmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `prhmax`: Maximale Niederdruckgrenze (Prhmax).  Typischer Wert = 1,4. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `simx`: Intercept Ventile Übertragungsgrenze (Simx).  Typischer Wert = 0,425. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tb`: Kesselzeitkonstante (Tb).  Typischer Wert = 100. Voreinstellung: 0  - `tdp`: Vorhaltezeitkonstante des Leistungsreglers (Tdp).  Typischer Wert = 0. Voreinstellung: 0  - `ten`: Elektrohydraulischer Messumformer (Ten).  Typischer Wert = 0,1. Voreinstellung: 0  - `tf`: Zeitkonstante des Frequenzumwandlers (Tf).  Typischer Wert = 0. Voreinstellung: 0  - `tfp`: Zeitkonstante des Leistungsreglers (Tfp).  Typischer Wert = 0. Voreinstellung: 0  - `thp`: Hochdruck (HP) Zeitkonstante der Turbine (Thp).  Typischer Wert = 0,31. Voreinstellung: 0  - `tip`: Integrale Zeitkonstante des Leistungsreglers (Tip).  Typischer Wert = 2. Voreinstellung: 0  - `tlp`: Niederdruck(ND)-Zeitkonstante der Turbine (Tlp).  Typischer Wert = 0,45. Voreinstellung: 0  - `tp`: Zeitkonstante des Leistungsmesswandlers (Tp).  Typischer Wert = 0,07. Voreinstellung: 0  - `trh`: Nachheizzeitkonstante der Turbine (Trh).  Typischer Wert = 8. Voreinstellung: 0  - `tvhp`: Regelventile Servo-Zeitkonstante (Tvhp).  Typischer Wert = 0,1. Voreinstellung: 0  - `tvip`: Intercept Ventile Servo-Zeitkonstante (Tvip).  Typischer Wert = 0,15. Voreinstellung: 0  - `tw`: Zeitkonstante des Geschwindigkeitsaufnehmers (Tw).  Typischer Wert = 0,02. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamEU sein  - `wfmax`: Obere Grenze für die Frequenzkorrektur (Wfmax).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `wfmin`: Untere Grenze für die Frequenzkorrektur (Wfmin).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `wmax1`: Untere Grenze der Notdrehzahlregelung (wmax1).  Typischer Wert = 1,025. Voreinstellung: 0,0  - `wmax2`: Obere Grenze der Notdrehzahlregelung (wmax2).  Typischer Wert = 1,05. Voreinstellung: 0,0  - `wwmax`: Obere Grenze für den Drehzahlregler (Wwmax).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `wwmin`: Unterer Grenzwert für die Frequenzkorrektur des Drehzahlreglers (Wwmin).  Typischer Wert = -1. Voreinstellung: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `chc`: Grenzwert für die Schließgeschwindigkeit der Regelventile (Chc).  Einheit = VE/sec.  Typischer Wert = -3,3. Voreinstellung: 0,0  - `cho`: Grenzwert für die Öffnungsrate der Regelventile (Cho).  Einheit = VE/sec.  Typischer Wert = 0,17. Voreinstellung: 0,0  - `cic`: Intercept Ventile Rate Schließgrenze (Cic).  Typischer Wert = -2,2. Voreinstellung: 0,0  - `cio`: Intercept Ventile Rate Öffnungsgrenze (Cio).  Typischer Wert = 0,123. Voreinstellung: 0.0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Totzone des Frequenzumrichters (db1).  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Totzone des Drehzahlreglers (db2).  Typischer Wert = 0,0004. Voreinstellung: 0,0  - `description`: Eine Beschreibung dieses Artikels  - `hhpmax`: Maximale Regelventilposition (Hhpmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ke`: Verstärkung des Leistungsreglers (Ke).  Typischer Wert = 0,65. Voreinstellung: 0,0  - `kfcor`: Verstärkung des Frequenzumrichters (Kfcor).  Typischer Wert = 20. Voreinstellung: 0.0  - `khp`: Anteil der vom HP-Teil erzeugten Gesamtleistung der Turbine (Khp).  Typischer Wert = 0,277. Voreinstellung: 0.0  - `klp`: Anteil der vom HD-Teil erzeugten Gesamtleistung der Turbine (Klp).  Typischer Wert = 0,723. Voreinstellung: 0,0  - `kwcor`: Verstärkung des Drehzahlreglers (Kwcor).  Typischer Wert = 20. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Maximale Wirkleistung der Turbine (Pmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `prhmax`: Maximale Niederdruckgrenze (Prhmax).  Typischer Wert = 1,4. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `simx`: Intercept Ventile Übertragungsgrenze (Simx).  Typischer Wert = 0,425. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tb`: Kesselzeitkonstante (Tb).  Typischer Wert = 100. Voreinstellung: 0  - `tdp`: Vorhaltezeitkonstante des Leistungsreglers (Tdp).  Typischer Wert = 0. Voreinstellung: 0  - `ten`: Elektrohydraulischer Messumformer (Ten).  Typischer Wert = 0,1. Voreinstellung: 0  - `tf`: Zeitkonstante des Frequenzumwandlers (Tf).  Typischer Wert = 0. Voreinstellung: 0  - `tfp`: Zeitkonstante des Leistungsreglers (Tfp).  Typischer Wert = 0. Voreinstellung: 0  - `thp`: Hochdruck (HP) Zeitkonstante der Turbine (Thp).  Typischer Wert = 0,31. Voreinstellung: 0  - `tip`: Integrale Zeitkonstante des Leistungsreglers (Tip).  Typischer Wert = 2. Voreinstellung: 0  - `tlp`: Niederdruck(ND)-Zeitkonstante der Turbine (Tlp).  Typischer Wert = 0,45. Voreinstellung: 0  - `tp`: Zeitkonstante des Leistungsmesswandlers (Tp).  Typischer Wert = 0,07. Voreinstellung: 0  - `trh`: Nachheizzeitkonstante der Turbine (Trh).  Typischer Wert = 8. Voreinstellung: 0  - `tvhp`: Regelventile Servo-Zeitkonstante (Tvhp).  Typischer Wert = 0,1. Voreinstellung: 0  - `tvip`: Intercept Ventile Servo-Zeitkonstante (Tvip).  Typischer Wert = 0,15. Voreinstellung: 0  - `tw`: Zeitkonstante des Geschwindigkeitsaufnehmers (Tw).  Typischer Wert = 0,02. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamEU sein  - `wfmax`: Obere Grenze für die Frequenzkorrektur (Wfmax).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `wfmin`: Untere Grenze für die Frequenzkorrektur (Wfmin).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `wmax1`: Untere Grenze der Notdrehzahlregelung (wmax1).  Typischer Wert = 1,025. Voreinstellung: 0,0  - `wmax2`: Obere Grenze der Notdrehzahlregelung (wmax2).  Typischer Wert = 1,05. Voreinstellung: 0,0  - `wwmax`: Obere Grenze für den Drehzahlregler (Wwmax).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `wwmin`: Unterer Grenzwert für die Frequenzkorrektur des Drehzahlreglers (Wwmin).  Typischer Wert = -1. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -135,10 +135,10 @@ GovSteamEU:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
