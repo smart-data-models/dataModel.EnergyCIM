@@ -2,11 +2,11 @@ Entität: GovHydro2
 ==================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydro2/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Das IEEE-Wasserturbinenreglermodell repräsentiert Anlagen mit einfachen Druckrohrleitungskonfigurationen und hydraulischen Drosselklappenreglern.**  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Das IEEE-Wasserturbinenreglermodell repräsentiert Anlagen mit einfachen Druckrohrleitungskonfigurationen und Hydraulic-Dashpot-Reglern.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aturb`: Zähler-Multiplikator der Turbine (Aturb).  Typischer Wert = -1. Voreinstellung: 0.0  - `bturb`: Turbinen-Nenner-Multiplikator (Bturb).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv3`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv4`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv5`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv6`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kturb`: Turbinenverstärkung (Kturb).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv3`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv4`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv5`: Nichtlinearer Verstärkungspunkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv6`: Nichtlinearer Verstärkungspunkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Toröffnung (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Toröffnung; ().  Typischer Wert = 0. Voreinstellung: 0.0  - `rperm`: Permanenter Durchhang (Rperm).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `rtemp`: Temporärer P-Bereich (Rtemp).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tg`: Gate-Servo-Zeitkonstante (Tg).  Typischer Wert = 0,5. Voreinstellung: 0  - `tp`: Zeitkonstante des Vorsteuer-Servoventils (Tp).  Typischer Wert = 0,03. Voreinstellung: 0  - `tr`: Dashpot-Zeitkonstante (Tr).  Typischer Wert = 12. Voreinstellung: 0  - `tw`: Wasserträgheitszeitkonstante (Tw).  Typischer Wert = 2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydro2 sein  - `uc`: Maximale Torschließgeschwindigkeit (Uc) (<0).  Einheit = VE/sec.   Typischer Wert = -0,1. Voreinstellung: 0,0  - `uo`: Maximale Toröffnungsgeschwindigkeit (Uo).  Einheit = PU/sec.  Typischer Wert = 0,1. Voreinstellung: 0,0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aturb`: Zähler-Multiplikator der Turbine (Aturb).  Typischer Wert = -1. Voreinstellung: 0.0  - `bturb`: Turbinen-Nenner-Multiplikator (Bturb).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv3`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv4`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv5`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv6`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kturb`: Turbinenverstärkung (Kturb).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv3`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv4`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv5`: Nichtlinearer Verstärkungspunkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv6`: Nichtlinearer Verstärkungspunkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Toröffnung (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Toröffnung; ().  Typischer Wert = 0. Voreinstellung: 0.0  - `rperm`: Permanenter Durchhang (Rperm).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `rtemp`: Vorübergehender P-Bereich (Rtemp).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tg`: Gate-Servo-Zeitkonstante (Tg).  Typischer Wert = 0,5. Voreinstellung: 0  - `tp`: Zeitkonstante des Vorsteuer-Servoventils (Tp).  Typischer Wert = 0,03. Voreinstellung: 0  - `tr`: Dashpot-Zeitkonstante (Tr).  Typischer Wert = 12. Voreinstellung: 0  - `tw`: Wasserträgheitszeitkonstante (Tw).  Typischer Wert = 2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydro2 sein  - `uc`: Maximale Torschließgeschwindigkeit (Uc) (<0).  Einheit = VE/sec.   Typischer Wert = -0,1. Voreinstellung: 0,0  - `uo`: Maximale Toröffnungsgeschwindigkeit (Uo).  Einheit = PU/sec.  Typischer Wert = 0,1. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -135,10 +135,10 @@ GovHydro2:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
