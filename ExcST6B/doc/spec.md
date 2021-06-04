@@ -6,7 +6,7 @@ Entity: ExcST6B
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ilr`: Exciter output current limit reference (Ilr).  Typical Value = 4.164. Default: 0.0  - `k1`: Selector (K1). true = feedback is from Ifd false = feedback is not from Ifd. Typical Value = true. Default: False  - `kcl`: Exciter output current limit adjustment (Kcl).  Typical Value = 1.0577. Default: 0.0  - `kff`: Pre-control gain constant of the inner loop field regulator (Kff).  Typical Value = 1. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1. Default: 0.0  - `kia`: Voltage regulator integral gain (Kia).  Typical Value = 45.094. Default: 0.0  - `klr`: Exciter output current limit adjustment (Kcl).  Typical Value = 17.33. Default: 0.0  - `km`: Forward gain constant of the inner loop field regulator (Km).  Typical Value = 1. Default: 0.0  - `kpa`: Voltage regulator proportional gain (Kpa).  Typical Value = 18.038. Default: 0.0  - `kvd`: Voltage regulator derivative gain (Kvd).  Typical Value = 0. Default: 0.0  - `location`:   - `name`: The name of this item.  - `oelin`: OEL input selector (OELin). Typical Value = noOELinput. Default: None  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tg`: Feedback time constant of inner loop field voltage regulator (Tg).  Typical Value = 0.02. Default: 0  - `ts`: Rectifier firing time constant (Ts).  Typical Value = 0. Default: 0  - `tvd`: Voltage regulator derivative gain (Tvd).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be ExcST6B  - `vamax`: Maximum voltage regulator output (Vamax).  Typical Value = 4.81. Default: 0.0  - `vamin`: Minimum voltage regulator output (Vamin).  Typical Value = -3.85. Default: 0.0  - `vilim`: Selector (Vilim). true = Vimin-Vimax limiter is active false = Vimin-Vimax limiter is not active. Typical Value = true. Default: False  - `vimax`: Maximum voltage regulator input limit (Vimax).  Typical Value = 10. Default: 0.0  - `vimin`: Minimum voltage regulator input limit (Vimin).  Typical Value = -10. Default: 0.0  - `vmult`: Selector (Vmult). true = multiply regulator output by terminal voltage false = do not multiply regulator output by terminal voltage.  Typical Value = true. Default: False  - `vrmax`: Maximum voltage regulator output (Vrmax).  Typical Value = 4.81. Default: 0.0  - `vrmin`: Minimum voltage regulator output (Vrmin).  Typical Value = -3.85. Default: 0.0  - `xc`: Excitation source reactance (Xc).  Typical Value = 0.05. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ilr`: Exciter output current limit reference (Ilr).  Typical Value = 4.164. Default: 0.0  - `k1`: Selector (K1). true = feedback is from Ifd false = feedback is not from Ifd. Typical Value = true. Default: False  - `kcl`: Exciter output current limit adjustment (Kcl).  Typical Value = 1.0577. Default: 0.0  - `kff`: Pre-control gain constant of the inner loop field regulator (Kff).  Typical Value = 1. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1. Default: 0.0  - `kia`: Voltage regulator integral gain (Kia).  Typical Value = 45.094. Default: 0.0  - `klr`: Exciter output current limit adjustment (Kcl).  Typical Value = 17.33. Default: 0.0  - `km`: Forward gain constant of the inner loop field regulator (Km).  Typical Value = 1. Default: 0.0  - `kpa`: Voltage regulator proportional gain (Kpa).  Typical Value = 18.038. Default: 0.0  - `kvd`: Voltage regulator derivative gain (Kvd).  Typical Value = 0. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `oelin`: OEL input selector (OELin). Typical Value = noOELinput. Default: None  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tg`: Feedback time constant of inner loop field voltage regulator (Tg).  Typical Value = 0.02. Default: 0  - `ts`: Rectifier firing time constant (Ts).  Typical Value = 0. Default: 0  - `tvd`: Voltage regulator derivative gain (Tvd).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be ExcST6B  - `vamax`: Maximum voltage regulator output (Vamax).  Typical Value = 4.81. Default: 0.0  - `vamin`: Minimum voltage regulator output (Vamin).  Typical Value = -3.85. Default: 0.0  - `vilim`: Selector (Vilim). true = Vimin-Vimax limiter is active false = Vimin-Vimax limiter is not active. Typical Value = true. Default: False  - `vimax`: Maximum voltage regulator input limit (Vimax).  Typical Value = 10. Default: 0.0  - `vimin`: Minimum voltage regulator input limit (Vimin).  Typical Value = -10. Default: 0.0  - `vmult`: Selector (Vmult). true = multiply regulator output by terminal voltage false = do not multiply regulator output by terminal voltage.  Typical Value = true. Default: False  - `vrmax`: Maximum voltage regulator output (Vrmax).  Typical Value = 4.81. Default: 0.0  - `vrmin`: Minimum voltage regulator output (Vrmin).  Typical Value = -3.85. Default: 0.0  - `xc`: Excitation source reactance (Xc).  Typical Value = 0.05. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -125,10 +125,10 @@ ExcST6B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
