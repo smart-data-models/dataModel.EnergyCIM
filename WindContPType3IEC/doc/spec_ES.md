@@ -6,7 +6,7 @@ Entidad: WindContPType3IEC
 
 ## Lista de propiedades  
 
-- `WindDynamicsLookupTable`: El modelo de control P tipo 3 con el que se asocia esta tabla de búsqueda de la dinámica del viento. Por defecto: 'list'  - `WindGenTurbineType3IEC`: Modelo de aerogenerador tipo 3 al que se asocia este modelo de control de viento P tipo 3. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dpmax`: Tasa de rampa de potencia máxima del aerogenerador (). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `dtrisemaxlvrt`: Limitación de la tasa de aumento de par durante la LVRT para S (d). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `kdtd`: Ganancia para la amortiguación activa del tren motriz (). Es un parámetro que depende del tipo. Por defecto: 0,0  - `kip`: Parámetro de integración del controlador PI (). Es un parámetro dependiente del tipo. Por defecto: 0,0  - `kpp`: Ganancia proporcional del controlador PI (). Es un parámetro dependiente del tipo. Por defecto: 0.0  - `location`:   - `mplvrt`: Habilitar el modo de control de potencia LVRT (M verdadero = 1: control de tensión falso = 0: control de potencia reactiva.  Es un parámetro que depende del proyecto. Por defecto: Falso  - `name`: El nombre de este artículo.  - `omegaoffset`: Desplazamiento al valor de referencia que limita la acción del controlador durante los cambios de velocidad del rotor (omega). Es un parámetro que depende del caso. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pdtdmax`: Máxima potencia de amortiguación activa del tren motriz (). Es un parámetro que depende del tipo. Por defecto: 0,0  - `rramp`: Limitación de rampa de par, requerida en algunos códigos de red (). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tdvs`: Retraso después de caídas de tensión profundas (T). Es un parámetro que depende del proyecto. Por defecto: 0  - `temin`: Par mínimo del generador eléctrico (). Es un parámetro que depende del tipo. Por defecto: 0,0  - `tomegafilt`: Constante de tiempo del filtro para la medición de la velocidad del generador (). Es un parámetro que depende del tipo. Por defecto: 0  - `tpfilt`: Constante de tiempo del filtro para la medición de la potencia (). Es un parámetro que depende del tipo. Por defecto: 0  - `tpord`: Constante de tiempo en el retardo de orden de potencia (). Es un parámetro dependiente del tipo. Por defecto: 0,0  - `tufilt`: Constante de tiempo del filtro para la medición de la tensión (). Es un parámetro que depende del tipo. Por defecto: 0  - `tuscale`: Factor de escala de tensión del par de reposición (T). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `twref`: Constante de tiempo en el filtro de referencia de velocidad (). Es un parámetro que depende del tipo. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser WindContPType3IEC  - `udvs`: Límite de tensión para mantener el estado de LVRT después de caídas de tensión profundas (). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `updip`: Umbral de caída de tensión para el control P ().  Parte del control de la turbina, a menudo diferente (por ejemplo, 0,8) de los umbrales del convertidor. Es un parámetro que depende del proyecto. Por defecto: 0,0  - `wdtd`: Frecuencia de amortiguación del tren motriz activo (omega). Se puede calcular a partir de dos parámetros del modelo de masas. Es un parámetro dependiente del tipo. Por defecto: 0.0  - `zeta`: Coeficiente de amortiguación activa del tren motriz (zeta). Es un parámetro que depende del tipo. Por defecto: 0,0    
+- `WindDynamicsLookupTable`: El modelo de control P tipo 3 con el que se asocia esta tabla de búsqueda de la dinámica del viento. Por defecto: 'list'  - `WindGenTurbineType3IEC`: Modelo de aerogenerador tipo 3 al que se asocia este modelo de control de viento P tipo 3. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dpmax`: Tasa de rampa de potencia máxima del aerogenerador (). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `dtrisemaxlvrt`: Limitación de la tasa de aumento de par durante la LVRT para S (d). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `kdtd`: Ganancia para la amortiguación activa del tren motriz (). Es un parámetro que depende del tipo. Por defecto: 0,0  - `kip`: Parámetro de integración del controlador PI (). Es un parámetro dependiente del tipo. Por defecto: 0,0  - `kpp`: Ganancia proporcional del controlador PI (). Es un parámetro dependiente del tipo. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mplvrt`: Habilitar el modo de control de potencia LVRT (M verdadero = 1: control de tensión falso = 0: control de potencia reactiva.  Es un parámetro que depende del proyecto. Por defecto: Falso  - `name`: El nombre de este artículo.  - `omegaoffset`: Desplazamiento al valor de referencia que limita la acción del controlador durante los cambios de velocidad del rotor (omega). Es un parámetro que depende del caso. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pdtdmax`: Máxima potencia de amortiguación activa del tren motriz (). Es un parámetro que depende del tipo. Por defecto: 0,0  - `rramp`: Limitación de rampa de par, requerida en algunos códigos de red (). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tdvs`: Retraso después de caídas de tensión profundas (T). Es un parámetro que depende del proyecto. Por defecto: 0  - `temin`: Par mínimo del generador eléctrico (). Es un parámetro que depende del tipo. Por defecto: 0,0  - `tomegafilt`: Constante de tiempo del filtro para la medición de la velocidad del generador (). Es un parámetro que depende del tipo. Por defecto: 0  - `tpfilt`: Constante de tiempo del filtro para la medición de la potencia (). Es un parámetro que depende del tipo. Por defecto: 0  - `tpord`: Constante de tiempo en el retardo de orden de potencia (). Es un parámetro dependiente del tipo. Por defecto: 0,0  - `tufilt`: Constante de tiempo del filtro para la medición de la tensión (). Es un parámetro que depende del tipo. Por defecto: 0  - `tuscale`: Factor de escala de tensión del par de reposición (T). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `twref`: Constante de tiempo en el filtro de referencia de velocidad (). Es un parámetro que depende del tipo. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser WindContPType3IEC  - `udvs`: Límite de tensión para mantener el estado de LVRT después de caídas de tensión profundas (). Es un parámetro que depende del proyecto. Por defecto: 0,0  - `updip`: Umbral de caída de tensión para el control P ().  Parte del control de la turbina, a menudo diferente (por ejemplo, 0,8) de los umbrales del convertidor. Es un parámetro que depende del proyecto. Por defecto: 0,0  - `wdtd`: Frecuencia de amortiguación del tren motriz activo (omega). Se puede calcular a partir de dos parámetros del modelo de masas. Es un parámetro dependiente del tipo. Por defecto: 0.0  - `zeta`: Coeficiente de amortiguación activa del tren motriz (zeta). Es un parámetro que depende del tipo. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -110,10 +110,10 @@ WindContPType3IEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mplvrt:    
       description: 'Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False'    
       type: number    
