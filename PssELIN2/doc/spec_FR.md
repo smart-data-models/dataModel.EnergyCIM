@@ -6,7 +6,7 @@ Entité : PssELIN2
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `apss`: Coefficient (a_PSS).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ks1`: Gain (Ks1).  Valeur typique = 1. Valeur par défaut : 0.0  - `ks2`: Gain (Ks2).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `ppss`: Coefficient (p_PSS) (>=0 et <=4).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `psslim`: Limiteur PSS (psslim).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ts1`: Constante de temps (Ts1).  Valeur typique = 0. Valeur par défaut : 0  - `ts2`: Constante de temps (Ts2).  Valeur typique = 1. Valeur par défaut : 0  - `ts3`: Constante de temps (Ts3).  Valeur typique = 1. Valeur par défaut : 0  - `ts4`: Constante de temps (Ts4).  Valeur typique = 0,1. Valeur par défaut : 0  - `ts5`: Constante de temps (Ts5).  Valeur typique = 0. Valeur par défaut : 0  - `ts6`: Constante de temps (Ts6).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de PssELIN2    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `apss`: Coefficient (a_PSS).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ks1`: Gain (Ks1).  Valeur typique = 1. Valeur par défaut : 0.0  - `ks2`: Gain (Ks2).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `ppss`: Coefficient (p_PSS) (>=0 et <=4).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `psslim`: Limiteur PSS (psslim).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ts1`: Constante de temps (Ts1).  Valeur typique = 0. Valeur par défaut : 0  - `ts2`: Constante de temps (Ts2).  Valeur typique = 1. Valeur par défaut : 0  - `ts3`: Constante de temps (Ts3).  Valeur typique = 1. Valeur par défaut : 0  - `ts4`: Constante de temps (Ts4).  Valeur typique = 0,1. Valeur par défaut : 0  - `ts5`: Constante de temps (Ts5).  Valeur typique = 0. Valeur par défaut : 0  - `ts6`: Constante de temps (Ts6).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de PssELIN2    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -90,10 +90,10 @@ PssELIN2:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ PssELIN2:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ PssELIN2:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ PssELIN2:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ PssELIN2:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ PssELIN2:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ PssELIN2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -311,5 +316,5 @@ PssELIN2:
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un PssELIN2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un PssELIN2 au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un PssELIN2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un PssELIN2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un PssELIN2 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
