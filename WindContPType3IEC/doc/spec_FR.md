@@ -6,7 +6,7 @@ Entité : WindContPType3IEC
 
 ## Liste des propriétés  
 
-- `WindDynamicsLookupTable`: Le modèle de type 3 de la commande P auquel cette table de consultation de la dynamique du vent est associée. Valeur par défaut : 'list'.  - `WindGenTurbineType3IEC`: Modèle d'éolienne de type 3 auquel est associé ce modèle Wind control P de type 3. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dpmax`: Taux de rampe de la puissance maximale de l'éolienne (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0,0  - `dtrisemaxlvrt`: Limitation du taux d'augmentation du couple pendant la LVRT pour S (d). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `kdtd`: Gain pour l'amortissement actif de la chaîne cinématique (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0  - `kip`: Paramètre d'intégration du contrôleur PI (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpp`: Gain proportionnel du régulateur PI (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `location`:   - `mplvrt`: Active le mode de contrôle de puissance LVRT (M vrai = 1 : contrôle de tension faux = 0 : contrôle de puissance réactive.  C'est un paramètre dépendant du projet. Par défaut : Faux  - `name`: Le nom de cet élément.  - `omegaoffset`: Décalage de la valeur de référence qui limite l'action du contrôleur pendant les changements de vitesse du rotor (oméga). Il s'agit d'un paramètre dépendant du cas. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pdtdmax`: Puissance d'amortissement active maximale de la chaîne cinématique (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0  - `rramp`: Limitation de la rampe du couple, requise dans certains codes de réseau (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tdvs`: Délai après des chutes de tension importantes (T). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0  - `temin`: Couple minimal du générateur électrique (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `tomegafilt`: Constante de temps du filtre pour la mesure de la vitesse du générateur (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpfilt`: Constante de temps du filtre pour la mesure de la puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpord`: Constante de temps dans le retard de l'ordre de puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `tufilt`: Constante de temps du filtre pour la mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tuscale`: Facteur d'échelle de tension du couple de réinitialisation (T). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `twref`: Constante de temps dans le filtre de référence de vitesse (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être WindContPType3IEC.  - `udvs`: Limite de tension pour le maintien du statut LVRT après des chutes de tension importantes (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `updip`: Seuil de chute de tension pour le contrôle P ().  Partie du contrôle de la turbine, souvent différente (par exemple 0,8) des seuils du convertisseur. C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `wdtd`: Fréquence d'amortissement actif de la chaîne cinématique (oméga). Elle peut être calculée à partir de deux paramètres du modèle de masse. C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `zeta`: Coefficient d'amortissement actif de la chaîne cinématique (zeta). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0    
+- `WindDynamicsLookupTable`: Le modèle de type 3 de la commande P auquel cette table de consultation de la dynamique du vent est associée. Valeur par défaut : 'list'.  - `WindGenTurbineType3IEC`: Modèle d'éolienne de type 3 auquel est associé ce modèle Wind control P de type 3. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dpmax`: Taux de rampe de la puissance maximale de l'éolienne (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0,0  - `dtrisemaxlvrt`: Limitation du taux d'augmentation du couple pendant la LVRT pour S (d). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `kdtd`: Gain pour l'amortissement actif de la chaîne cinématique (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0  - `kip`: Paramètre d'intégration du contrôleur PI (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpp`: Gain proportionnel du régulateur PI (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mplvrt`: Active le mode de contrôle de puissance LVRT (M vrai = 1 : contrôle de tension faux = 0 : contrôle de puissance réactive.  C'est un paramètre dépendant du projet. Par défaut : Faux  - `name`: Le nom de cet élément.  - `omegaoffset`: Décalage de la valeur de référence qui limite l'action du contrôleur pendant les changements de vitesse du rotor (oméga). Il s'agit d'un paramètre dépendant du cas. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pdtdmax`: Puissance d'amortissement active maximale de la chaîne cinématique (). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0  - `rramp`: Limitation de la rampe du couple, requise dans certains codes de réseau (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tdvs`: Délai après des chutes de tension importantes (T). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0  - `temin`: Couple minimal du générateur électrique (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `tomegafilt`: Constante de temps du filtre pour la mesure de la vitesse du générateur (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpfilt`: Constante de temps du filtre pour la mesure de la puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpord`: Constante de temps dans le retard de l'ordre de puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `tufilt`: Constante de temps du filtre pour la mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tuscale`: Facteur d'échelle de tension du couple de réinitialisation (T). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `twref`: Constante de temps dans le filtre de référence de vitesse (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être WindContPType3IEC.  - `udvs`: Limite de tension pour le maintien du statut LVRT après des chutes de tension importantes (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `updip`: Seuil de chute de tension pour le contrôle P ().  Partie du contrôle de la turbine, souvent différente (par exemple 0,8) des seuils du convertisseur. C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `wdtd`: Fréquence d'amortissement actif de la chaîne cinématique (oméga). Elle peut être calculée à partir de deux paramètres du modèle de masse. C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `zeta`: Coefficient d'amortissement actif de la chaîne cinématique (zeta). Il s'agit d'un paramètre dépendant du type. Valeur par défaut : 0,0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -110,10 +110,10 @@ WindContPType3IEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mplvrt:    
       description: 'Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False'    
       type: number    
