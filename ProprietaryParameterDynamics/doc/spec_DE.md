@@ -6,7 +6,7 @@ Entität: ProprietaryParameterDynamics
 
 ## Liste der Eigenschaften  
 
-- `AsynchronousMachineUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `DiscontinuousExcitationControlUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `ExcitationSystemUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `LoadUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `MechanicalLoadUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `OverexcitationLimiterUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `PFVArControllerType1UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `PFVArControllerType2UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `PowerSystemStabilizerUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `SynchronousMachineUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `TurbineGovernorUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `TurbineLoadControllerUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `UnderexcitationLimiterUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `VoltageAdjusterUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `VoltageCompensatorUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `WindPlantUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `WindType1or2UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `WindType3or4UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `booleanParameterValue`: Wird für boolesche Parameterwerte verwendet. Wenn dieses Attribut ausgefüllt wird, werden integerParameterValue und floatParameterValue nicht ausgefüllt. Voreinstellung: False  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `floatParameterValue`: Wird für Fließkomma-Parameterwert verwendet.  Wenn dieses Attribut ausgefüllt wird, werden booleanParameterValue und integerParameterValue nicht ausgefüllt. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `integerParameterValue`: Wird für Integer-Parameterwert verwendet.  Wenn dieses Attribut ausgefüllt wird, werden booleanParameterValue und floatParameterValue nicht ausgefüllt. Voreinstellung: 0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `parameterNumber`: Laufende Nummer des Parameters aus der Gruppe der Parameter, die mit dem zugehörigen proprietären benutzerdefinierten Modell verbunden sind. Voreinstellung: 0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss ProprietaryParameterDynamics sein    
+- `AsynchronousMachineUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `DiscontinuousExcitationControlUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `ExcitationSystemUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `LoadUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `MechanicalLoadUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `OverexcitationLimiterUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `PFVArControllerType1UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `PFVArControllerType2UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `PowerSystemStabilizerUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `SynchronousMachineUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `TurbineGovernorUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `TurbineLoadControllerUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `UnderexcitationLimiterUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `VoltageAdjusterUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `VoltageCompensatorUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `WindPlantUserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `WindType1or2UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `WindType3or4UserDefined`: Proprietäres benutzerdefiniertes Modell, mit dem dieser Parameter verknüpft ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `booleanParameterValue`: Wird für boolesche Parameterwerte verwendet. Wenn dieses Attribut ausgefüllt wird, werden integerParameterValue und floatParameterValue nicht ausgefüllt. Voreinstellung: False  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `floatParameterValue`: Wird für Fließkomma-Parameterwert verwendet.  Wenn dieses Attribut ausgefüllt wird, werden booleanParameterValue und integerParameterValue nicht ausgefüllt. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `integerParameterValue`: Wird für Integer-Parameterwert verwendet.  Wenn dieses Attribut ausgefüllt wird, werden booleanParameterValue und floatParameterValue nicht ausgefüllt. Voreinstellung: 0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `parameterNumber`: Laufende Nummer des Parameters aus der Gruppe der Parameter, die mit dem zugehörigen proprietären benutzerdefinierten Modell verbunden sind. Voreinstellung: 0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss ProprietaryParameterDynamics sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -180,10 +180,10 @@ ProprietaryParameterDynamics:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +203,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +227,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -251,7 +253,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +276,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -298,7 +302,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -325,7 +330,7 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
