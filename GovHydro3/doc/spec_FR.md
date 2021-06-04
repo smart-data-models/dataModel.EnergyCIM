@@ -6,7 +6,7 @@ Entité : GovHydro3
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `at`: Gain de la turbine (At).  Valeur typique = 1.2. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db1`: Largeur de la bande morte intentionnelle (db1).  Unité = Hz.  Valeur typique = 0. Valeur par défaut : 0.0  - `db2`: Bande morte involontaire (db2).  Unité = MW.  Valeur typique = 0. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `dturb`: Facteur d'amortissement de la turbine (Dturb).  Valeur typique = 0.2. Valeur par défaut : 0.0  - `eps`: Hystérésis db intentionnelle (eps).  Unité = Hz.  Valeur typique = 0. Valeur par défaut : 0.0  - `governorControl`: Indicateur de contrôle du gouverneur (Cflag). true = le contrôle PID est actif false = le contrôle de la double dérivation est actif. Valeur typique = true. Valeur par défaut : Faux  - `gv1`: Point de gain non linéaire 1, PU gv (Gv1).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv2`: Point de gain non linéaire 2, PU gv (Gv2).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv3`: Point de gain non linéaire 3, PU gv (Gv3).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv4`: Point de gain non linéaire 4, PU gv (Gv4).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv5`: Point de gain non linéaire 5, PU gv (Gv5).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv6`: Point de gain non linéaire 6, PU gv (Gv6).  Valeur typique = 0. Valeur par défaut : 0.0  - `h0`: Hauteur de chute nominale de la turbine (H0).  Valeur typique = 1. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `k1`: Gain dérivé (K1).  Valeur typique = 0.01. Valeur par défaut : 0.0  - `k2`: Gain de la dérivée double, si Cflag = -1 (K2).  Valeur typique = 2.5. Valeur par défaut : 0.0  - `kg`: Gain du servo de la porte (Kg).  Valeur typique = 2. Valeur par défaut : 0.0  - `ki`: Gain intégral (Ki).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `location`:   - `mwbase`: Base pour les valeurs de puissance (MWbase) (> 0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pgv1`: Point de gain non linéaire 1, puissance du PU (Pgv1).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv2`: Point de gain non linéaire 2, puissance du PU (Pgv2).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv3`: Point de gain non linéaire 3, puissance du PU (Pgv3).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv4`: Point de gain non linéaire 4, puissance du PU (Pgv4).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv5`: Point de gain non linéaire 5, puissance du PU (Pgv5).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv6`: Point de gain non linéaire 6, puissance du PU (Pgv6).  Valeur typique = 0. Valeur par défaut : 0.0  - `pmax`: Ouverture maximale du portail, PU de MWbase (Pmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `pmin`: Ouverture minimale du portail, PU de MWbase (Pmin).  Valeur typique = 0. Valeur par défaut : 0.0  - `qnl`: Débit de la turbine à vide à la hauteur de chute nominale (Qnl).  Valeur typique = 0.08. Valeur par défaut : 0.0  - `relec`: Statisme en régime permanent, PU, pour le retour de puissance électrique (Relec).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `rgate`: Statisme en régime permanent, PU, pour la rétroaction de la sortie du régulateur (Rgate).  Valeur typique = 0. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `td`: Constante de temps du filtre d'entrée (Td).  Valeur typique = 0,05. Valeur par défaut : 0  - `tf`: Constante de temps de lavage (Tf).  Valeur typique = 0,1. Valeur par défaut : 0  - `tp`: Constante de temps de l'asservissement de la porte (Tp).  Valeur typique = 0.05. Valeur par défaut : 0  - `tt`: Constante de temps de la rétroaction de puissance (Tt).  Valeur typique = 0,2. Valeur par défaut : 0  - `tw`: Constante de temps de l'inertie de l'eau (Tw).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type de NGSI. Il faut que ce soit GovHydro3  - `velcl`: Vitesse maximale de fermeture du portail (Velcl).  Unité = PU/sec.  Valeur typique = -0.2. Valeur par défaut : 0.0  - `velop`: Vitesse maximale d'ouverture du portail (Velop).  Unité = PU/sec. Valeur typique = 0.2. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `at`: Gain de la turbine (At).  Valeur typique = 1.2. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db1`: Largeur de la bande morte intentionnelle (db1).  Unité = Hz.  Valeur typique = 0. Valeur par défaut : 0.0  - `db2`: Bande morte involontaire (db2).  Unité = MW.  Valeur typique = 0. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `dturb`: Facteur d'amortissement de la turbine (Dturb).  Valeur typique = 0.2. Valeur par défaut : 0.0  - `eps`: Hystérésis db intentionnelle (eps).  Unité = Hz.  Valeur typique = 0. Valeur par défaut : 0.0  - `governorControl`: Indicateur de contrôle du gouverneur (Cflag). true = le contrôle PID est actif false = le contrôle de la double dérivation est actif. Valeur typique = true. Valeur par défaut : Faux  - `gv1`: Point de gain non linéaire 1, PU gv (Gv1).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv2`: Point de gain non linéaire 2, PU gv (Gv2).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv3`: Point de gain non linéaire 3, PU gv (Gv3).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv4`: Point de gain non linéaire 4, PU gv (Gv4).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv5`: Point de gain non linéaire 5, PU gv (Gv5).  Valeur typique = 0. Valeur par défaut : 0.0  - `gv6`: Point de gain non linéaire 6, PU gv (Gv6).  Valeur typique = 0. Valeur par défaut : 0.0  - `h0`: Hauteur de chute nominale de la turbine (H0).  Valeur typique = 1. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `k1`: Gain dérivé (K1).  Valeur typique = 0.01. Valeur par défaut : 0.0  - `k2`: Gain de la dérivée double, si Cflag = -1 (K2).  Valeur typique = 2.5. Valeur par défaut : 0.0  - `kg`: Gain du servo de la porte (Kg).  Valeur typique = 2. Valeur par défaut : 0.0  - `ki`: Gain intégral (Ki).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase`: Base pour les valeurs de puissance (MWbase) (> 0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pgv1`: Point de gain non linéaire 1, puissance du PU (Pgv1).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv2`: Point de gain non linéaire 2, puissance du PU (Pgv2).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv3`: Point de gain non linéaire 3, puissance du PU (Pgv3).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv4`: Point de gain non linéaire 4, puissance du PU (Pgv4).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv5`: Point de gain non linéaire 5, puissance du PU (Pgv5).  Valeur typique = 0. Valeur par défaut : 0.0  - `pgv6`: Point de gain non linéaire 6, puissance du PU (Pgv6).  Valeur typique = 0. Valeur par défaut : 0.0  - `pmax`: Ouverture maximale du portail, PU de MWbase (Pmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `pmin`: Ouverture minimale du portail, PU de MWbase (Pmin).  Valeur typique = 0. Valeur par défaut : 0.0  - `qnl`: Débit de la turbine à vide à la hauteur de chute nominale (Qnl).  Valeur typique = 0.08. Valeur par défaut : 0.0  - `relec`: Statisme en régime permanent, PU, pour le retour de puissance électrique (Relec).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `rgate`: Statisme en régime permanent, PU, pour la rétroaction de la sortie du régulateur (Rgate).  Valeur typique = 0. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `td`: Constante de temps du filtre d'entrée (Td).  Valeur typique = 0,05. Valeur par défaut : 0  - `tf`: Constante de temps de lavage (Tf).  Valeur typique = 0,1. Valeur par défaut : 0  - `tp`: Constante de temps de l'asservissement de la porte (Tp).  Valeur typique = 0.05. Valeur par défaut : 0  - `tt`: Constante de temps de la rétroaction de puissance (Tt).  Valeur typique = 0,2. Valeur par défaut : 0  - `tw`: Constante de temps de l'inertie de l'eau (Tw).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type de NGSI. Il faut que ce soit GovHydro3  - `velcl`: Vitesse maximale de fermeture du portail (Velcl).  Unité = PU/sec.  Valeur typique = -0.2. Valeur par défaut : 0.0  - `velop`: Vitesse maximale d'ouverture du portail (Velop).  Unité = PU/sec. Valeur typique = 0.2. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -160,10 +160,10 @@ GovHydro3:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +183,8 @@ GovHydro3:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +207,8 @@ GovHydro3:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -231,7 +233,8 @@ GovHydro3:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +256,8 @@ GovHydro3:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -278,7 +282,8 @@ GovHydro3:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -305,7 +310,7 @@ GovHydro3:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
