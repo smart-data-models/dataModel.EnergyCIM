@@ -6,7 +6,7 @@ Entity: PssIEEE2B
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `inputSignal1Type`: Type of input signal #1.  Typical Value = rotorSpeed. Default: None  - `inputSignal2Type`: Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None  - `ks1`: Stabilizer gain (Ks1).  Typical Value = 12. Default: 0.0  - `ks2`: Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0  - `ks3`: Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0  - `location`:   - `m`: Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0  - `n`: Order of ramp tracking filter (N).  Typical Value = 1. Default: 0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1`: Lead/lag time constant (T1).  Typical Value = 0.12. Default: 0  - `t10`: Lead/lag time constant (T10).  Typical Value = 0. Default: 0  - `t11`: Lead/lag time constant (T11).  Typical Value = 0. Default: 0  - `t2`: Lead/lag time constant (T2).  Typical Value = 0.02. Default: 0  - `t3`: Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0  - `t4`: Lead/lag time constant (T4).  Typical Value = 0.02. Default: 0  - `t6`: Time constant on signal #1 (T6).  Typical Value = 0. Default: 0  - `t7`: Time constant on signal #2 (T7).  Typical Value = 2. Default: 0  - `t8`: Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: 0  - `t9`: Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: 0  - `tw1`: First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0  - `tw2`: Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0  - `tw3`: First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0  - `tw4`: Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be PssIEEE2B  - `vsi1max`: Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0  - `vsi1min`: Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0  - `vsi2max`: Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0  - `vsi2min`: Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0  - `vstmax`: Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0  - `vstmin`: Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `inputSignal1Type`: Type of input signal #1.  Typical Value = rotorSpeed. Default: None  - `inputSignal2Type`: Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None  - `ks1`: Stabilizer gain (Ks1).  Typical Value = 12. Default: 0.0  - `ks2`: Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0  - `ks3`: Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `m`: Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0  - `n`: Order of ramp tracking filter (N).  Typical Value = 1. Default: 0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1`: Lead/lag time constant (T1).  Typical Value = 0.12. Default: 0  - `t10`: Lead/lag time constant (T10).  Typical Value = 0. Default: 0  - `t11`: Lead/lag time constant (T11).  Typical Value = 0. Default: 0  - `t2`: Lead/lag time constant (T2).  Typical Value = 0.02. Default: 0  - `t3`: Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0  - `t4`: Lead/lag time constant (T4).  Typical Value = 0.02. Default: 0  - `t6`: Time constant on signal #1 (T6).  Typical Value = 0. Default: 0  - `t7`: Time constant on signal #2 (T7).  Typical Value = 2. Default: 0  - `t8`: Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: 0  - `t9`: Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: 0  - `tw1`: First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0  - `tw2`: Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0  - `tw3`: First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0  - `tw4`: Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be PssIEEE2B  - `vsi1max`: Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0  - `vsi1min`: Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0  - `vsi2max`: Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0  - `vsi2min`: Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0  - `vstmax`: Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0  - `vstmin`: Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -100,10 +100,10 @@ PssIEEE2B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ PssIEEE2B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ PssIEEE2B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ PssIEEE2B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ PssIEEE2B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ PssIEEE2B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ PssIEEE2B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     m:    
       description: 'Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0'    
       type: number    
