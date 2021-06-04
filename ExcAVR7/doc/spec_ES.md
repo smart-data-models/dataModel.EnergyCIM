@@ -6,7 +6,7 @@ Entidad: ExcAVR7
 
 ## Lista de propiedades  
 
-- `a1`: Coeficiente de plomo (A1).  Valor típico = 0,5. Por defecto: 0,0  - `a2`: Coeficiente de retraso (A2).  Valor típico = 0,5. Por defecto: 0,0  - `a3`: Coeficiente de plomo (A3).  Valor típico = 0,5. Por defecto: 0,0  - `a4`: Coeficiente de retraso (A4).  Valor típico = 0,5. Por defecto: 0,0  - `a5`: Coeficiente de plomo (A5).  Valor típico = 0,5. Por defecto: 0,0  - `a6`: Coeficiente de retraso (A6).  Valor típico = 0,5. Por defecto: 0,0  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k1`: Ganancia (K1).  Valor típico = 1. Por defecto: 0,0  - `k3`: Ganancia (K3).  Valor típico = 3. Por defecto: 0,0  - `k5`: Ganancia (K5).  Valor típico = 1. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo de espera (T1).  Valor típico = 0,05. Por defecto: 0  - `t2`: Constante de tiempo de retardo (T2).  Valor típico = 0,1. Por defecto: 0  - `t3`: Constante de tiempo de espera (T3).  Valor típico = 0,1. Por defecto: 0  - `t4`: Constante de tiempo de retardo (T4).  Valor típico = 0,1. Por defecto: 0  - `t5`: Constante de tiempo de espera (T5).  Valor típico = 0,1. Por defecto: 0  - `t6`: Constante de tiempo de retardo (T6).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcAVR7  - `vmax1`: Límite máximo del lead-lag (Vmax1).  Valor típico = 5. Por defecto: 0,0  - `vmax3`: Límite máximo de retardo (Vmax3).  Valor típico = 5. Por defecto: 0,0  - `vmax5`: Límite máximo de retardo (Vmax5).  Valor típico = 5. Por defecto: 0,0  - `vmin1`: Límite mínimo de retardo (Vmin1).  Valor típico = -5. Por defecto: 0,0  - `vmin3`: Límite mínimo de retardo (Vmin3).  Valor típico = -5. Por defecto: 0,0  - `vmin5`: Límite mínimo de retardo (Vmin5).  Valor típico = -2. Por defecto: 0,0    
+- `a1`: Coeficiente de plomo (A1).  Valor típico = 0,5. Por defecto: 0,0  - `a2`: Coeficiente de retraso (A2).  Valor típico = 0,5. Por defecto: 0,0  - `a3`: Coeficiente de plomo (A3).  Valor típico = 0,5. Por defecto: 0,0  - `a4`: Coeficiente de retraso (A4).  Valor típico = 0,5. Por defecto: 0,0  - `a5`: Coeficiente de plomo (A5).  Valor típico = 0,5. Por defecto: 0,0  - `a6`: Coeficiente de retraso (A6).  Valor típico = 0,5. Por defecto: 0,0  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `k1`: Ganancia (K1).  Valor típico = 1. Por defecto: 0,0  - `k3`: Ganancia (K3).  Valor típico = 3. Por defecto: 0,0  - `k5`: Ganancia (K5).  Valor típico = 1. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo de espera (T1).  Valor típico = 0,05. Por defecto: 0  - `t2`: Constante de tiempo de retardo (T2).  Valor típico = 0,1. Por defecto: 0  - `t3`: Constante de tiempo de espera (T3).  Valor típico = 0,1. Por defecto: 0  - `t4`: Constante de tiempo de retardo (T4).  Valor típico = 0,1. Por defecto: 0  - `t5`: Constante de tiempo de espera (T5).  Valor típico = 0,1. Por defecto: 0  - `t6`: Constante de tiempo de retardo (T6).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcAVR7  - `vmax1`: Límite máximo del lead-lag (Vmax1).  Valor típico = 5. Por defecto: 0,0  - `vmax3`: Límite máximo de retardo (Vmax3).  Valor típico = 5. Por defecto: 0,0  - `vmax5`: Límite máximo de retardo (Vmax5).  Valor típico = 5. Por defecto: 0,0  - `vmin1`: Límite mínimo de retardo (Vmin1).  Valor típico = -5. Por defecto: 0,0  - `vmin3`: Límite mínimo de retardo (Vmin3).  Valor típico = -5. Por defecto: 0,0  - `vmin5`: Límite mínimo de retardo (Vmin5).  Valor típico = -2. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -120,10 +120,10 @@ ExcAVR7:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -143,7 +143,8 @@ ExcAVR7:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +167,8 @@ ExcAVR7:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -191,7 +193,8 @@ ExcAVR7:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +216,8 @@ ExcAVR7:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -238,7 +242,8 @@ ExcAVR7:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -265,7 +270,7 @@ ExcAVR7:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
