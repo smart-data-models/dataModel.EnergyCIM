@@ -6,7 +6,7 @@ Entidad: GovSteamEU
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `chc`: Límite de cierre de las válvulas de control (Chc).  Unidad = PU/seg.  Valor típico = -3,3. Por defecto: 0,0  - `cho`: Límite de apertura de las válvulas de control (Cho).  Unidad = PU/seg.  Valor típico = 0,17. Por defecto: 0,0  - `cic`: Límite de cierre de la tasa de las válvulas de intercepción (Cic).  Valor típico = -2,2. Por defecto: 0,0  - `cio`: Límite de apertura de la tasa de las válvulas de intercepción (Cio).  Valor típico = 0,123. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Banda muerta del corrector de frecuencia (db1).  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta del regulador de velocidad (db2).  Valor típico = 0,0004. Por defecto: 0,0  - `description`: Una descripción de este artículo  - `hhpmax`: Posición máxima de la válvula de control (Hhpmax).  Valor típico = 1. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ke`: Ganancia del regulador de potencia (Ke).  Valor típico = 0,65. Por defecto: 0,0  - `kfcor`: Ganancia del corrector de frecuencia (Kfcor).  Valor típico = 20. Por defecto: 0,0  - `khp`: Fracción de la potencia total de la turbina generada por la parte HP (Khp).  Valor típico = 0,277. Por defecto: 0,0  - `klp`: Fracción de la potencia total de la turbina generada por la parte HP (Klp).  Valor típico = 0,723. Por defecto: 0,0  - `kwcor`: Ganancia del regulador de velocidad (Kwcor).  Valor típico = 20. Por defecto: 0,0  - `location`:   - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pmax`: Potencia activa máxima de la turbina (Pmax).  Valor típico = 1. Por defecto: 0,0  - `prhmax`: Límite máximo de baja presión (Prhmax).  Valor típico = 1,4. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `simx`: Límite de transferencia de las válvulas de intercepción (Simx).  Valor típico = 0,425. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tb`: Constante de tiempo de la caldera (Tb).  Valor típico = 100. Por defecto: 0  - `tdp`: Constante de tiempo de derivación del regulador de potencia (Tdp).  Valor típico = 0. Por defecto: 0  - `ten`: Transductor electrohidráulico (Ten).  Valor típico = 0,1. Por defecto: 0  - `tf`: Constante de tiempo del transductor de frecuencia (Tf).  Valor típico = 0. Por defecto: 0  - `tfp`: Constante de tiempo del regulador de potencia (Tfp).  Valor típico = 0. Por defecto: 0  - `thp`: Constante de tiempo de alta presión (HP) de la turbina (Thp).  Valor típico = 0,31. Por defecto: 0  - `tip`: Constante de tiempo integral del controlador de potencia (Tip).  Valor típico = 2. Por defecto: 0  - `tlp`: Constante de tiempo de baja presión (LP) de la turbina (Tlp).  Valor típico = 0,45. Por defecto: 0  - `tp`: Constante de tiempo del transductor de potencia (Tp).  Valor típico = 0,07. Por defecto: 0  - `trh`: Constante de tiempo del recalentador de la turbina (Trh).  Valor típico = 8. Por defecto: 0  - `tvhp`: Constante de tiempo de las válvulas de control (Tvhp).  Valor típico = 0,1. Por defecto: 0  - `tvip`: Constante de tiempo del servo de las válvulas de intercepción (Tvip).  Valor típico = 0,15. Por defecto: 0  - `tw`: Constante de tiempo del transductor de velocidad (Tw).  Valor típico = 0,02. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteamEU  - `wfmax`: Límite superior de la corrección de frecuencia (Wfmax).  Valor típico = 0,05. Por defecto: 0,0  - `wfmin`: Límite inferior de la corrección de frecuencia (Wfmin).  Valor típico = -0,05. Por defecto: 0,0  - `wmax1`: Límite inferior del control de velocidad de emergencia (wmax1).  Valor típico = 1,025. Por defecto: 0,0  - `wmax2`: Límite superior del control de velocidad de emergencia (wmax2).  Valor típico = 1,05. Por defecto: 0,0  - `wwmax`: Límite superior del regulador de velocidad (Wwmax).  Valor típico = 0,1. Por defecto: 0,0  - `wwmin`: Límite inferior para la corrección de la frecuencia del regulador de velocidad (Wwmin).  Valor típico = -1. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `chc`: Límite de cierre de las válvulas de control (Chc).  Unidad = PU/seg.  Valor típico = -3,3. Por defecto: 0,0  - `cho`: Límite de apertura de las válvulas de control (Cho).  Unidad = PU/seg.  Valor típico = 0,17. Por defecto: 0,0  - `cic`: Límite de cierre de la tasa de las válvulas de intercepción (Cic).  Valor típico = -2,2. Por defecto: 0,0  - `cio`: Límite de apertura de la tasa de las válvulas de intercepción (Cio).  Valor típico = 0,123. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Banda muerta del corrector de frecuencia (db1).  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta del regulador de velocidad (db2).  Valor típico = 0,0004. Por defecto: 0,0  - `description`: Una descripción de este artículo  - `hhpmax`: Posición máxima de la válvula de control (Hhpmax).  Valor típico = 1. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ke`: Ganancia del regulador de potencia (Ke).  Valor típico = 0,65. Por defecto: 0,0  - `kfcor`: Ganancia del corrector de frecuencia (Kfcor).  Valor típico = 20. Por defecto: 0,0  - `khp`: Fracción de la potencia total de la turbina generada por la parte HP (Khp).  Valor típico = 0,277. Por defecto: 0,0  - `klp`: Fracción de la potencia total de la turbina generada por la parte HP (Klp).  Valor típico = 0,723. Por defecto: 0,0  - `kwcor`: Ganancia del regulador de velocidad (Kwcor).  Valor típico = 20. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pmax`: Potencia activa máxima de la turbina (Pmax).  Valor típico = 1. Por defecto: 0,0  - `prhmax`: Límite máximo de baja presión (Prhmax).  Valor típico = 1,4. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `simx`: Límite de transferencia de las válvulas de intercepción (Simx).  Valor típico = 0,425. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tb`: Constante de tiempo de la caldera (Tb).  Valor típico = 100. Por defecto: 0  - `tdp`: Constante de tiempo de derivación del regulador de potencia (Tdp).  Valor típico = 0. Por defecto: 0  - `ten`: Transductor electrohidráulico (Ten).  Valor típico = 0,1. Por defecto: 0  - `tf`: Constante de tiempo del transductor de frecuencia (Tf).  Valor típico = 0. Por defecto: 0  - `tfp`: Constante de tiempo del regulador de potencia (Tfp).  Valor típico = 0. Por defecto: 0  - `thp`: Constante de tiempo de alta presión (HP) de la turbina (Thp).  Valor típico = 0,31. Por defecto: 0  - `tip`: Constante de tiempo integral del controlador de potencia (Tip).  Valor típico = 2. Por defecto: 0  - `tlp`: Constante de tiempo de baja presión (LP) de la turbina (Tlp).  Valor típico = 0,45. Por defecto: 0  - `tp`: Constante de tiempo del transductor de potencia (Tp).  Valor típico = 0,07. Por defecto: 0  - `trh`: Constante de tiempo del recalentador de la turbina (Trh).  Valor típico = 8. Por defecto: 0  - `tvhp`: Constante de tiempo de las válvulas de control (Tvhp).  Valor típico = 0,1. Por defecto: 0  - `tvip`: Constante de tiempo del servo de las válvulas de intercepción (Tvip).  Valor típico = 0,15. Por defecto: 0  - `tw`: Constante de tiempo del transductor de velocidad (Tw).  Valor típico = 0,02. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteamEU  - `wfmax`: Límite superior de la corrección de frecuencia (Wfmax).  Valor típico = 0,05. Por defecto: 0,0  - `wfmin`: Límite inferior de la corrección de frecuencia (Wfmin).  Valor típico = -0,05. Por defecto: 0,0  - `wmax1`: Límite inferior del control de velocidad de emergencia (wmax1).  Valor típico = 1,025. Por defecto: 0,0  - `wmax2`: Límite superior del control de velocidad de emergencia (wmax2).  Valor típico = 1,05. Por defecto: 0,0  - `wwmax`: Límite superior del regulador de velocidad (Wwmax).  Valor típico = 0,1. Por defecto: 0,0  - `wwmin`: Límite inferior para la corrección de la frecuencia del regulador de velocidad (Wwmin).  Valor típico = -1. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -135,10 +135,10 @@ GovSteamEU:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
