@@ -2,11 +2,11 @@ Entität: LoadResponseCharacteristic
 ===================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/LoadResponseCharacteristic/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Modelliert die charakteristische Reaktion des Lastbedarfs aufgrund von Änderungen der Systembedingungen wie Spannung und Frequenz. Dies steht nicht im Zusammenhang mit der Lastantwort.  Wenn LoadResponseCharacteristic.exponentModel True ist, werden die Spannungsexponenten angegeben und zur Berechnung verwendet:  Wirkleistungskomponente = Pnominal * (Spannung/cim:BaseVoltage.nominalVoltage) ** cim:LoadResponseCharacteristic.pVoltageExponent Blindleistungskomponente = Qnominal * (Spannung/cim:BaseVoltage.nominalVoltage)** cim:LoadResponseCharacteristic.qVoltageExponent Wobei * "multiplizieren" bedeutet und ** "hochgezählt mit" ist.  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Modelliert die charakteristische Reaktion des Lastbedarfs aufgrund von Änderungen der Systembedingungen wie Spannung und Frequenz. Dies ist nicht mit der Lastantwort verbunden.  Wenn LoadResponseCharacteristic.exponentModel True ist, werden die Spannungsexponenten angegeben und zur Berechnung verwendet:  Wirkleistungskomponente = Pnominal * (Spannung/cim:BaseVoltage.nominalVoltage) ** cim:LoadResponseCharacteristic.pVoltageExponent Blindleistungskomponente = Qnominal * (Spannung/cim:BaseVoltage.nominalVoltage)** cim:LoadResponseCharacteristic.qVoltageExponent Wobei * "multiplizieren" bedeutet und ** "hochgezählt mit" ist.  
 
 ## Liste der Eigenschaften  
 
-- `EnergyConsumer`: Die Menge der Lasten, die das Ansprechverhalten haben. Voreinstellung: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `exponentModel`: Gibt an, dass das exponentielle Spannungsabhängigkeitsmodell verwendet werden soll.   Wenn false, soll das Koeffizientenmodell verwendet werden. Das exponentielle Spannungsabhängigkeitsmodell besteht aus den Attributen - pVoltageExponent - qVoltageExponent. Das Koeffizientenmodell besteht aus den Attributen - pKonstantImpedanz - pKonstantStrom - pKonstantLeistung - qKonstantImpedanz - qKonstantStrom - qKonstantLeistung. Die Summe von pConstantImpedance, pConstantCurrent und pConstantPower muss gleich 1 sein. Die Summe von qConstantImpedance, qConstantCurrent und qConstantPower muss gleich 1 sein. Voreinstellung: False  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pConstantCurrent`: Anteil der Wirkleistungslast, der als Konstantstrom modelliert wird. Voreinstellung: 0,0  - `pConstantImpedance`: Anteil der Wirkleistungslast, der als konstante Impedanz modelliert wird. Voreinstellung: 0,0  - `pConstantPower`: Anteil der Wirkleistungslast, der als konstante Leistung modelliert wird. Voreinstellung: 0,0  - `pFrequencyExponent`: Exponent der pro Frequenzeinheit wirkenden Leistung. Voreinstellung: 0,0  - `pVoltageExponent`: Exponent der pro Spannungseinheit wirkenden Wirkleistung. Voreinstellung: 0,0  - `qConstantCurrent`: Anteil der Blindleistungslast, der als Konstantstrom modelliert wird. Voreinstellung: 0,0  - `qConstantImpedance`: Anteil der Blindleistungslast, der als konstante Impedanz modelliert wird. Voreinstellung: 0,0  - `qConstantPower`: Anteil der Blindleistungslast, der als konstante Leistung modelliert wird. Voreinstellung: 0,0  - `qFrequencyExponent`: Exponent der pro Frequenzeinheit wirkenden Blindleistung. Voreinstellung: 0,0  - `qVoltageExponent`: Exponent der pro Spannungseinheit wirkenden Blindleistung. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss LoadResponseCharacteristic sein    
+- `EnergyConsumer`: Die Menge der Lasten, die das Ansprechverhalten haben. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `exponentModel`: Gibt an, dass das exponentielle Spannungsabhängigkeitsmodell verwendet werden soll.   Wenn false, soll das Koeffizientenmodell verwendet werden. Das exponentielle Spannungsabhängigkeitsmodell besteht aus den Attributen - pVoltageExponent - qVoltageExponent. Das Koeffizientenmodell besteht aus den Attributen - pKonstantImpedanz - pKonstantStrom - pKonstantLeistung - qKonstantImpedanz - qKonstantStrom - qKonstantLeistung. Die Summe von pConstantImpedance, pConstantCurrent und pConstantPower muss gleich 1 sein. Die Summe von qConstantImpedance, qConstantCurrent und qConstantPower muss gleich 1 sein. Voreinstellung: False  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pConstantCurrent`: Anteil der Wirkleistungslast, der als Konstantstrom modelliert wird. Voreinstellung: 0,0  - `pConstantImpedance`: Anteil der Wirkleistungslast, der als konstante Impedanz modelliert wird. Voreinstellung: 0,0  - `pConstantPower`: Anteil der Wirkleistungslast, der als konstante Leistung modelliert wird. Voreinstellung: 0,0  - `pFrequencyExponent`: Exponent der pro Frequenzeinheit wirkenden Leistung. Voreinstellung: 0,0  - `pVoltageExponent`: Exponent der pro Spannungseinheit wirkenden Wirkleistung. Voreinstellung: 0,0  - `qConstantCurrent`: Anteil der Blindleistungslast, der als Konstantstrom modelliert wird. Voreinstellung: 0,0  - `qConstantImpedance`: Anteil der Blindleistungslast, der als konstante Impedanz modelliert wird. Voreinstellung: 0,0  - `qConstantPower`: Anteil der Blindleistungslast, der als konstante Leistung modelliert wird. Voreinstellung: 0,0  - `qFrequencyExponent`: Exponent der pro Frequenzeinheit wirkenden Blindleistung. Voreinstellung: 0,0  - `qVoltageExponent`: Exponent der pro Spannungseinheit wirkenden Blindleistung. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss LoadResponseCharacteristic sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -85,10 +85,10 @@ LoadResponseCharacteristic:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
