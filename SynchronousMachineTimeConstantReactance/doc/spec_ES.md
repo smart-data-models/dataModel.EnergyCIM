@@ -6,7 +6,7 @@ Entidad: SynchronousMachineTimeConstantReactance
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ks`: Factor de corrección de la carga de saturación (Ks) (>= 0).  Utilizado sólo por el modelo tipo J.  Valor típico = 0. Por defecto: 0.0  - `location`:   - `modelType`: Tipo de modelo de máquina síncrona utilizado en las aplicaciones de simulación dinámica. Por defecto: Ninguno  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rotorType`: Tipo de rotor en la máquina física. Por defecto: Ninguno  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tc`: Constante de tiempo de amortiguación para la reactancia "Canay".  Valor típico = 0. Por defecto: 0  - `tpdo`: Constante de tiempo del rotor transitorio de eje directo (T`do) (> T``do).  Valor típico = 5. Por defecto: 0  - `tppdo`: Constante de tiempo del rotor subtransitorio del eje directo (T``do) (> 0).  Valor típico = 0,03. Por defecto: 0  - `tppqo`: Constante de tiempo del subtransitorio del eje de cuadratura (T``qo) (> 0). Valor típico = 0,03. Por defecto: 0  - `tpqo`: Constante de tiempo del rotor transitorio del eje de cuadratura (T`qo) (> T``qo). Valor típico = 0,5. Por defecto: 0  - `type`: Tipo NGSI. Debe ser SynchronousMachineTimeConstantReactance  - `xDirectSubtrans`: Reactancia subtransitoria del eje directo (no saturado) (X``d) (> Xl).  Valor típico = 0,2. Por defecto: 0,0  - `xDirectSync`: Reactancia sincrónica de eje directo (Xd) (>= X`d). Cociente entre el valor sostenido de la componente de CA de la tensión de inducido que se produce por el flujo total del eje directo debido a la corriente de inducido del eje directo y el valor de la componente de CA de esta corriente, la máquina funcionando a velocidad nominal. Valor típico = 1,8. Por defecto: 0,0  - `xDirectTrans`: Reactancia transitoria del eje directo (no saturado) (X`d) (> =X``d).  Valor típico = 0,5. Por defecto: 0,0  - `xQuadSubtrans`: Reactancia subtransitoria del eje de cuadratura (X``q) (> Xl).  Valor típico = 0,2. Por defecto: 0,0  - `xQuadSync`: Reactancia sincrónica del eje de cuadratura (Xq) (> =X`q). Relación entre la componente de la tensión reactiva de la armadura, debida a la componente del eje de cuadratura de la corriente de la armadura, y esta componente de la corriente, en condiciones de estado estacionario y a la frecuencia nominal.  Valor típico = 1,6. Por defecto: 0,0  - `xQuadTrans`: Reactancia transitoria del eje de cuadratura (X`q) (> =X``q).  Valor típico = 0,3. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ks`: Factor de corrección de la carga de saturación (Ks) (>= 0).  Utilizado sólo por el modelo tipo J.  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `modelType`: Tipo de modelo de máquina síncrona utilizado en las aplicaciones de simulación dinámica. Por defecto: Ninguno  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rotorType`: Tipo de rotor en la máquina física. Por defecto: Ninguno  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tc`: Constante de tiempo de amortiguación para la reactancia "Canay".  Valor típico = 0. Por defecto: 0  - `tpdo`: Constante de tiempo del rotor transitorio de eje directo (T`do) (> T``do).  Valor típico = 5. Por defecto: 0  - `tppdo`: Constante de tiempo del rotor subtransitorio de eje directo (T``do) (> 0).  Valor típico = 0,03. Por defecto: 0  - `tppqo`: Constante de tiempo del subtransitorio del eje de cuadratura (T``qo) (> 0). Valor típico = 0,03. Por defecto: 0  - `tpqo`: Constante de tiempo del rotor transitorio del eje de cuadratura (T`qo) (> T``qo). Valor típico = 0,5. Por defecto: 0  - `type`: Tipo NGSI. Debe ser SynchronousMachineTimeConstantReactance  - `xDirectSubtrans`: Reactancia subtransitoria del eje directo (no saturado) (X``d) (> Xl).  Valor típico = 0,2. Por defecto: 0,0  - `xDirectSync`: Reactancia sincrónica de eje directo (Xd) (>= X`d). Cociente entre el valor sostenido de la componente de CA de la tensión de inducido que se produce por el flujo total del eje directo debido a la corriente de inducido del eje directo y el valor de la componente de CA de esta corriente, la máquina funcionando a velocidad nominal. Valor típico = 1,8. Por defecto: 0,0  - `xDirectTrans`: Reactancia transitoria del eje directo (no saturado) (X`d) (> =X``d).  Valor típico = 0,5. Por defecto: 0,0  - `xQuadSubtrans`: Reactancia subtransitoria del eje de cuadratura (X``q) (> Xl).  Valor típico = 0,2. Por defecto: 0,0  - `xQuadSync`: Reactancia sincrónica del eje de cuadratura (Xq) (> =X`q). Relación entre la componente de la tensión reactiva de la armadura, debida a la componente del eje de cuadratura de la corriente de la armadura, y esta componente de la corriente, en condiciones de estado estacionario y a la frecuencia nominal.  Valor típico = 1,6. Por defecto: 0,0  - `xQuadTrans`: Reactancia transitoria del eje de cuadratura (X`q) (> =X``q).  Valor típico = 0,3. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -80,10 +80,10 @@ SynchronousMachineTimeConstantReactance:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -103,7 +103,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -126,7 +127,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +153,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +176,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +202,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -225,7 +230,7 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     modelType:    
       description: 'Type of synchronous machine model used in Dynamic simulation applications. Default: None'    
       type: number    
