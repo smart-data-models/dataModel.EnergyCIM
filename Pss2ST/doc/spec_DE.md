@@ -2,13 +2,13 @@ Entität: Pss2ST
 ===============  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss2ST/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. PTI Mikroprozessorgesteuerter Stabilisator Typ 1.**  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. PTI Mikroprozessorgestützter Stabilisator Typ 1.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inputSignal1Type`: Typ des Eingangssignals #1.  Typischer Wert = rotorAngularFrequencyDeviation. Voreinstellung: Keine  - `inputSignal2Type`: Typ des Eingangssignals #2.  Typischer Wert = generatorElectricalPower. Voreinstellung: Keine  - `k1`: Verstärkung (K1). Voreinstellung: 0,0  - `k2`: Verstärkung (K2). Voreinstellung: 0,0  - `location`:   - `lsmax`: Begrenzer (Lsmax). Voreinstellung: 0,0  - `lsmin`: Begrenzer (Lsmin). Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Zeitkonstante (T1). Voreinstellung: 0  - `t10`: Zeitkonstante (T10). Voreinstellung: 0  - `t2`: Zeitkonstante (T2). Voreinstellung: 0  - `t3`: Zeitkonstante (T3). Voreinstellung: 0  - `t4`: Zeitkonstante (T4). Voreinstellung: 0  - `t5`: Zeitkonstante (T5). Voreinstellung: 0  - `t6`: Zeitkonstante (T6). Voreinstellung: 0  - `t7`: Zeitkonstante (T7). Voreinstellung: 0  - `t8`: Zeitkonstante (T8). Voreinstellung: 0  - `t9`: Zeitkonstante (T9). Voreinstellung: 0  - `type`: NGSI-Typ. Es muss Pss2ST sein  - `vcl`: Cutoff-Begrenzer (Vcl). Voreinstellung: 0.0  - `vcu`: Cutoff-Begrenzer (Vcu). Voreinstellung: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inputSignal1Type`: Typ des Eingangssignals #1.  Typischer Wert = rotorAngularFrequencyDeviation. Voreinstellung: Keine  - `inputSignal2Type`: Typ des Eingangssignals #2.  Typischer Wert = generatorElectricalPower. Voreinstellung: Keine  - `k1`: Verstärkung (K1). Voreinstellung: 0,0  - `k2`: Verstärkung (K2). Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `lsmax`: Begrenzer (Lsmax). Voreinstellung: 0,0  - `lsmin`: Begrenzer (Lsmin). Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Zeitkonstante (T1). Voreinstellung: 0  - `t10`: Zeitkonstante (T10). Voreinstellung: 0  - `t2`: Zeitkonstante (T2). Voreinstellung: 0  - `t3`: Zeitkonstante (T3). Voreinstellung: 0  - `t4`: Zeitkonstante (T4). Voreinstellung: 0  - `t5`: Zeitkonstante (T5). Voreinstellung: 0  - `t6`: Zeitkonstante (T6). Voreinstellung: 0  - `t7`: Zeitkonstante (T7). Voreinstellung: 0  - `t8`: Zeitkonstante (T8). Voreinstellung: 0  - `t9`: Zeitkonstante (T9). Voreinstellung: 0  - `type`: NGSI-Typ. Es muss Pss2ST sein  - `vcl`: Cutoff-Begrenzer (Vcl). Voreinstellung: 0.0  - `vcu`: Cutoff-Begrenzer (Vcu). Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert wurde, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -95,10 +95,10 @@ Pss2ST:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ Pss2ST:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ Pss2ST:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ Pss2ST:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ Pss2ST:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ Pss2ST:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ Pss2ST:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     lsmax:    
       description: 'Limiter (Lsmax). Default: 0.0'    
       type: number    
