@@ -6,7 +6,7 @@ Entity: WindContRotorRIEC
 
 ## List of properties  
 
-- `WindDynamicsLookupTable`: The wind dynamics lookup table associated with this rotor resistance control model. Default: 'list'  - `WindGenTurbineType2IEC`: Wind turbine type 2 model with whitch this wind control rotor resistance model is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kirr`: Integral gain in rotor resistance PI controller (). It is type dependent parameter. Default: 0.0  - `komegafilt`: Filter gain for generator speed measurement (K). It is type dependent parameter. Default: 0.0  - `kpfilt`: Filter gain for power measurement (). It is type dependent parameter. Default: 0.0  - `kprr`: Proportional gain in rotor resistance PI controller (). It is type dependent parameter. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rmax`: Maximum rotor resistance (). It is type dependent parameter. Default: 0.0  - `rmin`: Minimum rotor resistance (). It is type dependent parameter. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tomegafilt`: Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0  - `tpfilt`: Filter time constant for power measurement (). It is type dependent parameter. Default: 0  - `type`: NGSI type. It has to be WindContRotorRIEC    
+- `WindDynamicsLookupTable`: The wind dynamics lookup table associated with this rotor resistance control model. Default: 'list'  - `WindGenTurbineType2IEC`: Wind turbine type 2 model with whitch this wind control rotor resistance model is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `kirr`: Integral gain in rotor resistance PI controller (). It is type dependent parameter. Default: 0.0  - `komegafilt`: Filter gain for generator speed measurement (K). It is type dependent parameter. Default: 0.0  - `kpfilt`: Filter gain for power measurement (). It is type dependent parameter. Default: 0.0  - `kprr`: Proportional gain in rotor resistance PI controller (). It is type dependent parameter. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rmax`: Maximum rotor resistance (). It is type dependent parameter. Default: 0.0  - `rmin`: Minimum rotor resistance (). It is type dependent parameter. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tomegafilt`: Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0  - `tpfilt`: Filter time constant for power measurement (). It is type dependent parameter. Default: 0  - `type`: NGSI type. It has to be WindContRotorRIEC    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -105,10 +105,10 @@ WindContRotorRIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ WindContRotorRIEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ WindContRotorRIEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ WindContRotorRIEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ WindContRotorRIEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ WindContRotorRIEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ WindContRotorRIEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
