@@ -6,7 +6,7 @@ Entity: Pss5
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `ctw2`: Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deadband`: Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `isfreq`: Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False  - `kf`: Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0  - `kpe`: Electric power input gain (K).  Typical Value = 0.3. Default: 0.0  - `kpss`: PSS gain (K).  Typical Value = 1. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmm`: Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tl1`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl2`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl3`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl4`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tpe`: Electric power filter time constant (T).  Typical Value = 0.05. Default: 0  - `tw1`: First WashOut (T).  Typical Value = 3.5. Default: 0  - `tw2`: Second WashOut (T).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be Pss5  - `vadat`:  Default: False  - `vsmn`: Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0  - `vsmx`: Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `ctw2`: Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deadband`: Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `isfreq`: Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False  - `kf`: Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0  - `kpe`: Electric power input gain (K).  Typical Value = 0.3. Default: 0.0  - `kpss`: PSS gain (K).  Typical Value = 1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmm`: Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tl1`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl2`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl3`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl4`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tpe`: Electric power filter time constant (T).  Typical Value = 0.05. Default: 0  - `tw1`: First WashOut (T).  Typical Value = 3.5. Default: 0  - `tw2`: Second WashOut (T).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be Pss5  - `vadat`:  Default: False  - `vsmn`: Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0  - `vsmx`: Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -105,10 +105,10 @@ Pss5:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ Pss5:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
