@@ -6,7 +6,7 @@ Entität: ExcIEEEAC7B
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (K). Typischer Wert = 0,18. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (K).  Typischer Wert = 0,02. Voreinstellung: 0,0  - `kdr`: Ableitungsverstärkung des Spannungsreglers (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf1`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0,212. Voreinstellung: 0.0  - `kf2`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kf3`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kia`: Integrale Verstärkung des Spannungsreglers (K).  Typischer Wert = 59,69. Voreinstellung: 0.0  - `kir`: Integrale Verstärkung des Spannungsreglers (K).  Typischer Wert = 4,24. Voreinstellung: 0.0  - `kl`: Parameter für die untere Grenze der Erregerfeldspannung (K).  Typischer Wert = 10. Voreinstellung: 0.0  - `kp`: Potentialkreis-Verstärkungskoeffizient (K).  Typischer Wert = 4,96. Voreinstellung: 0.0  - `kpa`: Spannungsregler Proportionalverstärkung (K).  Typischer Wert = 65,36. Voreinstellung: 0.0  - `kpr`: Spannungsregler Proportionalverstärkung (K).  Typischer Wert = 4,24. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, V, hinter der Kommutierungsreaktanz (S[V]).  Typischer Wert = 0,44. Voreinstellung: 0.0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, V, hinter der Kommutierungsreaktanz (S[V]).  Typischer Wert = 0,075. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tdr`: Nachlaufzeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (T).  Typischer Wert = 1,1. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators der Erregungssteuerung (T).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcIEEEAC7B sein  - `vamax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 1. Voreinstellung: 0.0  - `vamin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -0,95. Voreinstellung: 0,0  - `ve1`: Die Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (V), sind gleich V (V).  Typischer Wert = 6,3. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei denen die Sättigung definiert ist (V).  Typischer Wert = 3,02. Voreinstellung: 0.0  - `vemin`: Minimaler Erregerspannungsausgang (V).  Typischer Wert = 0. Voreinstellung: 0.0  - `vfemax`: Referenz für die Erregerfeldstromgrenze (V).  Typischer Wert = 6,9. Voreinstellung: 0,0  - `vrmax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 5,79. Voreinstellung: 0.0  - `vrmin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -5,79. Voreinstellung: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (K). Typischer Wert = 0,18. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (K).  Typischer Wert = 0,02. Voreinstellung: 0,0  - `kdr`: Ableitungsverstärkung des Spannungsreglers (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf1`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0,212. Voreinstellung: 0.0  - `kf2`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kf3`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kia`: Integrale Verstärkung des Spannungsreglers (K).  Typischer Wert = 59,69. Voreinstellung: 0.0  - `kir`: Integrale Verstärkung des Spannungsreglers (K).  Typischer Wert = 4,24. Voreinstellung: 0.0  - `kl`: Parameter für die untere Grenze der Erregerfeldspannung (K).  Typischer Wert = 10. Voreinstellung: 0.0  - `kp`: Potentialkreis-Verstärkungskoeffizient (K).  Typischer Wert = 4,96. Voreinstellung: 0.0  - `kpa`: Spannungsregler Proportionalverstärkung (K).  Typischer Wert = 65,36. Voreinstellung: 0.0  - `kpr`: Spannungsregler Proportionalverstärkung (K).  Typischer Wert = 4,24. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, V, hinter der Kommutierungsreaktanz (S[V]).  Typischer Wert = 0,44. Voreinstellung: 0.0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, V, hinter der Kommutierungsreaktanz (S[V]).  Typischer Wert = 0,075. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tdr`: Nachlaufzeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (T).  Typischer Wert = 1,1. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators der Erregungssteuerung (T).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcIEEEAC7B sein  - `vamax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 1. Voreinstellung: 0.0  - `vamin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -0,95. Voreinstellung: 0,0  - `ve1`: Die Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (V), sind gleich V (V).  Typischer Wert = 6,3. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei denen die Sättigung definiert ist (V).  Typischer Wert = 3,02. Voreinstellung: 0.0  - `vemin`: Minimaler Erregerspannungsausgang (V).  Typischer Wert = 0. Voreinstellung: 0.0  - `vfemax`: Referenz für die Erregerfeldstromgrenze (V).  Typischer Wert = 6,9. Voreinstellung: 0,0  - `vrmax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 5,79. Voreinstellung: 0.0  - `vrmin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -5,79. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -140,10 +140,10 @@ ExcIEEEAC7B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +163,8 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +187,8 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +213,8 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +236,8 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +262,8 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -285,7 +290,7 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
