@@ -6,7 +6,7 @@ Entity: GovCT1
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `aset`: Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 0.01. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `db`: Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `dm`: Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: Acceleration limiter gain (Ka).  Typical Value = 10. Default: 0.0  - `kdgov`: Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0  - `kigov`: Governor integral gain (Kigov).  Typical Value = 2. Default: 0.0  - `kiload`: Load limiter integral gain for PI controller (Kiload).  Typical Value = 0.67. Default: 0.0  - `kimw`: Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0.01. Default: 0.0  - `kpgov`: Governor proportional gain (Kpgov).  Typical Value = 10. Default: 0.0  - `kpload`: Load limiter proportional gain for PI controller (Kpload).  Typical Value = 2. Default: 0.0  - `kturb`: Turbine gain (Kturb) (>0).  Typical Value = 1.5. Default: 0.0  - `ldref`: Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0  - `location`:   - `maxerr`: Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0  - `minerr`: Minimum value for speed error signal (minerr).  Typical Value = -0.05. Default: 0.0  - `mwbase`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `r`: Permanent droop (R).  Typical Value = 0.04. Default: 0.0  - `rclose`: Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -0.1. Default: 0.0  - `rdown`: Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0  - `ropen`: Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 0.10. Default: 0.0  - `rselect`: Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None  - `rup`: Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Acceleration limiter time constant (Ta) (>0).  Typical Value = 0.1. Default: 0  - `tact`: Actuator time constant (Tact).  Typical Value = 0.5. Default: 0  - `tb`: Turbine lag time constant (Tb) (>0).  Typical Value = 0.5. Default: 0  - `tc`: Turbine lead time constant (Tc).  Typical Value = 0. Default: 0  - `tdgov`: Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0  - `teng`: Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0  - `tfload`: Load Limiter time constant (Tfload) (>0).  Typical Value = 3. Default: 0  - `tpelec`: Electrical power transducer time constant (Tpelec) (>0).  Typical Value = 1. Default: 0  - `tsa`: Temperature detection lead time constant (Tsa).  Typical Value = 4. Default: 0  - `tsb`: Temperature detection lag time constant (Tsb).  Typical Value = 5. Default: 0  - `type`: NGSI type. It has to be GovCT1  - `vmax`: Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0  - `vmin`: Minimum valve position limit (Vmin).  Typical Value = 0.15. Default: 0.0  - `wfnl`: No load fuel flow (Wfnl).  Typical Value = 0.2. Default: 0.0  - `wfspd`: Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = true. Default: False    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `aset`: Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 0.01. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `db`: Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `dm`: Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: Acceleration limiter gain (Ka).  Typical Value = 10. Default: 0.0  - `kdgov`: Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0  - `kigov`: Governor integral gain (Kigov).  Typical Value = 2. Default: 0.0  - `kiload`: Load limiter integral gain for PI controller (Kiload).  Typical Value = 0.67. Default: 0.0  - `kimw`: Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0.01. Default: 0.0  - `kpgov`: Governor proportional gain (Kpgov).  Typical Value = 10. Default: 0.0  - `kpload`: Load limiter proportional gain for PI controller (Kpload).  Typical Value = 2. Default: 0.0  - `kturb`: Turbine gain (Kturb) (>0).  Typical Value = 1.5. Default: 0.0  - `ldref`: Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxerr`: Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0  - `minerr`: Minimum value for speed error signal (minerr).  Typical Value = -0.05. Default: 0.0  - `mwbase`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `r`: Permanent droop (R).  Typical Value = 0.04. Default: 0.0  - `rclose`: Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -0.1. Default: 0.0  - `rdown`: Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0  - `ropen`: Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 0.10. Default: 0.0  - `rselect`: Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None  - `rup`: Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Acceleration limiter time constant (Ta) (>0).  Typical Value = 0.1. Default: 0  - `tact`: Actuator time constant (Tact).  Typical Value = 0.5. Default: 0  - `tb`: Turbine lag time constant (Tb) (>0).  Typical Value = 0.5. Default: 0  - `tc`: Turbine lead time constant (Tc).  Typical Value = 0. Default: 0  - `tdgov`: Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0  - `teng`: Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0  - `tfload`: Load Limiter time constant (Tfload) (>0).  Typical Value = 3. Default: 0  - `tpelec`: Electrical power transducer time constant (Tpelec) (>0).  Typical Value = 1. Default: 0  - `tsa`: Temperature detection lead time constant (Tsa).  Typical Value = 4. Default: 0  - `tsb`: Temperature detection lag time constant (Tsb).  Typical Value = 5. Default: 0  - `type`: NGSI type. It has to be GovCT1  - `vmax`: Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0  - `vmin`: Minimum valve position limit (Vmin).  Typical Value = 0.15. Default: 0.0  - `wfnl`: No load fuel flow (Wfnl).  Typical Value = 0.2. Default: 0.0  - `wfspd`: Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = true. Default: False    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -135,10 +135,10 @@ GovCT1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ GovCT1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxerr:    
       description: 'Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0'    
       type: number    
