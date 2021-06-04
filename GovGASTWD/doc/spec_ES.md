@@ -6,7 +6,7 @@ Entidad: GovGASTWD
 
 ## Lista de propiedades  
 
-- `a`: Posicionador de válvulas (). Por defecto: 0,0  - `address`: La dirección postal  - `af1`: Temperatura de los gases de escape Parámetro (Af1). Por defecto: 0,0  - `af2`: Coeficiente igual a 0,5(1 velocidad) (Af2). Por defecto: 0,0  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `b`: Posicionador de válvulas (). Por defecto: 0,0  - `bf1`: (Bf1).  Bf1 = E(1-w) donde E (coeficiente de sensibilidad a la velocidad) es de 0,55 a 0,65 x Tr. Por defecto: 0,0  - `bf2`: Coeficiente de par de la turbina K (depende del poder calorífico del flujo de combustible en la cámara de combustión) (Bf2). Por defecto: 0,0  - `c`: Posicionador de válvulas (). Por defecto: 0,0  - `cf2`: Coeficiente que define el flujo de combustible cuando la potencia de salida es del 0% (Cf2).  Sincronizado pero sin salida.  Normalmente 0,23 x K (23% de flujo de combustible). Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `ecr`: Retraso del tiempo de reacción de la combustión (Ecr). Por defecto: 0  - `etd`: Retraso de la turbina y del escape (Etd). Por defecto: 0  - `id`: Identificador único de la entidad  - `k3`: Relación de ajuste de combustible (K3). Por defecto: 0,0  - `k4`: Ganancia del escudo contra la radiación (K4). Por defecto: 0,0  - `k5`: Ganancia del escudo contra la radiación (K5). Por defecto: 0,0  - `k6`: Caudal mínimo de combustible (K6). Por defecto: 0,0  - `kd`: Ganancia del regulador de caída (Kd). Por defecto: 0,0  - `kdroop`: (Kdroop). Por defecto: 0,0  - `kf`: Retroalimentación del sistema de combustible (Kf). Por defecto: 0,0  - `ki`: Ganancia del gobernador isócrono (Ki). Por defecto: 0,0  - `kp`: Ganancia proporcional PID (Kp). Por defecto: 0,0  - `location`:   - `mwbase`: Base para los valores de potencia (MWbase) (> 0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t`: Constante de tiempo de control de combustible (T). Por defecto: 0  - `t3`: Constante de tiempo del escudo de radiación (T3). Por defecto: 0  - `t4`: Constante de tiempo del termopar (T4). Por defecto: 0  - `t5`: Constante de tiempo de control de temperatura (T5). Por defecto: 0  - `tc`: Control de temperatura (Tc). Por defecto: 0,0  - `tcd`: Constante de tiempo de descarga del compresor (Tcd). Por defecto: 0  - `td`: Constante de tiempo del transductor de potencia (Td). Por defecto: 0  - `tf`: Constante de tiempo del sistema de combustible (Tf). Por defecto: 0  - `tmax`: Límite máximo de la turbina (Tmax). Por defecto: 0,0  - `tmin`: Límite mínimo de la turbina (Tmin). Por defecto: 0,0  - `tr`: Temperatura nominal (Tr). Por defecto: 0,0  - `trate`: Potencia de la turbina (Trate).  Unidad = MW. Por defecto: 0,0  - `tt`: Tasa de integración del controlador de temperatura (Tt). Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovGASTWD    
+- `a`: Posicionador de válvulas (). Por defecto: 0,0  - `address`: La dirección postal  - `af1`: Temperatura de los gases de escape Parámetro (Af1). Por defecto: 0,0  - `af2`: Coeficiente igual a 0,5(1 velocidad) (Af2). Por defecto: 0,0  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `b`: Posicionador de válvulas (). Por defecto: 0,0  - `bf1`: (Bf1).  Bf1 = E(1-w) donde E (coeficiente de sensibilidad a la velocidad) es de 0,55 a 0,65 x Tr. Por defecto: 0,0  - `bf2`: Coeficiente de par de la turbina K (depende del poder calorífico del flujo de combustible en la cámara de combustión) (Bf2). Por defecto: 0,0  - `c`: Posicionador de válvulas (). Por defecto: 0,0  - `cf2`: Coeficiente que define el flujo de combustible cuando la potencia de salida es del 0% (Cf2).  Sincronizado pero sin salida.  Normalmente 0,23 x K (23% de flujo de combustible). Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `ecr`: Retraso del tiempo de reacción de la combustión (Ecr). Por defecto: 0  - `etd`: Retraso de la turbina y del escape (Etd). Por defecto: 0  - `id`: Identificador único de la entidad  - `k3`: Relación de ajuste de combustible (K3). Por defecto: 0,0  - `k4`: Ganancia del escudo contra la radiación (K4). Por defecto: 0,0  - `k5`: Ganancia del escudo contra la radiación (K5). Por defecto: 0,0  - `k6`: Caudal mínimo de combustible (K6). Por defecto: 0,0  - `kd`: Ganancia del regulador de caída (Kd). Por defecto: 0,0  - `kdroop`: (Kdroop). Por defecto: 0,0  - `kf`: Retroalimentación del sistema de combustible (Kf). Por defecto: 0,0  - `ki`: Ganancia del gobernador isócrono (Ki). Por defecto: 0,0  - `kp`: Ganancia proporcional PID (Kp). Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base para los valores de potencia (MWbase) (> 0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t`: Constante de tiempo de control de combustible (T). Por defecto: 0  - `t3`: Constante de tiempo del escudo de radiación (T3). Por defecto: 0  - `t4`: Constante de tiempo del termopar (T4). Por defecto: 0  - `t5`: Constante de tiempo de control de temperatura (T5). Por defecto: 0  - `tc`: Control de temperatura (Tc). Por defecto: 0,0  - `tcd`: Constante de tiempo de descarga del compresor (Tcd). Por defecto: 0  - `td`: Constante de tiempo del transductor de potencia (Td). Por defecto: 0  - `tf`: Constante de tiempo del sistema de combustible (Tf). Por defecto: 0  - `tmax`: Límite máximo de la turbina (Tmax). Por defecto: 0,0  - `tmin`: Límite mínimo de la turbina (Tmin). Por defecto: 0,0  - `tr`: Temperatura nominal (Tr). Por defecto: 0,0  - `trate`: Potencia de la turbina (Trate).  Unidad = MW. Por defecto: 0,0  - `tt`: Tasa de integración del controlador de temperatura (Tt). Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovGASTWD    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -170,10 +170,10 @@ GovGASTWD:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +193,8 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -216,7 +217,8 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +243,8 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -263,7 +266,8 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -288,7 +292,8 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -315,7 +320,7 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
@@ -420,6 +425,6 @@ GovGASTWD:
 </details>    
 ## Ejemplo de carga útil  
 No está disponible el ejemplo de un GovGASTWD en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un GovGASTWD en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
