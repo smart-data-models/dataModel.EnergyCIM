@@ -6,7 +6,7 @@ Entité : WindContQIEC
 
 ## Liste des propriétés  
 
-- `WindTurbineType3or4IEC`: Modèle d'éolienne de type 3 ou 4 auquel ce mode de contrôle réactif est associé. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `iqh1`: Injection maximale de courant réactif pendant le creux (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqmax`: Injection maximale de courant réactif (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqmin`: Injection minimale de courant réactif (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqpost`: Injection de courant réactif après défaut (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `kiq`: Gain d'intégration du régulateur PI de puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kiu`: Gain d'intégration du régulateur PI de tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `kpq`: Gain proportionnel du régulateur PI de puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpu`: Gain proportionnel du régulateur PI en tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `kqv`: Facteur d'échelle de tension pour le courant LVRT (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qmax`: Puissance réactive maximale (q). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `qmin`: Puissance réactive minimale (q). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `rdroop`: Composante résistive de l'impédance de chute de tension (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tiq`: Constante de temps dans le retard du courant réactif (T). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpfilt`: Constante de temps du filtre de mesure de la puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpost`: Durée de la période pendant laquelle la puissance réactive post-défaut est injectée (). C'est un paramètre dépendant du projet. Valeur par défaut : 0  - `tqord`: Constante de temps dans le retard d'ordre de la puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tufilt`: Constante de temps du filtre de mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de WindContQIEC  - `udb1`: Limite inférieure de la bande morte de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `udb2`: Limite supérieure de la bande morte de tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `umax`: Tension maximale dans le terme intégral du régulateur PI de tension (u). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `umin`: Tension minimale dans le terme intégral du régulateur PI de tension (u). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `uqdip`: Seuil de tension pour la détection du TAVG dans la commande q (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `uref0`: Biais défini par l'utilisateur dans la référence de tension (), utilisé lorsque =. C'est un paramètre dépendant du cas. Valeur par défaut : 0.0  - `windLVRTQcontrolModesType`: Types de modes de contrôle LVRT Q (). Il s'agit d'un paramètre dépendant du projet. Par défaut : Aucun  - `windQcontrolModesType`: Types de modes de contrôle Q généraux des éoliennes ().  C'est un paramètre dépendant du projet. Par défaut : Aucun  - `xdroop`: Composante inductive de l'impédance de chute de tension (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0    
+- `WindTurbineType3or4IEC`: Modèle d'éolienne de type 3 ou 4 auquel ce mode de contrôle réactif est associé. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `iqh1`: Injection maximale de courant réactif pendant le creux (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqmax`: Injection maximale de courant réactif (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqmin`: Injection minimale de courant réactif (i). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `iqpost`: Injection de courant réactif après défaut (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `kiq`: Gain d'intégration du régulateur PI de puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kiu`: Gain d'intégration du régulateur PI de tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `kpq`: Gain proportionnel du régulateur PI de puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpu`: Gain proportionnel du régulateur PI en tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `kqv`: Facteur d'échelle de tension pour le courant LVRT (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qmax`: Puissance réactive maximale (q). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `qmin`: Puissance réactive minimale (q). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `rdroop`: Composante résistive de l'impédance de chute de tension (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tiq`: Constante de temps dans le retard du courant réactif (T). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpfilt`: Constante de temps du filtre de mesure de la puissance (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tpost`: Durée de la période pendant laquelle la puissance réactive post-défaut est injectée (). C'est un paramètre dépendant du projet. Valeur par défaut : 0  - `tqord`: Constante de temps dans le retard d'ordre de la puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `tufilt`: Constante de temps du filtre de mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de WindContQIEC  - `udb1`: Limite inférieure de la bande morte de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `udb2`: Limite supérieure de la bande morte de tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `umax`: Tension maximale dans le terme intégral du régulateur PI de tension (u). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `umin`: Tension minimale dans le terme intégral du régulateur PI de tension (u). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `uqdip`: Seuil de tension pour la détection du TAVG dans la commande q (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `uref0`: Biais défini par l'utilisateur dans la référence de tension (), utilisé lorsque =. C'est un paramètre dépendant du cas. Valeur par défaut : 0.0  - `windLVRTQcontrolModesType`: Types de modes de contrôle LVRT Q (). Il s'agit d'un paramètre dépendant du projet. Par défaut : Aucun  - `windQcontrolModesType`: Types de modes de contrôle Q généraux des éoliennes ().  C'est un paramètre dépendant du projet. Par défaut : Aucun  - `xdroop`: Composante inductive de l'impédance de chute de tension (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -125,10 +125,10 @@ WindContQIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
