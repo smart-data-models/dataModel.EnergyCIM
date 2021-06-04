@@ -6,7 +6,7 @@ Entity: SynchronousMachine
 
 ## List of properties  
 
-- `InitialReactiveCapabilityCurve`: Synchronous machines using this curve as default. Default: None  - `SynchronousMachineDynamics`: Synchronous machine dynamics model used to describe dynamic behavior of this synchronous machine. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `earthing`: Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909 Default: False  - `earthingStarPointR`: Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909 Default: 0.0  - `earthingStarPointX`: Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909 Default: 0.0  - `id`: Unique identifier of the entity  - `ikk`: Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit. - Ikk=0: Generator with no compound excitation. - Ikk?0: Generator with compound excitation. Ikk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation (Section 4.6.1.2 in the IEC 60909-0) Used only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0) Default: 0.0  - `location`:   - `maxQ`: Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0  - `minQ`: Minimum reactive power limit for the unit. Default: 0.0  - `mu`: Factor to calculate the breaking current (Section 4.5.2.1 in the IEC 60909-0). Used only for single fed short circuit on a generator (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0  - `name`: The name of this item.  - `operatingMode`: Current mode of operation. Default: None  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `qPercent`: Percent of the coordinated reactive control that comes from this machine. Default: 0.0  - `r`: Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909 Default: 0.0  - `r0`: Zero sequence resistance of the synchronous machine. Default: 0.0  - `r2`: Negative sequence resistance. Default: 0.0  - `referencePriority`: Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0  - `satDirectSubtransX`: Direct-axis subtransient reactance saturated, also known as Xd`sat. Default: 0.0  - `satDirectSyncX`: Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0  - `satDirectTransX`: Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `shortCircuitRotorType`: Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909. Default: None  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: Modes that this synchronous machine can operate in. Default: None  - `voltageRegulationRange`: Range of generator voltage regulation (PG in the IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0 This attribute is used to describe the operating voltage of the generating unit. Default: 0.0  - `x0`: Zero sequence reactance of the synchronous machine. Default: 0.0  - `x2`: Negative sequence reactance. Default: 0.0    
+- `InitialReactiveCapabilityCurve`: Synchronous machines using this curve as default. Default: None  - `SynchronousMachineDynamics`: Synchronous machine dynamics model used to describe dynamic behavior of this synchronous machine. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `earthing`: Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909 Default: False  - `earthingStarPointR`: Generator star point earthing resistance (Re). Used for short circuit data exchange according to IEC 60909 Default: 0.0  - `earthingStarPointX`: Generator star point earthing reactance (Xe). Used for short circuit data exchange according to IEC 60909 Default: 0.0  - `id`: Unique identifier of the entity  - `ikk`: Steady-state short-circuit current (in A for the profile) of generator with compound excitation during 3-phase short circuit. - Ikk=0: Generator with no compound excitation. - Ikk?0: Generator with compound excitation. Ikk is used to calculate the minimum steady-state short-circuit current for generators with compound excitation (Section 4.6.1.2 in the IEC 60909-0) Used only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0) Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxQ`: Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0  - `minQ`: Minimum reactive power limit for the unit. Default: 0.0  - `mu`: Factor to calculate the breaking current (Section 4.5.2.1 in the IEC 60909-0). Used only for single fed short circuit on a generator (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0  - `name`: The name of this item.  - `operatingMode`: Current mode of operation. Default: None  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `qPercent`: Percent of the coordinated reactive control that comes from this machine. Default: 0.0  - `r`: Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909 Default: 0.0  - `r0`: Zero sequence resistance of the synchronous machine. Default: 0.0  - `r2`: Negative sequence resistance. Default: 0.0  - `referencePriority`: Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on. Default: 0  - `satDirectSubtransX`: Direct-axis subtransient reactance saturated, also known as Xd`sat. Default: 0.0  - `satDirectSyncX`: Direct-axes saturated synchronous reactance (xdsat); reciprocal of short-circuit ration. Used for short circuit data exchange, only for single fed short circuit on a generator. (Section 4.3.4.2. in the IEC 60909-0). Default: 0.0  - `satDirectTransX`: Saturated Direct-axis transient reactance. The attribute is primarily used for short circuit calculations according to ANSI. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `shortCircuitRotorType`: Type of rotor, used by short circuit applications, only for single fed short circuit according to IEC 60909. Default: None  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: Modes that this synchronous machine can operate in. Default: None  - `voltageRegulationRange`: Range of generator voltage regulation (PG in the IEC 60909-0) used for calculation of the impedance correction factor KG defined in IEC 60909-0 This attribute is used to describe the operating voltage of the generating unit. Default: 0.0  - `x0`: Zero sequence reactance of the synchronous machine. Default: 0.0  - `x2`: Negative sequence reactance. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -105,10 +105,10 @@ SynchronousMachine:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ SynchronousMachine:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ SynchronousMachine:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ SynchronousMachine:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ SynchronousMachine:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ SynchronousMachine:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ SynchronousMachine:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxQ:    
       description: 'Maximum reactive power limit. This is the maximum (nameplate) limit for the unit. Default: 0.0'    
       type: number    
