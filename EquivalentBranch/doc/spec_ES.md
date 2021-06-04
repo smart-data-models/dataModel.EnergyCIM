@@ -6,7 +6,7 @@ Entidad: EquivalentBranch
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `negativeR12`: Resistencia en serie de secuencia negativa desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `negativeR21`: Resistencia en serie de secuencia negativa desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `negativeX12`: Reactancia en serie de secuencia negativa desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `negativeX21`: Reactancia en serie de secuencia negativa desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909. Utilización: EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `positiveR12`: Resistencia en serie de secuencia positiva desde el terminal de secuencia 1 al terminal de secuencia 2 . Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos. Por defecto: 0,0  - `positiveR21`: Resistencia en serie de secuencia positiva desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `positiveX12`: Reactancia en serie de secuencia positiva desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `positiveX21`: Reactancia en serie de secuencia positiva desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `r`: Resistencia en serie de secuencia positiva de la rama reducida. Por defecto: 0,0  - `r21`: Resistencia de la secuencia de terminales 2 a la secuencia de terminales 1. Se utiliza para el flujo de potencia en estado estacionario. Este atributo es opcional y representa una red desequilibrada, como un desfasador fuera de lo normal. Si sólo se indica EquivalentBranch.r, se supone que EquivalentBranch.r21 es igual a EquivalentBranch.r. Regla de uso: EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser EquivalentBranch  - `x`: Reactancia en serie de secuencia positiva de la rama reducida. Por defecto: 0,0  - `x21`: Reactancia de la secuencia de terminales 2 a la secuencia de terminales 1. Se utiliza para el flujo de potencia en estado estacionario. Este atributo es opcional y representa una red desequilibrada, como un desfasador fuera de lo normal. Si sólo se indica EquivalentBranch.x, se supone que EquivalentBranch.x21 es igual a EquivalentBranch.x. Regla de uso: EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos. Por defecto: 0,0  - `zeroR12`: Resistencia en serie de secuencia cero de la secuencia de terminales 1 a la secuencia de terminales 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `zeroR21`: Resistencia en serie de secuencia cero de la secuencia de terminales 2 a la secuencia de terminales 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `zeroX12`: Reactancia en serie de secuencia cero desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `zeroX21`: Reactancia en serie de secuencia cero desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `negativeR12`: Resistencia en serie de secuencia negativa desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `negativeR21`: Resistencia en serie de secuencia negativa desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `negativeX12`: Reactancia en serie de secuencia negativa desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `negativeX21`: Reactancia en serie de secuencia negativa desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909. Utilización: EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `positiveR12`: Resistencia en serie de secuencia positiva desde el terminal de secuencia 1 al terminal de secuencia 2 . Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos. Por defecto: 0,0  - `positiveR21`: Resistencia en serie de secuencia positiva desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `positiveX12`: Reactancia en serie de secuencia positiva desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `positiveX21`: Reactancia en serie de secuencia positiva desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `r`: Resistencia en serie de secuencia positiva de la rama reducida. Por defecto: 0,0  - `r21`: Resistencia de la secuencia de terminales 2 a la secuencia de terminales 1. Se utiliza para el flujo de potencia en estado estacionario. Este atributo es opcional y representa una red desequilibrada, como un desfasador fuera de lo normal. Si sólo se indica EquivalentBranch.r, se supone que EquivalentBranch.r21 es igual a EquivalentBranch.r. Regla de uso: EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser EquivalentBranch  - `x`: Reactancia en serie de secuencia positiva de la rama reducida. Por defecto: 0,0  - `x21`: Reactancia de la secuencia de terminales 2 a la secuencia de terminales 1. Se utiliza para el flujo de potencia en estado estacionario. Este atributo es opcional y representa una red desequilibrada, como un desfasador fuera de lo normal. Si sólo se indica EquivalentBranch.x, se supone que EquivalentBranch.x21 es igual a EquivalentBranch.x. Regla de uso: EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos. Por defecto: 0,0  - `zeroR12`: Resistencia en serie de secuencia cero de la secuencia de terminales 1 a la secuencia de terminales 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 EquivalentBranch es el resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `zeroR21`: Resistencia en serie de secuencia cero de la secuencia de terminales 2 a la secuencia de terminales 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0,0  - `zeroX12`: Reactancia en serie de secuencia cero desde el terminal de secuencia 1 al terminal de secuencia 2. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0  - `zeroX21`: Reactancia en serie de secuencia cero desde el terminal de secuencia 2 al terminal de secuencia 1. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Uso : EquivalentBranch es un resultado de la reducción de la red antes del intercambio de datos Predeterminado: 0.0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -75,10 +75,10 @@ EquivalentBranch:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -98,7 +98,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -121,7 +122,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +148,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -168,7 +171,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +197,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -220,7 +225,7 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
