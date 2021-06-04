@@ -6,7 +6,7 @@ Entidad: GovHydroPID
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `aturb`: Multiplicador del numerador de la turbina (Aturb) (nota 3).  Valor típico -1. Por defecto: 0,0  - `bturb`: Multiplicador del denominador de la turbina (Bturb) (nota 3).  Valor típico = 0,5. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `gv1`: Punto de ganancia no lineal 1, PU gv (Gv1).  Valor típico = 0. Por defecto: 0.0  - `gv2`: Punto de ganancia no lineal 2, PU gv (Gv2).  Valor típico = 0. Por defecto: 0.0  - `gv3`: Punto de ganancia no lineal 3, PU gv (Gv3).  Valor típico = 0. Por defecto: 0.0  - `gv4`: Punto de ganancia no lineal 4, PU gv (Gv4).  Valor típico = 0. Por defecto: 0.0  - `gv5`: Punto de ganancia no lineal 5, PU gv (Gv5).  Valor típico = 0. Por defecto: 0.0  - `gv6`: Punto de ganancia no lineal 6, PU gv (Gv6).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `inputSignal`: Conmutador de señal de entrada (Flag). verdadero = se utiliza la entrada Pe falso = se recibe la retroalimentación de CV. Flag depende normalmente de Tt.  Si Tf es cero, Flag se pone en falso. Si Tf no es cero, Flag se pone a true.  Valor típico = verdadero. Por defecto: Falso  - `kd`: Ganancia derivativa (Kd).  Valor típico = 1,11. Por defecto: 0,0  - `kg`: Ganancia del servo de la puerta (Kg).  Valor típico = 2,5. Por defecto: 0,0  - `ki`: Ganancia integral (Ki).  Valor típico = 0,36. Por defecto: 0,0  - `kp`: Ganancia proporcional (Kp).  Valor típico = 0,1. Por defecto: 0,0  - `location`:   - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv1`: Punto de ganancia no lineal 1, potencia PU (Pgv1).  Valor típico = 0. Por defecto: 0.0  - `pgv2`: Punto de ganancia no lineal 2, potencia PU (Pgv2).  Valor típico = 0. Por defecto: 0.0  - `pgv3`: Punto de ganancia no lineal 3, potencia PU (Pgv3).  Valor típico = 0. Por defecto: 0.0  - `pgv4`: Punto de ganancia no lineal 4, potencia PU (Pgv4).  Valor típico = 0. Por defecto: 0.0  - `pgv5`: Punto de ganancia no lineal 5, potencia PU (Pgv5).  Valor típico = 0. Por defecto: 0.0  - `pgv6`: Punto de ganancia no lineal 6, potencia PU (Pgv6).  Valor típico = 0. Por defecto: 0.0  - `pmax`: Apertura máxima de la puerta, PU de MWbase (Pmax).  Valor típico = 1. Por defecto: 0,0  - `pmin`: Apertura mínima de la puerta, PU de MWbase (Pmin).  Valor típico = 0. Por defecto: 0.0  - `r`: Estabilidad (R).  Valor típico = 0,05. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `td`: Constante de tiempo del filtro de entrada (Td).  Valor típico = 0. Por defecto: 0  - `tf`: Constante de tiempo de lavado (Tf).  Valor típico = 0,1. Por defecto: 0  - `tp`: Constante de tiempo del servo de la puerta (Tp).  Valor típico = 0,35. Por defecto: 0  - `tt`: Constante de tiempo de retroalimentación de potencia (Tt).  Valor típico = 0,02. Por defecto: 0  - `tturb`: Constante de tiempo de la turbina (Tturb) (nota 3).  Valor típico = 0,8. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovHydroPID  - `velcl`: Velocidad máxima de cierre de la puerta (Velcl).  Unidad = PU/seg.  Valor típico = -0,14. Por defecto: 0,0  - `velop`: Velocidad máxima de apertura de la puerta (Velop).  Unidad = PU/seg.  Valor típico = 0,09. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `aturb`: Multiplicador del numerador de la turbina (Aturb) (nota 3).  Valor típico -1. Por defecto: 0,0  - `bturb`: Multiplicador del denominador de la turbina (Bturb) (nota 3).  Valor típico = 0,5. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `gv1`: Punto de ganancia no lineal 1, PU gv (Gv1).  Valor típico = 0. Por defecto: 0.0  - `gv2`: Punto de ganancia no lineal 2, PU gv (Gv2).  Valor típico = 0. Por defecto: 0.0  - `gv3`: Punto de ganancia no lineal 3, PU gv (Gv3).  Valor típico = 0. Por defecto: 0.0  - `gv4`: Punto de ganancia no lineal 4, PU gv (Gv4).  Valor típico = 0. Por defecto: 0.0  - `gv5`: Punto de ganancia no lineal 5, PU gv (Gv5).  Valor típico = 0. Por defecto: 0.0  - `gv6`: Punto de ganancia no lineal 6, PU gv (Gv6).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `inputSignal`: Conmutador de señal de entrada (Flag). verdadero = se utiliza la entrada Pe falso = se recibe la retroalimentación de CV. Flag depende normalmente de Tt.  Si Tf es cero, Flag se pone en falso. Si Tf no es cero, Flag se pone a true.  Valor típico = verdadero. Por defecto: Falso  - `kd`: Ganancia derivativa (Kd).  Valor típico = 1,11. Por defecto: 0,0  - `kg`: Ganancia del servo de la puerta (Kg).  Valor típico = 2,5. Por defecto: 0,0  - `ki`: Ganancia integral (Ki).  Valor típico = 0,36. Por defecto: 0,0  - `kp`: Ganancia proporcional (Kp).  Valor típico = 0,1. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv1`: Punto de ganancia no lineal 1, potencia PU (Pgv1).  Valor típico = 0. Por defecto: 0.0  - `pgv2`: Punto de ganancia no lineal 2, potencia PU (Pgv2).  Valor típico = 0. Por defecto: 0.0  - `pgv3`: Punto de ganancia no lineal 3, potencia PU (Pgv3).  Valor típico = 0. Por defecto: 0.0  - `pgv4`: Punto de ganancia no lineal 4, potencia PU (Pgv4).  Valor típico = 0. Por defecto: 0.0  - `pgv5`: Punto de ganancia no lineal 5, potencia PU (Pgv5).  Valor típico = 0. Por defecto: 0.0  - `pgv6`: Punto de ganancia no lineal 6, potencia PU (Pgv6).  Valor típico = 0. Por defecto: 0.0  - `pmax`: Apertura máxima de la puerta, PU de MWbase (Pmax).  Valor típico = 1. Por defecto: 0,0  - `pmin`: Apertura mínima de la puerta, PU de MWbase (Pmin).  Valor típico = 0. Por defecto: 0.0  - `r`: Estabilidad (R).  Valor típico = 0,05. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `td`: Constante de tiempo del filtro de entrada (Td).  Valor típico = 0. Por defecto: 0  - `tf`: Constante de tiempo de lavado (Tf).  Valor típico = 0,1. Por defecto: 0  - `tp`: Constante de tiempo del servo de la puerta (Tp).  Valor típico = 0,35. Por defecto: 0  - `tt`: Constante de tiempo de retroalimentación de potencia (Tt).  Valor típico = 0,02. Por defecto: 0  - `tturb`: Constante de tiempo de la turbina (Tturb) (nota 3).  Valor típico = 0,8. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovHydroPID  - `velcl`: Velocidad máxima de cierre de la puerta (Velcl).  Unidad = PU/seg.  Valor típico = -0,14. Por defecto: 0,0  - `velop`: Velocidad máxima de apertura de la puerta (Velop).  Unidad = PU/seg.  Valor típico = 0,09. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -155,10 +155,10 @@ GovHydroPID:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +178,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +202,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +228,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +251,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +277,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -300,7 +305,7 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
