@@ -6,7 +6,7 @@ Entity: GovGAST3
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bca`: Acceleration limit set-point (Bca).  Unit = 1/s.  Typical Value = 0.01. Default: 0.0  - `bp`: Droop (bp).  Typical Value = 0.05. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dtc`: Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (deltaTc).  Typical Value = 390. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: Minimum fuel flow (Ka).  Typical Value = 0.23. Default: 0.0  - `kac`: Fuel system feedback (K).  Typical Value = 0. Default: 0.0  - `kca`: Acceleration control integral gain (Kca). Unit = 1/s.  Typical Value = 100. Default: 0.0  - `ksi`: Gain of radiation shield (Ksi).  Typical Value = 0.8. Default: 0.0  - `ky`: Coefficient of transfer function of fuel valve positioner (Ky).  Typical Value = 1. Default: 0.0  - `location`:   - `mnef`: Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0  - `mxef`: Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rcmn`: Minimum fuel flow (RCMN).  Typical Value = -0.1. Default: 0.0  - `rcmx`: Maximum fuel flow (RCMX).  Typical Value = 1. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tac`: Fuel control time constant (Tac).  Typical Value = 0.1. Default: 0  - `tc`: Compressor discharge volume time constant (Tc).  Typical Value = 0.2. Default: 0  - `td`: Temperature controller derivative gain (Td).  Typical Value = 3.3. Default: 0  - `tfen`: Turbine rated exhaust temperature correspondent to Pm=1 PU (Tfen).  Typical Value = 540. Default: 0.0  - `tg`: Time constant of speed governor (Tg).  Typical Value = 0.05. Default: 0  - `tsi`: Time constant of radiation shield (Tsi).  Typical Value = 15. Default: 0  - `tt`: Temperature controller integration rate (Tt).  Typical Value = 250. Default: 0.0  - `ttc`: Time constant of thermocouple (Ttc).  Typical Value = 2.5. Default: 0  - `ty`: Time constant of fuel valve positioner (Ty).  Typical Value = 0.2. Default: 0  - `type`: NGSI type. It has to be GovGAST3    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bca`: Acceleration limit set-point (Bca).  Unit = 1/s.  Typical Value = 0.01. Default: 0.0  - `bp`: Droop (bp).  Typical Value = 0.05. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dtc`: Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (deltaTc).  Typical Value = 390. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: Minimum fuel flow (Ka).  Typical Value = 0.23. Default: 0.0  - `kac`: Fuel system feedback (K).  Typical Value = 0. Default: 0.0  - `kca`: Acceleration control integral gain (Kca). Unit = 1/s.  Typical Value = 100. Default: 0.0  - `ksi`: Gain of radiation shield (Ksi).  Typical Value = 0.8. Default: 0.0  - `ky`: Coefficient of transfer function of fuel valve positioner (Ky).  Typical Value = 1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mnef`: Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0  - `mxef`: Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rcmn`: Minimum fuel flow (RCMN).  Typical Value = -0.1. Default: 0.0  - `rcmx`: Maximum fuel flow (RCMX).  Typical Value = 1. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tac`: Fuel control time constant (Tac).  Typical Value = 0.1. Default: 0  - `tc`: Compressor discharge volume time constant (Tc).  Typical Value = 0.2. Default: 0  - `td`: Temperature controller derivative gain (Td).  Typical Value = 3.3. Default: 0  - `tfen`: Turbine rated exhaust temperature correspondent to Pm=1 PU (Tfen).  Typical Value = 540. Default: 0.0  - `tg`: Time constant of speed governor (Tg).  Typical Value = 0.05. Default: 0  - `tsi`: Time constant of radiation shield (Tsi).  Typical Value = 15. Default: 0  - `tt`: Temperature controller integration rate (Tt).  Typical Value = 250. Default: 0.0  - `ttc`: Time constant of thermocouple (Ttc).  Typical Value = 2.5. Default: 0  - `ty`: Time constant of fuel valve positioner (Ty).  Typical Value = 0.2. Default: 0  - `type`: NGSI type. It has to be GovGAST3    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -115,10 +115,10 @@ GovGAST3:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mnef:    
       description: 'Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0'    
       type: number    
