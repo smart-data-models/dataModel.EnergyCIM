@@ -6,7 +6,7 @@ Entidad: CsConverter
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alpha`: Ángulo de encendido, valor típico entre 10 y 18 grados para un rectificador. Variable de estado del CSC, resultado del flujo de potencia. Por defecto: 0,0  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `gamma`: Ángulo de extinción. Variable de estado del CSC, resultado del flujo de potencia. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`:   - `maxAlpha`: Ángulo de disparo máximo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `maxGamma`: Ángulo de extinción máximo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `maxIdc`: La corriente continua (Id) máxima en el lado de CC a la que debe funcionar el convertidor. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `minAlpha`: Ángulo mínimo de disparo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `minGamma`: Ángulo de extinción mínimo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `minIdc`: La corriente continua (Id) mínima en el lado de CC a la que debe funcionar el convertidor. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `operatingMode`: Indica si el polo de CC funciona como inversor o como rectificador. Variable de control CSC utilizada en el flujo de potencia. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pPccControl`:  Por defecto: Ninguno  - `ratedIdc`: Corriente continua nominal del convertidor, también llamada IdN. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `targetAlpha`: Ángulo de disparo del objetivo. Variable de control del CSC utilizada en el flujo de potencia. Por defecto: 0,0  - `targetGamma`: Ángulo de extinción del objetivo. Variable de control del CSC utilizada en el flujo de potencia. Por defecto: 0,0  - `targetIdc`: Valor objetivo de la corriente continua. Variable de control CSC utilizada en el flujo de potencia. Por defecto: 0,0  - `type`: Tipo NGSI. Tiene que ser CsConverter    
+- `address`: La dirección postal  - `alpha`: Ángulo de encendido, valor típico entre 10 y 18 grados para un rectificador. Variable de estado del CSC, resultado del flujo de potencia. Por defecto: 0,0  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `gamma`: Ángulo de extinción. Variable de estado del CSC, resultado del flujo de potencia. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxAlpha`: Ángulo de disparo máximo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `maxGamma`: Ángulo de extinción máximo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `maxIdc`: La corriente continua (Id) máxima en el lado de CC a la que debe funcionar el convertidor. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `minAlpha`: Ángulo mínimo de disparo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `minGamma`: Ángulo de extinción mínimo. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `minIdc`: La corriente continua (Id) mínima en el lado de CC a la que debe funcionar el convertidor. Datos de configuración del CSC utilizados en el flujo de potencia. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `operatingMode`: Indica si el polo de CC funciona como inversor o como rectificador. Variable de control CSC utilizada en el flujo de potencia. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pPccControl`:  Por defecto: Ninguno  - `ratedIdc`: Corriente continua nominal del convertidor, también llamada IdN. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `targetAlpha`: Ángulo de disparo del objetivo. Variable de control del CSC utilizada en el flujo de potencia. Por defecto: 0,0  - `targetGamma`: Ángulo de extinción del objetivo. Variable de control del CSC utilizada en el flujo de potencia. Por defecto: 0,0  - `targetIdc`: Valor objetivo de la corriente continua. Variable de control CSC utilizada en el flujo de potencia. Por defecto: 0,0  - `type`: Tipo NGSI. Tiene que ser CsConverter    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -85,10 +85,10 @@ CsConverter:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxAlpha:    
       description: 'Maximum firing angle. CSC configuration data used in power flow. Default: 0.0'    
       type: number    
