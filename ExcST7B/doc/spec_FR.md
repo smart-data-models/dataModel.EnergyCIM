@@ -6,7 +6,7 @@ Entité : ExcST7B
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kh`: Gain de rétroaction de porte de grande valeur (Kh).  Valeur typique = 1. Valeur par défaut : 0.0  - `kia`: Gain intégral du régulateur de tension (Kia).  Valeur typique = 1. Valeur par défaut : 0.0  - `kl`: Gain de rétroaction de porte à faible valeur (Kl).  Valeur typique = 1. Valeur par défaut : 0.0  - `kpa`: Gain proportionnel du régulateur de tension (Kpa).  Valeur typique = 40. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `oelin`: Sélecteur d'entrée OEL (OELin). Valeur typique = noOELinput. Valeur par défaut : Aucun  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tb`: Constante de temps de retard du régulateur (Tb).  Valeur typique = 1. Valeur par défaut : 0  - `tc`: Constante de temps du régulateur (Tc).  Valeur typique = 1. Valeur par défaut : 0  - `tf`: Constante de temps du stabilisateur du système de contrôle d'excitation (Tf).  Valeur typique = 1. Valeur par défaut : 0  - `tg`: Constante de temps de rétroaction du régulateur de tension de champ en boucle interne (Tg).  Valeur typique = 1. Valeur par défaut : 0  - `tia`: Constante de temps de la rétroaction (Tia).  Valeur typique = 3. Valeur par défaut : 0  - `ts`: Constante de temps d'amorçage du redresseur (Ts).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcST7B  - `uelin`: Sélecteur d'entrée UEL (UELin). Valeur typique = noUELinput. Valeur par défaut : Aucun  - `vmax`: Signal de référence de tension maximale (Vmax).  Valeur typique = 1,1. Valeur par défaut : 0.0  - `vmin`: Signal de référence de tension minimale (Vmin).  Valeur typique = 0,9. Valeur par défaut : 0.0  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 5. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = -4.5. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kh`: Gain de rétroaction de porte de grande valeur (Kh).  Valeur typique = 1. Valeur par défaut : 0.0  - `kia`: Gain intégral du régulateur de tension (Kia).  Valeur typique = 1. Valeur par défaut : 0.0  - `kl`: Gain de rétroaction de porte à faible valeur (Kl).  Valeur typique = 1. Valeur par défaut : 0.0  - `kpa`: Gain proportionnel du régulateur de tension (Kpa).  Valeur typique = 40. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `oelin`: Sélecteur d'entrée OEL (OELin). Valeur typique = noOELinput. Valeur par défaut : Aucun  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tb`: Constante de temps de retard du régulateur (Tb).  Valeur typique = 1. Valeur par défaut : 0  - `tc`: Constante de temps du régulateur (Tc).  Valeur typique = 1. Valeur par défaut : 0  - `tf`: Constante de temps du stabilisateur du système de contrôle d'excitation (Tf).  Valeur typique = 1. Valeur par défaut : 0  - `tg`: Constante de temps de rétroaction du régulateur de tension de champ en boucle interne (Tg).  Valeur typique = 1. Valeur par défaut : 0  - `tia`: Constante de temps de la rétroaction (Tia).  Valeur typique = 3. Valeur par défaut : 0  - `ts`: Constante de temps d'amorçage du redresseur (Ts).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcST7B  - `uelin`: Sélecteur d'entrée UEL (UELin). Valeur typique = noUELinput. Valeur par défaut : Aucun  - `vmax`: Signal de référence de tension maximale (Vmax).  Valeur typique = 1,1. Valeur par défaut : 0.0  - `vmin`: Signal de référence de tension minimale (Vmin).  Valeur typique = 0,9. Valeur par défaut : 0.0  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 5. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = -4.5. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -95,10 +95,10 @@ ExcST7B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
