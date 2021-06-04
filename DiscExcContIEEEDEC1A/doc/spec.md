@@ -6,7 +6,7 @@ Entity: DiscExcContIEEEDEC1A
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `esc`: Speed change reference ().  Typical Value = 0.0015. Default: 0.0  - `id`: Unique identifier of the entity  - `kan`: Discontinuous controller gain ().  Typical Value = 400. Default: 0.0  - `ketl`: Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tan`: Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0  - `td`: Time constant ().  Typical Value = 0.03. Default: 0  - `tl1`: Time constant ().  Typical Value = 0.025. Default: 0  - `tl2`: Time constant ().  Typical Value = 1.25. Default: 0  - `tw5`: DEC washout time constant ().  Typical Value = 5. Default: 0  - `type`: NGSI type. It has to be DiscExcContIEEEDEC1A  - `val`: Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0  - `vanmax`: Limiter for Van (). Default: 0.0  - `vomax`: Limiter ().  Typical Value = 0.3. Default: 0.0  - `vomin`: Limiter ().  Typical Value = 0.1. Default: 0.0  - `vsmax`: Limiter ().  Typical Value = 0.2. Default: 0.0  - `vsmin`: Limiter ().  Typical Value = -0.066. Default: 0.0  - `vtc`: Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0  - `vtlmt`: Voltage reference ().  Typical Value = 1.1. Default: 0.0  - `vtm`: Voltage limits ().  Typical Value = 1.13. Default: 0.0  - `vtn`: Voltage limits ().  Typical Value = 1.12. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `esc`: Speed change reference ().  Typical Value = 0.0015. Default: 0.0  - `id`: Unique identifier of the entity  - `kan`: Discontinuous controller gain ().  Typical Value = 400. Default: 0.0  - `ketl`: Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tan`: Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0  - `td`: Time constant ().  Typical Value = 0.03. Default: 0  - `tl1`: Time constant ().  Typical Value = 0.025. Default: 0  - `tl2`: Time constant ().  Typical Value = 1.25. Default: 0  - `tw5`: DEC washout time constant ().  Typical Value = 5. Default: 0  - `type`: NGSI type. It has to be DiscExcContIEEEDEC1A  - `val`: Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0  - `vanmax`: Limiter for Van (). Default: 0.0  - `vomax`: Limiter ().  Typical Value = 0.3. Default: 0.0  - `vomin`: Limiter ().  Typical Value = 0.1. Default: 0.0  - `vsmax`: Limiter ().  Typical Value = 0.2. Default: 0.0  - `vsmin`: Limiter ().  Typical Value = -0.066. Default: 0.0  - `vtc`: Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0  - `vtlmt`: Voltage reference ().  Typical Value = 1.1. Default: 0.0  - `vtm`: Voltage limits ().  Typical Value = 1.13. Default: 0.0  - `vtn`: Voltage limits ().  Typical Value = 1.12. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -90,10 +90,10 @@ DiscExcContIEEEDEC1A:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
