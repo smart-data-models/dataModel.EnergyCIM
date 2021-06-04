@@ -6,7 +6,7 @@ Entidad: GovSteamCC
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dhp`: Factor de amortiguación HP (Dhp).  Valor típico = 0. Por defecto: 0.0  - `dlp`: Factor de amortiguación LP (Dlp).  Valor típico = 0. Por defecto: 0.0  - `fhp`: Fracción de la potencia de HP por delante del recalentador (Fhp).  Valor típico = 0,3. Por defecto: 0,0  - `flp`: Fracción de la potencia LP por delante del recalentador (Flp).  Valor típico = 0,7. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`:   - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pmaxhp`: Posición del valor máximo de HP (Pmaxhp).  Valor típico = 1. Por defecto: 0,0  - `pmaxlp`: Posición del valor máximo de LP (Pmaxlp).  Valor típico = 1. Por defecto: 0,0  - `rhp`: Caída del regulador HP (Rhp).  Valor típico = 0,05. Por defecto: 0.0  - `rlp`: Estatismo del regulador LP (Rlp).  Valor típico = 0,05. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1hp`: Constante de tiempo del regulador HP (T1hp).  Valor típico = 0,1. Por defecto: 0  - `t1lp`: Constante de tiempo del regulador LP (T1lp).  Valor típico = 0,1. Por defecto: 0  - `t3hp`: Constante de tiempo de la turbina HP (T3hp).  Valor típico = 0,1. Por defecto: 0  - `t3lp`: Constante de tiempo de la turbina LP (T3lp).  Valor típico = 0,1. Por defecto: 0  - `t4hp`: Constante de tiempo de la turbina HP (T4hp).  Valor típico = 0,1. Por defecto: 0  - `t4lp`: Constante de tiempo de la turbina LP (T4lp).  Valor típico = 0,1. Por defecto: 0  - `t5hp`: Constante de tiempo del recalentador HP (T5hp).  Valor típico = 10. Por defecto: 0  - `t5lp`: Constante de tiempo del recalentador LP (T5lp).  Valor típico = 10. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteamCC    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dhp`: Factor de amortiguación HP (Dhp).  Valor típico = 0. Por defecto: 0.0  - `dlp`: Factor de amortiguación LP (Dlp).  Valor típico = 0. Por defecto: 0.0  - `fhp`: Fracción de la potencia de HP por delante del recalentador (Fhp).  Valor típico = 0,3. Por defecto: 0,0  - `flp`: Fracción de la potencia LP por delante del recalentador (Flp).  Valor típico = 0,7. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pmaxhp`: Posición del valor máximo de HP (Pmaxhp).  Valor típico = 1. Por defecto: 0,0  - `pmaxlp`: Posición del valor máximo de LP (Pmaxlp).  Valor típico = 1. Por defecto: 0,0  - `rhp`: Caída del regulador HP (Rhp).  Valor típico = 0,05. Por defecto: 0.0  - `rlp`: Estatismo del regulador LP (Rlp).  Valor típico = 0,05. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1hp`: Constante de tiempo del regulador HP (T1hp).  Valor típico = 0,1. Por defecto: 0  - `t1lp`: Constante de tiempo del regulador LP (T1lp).  Valor típico = 0,1. Por defecto: 0  - `t3hp`: Constante de tiempo de la turbina HP (T3hp).  Valor típico = 0,1. Por defecto: 0  - `t3lp`: Constante de tiempo de la turbina LP (T3lp).  Valor típico = 0,1. Por defecto: 0  - `t4hp`: Constante de tiempo de la turbina HP (T4hp).  Valor típico = 0,1. Por defecto: 0  - `t4lp`: Constante de tiempo de la turbina LP (T4lp).  Valor típico = 0,1. Por defecto: 0  - `t5hp`: Constante de tiempo del recalentador HP (T5hp).  Valor típico = 10. Por defecto: 0  - `t5lp`: Constante de tiempo del recalentador LP (T5lp).  Valor típico = 10. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteamCC    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -95,10 +95,10 @@ GovSteamCC:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ GovSteamCC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ GovSteamCC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ GovSteamCC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ GovSteamCC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ GovSteamCC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ GovSteamCC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
