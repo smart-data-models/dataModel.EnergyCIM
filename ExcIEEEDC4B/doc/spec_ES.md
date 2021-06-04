@@ -6,7 +6,7 @@ Entidad: ExcIEEEDC4B
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efd1`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 1,75. Por defecto: 0,0  - `efd2`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 2,33. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 1. Por defecto: 0,0  - `kd`: Ganancia derivada del regulador (K).  Valor típico = 20. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancia del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `ki`: Ganancia integral del regulador (K).  Valor típico = 20. Por defecto: 0,0  - `kp`: Ganancia proporcional del regulador (K).  Valor típico = 20. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `oelin`: Entrada OEL (OELin). verdadero = puerta LV falso = resta de la señal de error. Valor típico = verdadero. Por defecto: Falso  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seefd1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,08. Por defecto: 0,0  - `seefd2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,27. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0,2. Por defecto: 0  - `td`: Constante de tiempo del filtro derivado del regulador (T).  Valor típico = 0,01. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 0,8. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEDC4B  - `uelin`: Entrada UEL (UELin). verdadero = puerta HV falso = añadir a la señal de error. Valor típico = verdadero. Por defecto: Falso  - `vemin`: Tensión mínima de salida del excitador (V).  Valor típico = 0. Por defecto: 0.0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 2,7. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -0,9. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efd1`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 1,75. Por defecto: 0,0  - `efd2`: Tensión de excitación a la que se define la saturación del excitador (E).  Valor típico = 2,33. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 1. Por defecto: 0,0  - `kd`: Ganancia derivada del regulador (K).  Valor típico = 20. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancia del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `ki`: Ganancia integral del regulador (K).  Valor típico = 20. Por defecto: 0,0  - `kp`: Ganancia proporcional del regulador (K).  Valor típico = 20. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `oelin`: Entrada OEL (OELin). verdadero = puerta LV falso = resta de la señal de error. Valor típico = verdadero. Por defecto: Falso  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seefd1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,08. Por defecto: 0,0  - `seefd2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, E (S[E]).  Valor típico = 0,27. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0,2. Por defecto: 0  - `td`: Constante de tiempo del filtro derivado del regulador (T).  Valor típico = 0,01. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 0,8. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEDC4B  - `uelin`: Entrada UEL (UELin). verdadero = puerta HV falso = añadir a la señal de error. Valor típico = verdadero. Por defecto: Falso  - `vemin`: Tensión mínima de salida del excitador (V).  Valor típico = 0. Por defecto: 0.0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 2,7. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -0,9. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -115,10 +115,10 @@ ExcIEEEDC4B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
