@@ -6,7 +6,7 @@ Entity: ShuntCompensator
 
 ## List of properties  
 
-- `SvShuntCompensatorSections`: The state for the number of shunt compensator sections in service. Default: None  - `aVRDelay`: Time delay required for the device to be connected or disconnected by automatic voltage regulation (AVR). Default: 0  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `grounded`: Used for Yn and Zn connections. True if the neutral is solidly grounded. Default: False  - `id`: Unique identifier of the entity  - `location`:   - `maximumSections`: The maximum number of sections that may be switched in. Default: 0  - `name`: The name of this item.  - `nomU`: The voltage at which the nominal reactive power may be calculated. This should normally be within 10% of the voltage at which the capacitor is connected to the network. Default: 0.0  - `normalSections`: The normal number of sections switched in. Default: 0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `sections`: Shunt compensator sections in use. Starting value for steady state solution. Non integer values are allowed to support continuous variables. The reasons for continuous value are to support study cases where no discrete shunt compensators has yet been designed, a solutions where a narrow voltage band force the sections to oscillate or accommodate for a continuous solution as input. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `switchOnCount`: The switch on count since the capacitor count was last reset or initialized. Default: 0  - `switchOnDate`: The date and time when the capacitor bank was last switched on. Default: ''  - `type`: NGSI type. It has to be ShuntCompensator  - `voltageSensitivity`: Voltage sensitivity required for the device to regulate the bus voltage, in voltage/reactive power. Default: 0.0    
+- `SvShuntCompensatorSections`: The state for the number of shunt compensator sections in service. Default: None  - `aVRDelay`: Time delay required for the device to be connected or disconnected by automatic voltage regulation (AVR). Default: 0  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `grounded`: Used for Yn and Zn connections. True if the neutral is solidly grounded. Default: False  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maximumSections`: The maximum number of sections that may be switched in. Default: 0  - `name`: The name of this item.  - `nomU`: The voltage at which the nominal reactive power may be calculated. This should normally be within 10% of the voltage at which the capacitor is connected to the network. Default: 0.0  - `normalSections`: The normal number of sections switched in. Default: 0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `sections`: Shunt compensator sections in use. Starting value for steady state solution. Non integer values are allowed to support continuous variables. The reasons for continuous value are to support study cases where no discrete shunt compensators has yet been designed, a solutions where a narrow voltage band force the sections to oscillate or accommodate for a continuous solution as input. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `switchOnCount`: The switch on count since the capacitor count was last reset or initialized. Default: 0  - `switchOnDate`: The date and time when the capacitor bank was last switched on. Default: ''  - `type`: NGSI type. It has to be ShuntCompensator  - `voltageSensitivity`: Voltage sensitivity required for the device to regulate the bus voltage, in voltage/reactive power. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -90,10 +90,10 @@ ShuntCompensator:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maximumSections:    
       description: 'The maximum number of sections that may be switched in. Default: 0'    
       type: number    
