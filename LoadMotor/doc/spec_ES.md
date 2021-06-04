@@ -6,7 +6,7 @@ Entidad: LoadMotor
 
 ## Lista de propiedades  
 
-- `LoadAggregate`: Carga agregada a la que pertenece esta carga agregada del motor (dinámica). Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `d`: Factor de amortiguación (D).  Unidad = delta P/delta velocidad.  Valor típico = 2. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `h`: Constante de inercia (H) (no=0).  Valor típico = 0,4. Por defecto: 0  - `id`: Identificador único de la entidad  - `lfac`: Factor de carga - relación entre la P inicial y la base de MVA del motor (Lfac).  Valor típico = 0,8. Por defecto: 0,0  - `location`:   - `lp`: Reactancia transitoria (Lp).  Valor típico = 0,15. Por defecto: 0,0  - `lpp`: Reactancia subtransitoria (Lpp).  Valor típico = 0,15. Por defecto: 0,0  - `ls`: Reactancia sincrónica (Ls).  Valor típico = 3,2. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pfrac`: Fracción de carga de potencia constante que debe representar este modelo de motor (Pfrac) (>=0,0 y <=1,0).  Valor típico = 0,3. Por defecto: 0,0  - `ra`: Resistencia del estator (Ra).  Valor típico = 0. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tbkr`: Tiempo de funcionamiento del interruptor (Tbkr).  Valor típico = 0,08. Por defecto: 0  - `tpo`: Constante de tiempo transitoria del rotor (Tpo) (no=0).  Valor típico = 1. Por defecto: 0  - `tppo`: Constante de tiempo del rotor subtransitorio (Tppo).  Valor típico = 0,02. Por defecto: 0  - `tv`: Tiempo de recogida de la tensión (Tv).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser LoadMotor  - `vt`: Umbral de tensión para el disparo (Vt).  Valor típico = 0,7. Por defecto: 0,0    
+- `LoadAggregate`: Carga agregada a la que pertenece esta carga agregada del motor (dinámica). Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `d`: Factor de amortiguación (D).  Unidad = delta P/delta velocidad.  Valor típico = 2. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `h`: Constante de inercia (H) (no=0).  Valor típico = 0,4. Por defecto: 0  - `id`: Identificador único de la entidad  - `lfac`: Factor de carga - relación entre la P inicial y la base de MVA del motor (Lfac).  Valor típico = 0,8. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `lp`: Reactancia transitoria (Lp).  Valor típico = 0,15. Por defecto: 0,0  - `lpp`: Reactancia subtransitoria (Lpp).  Valor típico = 0,15. Por defecto: 0,0  - `ls`: Reactancia sincrónica (Ls).  Valor típico = 3,2. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pfrac`: Fracción de carga de potencia constante que debe representar este modelo de motor (Pfrac) (>=0,0 y <=1,0).  Valor típico = 0,3. Por defecto: 0,0  - `ra`: Resistencia del estator (Ra).  Valor típico = 0. Por defecto: 0.0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tbkr`: Tiempo de funcionamiento del interruptor (Tbkr).  Valor típico = 0,08. Por defecto: 0  - `tpo`: Constante de tiempo transitoria del rotor (Tpo) (no=0).  Valor típico = 1. Por defecto: 0  - `tppo`: Constante de tiempo del rotor subtransitorio (Tppo).  Valor típico = 0,02. Por defecto: 0  - `tv`: Tiempo de recogida de la tensión (Tv).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser LoadMotor  - `vt`: Umbral de tensión para el disparo (Vt).  Valor típico = 0,7. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -95,10 +95,10 @@ LoadMotor:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ LoadMotor:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ LoadMotor:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ LoadMotor:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ LoadMotor:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ LoadMotor:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ LoadMotor:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     lp:    
       description: 'Transient reactance (Lp).  Typical Value = 0.15. Default: 0.0'    
       type: number    
