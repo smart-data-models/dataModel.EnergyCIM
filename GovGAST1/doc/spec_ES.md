@@ -6,7 +6,7 @@ Entidad: GovGAST1
 
 ## Lista de propiedades  
 
-- `a`: Factor de escala del numerador de la constante de potencia de la turbina (a).  Valor típico = 0,8. Por defecto: 0,0  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `b`: Factor de escala del denominador de la constante de tiempo de la potencia de la turbina (b).  Valor típico = 1. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `fidle`: Flujo de combustible a potencia cero (Fidle).  Valor típico = 0,18. Por defecto: 0.0  - `gv1`: Punto de ganancia no lineal 1, PU gv (Gv1).  Valor típico = 0. Por defecto: 0.0  - `gv2`: Punto de ganancia no lineal 2,PU gv (Gv2).  Valor típico = 0. Por defecto: 0.0  - `gv3`: Punto de ganancia no lineal 3, PU gv (Gv3).  Valor típico = 0. Por defecto: 0.0  - `gv4`: Punto de ganancia no lineal 4, PU gv (Gv4).  Valor típico = 0. Por defecto: 0.0  - `gv5`: Punto de ganancia no lineal 5, PU gv (Gv5).  Valor típico = 0. Por defecto: 0.0  - `gv6`: Punto de ganancia no lineal 6, PU gv (Gv6).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del gobernador (Ka).  Valor típico = 0. Por defecto: 0.0  - `kt`: Ganancia del limitador de temperatura (Kt).  Valor típico = 3. Por defecto: 0,0  - `lmax`: Límite de carga a temperatura ambiente (Lmax).  Lmax es la potencia de la turbina correspondiente a la temperatura límite de los gases de escape.  Valor típico = 1. Por defecto: 0,0  - `loadinc`: Cambio de posición de la válvula permitido a un ritmo rápido (Loadinc).  Valor típico = 0,05. Por defecto: 0.0  - `location`:   - `ltrate`: Tasa máxima de apertura de la válvula de combustible a largo plazo (Ltrate).  Valor típico = 0,02. Por defecto: 0,0  - `mwbase`: Base para los valores de potencia (MWbase) (> 0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv1`: Punto de ganancia no lineal 1, potencia PU (Pgv1).  Valor típico = 0. Por defecto: 0.0  - `pgv2`: Punto de ganancia no lineal 2, potencia PU (Pgv2).  Valor típico = 0. Por defecto: 0.0  - `pgv3`: Punto de ganancia no lineal 3, potencia PU (Pgv3).  Valor típico = 0. Por defecto: 0.0  - `pgv4`: Punto de ganancia no lineal 4, potencia PU (Pgv4).  Valor típico = 0. Por defecto: 0.0  - `pgv5`: Punto de ganancia no lineal 5, potencia PU (Pgv5).  Valor típico = 0. Por defecto: 0.0  - `pgv6`: Punto de ganancia no lineal 6, potencia PU (Pgv6).  Valor típico = 0. Por defecto: 0.0  - `r`: Caída permanente (R).  Valor típico = 0,04. Por defecto: 0,0  - `rmax`: Velocidad máxima de apertura de la válvula de combustible (Rmax).  Unidad = PU/seg.  Valor típico = 1. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del mecanismo del regulador (T1).  T1 representa la constante de tiempo natural de posicionamiento de la válvula del regulador para pequeñas perturbaciones, como las que se observan cuando la limitación de velocidad no está en vigor.  Valor típico = 0,5. Por defecto: 0  - `t2`: Constante de tiempo de la potencia de la turbina (T2).  T2 representa el retraso debido al almacenamiento interno de energía del motor de turbina de gas. T2 puede utilizarse para dar una aproximación al retardo asociado a la aceleración del carrete del compresor de un motor multieje, o a la compresibilidad del gas en el plenum de la turbina de potencia libre de una unidad aeroderivativa, por ejemplo.  Valor típico = 0,5. Por defecto: 0  - `t3`: Constante de tiempo de la temperatura de escape de la turbina (T3).  T3 representa el retardo del sistema de limitación de la temperatura de escape y de la carga. Valor típico = 3. Por defecto: 0  - `t4`: Constante de tiempo del gobernador (T4).  Valor típico = 0. Por defecto: 0  - `t5`: Constante de tiempo de retardo del regulador (T5).  Valor típico = 0. Por defecto: 0  - `tltr`: Constante de tiempo de promedio de la posición de la válvula (Tltr).  Valor típico = 10. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovGAST1  - `vmax`: Potencia máxima de la turbina, PU de MWbase (Vmax).  Valor típico = 1. Por defecto: 0,0  - `vmin`: Potencia mínima de la turbina, PU de MWbase (Vmin).  Valor típico = 0. Por defecto: 0.0    
+- `a`: Factor de escala del numerador de la constante de potencia de la turbina (a).  Valor típico = 0,8. Por defecto: 0,0  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `b`: Factor de escala del denominador de la constante de tiempo de la potencia de la turbina (b).  Valor típico = 1. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0.0  - `description`: Una descripción de este artículo  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `fidle`: Flujo de combustible a potencia cero (Fidle).  Valor típico = 0,18. Por defecto: 0.0  - `gv1`: Punto de ganancia no lineal 1, PU gv (Gv1).  Valor típico = 0. Por defecto: 0.0  - `gv2`: Punto de ganancia no lineal 2,PU gv (Gv2).  Valor típico = 0. Por defecto: 0.0  - `gv3`: Punto de ganancia no lineal 3, PU gv (Gv3).  Valor típico = 0. Por defecto: 0.0  - `gv4`: Punto de ganancia no lineal 4, PU gv (Gv4).  Valor típico = 0. Por defecto: 0.0  - `gv5`: Punto de ganancia no lineal 5, PU gv (Gv5).  Valor típico = 0. Por defecto: 0.0  - `gv6`: Punto de ganancia no lineal 6, PU gv (Gv6).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del gobernador (Ka).  Valor típico = 0. Por defecto: 0.0  - `kt`: Ganancia del limitador de temperatura (Kt).  Valor típico = 3. Por defecto: 0,0  - `lmax`: Límite de carga a temperatura ambiente (Lmax).  Lmax es la potencia de la turbina correspondiente a la temperatura límite de los gases de escape.  Valor típico = 1. Por defecto: 0,0  - `loadinc`: Cambio de posición de la válvula permitido a un ritmo rápido (Loadinc).  Valor típico = 0,05. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `ltrate`: Tasa máxima de apertura de la válvula de combustible a largo plazo (Ltrate).  Valor típico = 0,02. Por defecto: 0,0  - `mwbase`: Base para los valores de potencia (MWbase) (> 0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv1`: Punto de ganancia no lineal 1, potencia PU (Pgv1).  Valor típico = 0. Por defecto: 0.0  - `pgv2`: Punto de ganancia no lineal 2, potencia PU (Pgv2).  Valor típico = 0. Por defecto: 0.0  - `pgv3`: Punto de ganancia no lineal 3, potencia PU (Pgv3).  Valor típico = 0. Por defecto: 0.0  - `pgv4`: Punto de ganancia no lineal 4, potencia PU (Pgv4).  Valor típico = 0. Por defecto: 0.0  - `pgv5`: Punto de ganancia no lineal 5, potencia PU (Pgv5).  Valor típico = 0. Por defecto: 0.0  - `pgv6`: Punto de ganancia no lineal 6, potencia PU (Pgv6).  Valor típico = 0. Por defecto: 0.0  - `r`: Caída permanente (R).  Valor típico = 0,04. Por defecto: 0,0  - `rmax`: Velocidad máxima de apertura de la válvula de combustible (Rmax).  Unidad = PU/seg.  Valor típico = 1. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del mecanismo del regulador (T1).  T1 representa la constante de tiempo natural de posicionamiento de la válvula del regulador para pequeñas perturbaciones, como las que se observan cuando la limitación de velocidad no está en vigor.  Valor típico = 0,5. Por defecto: 0  - `t2`: Constante de tiempo de la potencia de la turbina (T2).  T2 representa el retraso debido al almacenamiento interno de energía del motor de turbina de gas. T2 puede utilizarse para dar una aproximación al retardo asociado a la aceleración del carrete del compresor de un motor multieje, o a la compresibilidad del gas en el plenum de la turbina de potencia libre de una unidad aeroderivativa, por ejemplo.  Valor típico = 0,5. Por defecto: 0  - `t3`: Constante de tiempo de la temperatura de escape de la turbina (T3).  T3 representa el retardo en el sistema de limitación de la temperatura de escape y de la carga. Valor típico = 3. Por defecto: 0  - `t4`: Constante de tiempo del gobernador (T4).  Valor típico = 0. Por defecto: 0  - `t5`: Constante de tiempo de retardo del regulador (T5).  Valor típico = 0. Por defecto: 0  - `tltr`: Constante de tiempo de promedio de la posición de la válvula (Tltr).  Valor típico = 10. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovGAST1  - `vmax`: Potencia máxima de la turbina, PU de MWbase (Vmax).  Valor típico = 1. Por defecto: 0,0  - `vmin`: Potencia mínima de la turbina, PU de MWbase (Vmin).  Valor típico = 0. Por defecto: 0.0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -155,10 +155,10 @@ GovGAST1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +178,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +202,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +228,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +251,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +277,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -300,7 +305,7 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     ltrate:    
       description: 'Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: 0.0'    
       type: number    
