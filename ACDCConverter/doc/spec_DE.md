@@ -6,7 +6,7 @@ Entität: ACDCConverter
 
 ## Liste der Eigenschaften  
 
-- `DCTerminals`:  Voreinstellung: 'Liste'  - `PccTerminal`: Alle DC-Seiten der Umrichter sind mit diesem Punkt der gemeinsamen Koppelklemme verbunden. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `baseS`: Basisscheinleistung des Umrichterpols. Voreinstellung: 0.0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `idc`: Umrichtergleichstrom, auch Id genannt. Zustandsgröße des Umrichters, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0  - `idleLoss`: Wirkleistungsverlust im Pol bei keiner Leistungsübertragung. Im Leistungsfluss verwendete Umrichterkonfigurationsdaten. Voreinstellung: 0.0  - `location`:   - `maxUdc`: Die maximale Spannung auf der DC-Seite, bei der der Umrichter arbeiten soll. Im Leistungsfluss verwendete Konfigurationsdaten des Konverters. Voreinstellung: 0.0  - `minUdc`: Min. zulässige Umrichter-Gleichspannung. Konverter-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `numberOfValves`: Anzahl der Ventile im Umrichter. Wird bei Verlustberechnungen verwendet. Voreinstellung: 0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `p`: Wirkleistung an der Stelle der gemeinsamen Kopplung. Es wird die Lastvorzeichenkonvention verwendet, d. h. ein positives Vorzeichen bedeutet den Abfluss von einem Knoten. Startwert für eine stationäre Lösung für den Fall, dass ein vereinfachtes Leistungsflussmodell verwendet wird. Voreinstellung: 0.0  - `poleLossP`: Die Wirkverlustleistung an einem DC-Pol = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Bei verlustfreiem Betrieb Pdc=Pac Bei Gleichrichterbetrieb mit Verlusten Pdc=Pac-lossP Bei Wechselrichterbetrieb mit Verlusten Pdc=Pac+lossP Im Leistungsfluss verwendete Umrichterzustandsvariable. Voreinstellung: 0,0  - `q`: Blindleistung an der Stelle der gemeinsamen Kopplung. Es wird die Lastvorzeichenkonvention verwendet, d. h. ein positives Vorzeichen bedeutet den Abfluss von einem Knoten. Startwert für eine stationäre Lösung für den Fall, dass ein vereinfachtes Leistungsflussmodell verwendet wird. Voreinstellung: 0,0  - `ratedUdc`: Nenngleichspannung des Umrichters, auch UdN genannt. Im Leistungsfluss verwendete Umrichterkonfigurationsdaten. Voreinstellung: 0.0  - `resistiveLoss`: Umrichterkonfigurationsdaten, die im Leistungsfluss verwendet werden. Siehe poleLossP. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `switchingLoss`: Schaltverluste, bezogen auf die Basisscheinleistung `baseS`. Siehe poleLossP. Voreinstellung: 0.0  - `targetPpcc`: Ziel der Wirkleistungseinspeisung in das AC-Netz, am Punkt der gemeinsamen Kopplung. Voreinstellung: 0,0  - `targetUdc`: Zielwert für die Größe der Gleichspannung. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss ACDCConverter sein  - `uc`: Umrichterspannung, die Spannung an der AC-Seite der Brücke. Umrichterzustandsvariable, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0.0  - `udc`: Umrichterspannung auf der DC-Seite, auch Ud. Umrichterzustandsgröße genannt, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0  - `valveU0`: Schwellenspannung des Ventils. Vorwärtsspannungsabfall, wenn das Ventil leitend ist. Wird bei Verlustberechnungen verwendet, d. h. der switchLoss ist abhängig von numberOfValves * valveU0. Voreinstellung: 0.0    
+- `DCTerminals`:  Voreinstellung: 'Liste'  - `PccTerminal`: Alle DC-Seiten der Umrichter sind mit diesem Punkt der gemeinsamen Koppelklemme verbunden. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `baseS`: Basisscheinleistung des Umrichterpols. Voreinstellung: 0.0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `idc`: Umrichtergleichstrom, auch Id genannt. Zustandsgröße des Umrichters, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0  - `idleLoss`: Wirkleistungsverlust im Pol bei keiner Leistungsübertragung. Im Leistungsfluss verwendete Umrichterkonfigurationsdaten. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxUdc`: Die maximale Spannung auf der DC-Seite, bei der der Umrichter arbeiten soll. Im Leistungsfluss verwendete Konfigurationsdaten des Konverters. Voreinstellung: 0.0  - `minUdc`: Min. zulässige Umrichter-Gleichspannung. Konverter-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `numberOfValves`: Anzahl der Ventile im Umrichter. Wird bei Verlustberechnungen verwendet. Voreinstellung: 0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `p`: Wirkleistung an der Stelle der gemeinsamen Kopplung. Es wird die Lastvorzeichenkonvention verwendet, d. h. ein positives Vorzeichen bedeutet den Abfluss von einem Knoten. Startwert für eine stationäre Lösung für den Fall, dass ein vereinfachtes Leistungsflussmodell verwendet wird. Voreinstellung: 0.0  - `poleLossP`: Die Wirkverlustleistung an einem DC-Pol = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Bei verlustfreiem Betrieb Pdc=Pac Bei Gleichrichterbetrieb mit Verlusten Pdc=Pac-lossP Bei Wechselrichterbetrieb mit Verlusten Pdc=Pac+lossP Im Leistungsfluss verwendete Umrichterzustandsvariable. Voreinstellung: 0,0  - `q`: Blindleistung an der Stelle der gemeinsamen Kopplung. Es wird die Lastvorzeichenkonvention verwendet, d. h. ein positives Vorzeichen bedeutet den Abfluss von einem Knoten. Startwert für eine stationäre Lösung für den Fall, dass ein vereinfachtes Leistungsflussmodell verwendet wird. Voreinstellung: 0,0  - `ratedUdc`: Nenngleichspannung des Umrichters, auch UdN genannt. Im Leistungsfluss verwendete Umrichterkonfigurationsdaten. Voreinstellung: 0.0  - `resistiveLoss`: Umrichterkonfigurationsdaten, die im Leistungsfluss verwendet werden. Siehe poleLossP. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `switchingLoss`: Schaltverluste, bezogen auf die Basisscheinleistung `baseS`. Siehe poleLossP. Voreinstellung: 0.0  - `targetPpcc`: Ziel der Wirkleistungseinspeisung in das AC-Netz, am Punkt der gemeinsamen Kopplung. Voreinstellung: 0,0  - `targetUdc`: Zielwert für die Größe der Gleichspannung. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss ACDCConverter sein  - `uc`: Umrichterspannung, die Spannung an der AC-Seite der Brücke. Umrichterzustandsvariable, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0.0  - `udc`: Umrichterspannung auf der DC-Seite, auch Ud. Umrichterzustandsgröße genannt, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0  - `valveU0`: Schwellenspannung des Ventils. Vorwärtsspannungsabfall, wenn das Ventil leitend ist. Wird bei Verlustberechnungen verwendet, d. h. der switchLoss ist abhängig von numberOfValves * valveU0. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -100,10 +100,10 @@ ACDCConverter:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxUdc:    
       description: 'The maximum voltage on the DC side at which the converter should operate. Converter configuration data used in power flow. Default: 0.0'    
       type: number    
