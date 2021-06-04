@@ -6,7 +6,7 @@ Entität: GovSteam1
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totzonenbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlineare Verstärkung Ventilstellungspunkt 1 (GV1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlineare Verstärkung Ventilstellungspunkt 2 (GV2).  Typischer Wert = 0,4. Voreinstellung: 0,0  - `gv3`: Nichtlineare Verstärkung Ventilstellungspunkt 3 (GV3).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `gv4`: Nichtlineare Verstärkung Ventilstellungspunkt 4 (GV4).  Typischer Wert = 0,6. Voreinstellung: 0,0  - `gv5`: Nichtlineare Verstärkung Ventilstellungspunkt 5 (GV5).  Typischer Wert = 1. Voreinstellung: 0.0  - `gv6`: Nichtlineare Verstärkung Ventilstellungspunkt 6 (GV6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Verstärkung des Reglers (Kehrwert des P-Bereichs) (K) (>0).  Typischer Wert = 25. Voreinstellung: 0.0  - `k1`: Bruchteil der HP-Wellenleistung nach dem ersten Kesseldurchgang (K1).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k2`: Bruchteil der LP-Wellenleistung nach dem ersten Kesseldurchgang (K2).  Typischer Wert = 0. Voreinstellung: 0.0  - `k3`: Bruchteil der HP-Wellenleistung nach dem zweiten Kesseldurchgang (K3).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `k4`: Bruchteil der LP-Wellenleistung nach dem zweiten Kesseldurchgang (K4).  Typischer Wert = 0. Voreinstellung: 0.0  - `k5`: Bruchteil der HP-Wellenleistung nach dem dritten Kesseldurchgang (K5).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `k6`: Bruchteil der LP-Wellenleistung nach dem dritten Kesseldurchgang (K6).  Typischer Wert = 0. Voreinstellung: 0.0  - `k7`: Bruchteil der HP-Wellenleistung nach dem vierten Kesseldurchgang (K7).  Typischer Wert = 0. Voreinstellung: 0.0  - `k8`: Bruchteil der LP-Wellenleistung nach dem vierten Kesseldurchgang (K8).  Typischer Wert = 0. Voreinstellung: 0.0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlineare Verstärkung Leistungswert Punkt 1 (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlineare Verstärkung Leistungswert Punkt 2 (Pgv2).  Typischer Wert = 0,75. Voreinstellung: 0,0  - `pgv3`: Nichtlineare Verstärkung Leistungswert Punkt 3 (Pgv3).  Typischer Wert = 0,91. Voreinstellung: 0.0  - `pgv4`: Nichtlineare Verstärkung Leistungswert Punkt 4 (Pgv4).  Typischer Wert = 0,98. Voreinstellung: 0.0  - `pgv5`: Nichtlineare Verstärkung Leistungswert Punkt 5 (Pgv5).  Typischer Wert = 1. Voreinstellung: 0,0  - `pgv6`: Nichtlineare Verstärkung Leistungswert Punkt 6 (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Ventilöffnung (Pmax) (> Pmin).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Ventilöffnung (Pmin) (>=0).  Typischer Wert = 0. Voreinstellung: 0.0  - `sdb1`: Intentional deadband indicator. true = intentional deadband wird angewendet false = intentional deadband wird nicht angewendet. Typischer Wert = true. Voreinstellung: Falsch  - `sdb2`: Ungewollte Deadband-Position. true = gewolltes Deadband wird vor Punkt `A` angewendet false = gewolltes Deadband wird nach Punkt `A` angewendet. Typischer Wert = true. Voreinstellung: False  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Verzögerungszeitkonstante des Reglers (T1).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Reglervorlaufzeitkonstante (T2).  Typischer Wert = 0. Voreinstellung: 0  - `t3`: Zeitkonstante des Ventilstellungsreglers (T3(>0).  Typischer Wert = 0,1. Voreinstellung: 0  - `t4`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,3. Voreinstellung: 0  - `t5`: Zeitkonstante des zweiten Kesseldurchgangs (T5).  Typischer Wert = 5. Voreinstellung: 0  - `t6`: Zeitkonstante des dritten Kesseldurchgangs (T6).  Typischer Wert = 0,5. Voreinstellung: 0  - `t7`: Zeitkonstante des vierten Kesseldurchgangs (T7).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteam1 sein  - `uc`: Maximale Ventilschließgeschwindigkeit (Uc) (<0).  Einheit = PU/sec.  Typischer Wert = -10. Voreinstellung: 0.0  - `uo`: Maximale Ventilöffnungsgeschwindigkeit (Uo) (>0).  Einheit = PU/sec.  Typischer Wert = 1. Voreinstellung: 0.0  - `valve`: Nichtlineare Ventilkennlinie. true = nichtlineare Ventilkennlinie wird verwendet false = nichtlineare Ventilkennlinie wird nicht verwendet. Typischer Wert = true. Voreinstellung: False    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totzonenbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlineare Verstärkung Ventilstellungspunkt 1 (GV1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlineare Verstärkung Ventilstellungspunkt 2 (GV2).  Typischer Wert = 0,4. Voreinstellung: 0,0  - `gv3`: Nichtlineare Verstärkung Ventilstellungspunkt 3 (GV3).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `gv4`: Nichtlineare Verstärkung Ventilstellungspunkt 4 (GV4).  Typischer Wert = 0,6. Voreinstellung: 0,0  - `gv5`: Nichtlineare Verstärkung Ventilstellungspunkt 5 (GV5).  Typischer Wert = 1. Voreinstellung: 0.0  - `gv6`: Nichtlineare Verstärkung Ventilstellungspunkt 6 (GV6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Verstärkung des Reglers (Kehrwert des P-Bereichs) (K) (>0).  Typischer Wert = 25. Voreinstellung: 0.0  - `k1`: Bruchteil der HP-Wellenleistung nach dem ersten Kesseldurchgang (K1).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k2`: Bruchteil der LP-Wellenleistung nach dem ersten Kesseldurchgang (K2).  Typischer Wert = 0. Voreinstellung: 0.0  - `k3`: Bruchteil der HP-Wellenleistung nach dem zweiten Kesseldurchgang (K3).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `k4`: Bruchteil der LP-Wellenleistung nach dem zweiten Kesseldurchgang (K4).  Typischer Wert = 0. Voreinstellung: 0.0  - `k5`: Bruchteil der HP-Wellenleistung nach dem dritten Kesseldurchgang (K5).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `k6`: Bruchteil der LP-Wellenleistung nach dem dritten Kesseldurchgang (K6).  Typischer Wert = 0. Voreinstellung: 0.0  - `k7`: Bruchteil der HP-Wellenleistung nach dem vierten Kesseldurchgang (K7).  Typischer Wert = 0. Voreinstellung: 0.0  - `k8`: Bruchteil der LP-Wellenleistung nach dem vierten Kesseldurchgang (K8).  Typischer Wert = 0. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlineare Verstärkung Leistungswert Punkt 1 (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlineare Verstärkung Leistungswert Punkt 2 (Pgv2).  Typischer Wert = 0,75. Voreinstellung: 0,0  - `pgv3`: Nichtlineare Verstärkung Leistungswert Punkt 3 (Pgv3).  Typischer Wert = 0,91. Voreinstellung: 0.0  - `pgv4`: Nichtlineare Verstärkung Leistungswert Punkt 4 (Pgv4).  Typischer Wert = 0,98. Voreinstellung: 0.0  - `pgv5`: Nichtlineare Verstärkung Leistungswert Punkt 5 (Pgv5).  Typischer Wert = 1. Voreinstellung: 0,0  - `pgv6`: Nichtlineare Verstärkung Leistungswert Punkt 6 (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Ventilöffnung (Pmax) (> Pmin).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Ventilöffnung (Pmin) (>=0).  Typischer Wert = 0. Voreinstellung: 0.0  - `sdb1`: Intentional deadband indicator. true = intentional deadband wird angewendet false = intentional deadband wird nicht angewendet. Typischer Wert = true. Voreinstellung: Falsch  - `sdb2`: Ungewollte Deadband-Position. true = gewolltes Deadband wird vor Punkt `A` angewendet false = gewolltes Deadband wird nach Punkt `A` angewendet. Typischer Wert = true. Voreinstellung: False  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Verzögerungszeitkonstante des Reglers (T1).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Reglervorlaufzeitkonstante (T2).  Typischer Wert = 0. Voreinstellung: 0  - `t3`: Zeitkonstante des Ventilstellungsreglers (T3(>0).  Typischer Wert = 0,1. Voreinstellung: 0  - `t4`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,3. Voreinstellung: 0  - `t5`: Zeitkonstante des zweiten Kesseldurchgangs (T5).  Typischer Wert = 5. Voreinstellung: 0  - `t6`: Zeitkonstante des dritten Kesseldurchgangs (T6).  Typischer Wert = 0,5. Voreinstellung: 0  - `t7`: Zeitkonstante des vierten Kesseldurchgangs (T7).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteam1 sein  - `uc`: Maximale Ventilschließgeschwindigkeit (Uc) (<0).  Einheit = PU/sec.  Typischer Wert = -10. Voreinstellung: 0.0  - `uo`: Maximale Ventilöffnungsgeschwindigkeit (Uo) (>0).  Einheit = PU/sec.  Typischer Wert = 1. Voreinstellung: 0.0  - `valve`: Nichtlineare Ventilkennlinie. true = nichtlineare Ventilkennlinie wird verwendet false = nichtlineare Ventilkennlinie wird nicht verwendet. Typischer Wert = true. Voreinstellung: False    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -165,10 +165,10 @@ GovSteam1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +188,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +212,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -236,7 +238,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +261,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -283,7 +287,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -310,7 +315,7 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
