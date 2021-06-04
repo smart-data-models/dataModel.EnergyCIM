@@ -6,7 +6,7 @@ Entité : GovGAST2
 
 ## Liste des propriétés  
 
-- `a`: Positionneur de vanne (A). Valeur par défaut : 0.0  - `address`: L'adresse postale  - `af1`: Température des gaz d'échappement Paramètre (Af1).  Unité = température par unité.  Basé sur la température en degrés C. Valeur par défaut : 0.0  - `af2`: Coefficient égal à 0,5(1 vitesse) (Af2). Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Positionneur de vanne (B). Valeur par défaut : 0.0  - `bf1`: (Bf1).  Bf1 = E(1-w) où E (coefficient de sensibilité de la vitesse) est de 0,55 à 0,65 x Tr.  Unité = par unité de température.  Basé sur la température en degrés C. Par défaut : 0.0  - `bf2`: Coefficient de couple de turbine K (dépend du pouvoir calorifique du flux de combustible dans la chambre de combustion) (Bf2). Valeur par défaut : 0.0  - `c`: Positionneur de vanne (C). Valeur par défaut : 0.0  - `cf2`: Coefficient définissant le débit de carburant lorsque la puissance de sortie est de 0% (Cf2).  Synchrone mais pas de sortie.  Typiquement 0,23 x K (23% de débit de carburant). Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `ecr`: Délai de réaction de la combustion (Ecr). Valeur par défaut : 0  - `etd`: Retard de la turbine et de l'échappement (Etd). Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `k3`: Rapport de réglage du carburant (K3). Valeur par défaut : 0.0  - `k4`: Gain de la protection contre les radiations (K4). Valeur par défaut : 0.0  - `k5`: Gain de la protection contre les radiations (K5). Valeur par défaut : 0.0  - `k6`: Débit minimum de carburant (K6). Valeur par défaut : 0.0  - `kf`: Retour du système de carburant (Kf). Valeur par défaut : 0.0  - `location`:   - `mwbase`: Base pour les valeurs de puissance (MWbase) (> 0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t`: Constante de temps du contrôle du carburant (T). Valeur par défaut : 0  - `t3`: Constante de temps de la protection contre les radiations (T3). Valeur par défaut : 0  - `t4`: Constante de temps du thermocouple (T4). Valeur par défaut : 0  - `t5`: Constante de temps de la régulation de la température (T5). Valeur par défaut : 0  - `tc`: Contrôle de la température (Tc).  Unité = [SYMBOLE SUPPRIMÉ]F ou [SYMBOLE SUPPRIMÉ]C selon les constantes Af1 et Bf1. Valeur par défaut : 0.0  - `tcd`: Constante de temps de décharge du compresseur (Tcd). Valeur par défaut : 0  - `tf`: Constante de temps du système de carburant (Tf). Valeur par défaut : 0  - `tmax`: Limite maximale de la turbine (Tmax). Valeur par défaut : 0.0  - `tmin`: Limite minimale de la turbine (Tmin). Valeur par défaut : 0.0  - `tr`: Température nominale (Tr).  Unité = [SYMBOLE SUPPRIMÉ]C selon les paramètres Af1 et Bf1. Valeur par défaut : 0.0  - `trate`: Puissance de la turbine (Trate).  Unité = MW. Valeur par défaut : 0,0  - `tt`: Taux d'intégration du contrôleur de température (Tt). Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovGAST2  - `w`: Gain du gouverneur (1/droop) sur la puissance de la turbine (W). Valeur par défaut : 0.0  - `x`: Constante de temps du gouverneur (X). Valeur par défaut : 0  - `y`: Constante de temps de retard du gouverneur (Y) (>0). Valeur par défaut : 0  - `z`: Mode du gouverneur (Z). true = Droop false = ISO. Par défaut : False    
+- `a`: Positionneur de vanne (A). Valeur par défaut : 0.0  - `address`: L'adresse postale  - `af1`: Température des gaz d'échappement Paramètre (Af1).  Unité = température par unité.  Basé sur la température en degrés C. Valeur par défaut : 0.0  - `af2`: Coefficient égal à 0,5(1 vitesse) (Af2). Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Positionneur de vanne (B). Valeur par défaut : 0.0  - `bf1`: (Bf1).  Bf1 = E(1-w) où E (coefficient de sensibilité de la vitesse) est de 0,55 à 0,65 x Tr.  Unité = par unité de température.  Basé sur la température en degrés C. Par défaut : 0.0  - `bf2`: Coefficient de couple de turbine K (dépend du pouvoir calorifique du flux de combustible dans la chambre de combustion) (Bf2). Valeur par défaut : 0.0  - `c`: Positionneur de vanne (C). Valeur par défaut : 0.0  - `cf2`: Coefficient définissant le débit de carburant lorsque la puissance de sortie est de 0% (Cf2).  Synchrone mais pas de sortie.  Typiquement 0,23 x K (23% de débit de carburant). Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `ecr`: Délai de réaction de la combustion (Ecr). Valeur par défaut : 0  - `etd`: Retard de la turbine et de l'échappement (Etd). Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `k3`: Rapport de réglage du carburant (K3). Valeur par défaut : 0.0  - `k4`: Gain de la protection contre les radiations (K4). Valeur par défaut : 0.0  - `k5`: Gain de la protection contre les radiations (K5). Valeur par défaut : 0.0  - `k6`: Débit minimum de carburant (K6). Valeur par défaut : 0.0  - `kf`: Retour du système de carburant (Kf). Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase`: Base pour les valeurs de puissance (MWbase) (> 0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t`: Constante de temps du contrôle du carburant (T). Valeur par défaut : 0  - `t3`: Constante de temps de la protection contre les radiations (T3). Valeur par défaut : 0  - `t4`: Constante de temps du thermocouple (T4). Valeur par défaut : 0  - `t5`: Constante de temps de la régulation de la température (T5). Valeur par défaut : 0  - `tc`: Contrôle de la température (Tc).  Unité = [SYMBOLE SUPPRIMÉ]F ou [SYMBOLE SUPPRIMÉ]C selon les constantes Af1 et Bf1. Valeur par défaut : 0.0  - `tcd`: Constante de temps de décharge du compresseur (Tcd). Valeur par défaut : 0  - `tf`: Constante de temps du système de carburant (Tf). Valeur par défaut : 0  - `tmax`: Limite maximale de la turbine (Tmax). Valeur par défaut : 0.0  - `tmin`: Limite minimale de la turbine (Tmin). Valeur par défaut : 0.0  - `tr`: Température nominale (Tr).  Unité = [SYMBOLE SUPPRIMÉ]C selon les paramètres Af1 et Bf1. Valeur par défaut : 0.0  - `trate`: Puissance de la turbine (Trate).  Unité = MW. Valeur par défaut : 0,0  - `tt`: Taux d'intégration du contrôleur de température (Tt). Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovGAST2  - `w`: Gain du gouverneur (1/droop) sur la puissance de la turbine (W). Valeur par défaut : 0.0  - `x`: Constante de temps du gouverneur (X). Valeur par défaut : 0  - `y`: Constante de temps de retard du gouverneur (Y) (>0). Valeur par défaut : 0  - `z`: Mode du gouverneur (Z). true = Droop false = ISO. Par défaut : False    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -150,10 +150,10 @@ GovGAST2:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +173,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +197,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -221,7 +223,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +246,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +272,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -295,7 +300,7 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
