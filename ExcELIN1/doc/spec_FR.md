@@ -6,7 +6,7 @@ Entité : ExcELIN1
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dpnf`: Bande morte de suivi du contrôleur (Dpnf).  Valeur typique = 0. Valeur par défaut : 0.0  - `efmax`: Tension d'excitation maximale en circuit ouvert (Efmax).  Valeur typique = 5. Valeur par défaut : 0.0  - `efmin`: Tension minimale d'excitation en circuit ouvert (Efmin).  Valeur typique = -5. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ks1`: Gain du stabilisateur 1 (Ks1).  Valeur typique = 0. Valeur par défaut : 0.0  - `ks2`: Gain du stabilisateur 2 (Ks2).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `smax`: Sortie de la limite du stabilisateur (smax).  Valeur typique = 0,1. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tfi`: Constante de temps du transducteur de courant (Tfi).  Valeur typique = 0. Valeur par défaut : 0  - `tnu`: Constante de temps de réinitialisation du contrôleur (Tnu).  Valeur typique = 2. Valeur par défaut : 0  - `ts1`: Constante de temps de retard de phase du stabilisateur (Ts1).  Valeur typique = 1. Valeur par défaut : 0  - `ts2`: Constante de temps du filtre stabilisateur (Ts2).  Valeur typique = 1. Valeur par défaut : 0  - `tsw`: Paramètres du stabilisateur (Tsw).  Valeur typique = 3. Valeur par défaut : 0  - `type`: Type NGSI. Ce doit être ExcELIN1  - `vpi`: Gain du contrôleur de courant (Vpi).  Valeur typique = 12.45. Valeur par défaut : 0.0  - `vpnf`: Gain de suivi du contrôleur (Vpnf).  Valeur typique = 2. Valeur par défaut : 0.0  - `vpu`: Gain proportionnel du contrôleur de tension (Vpu).  Valeur typique = 34.5. Valeur par défaut : 0.0  - `xe`: Réactance effective du transformateur d'excitation (Xe) (>=0).  Xe représente la régulation de l'unité du transformateur/redresseur.  Valeur typique = 0.06. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dpnf`: Bande morte de suivi du contrôleur (Dpnf).  Valeur typique = 0. Valeur par défaut : 0.0  - `efmax`: Tension d'excitation maximale en circuit ouvert (Efmax).  Valeur typique = 5. Valeur par défaut : 0.0  - `efmin`: Tension minimale d'excitation en circuit ouvert (Efmin).  Valeur typique = -5. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ks1`: Gain du stabilisateur 1 (Ks1).  Valeur typique = 0. Valeur par défaut : 0.0  - `ks2`: Gain du stabilisateur 2 (Ks2).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `smax`: Sortie de la limite du stabilisateur (smax).  Valeur typique = 0,1. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tfi`: Constante de temps du transducteur de courant (Tfi).  Valeur typique = 0. Valeur par défaut : 0  - `tnu`: Constante de temps de réinitialisation du contrôleur (Tnu).  Valeur typique = 2. Valeur par défaut : 0  - `ts1`: Constante de temps de retard de phase du stabilisateur (Ts1).  Valeur typique = 1. Valeur par défaut : 0  - `ts2`: Constante de temps du filtre stabilisateur (Ts2).  Valeur typique = 1. Valeur par défaut : 0  - `tsw`: Paramètres du stabilisateur (Tsw).  Valeur typique = 3. Valeur par défaut : 0  - `type`: Type NGSI. Ce doit être ExcELIN1  - `vpi`: Gain du contrôleur de courant (Vpi).  Valeur typique = 12.45. Valeur par défaut : 0.0  - `vpnf`: Gain de suivi du contrôleur (Vpnf).  Valeur typique = 2. Valeur par défaut : 0.0  - `vpu`: Gain proportionnel du contrôleur de tension (Vpu).  Valeur typique = 34.5. Valeur par défaut : 0.0  - `xe`: Réactance effective du transformateur d'excitation (Xe) (>=0).  Xe représente la régulation de l'unité du transformateur/redresseur.  Valeur typique = 0.06. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -100,10 +100,10 @@ ExcELIN1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -330,6 +335,6 @@ ExcELIN1:
 </details>    
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un ExcELIN1 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un ExcELIN1 au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcELIN1 au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcELIN1 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcELIN1 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
