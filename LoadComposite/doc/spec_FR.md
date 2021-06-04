@@ -6,7 +6,7 @@ Entité : LoadComposite
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `epfd`: Indice de dépendance charge-fréquence active (dynamique) (Epfd).  Valeur typique = 1,5. Valeur par défaut : 0,0  - `epfs`: Indice de dépendance charge-fréquence active (statique) (Epfs).  Valeur typique = 1,5. Valeur par défaut : 0,0  - `epvd`: Indice de dépendance charge-tension active (dynamique) (Epvd).  Valeur typique = 0,7. Valeur par défaut : 0.0  - `epvs`: Indice de dépendance charge-tension active (statique) (Epvs).  Valeur typique = 0.7. Valeur par défaut : 0.0  - `eqfd`: Indice de dépendance charge réactive-fréquence (dynamique) (Eqfd).  Valeur typique = 0. Valeur par défaut : 0.0  - `eqfs`: Indice de dépendance charge réactive-fréquence (statique) (Eqfs).  Valeur typique = 0. Valeur par défaut : 0.0  - `eqvd`: Indice de dépendance charge réactive-tension (dynamique) (Eqvd).  Valeur typique = 2. Valeur par défaut : 0.0  - `eqvs`: Indice de dépendance charge réactive-tension (statique) (Eqvs).  Valeur typique = 2. Valeur par défaut : 0.0  - `h`: Constante d'inertie (H).  Valeur typique = 2,5. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `lfrac`: Facteur de charge - rapport entre la P initiale et la base MVA du moteur (Lfrac).  Valeur typique = 0,8. Valeur par défaut : 0,0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pfrac`: Fraction de la charge à puissance constante à représenter par ce modèle de moteur (Pfrac) (>=0,0 et <=1,0).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de LoadComposite    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `epfd`: Indice de dépendance charge-fréquence active (dynamique) (Epfd).  Valeur typique = 1,5. Valeur par défaut : 0,0  - `epfs`: Indice de dépendance charge-fréquence active (statique) (Epfs).  Valeur typique = 1,5. Valeur par défaut : 0,0  - `epvd`: Indice de dépendance charge-tension active (dynamique) (Epvd).  Valeur typique = 0,7. Valeur par défaut : 0.0  - `epvs`: Indice de dépendance charge-tension active (statique) (Epvs).  Valeur typique = 0.7. Valeur par défaut : 0.0  - `eqfd`: Indice de dépendance charge réactive-fréquence (dynamique) (Eqfd).  Valeur typique = 0. Valeur par défaut : 0.0  - `eqfs`: Indice de dépendance charge réactive-fréquence (statique) (Eqfs).  Valeur typique = 0. Valeur par défaut : 0.0  - `eqvd`: Indice de dépendance charge réactive-tension (dynamique) (Eqvd).  Valeur typique = 2. Valeur par défaut : 0.0  - `eqvs`: Indice de dépendance charge réactive-tension (statique) (Eqvs).  Valeur typique = 2. Valeur par défaut : 0.0  - `h`: Constante d'inertie (H).  Valeur typique = 2,5. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `lfrac`: Facteur de charge - rapport entre la P initiale et la base MVA du moteur (Lfrac).  Valeur typique = 0,8. Valeur par défaut : 0,0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pfrac`: Fraction de la charge à puissance constante à représenter par ce modèle de moteur (Pfrac) (>=0,0 et <=1,0).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de LoadComposite    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -125,10 +125,10 @@ LoadComposite:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
