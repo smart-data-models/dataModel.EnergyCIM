@@ -6,7 +6,7 @@ Entité : Terminal
 
 ## Liste des propriétés  
 
-- `ConductingEquipment`: L'équipement conducteur du terminal.  Les équipements conducteurs ont des terminaux qui peuvent être connectés à d'autres terminaux d'équipements conducteurs via des nœuds de connectivité ou des nœuds topologiques. Valeur par défaut : Aucun  - `ConnectivityNode`: Bornes interconnectées avec une impédance nulle à ce nœud de connectivité. Valeur par défaut : Aucun  - `ConverterDCSides`: Borne du point de couplage commun pour le côté CC de ce convertisseur. Il s'agit généralement de la borne du transformateur de puissance (ou du commutateur) la plus proche du réseau CA. La mesure du flux de puissance doit être la somme de tous les flux dans le transformateur. Valeur par défaut : 'list'.  - `HasFirstMutualCoupling`: Couplages mutuels associés à la branche comme première branche. Valeur par défaut : 'list'.  - `HasSecondMutualCoupling`: Couplages mutuels avec la branche associée comme première branche. Valeur par défaut : 'list'.  - `RegulatingControl`: La borne associée à cette commande de régulation.  La borne est associée au lieu d'un nœud, car la borne pourrait se connecter soit à un nœud topologique (bus dans un modèle de bus-branche), soit à un nœud de connectivité (modèle détaillé d'interrupteur).  Il est parfois utile de modéliser la régulation au niveau d'une borne d'un objet de barre omnibus, car la barre omnibus peut être présente à la fois dans un modèle de branche omnibus et dans un modèle détaillé d'interrupteur. Valeur par défaut : Aucun  - `RemoteInputSignal`: Signal d'entrée provenant de ce terminal. Valeur par défaut : 'list'.  - `SvPowerFlow`: La variable d'état du flux de puissance associée au terminal. Valeur par défaut : Aucun  - `TieFlow`: Les flux d'attache de la zone de contrôle auxquels ce terminal s'associe. Valeur par défaut : "list".  - `TopologicalNode`: Les terminaux associés au noeud topologique.   Ceci peut être utilisé comme une alternative au chemin du nœud de connectivité vers le terminal, rendant ainsi inutile la modélisation des nœuds de connectivité dans certains cas.   Notez que si les noeuds de connectivité sont dans le modèle, cette association ne sera probablement pas utilisée comme spécification d'entrée. Par défaut : Aucun  - `TransformerEnd`: Toutes les extrémités du transformateur connectées à cette borne. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phases`: Représente la condition normale de mise en phase du réseau. Si l'attribut est absent, trois phases (ABC ou ABCN) sont supposées. Valeur par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit être Terminal    
+- `ConductingEquipment`: L'équipement conducteur du terminal.  Les équipements conducteurs ont des terminaux qui peuvent être connectés à d'autres terminaux d'équipements conducteurs via des nœuds de connectivité ou des nœuds topologiques. Valeur par défaut : Aucun  - `ConnectivityNode`: Bornes interconnectées avec une impédance nulle à ce nœud de connectivité. Valeur par défaut : Aucun  - `ConverterDCSides`: Borne du point de couplage commun pour le côté CC de ce convertisseur. Il s'agit généralement de la borne du transformateur de puissance (ou du commutateur) la plus proche du réseau CA. La mesure du flux de puissance doit être la somme de tous les flux dans le transformateur. Valeur par défaut : 'list'.  - `HasFirstMutualCoupling`: Couplages mutuels associés à la branche comme première branche. Valeur par défaut : 'list'.  - `HasSecondMutualCoupling`: Couplages mutuels avec la branche associée comme première branche. Valeur par défaut : 'list'.  - `RegulatingControl`: La borne associée à cette commande de régulation.  La borne est associée au lieu d'un nœud, car la borne pourrait se connecter soit à un nœud topologique (bus dans un modèle de bus-branche), soit à un nœud de connectivité (modèle détaillé d'interrupteur).  Il est parfois utile de modéliser la régulation au niveau d'une borne d'un objet de barre omnibus, car la barre omnibus peut être présente à la fois dans un modèle de branche omnibus et dans un modèle détaillé d'interrupteur. Valeur par défaut : Aucun  - `RemoteInputSignal`: Signal d'entrée provenant de ce terminal. Valeur par défaut : 'list'.  - `SvPowerFlow`: La variable d'état du flux de puissance associée au terminal. Valeur par défaut : Aucun  - `TieFlow`: Les flux d'attache de la zone de contrôle auxquels ce terminal s'associe. Valeur par défaut : "list".  - `TopologicalNode`: Les terminaux associés au noeud topologique.   Ceci peut être utilisé comme une alternative au chemin du nœud de connectivité vers le terminal, rendant ainsi inutile la modélisation des nœuds de connectivité dans certains cas.   Notez que si les noeuds de connectivité sont dans le modèle, cette association ne sera probablement pas utilisée comme spécification d'entrée. Par défaut : Aucun  - `TransformerEnd`: Toutes les extrémités du transformateur connectées à cette borne. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phases`: Représente la condition normale de mise en phase du réseau. Si l'attribut est absent, trois phases (ABC ou ABCN) sont supposées. Valeur par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit être Terminal    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -130,10 +130,10 @@ Terminal:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -153,7 +153,8 @@ Terminal:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +177,8 @@ Terminal:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +203,8 @@ Terminal:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +226,8 @@ Terminal:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +252,8 @@ Terminal:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -275,7 +280,7 @@ Terminal:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
