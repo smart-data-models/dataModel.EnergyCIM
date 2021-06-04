@@ -6,7 +6,7 @@ Entity: ProprietaryParameterDynamics
 
 ## List of properties  
 
-- `AsynchronousMachineUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `DiscontinuousExcitationControlUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `ExcitationSystemUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `LoadUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `MechanicalLoadUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `OverexcitationLimiterUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `PFVArControllerType1UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `PFVArControllerType2UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `PowerSystemStabilizerUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `SynchronousMachineUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `TurbineGovernorUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `TurbineLoadControllerUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `UnderexcitationLimiterUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `VoltageAdjusterUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `VoltageCompensatorUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `WindPlantUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `WindType1or2UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `WindType3or4UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `booleanParameterValue`: Used for boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be. Default: False  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `floatParameterValue`: Used for floating point parameter value.  If this attribute is populated, booleanParameterValue and integerParameterValue will not be. Default: 0.0  - `id`: Unique identifier of the entity  - `integerParameterValue`: Used for integer parameter value.  If this attribute is populated, booleanParameterValue and floatParameterValue will not be. Default: 0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `parameterNumber`: Sequence number of the parameter among the set of parameters associated with the related proprietary user-defined model. Default: 0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be ProprietaryParameterDynamics    
+- `AsynchronousMachineUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `DiscontinuousExcitationControlUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `ExcitationSystemUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `LoadUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `MechanicalLoadUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `OverexcitationLimiterUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `PFVArControllerType1UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `PFVArControllerType2UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `PowerSystemStabilizerUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `SynchronousMachineUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `TurbineGovernorUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `TurbineLoadControllerUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `UnderexcitationLimiterUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `VoltageAdjusterUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `VoltageCompensatorUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `WindPlantUserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `WindType1or2UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `WindType3or4UserDefined`: Proprietary user-defined model with which this parameter is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `booleanParameterValue`: Used for boolean parameter value. If this attribute is populated, integerParameterValue and floatParameterValue will not be. Default: False  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `floatParameterValue`: Used for floating point parameter value.  If this attribute is populated, booleanParameterValue and integerParameterValue will not be. Default: 0.0  - `id`: Unique identifier of the entity  - `integerParameterValue`: Used for integer parameter value.  If this attribute is populated, booleanParameterValue and floatParameterValue will not be. Default: 0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `parameterNumber`: Sequence number of the parameter among the set of parameters associated with the related proprietary user-defined model. Default: 0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be ProprietaryParameterDynamics    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -180,10 +180,10 @@ ProprietaryParameterDynamics:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +203,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +227,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -251,7 +253,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +276,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -298,7 +302,8 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -325,7 +330,7 @@ ProprietaryParameterDynamics:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
