@@ -6,7 +6,7 @@ Entité : WindPlantReactiveControlIEC
 
 ## Liste des propriétés  
 
-- `WindPlantIEC`: Modèle de centrale éolienne auquel ce contrôle réactif du vent est associé. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kiwpx`: Gain intégral du régulateur Q de l'usine (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpwpx`: Gain proportionnel du régulateur Q de l'installation (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kwpqu`: Statisme de contrôle de la tension de l'installation (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `location`:   - `mwppf`: Sélecteur des modes de contrôle du facteur de puissance (). Utilisé uniquement si mwpu est réglé sur false. true = 1 : contrôle du facteur de puissance false = 0 : contrôle de la puissance réactive. C'est un paramètre dépendant du projet. Par défaut : Faux  - `mwpu`: Sélecteur des modes de contrôle de la puissance réactive (). true = 1 : contrôle de la tension false = 0 : contrôle de la puissance réactive. C'est un paramètre dépendant du projet. Par défaut : Faux  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `twppfilt`: Constante de temps du filtre pour la mesure de la puissance active (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `twpqfilt`: Constante de temps du filtre pour la mesure de la puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `twpufilt`: Constante de temps du filtre pour la mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `txft`: Constante de temps dans la fonction de transfert de la valeur de référence (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `txfv`: Constante de temps de retard dans la fonction de transfert de la valeur de référence (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être WindPlantReactiveControlIEC.  - `uwpqdip`: Seuil de tension pour la détection du TAVG dans la commande q (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `xrefmax`: Demande maximale (ou delta) du contrôleur de l'installation (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0.0  - `xrefmin`: Demande minimale ( ou delta) du contrôleur de l'installation (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0    
+- `WindPlantIEC`: Modèle de centrale éolienne auquel ce contrôle réactif du vent est associé. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kiwpx`: Gain intégral du régulateur Q de l'usine (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kpwpx`: Gain proportionnel du régulateur Q de l'installation (). C'est un paramètre dépendant du type. Valeur par défaut : 0,0  - `kwpqu`: Statisme de contrôle de la tension de l'installation (). C'est un paramètre dépendant du projet. Valeur par défaut : 0,0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwppf`: Sélecteur des modes de contrôle du facteur de puissance (). Utilisé uniquement si mwpu est réglé sur false. true = 1 : contrôle du facteur de puissance false = 0 : contrôle de la puissance réactive. C'est un paramètre dépendant du projet. Par défaut : Faux  - `mwpu`: Sélecteur des modes de contrôle de la puissance réactive (). true = 1 : contrôle de la tension false = 0 : contrôle de la puissance réactive. C'est un paramètre dépendant du projet. Par défaut : Faux  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `twppfilt`: Constante de temps du filtre pour la mesure de la puissance active (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `twpqfilt`: Constante de temps du filtre pour la mesure de la puissance réactive (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `twpufilt`: Constante de temps du filtre pour la mesure de la tension (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `txft`: Constante de temps dans la fonction de transfert de la valeur de référence (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `txfv`: Constante de temps de retard dans la fonction de transfert de la valeur de référence (). C'est un paramètre dépendant du type. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être WindPlantReactiveControlIEC.  - `uwpqdip`: Seuil de tension pour la détection du TAVG dans la commande q (). C'est un paramètre dépendant du type. Valeur par défaut : 0.0  - `xrefmax`: Demande maximale (ou delta) du contrôleur de l'installation (). Il s'agit d'un paramètre dépendant du projet. Valeur par défaut : 0.0  - `xrefmin`: Demande minimale ( ou delta) du contrôleur de l'installation (). C'est un paramètre dépendant du projet. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -95,10 +95,10 @@ WindPlantReactiveControlIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ WindPlantReactiveControlIEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ WindPlantReactiveControlIEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ WindPlantReactiveControlIEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ WindPlantReactiveControlIEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ WindPlantReactiveControlIEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ WindPlantReactiveControlIEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwppf:    
       description: 'Power factor control modes selector (). Used only if mwpu is set to false. true = 1: power factor control false = 0: reactive power control. It is project dependent parameter. Default: False'    
       type: number    
