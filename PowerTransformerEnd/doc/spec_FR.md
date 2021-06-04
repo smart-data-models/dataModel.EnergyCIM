@@ -6,7 +6,7 @@ Entité : PowerTransformerEnd
 
 ## Liste des propriétés  
 
-- `PowerTransformer`: Les extrémités de ce transformateur de puissance. Par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Susceptance de la branche magnétisante (B mag).  La valeur peut être positive ou négative. Valeur par défaut : 0.0  - `b0`: Susceptance de la branche magnétisante homopolaire. Valeur par défaut : 0.0  - `connectionKind`: Type de connexion. Par défaut : Aucun  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `g`: Conductance de la branche magnétisante. Valeur par défaut : 0.0  - `g0`: Conductance de la branche magnétisante de séquence zéro (modèle en étoile). Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phaseAngleClock`: Déplacement de l'angle de phase de la tension aux bornes où les 360 degrés sont représentés par des heures d'horloge. Les valeurs valides sont de 0 à 11. Par exemple, pour l'extrémité secondaire d'un transformateur avec le code de groupe vectoriel `Dyn11`, spécifiez le type de connexion comme étant en étoile avec neutre et spécifiez l'angle de phase de l'horloge comme étant 11.  La valeur de l'horloge du numéro d'extrémité du transformateur spécifié comme 1, est supposée être zéro.  Notez que le numéro d'extrémité du transformateur n'est pas supposé être le même que le numéro de séquence de la borne. Valeur par défaut : 0  - `r`: Résistance (modèle en étoile) de l'extrémité du transformateur. Cet attribut doit être égal ou supérieur à zéro pour les transformateurs non équivalents. Valeur par défaut : 0,0  - `r0`: Résistance série homopolaire (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0.0  - `ratedS`: Puissance apparente normale. Cet attribut doit être une valeur positive. Pour un transformateur à deux enroulements, les valeurs des côtés haute et basse tension doivent être identiques. Valeur par défaut : 0,0  - `ratedU`: Tension nominale : phase-phase pour les enroulements triphasés, et soit phase-phase soit phase-neutre pour les enroulements monophasés. Un côté haute tension, tel que donné par TransformerEnd.endNumber, doit avoir un ratedU qui est supérieur ou égal à ratedU pour les côtés de tension inférieure. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de PowerTransformerEnd.  - `x`: Réactance série à séquence positive (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0.0  - `x0`: Réactance série homopolaire de l'extrémité du transformateur. Valeur par défaut : 0.0    
+- `PowerTransformer`: Les extrémités de ce transformateur de puissance. Par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Susceptance de la branche magnétisante (B mag).  La valeur peut être positive ou négative. Valeur par défaut : 0.0  - `b0`: Susceptance de la branche magnétisante homopolaire. Valeur par défaut : 0.0  - `connectionKind`: Type de connexion. Par défaut : Aucun  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `g`: Conductance de la branche magnétisante. Valeur par défaut : 0.0  - `g0`: Conductance de la branche magnétisante de séquence zéro (modèle en étoile). Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phaseAngleClock`: Déplacement de l'angle de phase de la tension aux bornes où les 360 degrés sont représentés par des heures d'horloge. Les valeurs valides sont de 0 à 11. Par exemple, pour l'extrémité secondaire d'un transformateur avec le code de groupe vectoriel `Dyn11`, spécifiez le type de connexion comme étant en étoile avec neutre et spécifiez l'angle de phase de l'horloge comme étant 11.  La valeur de l'horloge du numéro d'extrémité du transformateur spécifié comme 1, est supposée être zéro.  Notez que le numéro d'extrémité du transformateur n'est pas supposé être le même que le numéro de séquence de la borne. Valeur par défaut : 0  - `r`: Résistance (modèle en étoile) de l'extrémité du transformateur. Cet attribut doit être égal ou supérieur à zéro pour les transformateurs non équivalents. Valeur par défaut : 0,0  - `r0`: Résistance série homopolaire (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0.0  - `ratedS`: Puissance apparente normale. Cet attribut doit être une valeur positive. Pour un transformateur à deux enroulements, les valeurs des côtés haute et basse tension doivent être identiques. Valeur par défaut : 0,0  - `ratedU`: Tension nominale : phase-phase pour les enroulements triphasés, et soit phase-phase soit phase-neutre pour les enroulements monophasés. Un côté haute tension, tel que donné par TransformerEnd.endNumber, doit avoir un ratedU qui est supérieur ou égal à ratedU pour les côtés de tension inférieure. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de PowerTransformerEnd.  - `x`: Réactance série à séquence positive (modèle en étoile) de l'extrémité du transformateur. Valeur par défaut : 0.0  - `x0`: Réactance série homopolaire de l'extrémité du transformateur. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -105,10 +105,10 @@ PowerTransformerEnd:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ PowerTransformerEnd:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ PowerTransformerEnd:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ PowerTransformerEnd:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ PowerTransformerEnd:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ PowerTransformerEnd:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ PowerTransformerEnd:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
