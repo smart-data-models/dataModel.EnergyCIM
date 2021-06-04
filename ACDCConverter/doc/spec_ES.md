@@ -6,7 +6,7 @@ Entidad: ACDCConverter
 
 ## Lista de propiedades  
 
-- `DCTerminals`:  Por defecto: "lista  - `PccTerminal`: Todos los lados de CC de los convertidores vinculados a este punto de terminal de acoplamiento común. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `baseS`: Potencia aparente base del polo del convertidor. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `idc`: Corriente continua del convertidor, también llamada Id. Variable de estado del convertidor, resultado del flujo de potencia. Por defecto: 0,0  - `idleLoss`: Pérdida de potencia activa en el polo sin transferencia de potencia. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `location`:   - `maxUdc`: La tensión máxima en el lado de CC a la que debe funcionar el convertidor. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `minUdc`: Tensión de CC mínima permitida del convertidor. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `numberOfValves`: Número de válvulas en el convertidor. Se utiliza en los cálculos de pérdidas. Por defecto: 0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `p`: Potencia activa en el punto de acoplamiento común. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa que el flujo sale de un nodo. Valor inicial para una solución de estado estacionario en el caso de que se utilice un modelo de flujo de potencia simplificado. Por defecto: 0,0  - `poleLossP`: La pérdida de potencia activa en un polo de CC = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Para el funcionamiento sin pérdidas Pdc=Pac Para el funcionamiento del rectificador con pérdidas Pdc=Pac-lossP Para el funcionamiento del inversor con pérdidas Pdc=Pac+lossP Variable de estado del convertidor utilizada en el flujo de potencia. Por defecto: 0,0  - `q`: Potencia reactiva en el punto de acoplamiento común. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa que el flujo sale de un nodo. Valor inicial para una solución de estado estacionario en el caso de que se utilice un modelo de flujo de potencia simplificado. Por defecto: 0,0  - `ratedUdc`: Tensión nominal de CC del convertidor, también llamada UdN. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `resistiveLoss`: Datos de configuración del convertidor utilizados en el flujo de potencia. Consulte poleLossP. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `switchingLoss`: Pérdidas de conmutación, relativas a la potencia aparente base `baseS`. Consulte poleLossP. Por defecto: 0,0  - `targetPpcc`: Objetivo de inyección de potencia real en la red de CA, en el punto de acoplamiento común. Por defecto: 0,0  - `targetUdc`: Valor objetivo de la magnitud de la tensión continua. Por defecto: 0,0  - `type`: Tipo NGSI. Tiene que ser ACDCConverter  - `uc`: Tensión del convertidor, la tensión en el lado de CA del puente. Variable de estado del convertidor, resultado del flujo de potencia. Por defecto: 0,0  - `udc`: Tensión del convertidor en el lado de CC, también llamada Ud. Variable de estado del convertidor, resultado del flujo de potencia. Por defecto: 0,0  - `valveU0`: Tensión de umbral de la válvula. Caída de tensión hacia delante cuando la válvula está conduciendo. Se utiliza en los cálculos de pérdidas, es decir, el switchLoss depende del numberOfValves * valveU0. Por defecto: 0,0    
+- `DCTerminals`:  Por defecto: "lista  - `PccTerminal`: Todos los lados de CC de los convertidores vinculados a este punto de terminal de acoplamiento común. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `baseS`: Potencia aparente base del polo del convertidor. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `idc`: Corriente continua del convertidor, también llamada Id. Variable de estado del convertidor, resultado del flujo de potencia. Por defecto: 0,0  - `idleLoss`: Pérdida de potencia activa en el polo sin transferencia de potencia. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxUdc`: La tensión máxima en el lado de CC a la que debe funcionar el convertidor. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `minUdc`: Tensión de CC mínima permitida del convertidor. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `numberOfValves`: Número de válvulas en el convertidor. Se utiliza en los cálculos de pérdidas. Por defecto: 0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `p`: Potencia activa en el punto de acoplamiento común. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa que el flujo sale de un nodo. Valor inicial para una solución de estado estacionario en el caso de que se utilice un modelo de flujo de potencia simplificado. Por defecto: 0,0  - `poleLossP`: La pérdida de potencia activa en un polo de CC = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Para el funcionamiento sin pérdidas Pdc=Pac Para el funcionamiento del rectificador con pérdidas Pdc=Pac-lossP Para el funcionamiento del inversor con pérdidas Pdc=Pac+lossP Variable de estado del convertidor utilizada en el flujo de potencia. Por defecto: 0,0  - `q`: Potencia reactiva en el punto de acoplamiento común. Se utiliza la convención del signo de la carga, es decir, el signo positivo significa que el flujo sale de un nodo. Valor inicial para una solución de estado estacionario en el caso de que se utilice un modelo de flujo de potencia simplificado. Por defecto: 0,0  - `ratedUdc`: Tensión nominal de CC del convertidor, también llamada UdN. Datos de configuración del convertidor utilizados en el flujo de potencia. Por defecto: 0,0  - `resistiveLoss`: Datos de configuración del convertidor utilizados en el flujo de potencia. Consulte poleLossP. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `switchingLoss`: Pérdidas de conmutación, relativas a la potencia aparente base `baseS`. Consulte poleLossP. Por defecto: 0,0  - `targetPpcc`: Objetivo de inyección de potencia real en la red de CA, en el punto de acoplamiento común. Por defecto: 0,0  - `targetUdc`: Valor objetivo de la magnitud de la tensión continua. Por defecto: 0,0  - `type`: Tipo NGSI. Tiene que ser ACDCConverter  - `uc`: Tensión del convertidor, la tensión en el lado de CA del puente. Variable de estado del convertidor, resultado del flujo de potencia. Por defecto: 0,0  - `udc`: Tensión del convertidor en el lado de CC, también llamada Ud. Variable de estado del convertidor, resultado del flujo de potencia. Por defecto: 0,0  - `valveU0`: Tensión de umbral de la válvula. Caída de tensión hacia delante cuando la válvula está conduciendo. Se utiliza en los cálculos de pérdidas, es decir, el switchLoss depende del numberOfValves * valveU0. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -100,10 +100,10 @@ ACDCConverter:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ ACDCConverter:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxUdc:    
       description: 'The maximum voltage on the DC side at which the converter should operate. Converter configuration data used in power flow. Default: 0.0'    
       type: number    
