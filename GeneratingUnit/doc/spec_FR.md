@@ -6,7 +6,7 @@ Entité : GeneratingUnit
 
 ## Liste des propriétés  
 
-- `ControlAreaGeneratingUnit`: Spécifications de la zone de contrôle pour cette unité de production. Valeur par défaut : "list".  - `GrossToNetActivePowerCurves`: Une unité de production peut avoir une courbe de puissance active brute à puissance active nette, décrivant les pertes et les besoins en puissance auxiliaire de l'unité. Valeur par défaut : "list".  - `RotatingMachine`: Une machine synchrone peut fonctionner comme un générateur et, en tant que tel, devient un membre d'une unité de production. Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `genControlSource`: La source des contrôles pour une unité de production. Par défaut : Aucun  - `governorSCD`: Droop du changeur de vitesse du gouverneur.   Il s'agit de la variation de la puissance de sortie du générateur divisée par la variation de la fréquence normalisée par la puissance nominale du générateur et la fréquence nominale et exprimée en pourcentage et en valeur négative. Une valeur positive du statisme de changement de vitesse fournit une sortie de générateur supplémentaire lors d'une chute de fréquence. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `initialP`: Puissance active initiale par défaut qui est utilisée pour stocker un résultat de powerflow pour la puissance active initiale de cette unité dans cette configuration réseau. Valeur par défaut : 0.0  - `location`:   - `longPF`: Facteur de participation économique à long terme du groupe électrogène. Valeur par défaut : 0,0  - `maxOperatingP`: Il s'agit de la limite maximale de puissance active de fonctionnement que le répartiteur peut entrer pour cette unité. Valeur par défaut : 0.0  - `maximumAllowableSpinningReserve`: Réserve de filage maximale autorisée. La réserve de rotation ne sera jamais considérée comme supérieure à cette valeur, quel que soit le point de fonctionnement actuel. Valeur par défaut : 0,0  - `minOperatingP`: Il s'agit de la limite de puissance active minimale de fonctionnement que le répartiteur peut entrer pour cette unité. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `nominalP`: La puissance nominale de l'unité de production.  Utilisé pour donner une signification précise aux attributs basés sur le pourcentage, tels que le statisme de changement de vitesse du régulateur (attribut governorSCD). L'attribut doit être une valeur positive égale ou inférieure à RotatingMachine.ratedS. Valeur par défaut : 0,0  - `normalPF`: Facteur de participation économique de l'unité de production. Valeur par défaut : 0,0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `ratedGrossMaxP`: Capacité maximale nominale brute de l'unité (valeur comptable). Valeur par défaut : 0.0  - `ratedGrossMinP`: Le niveau de production minimum nominal brut auquel l'unité peut fonctionner en toute sécurité tout en fournissant de l'énergie au réseau de transmission. Valeur par défaut : 0.0  - `ratedNetMaxP`: La capacité maximale nominale nette déterminée en soustrayant la puissance auxiliaire utilisée pour faire fonctionner les machines internes de l'usine de la capacité maximale brute nominale. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `shortPF`: Facteur de participation économique à court terme du groupe électrogène. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startupCost`: Le coût initial de démarrage encouru pour chaque démarrage de la GeneratingUnit. Valeur par défaut : 0.0  - `totalEfficiency`: L'efficacité de l'appareil à convertir le combustible en énergie électrique. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit s'agir de GeneratingUnit  - `variableCost`: La composante variable du coût de production par unité d'ActivePower. Valeur par défaut : 0.0    
+- `ControlAreaGeneratingUnit`: Spécifications de la zone de contrôle pour cette unité de production. Valeur par défaut : "list".  - `GrossToNetActivePowerCurves`: Une unité de production peut avoir une courbe de puissance active brute à puissance active nette, décrivant les pertes et les besoins en puissance auxiliaire de l'unité. Valeur par défaut : "list".  - `RotatingMachine`: Une machine synchrone peut fonctionner comme un générateur et, en tant que tel, devient un membre d'une unité de production. Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `genControlSource`: La source des contrôles pour une unité de production. Par défaut : Aucun  - `governorSCD`: Droop du changeur de vitesse du gouverneur.   Il s'agit de la variation de la puissance de sortie du générateur divisée par la variation de la fréquence normalisée par la puissance nominale du générateur et la fréquence nominale et exprimée en pourcentage et en valeur négative. Une valeur positive du statisme de changement de vitesse fournit une sortie de générateur supplémentaire lors d'une chute de fréquence. Valeur par défaut : 0,0  - `id`: Identifiant unique de l'entité  - `initialP`: Puissance active initiale par défaut qui est utilisée pour stocker un résultat de powerflow pour la puissance active initiale de cette unité dans cette configuration réseau. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `longPF`: Facteur de participation économique à long terme du groupe électrogène. Valeur par défaut : 0,0  - `maxOperatingP`: Il s'agit de la limite maximale de puissance active de fonctionnement que le répartiteur peut entrer pour cette unité. Valeur par défaut : 0.0  - `maximumAllowableSpinningReserve`: Réserve de filage maximale autorisée. La réserve de rotation ne sera jamais considérée comme supérieure à cette valeur, quel que soit le point de fonctionnement actuel. Valeur par défaut : 0,0  - `minOperatingP`: Il s'agit de la limite de puissance active minimale de fonctionnement que le répartiteur peut entrer pour cette unité. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `nominalP`: La puissance nominale de l'unité de production.  Utilisé pour donner une signification précise aux attributs basés sur le pourcentage, tels que le statisme de changement de vitesse du régulateur (attribut governorSCD). L'attribut doit être une valeur positive égale ou inférieure à RotatingMachine.ratedS. Valeur par défaut : 0,0  - `normalPF`: Facteur de participation économique de l'unité de production. Valeur par défaut : 0,0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `ratedGrossMaxP`: Capacité maximale nominale brute de l'unité (valeur comptable). Valeur par défaut : 0.0  - `ratedGrossMinP`: Le niveau de production minimum nominal brut auquel l'unité peut fonctionner en toute sécurité tout en fournissant de l'énergie au réseau de transmission. Valeur par défaut : 0.0  - `ratedNetMaxP`: La capacité maximale nominale nette déterminée en soustrayant la puissance auxiliaire utilisée pour faire fonctionner les machines internes de l'usine de la capacité maximale brute nominale. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `shortPF`: Facteur de participation économique à court terme du groupe électrogène. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startupCost`: Le coût initial de démarrage encouru pour chaque démarrage de la GeneratingUnit. Valeur par défaut : 0.0  - `totalEfficiency`: L'efficacité de l'appareil à convertir le combustible en énergie électrique. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit s'agir de GeneratingUnit  - `variableCost`: La composante variable du coût de production par unité d'ActivePower. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -105,10 +105,10 @@ GeneratingUnit:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     longPF:    
       description: 'Generating unit long term economic participation factor. Default: 0.0'    
       type: number    
