@@ -6,7 +6,7 @@ Entidad: WindDynamicsLookupTable
 
 ## Lista de propiedades  
 
-- `WindContCurrLimIEC`: La tabla de búsqueda de la dinámica del viento asociada a este modelo de limitación de control actual. Por defecto: Ninguno  - `WindContPType3IEC`: La tabla de búsqueda de la dinámica del viento asociada a este modelo de control P tipo 3. Por defecto: Ninguno  - `WindContRotorRIEC`: El modelo de control de la resistencia del rotor con el que se asocia esta tabla de búsqueda de la dinámica del viento. Por defecto: Ninguno  - `WindPlantFreqPcontrolIEC`: La tabla de búsqueda de la dinámica del viento asociada a este modelo de planta eólica de frecuencia y potencia activa. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `input`: Valor de entrada (x) para la función de tabla de búsqueda. Por defecto: 0,0  - `location`:   - `lookupTableFunctionType`: Tipo de la función de la tabla de búsqueda. Por defecto: Ninguno  - `name`: El nombre de este artículo.  - `output`: Valor de salida (y) para la función de tabla de búsqueda. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequence`: Números de secuencia de los pares de la entrada (x) y la salida (y) de la función de tabla de búsqueda. Por defecto: 0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser WindDynamicsLookupTable    
+- `WindContCurrLimIEC`: La tabla de búsqueda de la dinámica del viento asociada a este modelo de limitación de control actual. Por defecto: Ninguno  - `WindContPType3IEC`: La tabla de búsqueda de la dinámica del viento asociada a este modelo de control P tipo 3. Por defecto: Ninguno  - `WindContRotorRIEC`: El modelo de control de la resistencia del rotor con el que se asocia esta tabla de búsqueda de la dinámica del viento. Por defecto: Ninguno  - `WindPlantFreqPcontrolIEC`: La tabla de búsqueda de la dinámica del viento asociada a este modelo de planta eólica de frecuencia y potencia activa. Por defecto: Ninguno  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `input`: Valor de entrada (x) para la función de tabla de búsqueda. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `lookupTableFunctionType`: Tipo de la función de la tabla de búsqueda. Por defecto: Ninguno  - `name`: El nombre de este artículo.  - `output`: Valor de salida (y) para la función de tabla de búsqueda. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequence`: Números de secuencia de los pares de la entrada (x) y la salida (y) de la función de tabla de búsqueda. Por defecto: 0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser WindDynamicsLookupTable    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -100,10 +100,10 @@ WindDynamicsLookupTable:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ WindDynamicsLookupTable:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ WindDynamicsLookupTable:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ WindDynamicsLookupTable:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ WindDynamicsLookupTable:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ WindDynamicsLookupTable:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ WindDynamicsLookupTable:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     lookupTableFunctionType:    
       description: 'Type of the lookup table function. Default: None'    
       type: number    
