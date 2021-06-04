@@ -6,9 +6,9 @@ Entität: WindContQIEC
 
 ## Liste der Eigenschaften  
 
-- `WindTurbineType3or4IEC`: Modell des Windturbinentyps 3 oder 4, mit dem dieser Blindleistungsregelungsmodus verknüpft ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `iqh1`: Maximale Blindstromeinspeisung während des Eintauchens (i). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `iqmax`: Maximale Blindstromeinspeisung (i). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `iqmin`: Minimale Blindstromeinspeisung (i). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `iqpost`: Nachfehler-Blindstromeinspeisung (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0.0  - `kiq`: Integrationsverstärkung des Blindleistungs-PI-Reglers (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kiu`: Integrationsverstärkung des Spannungs-PI-Reglers (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kpq`: Blindleistung PI-Regler Proportionalverstärkung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kpu`: Spannung PI-Regler Proportionalverstärkung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kqv`: Spannungsskalierungsfaktor für LVRT-Strom (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qmax`: Maximale Blindleistung (q). Es ist ein typabhängiger Parameter. Voreinstellung: 0,0  - `qmin`: Minimale Blindleistung (q). Es ist ein typabhängiger Parameter. Voreinstellung: 0,0  - `rdroop`: Resistiver Anteil der Spannungsabfall-Impedanz (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tiq`: Zeitkonstante in der Blindstromverzögerung (T). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tpfilt`: Zeitkonstante des Leistungsmessungsfilters (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tpost`: Länge des Zeitraums, in dem Nachfehlerblindleistung eingespeist wird (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0  - `tqord`: Zeitkonstante in der Blindleistungsordnung lag (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tufilt`: Zeitkonstante des Spannungsmessungsfilters (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss WindContQIEC sein  - `udb1`: Spannungstotzone untere Grenze (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `udb2`: Obere Grenze des Spannungs-Totbandes (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `umax`: Maximale Spannung im Spannungs-PI-Regler-Integralanteil (u). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `umin`: Minimale Spannung im Integralanteil des Spannungs-PI-Reglers (u). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `uqdip`: Spannungsschwelle für die LVRT-Erkennung in der q-Steuerung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `uref0`: Benutzerdefinierter Bias in der Spannungsreferenz (), wird verwendet, wenn =. Es ist ein fallabhängiger Parameter. Voreinstellung: 0,0  - `windLVRTQcontrolModesType`: Arten von LVRT Q-Steuerungsmodi (). Es ist ein projektabhängiger Parameter. Voreinstellung: Keine  - `windQcontrolModesType`: Typen der allgemeinen Windturbinen-Q-Steuerungsmodi ().  Es ist ein projektabhängiger Parameter. Voreinstellung: Keine  - `xdroop`: Induktive Komponente der Spannungsabfall-Impedanz (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0,0    
+- `WindTurbineType3or4IEC`: Modell des Windturbinentyps 3 oder 4, mit dem dieser Blindleistungsregelungsmodus verknüpft ist. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `iqh1`: Maximale Blindstromeinspeisung während des Eintauchens (i). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `iqmax`: Maximale Blindstromeinspeisung (i). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `iqmin`: Minimale Blindstromeinspeisung (i). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `iqpost`: Nachfehler-Blindstromeinspeisung (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0.0  - `kiq`: Integrationsverstärkung des Blindleistungs-PI-Reglers (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kiu`: Integrationsverstärkung des Spannungs-PI-Reglers (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kpq`: Blindleistung PI-Regler Proportionalverstärkung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kpu`: Spannung PI-Regler Proportionalverstärkung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `kqv`: Spannungsskalierungsfaktor für LVRT-Strom (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qmax`: Maximale Blindleistung (q). Es ist ein typabhängiger Parameter. Voreinstellung: 0,0  - `qmin`: Minimale Blindleistung (q). Es ist ein typabhängiger Parameter. Voreinstellung: 0,0  - `rdroop`: Resistiver Anteil der Spannungsabfall-Impedanz (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tiq`: Zeitkonstante in der Blindstromverzögerung (T). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tpfilt`: Zeitkonstante des Leistungsmessungsfilters (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tpost`: Länge des Zeitraums, in dem Nachfehlerblindleistung eingespeist wird (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0  - `tqord`: Zeitkonstante in der Blindleistungsordnung lag (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `tufilt`: Zeitkonstante des Spannungsmessungsfilters (). Es ist ein typabhängiger Parameter. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss WindContQIEC sein  - `udb1`: Spannungstotzone untere Grenze (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `udb2`: Obere Grenze des Spannungs-Totbandes (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `umax`: Maximale Spannung im Spannungs-PI-Regler-Integralanteil (u). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `umin`: Minimale Spannung im Integralanteil des Spannungs-PI-Reglers (u). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `uqdip`: Spannungsschwelle für die LVRT-Erkennung in der q-Steuerung (). Es ist ein typabhängiger Parameter. Voreinstellung: 0.0  - `uref0`: Benutzerdefinierter Bias in der Spannungsreferenz (), wird verwendet, wenn =. Es ist ein fallabhängiger Parameter. Voreinstellung: 0,0  - `windLVRTQcontrolModesType`: Arten von LVRT Q-Steuerungsmodi (). Es ist ein projektabhängiger Parameter. Voreinstellung: Keine  - `windQcontrolModesType`: Typen der allgemeinen Windturbinen-Q-Steuerungsmodi ().  Es ist ein projektabhängiger Parameter. Voreinstellung: Keine  - `xdroop`: Induktive Komponente der Spannungsabfall-Impedanz (). Es ist ein projektabhängiger Parameter. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert wurde, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -125,10 +125,10 @@ WindContQIEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ WindContQIEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
