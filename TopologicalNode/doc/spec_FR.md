@@ -6,7 +6,7 @@ Entité : TopologicalNode
 
 ## Liste des propriétés  
 
-- `AngleRefTopologicalIsland`: L'île pour laquelle le nœud est une référence d'angle.   Normalement, il y a un nœud de référence angulaire pour chaque île. Valeur par défaut : Aucun  - `BaseVoltage`: La tension de base du noeud topologique. Par défaut : Aucun  - `ConnectivityNodeContainer`: Le conteneur de nœuds de connectivité auquel appartient le nœud toplogique. Valeur par défaut : Aucun  - `ConnectivityNodes`: Le nœud topologique auquel ce nœud de connectivité est affecté.  Peut dépendre de l'état actuel des commutateurs du réseau. Valeur par défaut : "list".  - `ReportingGroup`: Les noeuds topologiques qui appartiennent au groupe de rapport. Valeur par défaut : Aucun  - `SvInjection`: Le noeud topologique associé à la variable d'état d'injection de flux. Valeur par défaut : Aucun  - `SvVoltage`: Le nœud topologique associé à l'état de tension. Par défaut : Aucun  - `Terminal`: Le nœud topologique associé au terminal.   Il peut être utilisé comme alternative au chemin du noeud de connectivité vers le noeud topologique, rendant ainsi inutile la modélisation des noeuds de connectivité dans certains cas.   Notez que si les noeuds de connectivité sont dans le modèle, cette association ne sera probablement pas utilisée comme spécification d'entrée. Valeur par défaut : 'list'.  - `TopologicalIsland`: Un nœud topologique appartient à un îlot topologique. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `boundaryPoint`: Identifie si un noeud est un BoundaryPoint. Si boundaryPoint=true, le ConnectivityNode ou le TopologicalNode représente un BoundaryPoint. Valeur par défaut : False  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `fromEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "From" du point de frontière appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `fromEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `fromEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel le côté "From" du point de frontière appartient ou auquel il est connecté. La longueur de la chaîne est de 32 caractères maximum. L'attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `toEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "à" du point de délimitation appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `toEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `toEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel appartient ou auquel est connecté le côté "à" du point de frontière. La longueur de la chaîne est de 32 caractères maximum. Cet attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `type`: Type de NGSI. Il doit être TopologicalNode    
+- `AngleRefTopologicalIsland`: L'île pour laquelle le nœud est une référence d'angle.   Normalement, il y a un nœud de référence angulaire pour chaque île. Valeur par défaut : Aucun  - `BaseVoltage`: La tension de base du noeud topologique. Par défaut : Aucun  - `ConnectivityNodeContainer`: Le conteneur de nœuds de connectivité auquel appartient le nœud toplogique. Valeur par défaut : Aucun  - `ConnectivityNodes`: Le nœud topologique auquel ce nœud de connectivité est affecté.  Peut dépendre de l'état actuel des commutateurs du réseau. Valeur par défaut : "list".  - `ReportingGroup`: Les noeuds topologiques qui appartiennent au groupe de rapport. Valeur par défaut : Aucun  - `SvInjection`: Le noeud topologique associé à la variable d'état d'injection de flux. Valeur par défaut : Aucun  - `SvVoltage`: Le nœud topologique associé à l'état de tension. Par défaut : Aucun  - `Terminal`: Le nœud topologique associé au terminal.   Il peut être utilisé comme alternative au chemin du noeud de connectivité vers le noeud topologique, rendant ainsi inutile la modélisation des noeuds de connectivité dans certains cas.   Notez que si les noeuds de connectivité sont dans le modèle, cette association ne sera probablement pas utilisée comme spécification d'entrée. Valeur par défaut : 'list'.  - `TopologicalIsland`: Un nœud topologique appartient à un îlot topologique. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `boundaryPoint`: Identifie si un noeud est un BoundaryPoint. Si boundaryPoint=true, le ConnectivityNode ou le TopologicalNode représente un BoundaryPoint. Valeur par défaut : False  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `fromEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "From" du point de frontière appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `fromEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `fromEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel le côté "From" du point de frontière appartient ou auquel il est connecté. La longueur de la chaîne est de 32 caractères maximum. L'attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `toEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "à" du point de délimitation appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `toEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `toEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel appartient ou auquel est connecté le côté "à" du point de frontière. La longueur de la chaîne est de 32 caractères maximum. Cet attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `type`: Type de NGSI. Il doit être TopologicalNode    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -140,10 +140,10 @@ TopologicalNode:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +163,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +187,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +213,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +236,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +262,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -285,7 +290,7 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -334,7 +339,7 @@ TopologicalNode:
 ```  
 </details>    
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un TopologicalNode au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un TopologicalNode au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un TopologicalNode au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un TopologicalNode au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un TopologicalNode au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
