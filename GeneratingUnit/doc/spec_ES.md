@@ -6,7 +6,7 @@ Entidad: GeneratingUnit
 
 ## Lista de propiedades  
 
-- `ControlAreaGeneratingUnit`: Especificaciones del área de control para esta unidad generadora. Por defecto: "lista  - `GrossToNetActivePowerCurves`: Una unidad de generación puede tener una curva de potencia activa bruta a potencia activa neta, que describe las pérdidas y las necesidades de potencia auxiliar de la unidad. Por defecto: "lista".  - `RotatingMachine`: Una máquina síncrona puede funcionar como generador y, como tal, se convierte en miembro de una unidad generadora. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `genControlSource`: El origen de los controles para una unidad generadora. Por defecto: Ninguno  - `governorSCD`: Caída del Cambiador de Velocidad del Gobernador.   Es el cambio en la salida de potencia del generador dividido por el cambio en la frecuencia normalizado por la potencia nominal del generador y la frecuencia nominal y expresado en porcentaje y negado. Un valor positivo de droop de cambio de velocidad proporciona una salida adicional del generador ante una caída de la frecuencia. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `initialP`: Potencia activa inicial por defecto que se utiliza para almacenar un resultado de flujo de potencia para la potencia activa inicial para esta unidad en esta configuración de red. Por defecto: 0,0  - `location`:   - `longPF`: Factor de participación económica a largo plazo de la unidad generadora. Por defecto: 0,0  - `maxOperatingP`: Este es el límite máximo de potencia activa de funcionamiento que el despachador puede introducir para esta unidad. Por defecto: 0,0  - `maximumAllowableSpinningReserve`: Máxima reserva de giro permitida. La reserva de giro nunca se considerará mayor que este valor, independientemente del punto de funcionamiento actual. Por defecto: 0,0  - `minOperatingP`: Este es el límite mínimo de potencia activa de funcionamiento que el despachador puede introducir para esta unidad. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `nominalP`: La potencia nominal de la unidad generadora.  Se utiliza para dar un significado preciso a los atributos basados en el porcentaje, como el estatismo del cambio de velocidad del regulador (atributo governorSCD). El atributo deberá ser un valor positivo igual o menor que RotatingMachine.ratedS. Por defecto: 0.0  - `normalPF`: Factor de participación económica de la unidad generadora. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `ratedGrossMaxP`: La capacidad máxima nominal bruta de la unidad (valor contable). Por defecto: 0,0  - `ratedGrossMinP`: El nivel de generación mínimo nominal bruto al que la unidad puede operar con seguridad mientras entrega energía a la red de transmisión. Por defecto: 0,0  - `ratedNetMaxP`: La capacidad máxima nominal neta determinada restando la potencia auxiliar utilizada para el funcionamiento de la maquinaria interna de la planta de la capacidad máxima bruta nominal. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortPF`: Factor de participación económica a corto plazo de la unidad generadora. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startupCost`: El coste de puesta en marcha inicial en el que se incurre por cada arranque de la GeneratingUnit. Por defecto: 0,0  - `totalEfficiency`: La eficiencia de la unidad para convertir el combustible en energía eléctrica. Por defecto: 0,0  - `type`: Tipo NGSI. Tiene que ser GeneratingUnit  - `variableCost`: El componente de coste variable de producción por unidad de ActivePower. Por defecto: 0,0    
+- `ControlAreaGeneratingUnit`: Especificaciones del área de control para esta unidad generadora. Por defecto: "lista  - `GrossToNetActivePowerCurves`: Una unidad de generación puede tener una curva de potencia activa bruta a potencia activa neta, que describe las pérdidas y las necesidades de potencia auxiliar de la unidad. Por defecto: "lista".  - `RotatingMachine`: Una máquina síncrona puede funcionar como generador y, como tal, se convierte en miembro de una unidad generadora. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `genControlSource`: El origen de los controles para una unidad generadora. Por defecto: Ninguno  - `governorSCD`: Caída del Cambiador de Velocidad del Gobernador.   Es el cambio en la salida de potencia del generador dividido por el cambio en la frecuencia normalizado por la potencia nominal del generador y la frecuencia nominal y expresado en porcentaje y negado. Un valor positivo de droop de cambio de velocidad proporciona una salida adicional del generador ante una caída de la frecuencia. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `initialP`: Potencia activa inicial por defecto que se utiliza para almacenar un resultado de flujo de potencia para la potencia activa inicial para esta unidad en esta configuración de red. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `longPF`: Factor de participación económica a largo plazo de la unidad generadora. Por defecto: 0,0  - `maxOperatingP`: Este es el límite máximo de potencia activa de funcionamiento que el despachador puede introducir para esta unidad. Por defecto: 0,0  - `maximumAllowableSpinningReserve`: Máxima reserva de giro permitida. La reserva de giro nunca se considerará mayor que este valor, independientemente del punto de funcionamiento actual. Por defecto: 0,0  - `minOperatingP`: Este es el límite mínimo de potencia activa de funcionamiento que el despachador puede introducir para esta unidad. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `nominalP`: La potencia nominal de la unidad generadora.  Se utiliza para dar un significado preciso a los atributos basados en el porcentaje, como el estatismo del cambio de velocidad del regulador (atributo governorSCD). El atributo deberá ser un valor positivo igual o menor que RotatingMachine.ratedS. Por defecto: 0.0  - `normalPF`: Factor de participación económica de la unidad generadora. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `ratedGrossMaxP`: La capacidad máxima nominal bruta de la unidad (valor contable). Por defecto: 0,0  - `ratedGrossMinP`: El nivel de generación mínimo nominal bruto al que la unidad puede operar con seguridad mientras entrega energía a la red de transmisión. Por defecto: 0,0  - `ratedNetMaxP`: La capacidad máxima nominal neta determinada restando la potencia auxiliar utilizada para el funcionamiento de la maquinaria interna de la planta de la capacidad máxima bruta nominal. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortPF`: Factor de participación económica a corto plazo de la unidad generadora. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startupCost`: El coste de puesta en marcha inicial en el que se incurre por cada arranque de la GeneratingUnit. Por defecto: 0,0  - `totalEfficiency`: La eficiencia de la unidad para convertir el combustible en energía eléctrica. Por defecto: 0,0  - `type`: Tipo NGSI. Tiene que ser GeneratingUnit  - `variableCost`: El componente de coste variable de producción por unidad de ActivePower. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -105,10 +105,10 @@ GeneratingUnit:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     longPF:    
       description: 'Generating unit long term economic participation factor. Default: 0.0'    
       type: number    
