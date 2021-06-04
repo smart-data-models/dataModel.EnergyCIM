@@ -6,7 +6,7 @@ Entité : ExcIEEEAC5A
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efd1`: Tension d'excitation à laquelle la saturation de l'excitation est définie (E).  Valeur typique = 5.6. Valeur par défaut : 0.0  - `efd2`: Tension d'excitation à laquelle la saturation de l'excitation est définie (E).  Valeur typique = 4,2. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ka`: Gain du régulateur de tension (K).  Valeur typique = 400. Valeur par défaut : 0.0  - `ke`: Constante d'excitation liée au champ auto-excité (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `kf`: Gains des stabilisateurs du système de contrôle d'excitation (K).  Valeur typique = 0.03. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seefd1`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, E (S[E]).  Valeur typique = 0.86. Valeur par défaut : 0.0  - `seefd2`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, E (S[E]).  Valeur typique = 0,5. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (T).  Valeur typique = 0,02. Valeur par défaut : 0  - `te`: Constante de temps de l'excitatrice, taux d'intégration associé à la commande de l'excitatrice (T).  Valeur typique = 0,8. Valeur par défaut : 0  - `tf1`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `tf2`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `tf3`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcIEEEAC5A  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 7,3. Valeur par défaut : 0.0  - `vrmin`: Tension minimale de sortie du régulateur (V).  Valeur typique = -7.3. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efd1`: Tension d'excitation à laquelle la saturation de l'excitation est définie (E).  Valeur typique = 5.6. Valeur par défaut : 0.0  - `efd2`: Tension d'excitation à laquelle la saturation de l'excitation est définie (E).  Valeur typique = 4,2. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ka`: Gain du régulateur de tension (K).  Valeur typique = 400. Valeur par défaut : 0.0  - `ke`: Constante d'excitation liée au champ auto-excité (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `kf`: Gains des stabilisateurs du système de contrôle d'excitation (K).  Valeur typique = 0.03. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seefd1`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, E (S[E]).  Valeur typique = 0.86. Valeur par défaut : 0.0  - `seefd2`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, E (S[E]).  Valeur typique = 0,5. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (T).  Valeur typique = 0,02. Valeur par défaut : 0  - `te`: Constante de temps de l'excitatrice, taux d'intégration associé à la commande de l'excitatrice (T).  Valeur typique = 0,8. Valeur par défaut : 0  - `tf1`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `tf2`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `tf3`: Constante de temps du stabilisateur du système de contrôle d'excitation (T).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcIEEEAC5A  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 7,3. Valeur par défaut : 0.0  - `vrmin`: Tension minimale de sortie du régulateur (V).  Valeur typique = -7.3. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -100,10 +100,10 @@ ExcIEEEAC5A:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ ExcIEEEAC5A:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ ExcIEEEAC5A:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ ExcIEEEAC5A:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ ExcIEEEAC5A:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ ExcIEEEAC5A:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ ExcIEEEAC5A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
