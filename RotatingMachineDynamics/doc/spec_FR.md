@@ -6,7 +6,7 @@ Entité : RotatingMachineDynamics
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `damping`: Coefficient de couple d'amortissement (D).  Constante de proportionnalité qui, lorsqu'elle est multipliée par la vitesse angulaire des pôles du rotor par rapport au champ magnétique (fréquence), donne le couple d'amortissement.  Cette valeur est souvent nulle lorsque les sources de couples d'amortissement (enroulements d'amortissement du générateur, effets d'amortissement de la charge, etc.) sont modélisées en détail.  Valeur typique = 0. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inertia`: Constante d'inertie du générateur ou du moteur et de la charge mécanique (H) (>0).  Il s'agit de la spécification de l'énergie stockée dans la masse rotative lorsqu'elle fonctionne à la vitesse nominale.  Pour un générateur, elle inclut le générateur et tous les autres éléments (turbine, excitateur) sur le même arbre et est exprimée en MW*sec.  Pour un moteur, elle comprend le moteur et sa charge mécanique. Les unités conventionnelles sont par unité sur la base du MVA du générateur, généralement exprimées en MW*seconde/MVA ou simplement seconde.   Cette valeur est utilisée dans le cadre de référence de la puissance d'accélération pour les solutions de simulateur de formation des opérateurs.  Valeur typique = 3. Valeur par défaut : 0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `saturationFactor`: Facteur de saturation à la tension nominale aux bornes (S1) (> ou =0).  Non utilisé par le modèle simplifié.  Défini par défini par S(E1) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0,02. Valeur par défaut : 0.0  - `saturationFactor120`: Facteur de saturation à 120% de la tension nominale aux bornes (S12) (> ou =S1). Non utilisé par le modèle simplifié, défini par S(E2) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0.12. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `statorLeakageReactance`: Réactance de fuite du stator (Xl) (> ou =0). Valeur typique = 0.15. Valeur par défaut : 0.0  - `statorResistance`: Résistance (Rs) du stator (armature) (> ou =0). Valeur typique = 0.005. Valeur par défaut : 0.0  - `type`: Type de NGSI. Il doit s'agir de RotatingMachineDynamics.    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `damping`: Coefficient de couple d'amortissement (D).  Constante de proportionnalité qui, lorsqu'elle est multipliée par la vitesse angulaire des pôles du rotor par rapport au champ magnétique (fréquence), donne le couple d'amortissement.  Cette valeur est souvent nulle lorsque les sources de couples d'amortissement (enroulements d'amortissement du générateur, effets d'amortissement de la charge, etc.) sont modélisées en détail.  Valeur typique = 0. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inertia`: Constante d'inertie du générateur ou du moteur et de la charge mécanique (H) (>0).  Il s'agit de la spécification de l'énergie stockée dans la masse rotative lorsqu'elle fonctionne à la vitesse nominale.  Pour un générateur, elle inclut le générateur et tous les autres éléments (turbine, excitateur) sur le même arbre et est exprimée en MW*sec.  Pour un moteur, elle comprend le moteur et sa charge mécanique. Les unités conventionnelles sont par unité sur la base du MVA du générateur, généralement exprimées en MW*seconde/MVA ou simplement seconde.   Cette valeur est utilisée dans le cadre de référence de la puissance d'accélération pour les solutions de simulateur de formation des opérateurs.  Valeur typique = 3. Valeur par défaut : 0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `saturationFactor`: Facteur de saturation à la tension nominale aux bornes (S1) (> ou =0).  Non utilisé par le modèle simplifié.  Défini par défini par S(E1) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0,02. Valeur par défaut : 0.0  - `saturationFactor120`: Facteur de saturation à 120% de la tension nominale aux bornes (S12) (> ou =S1). Non utilisé par le modèle simplifié, défini par S(E2) dans le diagramme SynchronousMachineSaturationParameters.  Valeur typique = 0.12. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `statorLeakageReactance`: Réactance de fuite du stator (Xl) (> ou =0). Valeur typique = 0.15. Valeur par défaut : 0.0  - `statorResistance`: Résistance (Rs) du stator (armature) (> ou =0). Valeur typique = 0.005. Valeur par défaut : 0.0  - `type`: Type de NGSI. Il doit s'agir de RotatingMachineDynamics.    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -85,10 +85,10 @@ RotatingMachineDynamics:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ RotatingMachineDynamics:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ RotatingMachineDynamics:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ RotatingMachineDynamics:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ RotatingMachineDynamics:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ RotatingMachineDynamics:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ RotatingMachineDynamics:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -286,5 +291,5 @@ RotatingMachineDynamics:
 ## Exemples de charges utiles  
 Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'une RotatingMachineDynamics au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
