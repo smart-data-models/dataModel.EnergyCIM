@@ -6,7 +6,7 @@ Entität: GovHydroFrancis
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `am`: Öffnungsquerschnitt S bei maximalem Wirkungsgrad (Am).  Typischer Wert = 0,7. Voreinstellung: 0,0  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `av0`: Fläche des Wasserschlosses (A). Einheit = m. Typischer Wert = 30. Voreinstellung: 0.0  - `av1`: Fläche des Ausgleichsbehälters (A). Einheit = m. Typischer Wert = 700. Voreinstellung: 0.0  - `bp`: Droop (Bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (DB1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `etamax`: Maximaler Wirkungsgrad (EtaMax).  Typischer Wert = 1,05. Voreinstellung: 0,0  - `governorControl`: Reglersteuerungs-Flag (Cflag).  Typischer Wert = mechanicHydrolicTachoAccelerator. Voreinstellung: Keine  - `h1`: Höhe des Wasserspiegels der Ausgleichskammer in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 4. Voreinstellung: 0.0  - `h2`: Wasserspiegelhöhe des Wasserschlosses in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 40. Voreinstellung: 0.0  - `hn`: Hydraulische Nennförderhöhe (H).  Einheit = m. Typischer Wert = 250. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kc`: Verlustkoeffizient der Druckleitung (aufgrund von Reibung) (Kc).  Typischer Wert = 0,025. Standard: 0,0  - `kg`: Verlustkoeffizient von Wassertunnel und Wasserschloss (aufgrund von Reibung) (Kg).  Typischer Wert = 0,025. Voreinstellung: 0,0  - `kt`: Auswaschverstärkung (Kt).  Typischer Wert = 0,25. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qc0`: Leerlaufdurchfluss der Turbine bei Nennhöhe (Qc0).  Typischer Wert = 0,21. Voreinstellung: 0,0  - `qn`: Nenndurchfluss (Q). Einheit = m/s. Typischer Wert = 40. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Abgeleitete Verstärkung (Ta).  Typischer Wert = 3. Voreinstellung: 0  - `td`: Auswaschzeitkonstante (Td).  Typischer Wert = 3. Voreinstellung: 0  - `ts`: Gate-Servo-Zeitkonstante (Ts).  Typischer Wert = 0,5. Voreinstellung: 0  - `twnc`: Wasserträgheitszeitkonstante (Twnc).  Typischer Wert = 1. Voreinstellung: 0  - `twng`: Wassertunnel und Wasserschloss Trägheitszeitkonstante (Twng). Typischer Wert = 3. Voreinstellung: 0  - `tx`: Abgeleitete Rückkopplungsverstärkung (Tx).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydroFrancis sein  - `va`: Maximale Toröffnungsgeschwindigkeit (Va).  Einheit = VE/sec.  Typischer Wert = 0,011. Voreinstellung: 0,0  - `valvmax`: Maximale Toröffnung (ValvMax).  Typischer Wert = 1. Voreinstellung: 0.0  - `valvmin`: Minimale Toröffnung (ValvMin).  Typischer Wert = 0. Voreinstellung: 0.0  - `vc`: Maximale Torschließgeschwindigkeit (Vc).  Einheit = VE/sec.  Typischer Wert = -0,011. Voreinstellung: 0.0  - `waterTunnelSurgeChamberSimulation`: Wassertunnel- und Wasserschloss-Simulation (Tflag). true = Freigabe der Wassertunnel- und Wasserschloss-Simulation false = Sperrung der Wassertunnel- und Wasserschloss-Simulation. Typischer Wert = false. Voreinstellung: False  - `zsfc`: Höhe des oberen Wasserspiegels in Bezug auf die Höhe der Druckleitung (Zsfc).  Einheit = m. Typischer Wert = 25. Voreinstellung: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `am`: Öffnungsquerschnitt S bei maximalem Wirkungsgrad (Am).  Typischer Wert = 0,7. Voreinstellung: 0,0  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `av0`: Fläche des Wasserschlosses (A). Einheit = m. Typischer Wert = 30. Voreinstellung: 0.0  - `av1`: Fläche des Ausgleichsbehälters (A). Einheit = m. Typischer Wert = 700. Voreinstellung: 0.0  - `bp`: Droop (Bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (DB1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `etamax`: Maximaler Wirkungsgrad (EtaMax).  Typischer Wert = 1,05. Voreinstellung: 0,0  - `governorControl`: Reglersteuerungs-Flag (Cflag).  Typischer Wert = mechanicHydrolicTachoAccelerator. Voreinstellung: Keine  - `h1`: Höhe des Wasserspiegels der Ausgleichskammer in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 4. Voreinstellung: 0.0  - `h2`: Wasserspiegelhöhe des Wasserschlosses in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 40. Voreinstellung: 0.0  - `hn`: Hydraulische Nennförderhöhe (H).  Einheit = m. Typischer Wert = 250. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kc`: Verlustkoeffizient der Druckleitung (aufgrund von Reibung) (Kc).  Typischer Wert = 0,025. Standard: 0,0  - `kg`: Verlustkoeffizient von Wassertunnel und Wasserschloss (aufgrund von Reibung) (Kg).  Typischer Wert = 0,025. Voreinstellung: 0,0  - `kt`: Auswaschverstärkung (Kt).  Typischer Wert = 0,25. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `qc0`: Leerlaufdurchfluss der Turbine bei Nennhöhe (Qc0).  Typischer Wert = 0,21. Voreinstellung: 0,0  - `qn`: Nenndurchfluss (Q). Einheit = m/s. Typischer Wert = 40. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Abgeleitete Verstärkung (Ta).  Typischer Wert = 3. Voreinstellung: 0  - `td`: Auswaschzeitkonstante (Td).  Typischer Wert = 3. Voreinstellung: 0  - `ts`: Gate-Servo-Zeitkonstante (Ts).  Typischer Wert = 0,5. Voreinstellung: 0  - `twnc`: Wasserträgheitszeitkonstante (Twnc).  Typischer Wert = 1. Voreinstellung: 0  - `twng`: Wassertunnel und Wasserschloss Trägheitszeitkonstante (Twng). Typischer Wert = 3. Voreinstellung: 0  - `tx`: Abgeleitete Rückkopplungsverstärkung (Tx).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydroFrancis sein  - `va`: Maximale Toröffnungsgeschwindigkeit (Va).  Einheit = VE/sec.  Typischer Wert = 0,011. Voreinstellung: 0,0  - `valvmax`: Maximale Toröffnung (ValvMax).  Typischer Wert = 1. Voreinstellung: 0.0  - `valvmin`: Minimale Toröffnung (ValvMin).  Typischer Wert = 0. Voreinstellung: 0.0  - `vc`: Maximale Torschließgeschwindigkeit (Vc).  Einheit = VE/sec.  Typischer Wert = -0,011. Voreinstellung: 0.0  - `waterTunnelSurgeChamberSimulation`: Wassertunnel- und Wasserschloss-Simulation (Tflag). true = Freigabe der Wassertunnel- und Wasserschloss-Simulation false = Sperrung der Wassertunnel- und Wasserschloss-Simulation. Typischer Wert = false. Voreinstellung: False  - `zsfc`: Höhe des oberen Wasserspiegels in Bezug auf die Höhe der Druckleitung (Zsfc).  Einheit = m. Typischer Wert = 25. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -140,10 +140,10 @@ GovHydroFrancis:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +163,8 @@ GovHydroFrancis:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +187,8 @@ GovHydroFrancis:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +213,8 @@ GovHydroFrancis:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +236,8 @@ GovHydroFrancis:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +262,8 @@ GovHydroFrancis:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -285,7 +290,7 @@ GovHydroFrancis:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
