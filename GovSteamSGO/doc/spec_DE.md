@@ -6,7 +6,7 @@ Entität: GovSteamSGO
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `k1`: Ein/pro Einheit Regelung (K1). Voreinstellung: 0,0  - `k2`: Bruchteil (K2). Voreinstellung: 0,0  - `k3`: Bruchteil (K3). Voreinstellung: 0,0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Obere Leistungsgrenze (Pmax). Voreinstellung: 0,0  - `pmin`: Untere Leistungsgrenze (Pmin). Voreinstellung: 0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Verzögerung des Reglers (T1). Voreinstellung: 0  - `t2`: Reglerleitungskompensation (T2). Voreinstellung: 0  - `t3`: Verzögerung des Reglers (T3) (>0). Voreinstellung: 0  - `t4`: Verzögerung aufgrund des Dampfeinlassvolumens in Verbindung mit der Dampftruhe und den Einlassleitungen (T4). Voreinstellung: 0  - `t5`: Nachheizungsverzögerung einschließlich Warm- und Kaltleitungen (T5). Voreinstellung: 0  - `t6`: Verzögerung aufgrund von IP-LP-Turbine, Crossover-Rohren und LP-Endhauben (T6). Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamSGO sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `k1`: Ein/pro Einheit Regelung (K1). Voreinstellung: 0,0  - `k2`: Bruchteil (K2). Voreinstellung: 0,0  - `k3`: Bruchteil (K3). Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Obere Leistungsgrenze (Pmax). Voreinstellung: 0,0  - `pmin`: Untere Leistungsgrenze (Pmin). Voreinstellung: 0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Verzögerung des Reglers (T1). Voreinstellung: 0  - `t2`: Reglerleitungskompensation (T2). Voreinstellung: 0  - `t3`: Verzögerung des Reglers (T3) (>0). Voreinstellung: 0  - `t4`: Verzögerung aufgrund des Dampfeinlassvolumens in Verbindung mit der Dampftruhe und den Einlassleitungen (T4). Voreinstellung: 0  - `t5`: Nachheizungsverzögerung einschließlich Warm- und Kaltleitungen (T5). Voreinstellung: 0  - `t6`: Verzögerung aufgrund von IP-LP-Turbine, Crossover-Rohren und LP-Endhauben (T6). Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamSGO sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -90,10 +90,10 @@ GovSteamSGO:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ GovSteamSGO:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ GovSteamSGO:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ GovSteamSGO:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ GovSteamSGO:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ GovSteamSGO:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ GovSteamSGO:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
