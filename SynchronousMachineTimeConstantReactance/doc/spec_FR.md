@@ -6,7 +6,7 @@ Entité : SynchronousMachineTimeConstantReactance
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ks`: Facteur de correction de la charge de saturation (Ks) (>= 0).  Utilisé uniquement par le modèle de type J.  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `modelType`: Type de modèle de machine synchrone utilisé dans les applications de simulation dynamique. Valeur par défaut : Aucun  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `rotorType`: Type de rotor sur la machine physique. Par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tc`: Constante de temps d'amortissement pour la réactance `Canay`.  Valeur typique = 0. Valeur par défaut : 0  - `tpdo`: Constante de temps transitoire du rotor sur l'axe direct (T`do) (> T``do).  Valeur typique = 5. Valeur par défaut : 0  - `tppdo`: Constante de temps subtransitoire du rotor sur l'axe direct (T``do) (> 0).  Valeur typique = 0,03. Valeur par défaut : 0  - `tppqo`: Constante de temps subtransitoire du rotor sur l'axe en quadrature (T``qo) (> 0). Valeur typique = 0,03. Valeur par défaut : 0  - `tpqo`: Constante de temps transitoire du rotor sur l'axe en quadrature (T`qo) (> T``qo). Valeur typique = 0,5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être SynchronousMachineTimeConstantReactance.  - `xDirectSubtrans`: Réactance subtransitoire à axe direct (non saturée) (X``d) (> Xl).  Valeur typique = 0.2. Valeur par défaut : 0.0  - `xDirectSync`: Réactance synchrone à axe direct (Xd) (>= X`d). Le quotient d'une valeur soutenue de la composante alternative de la tension d'induit qui est produite par le flux total de l'axe direct dû au courant d'induit de l'axe direct et la valeur de la composante alternative de ce courant, la machine fonctionnant à la vitesse nominale. Valeur typique = 1,8. Valeur par défaut : 0,0  - `xDirectTrans`: Réactance transitoire de l'axe direct (non saturé) (X`d) (> =X``d).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `xQuadSubtrans`: Réactance subtransitoire de l'axe en quadrature (X``q) (> Xl).  Valeur typique = 0,2. Valeur par défaut : 0.0  - `xQuadSync`: Réactance synchrone d'axe de quadrature (Xq) (> =X`q). Rapport de la composante de la tension réactive de l'induit, due à la composante du courant d'induit en quadrature, à cette composante du courant, en régime permanent et à la fréquence nominale.  Valeur typique = 1,6. Valeur par défaut : 0.0  - `xQuadTrans`: Réactance transitoire de l'axe en quadrature (X`q) (> =X``q).  Valeur typique = 0.3. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ks`: Facteur de correction de la charge de saturation (Ks) (>= 0).  Utilisé uniquement par le modèle de type J.  Valeur typique = 0. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `modelType`: Type de modèle de machine synchrone utilisé dans les applications de simulation dynamique. Valeur par défaut : Aucun  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotorType`: Type de rotor sur la machine physique. Par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tc`: Constante de temps d'amortissement pour la réactance `Canay`.  Valeur typique = 0. Valeur par défaut : 0  - `tpdo`: Constante de temps transitoire du rotor sur l'axe direct (T`do) (> T``do).  Valeur typique = 5. Valeur par défaut : 0  - `tppdo`: Constante de temps subtransitoire du rotor sur l'axe direct (T``do) (> 0).  Valeur typique = 0,03. Valeur par défaut : 0  - `tppqo`: Constante de temps subtransitoire du rotor sur l'axe en quadrature (T``qo) (> 0). Valeur typique = 0,03. Valeur par défaut : 0  - `tpqo`: Constante de temps transitoire du rotor sur l'axe en quadrature (T`qo) (> T``qo). Valeur typique = 0,5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être SynchronousMachineTimeConstantReactance.  - `xDirectSubtrans`: Réactance subtransitoire à axe direct (non saturée) (X``d) (> Xl).  Valeur typique = 0.2. Valeur par défaut : 0.0  - `xDirectSync`: Réactance synchrone à axe direct (Xd) (>= X`d). Le quotient d'une valeur soutenue de la composante alternative de la tension d'induit qui est produite par le flux total de l'axe direct dû au courant d'induit de l'axe direct et la valeur de la composante alternative de ce courant, la machine fonctionnant à la vitesse nominale. Valeur typique = 1,8. Valeur par défaut : 0,0  - `xDirectTrans`: Réactance transitoire de l'axe direct (non saturé) (X`d) (> =X``d).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `xQuadSubtrans`: Réactance subtransitoire de l'axe en quadrature (X``q) (> Xl).  Valeur typique = 0,2. Valeur par défaut : 0.0  - `xQuadSync`: Réactance synchrone d'axe de quadrature (Xq) (> =X`q). Rapport de la composante de la tension réactive de l'induit, due à la composante du courant d'induit en quadrature, à cette composante du courant, en régime permanent et à la fréquence nominale.  Valeur typique = 1,6. Valeur par défaut : 0.0  - `xQuadTrans`: Réactance transitoire de l'axe en quadrature (X`q) (> =X``q).  Valeur typique = 0.3. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -80,10 +80,10 @@ SynchronousMachineTimeConstantReactance:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -103,7 +103,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -126,7 +127,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +153,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +176,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +202,8 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -225,7 +230,7 @@ SynchronousMachineTimeConstantReactance:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     modelType:    
       description: 'Type of synchronous machine model used in Dynamic simulation applications. Default: None'    
       type: number    
@@ -327,4 +332,4 @@ SynchronousMachineTimeConstantReactance:
 Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un SynchronousMachineTimeConstantReactance au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une SynchronousMachineTimeConstantReactance au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
