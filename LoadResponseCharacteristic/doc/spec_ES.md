@@ -6,7 +6,7 @@ Entidad: LoadResponseCharacteristic
 
 ## Lista de propiedades  
 
-- `EnergyConsumer`: El conjunto de cargas que tienen las características de respuesta. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `exponentModel`: Indica que se debe utilizar el modelo de dependencia de tensión exponencial.   Si es falso, se utilizará el modelo de coeficiente. El modelo de dependencia de tensión exponencial está formado por los atributos - pExponente de tensión - qExponente de tensión. El modelo de coeficiente consta de los atributos - pConstantImpedance - pConstantCurrent - pConstantPower - qConstantImpedance - qConstantCurrent - qConstantPower. La suma de pConstantImpedance, pConstantCurrent y pConstantPower será igual a 1. La suma de qConstantImpedance, qConstantCurrent y qConstantPower debe ser igual a 1. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pConstantCurrent`: Porción de la carga de potencia activa modelada como corriente constante. Por defecto: 0,0  - `pConstantImpedance`: Porción de la carga de potencia activa modelada como impedancia constante. Por defecto: 0,0  - `pConstantPower`: Porción de la carga de potencia activa modelada como potencia constante. Por defecto: 0,0  - `pFrequencyExponent`: Exponente de la frecuencia por unidad que afecta a la potencia activa. Por defecto: 0,0  - `pVoltageExponent`: Exponente de la tensión por unidad que afecta a la potencia real. Por defecto: 0,0  - `qConstantCurrent`: Porción de la carga de potencia reactiva modelada como corriente constante. Por defecto: 0,0  - `qConstantImpedance`: Porción de la carga de potencia reactiva modelada como impedancia constante. Por defecto: 0,0  - `qConstantPower`: Porción de la carga de potencia reactiva modelada como potencia constante. Por defecto: 0,0  - `qFrequencyExponent`: Exponente de la frecuencia por unidad que afecta a la potencia reactiva. Por defecto: 0,0  - `qVoltageExponent`: Exponente de la tensión por unidad que afecta a la potencia reactiva. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser LoadResponseCharacteristic    
+- `EnergyConsumer`: El conjunto de cargas que tienen las características de respuesta. Por defecto: 'lista'  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `exponentModel`: Indica que se debe utilizar el modelo de dependencia de tensión exponencial.   Si es falso, se utilizará el modelo de coeficiente. El modelo de dependencia de tensión exponencial está formado por los atributos - pExponente de tensión - qExponente de tensión. El modelo de coeficiente consta de los atributos - pConstantImpedance - pConstantCurrent - pConstantPower - qConstantImpedance - qConstantCurrent - qConstantPower. La suma de pConstantImpedance, pConstantCurrent y pConstantPower será igual a 1. La suma de qConstantImpedance, qConstantCurrent y qConstantPower debe ser igual a 1. Por defecto: Falso  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pConstantCurrent`: Porción de la carga de potencia activa modelada como corriente constante. Por defecto: 0,0  - `pConstantImpedance`: Porción de la carga de potencia activa modelada como impedancia constante. Por defecto: 0,0  - `pConstantPower`: Porción de la carga de potencia activa modelada como potencia constante. Por defecto: 0,0  - `pFrequencyExponent`: Exponente de la frecuencia por unidad que afecta a la potencia activa. Por defecto: 0,0  - `pVoltageExponent`: Exponente de la tensión por unidad que afecta a la potencia real. Por defecto: 0,0  - `qConstantCurrent`: Porción de la carga de potencia reactiva modelada como corriente constante. Por defecto: 0,0  - `qConstantImpedance`: Porción de la carga de potencia reactiva modelada como impedancia constante. Por defecto: 0,0  - `qConstantPower`: Porción de la carga de potencia reactiva modelada como potencia constante. Por defecto: 0,0  - `qFrequencyExponent`: Exponente de la frecuencia por unidad que afecta a la potencia reactiva. Por defecto: 0,0  - `qVoltageExponent`: Exponente de la tensión por unidad que afecta a la potencia reactiva. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser LoadResponseCharacteristic    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -85,10 +85,10 @@ LoadResponseCharacteristic:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ LoadResponseCharacteristic:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
