@@ -6,7 +6,7 @@ Entität: ExcAC2A
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hvgate`: Zeigt an, ob das HV-Gate aktiv ist (HVgate). true = Gate wird verwendet false = Gate wird nicht verwendet. Typischer Wert = true. Voreinstellung: Falsch  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (Ka).  Typischer Wert = 400. Voreinstellung: 0,0  - `kb`: Reglerverstärkung der zweiten Stufe (Kb) (>0).  Verstärkung des Erregerfeldstromreglers.  Typischer Wert = 25. Voreinstellung: 0.0  - `kb1`: Reglerverstärkung der zweiten Stufe (Kb1). Es ist die Verstärkung des Erregerfeldstromreglers, die als Alternative zu Kb verwendet wird, um eine Variante des ExcAC2A-Modells darzustellen.  Typischer Wert = 25. Voreinstellung: 0.0  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (Kc).  Typischer Wert = 0,28. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (Kd).  Typischer Wert = 0,35. Voreinstellung: 0,0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (Ke).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf`: Erregungssteuerungssystem Stabilisatorverstärkungen (Kf).  Typischer Wert = 0,03. Voreinstellung: 0.0  - `kh`: Erregerfeldstrom-Rückkopplungsverstärkung (Kh).  Typischer Wert = 1. Voreinstellung: 0.0  - `kl`: Verstärkung des Erregerfeldstrombegrenzers (Kl).  Typischer Wert = 10. Voreinstellung: 0.0  - `kl1`: Koeffizient, um eine unterschiedliche Verwendung des Modells zu ermöglichen (Kl1).  Typischer Wert = 1. Voreinstellung: 0.0  - `ks`: Koeffizient, um eine unterschiedliche Verwendung des Modell-Geschwindigkeitskoeffizienten (Ks) zu ermöglichen.  Typischer Wert = 0. Voreinstellung: 0.0  - `location`:   - `lvgate`: Zeigt an, ob das LV-Gate aktiv ist (LVgate). true = Gate wird verwendet false = Gate wird nicht verwendet. Typischer Wert = true. Voreinstellung: False  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve, Rückseite der Kommutierungsreaktanz (Se[Ve]).  Typischer Wert = 0,037. Voreinstellung: 0.0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve, Rückseite der Kommutierungsreaktanz (Se[Ve]).  Typischer Wert = 0,012. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (Ta).  Typischer Wert = 0,02. Voreinstellung: 0  - `tb`: Zeitkonstante des Spannungsreglers (Tb).  Typischer Wert = 0. Voreinstellung: 0  - `tc`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (Te).  Typischer Wert = 0,6. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators des Erregungssteuerungssystems (Tf).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcAC2A sein  - `vamax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 8. Voreinstellung: 0.0  - `vamin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -8. Voreinstellung: 0,0  - `ve1`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve).  Typischer Wert = 4,4. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve).  Typischer Wert = 3,3. Voreinstellung: 0,0  - `vfemax`: Erregerfeldstrom-Grenzsollwert (Vfemax).  Typischer Wert = 4,4. Voreinstellung: 0,0  - `vlr`: Maximaler Erregerfeldstrom (Vlr).  Typischer Wert = 4,4. Voreinstellung: 0,0  - `vrmax`: Maximale Spannungsreglerausgänge (Vrmax).  Typischer Wert = 105. Voreinstellung: 0,0  - `vrmin`: Minimale Spannungsreglerausgänge (Vrmin).  Typischer Wert = -95. Voreinstellung: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hvgate`: Gibt an, ob das HV-Gate aktiv ist (HVgate). true = Gate wird verwendet false = Gate wird nicht verwendet. Typischer Wert = true. Voreinstellung: Falsch  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (Ka).  Typischer Wert = 400. Voreinstellung: 0,0  - `kb`: Reglerverstärkung der zweiten Stufe (Kb) (>0).  Verstärkung des Erregerfeldstromreglers.  Typischer Wert = 25. Voreinstellung: 0.0  - `kb1`: Reglerverstärkung der zweiten Stufe (Kb1). Es ist die Verstärkung des Erregerfeldstromreglers, die als Alternative zu Kb verwendet wird, um eine Variante des ExcAC2A-Modells darzustellen.  Typischer Wert = 25. Voreinstellung: 0.0  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (Kc).  Typischer Wert = 0,28. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (Kd).  Typischer Wert = 0,35. Voreinstellung: 0,0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (Ke).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf`: Erregungssteuerungssystem Stabilisatorverstärkungen (Kf).  Typischer Wert = 0,03. Voreinstellung: 0.0  - `kh`: Erregerfeldstrom-Rückkopplungsverstärkung (Kh).  Typischer Wert = 1. Voreinstellung: 0.0  - `kl`: Verstärkung des Erregerfeldstrombegrenzers (Kl).  Typischer Wert = 10. Voreinstellung: 0.0  - `kl1`: Koeffizient, um eine unterschiedliche Verwendung des Modells zu ermöglichen (Kl1).  Typischer Wert = 1. Voreinstellung: 0.0  - `ks`: Koeffizient, um eine unterschiedliche Verwendung des Modell-Geschwindigkeitskoeffizienten (Ks) zu ermöglichen.  Typischer Wert = 0. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `lvgate`: Gibt an, ob das LV-Gate aktiv ist (LVgate). true = Gate wird verwendet false = Gate wird nicht verwendet. Typischer Wert = true. Voreinstellung: False  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve, Rückseite der Kommutierungsreaktanz (Se[Ve]).  Typischer Wert = 0,037. Voreinstellung: 0.0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve, Rückseite der Kommutierungsreaktanz (Se[Ve]).  Typischer Wert = 0,012. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (Ta).  Typischer Wert = 0,02. Voreinstellung: 0  - `tb`: Zeitkonstante des Spannungsreglers (Tb).  Typischer Wert = 0. Voreinstellung: 0  - `tc`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (Te).  Typischer Wert = 0,6. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators des Erregungssteuerungssystems (Tf).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcAC2A sein  - `vamax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 8. Voreinstellung: 0.0  - `vamin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -8. Voreinstellung: 0,0  - `ve1`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve).  Typischer Wert = 4,4. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve).  Typischer Wert = 3,3. Voreinstellung: 0,0  - `vfemax`: Erregerfeldstrom-Grenzsollwert (Vfemax).  Typischer Wert = 4,4. Voreinstellung: 0,0  - `vlr`: Maximaler Erregerfeldstrom (Vlr).  Typischer Wert = 4,4. Voreinstellung: 0,0  - `vrmax`: Maximale Spannungsreglerausgänge (Vrmax).  Typischer Wert = 105. Voreinstellung: 0,0  - `vrmin`: Minimale Spannungsreglerausgänge (Vrmin).  Typischer Wert = -95. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -135,10 +135,10 @@ ExcAC2A:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ ExcAC2A:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ ExcAC2A:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ ExcAC2A:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ ExcAC2A:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ ExcAC2A:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ ExcAC2A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     lvgate:    
       description: 'Indicates if LV gate is active (LVgate). true = gate is used false = gate is not used. Typical Value = true. Default: False'    
       type: number    
