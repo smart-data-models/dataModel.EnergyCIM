@@ -6,7 +6,7 @@ Entité : DiagramObject
 
 ## Liste des propriétés  
 
-- `Diagram`: Un objet de diagramme fait partie d'un diagramme. Par défaut : Aucun  - `DiagramObjectPoints`: Un objet de diagramme peut avoir 0 ou plusieurs points pour refléter sa position de disposition, son acheminement (pour les polylignes) ou sa limite (pour les polygones). Valeur par défaut : "list".  - `DiagramObjectStyle`: Un objet diagramme a un style associé qui fournit une référence pour le style utilisé dans le système d'origine. Par défaut : Aucun  - `IdentifiedObject`: Les objets de diagramme qui sont associés à l'objet de domaine. Valeur par défaut : Aucun  - `VisibilityLayers`: Un objet de diagramme peut faire partie de plusieurs couches de visibilité. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `drawingOrder`: L'ordre de dessin de cet élément. Plus le nombre est élevé, plus l'élément est dessiné tard dans la séquence. Ceci est utilisé pour s'assurer que les éléments qui se chevauchent sont rendus dans le bon ordre. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `isPolygon`: Définit si les points des objets du diagramme définissent ou non les limites d'un polygone ou le routage d'une polyligne. Si cette valeur est vraie, l'application réceptrice doit considérer que le premier et le dernier point sont connectés. Valeur par défaut : False  - `location`:   - `name`: Le nom de cet élément.  - `offsetX`: Le décalage dans la direction X. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un point unique spécifie le centre de l'icône).  Le décalage est exprimé en unités, 0 indiquant qu'il n'y a pas de décalage par rapport au centre horizontal de l'icône.  -0,5 indique qu'il y a un décalage de 50% vers la gauche et 0,5 indique un décalage de 50% vers la droite. Valeur par défaut : 0.0  - `offsetY`: Le décalage dans la direction Y. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un point unique spécifie le centre de l'icône).  Le décalage est exprimé en unités, 0 indiquant qu'il n'y a pas de décalage par rapport au centre vertical de l'icône.  La direction du décalage dépend de l'orientation du diagramme, avec -0,5 et 0,5 indiquant un décalage de +/- 50% sur l'axe vertical. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotation`: Définit l'angle de rotation de l'objet diagramme.  Le degré zéro est dirigé vers le haut du diagramme.  La rotation se fait dans le sens des aiguilles d'une montre. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit s'agir de DiagramObject    
+- `Diagram`: Un objet de diagramme fait partie d'un diagramme. Par défaut : Aucun  - `DiagramObjectPoints`: Un objet de diagramme peut avoir 0 ou plusieurs points pour refléter sa position de disposition, son acheminement (pour les polylignes) ou sa limite (pour les polygones). Valeur par défaut : "list".  - `DiagramObjectStyle`: Un objet diagramme a un style associé qui fournit une référence pour le style utilisé dans le système d'origine. Par défaut : Aucun  - `IdentifiedObject`: Les objets de diagramme qui sont associés à l'objet de domaine. Valeur par défaut : Aucun  - `VisibilityLayers`: Un objet de diagramme peut faire partie de plusieurs couches de visibilité. Valeur par défaut : 'list'.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `drawingOrder`: L'ordre de dessin de cet élément. Plus le nombre est élevé, plus l'élément est dessiné tard dans la séquence. Ceci est utilisé pour s'assurer que les éléments qui se chevauchent sont rendus dans le bon ordre. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `isPolygon`: Définit si les points des objets du diagramme définissent ou non les limites d'un polygone ou le routage d'une polyligne. Si cette valeur est vraie, l'application réceptrice doit considérer que le premier et le dernier point sont connectés. Valeur par défaut : False  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `offsetX`: Le décalage dans la direction X. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un point unique spécifie le centre de l'icône).  Le décalage est exprimé en unités, 0 indiquant qu'il n'y a pas de décalage par rapport au centre horizontal de l'icône.  -0,5 indique qu'il y a un décalage de 50% vers la gauche et 0,5 indique un décalage de 50% vers la droite. Valeur par défaut : 0.0  - `offsetY`: Le décalage dans la direction Y. Il est utilisé pour définir le décalage par rapport au centre pour le rendu d'une icône (par défaut, un point unique spécifie le centre de l'icône).  Le décalage est exprimé en unités, 0 indiquant qu'il n'y a pas de décalage par rapport au centre vertical de l'icône.  La direction du décalage dépend de l'orientation du diagramme, avec -0,5 et 0,5 indiquant un décalage de +/- 50% sur l'axe vertical. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotation`: Définit l'angle de rotation de l'objet diagramme.  Le degré zéro est dirigé vers le haut du diagramme.  La rotation se fait dans le sens des aiguilles d'une montre. Valeur par défaut : 0,0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit s'agir de DiagramObject    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -110,10 +110,10 @@ DiagramObject:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
