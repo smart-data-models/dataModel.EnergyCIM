@@ -6,7 +6,7 @@ Entité : PssSH
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `k`: Gain principal (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `k0`: Gain 0 (K0).  Valeur typique = 0.012. Valeur par défaut : 0.0  - `k1`: Gain 1 (K1).  Valeur typique = 0.488. Valeur par défaut : 0.0  - `k2`: Gain 2 (K2).  Valeur typique = 0.064. Valeur par défaut : 0.0  - `k3`: Gain 3 (K3).  Valeur typique = 0.224. Valeur par défaut : 0.0  - `k4`: Gain 4 (K4).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps 1 (T1).  Valeur typique = 0.076. Valeur par défaut : 0  - `t2`: Constante de temps 2 (T2).  Valeur typique = 0.086. Valeur par défaut : 0  - `t3`: Constante de temps 3 (T3).   Valeur typique = 1.068. Valeur par défaut : 0  - `t4`: Constante de temps 4 (T4).  Valeur typique = 1.913. Valeur par défaut : 0  - `td`: Constante de temps d'entrée (Td).  Valeur typique = 10. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être PssSH  - `vsmax`: Limite maximale de la sortie (Vsmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vsmin`: Limite minimale de sortie (Vsmin).  Valeur typique = -0.1. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `k`: Gain principal (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `k0`: Gain 0 (K0).  Valeur typique = 0.012. Valeur par défaut : 0.0  - `k1`: Gain 1 (K1).  Valeur typique = 0.488. Valeur par défaut : 0.0  - `k2`: Gain 2 (K2).  Valeur typique = 0.064. Valeur par défaut : 0.0  - `k3`: Gain 3 (K3).  Valeur typique = 0.224. Valeur par défaut : 0.0  - `k4`: Gain 4 (K4).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps 1 (T1).  Valeur typique = 0.076. Valeur par défaut : 0  - `t2`: Constante de temps 2 (T2).  Valeur typique = 0.086. Valeur par défaut : 0  - `t3`: Constante de temps 3 (T3).   Valeur typique = 1.068. Valeur par défaut : 0  - `t4`: Constante de temps 4 (T4).  Valeur typique = 1.913. Valeur par défaut : 0  - `td`: Constante de temps d'entrée (Td).  Valeur typique = 10. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être PssSH  - `vsmax`: Limite maximale de la sortie (Vsmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vsmin`: Limite minimale de sortie (Vsmin).  Valeur typique = -0.1. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -105,10 +105,10 @@ PssSH:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ PssSH:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ PssSH:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ PssSH:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ PssSH:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ PssSH:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ PssSH:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
