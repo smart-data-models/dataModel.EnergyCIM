@@ -2,11 +2,11 @@ Entität: ExcIEEEDC4B
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEDC4B/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Die Klasse repräsentiert das Modell IEEE Std 421.5-2005 Typ DC4B. Diese Erregersysteme verwenden einen feldgesteuerten Gleichstromkommutator-Erreger mit einem kontinuierlich arbeitenden Spannungsregler, der über den Generator oder den Hilfsbus versorgt wird.  Referenz: IEEE Standard 421.5-2005 Abschnitt 5.4.**  
+Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Die Klasse repräsentiert das Modell IEEE Std 421.5-2005 Typ DC4B. Diese Erregersysteme verwenden einen feldgesteuerten Gleichstromkommutator-Erreger mit einem kontinuierlich arbeitenden Spannungsregler, der vom Generator oder vom Hilfsbus versorgt wird.  Referenz: IEEE Standard 421.5-2005 Abschnitt 5.4.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `efd1`: Erregerspannung, bei der die Erregersättigung definiert ist (E).  Typischer Wert = 1,75. Voreinstellung: 0.0  - `efd2`: Erregerspannung, bei der die Erregersättigung definiert ist (E).  Typischer Wert = 2,33. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kd`: Verstärkung der Reglerableitung (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `ki`: Integralverstärkung des Reglers (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `kp`: Proportionalverstärkung des Reglers (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `oelin`: OEL-Eingang (OELin). true = GW-Tor false = vom Fehlersignal subtrahieren. Typischer Wert = true. Voreinstellung: Falsch  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seefd1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, E (S[E]).  Typischer Wert = 0,08. Voreinstellung: 0.0  - `seefd2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, E (S[E]).  Typischer Wert = 0,27. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0,2. Voreinstellung: 0  - `td`: Zeitkonstante des Reglervorhaltefilters (T).  Typischer Wert = 0,01. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (T).  Typischer Wert = 0,8. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators der Erregungssteuerung (T).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcIEEEDC4B sein  - `uelin`: UEL-Eingang (UELin). true = HV-Tor false = zum Fehlersignal addieren. Typischer Wert = true. Voreinstellung: Falsch  - `vemin`: Minimale Erregerspannung am Ausgang (V).  Typischer Wert = 0. Voreinstellung: 0.0  - `vrmax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 2,7. Voreinstellung: 0,0  - `vrmin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -0,9. Voreinstellung: 0,0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `efd1`: Erregerspannung, bei der die Erregersättigung definiert ist (E).  Typischer Wert = 1,75. Voreinstellung: 0.0  - `efd2`: Erregerspannung, bei der die Erregersättigung definiert ist (E).  Typischer Wert = 2,33. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kd`: Verstärkung der Reglerableitung (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf`: Verstärkung des Stabilisators der Erregungssteuerung (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `ki`: Integralverstärkung des Reglers (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `kp`: Proportionalverstärkung des Reglers (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `oelin`: OEL-Eingang (OELin). true = GW-Tor false = vom Fehlersignal subtrahieren. Typischer Wert = true. Voreinstellung: Falsch  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seefd1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, E (S[E]).  Typischer Wert = 0,08. Voreinstellung: 0.0  - `seefd2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, E (S[E]).  Typischer Wert = 0,27. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0,2. Voreinstellung: 0  - `td`: Zeitkonstante des Reglervorhaltefilters (T).  Typischer Wert = 0,01. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (T).  Typischer Wert = 0,8. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators der Erregungssteuerung (T).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcIEEEDC4B sein  - `uelin`: UEL-Eingang (UELin). true = HV-Tor false = zum Fehlersignal addieren. Typischer Wert = true. Voreinstellung: Falsch  - `vemin`: Minimale Erregerspannung am Ausgang (V).  Typischer Wert = 0. Voreinstellung: 0.0  - `vrmax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 2,7. Voreinstellung: 0,0  - `vrmin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -0,9. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -115,10 +115,10 @@ ExcIEEEDC4B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ ExcIEEEDC4B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
