@@ -6,7 +6,7 @@ Entité : ExcST6B
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ilr`: Référence de la limite de courant de sortie de l'excitateur (Ilr).  Valeur typique = 4.164. Valeur par défaut : 0.0  - `k1`: Sélecteur (K1). Vrai = le retour provient de l'Ifd Faux = le retour ne provient pas de l'Ifd. Valeur typique = true. Valeur par défaut : Faux  - `kcl`: Réglage de la limite du courant de sortie de l'excitateur (Kcl).  Valeur typique = 1.0577. Valeur par défaut : 0.0  - `kff`: Constante du gain de pré-contrôle du régulateur de champ en boucle interne (Kff).  Valeur typique = 1. Valeur par défaut : 0.0  - `kg`: Constante du gain de rétroaction du régulateur de champ en boucle interne (Kg).  Valeur typique = 1. Valeur par défaut : 0.0  - `kia`: Gain intégral du régulateur de tension (Kia).  Valeur typique = 45.094. Valeur par défaut : 0.0  - `klr`: Réglage de la limite du courant de sortie de l'excitateur (Kcl).  Valeur typique = 17.33. Valeur par défaut : 0.0  - `km`: Constante de gain avant du régulateur de champ en boucle interne (Km).  Valeur typique = 1. Valeur par défaut : 0.0  - `kpa`: Gain proportionnel du régulateur de tension (Kpa).  Valeur typique = 18.038. Valeur par défaut : 0.0  - `kvd`: Gain dérivé du régulateur de tension (Kvd).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `oelin`: Sélecteur d'entrée OEL (OELin). Valeur typique = noOELinput. Valeur par défaut : Aucun  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tg`: Constante de temps de rétroaction du régulateur de tension de champ en boucle interne (Tg).  Valeur typique = 0,02. Valeur par défaut : 0  - `ts`: Constante de temps d'amorçage du redresseur (Ts).  Valeur typique = 0. Valeur par défaut : 0  - `tvd`: Gain dérivé du régulateur de tension (Tvd).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcST6B  - `vamax`: Sortie maximale du régulateur de tension (Vamax).  Valeur typique = 4.81. Valeur par défaut : 0.0  - `vamin`: Sortie minimale du régulateur de tension (Vamin).  Valeur typique = -3.85. Valeur par défaut : 0.0  - `vilim`: Sélecteur (Vilim). true = le limiteur Vimin-Vimax est actif false = le limiteur Vimin-Vimax n'est pas actif. Valeur typique = true. Valeur par défaut : False  - `vimax`: Limite maximale de l'entrée du régulateur de tension (Vimax).  Valeur typique = 10. Valeur par défaut : 0.0  - `vimin`: Limite d'entrée minimale du régulateur de tension (Vimin).  Valeur typique = -10. Valeur par défaut : 0.0  - `vmult`: Sélecteur (Vmult). true = multiplie la sortie du régulateur par la tension aux bornes false = ne multiplie pas la sortie du régulateur par la tension aux bornes.  Valeur typique = true. Valeur par défaut : Faux  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 4.81. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = -3.85. Valeur par défaut : 0.0  - `xc`: Réactance de la source d'excitation (Xc).  Valeur typique = 0.05. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ilr`: Référence de la limite de courant de sortie de l'excitateur (Ilr).  Valeur typique = 4.164. Valeur par défaut : 0.0  - `k1`: Sélecteur (K1). Vrai = le retour provient de l'Ifd Faux = le retour ne provient pas de l'Ifd. Valeur typique = true. Valeur par défaut : Faux  - `kcl`: Réglage de la limite du courant de sortie de l'excitateur (Kcl).  Valeur typique = 1.0577. Valeur par défaut : 0.0  - `kff`: Constante du gain de pré-contrôle du régulateur de champ en boucle interne (Kff).  Valeur typique = 1. Valeur par défaut : 0.0  - `kg`: Constante du gain de rétroaction du régulateur de champ en boucle interne (Kg).  Valeur typique = 1. Valeur par défaut : 0.0  - `kia`: Gain intégral du régulateur de tension (Kia).  Valeur typique = 45.094. Valeur par défaut : 0.0  - `klr`: Réglage de la limite du courant de sortie de l'excitateur (Kcl).  Valeur typique = 17.33. Valeur par défaut : 0.0  - `km`: Constante de gain avant du régulateur de champ en boucle interne (Km).  Valeur typique = 1. Valeur par défaut : 0.0  - `kpa`: Gain proportionnel du régulateur de tension (Kpa).  Valeur typique = 18.038. Valeur par défaut : 0.0  - `kvd`: Gain dérivé du régulateur de tension (Kvd).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `oelin`: Sélecteur d'entrée OEL (OELin). Valeur typique = noOELinput. Valeur par défaut : Aucun  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tg`: Constante de temps de rétroaction du régulateur de tension de champ en boucle interne (Tg).  Valeur typique = 0,02. Valeur par défaut : 0  - `ts`: Constante de temps d'amorçage du redresseur (Ts).  Valeur typique = 0. Valeur par défaut : 0  - `tvd`: Gain dérivé du régulateur de tension (Tvd).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcST6B  - `vamax`: Sortie maximale du régulateur de tension (Vamax).  Valeur typique = 4.81. Valeur par défaut : 0.0  - `vamin`: Sortie minimale du régulateur de tension (Vamin).  Valeur typique = -3.85. Valeur par défaut : 0.0  - `vilim`: Sélecteur (Vilim). true = le limiteur Vimin-Vimax est actif false = le limiteur Vimin-Vimax n'est pas actif. Valeur typique = true. Valeur par défaut : False  - `vimax`: Limite maximale de l'entrée du régulateur de tension (Vimax).  Valeur typique = 10. Valeur par défaut : 0.0  - `vimin`: Limite d'entrée minimale du régulateur de tension (Vimin).  Valeur typique = -10. Valeur par défaut : 0.0  - `vmult`: Sélecteur (Vmult). true = multiplie la sortie du régulateur par la tension aux bornes false = ne multiplie pas la sortie du régulateur par la tension aux bornes.  Valeur typique = true. Valeur par défaut : Faux  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 4.81. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = -3.85. Valeur par défaut : 0.0  - `xc`: Réactance de la source d'excitation (Xc).  Valeur typique = 0.05. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -125,10 +125,10 @@ ExcST6B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ ExcST6B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
