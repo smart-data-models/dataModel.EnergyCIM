@@ -6,7 +6,7 @@ Entity: ExcST3A
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `efdmax`: Maximum AVR output (Efdmax).  Typical Value = 6.9. Default: 0.0  - `id`: Unique identifier of the entity  - `kc`: Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 1.1. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1. Default: 0.0  - `ki`: Potential circuit gain coefficient (Ki).  Typical Value = 4.83. Default: 0.0  - `kj`: AVR gain (Kj).  Typical Value = 200. Default: 0.0  - `km`: Forward gain constant of the inner loop field regulator (Km).  Typical Value = 7.04. Default: 0.0  - `kp`: Potential source gain (Kp) (>0).  Typical Value = 4.37. Default: 0.0  - `ks`: Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0  - `ks1`: Coefficient to allow different usage of the model-speed coefficient (Ks1).  Typical Value = 0. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tb`: Voltage regulator time constant (Tb).  Typical Value = 6.67. Default: 0  - `tc`: Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0  - `thetap`: Potential circuit phase angle (thetap).  Typical Value = 20. Default: 0.0  - `tm`: Forward time constant of inner loop field regulator (Tm).  Typical Value = 1. Default: 0  - `type`: NGSI type. It has to be ExcST3A  - `vbmax`: Maximum excitation voltage (Vbmax).  Typical Value = 8.63. Default: 0.0  - `vgmax`: Maximum inner loop feedback voltage (Vgmax).  Typical Value = 6.53. Default: 0.0  - `vimax`: Maximum voltage regulator input limit (Vimax).  Typical Value = 0.2. Default: 0.0  - `vimin`: Minimum voltage regulator input limit (Vimin).  Typical Value = -0.2. Default: 0.0  - `vrmax`: Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0  - `vrmin`: Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0  - `xl`: Reactance associated with potential source (Xl).  Typical Value = 0.09. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `efdmax`: Maximum AVR output (Efdmax).  Typical Value = 6.9. Default: 0.0  - `id`: Unique identifier of the entity  - `kc`: Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 1.1. Default: 0.0  - `kg`: Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1. Default: 0.0  - `ki`: Potential circuit gain coefficient (Ki).  Typical Value = 4.83. Default: 0.0  - `kj`: AVR gain (Kj).  Typical Value = 200. Default: 0.0  - `km`: Forward gain constant of the inner loop field regulator (Km).  Typical Value = 7.04. Default: 0.0  - `kp`: Potential source gain (Kp) (>0).  Typical Value = 4.37. Default: 0.0  - `ks`: Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0  - `ks1`: Coefficient to allow different usage of the model-speed coefficient (Ks1).  Typical Value = 0. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tb`: Voltage regulator time constant (Tb).  Typical Value = 6.67. Default: 0  - `tc`: Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0  - `thetap`: Potential circuit phase angle (thetap).  Typical Value = 20. Default: 0.0  - `tm`: Forward time constant of inner loop field regulator (Tm).  Typical Value = 1. Default: 0  - `type`: NGSI type. It has to be ExcST3A  - `vbmax`: Maximum excitation voltage (Vbmax).  Typical Value = 8.63. Default: 0.0  - `vgmax`: Maximum inner loop feedback voltage (Vgmax).  Typical Value = 6.53. Default: 0.0  - `vimax`: Maximum voltage regulator input limit (Vimax).  Typical Value = 0.2. Default: 0.0  - `vimin`: Minimum voltage regulator input limit (Vimin).  Typical Value = -0.2. Default: 0.0  - `vrmax`: Maximum voltage regulator output (Vrmax).  Typical Value = 1. Default: 0.0  - `vrmin`: Minimum voltage regulator output (Vrmin).  Typical Value = 0. Default: 0.0  - `xl`: Reactance associated with potential source (Xl).  Typical Value = 0.09. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -120,10 +120,10 @@ ExcST3A:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -143,7 +143,8 @@ ExcST3A:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +167,8 @@ ExcST3A:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -191,7 +193,8 @@ ExcST3A:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +216,8 @@ ExcST3A:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -238,7 +242,8 @@ ExcST3A:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -265,7 +270,7 @@ ExcST3A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
