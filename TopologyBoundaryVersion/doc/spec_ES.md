@@ -6,7 +6,7 @@ Entidad: TopologyBoundaryVersion
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `baseUML`: UML base proporcionado por el gestor de modelos CIM. Por defecto: ''  - `baseURI`: URI del perfil utilizado en la cabecera del intercambio de modelos y definido en las normas de la CEI.  Identifica de forma exclusiva el perfil y su versión. Se da sólo a título informativo y para identificar el perfil IEC más cercano en el que se basa este perfil CGMES. Por defecto: ''  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `date`: La fecha de creación del perfil es AAAA-MM-DD, por ejemplo, para el 5 de enero de 2009 es 2009-01-05. Por defecto: ''  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `differenceModelURI`: URI del modelo de diferencia definido por la IEC 61970-552. Por defecto: ''  - `entsoeUML`: UML proporcionado por ENTSO-E. Por defecto: ''  - `entsoeURI`: URI del Perfil definido por ENTSO-E y utilizado en la cabecera del Intercambio de Modelos.  Identifica de forma exclusiva el perfil y su versión. Los dos últimos elementos del URI (http://entsoe.eu/CIM/TopologyBoundary/yy/zzz) indican las versiones mayor y menor, donde  - yy - indica una versión mayor; - zzz - indica una versión menor. Por defecto: ''  - `id`: Identificador único de la entidad  - `location`:   - `modelDescriptionURI`: URI de descripción del modelo definido por la norma IEC 61970-552. Por defecto: ''  - `name`: El nombre de este artículo.  - `namespaceRDF`: Espacio de nombres RDF. Por defecto: ''  - `namespaceUML`: Espacio de nombres UML de la CIM. Por defecto: ''  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortName`: El nombre corto del perfil utilizado en la documentación del perfil. Por defecto: ''  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser TopologyBoundaryVersion    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `baseUML`: UML base proporcionado por el gestor de modelos CIM. Por defecto: ''  - `baseURI`: URI del perfil utilizado en la cabecera del intercambio de modelos y definido en las normas de la CEI.  Identifica de forma exclusiva el perfil y su versión. Se da sólo a título informativo y para identificar el perfil IEC más cercano en el que se basa este perfil CGMES. Por defecto: ''  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `date`: La fecha de creación del perfil es AAAA-MM-DD, por ejemplo, para el 5 de enero de 2009 es 2009-01-05. Por defecto: ''  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `differenceModelURI`: URI del modelo de diferencia definido por la IEC 61970-552. Por defecto: ''  - `entsoeUML`: UML proporcionado por ENTSO-E. Por defecto: ''  - `entsoeURI`: URI del Perfil definido por ENTSO-E y utilizado en la cabecera del Intercambio de Modelos.  Identifica de forma exclusiva el perfil y su versión. Los dos últimos elementos del URI (http://entsoe.eu/CIM/TopologyBoundary/yy/zzz) indican las versiones mayor y menor, donde  - yy - indica una versión mayor; - zzz - indica una versión menor. Por defecto: ''  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `modelDescriptionURI`: URI de descripción del modelo definido por la norma IEC 61970-552. Por defecto: ''  - `name`: El nombre de este artículo.  - `namespaceRDF`: Espacio de nombres RDF. Por defecto: ''  - `namespaceUML`: Espacio de nombres UML de la CIM. Por defecto: ''  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortName`: El nombre corto del perfil utilizado en la documentación del perfil. Por defecto: ''  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser TopologyBoundaryVersion    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -105,10 +105,10 @@ TopologyBoundaryVersion:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ TopologyBoundaryVersion:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ TopologyBoundaryVersion:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ TopologyBoundaryVersion:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ TopologyBoundaryVersion:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ TopologyBoundaryVersion:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ TopologyBoundaryVersion:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     modelDescriptionURI:    
       description: 'Model Description URI defined by IEC 61970-552. Default: '''''    
       type: number    
@@ -304,7 +309,7 @@ TopologyBoundaryVersion:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un TopologyBoundaryVersion en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un TopologyBoundaryVersion en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un TopologyBoundaryVersion en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un TopologyBoundaryVersion en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un TopologyBoundaryVersion en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
