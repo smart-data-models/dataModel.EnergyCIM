@@ -6,7 +6,7 @@ Entität: GovGAST3
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bca`: Sollwert der Beschleunigungsgrenze (Bca).  Einheit = 1/s.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `bp`: Droop (bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dtc`: Abgastemperaturänderung durch Erhöhung des Kraftstoffdurchflusses von 0 auf 1 VE (deltaTc).  Typischer Wert = 390. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Minimaler Kraftstoffdurchfluss (Ka).  Typischer Wert = 0,23. Voreinstellung: 0.0  - `kac`: Rückführung des Kraftstoffsystems (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kca`: Integralverstärkung der Beschleunigungsregelung (Kca). Einheit = 1/s.  Typischer Wert = 100. Voreinstellung: 0.0  - `ksi`: Verstärkung der Strahlungsabschirmung (Ksi).  Typischer Wert = 0,8. Voreinstellung: 0,0  - `ky`: Koeffizient der Übertragungsfunktion des Kraftstoffventil-Stellungsreglers (Ky).  Typischer Wert = 1. Voreinstellung: 0,0  - `location`:   - `mnef`: Maximaler negativer Fehlerwert des Brennstoffflusses (MN).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `mxef`: Maximaler positiver Fehlerwert des Kraftstoffflusses (MX).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `rcmn`: Minimaler Kraftstofffluss (RCMN).  Typischer Wert = -0,1. Voreinstellung: 0,0  - `rcmx`: Maximaler Kraftstoffdurchfluss (RCMX).  Typischer Wert = 1. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tac`: Zeitkonstante der Kraftstoffsteuerung (Tac).  Typischer Wert = 0,1. Voreinstellung: 0  - `tc`: Zeitkonstante (Tc) des Verdichter-Austrittsvolumens.  Typischer Wert = 0,2. Voreinstellung: 0  - `td`: Ableitungsverstärkung des Temperaturreglers (Td).  Typischer Wert = 3,3. Voreinstellung: 0  - `tfen`: Turbinen-Nennabgastemperatur entsprechend Pm=1 PU (Tfen).  Typischer Wert = 540. Voreinstellung: 0,0  - `tg`: Zeitkonstante des Drehzahlreglers (Tg).  Typischer Wert = 0,05. Voreinstellung: 0  - `tsi`: Zeitkonstante des Strahlungsschutzes (Tsi).  Typischer Wert = 15. Voreinstellung: 0  - `tt`: Integrationsrate des Temperaturreglers (Tt).  Typischer Wert = 250. Voreinstellung: 0.0  - `ttc`: Zeitkonstante des Thermoelementes (Ttc).  Typischer Wert = 2,5. Voreinstellung: 0  - `ty`: Zeitkonstante des Kraftstoffventil-Stellungsreglers (Ty).  Typischer Wert = 0,2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovGAST3 sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bca`: Sollwert der Beschleunigungsgrenze (Bca).  Einheit = 1/s.  Typischer Wert = 0,01. Voreinstellung: 0,0  - `bp`: Droop (bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dtc`: Abgastemperaturänderung durch Erhöhung des Kraftstoffdurchflusses von 0 auf 1 VE (deltaTc).  Typischer Wert = 390. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Minimaler Kraftstoffdurchfluss (Ka).  Typischer Wert = 0,23. Voreinstellung: 0.0  - `kac`: Rückführung des Kraftstoffsystems (K).  Typischer Wert = 0. Voreinstellung: 0.0  - `kca`: Integralverstärkung der Beschleunigungsregelung (Kca). Einheit = 1/s.  Typischer Wert = 100. Voreinstellung: 0.0  - `ksi`: Verstärkung der Strahlungsabschirmung (Ksi).  Typischer Wert = 0,8. Voreinstellung: 0,0  - `ky`: Koeffizient der Übertragungsfunktion des Kraftstoffventil-Stellungsreglers (Ky).  Typischer Wert = 1. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mnef`: Maximaler negativer Fehlerwert des Brennstoffflusses (MN).  Typischer Wert = -0,05. Voreinstellung: 0,0  - `mxef`: Maximaler positiver Fehlerwert des Kraftstoffflusses (MX).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `rcmn`: Minimaler Kraftstofffluss (RCMN).  Typischer Wert = -0,1. Voreinstellung: 0,0  - `rcmx`: Maximaler Kraftstoffdurchfluss (RCMX).  Typischer Wert = 1. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tac`: Zeitkonstante der Kraftstoffsteuerung (Tac).  Typischer Wert = 0,1. Voreinstellung: 0  - `tc`: Zeitkonstante (Tc) des Verdichter-Austrittsvolumens.  Typischer Wert = 0,2. Voreinstellung: 0  - `td`: Ableitungsverstärkung des Temperaturreglers (Td).  Typischer Wert = 3,3. Voreinstellung: 0  - `tfen`: Turbinen-Nennabgastemperatur entsprechend Pm=1 PU (Tfen).  Typischer Wert = 540. Voreinstellung: 0,0  - `tg`: Zeitkonstante des Drehzahlreglers (Tg).  Typischer Wert = 0,05. Voreinstellung: 0  - `tsi`: Zeitkonstante des Strahlungsschutzes (Tsi).  Typischer Wert = 15. Voreinstellung: 0  - `tt`: Integrationsrate des Temperaturreglers (Tt).  Typischer Wert = 250. Voreinstellung: 0.0  - `ttc`: Zeitkonstante des Thermoelementes (Ttc).  Typischer Wert = 2,5. Voreinstellung: 0  - `ty`: Zeitkonstante des Kraftstoffventil-Stellungsreglers (Ty).  Typischer Wert = 0,2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovGAST3 sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -115,10 +115,10 @@ GovGAST3:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mnef:    
       description: 'Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0'    
       type: number    
