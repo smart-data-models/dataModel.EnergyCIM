@@ -6,7 +6,7 @@ Entidad: GovSteam1
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0,0  - `description`: Una descripción de este artículo  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `gv1`: Ganancia no lineal punto de posición de la válvula 1 (GV1).  Valor típico = 0. Por defecto: 0.0  - `gv2`: Ganancia no lineal punto de posición de la válvula 2 (GV2).  Valor típico = 0,4. Por defecto: 0,0  - `gv3`: Ganancia no lineal punto de posición de la válvula 3 (GV3).  Valor típico = 0,5. Por defecto: 0,0  - `gv4`: Ganancia no lineal punto de posición de la válvula 4 (GV4).  Valor típico = 0,6. Por defecto: 0,0  - `gv5`: Ganancia no lineal punto de posición de la válvula 5 (GV5).  Valor típico = 1. Por defecto: 0,0  - `gv6`: Ganancia no lineal punto de posición de la válvula 6 (GV6).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `k`: Ganancia del regulador (recíproco del estatismo) (K) (>0).  Valor típico = 25. Por defecto: 0,0  - `k1`: Fracción de potencia en el eje de HP después de la primera pasada de la caldera (K1).  Valor típico = 0,2. Por defecto: 0,0  - `k2`: Fracción de potencia del eje LP después del primer paso de la caldera (K2).  Valor típico = 0. Por defecto: 0.0  - `k3`: Fracción de la potencia del eje HP después del segundo paso de la caldera (K3).  Valor típico = 0,3. Por defecto: 0,0  - `k4`: Fracción de potencia del eje LP después del segundo paso de la caldera (K4).  Valor típico = 0. Por defecto: 0.0  - `k5`: Fracción de la potencia del eje HP después del tercer paso de la caldera (K5).  Valor típico = 0,5. Por defecto: 0,0  - `k6`: Fracción de potencia del eje LP después de la tercera pasada de la caldera (K6).  Valor típico = 0. Por defecto: 0.0  - `k7`: Fracción de potencia en el eje de HP después de la cuarta pasada de la caldera (K7).  Valor típico = 0. Por defecto: 0.0  - `k8`: Fracción de potencia del eje LP después de la cuarta pasada de la caldera (K8).  Valor típico = 0. Por defecto: 0.0  - `location`:   - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv1`: Valor de potencia de ganancia no lineal punto 1 (Pgv1).  Valor típico = 0. Por defecto: 0.0  - `pgv2`: Valor de potencia de ganancia no lineal punto 2 (Pgv2).  Valor típico = 0,75. Por defecto: 0,0  - `pgv3`: Valor de potencia de ganancia no lineal punto 3 (Pgv3).  Valor típico = 0,91. Por defecto: 0,0  - `pgv4`: Valor de potencia de ganancia no lineal punto 4 (Pgv4).  Valor típico = 0,98. Por defecto: 0,0  - `pgv5`: Valor de potencia de ganancia no lineal punto 5 (Pgv5).  Valor típico = 1. Por defecto: 0,0  - `pgv6`: Valor de potencia de ganancia no lineal punto 6 (Pgv6).  Valor típico = 0. Por defecto: 0.0  - `pmax`: Apertura máxima de la válvula (Pmax) (> Pmin).  Valor típico = 1. Por defecto: 0,0  - `pmin`: Apertura mínima de la válvula (Pmin) (>=0).  Valor típico = 0. Por defecto: 0.0  - `sdb1`: Indicador de banda muerta intencional. verdadero = se aplica la banda muerta intencional falso = no se aplica la banda muerta intencional. Valor típico = verdadero. Por defecto: Falso  - `sdb2`: Ubicación de la banda muerta no intencional. verdadero = la banda muerta intencional se aplica antes del punto `A` falso = la banda muerta intencional se aplica después del punto `A`. Valor típico = verdadero. Por defecto: Falso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo de retardo del regulador (T1).  Valor típico = 0. Por defecto: 0  - `t2`: Constante de tiempo de espera del gobernador (T2).  Valor típico = 0. Por defecto: 0  - `t3`: Constante de tiempo del posicionador de la válvula (T3(>0).  Valor típico = 0,1. Por defecto: 0  - `t4`: Constante de tiempo de la tubería de entrada/de la cuba de vapor (T4).  Valor típico = 0,3. Por defecto: 0  - `t5`: Constante de tiempo del segundo paso de la caldera (T5).  Valor típico = 5. Por defecto: 0  - `t6`: Constante de tiempo del tercer paso de la caldera (T6).  Valor típico = 0,5. Por defecto: 0  - `t7`: Constante de tiempo del cuarto paso de la caldera (T7).  Valor típico = 0. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteam1  - `uc`: Velocidad máxima de cierre de la válvula (Uc) (<0).  Unidad = PU/seg.  Valor típico = -10. Por defecto: 0,0  - `uo`: Velocidad máxima de apertura de la válvula (Uo) (>0).  Unidad = PU/seg.  Valor típico = 1. Por defecto: 0,0  - `valve`: Característica de válvula no lineal. verdadero = se utiliza la característica de válvula no lineal falso = no se utiliza la característica de válvula no lineal. Valor típico = verdadero. Por defecto: Falso    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (db1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Banda muerta involuntaria (db2).  Unidad = MW.  Valor típico = 0. Por defecto: 0,0  - `description`: Una descripción de este artículo  - `eps`: Histéresis db intencionada (eps).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `gv1`: Ganancia no lineal punto de posición de la válvula 1 (GV1).  Valor típico = 0. Por defecto: 0.0  - `gv2`: Ganancia no lineal punto de posición de la válvula 2 (GV2).  Valor típico = 0,4. Por defecto: 0,0  - `gv3`: Ganancia no lineal punto de posición de la válvula 3 (GV3).  Valor típico = 0,5. Por defecto: 0,0  - `gv4`: Ganancia no lineal punto de posición de la válvula 4 (GV4).  Valor típico = 0,6. Por defecto: 0,0  - `gv5`: Ganancia no lineal punto de posición de la válvula 5 (GV5).  Valor típico = 1. Por defecto: 0,0  - `gv6`: Ganancia no lineal punto de posición de la válvula 6 (GV6).  Valor típico = 0. Por defecto: 0.0  - `id`: Identificador único de la entidad  - `k`: Ganancia del regulador (recíproco del estatismo) (K) (>0).  Valor típico = 25. Por defecto: 0,0  - `k1`: Fracción de potencia en el eje de HP después de la primera pasada de la caldera (K1).  Valor típico = 0,2. Por defecto: 0,0  - `k2`: Fracción de potencia del eje LP después del primer paso de la caldera (K2).  Valor típico = 0. Por defecto: 0.0  - `k3`: Fracción de la potencia del eje HP después del segundo paso de la caldera (K3).  Valor típico = 0,3. Por defecto: 0,0  - `k4`: Fracción de potencia del eje LP después del segundo paso de la caldera (K4).  Valor típico = 0. Por defecto: 0.0  - `k5`: Fracción de la potencia del eje HP después del tercer paso de la caldera (K5).  Valor típico = 0,5. Por defecto: 0,0  - `k6`: Fracción de potencia del eje LP después de la tercera pasada de la caldera (K6).  Valor típico = 0. Por defecto: 0.0  - `k7`: Fracción de la potencia del eje HP después del cuarto paso de la caldera (K7).  Valor típico = 0. Por defecto: 0.0  - `k8`: Fracción de potencia del eje LP después de la cuarta pasada de la caldera (K8).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base para valores de potencia (MWbase) (>0).  Unidad = MW. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pgv1`: Valor de potencia de ganancia no lineal punto 1 (Pgv1).  Valor típico = 0. Por defecto: 0.0  - `pgv2`: Valor de potencia de ganancia no lineal punto 2 (Pgv2).  Valor típico = 0,75. Por defecto: 0,0  - `pgv3`: Valor de potencia de ganancia no lineal punto 3 (Pgv3).  Valor típico = 0,91. Por defecto: 0,0  - `pgv4`: Valor de potencia de ganancia no lineal punto 4 (Pgv4).  Valor típico = 0,98. Por defecto: 0,0  - `pgv5`: Valor de potencia de ganancia no lineal punto 5 (Pgv5).  Valor típico = 1. Por defecto: 0,0  - `pgv6`: Valor de potencia de ganancia no lineal punto 6 (Pgv6).  Valor típico = 0. Por defecto: 0.0  - `pmax`: Apertura máxima de la válvula (Pmax) (> Pmin).  Valor típico = 1. Por defecto: 0,0  - `pmin`: Apertura mínima de la válvula (Pmin) (>=0).  Valor típico = 0. Por defecto: 0.0  - `sdb1`: Indicador de banda muerta intencional. verdadero = se aplica la banda muerta intencional falso = no se aplica la banda muerta intencional. Valor típico = verdadero. Por defecto: Falso  - `sdb2`: Ubicación de la banda muerta no intencional. verdadero = la banda muerta intencional se aplica antes del punto `A` falso = la banda muerta intencional se aplica después del punto `A`. Valor típico = verdadero. Por defecto: Falso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo de retardo del regulador (T1).  Valor típico = 0. Por defecto: 0  - `t2`: Constante de tiempo de espera del gobernador (T2).  Valor típico = 0. Por defecto: 0  - `t3`: Constante de tiempo del posicionador de la válvula (T3(>0).  Valor típico = 0,1. Por defecto: 0  - `t4`: Constante de tiempo de la tubería de entrada/de la cuba de vapor (T4).  Valor típico = 0,3. Por defecto: 0  - `t5`: Constante de tiempo del segundo paso de la caldera (T5).  Valor típico = 5. Por defecto: 0  - `t6`: Constante de tiempo del tercer paso de la caldera (T6).  Valor típico = 0,5. Por defecto: 0  - `t7`: Constante de tiempo del cuarto paso de la caldera (T7).  Valor típico = 0. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovSteam1  - `uc`: Velocidad máxima de cierre de la válvula (Uc) (<0).  Unidad = PU/seg.  Valor típico = -10. Por defecto: 0,0  - `uo`: Velocidad máxima de apertura de la válvula (Uo) (>0).  Unidad = PU/seg.  Valor típico = 1. Por defecto: 0,0  - `valve`: Característica de válvula no lineal. verdadero = se utiliza la característica de válvula no lineal falso = no se utiliza la característica de válvula no lineal. Valor típico = verdadero. Por defecto: Falso    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -165,10 +165,10 @@ GovSteam1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +188,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +212,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -236,7 +238,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +261,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -283,7 +287,8 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -310,7 +315,7 @@ GovSteam1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
