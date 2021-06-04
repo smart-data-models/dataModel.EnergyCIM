@@ -6,7 +6,7 @@ Entität: ÄquivalentBranch
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `negativeR12`: Gegenläufiger Reihenwiderstand von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0.0  - `negativeR21`: Gegenläufiger Reihenwiderstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0,0  - `negativeX12`: Gegenläufige Serienreaktanz von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `negativeX21`: Gegenläufige Serienreaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet. Verwendung: EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `positiveR12`: Mitlaufender Serienwiderstand von Klemmenfolge 1 zu Klemmenfolge 2 . Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet.  EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch. Voreinstellung: 0,0  - `positiveR21`: Mitlaufender Serienwiderstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0,0  - `positiveX12`: Mitlaufende Serienreaktanz von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `positiveX21`: Mitlaufende Serienreaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `r`: Mitlaufender Serienwiderstand des reduzierten Zweigs. Voreinstellung: 0,0  - `r21`: Widerstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den stationären Leistungsfluss verwendet. Dieses Attribut ist optional und repräsentiert ein unsymmetrisches Netz, wie z. B. einen Phasenschieber außerhalb des Nennwerts. Wenn nur EquivalentBranch.r angegeben wird, dann wird EquivalentBranch.r21 als gleich EquivalentBranch.r angenommen. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss EquivalentBranch sein  - `x`: Mitlaufende Serienreaktanz des reduzierten Zweigs. Voreinstellung: 0,0  - `x21`: Reaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den stationären Leistungsfluss verwendet. Dieses Attribut ist optional und stellt ein unsymmetrisches Netz dar, wie z. B. einen Phasenschieber außerhalb des Nennwerts. Wenn nur EquivalentBranch.x angegeben wird, wird angenommen, dass EquivalentBranch.x21 gleich EquivalentBranch.x ist. Verwendungsregel : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch. Voreinstellung: 0.0  - `zeroR12`: Nullfolge-Serienwiderstand von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0.0  - `zeroR21`: Nullfolge-Serienwiderstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `zeroX12`: Nullfolge-Reihenreaktanz von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `zeroX21`: Nullfolge-Reihenreaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `negativeR12`: Gegenläufiger Reihenwiderstand von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0.0  - `negativeR21`: Gegenläufiger Reihenwiderstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0,0  - `negativeX12`: Gegenläufige Serienreaktanz von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `negativeX21`: Gegenläufige Serienreaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet. Verwendung: EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `positiveR12`: Mitlaufender Serienwiderstand von Klemmenfolge 1 zu Klemmenfolge 2 . Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet.  EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch. Voreinstellung: 0,0  - `positiveR21`: Mitlaufender Serienwiderstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0,0  - `positiveX12`: Mitlaufende Serienreaktanz von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `positiveX21`: Mitlaufende Serienreaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `r`: Mitlaufender Serienwiderstand des reduzierten Zweigs. Voreinstellung: 0,0  - `r21`: Widerstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den stationären Leistungsfluss verwendet. Dieses Attribut ist optional und repräsentiert ein unsymmetrisches Netz, wie z. B. einen Phasenschieber außerhalb des Nennwerts. Wenn nur EquivalentBranch.r angegeben wird, dann wird EquivalentBranch.r21 als gleich EquivalentBranch.r angenommen. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss EquivalentBranch sein  - `x`: Mitlaufende Serienreaktanz des reduzierten Zweigs. Voreinstellung: 0,0  - `x21`: Reaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den stationären Leistungsfluss verwendet. Dieses Attribut ist optional und stellt ein unsymmetrisches Netz dar, wie z. B. einen Phasenschieber außerhalb des Nennwerts. Wenn nur EquivalentBranch.x angegeben wird, wird angenommen, dass EquivalentBranch.x21 gleich EquivalentBranch.x ist. Verwendungsregel : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch. Voreinstellung: 0.0  - `zeroR12`: Nullfolge-Serienwiderstand von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch nach IEC 60909 verwendet ÄquivalentAbzweig ist ein Ergebnis der Netzreduzierung vor dem Datenaustausch Default: 0.0  - `zeroR21`: Nullfolge-Serienwiderstand von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `zeroX12`: Nullfolge-Reihenreaktanz von Klemmenfolge 1 zu Klemmenfolge 2. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0  - `zeroX21`: Nullfolge-Reihenreaktanz von Klemmenfolge 2 zu Klemmenfolge 1. Wird für den Kurzschlussdatenaustausch gemäß IEC 60909 verwendet Verwendung : EquivalentBranch ist ein Ergebnis der Netzreduktion vor dem Datenaustausch Default: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -75,10 +75,10 @@ EquivalentBranch:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -98,7 +98,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -121,7 +122,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +148,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -168,7 +171,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +197,8 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -220,7 +225,7 @@ EquivalentBranch:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
