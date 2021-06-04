@@ -6,7 +6,7 @@ Entität: GovGAST2
 
 ## Liste der Eigenschaften  
 
-- `a`: Ventil-Stellungsregler (A). Voreinstellung: 0,0  - `address`: Die Postanschrift  - `af1`: Abgastemperatur Parameter (Af1).  Einheit = pro Einheit Temperatur.  Basierend auf der Temperatur in Grad C. Voreinstellung: 0.0  - `af2`: Koeffizient gleich 0,5(1-Geschwindigkeit) (Af2). Voreinstellung: 0,0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `b`: Ventil-Stellungsregler (B). Voreinstellung: 0,0  - `bf1`: (Bf1).  Bf1 = E(1-w), wobei E (Geschwindigkeitsempfindlichkeitskoeffizient) 0,55 bis 0,65 x Tr beträgt.  Einheit = pro Temperatureinheit.  Bezogen auf die Temperatur in Grad C. Voreinstellung: 0,0  - `bf2`: Turbinen-Drehmomentkoeffizient K (abhängig vom Heizwert des Brennstoffstroms in der Brennkammer) (Bf2). Voreinstellung: 0,0  - `c`: Ventil-Stellungsregler (C). Voreinstellung: 0,0  - `cf2`: Koeffizient, der den Kraftstofffluss definiert, wenn die Leistung 0 % beträgt (Cf2).  Synchron, aber keine Leistung.  Typischerweise 0,23 x K (23 % Brennstofffluss). Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `ecr`: Zeitverzögerung der Verbrennungsreaktion (Ecr). Voreinstellung: 0  - `etd`: Turbinen- und Abgasverzögerung (Etd). Voreinstellung: 0  - `id`: Eindeutiger Bezeichner der Entität  - `k3`: Verhältnis der Brennstoffanpassung (K3). Voreinstellung: 0,0  - `k4`: Verstärkung des Strahlungsschutzes (K4). Voreinstellung: 0,0  - `k5`: Verstärkung des Strahlungsschutzes (K5). Voreinstellung: 0,0  - `k6`: Minimaler Kraftstoffdurchfluss (K6). Voreinstellung: 0,0  - `kf`: Rückmeldung des Kraftstoffsystems (Kf). Voreinstellung: 0.0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t`: Zeitkonstante der Brennstoffsteuerung (T). Voreinstellung: 0  - `t3`: Zeitkonstante des Strahlungsschutzes (T3). Voreinstellung: 0  - `t4`: Thermoelement-Zeitkonstante (T4). Voreinstellung: 0  - `t5`: Zeitkonstante der Temperaturregelung (T5). Voreinstellung: 0  - `tc`: Temperaturregelung (Tc).  Einheit = [SYMBOL ENTFERNT]F oder [SYMBOL ENTFERNT]C abhängig von den Konstanten Af1 und Bf1. Voreinstellung: 0,0  - `tcd`: Zeitkonstante der Verdichterentladung (Tcd). Voreinstellung: 0  - `tf`: Zeitkonstante des Kraftstoffsystems (Tf). Voreinstellung: 0  - `tmax`: Maximale Turbinengrenze (Tmax). Voreinstellung: 0,0  - `tmin`: Minimale Turbinengrenze (Tmin). Voreinstellung: 0.0  - `tr`: Nenntemperatur (Tr).  Einheit = [SYMBOL ENTFERNT]C abhängig von den Parametern Af1 und Bf1. Voreinstellung: 0,0  - `trate`: Turbinenleistung (Trate).  Einheit = MW. Voreinstellung: 0,0  - `tt`: Integrationsrate des Temperaturreglers (Tt). Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovGAST2 sein  - `w`: Reglerverstärkung (1/Droop) bei Turbinenleistung (W). Voreinstellung: 0.0  - `x`: Reglervorlaufzeitkonstante (X). Voreinstellung: 0  - `y`: Verzögerungszeitkonstante des Reglers (Y) (>0). Voreinstellung: 0  - `z`: Reglermodus (Z). true = Droop false = ISO. Voreinstellung: Falsch    
+- `a`: Ventil-Stellungsregler (A). Voreinstellung: 0.0  - `address`: Die Postanschrift  - `af1`: Abgastemperatur Parameter (Af1).  Einheit = pro Einheit Temperatur.  Basierend auf der Temperatur in Grad C. Voreinstellung: 0.0  - `af2`: Koeffizient gleich 0,5(1-Geschwindigkeit) (Af2). Voreinstellung: 0,0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `b`: Ventil-Stellungsregler (B). Voreinstellung: 0,0  - `bf1`: (Bf1).  Bf1 = E(1-w), wobei E (Geschwindigkeitsempfindlichkeitskoeffizient) 0,55 bis 0,65 x Tr beträgt.  Einheit = pro Temperatureinheit.  Bezogen auf die Temperatur in Grad C. Voreinstellung: 0,0  - `bf2`: Turbinen-Drehmomentkoeffizient K (abhängig vom Heizwert des Brennstoffstroms in der Brennkammer) (Bf2). Voreinstellung: 0,0  - `c`: Ventil-Stellungsregler (C). Voreinstellung: 0,0  - `cf2`: Koeffizient, der den Kraftstofffluss definiert, wenn die Leistung 0 % beträgt (Cf2).  Synchron, aber keine Leistung.  Typischerweise 0,23 x K (23 % Brennstofffluss). Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `ecr`: Zeitverzögerung der Verbrennungsreaktion (Ecr). Voreinstellung: 0  - `etd`: Turbinen- und Abgasverzögerung (Etd). Voreinstellung: 0  - `id`: Eindeutiger Bezeichner der Entität  - `k3`: Verhältnis der Brennstoffanpassung (K3). Voreinstellung: 0,0  - `k4`: Verstärkung des Strahlungsschutzes (K4). Voreinstellung: 0,0  - `k5`: Verstärkung des Strahlungsschutzes (K5). Voreinstellung: 0,0  - `k6`: Minimaler Kraftstoffdurchfluss (K6). Voreinstellung: 0,0  - `kf`: Rückmeldung des Kraftstoffsystems (Kf). Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t`: Zeitkonstante der Brennstoffsteuerung (T). Voreinstellung: 0  - `t3`: Zeitkonstante des Strahlungsschutzes (T3). Voreinstellung: 0  - `t4`: Thermoelement-Zeitkonstante (T4). Voreinstellung: 0  - `t5`: Zeitkonstante der Temperaturregelung (T5). Voreinstellung: 0  - `tc`: Temperaturregelung (Tc).  Einheit = [SYMBOL ENTFERNT]F oder [SYMBOL ENTFERNT]C abhängig von den Konstanten Af1 und Bf1. Voreinstellung: 0,0  - `tcd`: Zeitkonstante der Verdichterentladung (Tcd). Voreinstellung: 0  - `tf`: Zeitkonstante des Kraftstoffsystems (Tf). Voreinstellung: 0  - `tmax`: Maximale Turbinengrenze (Tmax). Voreinstellung: 0,0  - `tmin`: Minimale Turbinengrenze (Tmin). Voreinstellung: 0.0  - `tr`: Nenntemperatur (Tr).  Einheit = [SYMBOL ENTFERNT]C abhängig von den Parametern Af1 und Bf1. Voreinstellung: 0,0  - `trate`: Turbinenleistung (Trate).  Einheit = MW. Voreinstellung: 0,0  - `tt`: Integrationsrate des Temperaturreglers (Tt). Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovGAST2 sein  - `w`: Reglerverstärkung (1/Droop) bei Turbinenleistung (W). Voreinstellung: 0.0  - `x`: Reglervorlaufzeitkonstante (X). Voreinstellung: 0  - `y`: Verzögerungszeitkonstante des Reglers (Y) (>0). Voreinstellung: 0  - `z`: Reglermodus (Z). true = Droop false = ISO. Voreinstellung: Falsch    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -150,10 +150,10 @@ GovGAST2:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +173,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +197,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -221,7 +223,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +246,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +272,8 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -295,7 +300,7 @@ GovGAST2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
