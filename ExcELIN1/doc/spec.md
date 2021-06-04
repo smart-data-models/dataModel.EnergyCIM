@@ -6,7 +6,7 @@ Entity: ExcELIN1
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dpnf`: Controller follow up dead band (Dpnf).  Typical Value = 0. Default: 0.0  - `efmax`: Maximum open circuit excitation voltage (Efmax).  Typical Value = 5. Default: 0.0  - `efmin`: Minimum open circuit excitation voltage (Efmin).  Typical Value = -5. Default: 0.0  - `id`: Unique identifier of the entity  - `ks1`: Stabilizer Gain 1 (Ks1).  Typical Value = 0. Default: 0.0  - `ks2`: Stabilizer Gain 2 (Ks2).  Typical Value = 0. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `smax`: Stabilizer Limit Output (smax).  Typical Value = 0.1. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tfi`: Current transducer time constant (Tfi).  Typical Value = 0. Default: 0  - `tnu`: Controller reset time constant (Tnu).  Typical Value = 2. Default: 0  - `ts1`: Stabilizer Phase Lag Time Constant (Ts1).  Typical Value = 1. Default: 0  - `ts2`: Stabilizer Filter Time Constant (Ts2).  Typical Value = 1. Default: 0  - `tsw`: Stabilizer parameters (Tsw).  Typical Value = 3. Default: 0  - `type`: NGSI type. It has to be ExcELIN1  - `vpi`: Current controller gain (Vpi).  Typical Value = 12.45. Default: 0.0  - `vpnf`: Controller follow up gain (Vpnf).  Typical Value = 2. Default: 0.0  - `vpu`: Voltage controller proportional gain (Vpu).  Typical Value = 34.5. Default: 0.0  - `xe`: Excitation transformer effective reactance (Xe) (>=0).  Xe represents the regulation of the transformer/rectifier unit.  Typical Value = 0.06. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dpnf`: Controller follow up dead band (Dpnf).  Typical Value = 0. Default: 0.0  - `efmax`: Maximum open circuit excitation voltage (Efmax).  Typical Value = 5. Default: 0.0  - `efmin`: Minimum open circuit excitation voltage (Efmin).  Typical Value = -5. Default: 0.0  - `id`: Unique identifier of the entity  - `ks1`: Stabilizer Gain 1 (Ks1).  Typical Value = 0. Default: 0.0  - `ks2`: Stabilizer Gain 2 (Ks2).  Typical Value = 0. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `smax`: Stabilizer Limit Output (smax).  Typical Value = 0.1. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tfi`: Current transducer time constant (Tfi).  Typical Value = 0. Default: 0  - `tnu`: Controller reset time constant (Tnu).  Typical Value = 2. Default: 0  - `ts1`: Stabilizer Phase Lag Time Constant (Ts1).  Typical Value = 1. Default: 0  - `ts2`: Stabilizer Filter Time Constant (Ts2).  Typical Value = 1. Default: 0  - `tsw`: Stabilizer parameters (Tsw).  Typical Value = 3. Default: 0  - `type`: NGSI type. It has to be ExcELIN1  - `vpi`: Current controller gain (Vpi).  Typical Value = 12.45. Default: 0.0  - `vpnf`: Controller follow up gain (Vpnf).  Typical Value = 2. Default: 0.0  - `vpu`: Voltage controller proportional gain (Vpu).  Typical Value = 34.5. Default: 0.0  - `xe`: Excitation transformer effective reactance (Xe) (>=0).  Xe represents the regulation of the transformer/rectifier unit.  Typical Value = 0.06. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -100,10 +100,10 @@ ExcELIN1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -123,7 +123,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +147,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +173,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +196,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +222,8 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -245,7 +250,7 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
