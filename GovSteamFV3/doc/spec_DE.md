@@ -6,7 +6,7 @@ Entität: GovSteamFV3
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Reglerverstärkung, (Kehrwert des P-Bereichs) (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `k1`: Anteil der Turbinenleistung, der nach dem ersten Kesseldurchgang (K1) entwickelt wird.  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k2`: Anteil der Turbinenleistung, der nach dem zweiten Kesseldurchgang (K2) entwickelt wird.  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k3`: Anteil der PS-Turbinenleistung, der nach dem Crossover oder dritten Kesseldurchgang (K3) entwickelt wird. Typischer Wert = 0,6. Voreinstellung: 0,0  - `location`:   - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Maximale Ventilöffnung, VPE der MW-Basis (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Ventilöffnung, PU der MW-Basis (Pmin).  Typischer Wert = 0. Voreinstellung: 0.0  - `prmax`: Max. Druck im Zwischenüberhitzer (Prmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Reglervorlaufzeitkonstante (T1).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Verzögerungszeitkonstante des Reglers (T2).  Typischer Wert = 0. Voreinstellung: 0  - `t3`: Zeitkonstante des Ventilstellungsreglers (T3).  Typischer Wert = 0. Voreinstellung: 0  - `t4`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,2. Voreinstellung: 0  - `t5`: Zeitkonstante des zweiten Kesseldurchgangs (d.h. Nacherhitzer) (T5).  Typischer Wert = 0,5. Voreinstellung: 0  - `t6`: Zeitkonstante der Frequenzweiche oder des dritten Kesseldurchgangs (T6).  Typischer Wert = 10. Voreinstellung: 0  - `ta`: Zeit zum Schließen des Abfangventils (IV) (Ta).  Typischer Wert = 0,97. Voreinstellung: 0  - `tb`: Zeit bis zum Beginn der Wiederöffnung der IV (Tb).  Typischer Wert = 0,98. Voreinstellung: 0  - `tc`: Zeit bis IV vollständig geöffnet ist (Tc).  Typischer Wert = 0,99. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamFV3 sein  - `uc`: Maximale Ventilschließgeschwindigkeit (Uc).  Einheit = PU/sec.  Typischer Wert = -1. Voreinstellung: 0.0  - `uo`: Maximale Ventilöffnungsgeschwindigkeit (Uo).  Einheit = PU/sec.  Typischer Wert = 0,1. Voreinstellung: 0,0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Reglerverstärkung, (Kehrwert des P-Bereichs) (K).  Typischer Wert = 20. Voreinstellung: 0.0  - `k1`: Anteil der Turbinenleistung, der nach dem ersten Kesseldurchgang (K1) entwickelt wird.  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k2`: Anteil der Turbinenleistung, der nach dem zweiten Kesseldurchgang (K2) entwickelt wird.  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k3`: Anteil der PS-Turbinenleistung, der nach dem Crossover oder dritten Kesseldurchgang (K3) entwickelt wird. Typischer Wert = 0,6. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmax`: Maximale Ventilöffnung, VPE der MW-Basis (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Ventilöffnung, PU der MW-Basis (Pmin).  Typischer Wert = 0. Voreinstellung: 0.0  - `prmax`: Max. Druck im Zwischenüberhitzer (Prmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Reglervorlaufzeitkonstante (T1).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Verzögerungszeitkonstante des Reglers (T2).  Typischer Wert = 0. Voreinstellung: 0  - `t3`: Zeitkonstante des Ventilstellungsreglers (T3).  Typischer Wert = 0. Voreinstellung: 0  - `t4`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,2. Voreinstellung: 0  - `t5`: Zeitkonstante des zweiten Kesseldurchgangs (d.h. Nacherhitzer) (T5).  Typischer Wert = 0,5. Voreinstellung: 0  - `t6`: Zeitkonstante der Frequenzweiche oder des dritten Kesseldurchgangs (T6).  Typischer Wert = 10. Voreinstellung: 0  - `ta`: Zeit zum Schließen des Abfangventils (IV) (Ta).  Typischer Wert = 0,97. Voreinstellung: 0  - `tb`: Zeit bis zum Beginn der Wiederöffnung der IV (Tb).  Typischer Wert = 0,98. Voreinstellung: 0  - `tc`: Zeit bis IV vollständig geöffnet ist (Tc).  Typischer Wert = 0,99. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteamFV3 sein  - `uc`: Maximale Ventilschließgeschwindigkeit (Uc).  Einheit = PU/sec.  Typischer Wert = -1. Voreinstellung: 0.0  - `uo`: Maximale Öffnungsgeschwindigkeit des Ventils (Uo).  Einheit = PU/sec.  Typischer Wert = 0,1. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -95,10 +95,10 @@ GovSteamFV3:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ GovSteamFV3:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ GovSteamFV3:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ GovSteamFV3:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ GovSteamFV3:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ GovSteamFV3:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ GovSteamFV3:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
