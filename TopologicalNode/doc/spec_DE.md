@@ -2,11 +2,11 @@ Entität: TopologicalNode
 ========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TopologicalNode/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Für ein detailliertes Unterstationsmodell ist ein topologischer Knoten ein Satz von Verbindungsknoten, die im aktuellen Netzwerkzustand durch eine beliebige Art von geschlossenen Schaltern, einschließlich Jumpern, miteinander verbunden sind. Topologische Knoten ändern sich, wenn sich der aktuelle Netzzustand ändert (d. h. Schalter, Unterbrecher usw. ändern ihren Zustand). Bei einem Planungsmodell werden Schalterzustände nicht zur Bildung topologischer Knoten verwendet. Stattdessen werden sie manuell in einem Modellerstellungswerkzeug erstellt oder gelöscht. Topologische Knoten, die auf diese Weise gepflegt werden, werden auch als "Busse" bezeichnet.**  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Für ein detailliertes Unterstationsmodell ist ein topologischer Knoten ein Satz von Verbindungsknoten, die im aktuellen Netzwerkzustand durch eine beliebige Art von geschlossenen Schaltern, einschließlich Jumpern, miteinander verbunden sind. Topologische Knoten ändern sich, wenn sich der aktuelle Netzzustand ändert (d. h. Schalter, Unterbrecher usw. ändern ihren Zustand). Bei einem Planungsmodell werden Schalterzustände nicht zur Bildung topologischer Knoten verwendet. Stattdessen werden sie manuell in einem Model-Builder-Tool erstellt oder gelöscht. Topologische Knoten, die auf diese Weise gepflegt werden, werden auch als "Busse" bezeichnet.**  
 
 ## Liste der Eigenschaften  
 
-- `AngleRefTopologicalIsland`: Die Insel, für die der Knoten eine Winkelreferenz ist.   Normalerweise gibt es für jede Insel einen Winkelreferenzknoten. Voreinstellung: Keine  - `BaseVoltage`: Die Basisspannung des topologoschen Knotens. Voreinstellung: Keine  - `ConnectivityNodeContainer`: Der Konnektivitätsknoten-Container, zu dem der toplogische Knoten gehört. Voreinstellung: Keine  - `ConnectivityNodes`: Der topologische Knoten, dem dieser Verbindungsknoten zugeordnet ist.  Kann vom aktuellen Zustand der Switches im Netzwerk abhängen. Voreinstellung: 'list'  - `ReportingGroup`: Die topologischen Knoten, die zu der Meldegruppe gehören. Voreinstellung: Keine  - `SvInjection`: Der topologische Knoten, der mit der Zustandsvariablen der Fließinjektion verbunden ist. Voreinstellung: Keine  - `SvVoltage`: Der topologische Knoten, der dem Spannungszustand zugeordnet ist. Voreinstellung: Keine  - `Terminal`: Der topologische Knoten, der mit der Klemme verbunden ist.   Dies kann als Alternative zum Konnektivitätsknoten Pfad zu topologischem Knoten verwendet werden, wodurch die Modellierung von Konnektivitätsknoten in einigen Fällen überflüssig wird.   Beachten Sie, dass, wenn Konnektivitätsknoten im Modell vorhanden sind, diese Assoziation wahrscheinlich nicht als Eingabespezifikation verwendet werden würde. Voreinstellung: 'list'  - `TopologicalIsland`: Ein topologischer Knoten gehört zu einer topologischen Insel. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `boundaryPoint`: Gibt an, ob ein Knoten ein BoundaryPoint ist. Bei boundaryPoint=true stellt der ConnectivityNode oder der TopologicalNode einen BoundaryPoint dar. Voreinstellung: False  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fromEndIsoCode`: Das Attribut dient zum Austausch des ISO-Codes der Region, zu der die "Von"-Seite des Begrenzungspunktes gehört oder mit der er verbunden ist. Der ISO-Code ist ein zweistelliger Ländercode gemäß ISO 3166 (). Die Länge des Strings beträgt maximal 2 Zeichen. Das Attribut ist ein erforderliches Attribut für das Boundary Model Authority Set, wobei dieses Attribut nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `fromEndName`: Das Attribut wird für den Austausch eines menschenlesbaren Namens mit einer Länge der Zeichenkette von maximal 32 Zeichen verwendet. Das Attribut deckt zwei Fälle ab:  Das Attribut wird für das Boundary Model Authority Set benötigt, wo es nur für den TopologicalNode im Profil Boundary Topology und ConnectivityNode im Profil Boundary Equipment verwendet wird. Voreinstellung: ''  - `fromEndNameTso`: Das Attribut dient zum Austausch des Namens des TSO, zu dem die "Von"-Seite des Begrenzungspunktes gehört oder mit dem er verbunden ist. Die Länge des Strings beträgt maximal 32 Zeichen. Das Attribut ist für das Boundary Model Authority Set erforderlich, wo es nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `toEndIsoCode`: Das Attribut dient zum Austausch des ISO-Codes der Region, zu der die "To"-Seite des Begrenzungspunktes gehört oder mit der er verbunden ist. Der ISO-Code ist ein zweistelliger Ländercode gemäß ISO 3166 (). Die Länge des Strings beträgt maximal 2 Zeichen. Das Attribut ist ein erforderliches Attribut für das Boundary Model Authority Set, wobei dieses Attribut nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `toEndName`: Das Attribut wird für den Austausch eines menschenlesbaren Namens mit einer Länge der Zeichenkette von maximal 32 Zeichen verwendet. Das Attribut deckt zwei Fälle ab:  Das Attribut wird für das Boundary Model Authority Set benötigt, wo es nur für den TopologicalNode im Profil Boundary Topology und ConnectivityNode im Profil Boundary Equipment verwendet wird. Voreinstellung: ''  - `toEndNameTso`: Das Attribut dient zum Austausch des Namens des TSO, zu dem die "To"-Seite des Boundary-Punktes gehört oder mit dem er verbunden ist. Die Länge des Strings beträgt maximal 32 Zeichen. Das Attribut ist für das Boundary Model Authority Set erforderlich, wo es nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `type`: NGSI-Typ. Es muss TopologicalNode sein    
+- `AngleRefTopologicalIsland`: Die Insel, für die der Knoten eine Winkelreferenz ist.   Normalerweise gibt es für jede Insel einen Winkelreferenzknoten. Voreinstellung: Keine  - `BaseVoltage`: Die Basisspannung des topologoschen Knotens. Voreinstellung: Keine  - `ConnectivityNodeContainer`: Der Konnektivitätsknoten-Container, zu dem der toplogische Knoten gehört. Voreinstellung: Keine  - `ConnectivityNodes`: Der topologische Knoten, dem dieser Verbindungsknoten zugeordnet ist.  Kann vom aktuellen Zustand der Switches im Netzwerk abhängen. Voreinstellung: 'list'  - `ReportingGroup`: Die topologischen Knoten, die zu der Meldegruppe gehören. Voreinstellung: Keine  - `SvInjection`: Der topologische Knoten, der mit der Zustandsvariablen der Fließinjektion verbunden ist. Voreinstellung: Keine  - `SvVoltage`: Der topologische Knoten, der dem Spannungszustand zugeordnet ist. Voreinstellung: Keine  - `Terminal`: Der topologische Knoten, der mit der Klemme verbunden ist.   Dies kann als Alternative zum Konnektivitätsknoten Pfad zu topologischem Knoten verwendet werden, wodurch die Modellierung von Konnektivitätsknoten in einigen Fällen überflüssig wird.   Beachten Sie, dass, wenn Konnektivitätsknoten im Modell vorhanden sind, diese Assoziation wahrscheinlich nicht als Eingabespezifikation verwendet werden würde. Voreinstellung: 'list'  - `TopologicalIsland`: Ein topologischer Knoten gehört zu einer topologischen Insel. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `boundaryPoint`: Gibt an, ob ein Knoten ein BoundaryPoint ist. Bei boundaryPoint=true stellt der ConnectivityNode oder der TopologicalNode einen BoundaryPoint dar. Voreinstellung: False  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fromEndIsoCode`: Das Attribut dient zum Austausch des ISO-Codes der Region, zu der die "Von"-Seite des Begrenzungspunktes gehört oder mit der er verbunden ist. Der ISO-Code ist ein zweistelliger Ländercode gemäß ISO 3166 (). Die Länge des Strings beträgt maximal 2 Zeichen. Das Attribut ist ein erforderliches Attribut für das Boundary Model Authority Set, wobei dieses Attribut nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `fromEndName`: Das Attribut wird für den Austausch eines menschenlesbaren Namens mit einer Länge der Zeichenkette von maximal 32 Zeichen verwendet. Das Attribut deckt zwei Fälle ab:  Das Attribut wird für das Boundary Model Authority Set benötigt, wo es nur für den TopologicalNode im Profil Boundary Topology und ConnectivityNode im Profil Boundary Equipment verwendet wird. Voreinstellung: ''  - `fromEndNameTso`: Das Attribut dient zum Austausch des Namens des TSO, zu dem die "Von"-Seite des Begrenzungspunktes gehört oder mit dem er verbunden ist. Die Länge des Strings beträgt maximal 32 Zeichen. Das Attribut ist für das Boundary Model Authority Set erforderlich, wo es nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `toEndIsoCode`: Das Attribut dient zum Austausch des ISO-Codes der Region, zu der die "To"-Seite des Begrenzungspunktes gehört oder mit der er verbunden ist. Der ISO-Code ist ein zweistelliger Ländercode gemäß ISO 3166 (). Die Länge des Strings beträgt maximal 2 Zeichen. Das Attribut ist ein erforderliches Attribut für das Boundary Model Authority Set, wobei dieses Attribut nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `toEndName`: Das Attribut wird für den Austausch eines menschenlesbaren Namens mit einer Länge der Zeichenkette von maximal 32 Zeichen verwendet. Das Attribut deckt zwei Fälle ab:  Das Attribut wird für das Boundary Model Authority Set benötigt, wo es nur für den TopologicalNode im Profil Boundary Topology und ConnectivityNode im Profil Boundary Equipment verwendet wird. Voreinstellung: ''  - `toEndNameTso`: Das Attribut dient zum Austausch des Namens des TSO, zu dem die "To"-Seite des Boundary-Points gehört oder mit dem er verbunden ist. Die Länge des Strings beträgt maximal 32 Zeichen. Das Attribut ist für das Boundary Model Authority Set erforderlich, wo es nur für den TopologicalNode im Boundary Topology Profil und ConnectivityNode im Boundary Equipment Profil verwendet wird. Voreinstellung: ''  - `type`: NGSI-Typ. Es muss TopologicalNode sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -140,10 +140,10 @@ TopologicalNode:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +163,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +187,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +213,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +236,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +262,8 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -285,7 +290,7 @@ TopologicalNode:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
