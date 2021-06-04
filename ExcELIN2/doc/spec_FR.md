@@ -6,7 +6,7 @@ Entité : ExcELIN2
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efdbas`: Gain (Efdbas).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `iefmax`: Limiteur (Iefmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `iefmax2`: Tension minimale d'excitation en circuit ouvert (Iefmax2).  Valeur typique = -5. Valeur par défaut : 0.0  - `iefmin`: Limiteur (Iefmin).  Valeur typique = 1. Valeur par défaut : 0.0  - `k1`: Gain d'entrée du régulateur de tension (K1).  Valeur typique = 0. Valeur par défaut : 0.0  - `k1ec`: Limite d'entrée du régulateur de tension (K1ec).  Valeur typique = 2. Valeur par défaut : 0.0  - `k2`: Gain (K2).  Valeur typique = 5. Valeur par défaut : 0.0  - `k3`: Gain (K3).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `k4`: Gain (K4).  Valeur typique = 0. Valeur par défaut : 0.0  - `kd1`: Gain dérivé du contrôleur de tension (Kd1).  Valeur typique = 34.5. Valeur par défaut : 0.0  - `ke2`: Gain (Ke2).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `ketb`: Gain (Ketb).  Valeur typique = 0.06. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pid1max`: Gain de suivi du contrôleur (PID1max).  Valeur typique = 2. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seve1`: Valeur de la fonction de saturation de l'excitatrice à la tension d'excitation correspondante, Ve1, en arrière de la réactance de commutation (Se[Ve1]).  Valeur typique = 0. Valeur par défaut : 0.0  - `seve2`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, Ve2, en arrière de la réactance de commutation (Se[Ve2]).  Valeur typique = 1. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tb1`: Constante de temps du lavage de la dérivation du contrôleur de tension (Tb1).  Valeur typique = 12,45. Valeur par défaut : 0  - `te`: Constante de temps (Te).  Valeur typique = 0. Valeur par défaut : 0  - `te2`: Constante de temps (Te2).  Valeur typique = 1. Valeur par défaut : 0  - `ti1`: Bande morte de suivi du contrôleur (Ti1).  Valeur typique = 0. Valeur par défaut : 0.0  - `ti3`: Constante de temps (Ti3).  Valeur typique = 3. Valeur par défaut : 0  - `ti4`: Constante de temps (Ti4).  Valeur typique = 0. Valeur par défaut : 0  - `tr4`: Constante de temps (Tr4).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il faut que ce soit ExcELIN2  - `upmax`: Limiteur (Upmax).  Valeur typique = 3. Valeur par défaut : 0.0  - `upmin`: Limiteur (Upmin).  Valeur typique = 0. Par défaut : 0.0  - `ve1`: Tensions de sortie de l'alternateur d'excitation en arrière de la réactance de commutation à laquelle la saturation est définie (Ve1).  Valeur typique = 3. Valeur par défaut : 0.0  - `ve2`: Tensions de sortie de l'alternateur d'excitation en arrière de la réactance de commutation à laquelle la saturation est définie (Ve2).  Valeur typique = 0. Valeur par défaut : 0.0  - `xp`: Réactance effective du transformateur d'excitation (Xp).  Valeur typique = 1. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efdbas`: Gain (Efdbas).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `iefmax`: Limiteur (Iefmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `iefmax2`: Tension minimale d'excitation en circuit ouvert (Iefmax2).  Valeur typique = -5. Valeur par défaut : 0.0  - `iefmin`: Limiteur (Iefmin).  Valeur typique = 1. Valeur par défaut : 0.0  - `k1`: Gain d'entrée du régulateur de tension (K1).  Valeur typique = 0. Valeur par défaut : 0.0  - `k1ec`: Limite d'entrée du régulateur de tension (K1ec).  Valeur typique = 2. Valeur par défaut : 0.0  - `k2`: Gain (K2).  Valeur typique = 5. Valeur par défaut : 0.0  - `k3`: Gain (K3).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `k4`: Gain (K4).  Valeur typique = 0. Valeur par défaut : 0.0  - `kd1`: Gain dérivé du contrôleur de tension (Kd1).  Valeur typique = 34.5. Valeur par défaut : 0.0  - `ke2`: Gain (Ke2).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `ketb`: Gain (Ketb).  Valeur typique = 0.06. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pid1max`: Gain de suivi du contrôleur (PID1max).  Valeur typique = 2. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `seve1`: Valeur de la fonction de saturation de l'excitatrice à la tension d'excitation correspondante, Ve1, en arrière de la réactance de commutation (Se[Ve1]).  Valeur typique = 0. Valeur par défaut : 0.0  - `seve2`: Valeur de la fonction de saturation de l'excitatrice à la tension correspondante de l'excitatrice, Ve2, en arrière de la réactance de commutation (Se[Ve2]).  Valeur typique = 1. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tb1`: Constante de temps du lavage de la dérivation du contrôleur de tension (Tb1).  Valeur typique = 12,45. Valeur par défaut : 0  - `te`: Constante de temps (Te).  Valeur typique = 0. Valeur par défaut : 0  - `te2`: Constante de temps (Te2).  Valeur typique = 1. Valeur par défaut : 0  - `ti1`: Bande morte de suivi du contrôleur (Ti1).  Valeur typique = 0. Valeur par défaut : 0.0  - `ti3`: Constante de temps (Ti3).  Valeur typique = 3. Valeur par défaut : 0  - `ti4`: Constante de temps (Ti4).  Valeur typique = 0. Valeur par défaut : 0  - `tr4`: Constante de temps (Tr4).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il faut que ce soit ExcELIN2  - `upmax`: Limiteur (Upmax).  Valeur typique = 3. Valeur par défaut : 0.0  - `upmin`: Limiteur (Upmin).  Valeur typique = 0. Par défaut : 0.0  - `ve1`: Tensions de sortie de l'alternateur d'excitation en arrière de la réactance de commutation à laquelle la saturation est définie (Ve1).  Valeur typique = 3. Valeur par défaut : 0.0  - `ve2`: Tensions de sortie de l'alternateur d'excitation en arrière de la réactance de commutation à laquelle la saturation est définie (Ve2).  Valeur typique = 0. Valeur par défaut : 0.0  - `xp`: Réactance effective du transformateur d'excitation (Xp).  Valeur typique = 1. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -135,10 +135,10 @@ ExcELIN2:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ ExcELIN2:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ ExcELIN2:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ ExcELIN2:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ ExcELIN2:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ ExcELIN2:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ ExcELIN2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
