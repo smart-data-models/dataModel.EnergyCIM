@@ -6,7 +6,7 @@ Entité : ExcSK
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efdmax`: Limite d'écrêtage de la tension de champ (Efdmax). Valeur par défaut : 0.0  - `efdmin`: Limite d'écrêtage de la tension de champ (Efdmin). Valeur par défaut : 0.0  - `emax`: Tension de sortie maximale du champ (Emax).  Valeur typique = 20. Valeur par défaut : 0.0  - `emin`: Sortie de tension de champ minimale (Emin).  Valeur typique = -20. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `k`: Gain (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `k1`: Paramètre de la limite de sous-excitation (K1).  Valeur typique = 0.1364. Valeur par défaut : 0.0  - `k2`: Paramètre de la limite de sous-excitation (K2).  Valeur typique = -0.3861. Valeur par défaut : 0.0  - `kc`: Gain du contrôleur PI (Kc).  Valeur typique = 70. Valeur par défaut : 0.0  - `kce`: Facteur de régulation du redresseur (Kce).  Valeur typique = 0. Valeur par défaut : 0.0  - `kd`: Réactance interne de l'excitateur (Kd).  Valeur typique = 0. Valeur par défaut : 0.0  - `kgob`: Gain du régulateur P (Kgob).  Valeur typique = 10. Valeur par défaut : 0.0  - `kp`: Gain du contrôleur PI (Kp).  Valeur typique = 1. Valeur par défaut : 0.0  - `kqi`: Gain du contrôleur PI de la composante intégrale (Kqi).  Valeur typique = 0. Valeur par défaut : 0.0  - `kqob`: Taux d'augmentation de la puissance réactive (Kqob). Valeur par défaut : 0.0  - `kqp`: Gain du contrôleur PI (Kqp).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `nq`: Bande morte de la puissance réactive (nq).  Détermine la plage de sensibilité.  Valeur typique = 0.001. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qconoff`: État de la commande de tension secondaire (Qc_on_off). true = la commande de tension secondaire est ON false = la commande de tension secondaire est OFF. Valeur typique = false. Valeur par défaut : Faux  - `qz`: Valeur souhaitée (point de consigne) de la puissance réactive, réglage manuel (Qz). Valeur par défaut : 0.0  - `remote`: Sélecteur pour appliquer le calcul automatique dans le modèle de régulateur secondaire. true = le calcul automatique est activé false = le réglage manuel est actif ; l'utilisation de la valeur désirée de la puissance réactive (Qz) est requise. Valeur typique = true. Valeur par défaut : False  - `sbase`: Puissance apparente de l'unité (Sbase).  Unité = MVA.  Valeur typique = 259. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tc`: Constante de temps de l'avance de phase du contrôleur PI (Tc).  Valeur typique = 8. Valeur par défaut : 0  - `te`: Constante de temps du bloc de gain (Te).  Valeur typique = 0,1. Valeur par défaut : 0  - `ti`: Constante de temps de l'avance de phase du contrôleur PI (Ti).  Valeur typique = 2. Valeur par défaut : 0  - `tp`: Constante de temps (Tp).  Valeur typique = 0,1. Valeur par défaut : 0  - `tr`: Constante de temps du transducteur de tension (Tr).  Valeur typique = 0.01. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être ExcSK  - `uimax`: Erreur maximale (Uimax).  Valeur typique = 10. Valeur par défaut : 0.0  - `uimin`: Erreur minimale (UImin).  Valeur typique = -10. Valeur par défaut : 0.0  - `urmax`: Sortie maximale du régulateur (URmax).  Valeur typique = 10. Valeur par défaut : 0.0  - `urmin`: Sortie minimale du contrôleur (URmin).  Valeur typique = -10. Valeur par défaut : 0.0  - `vtmax`: Entrée de la tension maximale de la borne (Vtmax).  Détermine la plage de la bande morte de la tension.  Valeur typique = 1.05. Valeur par défaut : 0.0  - `vtmin`: Entrée de tension minimale aux bornes (Vtmin).  Détermine la plage de la bande morte de la tension.  Valeur typique = 0.95. Valeur par défaut : 0.0  - `yp`: Sortie maximale (Yp).  Sortie minimale = 0. Valeur typique = 1. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `efdmax`: Limite d'écrêtage de la tension de champ (Efdmax). Valeur par défaut : 0.0  - `efdmin`: Limite d'écrêtage de la tension de champ (Efdmin). Valeur par défaut : 0.0  - `emax`: Tension de sortie maximale du champ (Emax).  Valeur typique = 20. Valeur par défaut : 0.0  - `emin`: Sortie de tension de champ minimale (Emin).  Valeur typique = -20. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `k`: Gain (K).  Valeur typique = 1. Valeur par défaut : 0.0  - `k1`: Paramètre de la limite de sous-excitation (K1).  Valeur typique = 0.1364. Valeur par défaut : 0.0  - `k2`: Paramètre de la limite de sous-excitation (K2).  Valeur typique = -0.3861. Valeur par défaut : 0.0  - `kc`: Gain du contrôleur PI (Kc).  Valeur typique = 70. Valeur par défaut : 0.0  - `kce`: Facteur de régulation du redresseur (Kce).  Valeur typique = 0. Valeur par défaut : 0.0  - `kd`: Réactance interne de l'excitateur (Kd).  Valeur typique = 0. Valeur par défaut : 0.0  - `kgob`: Gain du régulateur P (Kgob).  Valeur typique = 10. Valeur par défaut : 0.0  - `kp`: Gain du contrôleur PI (Kp).  Valeur typique = 1. Valeur par défaut : 0.0  - `kqi`: Gain du contrôleur PI de la composante intégrale (Kqi).  Valeur typique = 0. Valeur par défaut : 0.0  - `kqob`: Taux d'augmentation de la puissance réactive (Kqob). Valeur par défaut : 0.0  - `kqp`: Gain du contrôleur PI (Kqp).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `nq`: Bande morte de la puissance réactive (nq).  Détermine la plage de sensibilité.  Valeur typique = 0.001. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qconoff`: État de la commande de tension secondaire (Qc_on_off). true = la commande de tension secondaire est ON false = la commande de tension secondaire est OFF. Valeur typique = false. Valeur par défaut : Faux  - `qz`: Valeur souhaitée (point de consigne) de la puissance réactive, réglage manuel (Qz). Valeur par défaut : 0.0  - `remote`: Sélecteur pour appliquer le calcul automatique dans le modèle de régulateur secondaire. true = le calcul automatique est activé false = le réglage manuel est actif ; l'utilisation de la valeur désirée de la puissance réactive (Qz) est requise. Valeur typique = true. Valeur par défaut : False  - `sbase`: Puissance apparente de l'unité (Sbase).  Unité = MVA.  Valeur typique = 259. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tc`: Constante de temps de l'avance de phase du contrôleur PI (Tc).  Valeur typique = 8. Valeur par défaut : 0  - `te`: Constante de temps du bloc de gain (Te).  Valeur typique = 0,1. Valeur par défaut : 0  - `ti`: Constante de temps de l'avance de phase du contrôleur PI (Ti).  Valeur typique = 2. Valeur par défaut : 0  - `tp`: Constante de temps (Tp).  Valeur typique = 0,1. Valeur par défaut : 0  - `tr`: Constante de temps du transducteur de tension (Tr).  Valeur typique = 0.01. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être ExcSK  - `uimax`: Erreur maximale (Uimax).  Valeur typique = 10. Valeur par défaut : 0.0  - `uimin`: Erreur minimale (UImin).  Valeur typique = -10. Valeur par défaut : 0.0  - `urmax`: Sortie maximale du régulateur (URmax).  Valeur typique = 10. Valeur par défaut : 0.0  - `urmin`: Sortie minimale du contrôleur (URmin).  Valeur typique = -10. Valeur par défaut : 0.0  - `vtmax`: Entrée de la tension maximale de la borne (Vtmax).  Détermine la plage de la bande morte de la tension.  Valeur typique = 1.05. Valeur par défaut : 0.0  - `vtmin`: Entrée de tension minimale aux bornes (Vtmin).  Détermine la plage de la bande morte de la tension.  Valeur typique = 0.95. Valeur par défaut : 0.0  - `yp`: Sortie maximale (Yp).  Sortie minimale = 0. Valeur typique = 1. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -150,10 +150,10 @@ ExcSK:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +173,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +197,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -221,7 +223,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +246,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +272,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -295,7 +300,7 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
