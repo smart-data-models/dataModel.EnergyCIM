@@ -6,7 +6,7 @@ Entity: ExcIEEEAC8B
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ka`: Voltage regulator gain (K).  Typical Value = 1. Default: 0.0  - `kc`: Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.55. Default: 0.0  - `kd`: Demagnetizing factor, a function of exciter alternator reactances (K).    Typical Value = 1.1. Default: 0.0  - `kdr`: Voltage regulator derivative gain (K).  Typical Value = 10. Default: 0.0  - `ke`: Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0  - `kir`: Voltage regulator integral gain (K).  Typical Value = 5. Default: 0.0  - `kpr`: Voltage regulator proportional gain (K).  Typical Value = 80. Default: 0.0  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `seve1`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.3. Default: 0.0  - `seve2`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 3. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `tdr`: Lag time constant (T).  Typical Value = 0.1. Default: 0  - `te`: Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.2. Default: 0  - `type`: NGSI type. It has to be ExcIEEEAC8B  - `ve1`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V) equals V (V).  Typical Value = 6.5. Default: 0.0  - `ve2`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 9. Default: 0.0  - `vemin`: Minimum exciter voltage output (V).  Typical Value = 0. Default: 0.0  - `vfemax`: Exciter field current limit reference (V).  Typical Value = 6. Default: 0.0  - `vrmax`: Maximum voltage regulator output (V).  Typical Value = 35. Default: 0.0  - `vrmin`: Minimum voltage regulator output (V).  Typical Value = 0. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `ka`: Voltage regulator gain (K).  Typical Value = 1. Default: 0.0  - `kc`: Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.55. Default: 0.0  - `kd`: Demagnetizing factor, a function of exciter alternator reactances (K).    Typical Value = 1.1. Default: 0.0  - `kdr`: Voltage regulator derivative gain (K).  Typical Value = 10. Default: 0.0  - `ke`: Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0  - `kir`: Voltage regulator integral gain (K).  Typical Value = 5. Default: 0.0  - `kpr`: Voltage regulator proportional gain (K).  Typical Value = 80. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `seve1`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.3. Default: 0.0  - `seve2`: Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 3. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta`: Voltage regulator time constant (T).  Typical Value = 0. Default: 0  - `tdr`: Lag time constant (T).  Typical Value = 0.1. Default: 0  - `te`: Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.2. Default: 0  - `type`: NGSI type. It has to be ExcIEEEAC8B  - `ve1`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V) equals V (V).  Typical Value = 6.5. Default: 0.0  - `ve2`: Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 9. Default: 0.0  - `vemin`: Minimum exciter voltage output (V).  Typical Value = 0. Default: 0.0  - `vfemax`: Exciter field current limit reference (V).  Typical Value = 6. Default: 0.0  - `vrmax`: Maximum voltage regulator output (V).  Typical Value = 35. Default: 0.0  - `vrmin`: Minimum voltage regulator output (V).  Typical Value = 0. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -110,10 +110,10 @@ ExcIEEEAC8B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ ExcIEEEAC8B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ ExcIEEEAC8B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ ExcIEEEAC8B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ ExcIEEEAC8B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ ExcIEEEAC8B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ ExcIEEEAC8B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
