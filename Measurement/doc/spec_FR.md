@@ -6,7 +6,7 @@ Entité : Mesure
 
 ## Liste des propriétés  
 
-- `PowerSystemResource`: Les mesures associées à cette ressource du système électrique. Par défaut : Aucun  - `Terminal`: Une ou plusieurs mesures peuvent être associées à un terminal du réseau. Par défaut : Aucune  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `measurementType`: Spécifie le type de mesure.  Par exemple, cela spécifie si la mesure représente une température intérieure, une température extérieure, une tension de bus, un débit de ligne, etc. Valeur par défaut : ''.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phases`: Indique à quelles phases la mesure s'applique et évite d'avoir à utiliser `measurementType` pour coder également les informations de phase (ce qui ferait exploser les types). Les informations de phase dans la mesure, ainsi que `measurementType` et `phases` définissent de manière unique une mesure pour un appareil, sur la base de la phase normale du réseau. Leur signification ne changera pas lorsque le phasage de mise sous tension calculé est modifié par des cavaliers ou pour d'autres raisons. Si l'attribut est absent, trois phases (ABC) sont supposées. Valeur par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir d'une mesure  - `unitMultiplier`: Le multiplicateur d'unité de la quantité mesurée. Valeur par défaut : Aucun  - `unitSymbol`: L'unité de mesure de la quantité mesurée. Valeur par défaut : Aucune    
+- `PowerSystemResource`: Les mesures associées à cette ressource du système électrique. Par défaut : Aucun  - `Terminal`: Une ou plusieurs mesures peuvent être associées à un terminal du réseau. Par défaut : Aucune  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `measurementType`: Spécifie le type de mesure.  Par exemple, cela spécifie si la mesure représente une température intérieure, une température extérieure, une tension de bus, un débit de ligne, etc. Valeur par défaut : ''.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `phases`: Indique à quelles phases la mesure s'applique et évite d'avoir à utiliser `measurementType` pour coder également les informations de phase (ce qui ferait exploser les types). L'information de phase dans la mesure, ainsi que `measurementType` et `phases` définissent de façon unique une mesure pour un appareil, basée sur la phase normale du réseau. Leur signification ne changera pas lorsque le phasage de mise sous tension calculé est modifié par des cavaliers ou pour d'autres raisons. Si l'attribut est absent, trois phases (ABC) sont supposées. Valeur par défaut : Aucun  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir d'une mesure  - `unitMultiplier`: Le multiplicateur d'unité de la quantité mesurée. Valeur par défaut : Aucun  - `unitSymbol`: L'unité de mesure de la quantité mesurée. Valeur par défaut : Aucune    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -85,10 +85,10 @@ Measurement:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ Measurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ Measurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measurementType:    
       description: 'Specifies the type of measurement.  For example, this specifies if the measurement represents an indoor temperature, outdoor temperature, bus voltage, line flow, etc. Default: '''''    
       type: number    
