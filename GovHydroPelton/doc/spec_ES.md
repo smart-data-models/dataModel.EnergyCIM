@@ -6,7 +6,7 @@ Entidad: GovHydroPelton
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `av0`: Área del depósito de compensación (A). Unidad = m. Valor típico = 30. Por defecto: 0,0  - `av1`: Área del depósito de compensación (A). Unidad = m. Valor típico = 700. Por defecto: 0,0  - `bp`: Caída (bp).  Valor típico = 0,05. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (DB1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Ancho de banda muerto intencional del error de apertura de la válvula (DB2). Unidad = Hz.  Valor típico = 0,01. Por defecto: 0,0  - `description`: Una descripción de este artículo  - `h1`: Altura del nivel de agua de la cámara de compensación con respecto al nivel de la tubería forzada (H).  Unidad = m. Valor típico = 4. Por defecto: 0,0  - `h2`: Altura del nivel de agua del depósito de compensación con respecto al nivel de la tubería forzada (H).  Unidad = m. Valor típico = 40. Por defecto: 0,0  - `hn`: Altura hidráulica nominal (H).  Unidad = m. Valor típico = 250. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `kc`: Coeficiente de pérdida de la tubería forzada (debido a la fricción) (Kc).  Valor típico = 0,025. Por defecto: 0,0  - `kg`: Coeficiente de pérdidas en el túnel de agua y en la cámara de sobretensión (debido a la fricción) (Kg).  Valor típico = -0,025. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `qc0`: Caudal de la turbina en vacío a la altura nominal (Qc0).  Valor típico = 0,05. Por defecto: 0,0  - `qn`: Caudal nominal (Q). Unidad = m/s. Valor típico = 40. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `simplifiedPelton`: Simulación del modelo Pelton simplificado (Sflag). true = habilita la simulación del modelo Pelton simplificado false = habilita la simulación del modelo Pelton completo (ganancia no lineal). Valor típico = falso. Por defecto: Falso  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `staticCompensating`: Característica de compensación estática (Cflag). true = habilitar la característica de compensación estática false = inhibir la característica de compensación estática. Valor típico = falso. Por defecto: Falso  - `ta`: Ganancia derivativa (constante de tiempo del acelerómetro) (Ta).  Valor típico = 3. Por defecto: 0  - `ts`: Constante de tiempo del servo de la puerta (Ts).  Valor típico = 0,15. Por defecto: 0  - `tv`: Constante de tiempo del integrador del servomotor (TV).  Valor típico = 0,3. Por defecto: 0  - `twnc`: Constante de tiempo de inercia del agua (Twnc).  Valor típico = 1. Por defecto: 0  - `twng`: Constante de tiempo de inercia del túnel de agua y de la cámara de compensación (Twng). Valor típico = 3. Por defecto: 0  - `tx`: Constante de tiempo del integrador electrónico (Tx).  Valor típico = 0,5. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovHydroPelton  - `va`: Velocidad máxima de apertura de la puerta (Va).  Unidad = PU/seg.  Valor típico = 0,016. Por defecto: 0,0  - `valvmax`: Apertura máxima de la puerta (ValvMax).  Valor típico = 1. Por defecto: 0,0  - `valvmin`: Apertura mínima de la puerta (ValvMin).  Valor típico = 0. Por defecto: 0.0  - `vav`: Velocidad máxima de apertura de la válvula del servomotor (Vav).  Valor típico = 0,017. Por defecto: 0,0  - `vc`: Velocidad máxima de cierre de la puerta (Vc).  Unidad = PU/seg.  Valor típico = -0,016. Por defecto: 0,0  - `vcv`: Velocidad máxima de cierre de la válvula del servomotor (Vcv).  Valor típico = -0,017. Por defecto: 0,0  - `waterTunnelSurgeChamberSimulation`: Simulación del túnel de agua y de la cámara de sobretensión (Tflag). true = habilitar la simulación del túnel de agua y de la cámara de sobretensión false = inhibir la simulación del túnel de agua y de la cámara de sobretensión. Valor típico = falso. Por defecto: Falso  - `zsfc`: Altura del nivel superior del agua con respecto al nivel de la tubería forzada (Zsfc).  Unidad = m. Valor típico = 25. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `av0`: Área del depósito de compensación (A). Unidad = m. Valor típico = 30. Por defecto: 0,0  - `av1`: Área del depósito de compensación (A). Unidad = m. Valor típico = 700. Por defecto: 0,0  - `bp`: Caída (bp).  Valor típico = 0,05. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `db1`: Ancho de banda muerta intencional (DB1).  Unidad = Hz.  Valor típico = 0. Por defecto: 0.0  - `db2`: Ancho de banda muerto intencional del error de apertura de la válvula (DB2). Unidad = Hz.  Valor típico = 0,01. Por defecto: 0,0  - `description`: Una descripción de este artículo  - `h1`: Altura del nivel de agua de la cámara de compensación con respecto al nivel de la tubería forzada (H).  Unidad = m. Valor típico = 4. Por defecto: 0,0  - `h2`: Altura del nivel de agua del depósito de compensación con respecto al nivel de la tubería forzada (H).  Unidad = m. Valor típico = 40. Por defecto: 0,0  - `hn`: Altura hidráulica nominal (H).  Unidad = m. Valor típico = 250. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `kc`: Coeficiente de pérdida de la tubería forzada (debido a la fricción) (Kc).  Valor típico = 0,025. Por defecto: 0,0  - `kg`: Coeficiente de pérdidas en el túnel de agua y en la cámara de sobretensión (debido a la fricción) (Kg).  Valor típico = -0,025. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `qc0`: Caudal de la turbina en vacío a la altura nominal (Qc0).  Valor típico = 0,05. Por defecto: 0,0  - `qn`: Caudal nominal (Q). Unidad = m/s. Valor típico = 40. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `simplifiedPelton`: Simulación del modelo Pelton simplificado (Sflag). true = habilita la simulación del modelo Pelton simplificado false = habilita la simulación del modelo Pelton completo (ganancia no lineal). Valor típico = falso. Por defecto: Falso  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `staticCompensating`: Característica de compensación estática (Cflag). true = habilitar la característica de compensación estática false = inhibir la característica de compensación estática. Valor típico = falso. Por defecto: Falso  - `ta`: Ganancia derivativa (constante de tiempo del acelerómetro) (Ta).  Valor típico = 3. Por defecto: 0  - `ts`: Constante de tiempo del servo de la puerta (Ts).  Valor típico = 0,15. Por defecto: 0  - `tv`: Constante de tiempo del integrador del servomotor (TV).  Valor típico = 0,3. Por defecto: 0  - `twnc`: Constante de tiempo de inercia del agua (Twnc).  Valor típico = 1. Por defecto: 0  - `twng`: Constante de tiempo de inercia del túnel de agua y de la cámara de compensación (Twng). Valor típico = 3. Por defecto: 0  - `tx`: Constante de tiempo del integrador electrónico (Tx).  Valor típico = 0,5. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovHydroPelton  - `va`: Velocidad máxima de apertura de la puerta (Va).  Unidad = PU/seg.  Valor típico = 0,016. Por defecto: 0,0  - `valvmax`: Apertura máxima de la puerta (ValvMax).  Valor típico = 1. Por defecto: 0,0  - `valvmin`: Apertura mínima de la puerta (ValvMin).  Valor típico = 0. Por defecto: 0.0  - `vav`: Velocidad máxima de apertura de la válvula del servomotor (Vav).  Valor típico = 0,017. Por defecto: 0,0  - `vc`: Velocidad máxima de cierre de la puerta (Vc).  Unidad = PU/seg.  Valor típico = -0,016. Por defecto: 0,0  - `vcv`: Velocidad máxima de cierre de la válvula del servomotor (Vcv).  Valor típico = -0,017. Por defecto: 0,0  - `waterTunnelSurgeChamberSimulation`: Simulación del túnel de agua y de la cámara de sobretensión (Tflag). true = habilitar la simulación del túnel de agua y de la cámara de sobretensión false = inhibir la simulación del túnel de agua y de la cámara de sobretensión. Valor típico = falso. Por defecto: Falso  - `zsfc`: Altura del nivel superior del agua con respecto al nivel de la tubería forzada (Zsfc).  Unidad = m. Valor típico = 25. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -125,10 +125,10 @@ GovHydroPelton:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
