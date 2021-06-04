@@ -6,7 +6,7 @@ Entität: GovGAST1
 
 ## Liste der Eigenschaften  
 
-- `a`: Turbinenleistung Zeitkonstante Zähler Skalierungsfaktor (a).  Typischer Wert = 0,8. Voreinstellung: 0,0  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `b`: Turbinenleistung Zeitkonstante Nenner Skalierungsfaktor (b).  Typischer Wert = 1. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Ungewolltes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `fidle`: Kraftstoffdurchfluss bei Leistungsabgabe Null (Fidle).  Typischer Wert = 0,18. Voreinstellung: 0,0  - `gv1`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlinearer Verstärkungspunkt 2,PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0,0  - `gv3`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv4`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv5`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv6`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Reglers (Ka).  Typischer Wert = 0. Voreinstellung: 0.0  - `kt`: Verstärkung des Temperaturbegrenzers (Kt).  Typischer Wert = 3. Voreinstellung: 0,0  - `lmax`: Umgebungstemperatur-Lastgrenze (Lmax).  Lmax ist die Turbinenleistung, die der begrenzenden Abgastemperatur entspricht.  Typischer Wert = 1. Voreinstellung: 0.0  - `loadinc`: Erlaubte Änderung der Ventilposition mit schneller Rate (Loadinc).  Typischer Wert = 0,05. Voreinstellung: 0.0  - `location`:   - `ltrate`: Maximale Langzeit-Öffnungsrate des Brennstoffventils (Ltrate).  Typischer Wert = 0,02. Voreinstellung: 0.0  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv3`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv4`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv5`: Nichtlinearer Verstärkungspunkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv6`: Nichtlinearer Verstärkungspunkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `r`: Permanenter Durchhang (R).  Typischer Wert = 0,04. Voreinstellung: 0,0  - `rmax`: Maximale Öffnungsrate des Brennstoffventils (Rmax).  Einheit = VE/sec.  Typischer Wert = 1. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Zeitkonstante des Reglermechanismus (T1).  T1 stellt die natürliche Ventilstellungszeitkonstante des Reglers für kleine Störungen dar, wie sie auftreten, wenn die Geschwindigkeitsbegrenzung nicht in Kraft ist.  Typischer Wert = 0,5. Voreinstellung: 0  - `t2`: Zeitkonstante der Turbinenleistung (T2).  T2 stellt die Verzögerung aufgrund der internen Energiespeicherung des Gasturbinentriebwerks dar. T2 kann verwendet werden, um eine grobe Annäherung an die Verzögerung zu geben, die z. B. mit der Beschleunigung des Verdichterkolbens eines Mehrwellentriebwerks oder mit der Kompressibilität des Gases im Plenum der freien Nutzturbine einer Aero-Derivative-Einheit verbunden ist.  Typischer Wert = 0,5. Voreinstellung: 0  - `t3`: Zeitkonstante der Abgastemperatur der Turbine (T3).  T3 stellt die Verzögerung im Abgastemperatur- und Lastbegrenzungssystem dar. Typischer Wert = 3. Voreinstellung: 0  - `t4`: Reglervorlaufzeitkonstante (T4).  Typischer Wert = 0. Voreinstellung: 0  - `t5`: Verzögerungszeitkonstante des Reglers (T5).  Typischer Wert = 0. Voreinstellung: 0  - `tltr`: Mittelungszeitkonstante der Ventilstellung (Tltr).  Typischer Wert = 10. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovGAST1 sein  - `vmax`: Maximale Turbinenleistung, VPE der MW-Basis (Vmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `vmin`: Minimale Turbinenleistung, PU der MW-Basis (Vmin).  Typischer Wert = 0. Voreinstellung: 0.0    
+- `a`: Turbinenleistung Zeitkonstante Zähler Skalierungsfaktor (a).  Typischer Wert = 0,8. Voreinstellung: 0,0  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `b`: Turbinenleistung Zeitkonstante Nenner Skalierungsfaktor (b).  Typischer Wert = 1. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Ungewolltes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `fidle`: Kraftstoffdurchfluss bei Leistungsabgabe Null (Fidle).  Typischer Wert = 0,18. Voreinstellung: 0,0  - `gv1`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlinearer Verstärkungspunkt 2,PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0,0  - `gv3`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv4`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv5`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv6`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Reglers (Ka).  Typischer Wert = 0. Voreinstellung: 0.0  - `kt`: Verstärkung des Temperaturbegrenzers (Kt).  Typischer Wert = 3. Voreinstellung: 0,0  - `lmax`: Umgebungstemperatur-Lastgrenze (Lmax).  Lmax ist die Turbinenleistung, die der begrenzenden Abgastemperatur entspricht.  Typischer Wert = 1. Voreinstellung: 0.0  - `loadinc`: Erlaubte Änderung der Ventilposition mit schneller Rate (Loadinc).  Typischer Wert = 0,05. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `ltrate`: Maximale Langzeit-Öffnungsrate des Brennstoffventils (Ltrate).  Typischer Wert = 0,02. Voreinstellung: 0.0  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv3`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv4`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv5`: Nichtlinearer Verstärkungspunkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv6`: Nichtlinearer Verstärkungspunkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `r`: Permanenter Durchhang (R).  Typischer Wert = 0,04. Voreinstellung: 0,0  - `rmax`: Maximale Öffnungsrate des Brennstoffventils (Rmax).  Einheit = VE/sec.  Typischer Wert = 1. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Zeitkonstante des Reglermechanismus (T1).  T1 stellt die natürliche Ventilstellungszeitkonstante des Reglers für kleine Störungen dar, wie sie auftreten, wenn die Geschwindigkeitsbegrenzung nicht in Kraft ist.  Typischer Wert = 0,5. Voreinstellung: 0  - `t2`: Zeitkonstante der Turbinenleistung (T2).  T2 stellt die Verzögerung aufgrund der internen Energiespeicherung des Gasturbinentriebwerks dar. T2 kann verwendet werden, um eine grobe Annäherung an die Verzögerung zu geben, die z. B. mit der Beschleunigung des Verdichterkolbens eines Mehrwellentriebwerks oder mit der Kompressibilität des Gases im Plenum der freien Nutzturbine einer Aero-Derivative-Einheit verbunden ist.  Typischer Wert = 0,5. Voreinstellung: 0  - `t3`: Zeitkonstante der Abgastemperatur der Turbine (T3).  T3 stellt die Verzögerung im Abgastemperatur- und Lastbegrenzungssystem dar. Typischer Wert = 3. Voreinstellung: 0  - `t4`: Reglervorlaufzeitkonstante (T4).  Typischer Wert = 0. Voreinstellung: 0  - `t5`: Verzögerungszeitkonstante des Reglers (T5).  Typischer Wert = 0. Voreinstellung: 0  - `tltr`: Mittelungszeitkonstante der Ventilstellung (Tltr).  Typischer Wert = 10. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovGAST1 sein  - `vmax`: Maximale Turbinenleistung, VPE der MW-Basis (Vmax).  Typischer Wert = 1. Voreinstellung: 0.0  - `vmin`: Minimale Turbinenleistung, PU der MW-Basis (Vmin).  Typischer Wert = 0. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -155,10 +155,10 @@ GovGAST1:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +178,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +202,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +228,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +251,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +277,8 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -300,7 +305,7 @@ GovGAST1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     ltrate:    
       description: 'Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: 0.0'    
       type: number    
