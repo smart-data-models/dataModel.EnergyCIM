@@ -6,7 +6,7 @@ Entidad: PssWECC
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `inputSignal1Type`: Tipo de señal de entrada #1. Por defecto: Ninguno  - `inputSignal2Type`: Tipo de señal de entrada #2. Por defecto: Ninguno  - `k1`: Ganancia de la señal de entrada 1 (K). Por defecto: 0,0  - `k2`: Ganancia de la señal de entrada 2 (K). Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del transductor de la señal de entrada 1 (T). Por defecto: 0  - `t10`: Constante de tiempo de retardo (T). Por defecto: 0  - `t2`: Constante de tiempo del transductor de la señal de entrada 2 (T). Por defecto: 0  - `t3`: Constante de tiempo de lavado del estabilizador (T). Por defecto: 0  - `t4`: Constante de retardo del lavado del estabilizador (T) (>0). Por defecto: 0  - `t5`: Constante de tiempo de espera (T). Por defecto: 0  - `t6`: Constante de tiempo de retardo (T). Por defecto: 0  - `t7`: Constante de tiempo de espera (T). Por defecto: 0  - `t8`: Constante de tiempo de retardo (T). Por defecto: 0  - `t9`: Constante de tiempo de espera (T). Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser PssWECC  - `vcl`: Valor mínimo de la salida del compensador de tensión (V). Por defecto: 0,0  - `vcu`: Valor máximo de la salida del compensador de tensión (V). Por defecto: 0,0  - `vsmax`: Señal de salida máxima (Vsmax). Por defecto: 0,0  - `vsmin`: Señal de salida mínima (Vsmin). Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `inputSignal1Type`: Tipo de señal de entrada #1. Por defecto: Ninguno  - `inputSignal2Type`: Tipo de señal de entrada #2. Por defecto: Ninguno  - `k1`: Ganancia de la señal de entrada 1 (K). Por defecto: 0,0  - `k2`: Ganancia de la señal de entrada 2 (K). Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo del transductor de la señal de entrada 1 (T). Por defecto: 0  - `t10`: Constante de tiempo de retardo (T). Por defecto: 0  - `t2`: Constante de tiempo del transductor de la señal de entrada 2 (T). Por defecto: 0  - `t3`: Constante de tiempo de lavado del estabilizador (T). Por defecto: 0  - `t4`: Constante de retardo del lavado del estabilizador (T) (>0). Por defecto: 0  - `t5`: Constante de tiempo de espera (T). Por defecto: 0  - `t6`: Constante de tiempo de retardo (T). Por defecto: 0  - `t7`: Constante de tiempo de espera (T). Por defecto: 0  - `t8`: Constante de tiempo de retardo (T). Por defecto: 0  - `t9`: Constante de tiempo de espera (T). Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser PssWECC  - `vcl`: Valor mínimo de la salida del compensador de tensión (V). Por defecto: 0,0  - `vcu`: Valor máximo de la salida del compensador de tensión (V). Por defecto: 0,0  - `vsmax`: Señal de salida máxima (Vsmax). Por defecto: 0,0  - `vsmin`: Señal de salida mínima (Vsmin). Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -95,10 +95,10 @@ PssWECC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ PssWECC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ PssWECC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ PssWECC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ PssWECC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ PssWECC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ PssWECC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
