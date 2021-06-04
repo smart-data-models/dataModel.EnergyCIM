@@ -6,7 +6,7 @@ Entität: ControlArea
 
 ## Liste der Eigenschaften  
 
-- `ControlAreaGeneratingUnit`: Die Spezifikation der Erzeugungseinheit für den Steuerbereich. Standard: 'Liste'  - `EnergyArea`: Die Energiefläche, die aus dieser Regelzonenvorgabe prognostiziert wird. Voreinstellung: Keine  - `TieFlow`: Die mit der Regelzone verbundenen Verbindungsflüsse. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `netInterchange`: Der angegebene positive Nettodurchfluss in die Regelzone, d. h. positives Vorzeichen bedeutet Fluss in die Zone. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pTolerance`: Wirkleistungs-Netzwechseltoleranz Default: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Der primäre Typ der Regelzonendefinition wird verwendet, um zu bestimmen, ob diese für die automatische Erzeugungssteuerung, für die Planung der Austauschsteuerung oder für andere Zwecke verwendet wird.   Eine Regelzone, die mit dem primären Typ der automatischen Erzeugungssteuerung angegeben wurde, könnte dennoch prognostiziert und als Austauschzone in der Leistungsflussanalyse verwendet werden. Voreinstellung: Keine    
+- `ControlAreaGeneratingUnit`: Die Spezifikation der Erzeugungseinheit für den Steuerbereich. Standard: 'Liste'  - `EnergyArea`: Die Energiefläche, die aus dieser Regelzonenvorgabe prognostiziert wird. Voreinstellung: Keine  - `TieFlow`: Die mit der Regelzone verbundenen Verbindungsflüsse. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `netInterchange`: Der angegebene positive Nettodurchfluss in die Regelzone, d. h. positives Vorzeichen bedeutet Fluss in die Zone. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pTolerance`: Wirkleistungs-Netzwechseltoleranz Default: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Der primäre Typ der Regelzonendefinition wird verwendet, um zu bestimmen, ob diese für die automatische Erzeugungssteuerung, für die Planung der Austauschsteuerung oder für andere Zwecke verwendet wird.   Eine Regelzone, die mit dem primären Typ der automatischen Erzeugungssteuerung angegeben wurde, könnte dennoch prognostiziert und als Austauschzone in der Leistungsflussanalyse verwendet werden. Voreinstellung: Keine    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -90,10 +90,10 @@ ControlArea:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
