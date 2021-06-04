@@ -6,7 +6,7 @@ Entity: GovHydroPID
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `aturb`: Turbine numerator multiplier (Aturb) (note 3).  Typical Value -1. Default: 0.0  - `bturb`: Turbine denominator multiplier (Bturb) (note 3).  Typical Value = 0.5. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `db1`: Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0  - `db2`: Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `eps`: Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0  - `gv1`: Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0  - `gv2`: Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0  - `gv3`: Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0  - `gv4`: Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0  - `gv5`: Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0  - `gv6`: Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0  - `id`: Unique identifier of the entity  - `inputSignal`: Input signal switch (Flag).  true = Pe input is used false = feedback is received from CV. Flag is normally dependent on Tt.  If Tf is zero, Flag is set to false. If Tf is not zero, Flag is set to true.  Typical Value = true. Default: False  - `kd`: Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0  - `kg`: Gate servo gain (Kg).  Typical Value = 2.5. Default: 0.0  - `ki`: Integral gain (Ki).  Typical Value = 0.36. Default: 0.0  - `kp`: Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0  - `location`:   - `mwbase`: Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pgv1`: Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0  - `pgv2`: Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0  - `pgv3`: Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0  - `pgv4`: Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0  - `pgv5`: Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0  - `pgv6`: Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0  - `pmax`: Maximum gate opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0  - `pmin`: Minimum gate opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0  - `r`: Steady state droop (R).  Typical Value = 0.05. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `td`: Input filter time constant (Td).  Typical Value = 0. Default: 0  - `tf`: Washout time constant (Tf).  Typical Value = 0.1. Default: 0  - `tp`: Gate servo time constant (Tp).  Typical Value = 0.35. Default: 0  - `tt`: Power feedback time constant (Tt).  Typical Value = 0.02. Default: 0  - `tturb`: Turbine time constant (Tturb) (note 3).  Typical Value = 0.8. Default: 0  - `type`: NGSI type. It has to be GovHydroPID  - `velcl`: Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.14. Default: 0.0  - `velop`: Maximum gate opening velocity (Velop).  Unit = PU/sec.  Typical Value = 0.09. Default: 0.0    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `aturb`: Turbine numerator multiplier (Aturb) (note 3).  Typical Value -1. Default: 0.0  - `bturb`: Turbine denominator multiplier (Bturb) (note 3).  Typical Value = 0.5. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `db1`: Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0  - `db2`: Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `eps`: Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0  - `gv1`: Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0  - `gv2`: Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0  - `gv3`: Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0  - `gv4`: Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0  - `gv5`: Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0  - `gv6`: Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0  - `id`: Unique identifier of the entity  - `inputSignal`: Input signal switch (Flag).  true = Pe input is used false = feedback is received from CV. Flag is normally dependent on Tt.  If Tf is zero, Flag is set to false. If Tf is not zero, Flag is set to true.  Typical Value = true. Default: False  - `kd`: Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0  - `kg`: Gate servo gain (Kg).  Typical Value = 2.5. Default: 0.0  - `ki`: Integral gain (Ki).  Typical Value = 0.36. Default: 0.0  - `kp`: Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase`: Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pgv1`: Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0  - `pgv2`: Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0  - `pgv3`: Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0  - `pgv4`: Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0  - `pgv5`: Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0  - `pgv6`: Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0  - `pmax`: Maximum gate opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0  - `pmin`: Minimum gate opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0  - `r`: Steady state droop (R).  Typical Value = 0.05. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `td`: Input filter time constant (Td).  Typical Value = 0. Default: 0  - `tf`: Washout time constant (Tf).  Typical Value = 0.1. Default: 0  - `tp`: Gate servo time constant (Tp).  Typical Value = 0.35. Default: 0  - `tt`: Power feedback time constant (Tt).  Typical Value = 0.02. Default: 0  - `tturb`: Turbine time constant (Tturb) (note 3).  Typical Value = 0.8. Default: 0  - `type`: NGSI type. It has to be GovHydroPID  - `velcl`: Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.14. Default: 0.0  - `velop`: Maximum gate opening velocity (Velop).  Unit = PU/sec.  Typical Value = 0.09. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -155,10 +155,10 @@ GovHydroPID:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +178,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +202,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +228,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +251,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +277,8 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -300,7 +305,7 @@ GovHydroPID:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
