@@ -6,7 +6,7 @@ Entité : GovSteamEU
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `chc`: Limite de fermeture du débit des vannes de régulation (Chc).  Unité = PU/sec.  Valeur typique = -3.3. Valeur par défaut : 0.0  - `cho`: Limite d'ouverture du débit des vannes de régulation (Cho).  Unité = PU/sec.  Valeur typique = 0.17. Valeur par défaut : 0.0  - `cic`: Limite de fermeture du débit des vannes d'interception (Cic).  Valeur typique = -2.2. Valeur par défaut : 0.0  - `cio`: Limite d'ouverture du débit des vannes d'interception (Cio).  Valeur typique = 0.123. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db1`: Bande morte du correcteur de fréquence (db1).  Valeur typique = 0. Valeur par défaut : 0.0  - `db2`: Bande morte du régulateur de vitesse (db2).  Valeur typique = 0.0004. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `hhpmax`: Position maximale de la vanne de régulation (Hhpmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ke`: Gain du contrôleur de puissance (Ke).  Valeur typique = 0.65. Valeur par défaut : 0.0  - `kfcor`: Gain du correcteur de fréquence (Kfcor).  Valeur typique = 20. Valeur par défaut : 0.0  - `khp`: Fraction de la puissance totale de la turbine générée par la partie HP (Khp).  Valeur typique = 0.277. Valeur par défaut : 0.0  - `klp`: Fraction de la puissance totale de la turbine générée par la partie HP (Klp).  Valeur typique = 0.723. Valeur par défaut : 0.0  - `kwcor`: Gain du régulateur de vitesse (Kwcor).  Valeur typique = 20. Valeur par défaut : 0.0  - `location`:   - `mwbase`: Base pour les valeurs de puissance (MWbase) (>0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pmax`: Puissance active maximale de la turbine (Pmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `prhmax`: Limite maximale de basse pression (Prhmax).  Valeur typique = 1.4. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `simx`: Limite de transfert des vannes d'interception (Simx).  Valeur typique = 0.425. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tb`: Constante de temps de la chaudière (Tb).  Valeur typique = 100. Valeur par défaut : 0  - `tdp`: Constante de temps dérivée du contrôleur de puissance (Tdp).  Valeur typique = 0. Valeur par défaut : 0  - `ten`: Transducteur électro hydraulique (Ten).  Valeur typique = 0.1. Valeur par défaut : 0  - `tf`: Constante de temps du transducteur de fréquence (Tf).  Valeur typique = 0. Valeur par défaut : 0  - `tfp`: Constante de temps du contrôleur de puissance (Tfp).  Valeur typique = 0. Valeur par défaut : 0  - `thp`: Constante de temps haute pression (HP) de la turbine (Thp).  Valeur typique = 0.31. Valeur par défaut : 0  - `tip`: Constante de temps intégrale du contrôleur de puissance (Tip).  Valeur typique = 2. Valeur par défaut : 0  - `tlp`: Constante de temps de la turbine à basse pression (LP) (Tlp).  Valeur typique = 0.45. Valeur par défaut : 0  - `tp`: Constante de temps du transducteur de puissance (Tp).  Valeur typique = 0.07. Valeur par défaut : 0  - `trh`: Constante de temps du réchauffeur de la turbine (Trh).  Valeur typique = 8. Valeur par défaut : 0  - `tvhp`: Constante de temps de l'asservissement des vannes de contrôle (Tvhp).  Valeur typique = 0.1. Valeur par défaut : 0  - `tvip`: Constante de temps de l'asservissement des vannes d'interception (Tvip).  Valeur typique = 0.15. Valeur par défaut : 0  - `tw`: Constante de temps du transducteur de vitesse (Tw).  Valeur typique = 0.02. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovSteamEU.  - `wfmax`: Limite supérieure de la correction de fréquence (Wfmax).  Valeur typique = 0,05. Valeur par défaut : 0.0  - `wfmin`: Limite inférieure de la correction de fréquence (Wfmin).  Valeur typique = -0.05. Valeur par défaut : 0.0  - `wmax1`: Limite inférieure de la commande de vitesse d'urgence (wmax1).  Valeur typique = 1.025. Valeur par défaut : 0.0  - `wmax2`: Limite supérieure de la commande de vitesse d'urgence (wmax2).  Valeur typique = 1.05. Valeur par défaut : 0.0  - `wwmax`: Limite supérieure du régulateur de vitesse (Wwmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `wwmin`: Limite inférieure de la correction de fréquence du régulateur de vitesse (Wwmin).  Valeur typique = -1. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `chc`: Limite de fermeture du débit des vannes de régulation (Chc).  Unité = PU/sec.  Valeur typique = -3.3. Valeur par défaut : 0.0  - `cho`: Limite d'ouverture du débit des vannes de régulation (Cho).  Unité = PU/sec.  Valeur typique = 0.17. Valeur par défaut : 0.0  - `cic`: Limite de fermeture du débit des vannes d'interception (Cic).  Valeur typique = -2.2. Valeur par défaut : 0.0  - `cio`: Limite d'ouverture du débit des vannes d'interception (Cio).  Valeur typique = 0.123. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db1`: Bande morte du correcteur de fréquence (db1).  Valeur typique = 0. Valeur par défaut : 0.0  - `db2`: Bande morte du régulateur de vitesse (db2).  Valeur typique = 0.0004. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `hhpmax`: Position maximale de la vanne de régulation (Hhpmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ke`: Gain du contrôleur de puissance (Ke).  Valeur typique = 0.65. Valeur par défaut : 0.0  - `kfcor`: Gain du correcteur de fréquence (Kfcor).  Valeur typique = 20. Valeur par défaut : 0.0  - `khp`: Fraction de la puissance totale de la turbine générée par la partie HP (Khp).  Valeur typique = 0.277. Valeur par défaut : 0.0  - `klp`: Fraction de la puissance totale de la turbine générée par la partie HP (Klp).  Valeur typique = 0.723. Valeur par défaut : 0.0  - `kwcor`: Gain du régulateur de vitesse (Kwcor).  Valeur typique = 20. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase`: Base pour les valeurs de puissance (MWbase) (>0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pmax`: Puissance active maximale de la turbine (Pmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `prhmax`: Limite maximale de basse pression (Prhmax).  Valeur typique = 1.4. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `simx`: Limite de transfert des vannes d'interception (Simx).  Valeur typique = 0.425. Valeur par défaut : 0.0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tb`: Constante de temps de la chaudière (Tb).  Valeur typique = 100. Valeur par défaut : 0  - `tdp`: Constante de temps dérivée du contrôleur de puissance (Tdp).  Valeur typique = 0. Valeur par défaut : 0  - `ten`: Transducteur électro hydraulique (Ten).  Valeur typique = 0.1. Valeur par défaut : 0  - `tf`: Constante de temps du transducteur de fréquence (Tf).  Valeur typique = 0. Valeur par défaut : 0  - `tfp`: Constante de temps du contrôleur de puissance (Tfp).  Valeur typique = 0. Valeur par défaut : 0  - `thp`: Constante de temps haute pression (HP) de la turbine (Thp).  Valeur typique = 0.31. Valeur par défaut : 0  - `tip`: Constante de temps intégrale du contrôleur de puissance (Tip).  Valeur typique = 2. Valeur par défaut : 0  - `tlp`: Constante de temps de la turbine à basse pression (LP) (Tlp).  Valeur typique = 0.45. Valeur par défaut : 0  - `tp`: Constante de temps du transducteur de puissance (Tp).  Valeur typique = 0.07. Valeur par défaut : 0  - `trh`: Constante de temps du réchauffeur de la turbine (Trh).  Valeur typique = 8. Valeur par défaut : 0  - `tvhp`: Constante de temps de l'asservissement des vannes de contrôle (Tvhp).  Valeur typique = 0.1. Valeur par défaut : 0  - `tvip`: Constante de temps de l'asservissement des vannes d'interception (Tvip).  Valeur typique = 0.15. Valeur par défaut : 0  - `tw`: Constante de temps du transducteur de vitesse (Tw).  Valeur typique = 0.02. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovSteamEU.  - `wfmax`: Limite supérieure de la correction de fréquence (Wfmax).  Valeur typique = 0,05. Valeur par défaut : 0.0  - `wfmin`: Limite inférieure de la correction de fréquence (Wfmin).  Valeur typique = -0.05. Valeur par défaut : 0.0  - `wmax1`: Limite inférieure de la commande de vitesse d'urgence (wmax1).  Valeur typique = 1.025. Valeur par défaut : 0.0  - `wmax2`: Limite supérieure de la commande de vitesse d'urgence (wmax2).  Valeur typique = 1.05. Valeur par défaut : 0.0  - `wwmax`: Limite supérieure du régulateur de vitesse (Wwmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `wwmin`: Limite inférieure de la correction de fréquence du régulateur de vitesse (Wwmin).  Valeur typique = -1. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -135,10 +135,10 @@ GovSteamEU:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ GovSteamEU:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
