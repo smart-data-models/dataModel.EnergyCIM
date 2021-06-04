@@ -6,9 +6,9 @@ Entität: Pss5
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `ctw2`: Wahlschalter für die Freigabe des zweiten Auswaschens (C). true = zweiter Auswaschfilter wird umgangen false = zweiter Auswaschfilter in Gebrauch. Typischer Wert = true. Voreinstellung: Falsch  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `deadband`: Totzone des Stabilisatorausgangs (DeadBand).  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `isfreq`: Selektor für Frequenz-/Wellendrehzahl-Eingang (IsFreq). true = Drehzahl false = Frequenz. Typischer Wert = true. Voreinstellung: Falsch  - `kf`: Frequenz-/Wellendrehzahl-Eingangsverstärkung (K).  Typischer Wert = 5. Voreinstellung: 0.0  - `kpe`: Verstärkung der elektrischen Leistungsaufnahme (K).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `kpss`: PSS-Verstärkung (K).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmm`: Mindestleistung PSS-Freigabe (P).  Typischer Wert = 0,25. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tl1`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tl2`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tl3`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tl4`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tpe`: Elektrische Leistungsfilter-Zeitkonstante (T).  Typischer Wert = 0,05. Voreinstellung: 0  - `tw1`: Erster WashOut (T).  Typischer Wert = 3,5. Voreinstellung: 0  - `tw2`: Zweiter WashOut (T).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss Pss5 sein  - `vadat`:  Standard: False  - `vsmn`: Grenzwert für den Stabilisatorausgang (V).  Typischer Wert = -0,1. Voreinstellung: 0,0  - `vsmx`: Stabilisatorausgangs-Minimalgrenze (V).  Typischer Wert = 0,1. Voreinstellung: 0,0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `ctw2`: Wahlschalter für die Freigabe des zweiten Auswaschens (C). true = zweiter Auswaschfilter wird umgangen false = zweiter Auswaschfilter in Gebrauch. Typischer Wert = true. Voreinstellung: Falsch  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `deadband`: Totzone des Stabilisatorausgangs (DeadBand).  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `isfreq`: Selektor für Frequenz-/Wellendrehzahl-Eingang (IsFreq). true = Drehzahl false = Frequenz. Typischer Wert = true. Voreinstellung: Falsch  - `kf`: Frequenz-/Wellendrehzahl-Eingangsverstärkung (K).  Typischer Wert = 5. Voreinstellung: 0.0  - `kpe`: Verstärkung der elektrischen Leistungsaufnahme (K).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `kpss`: PSS-Verstärkung (K).  Typischer Wert = 1. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pmm`: Mindestleistung PSS-Freigabe (P).  Typischer Wert = 0,25. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tl1`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tl2`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tl3`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tl4`: Vorlauf-/Verzögerungszeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  - `tpe`: Elektrische Leistungsfilter-Zeitkonstante (T).  Typischer Wert = 0,05. Voreinstellung: 0  - `tw1`: Erster WashOut (T).  Typischer Wert = 3,5. Voreinstellung: 0  - `tw2`: Zweiter WashOut (T).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss Pss5 sein  - `vadat`:  Standard: False  - `vsmn`: Grenzwert für den Stabilisatorausgang (V).  Typischer Wert = -0,1. Voreinstellung: 0,0  - `vsmx`: Stabilisatorausgangs-Minimalgrenze (V).  Typischer Wert = 0,1. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert wurde, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -105,10 +105,10 @@ Pss5:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ Pss5:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ Pss5:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
