@@ -6,7 +6,7 @@ Entität: CsConverter
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alpha`: Zündwinkel, typischer Wert zwischen 10 und 18 Grad für einen Gleichrichter. CSC-Zustandsvariable, Ergebnis aus dem Leistungsfluss. Voreinstellung: 0.0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `gamma`: Extinktionswinkel. CSC-Zustandsvariable, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `maxAlpha`: Maximaler Zündwinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `maxGamma`: Maximaler Extinktionswinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `maxIdc`: Der maximale Gleichstrom (Id) auf der DC-Seite, mit dem der Umrichter arbeiten soll. Konfigurationsdaten des Umrichters, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minAlpha`: Minimaler Zündwinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minGamma`: Minimaler Extinktionswinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minIdc`: Der minimale Gleichstrom (Id) auf der DC-Seite, mit dem der Umrichter arbeiten soll. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `operatingMode`: Zeigt an, ob der DC-Pol als Wechselrichter oder als Gleichrichter arbeitet. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: Keine  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pPccControl`:  Standard: Keine  - `ratedIdc`: Umrichter-Nenngleichstrom, auch IdN genannt. Umrichter-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `targetAlpha`: Soll-Zündwinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  - `targetGamma`: Ziel-Extinktionswinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  - `targetIdc`: DC-Strom-Sollwert. Im Leistungsfluss verwendete CSC-Steuergröße. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss CsConverter sein    
+- `address`: Die Postanschrift  - `alpha`: Zündwinkel, typischer Wert zwischen 10 und 18 Grad für einen Gleichrichter. CSC-Zustandsvariable, Ergebnis aus dem Leistungsfluss. Voreinstellung: 0.0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `gamma`: Extinktionswinkel. CSC-Zustandsvariable, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxAlpha`: Maximaler Zündwinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `maxGamma`: Maximaler Extinktionswinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `maxIdc`: Der maximale Gleichstrom (Id) auf der DC-Seite, mit dem der Umrichter arbeiten soll. Konfigurationsdaten des Umrichters, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minAlpha`: Minimaler Zündwinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minGamma`: Minimaler Extinktionswinkel. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minIdc`: Der minimale Gleichstrom (Id) auf der DC-Seite, mit dem der Umrichter arbeiten soll. CSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `operatingMode`: Zeigt an, ob der DC-Pol als Wechselrichter oder als Gleichrichter arbeitet. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: Keine  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pPccControl`:  Standard: Keine  - `ratedIdc`: Umrichter-Nenngleichstrom, auch IdN genannt. Umrichter-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `targetAlpha`: Soll-Zündwinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  - `targetGamma`: Ziel-Extinktionswinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  - `targetIdc`: DC-Strom-Sollwert. Im Leistungsfluss verwendete CSC-Steuergröße. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss CsConverter sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -85,10 +85,10 @@ CsConverter:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -108,7 +108,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -131,7 +132,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +158,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +181,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +207,8 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +235,7 @@ CsConverter:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxAlpha:    
       description: 'Maximum firing angle. CSC configuration data used in power flow. Default: 0.0'    
       type: number    
