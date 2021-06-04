@@ -6,7 +6,7 @@ Entität: GeneratingUnit
 
 ## Liste der Eigenschaften  
 
-- `ControlAreaGeneratingUnit`: ControlArea-Angaben für diese Erzeugungseinheit. Standard: 'list'  - `GrossToNetActivePowerCurves`: Eine Erzeugungseinheit kann eine Brutto-Wirkleistungs-Netto-Wirkleistungs-Kurve haben, die die Verluste und den Hilfsleistungsbedarf der Einheit beschreibt. Voreinstellung: 'list'  - `RotatingMachine`: Eine Synchronmaschine kann als Generator arbeiten und wird als solcher Mitglied einer Erzeugungseinheit. Voreinstellung: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `genControlSource`: Die Quelle der Steuerungen für eine Erzeugungseinheit. Voreinstellung: Keine  - `governorSCD`: Drehzahländerungsabweichung des Reglers.   Dies ist die Änderung der Generatorausgangsleistung geteilt durch die Frequenzänderung, normiert auf die Nennleistung des Generators und die Nennfrequenz und ausgedrückt in Prozent und negiert. Ein positiver Wert der Drehzahländerungsdroop sorgt für zusätzliche Generatorleistung bei einem Frequenzabfall. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `initialP`: Standard-Anfangswirkleistung, die verwendet wird, um ein Leistungsflussergebnis für die Anfangswirkleistung für dieses Gerät in dieser Netzwerkkonfiguration zu speichern. Voreinstellung: 0.0  - `location`:   - `longPF`: Langfristiger wirtschaftlicher Beteiligungsfaktor der Erzeugungseinheit. Voreinstellung: 0,0  - `maxOperatingP`: Dies ist die maximale Betriebswirkleistungsgrenze, die der Dispatcher für dieses Gerät eingeben kann. Voreinstellung: 0.0  - `maximumAllowableSpinningReserve`: Maximal zulässige Spinnreserve. Die Spinnreserve wird unabhängig vom aktuellen Betriebspunkt nie größer als dieser Wert betrachtet. Voreinstellung: 0.0  - `minOperatingP`: Dies ist die minimale Betriebswirkleistungsgrenze, die der Dispatcher für dieses Gerät eingeben kann. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `nominalP`: Die Nennleistung der Erzeugungseinheit.  Wird verwendet, um prozentualen Attributen, wie z. B. dem Drehzahländerungsdrop des Reglers (Attribut governorSCD), eine genaue Bedeutung zu geben. Das Attribut muss ein positiver Wert gleich oder kleiner als RotatingMachine.ratedS sein. Voreinstellung: 0.0  - `normalPF`: Faktor der wirtschaftlichen Beteiligung der Erzeugungseinheit. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `ratedGrossMaxP`: Die maximale Brutto-Nennleistung des Geräts (Buchwert). Voreinstellung: 0.0  - `ratedGrossMinP`: Die minimale Brutto-Nennleistung, mit der das Gerät sicher betrieben werden kann, während es Strom in das Übertragungsnetz liefert. Voreinstellung: 0,0  - `ratedNetMaxP`: Die maximale Nettonennleistung, die durch Subtraktion der für den Betrieb der internen Anlagenmaschinen verwendeten Hilfsleistung von der maximalen Bruttonennleistung ermittelt wird. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortPF`: Kurzfristiger wirtschaftlicher Beteiligungsfaktor der Erzeugungseinheit. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startupCost`: Die anfänglichen Startkosten, die bei jedem Start der GeneratingUnit anfallen. Standard: 0.0  - `totalEfficiency`: Der Wirkungsgrad des Geräts bei der Umwandlung des Brennstoffs in elektrische Energie. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss GeneratingUnit sein  - `variableCost`: Der variable Kostenanteil der Produktion pro Einheit ActivePower. Standard: 0,0    
+- `ControlAreaGeneratingUnit`: ControlArea-Angaben für diese Erzeugungseinheit. Standard: 'list'  - `GrossToNetActivePowerCurves`: Eine Erzeugungseinheit kann eine Kurve für das Verhältnis von Brutto-Wirkleistung zu Netto-Wirkleistung haben, die die Verluste und den Hilfsleistungsbedarf der Einheit beschreibt. Voreinstellung: 'list'  - `RotatingMachine`: Eine Synchronmaschine kann als Generator arbeiten und wird als solcher Mitglied einer Erzeugungseinheit. Voreinstellung: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `genControlSource`: Die Quelle der Steuerungen für eine Erzeugungseinheit. Voreinstellung: Keine  - `governorSCD`: Drehzahländerungsabweichung des Reglers.   Dies ist die Änderung der Generatorausgangsleistung geteilt durch die Frequenzänderung, normiert auf die Nennleistung des Generators und die Nennfrequenz und ausgedrückt in Prozent und negiert. Ein positiver Wert der Drehzahländerungsdroop sorgt für zusätzliche Generatorleistung bei einem Frequenzabfall. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `initialP`: Standard-Anfangswirkleistung, die verwendet wird, um ein Leistungsflussergebnis für die Anfangswirkleistung für dieses Gerät in dieser Netzwerkkonfiguration zu speichern. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `longPF`: Langfristiger wirtschaftlicher Beteiligungsfaktor der Erzeugungseinheit. Voreinstellung: 0,0  - `maxOperatingP`: Dies ist die maximale Betriebswirkleistungsgrenze, die der Dispatcher für dieses Gerät eingeben kann. Voreinstellung: 0.0  - `maximumAllowableSpinningReserve`: Maximal zulässige Spinnreserve. Die Spinnreserve wird unabhängig vom aktuellen Betriebspunkt nie größer als dieser Wert betrachtet. Voreinstellung: 0.0  - `minOperatingP`: Dies ist die minimale Betriebswirkleistungsgrenze, die der Dispatcher für dieses Gerät eingeben kann. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `nominalP`: Die Nennleistung der Erzeugungseinheit.  Wird verwendet, um prozentualen Attributen, wie z. B. dem Drehzahländerungsdrop des Reglers (Attribut governorSCD), eine genaue Bedeutung zu geben. Das Attribut muss ein positiver Wert gleich oder kleiner als RotatingMachine.ratedS sein. Voreinstellung: 0.0  - `normalPF`: Faktor der wirtschaftlichen Beteiligung der Erzeugungseinheit. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `ratedGrossMaxP`: Die maximale Brutto-Nennleistung des Geräts (Buchwert). Voreinstellung: 0.0  - `ratedGrossMinP`: Die minimale Brutto-Nennleistung, mit der das Gerät sicher betrieben werden kann, während es Strom in das Übertragungsnetz liefert. Voreinstellung: 0,0  - `ratedNetMaxP`: Die maximale Nettonennleistung, die durch Subtraktion der für den Betrieb der internen Anlagenmaschinen verwendeten Hilfsleistung von der maximalen Bruttonennleistung ermittelt wird. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `shortPF`: Kurzfristiger wirtschaftlicher Beteiligungsfaktor der Erzeugungseinheit. Voreinstellung: 0,0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `startupCost`: Die anfänglichen Startkosten, die bei jedem Start der GeneratingUnit anfallen. Standard: 0.0  - `totalEfficiency`: Der Wirkungsgrad des Geräts bei der Umwandlung des Brennstoffs in elektrische Energie. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss GeneratingUnit sein  - `variableCost`: Der variable Kostenanteil der Produktion pro Einheit ActivePower. Standard: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -105,10 +105,10 @@ GeneratingUnit:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     longPF:    
       description: 'Generating unit long term economic participation factor. Default: 0.0'    
       type: number    
