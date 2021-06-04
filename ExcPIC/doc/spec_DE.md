@@ -6,7 +6,7 @@ Entität: ExcPIC
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `e1`: Feldspannungswert 1 (E1).  Typischer Wert = 0. Voreinstellung: 0.0  - `e2`: Feldspannungswert 2 (E2).  Typischer Wert = 0. Voreinstellung: 0.0  - `efdmax`: Erreger-Maximalgrenze (Efdmax).  Typischer Wert = 8. Voreinstellung: 0.0  - `efdmin`: Erreger-Minimalgrenze (Efdmin).  Typischer Wert = -0,87. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des PI-Reglers (Ka).  Typischer Wert = 3,15. Voreinstellung: 0.0  - `kc`: Erreger-Regelungsfaktor (Kc).  Typischer Wert = 0,08. Voreinstellung: 0,0  - `ke`: Erregerkonstante (Ke).  Typischer Wert = 0. Voreinstellung: 0.0  - `kf`: Verstärkung der Ratenrückführung (Kf).  Typischer Wert = 0. Voreinstellung: 0.0  - `ki`: Stromquellenverstärkung (Ki).  Typischer Wert = 0. Voreinstellung: 0.0  - `kp`: Potentielle Quellenverstärkung (Kp).  Typischer Wert = 6,5. Voreinstellung: 0,0  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `se1`: Sättigungsfaktor an E1 (Se1).  Typischer Wert = 0. Voreinstellung: 0.0  - `se2`: Sättigungsfaktor bei E2 (Se2).  Typischer Wert = 0. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta1`: Zeitkonstante des PI-Reglers (Ta1).  Typischer Wert = 1. Voreinstellung: 0  - `ta2`: Zeitkonstante des Spannungsreglers (Ta2).  Typischer Wert = 0,01. Voreinstellung: 0  - `ta3`: Vorlaufzeitkonstante (Ta3).  Typischer Wert = 0. Voreinstellung: 0  - `ta4`: Nachlaufzeitkonstante (Ta4).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erreger-Zeitkonstante (Te).  Typischer Wert = 0. Voreinstellung: 0  - `tf1`: Zeitkonstante der Ratenrückführung (Tf1).  Typischer Wert = 0. Voreinstellung: 0  - `tf2`: Verzögerungszeitkonstante der Ratenrückführung (Tf2).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcPIC sein  - `vr1`: PI-Maximalgrenze (Vr1).  Typischer Wert = 1. Voreinstellung: 0,0  - `vr2`: PI-Minimalgrenze (Vr2).  Typischer Wert = -0,87. Voreinstellung: 0,0  - `vrmax`: Maximale Grenze des Spannungsreglers (Vrmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `vrmin`: Minimale Grenze des Spannungsreglers (Vrmin).  Typischer Wert = -0,87. Voreinstellung: 0,0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `e1`: Feldspannungswert 1 (E1).  Typischer Wert = 0. Voreinstellung: 0.0  - `e2`: Feldspannungswert 2 (E2).  Typischer Wert = 0. Voreinstellung: 0.0  - `efdmax`: Erreger-Maximalgrenze (Efdmax).  Typischer Wert = 8. Voreinstellung: 0.0  - `efdmin`: Erreger-Minimalgrenze (Efdmin).  Typischer Wert = -0,87. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des PI-Reglers (Ka).  Typischer Wert = 3,15. Voreinstellung: 0.0  - `kc`: Erreger-Regelungsfaktor (Kc).  Typischer Wert = 0,08. Voreinstellung: 0,0  - `ke`: Erregerkonstante (Ke).  Typischer Wert = 0. Voreinstellung: 0.0  - `kf`: Verstärkung der Ratenrückführung (Kf).  Typischer Wert = 0. Voreinstellung: 0.0  - `ki`: Stromquellenverstärkung (Ki).  Typischer Wert = 0. Voreinstellung: 0.0  - `kp`: Potentielle Quellenverstärkung (Kp).  Typischer Wert = 6,5. Voreinstellung: 0,0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `se1`: Sättigungsfaktor an E1 (Se1).  Typischer Wert = 0. Voreinstellung: 0.0  - `se2`: Sättigungsfaktor bei E2 (Se2).  Typischer Wert = 0. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta1`: Zeitkonstante des PI-Reglers (Ta1).  Typischer Wert = 1. Voreinstellung: 0  - `ta2`: Zeitkonstante des Spannungsreglers (Ta2).  Typischer Wert = 0,01. Voreinstellung: 0  - `ta3`: Vorlaufzeitkonstante (Ta3).  Typischer Wert = 0. Voreinstellung: 0  - `ta4`: Nachlaufzeitkonstante (Ta4).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erreger-Zeitkonstante (Te).  Typischer Wert = 0. Voreinstellung: 0  - `tf1`: Zeitkonstante der Ratenrückführung (Tf1).  Typischer Wert = 0. Voreinstellung: 0  - `tf2`: Verzögerungszeitkonstante der Ratenrückführung (Tf2).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcPIC sein  - `vr1`: PI-Maximalgrenze (Vr1).  Typischer Wert = 1. Voreinstellung: 0,0  - `vr2`: PI-Minimalgrenze (Vr2).  Typischer Wert = -0,87. Voreinstellung: 0,0  - `vrmax`: Maximale Grenze des Spannungsreglers (Vrmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `vrmin`: Minimale Grenze des Spannungsreglers (Vrmin).  Typischer Wert = -0,87. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -125,10 +125,10 @@ ExcPIC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
