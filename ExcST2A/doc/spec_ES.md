@@ -6,7 +6,7 @@ Entidad: ExcST2A
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Tensión de campo máxima (Efdmax).  Valor típico = 99. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (Ka).  Valor típico = 120. Por defecto: 0,0  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (Kc).  Valor típico = 1,82. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (Ke).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de la excitación (Kf).  Valor típico = 0,05. Por defecto: 0,0  - `ki`: Coeficiente de ganancia del circuito potencial (Ki).  Valor típico = 8. Por defecto: 0,0  - `kp`: Coeficiente de ganancia del circuito potencial (Kp).  Valor típico = 4,88. Por defecto: 0,0  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (Ta).  Valor típico = 0,15. Por defecto: 0  - `tb`: Constante de tiempo del regulador de tensión (Tb).  Valor típico = 0. Por defecto: 0  - `tc`: Constante de tiempo del regulador de tensión (Tc).  Valor típico = 0. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (Te).  Valor típico = 0,5. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (Tf).  Valor típico = 0,7. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcST2A  - `uelin`: Entrada UEL (UELin). verdadero = puerta HV falso = añadir a la señal de error. Valor típico = falso. Por defecto: Falso  - `vrmax`: Salidas máximas del regulador de tensión (Vrmax).  Valor típico = 1. Por defecto: 0,0  - `vrmin`: Salidas mínimas del regulador de tensión (Vrmin).  Valor típico = -1. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Tensión de campo máxima (Efdmax).  Valor típico = 99. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Ganancia del regulador de tensión (Ka).  Valor típico = 120. Por defecto: 0,0  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (Kc).  Valor típico = 1,82. Por defecto: 0,0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (Ke).  Valor típico = 1. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de la excitación (Kf).  Valor típico = 0,05. Por defecto: 0,0  - `ki`: Coeficiente de ganancia del circuito potencial (Ki).  Valor típico = 8. Por defecto: 0,0  - `kp`: Coeficiente de ganancia del circuito potencial (Kp).  Valor típico = 4,88. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (Ta).  Valor típico = 0,15. Por defecto: 0  - `tb`: Constante de tiempo del regulador de tensión (Tb).  Valor típico = 0. Por defecto: 0  - `tc`: Constante de tiempo del regulador de tensión (Tc).  Valor típico = 0. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (Te).  Valor típico = 0,5. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (Tf).  Valor típico = 0,7. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcST2A  - `uelin`: Entrada UEL (UELin). verdadero = puerta HV falso = añadir a la señal de error. Valor típico = falso. Por defecto: Falso  - `vrmax`: Salidas máximas del regulador de tensión (Vrmax).  Valor típico = 1. Por defecto: 0,0  - `vrmin`: Salidas mínimas del regulador de tensión (Vrmin).  Valor típico = -1. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -110,10 +110,10 @@ ExcST2A:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ ExcST2A:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ ExcST2A:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ ExcST2A:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ ExcST2A:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ ExcST2A:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ ExcST2A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
