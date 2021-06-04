@@ -6,7 +6,7 @@ Entität: Pss2B
 
 ## Liste der Eigenschaften  
 
-- `a`: Zählerkonstante (a).  Typischer Wert = 1. Voreinstellung: 0,0  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inputSignal1Type`: Typ des Eingangssignals #1.  Typischer Wert = rotorSpeed. Voreinstellung: Keine  - `inputSignal2Type`: Typ des Eingangssignals #2.  Typischer Wert = generatorElectricalPower. Voreinstellung: Keine  - `ks1`: Stabilisator-Verstärkung (Ks1).  Typischer Wert = 12. Voreinstellung: 0.0  - `ks2`: Verstärkung bei Signal #2 (Ks2).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `ks3`: Verstärkung am Eingang Signal #2 vor dem Ramp-Tracking-Filter (Ks3).  Typischer Wert = 1. Voreinstellung: 0.0  - `ks4`: Verstärkung am Eingang von Signal #2 nach Ramp-Tracking-Filter (Ks4).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`:   - `m`: Nennerordnung des Rampennachlauffilters (M).  Typischer Wert = 5. Voreinstellung: 0  - `n`: Ordnung des Rampennachlauffilters (N).  Typischer Wert = 1. Voreinstellung: 0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Vorlauf-/Verzögerungszeitkonstante (T1).  Typischer Wert = 0,12. Voreinstellung: 0  - `t10`: Vorlauf-/Verzögerungszeitkonstante (T10).  Typischer Wert = 0. Voreinstellung: 0  - `t11`: Vorlauf-/Verzögerungszeitkonstante (T11).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Vorlauf-/Verzögerungszeitkonstante (T2).  Typischer Wert = 0,02. Voreinstellung: 0  - `t3`: Vorlauf-/Verzögerungszeitkonstante (T3).  Typischer Wert = 0,3. Voreinstellung: 0  - `t4`: Vorlauf-/Verzögerungszeitkonstante (T4).  Typischer Wert = 0,02. Voreinstellung: 0  - `t6`: Zeitkonstante auf Signal #1 (T6).  Typischer Wert = 0. Voreinstellung: 0  - `t7`: Zeitkonstante auf Signal #2 (T7).  Typischer Wert = 2. Voreinstellung: 0  - `t8`: Steigung des Rampennachlauffilters (T8).  Typischer Wert = 0,2. Voreinstellung: 0  - `t9`: Verzögerung des Rampennachlauffilters (T9).  Typischer Wert = 0,1. Voreinstellung: 0  - `ta`: Leitungskonstante (Ta).  Typischer Wert = 0. Voreinstellung: 0  - `tb`: Nachlaufzeitkonstante (Tb).  Typischer Wert = 0. Voreinstellung: 0  - `tw1`: Erste Auswaschung auf Signal #1 (Tw1).  Typischer Wert = 2. Voreinstellung: 0  - `tw2`: Zweiter Washout auf Signal #1 (Tw2).  Typischer Wert = 2. Voreinstellung: 0  - `tw3`: Erste Auswaschung auf Signal #2 (Tw3).  Typischer Wert = 2. Voreinstellung: 0  - `tw4`: Zweiter Washout auf Signal #2 (Tw4).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss Pss2B sein  - `vsi1max`: Maximaler Grenzwert des Eingangssignals 1 (Vsi1max).  Typischer Wert = 2. Voreinstellung: 0,0  - `vsi1min`: Eingangssignal #1 Min-Grenze (Vsi1min).  Typischer Wert = -2. Voreinstellung: 0,0  - `vsi2max`: Eingangssignal #2 max Grenze (Vsi2max).  Typischer Wert = 2. Voreinstellung: 0,0  - `vsi2min`: Eingangssignal #2 min Grenze (Vsi2min).  Typischer Wert = -2. Voreinstellung: 0,0  - `vstmax`: Maximalgrenze des Stabilisatorausgangs (Vstmax).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `vstmin`: Minimalgrenze des Stabilisatorausgangs (Vstmin).  Typischer Wert = -0,1. Voreinstellung: 0,0    
+- `a`: Zählerkonstante (a).  Typischer Wert = 1. Voreinstellung: 0,0  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inputSignal1Type`: Typ des Eingangssignals #1.  Typischer Wert = rotorSpeed. Voreinstellung: Keine  - `inputSignal2Type`: Typ des Eingangssignals #2.  Typischer Wert = generatorElectricalPower. Voreinstellung: Keine  - `ks1`: Stabilisator-Verstärkung (Ks1).  Typischer Wert = 12. Voreinstellung: 0.0  - `ks2`: Verstärkung bei Signal #2 (Ks2).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `ks3`: Verstärkung am Eingang Signal #2 vor dem Ramp-Tracking-Filter (Ks3).  Typischer Wert = 1. Voreinstellung: 0.0  - `ks4`: Verstärkung am Eingang von Signal #2 nach Ramp-Tracking-Filter (Ks4).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `m`: Nennerordnung des Rampennachlauffilters (M).  Typischer Wert = 5. Voreinstellung: 0  - `n`: Ordnung des Rampennachlauffilters (N).  Typischer Wert = 1. Voreinstellung: 0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Vorlauf-/Verzögerungszeitkonstante (T1).  Typischer Wert = 0,12. Voreinstellung: 0  - `t10`: Vorlauf-/Verzögerungszeitkonstante (T10).  Typischer Wert = 0. Voreinstellung: 0  - `t11`: Vorlauf-/Verzögerungszeitkonstante (T11).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Vorlauf-/Verzögerungszeitkonstante (T2).  Typischer Wert = 0,02. Voreinstellung: 0  - `t3`: Vorlauf-/Verzögerungszeitkonstante (T3).  Typischer Wert = 0,3. Voreinstellung: 0  - `t4`: Vorlauf-/Verzögerungszeitkonstante (T4).  Typischer Wert = 0,02. Voreinstellung: 0  - `t6`: Zeitkonstante auf Signal #1 (T6).  Typischer Wert = 0. Voreinstellung: 0  - `t7`: Zeitkonstante auf Signal #2 (T7).  Typischer Wert = 2. Voreinstellung: 0  - `t8`: Steigung des Rampennachlauffilters (T8).  Typischer Wert = 0,2. Voreinstellung: 0  - `t9`: Verzögerung des Rampennachlauffilters (T9).  Typischer Wert = 0,1. Voreinstellung: 0  - `ta`: Leitungskonstante (Ta).  Typischer Wert = 0. Voreinstellung: 0  - `tb`: Nachlaufzeitkonstante (Tb).  Typischer Wert = 0. Voreinstellung: 0  - `tw1`: Erste Auswaschung auf Signal #1 (Tw1).  Typischer Wert = 2. Voreinstellung: 0  - `tw2`: Zweiter Washout auf Signal #1 (Tw2).  Typischer Wert = 2. Voreinstellung: 0  - `tw3`: Erste Auswaschung auf Signal #2 (Tw3).  Typischer Wert = 2. Voreinstellung: 0  - `tw4`: Zweiter Washout auf Signal #2 (Tw4).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss Pss2B sein  - `vsi1max`: Maximaler Grenzwert des Eingangssignals 1 (Vsi1max).  Typischer Wert = 2. Voreinstellung: 0,0  - `vsi1min`: Eingangssignal #1 Min-Grenze (Vsi1min).  Typischer Wert = -2. Voreinstellung: 0,0  - `vsi2max`: Eingangssignal #2 max Grenze (Vsi2max).  Typischer Wert = 2. Voreinstellung: 0,0  - `vsi2min`: Eingangssignal #2 min Grenze (Vsi2min).  Typischer Wert = -2. Voreinstellung: 0.0  - `vstmax`: Maximalgrenze des Stabilisatorausgangs (Vstmax).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `vstmin`: Minimalgrenze des Stabilisatorausgangs (Vstmin).  Typischer Wert = -0,1. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -110,10 +110,10 @@ Pss2B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ Pss2B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ Pss2B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ Pss2B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ Pss2B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ Pss2B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ Pss2B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     m:    
       description: 'Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0'    
       type: number    
