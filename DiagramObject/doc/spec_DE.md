@@ -6,7 +6,7 @@ Entität: DiagrammObjekt
 
 ## Liste der Eigenschaften  
 
-- `Diagram`: Ein Diagrammobjekt ist Teil eines Diagramms. Voreinstellung: Keine  - `DiagramObjectPoints`: Ein Diagrammobjekt kann 0 oder mehr Punkte haben, um seine Position im Layout, seine Streckenführung (bei Polylinien) oder seine Begrenzung (bei Polygonen) wiederzugeben. Voreinstellung: 'Liste'  - `DiagramObjectStyle`: Einem Diagrammobjekt ist ein Stil zugeordnet, der eine Referenz für den im Ursprungssystem verwendeten Stil darstellt. Voreinstellung: Keine  - `IdentifiedObject`: Die Diagrammobjekte, die mit dem Domänenobjekt verbunden sind. Voreinstellung: Keine  - `VisibilityLayers`: Ein Diagrammobjekt kann Teil mehrerer Sichtbarkeitsebenen sein. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `drawingOrder`: Die Zeichenreihenfolge für dieses Element. Je höher die Zahl, desto später wird das Element in der Reihenfolge gezeichnet. Dies wird verwendet, um sicherzustellen, dass sich überlappende Elemente in der richtigen Reihenfolge gerendert werden. Voreinstellung: 0  - `id`: Eindeutiger Bezeichner der Entität  - `isPolygon`: Legt fest, ob die Punkte der Diagrammobjekte die Grenzen eines Polygons oder den Verlauf einer Polylinie definieren oder nicht. Wenn dieser Wert true ist, sollte eine empfangende Anwendung den ersten und letzten Punkt als verbunden betrachten. Voreinstellung: False  - `location`:   - `name`: Der Name dieses Elements.  - `offsetX`: Der Offset in X-Richtung. Damit wird der Offset von der Mitte für das Rendern eines Symbols definiert (standardmäßig gibt ein einzelner Punkt die Mitte des Symbols an).  Der Offset wird in Einheiten angegeben, wobei 0 bedeutet, dass es keinen Offset von der horizontalen Mitte des Symbols gibt.  -0,5 gibt an, dass es um 50 % nach links versetzt ist, und 0,5 gibt einen Versatz von 50 % nach rechts an. Voreinstellung: 0.0  - `offsetY`: Der Offset in Y-Richtung. Dies wird verwendet, um den Offset von der Mitte für das Rendern eines Symbols zu definieren (die Vorgabe ist, dass ein einzelner Punkt die Mitte des Symbols angibt).  Der Offset wird pro Einheit angegeben, wobei 0 anzeigt, dass kein Offset vom vertikalen Mittelpunkt des Symbols vorliegt.  Die Richtung des Offsets ist abhängig von der Ausrichtung des Diagramms, wobei -0,5 und 0,5 einen Offset von +/- 50 % auf der vertikalen Achse angeben. Voreinstellung: 0.0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `rotation`: Legt den Drehwinkel des Diagrammobjekts fest.  Null Grad zeigt auf den oberen Rand des Diagramms.  Die Drehung erfolgt im Uhrzeigersinn. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss DiagramObject sein    
+- `Diagram`: Ein Diagrammobjekt ist Teil eines Diagramms. Voreinstellung: Keine  - `DiagramObjectPoints`: Ein Diagrammobjekt kann 0 oder mehr Punkte haben, um seine Position im Layout, seine Streckenführung (bei Polylinien) oder seine Begrenzung (bei Polygonen) wiederzugeben. Voreinstellung: 'Liste'  - `DiagramObjectStyle`: Einem Diagrammobjekt ist ein Stil zugeordnet, der eine Referenz für den im Ursprungssystem verwendeten Stil darstellt. Voreinstellung: Keine  - `IdentifiedObject`: Die Diagrammobjekte, die mit dem Domänenobjekt verbunden sind. Voreinstellung: Keine  - `VisibilityLayers`: Ein Diagrammobjekt kann Teil mehrerer Sichtbarkeitsebenen sein. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `drawingOrder`: Die Zeichenreihenfolge für dieses Element. Je höher die Zahl, desto später wird das Element in der Reihenfolge gezeichnet. Dies wird verwendet, um sicherzustellen, dass sich überlappende Elemente in der richtigen Reihenfolge gerendert werden. Voreinstellung: 0  - `id`: Eindeutiger Bezeichner der Entität  - `isPolygon`: Legt fest, ob die Punkte der Diagrammobjekte die Grenzen eines Polygons oder den Verlauf einer Polylinie definieren oder nicht. Wenn dieser Wert true ist, sollte eine empfangende Anwendung den ersten und letzten Punkt als verbunden betrachten. Voreinstellung: False  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `offsetX`: Der Offset in X-Richtung. Damit wird der Offset von der Mitte für das Rendern eines Symbols definiert (standardmäßig gibt ein einzelner Punkt die Mitte des Symbols an).  Der Offset wird in Einheiten angegeben, wobei 0 bedeutet, dass es keinen Offset von der horizontalen Mitte des Symbols gibt.  -0,5 zeigt an, dass es um 50 % nach links versetzt ist, und 0,5 zeigt einen Versatz von 50 % nach rechts an. Voreinstellung: 0.0  - `offsetY`: Der Offset in Y-Richtung. Dies wird verwendet, um den Offset von der Mitte für das Rendern eines Symbols zu definieren (die Vorgabe ist, dass ein einzelner Punkt die Mitte des Symbols angibt).  Der Offset wird pro Einheit angegeben, wobei 0 anzeigt, dass kein Offset vom vertikalen Mittelpunkt des Symbols vorliegt.  Die Richtung des Offsets ist abhängig von der Ausrichtung des Diagramms, wobei -0,5 und 0,5 einen Offset von +/- 50 % auf der vertikalen Achse angeben. Voreinstellung: 0.0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `rotation`: Legt den Drehwinkel des Diagrammobjekts fest.  Null Grad zeigt auf den oberen Rand des Diagramms.  Die Drehung erfolgt im Uhrzeigersinn. Voreinstellung: 0.0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss DiagramObject sein    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -110,10 +110,10 @@ DiagramObject:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ DiagramObject:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -304,7 +309,7 @@ DiagramObject:
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
-Nicht verfügbar ist das Beispiel eines DiagramObjects im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar das Beispiel eines DiagramObjects im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel eines DiagramObjects im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines DiagramObjects im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar das Beispiel eines DiagramObjects im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
