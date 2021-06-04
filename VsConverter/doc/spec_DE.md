@@ -6,7 +6,7 @@ Entität: VsConverter
 
 ## Liste der Eigenschaften  
 
-- `CapabilityCurve`: Alle Konverter mit dieser Fähigkeitskurve. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `delta`: Winkel zwischen uf und uc. Im Leistungsfluss verwendete Zustandsgröße des Umrichters. Voreinstellung: 0,0  - `description`: Eine Beschreibung dieses Artikels  - `droop`: Droop-Konstante; pu-Wert ergibt sich als D [kV^2 / MW] x Sb / Ubdc^2. Voreinstellung: 0,0  - `droopCompensation`: Kompensationskonstante (Widerstand). Dient zur Kompensation des Spannungsabfalls bei der Steuerung der Spannung an einem entfernten Bus. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `maxModulationIndex`: Der maximale Quotient zwischen der Wechselrichterspannung (Uc) und der Gleichspannung (Ud). Ein Faktor, der typischerweise kleiner als 1 ist. VSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `maxValveCurrent`: Der maximale Strom durch ein Ventil. Diese Stromgrenze ist die Grundlage für die Berechnung des Fähigkeitsdiagramms. VSC-Konfigurationsdaten. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pPccControl`: Art der Steuerung von Wirkleistung und/oder Gleichspannung. Voreinstellung: Keine  - `qPccControl`:  Standard: Keine  - `qShare`: Blindleistungsaufteilungsfaktor zwischen parallelen Umrichtern bei Uac-Steuerung. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `targetQpcc`: Ziel der Blindleistungseinspeisung in das AC-Netz, am Punkt der gemeinsamen Kopplung. Voreinstellung: 0,0  - `targetUpcc`: Spannungsziel im AC-Netz, am Punkt der gemeinsamen Kopplung. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss VsConverter sein  - `uf`: Filter-Busspannung. Zustandsgröße des Umrichters, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0    
+- `CapabilityCurve`: Alle Konverter mit dieser Fähigkeitskurve. Voreinstellung: Keine  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `delta`: Winkel zwischen uf und uc. Im Leistungsfluss verwendete Zustandsgröße des Umrichters. Voreinstellung: 0,0  - `description`: Eine Beschreibung dieses Artikels  - `droop`: Droop-Konstante; pu-Wert ergibt sich als D [kV^2 / MW] x Sb / Ubdc^2. Voreinstellung: 0,0  - `droopCompensation`: Kompensationskonstante (Widerstand). Dient zur Kompensation des Spannungsabfalls bei der Steuerung der Spannung an einem entfernten Bus. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxModulationIndex`: Der maximale Quotient zwischen der Wechselrichterspannung (Uc) und der Gleichspannung (Ud). Ein Faktor, der typischerweise kleiner als 1 ist. VSC-Konfigurationsdaten, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `maxValveCurrent`: Der maximale Strom durch ein Ventil. Diese Stromgrenze ist die Grundlage für die Berechnung des Fähigkeitsdiagramms. VSC-Konfigurationsdaten. Voreinstellung: 0.0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pPccControl`: Art der Steuerung von Wirkleistung und/oder Gleichspannung. Voreinstellung: Keine  - `qPccControl`:  Standard: Keine  - `qShare`: Blindleistungsaufteilungsfaktor zwischen parallelen Umrichtern bei Uac-Steuerung. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `targetQpcc`: Ziel der Blindleistungseinspeisung in das AC-Netz, am Punkt der gemeinsamen Kopplung. Voreinstellung: 0,0  - `targetUpcc`: Spannungsziel im AC-Netz, am Punkt der gemeinsamen Kopplung. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss VsConverter sein  - `uf`: Filter-Busspannung. Zustandsgröße des Umrichters, ergibt sich aus dem Leistungsfluss. Voreinstellung: 0,0    
 Erforderliche Eigenschaften  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -95,10 +95,10 @@ VsConverter:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +118,8 @@ VsConverter:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +142,8 @@ VsConverter:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +168,8 @@ VsConverter:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +191,8 @@ VsConverter:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +217,8 @@ VsConverter:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +245,7 @@ VsConverter:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxModulationIndex:    
       description: 'The max quotient between the AC converter voltage (Uc) and DC voltage (Ud). A factor typically less than 1. VSC configuration data used in power flow. Default: 0.0'    
       type: number    
