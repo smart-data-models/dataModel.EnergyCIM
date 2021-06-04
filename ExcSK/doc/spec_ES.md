@@ -6,7 +6,7 @@ Entidad: ExcSK
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Límite de recorte de la tensión de campo (Efdmax). Por defecto: 0,0  - `efdmin`: Límite de recorte de la tensión de campo (Efdmin). Por defecto: 0,0  - `emax`: Salida máxima de tensión de campo (Emax).  Valor típico = 20. Por defecto: 0,0  - `emin`: Salida mínima de tensión de campo (Emin).  Valor típico = -20. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `k`: Ganancia (K).  Valor típico = 1. Por defecto: 0,0  - `k1`: Parámetro del límite de subexcitación (K1).  Valor típico = 0,1364. Por defecto: 0,0  - `k2`: Parámetro del límite de subexcitación (K2).  Valor típico = -0,3861. Por defecto: 0,0  - `kc`: Ganancia del controlador PI (Kc).  Valor típico = 70. Por defecto: 0,0  - `kce`: Factor de regulación del rectificador (Kce).  Valor típico = 0. Por defecto: 0.0  - `kd`: Reactancia interna del excitador (Kd).  Valor típico = 0. Por defecto: 0.0  - `kgob`: Ganancia del regulador P (Kgob).  Valor típico = 10. Por defecto: 0,0  - `kp`: Ganancia del controlador PI (Kp).  Valor típico = 1. Por defecto: 0,0  - `kqi`: Ganancia del controlador PI de la componente integral (Kqi).  Valor típico = 0. Por defecto: 0.0  - `kqob`: Tasa de aumento de la potencia reactiva (Kqob). Por defecto: 0,0  - `kqp`: Ganancia del controlador PI (Kqp).  Valor típico = 0. Por defecto: 0.0  - `location`:   - `name`: El nombre de este artículo.  - `nq`: Banda muerta de la potencia reactiva (nq).  Determina el rango de sensibilidad.  Valor típico = 0,001. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `qconoff`: Estado del control de la tensión secundaria (Qc_on_off). verdadero = el control de la tensión secundaria está activado falso = el control de la tensión secundaria está desactivado. Valor típico = falso. Por defecto: Falso  - `qz`: Valor deseado (consigna) de la potencia reactiva, ajuste manual (Qz). Por defecto: 0,0  - `remote`: Selector para aplicar el cálculo automático en el modelo de controlador secundario. verdadero = se activa el cálculo automático falso = se activa el ajuste manual; se requiere el uso del valor deseado de potencia reactiva (Qz). Valor típico = verdadero. Por defecto: Falso  - `sbase`: Potencia aparente de la unidad (Sbase).  Unidad = MVA.  Valor típico = 259. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tc`: Constante de tiempo de avance de fase del controlador PI (Tc).  Valor típico = 8. Por defecto: 0  - `te`: Constante de tiempo del bloque de ganancia (Te).  Valor típico = 0,1. Por defecto: 0  - `ti`: Constante de tiempo de avance de fase del controlador PI (Ti).  Valor típico = 2. Por defecto: 0  - `tp`: Constante de tiempo (Tp).  Valor típico = 0,1. Por defecto: 0  - `tr`: Constante de tiempo del transductor de tensión (Tr).  Valor típico = 0,01. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcSK  - `uimax`: Error máximo (Uimax).  Valor típico = 10. Por defecto: 0,0  - `uimin`: Error mínimo (UImin).  Valor típico = -10. Por defecto: 0,0  - `urmax`: Salida máxima del regulador (URmax).  Valor típico = 10. Por defecto: 0,0  - `urmin`: Salida mínima del regulador (URmin).  Valor típico = -10. Por defecto: 0,0  - `vtmax`: Entrada de tensión máxima en los terminales (Vtmax).  Determina el rango de banda muerta de tensión.  Valor típico = 1,05. Por defecto: 0,0  - `vtmin`: Entrada mínima de tensión en los terminales (Vtmin).  Determina el rango de banda muerta de tensión.  Valor típico = 0,95. Por defecto: 0,0  - `yp`: Salida máxima (Yp).  Salida mínima = 0. Valor típico = 1. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `efdmax`: Límite de recorte de la tensión de campo (Efdmax). Por defecto: 0,0  - `efdmin`: Límite de recorte de la tensión de campo (Efdmin). Por defecto: 0,0  - `emax`: Salida máxima de tensión de campo (Emax).  Valor típico = 20. Por defecto: 0,0  - `emin`: Salida mínima de tensión de campo (Emin).  Valor típico = -20. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `k`: Ganancia (K).  Valor típico = 1. Por defecto: 0,0  - `k1`: Parámetro del límite de subexcitación (K1).  Valor típico = 0,1364. Por defecto: 0,0  - `k2`: Parámetro del límite de subexcitación (K2).  Valor típico = -0,3861. Por defecto: 0,0  - `kc`: Ganancia del controlador PI (Kc).  Valor típico = 70. Por defecto: 0,0  - `kce`: Factor de regulación del rectificador (Kce).  Valor típico = 0. Por defecto: 0.0  - `kd`: Reactancia interna del excitador (Kd).  Valor típico = 0. Por defecto: 0.0  - `kgob`: Ganancia del regulador P (Kgob).  Valor típico = 10. Por defecto: 0,0  - `kp`: Ganancia del controlador PI (Kp).  Valor típico = 1. Por defecto: 0,0  - `kqi`: Ganancia del controlador PI de la componente integral (Kqi).  Valor típico = 0. Por defecto: 0.0  - `kqob`: Tasa de aumento de la potencia reactiva (Kqob). Por defecto: 0,0  - `kqp`: Ganancia del controlador PI (Kqp).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nq`: Banda muerta de la potencia reactiva (nq).  Determina el rango de sensibilidad.  Valor típico = 0,001. Por defecto: 0,0  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `qconoff`: Estado del control de la tensión secundaria (Qc_on_off). verdadero = el control de la tensión secundaria está activado falso = el control de la tensión secundaria está desactivado. Valor típico = falso. Por defecto: Falso  - `qz`: Valor deseado (consigna) de la potencia reactiva, ajuste manual (Qz). Por defecto: 0,0  - `remote`: Selector para aplicar el cálculo automático en el modelo de controlador secundario. verdadero = se activa el cálculo automático falso = se activa el ajuste manual; se requiere el uso del valor deseado de potencia reactiva (Qz). Valor típico = verdadero. Por defecto: Falso  - `sbase`: Potencia aparente de la unidad (Sbase).  Unidad = MVA.  Valor típico = 259. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tc`: Constante de tiempo de avance de fase del controlador PI (Tc).  Valor típico = 8. Por defecto: 0  - `te`: Constante de tiempo del bloque de ganancia (Te).  Valor típico = 0,1. Por defecto: 0  - `ti`: Constante de tiempo de avance de fase del controlador PI (Ti).  Valor típico = 2. Por defecto: 0  - `tp`: Constante de tiempo (Tp).  Valor típico = 0,1. Por defecto: 0  - `tr`: Constante de tiempo del transductor de tensión (Tr).  Valor típico = 0,01. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcSK  - `uimax`: Error máximo (Uimax).  Valor típico = 10. Por defecto: 0,0  - `uimin`: Error mínimo (UImin).  Valor típico = -10. Por defecto: 0,0  - `urmax`: Salida máxima del regulador (URmax).  Valor típico = 10. Por defecto: 0,0  - `urmin`: Salida mínima del regulador (URmin).  Valor típico = -10. Por defecto: 0,0  - `vtmax`: Entrada de tensión máxima en los terminales (Vtmax).  Determina el rango de banda muerta de tensión.  Valor típico = 1,05. Por defecto: 0,0  - `vtmin`: Entrada mínima de tensión en los terminales (Vtmin).  Determina el rango de banda muerta de tensión.  Valor típico = 0,95. Por defecto: 0,0  - `yp`: Salida máxima (Yp).  Salida mínima = 0. Valor típico = 1. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -150,10 +150,10 @@ ExcSK:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +173,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +197,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -221,7 +223,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +246,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -268,7 +272,8 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -295,7 +300,7 @@ ExcSK:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
