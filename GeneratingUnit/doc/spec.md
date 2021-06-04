@@ -6,7 +6,7 @@ Entity: GeneratingUnit
 
 ## List of properties  
 
-- `ControlAreaGeneratingUnit`: ControlArea specifications for this generating unit. Default: 'list'  - `GrossToNetActivePowerCurves`: A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: 'list'  - `RotatingMachine`: A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: 'list'  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `genControlSource`: The source of controls for a generating unit. Default: None  - `governorSCD`: Governor Speed Changer Droop.   This is the change in generator power output divided by the change in frequency normalized by the nominal power of the generator and the nominal frequency and expressed in percent and negated. A positive value of speed change droop provides additional generator output upon a drop in frequency. Default: 0.0  - `id`: Unique identifier of the entity  - `initialP`: Default initial active power  which is used to store a powerflow result for the initial active power for this unit in this network configuration. Default: 0.0  - `location`:   - `longPF`: Generating unit long term economic participation factor. Default: 0.0  - `maxOperatingP`: This is the maximum operating active power limit the dispatcher can enter for this unit. Default: 0.0  - `maximumAllowableSpinningReserve`: Maximum allowable spinning reserve. Spinning reserve will never be considered greater than this value regardless of the current operating point. Default: 0.0  - `minOperatingP`: This is the minimum operating active power limit the dispatcher can enter for this unit. Default: 0.0  - `name`: The name of this item.  - `nominalP`: The nominal power of the generating unit.  Used to give precise meaning to percentage based attributes such as the governor speed change droop (governorSCD attribute). The attribute shall be a positive value equal or less than RotatingMachine.ratedS. Default: 0.0  - `normalPF`: Generating unit economic participation factor. Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `ratedGrossMaxP`: The unit`s gross rated maximum capacity (book value). Default: 0.0  - `ratedGrossMinP`: The gross rated minimum generation level which the unit can safely operate at while delivering power to the transmission grid. Default: 0.0  - `ratedNetMaxP`: The net rated maximum capacity determined by subtracting the auxiliary power used to operate the internal plant machinery from the rated gross maximum capacity. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `shortPF`: Generating unit short term economic participation factor. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startupCost`: The initial startup cost incurred for each start of the GeneratingUnit. Default: 0.0  - `totalEfficiency`: The efficiency of the unit in converting the fuel into electrical energy. Default: 0.0  - `type`: NGSI type. It has to be GeneratingUnit  - `variableCost`: The variable cost component of production per unit of ActivePower. Default: 0.0    
+- `ControlAreaGeneratingUnit`: ControlArea specifications for this generating unit. Default: 'list'  - `GrossToNetActivePowerCurves`: A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit. Default: 'list'  - `RotatingMachine`: A synchronous machine may operate as a generator and as such becomes a member of a generating unit. Default: 'list'  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `genControlSource`: The source of controls for a generating unit. Default: None  - `governorSCD`: Governor Speed Changer Droop.   This is the change in generator power output divided by the change in frequency normalized by the nominal power of the generator and the nominal frequency and expressed in percent and negated. A positive value of speed change droop provides additional generator output upon a drop in frequency. Default: 0.0  - `id`: Unique identifier of the entity  - `initialP`: Default initial active power  which is used to store a powerflow result for the initial active power for this unit in this network configuration. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `longPF`: Generating unit long term economic participation factor. Default: 0.0  - `maxOperatingP`: This is the maximum operating active power limit the dispatcher can enter for this unit. Default: 0.0  - `maximumAllowableSpinningReserve`: Maximum allowable spinning reserve. Spinning reserve will never be considered greater than this value regardless of the current operating point. Default: 0.0  - `minOperatingP`: This is the minimum operating active power limit the dispatcher can enter for this unit. Default: 0.0  - `name`: The name of this item.  - `nominalP`: The nominal power of the generating unit.  Used to give precise meaning to percentage based attributes such as the governor speed change droop (governorSCD attribute). The attribute shall be a positive value equal or less than RotatingMachine.ratedS. Default: 0.0  - `normalPF`: Generating unit economic participation factor. Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `ratedGrossMaxP`: The unit`s gross rated maximum capacity (book value). Default: 0.0  - `ratedGrossMinP`: The gross rated minimum generation level which the unit can safely operate at while delivering power to the transmission grid. Default: 0.0  - `ratedNetMaxP`: The net rated maximum capacity determined by subtracting the auxiliary power used to operate the internal plant machinery from the rated gross maximum capacity. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `shortPF`: Generating unit short term economic participation factor. Default: 0.0  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `startupCost`: The initial startup cost incurred for each start of the GeneratingUnit. Default: 0.0  - `totalEfficiency`: The efficiency of the unit in converting the fuel into electrical energy. Default: 0.0  - `type`: NGSI type. It has to be GeneratingUnit  - `variableCost`: The variable cost component of production per unit of ActivePower. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -105,10 +105,10 @@ GeneratingUnit:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ GeneratingUnit:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     longPF:    
       description: 'Generating unit long term economic participation factor. Default: 0.0'    
       type: number    
