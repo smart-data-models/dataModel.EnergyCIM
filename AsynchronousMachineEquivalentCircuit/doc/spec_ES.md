@@ -2,11 +2,11 @@ Entidad: AsynchronousMachineEquivalentCircuit
 =============================================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/AsynchronousMachineEquivalentCircuit/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Adaptado de los modelos de datos CIM. Las ecuaciones eléctricas de todas las variaciones del modelo asíncrono se basan en el diagrama AsynchronousEquivalentCircuit para los ejes directo y de cuadratura, con dos devanados de rotor equivalentes en cada eje.      = + = + * / ( + ) = + * / ( * + * + ) = ( + ) / ( * * + * ) / ( * * (+ ) Las mismas ecuaciones utilizando los atributos CIM de la clase AsynchronousMachineTimeConstantReactance a la izquierda del signo = y de la clase AsynchronousMachineEquivalentCircuit a la derecha (salvo lo indicado): xs = xm + RotatingMachineDynamics.statorLeakageReactance xp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1 / (xm + xlr1) xpp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1* xlr2 / (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) tpo = (xm + xlr1) / (2*pi*frecuencia nominal frecuencia * rr1) tppo = (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) / (2*pi*frecuencia nominal * rr2 * (xm + xlr1)**  
+Descripción global: **Adaptado de los modelos de datos CIM. Las ecuaciones eléctricas de todas las variaciones del modelo asíncrono se basan en el diagrama AsynchronousEquivalentCircuit para los ejes directo y de cuadratura, con dos devanados de rotor equivalentes en cada eje.      = + = + * / ( + ) = + * / ( * + * + ) = ( + ) / ( * * + * ) / ( * * (+ ) Las mismas ecuaciones utilizando los atributos CIM de la clase AsynchronousMachineTimeConstantReactance a la izquierda del signo = y de la clase AsynchronousMachineEquivalentCircuit a la derecha (salvo lo indicado): xs = xm + RotatingMachineDynamics.statorLeakageReactance xp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1 / (xm + xlr1) xpp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1* xlr2 / (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) tpo = (xm + xlr1) / (2*pi*frecuencia nominal * rr1) tppo = (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) / (2*pi*frecuencia nominal * rr2 * (xm + xlr1).**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rr1`: Resistencia del devanado de la compuerta 1. Por defecto: 0,0  - `rr2`: Resistencia del devanado de la compuerta 2. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser AsynchronousMachineEquivalentCircuit  - `xlr1`: Reactancia de fuga del devanado de la compuerta 1. Por defecto: 0,0  - `xlr2`: Reactancia de fuga del devanado de la compuerta 2. Por defecto: 0,0  - `xm`: Reactancia de magnetización. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rr1`: Resistencia del devanado de la compuerta 1. Por defecto: 0,0  - `rr2`: Resistencia del devanado de la compuerta 2. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo NGSI. Tiene que ser AsynchronousMachineEquivalentCircuit  - `xlr1`: Reactancia de fuga del devanado de la compuerta 1. Por defecto: 0,0  - `xlr2`: Reactancia de fuga del devanado de la compuerta 2. Por defecto: 0,0  - `xm`: Reactancia de magnetización. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -75,10 +75,10 @@ AsynchronousMachineEquivalentCircuit:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -98,7 +98,8 @@ AsynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -121,7 +122,8 @@ AsynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -146,7 +148,8 @@ AsynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -168,7 +171,8 @@ AsynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -193,7 +197,8 @@ AsynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -220,7 +225,7 @@ AsynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
