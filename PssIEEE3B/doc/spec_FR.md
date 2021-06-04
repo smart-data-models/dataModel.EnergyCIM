@@ -6,7 +6,7 @@ Entité : PssIEEE3B
 
 ## Liste des propriétés  
 
-- `a1`: Paramètre du filtre coupe-bande (A1).  Valeur typique = 0.359. Valeur par défaut : 0.0  - `a2`: Paramètre du filtre coupe-bande (A2).  Valeur typique = 0.586. Valeur par défaut : 0.0  - `a3`: Paramètre du filtre coupe-bande (A3).  Valeur typique = 0.429. Valeur par défaut : 0.0  - `a4`: Paramètre du filtre coupe-bande (A4).  Valeur typique = 0.564. Valeur par défaut : 0.0  - `a5`: Paramètre du filtre coupe-bande (A5).  Valeur typique = 0.001. Valeur par défaut : 0.0  - `a6`: Paramètre du filtre coupe-bande (A6).  Valeur typique = 0. Valeur par défaut : 0.0  - `a7`: Paramètre du filtre coupe-bande (A7).  Valeur typique = 0.031. Valeur par défaut : 0.0  - `a8`: Paramètre du filtre coupe-bande (A8).  Valeur typique = 0. Valeur par défaut : 0.0  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inputSignal1Type`: Type de signal d'entrée #1.  Valeur typique = generatorElectricalPower. Valeur par défaut : Aucun  - `inputSignal2Type`: Type de signal d'entrée n°2.  Valeur typique = rotorSpeed. Valeur par défaut : Aucun  - `ks1`: Gain sur le signal # 1 (Ks1).  Valeur typique = -0.602. Valeur par défaut : 0.0  - `ks2`: Gain sur le signal # 2 (Ks2).  Valeur typique = 30.12. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps du transducteur (T1).  Valeur typique = 0.012. Valeur par défaut : 0  - `t2`: Constante de temps du transducteur (T2).  Valeur typique = 0.012. Valeur par défaut : 0  - `tw1`: Constante de temps de lavage (Tw1).  Valeur typique = 0,3. Valeur par défaut : 0  - `tw2`: Constante de temps de lavage (Tw2).  Valeur typique = 0,3. Valeur par défaut : 0  - `tw3`: Constante de temps de lavage (Tw3).  Valeur typique = 0.6. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être PssIEEE3B  - `vstmax`: Limite maximale de la sortie du stabilisateur (Vstmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vstmin`: Limite min de la sortie du stabilisateur (Vstmin).  Valeur typique = -0.1. Valeur par défaut : 0.0    
+- `a1`: Paramètre du filtre coupe-bande (A1).  Valeur typique = 0.359. Valeur par défaut : 0.0  - `a2`: Paramètre du filtre coupe-bande (A2).  Valeur typique = 0.586. Valeur par défaut : 0.0  - `a3`: Paramètre du filtre coupe-bande (A3).  Valeur typique = 0.429. Valeur par défaut : 0.0  - `a4`: Paramètre du filtre coupe-bande (A4).  Valeur typique = 0.564. Valeur par défaut : 0.0  - `a5`: Paramètre du filtre coupe-bande (A5).  Valeur typique = 0.001. Valeur par défaut : 0.0  - `a6`: Paramètre du filtre coupe-bande (A6).  Valeur typique = 0. Valeur par défaut : 0.0  - `a7`: Paramètre du filtre coupe-bande (A7).  Valeur typique = 0.031. Valeur par défaut : 0.0  - `a8`: Paramètre du filtre coupe-bande (A8).  Valeur typique = 0. Valeur par défaut : 0.0  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inputSignal1Type`: Type de signal d'entrée #1.  Valeur typique = generatorElectricalPower. Valeur par défaut : Aucun  - `inputSignal2Type`: Type de signal d'entrée n°2.  Valeur typique = rotorSpeed. Valeur par défaut : Aucun  - `ks1`: Gain sur le signal # 1 (Ks1).  Valeur typique = -0.602. Valeur par défaut : 0.0  - `ks2`: Gain sur le signal # 2 (Ks2).  Valeur typique = 30.12. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps du transducteur (T1).  Valeur typique = 0.012. Valeur par défaut : 0  - `t2`: Constante de temps du transducteur (T2).  Valeur typique = 0.012. Valeur par défaut : 0  - `tw1`: Constante de temps de lavage (Tw1).  Valeur typique = 0,3. Valeur par défaut : 0  - `tw2`: Constante de temps de lavage (Tw2).  Valeur typique = 0,3. Valeur par défaut : 0  - `tw3`: Constante de temps de lavage (Tw3).  Valeur typique = 0.6. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être PssIEEE3B  - `vstmax`: Limite maximale de la sortie du stabilisateur (Vstmax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vstmin`: Limite min de la sortie du stabilisateur (Vstmin).  Valeur typique = -0.1. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -135,10 +135,10 @@ PssIEEE3B:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ PssIEEE3B:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ PssIEEE3B:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ PssIEEE3B:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ PssIEEE3B:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ PssIEEE3B:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ PssIEEE3B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
