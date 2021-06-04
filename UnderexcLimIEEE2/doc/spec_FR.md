@@ -6,7 +6,7 @@ Entité : UnderexcLimIEEE2
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `k1`: Exposant de la tension aux bornes de l'UEL appliqué à la puissance réelle entrée dans la table de consultation des limites de l'UEL (k1).  Valeur typique = 2. Valeur par défaut : 0.0  - `k2`: Exposant de la tension aux bornes de l'UEL appliqué à la sortie de la puissance réactive à partir de la table de consultation des limites de l'UEL (k2).  Valeur typique = 2. Valeur par défaut : 0.0  - `kfb`: Gain associé au signal d'entrée de rétroaction de l'intégrateur optionnel vers UEL (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kuf`: Gain du stabilisateur du système d'excitation UEL (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kui`: Gain intégral de l'UEL (K).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `kul`: Gain proportionnel de l'UEL (K).  Valeur typique = 0.8. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `p0`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0. Valeur par défaut : 0.0  - `p1`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0.3. Valeur par défaut : 0.0  - `p10`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p2`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0.6. Valeur par défaut : 0.0  - `p3`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0.9. Valeur par défaut : 0.0  - `p4`: Valeurs de puissance réelle pour les points finaux (P).  Valeur typique = 1.02. Valeur par défaut : 0.0  - `p5`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p6`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p7`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p8`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p9`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `q0`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.31. Valeur par défaut : 0.0  - `q1`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.31. Valeur par défaut : 0.0  - `q10`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q2`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.28. Valeur par défaut : 0.0  - `q3`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.21. Valeur par défaut : 0.0  - `q4`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = 0. Valeur par défaut : 0.0  - `q5`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q6`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q7`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q8`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q9`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tu1`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu2`: Constante de temps du décalage UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu3`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu4`: Constante de temps du décalage UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tul`: Constante de temps associée au signal d'entrée de retour de l'intégrateur optionnel vers UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tup`: Constante de temps du filtre de puissance réelle (T).  Valeur typique = 5. Valeur par défaut : 0  - `tuq`: Constante de temps du filtre de puissance réactive (T).  Valeur typique = 0. Valeur par défaut : 0  - `tuv`: Constante de temps du filtre de tension (T).  Valeur typique = 5. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être UnderexcLimIEEE2.  - `vuimax`: Limite maximale de la sortie de l'intégrateur UEL (V).  Valeur typique = 0.25. Valeur par défaut : 0.0  - `vuimin`: Limite minimale de la sortie de l'intégrateur UEL (V).  Valeur typique = 0. Valeur par défaut : 0.0  - `vulmax`: Limite maximale de la sortie UEL (V).  Valeur typique = 0.25. Valeur par défaut : 0.0  - `vulmin`: Limite minimale de la sortie UEL (V).  Valeur typique = 0. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `k1`: Exposant de la tension aux bornes de l'UEL appliqué à la puissance réelle entrée dans la table de consultation des limites de l'UEL (k1).  Valeur typique = 2. Valeur par défaut : 0.0  - `k2`: Exposant de la tension aux bornes de l'UEL appliqué à la sortie de la puissance réactive à partir de la table de consultation des limites de l'UEL (k2).  Valeur typique = 2. Valeur par défaut : 0.0  - `kfb`: Gain associé au signal d'entrée de rétroaction de l'intégrateur optionnel vers UEL (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kuf`: Gain du stabilisateur du système d'excitation UEL (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kui`: Gain intégral de l'UEL (K).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `kul`: Gain proportionnel de l'UEL (K).  Valeur typique = 0.8. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `p0`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0. Valeur par défaut : 0.0  - `p1`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0.3. Valeur par défaut : 0.0  - `p10`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p2`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0.6. Valeur par défaut : 0.0  - `p3`: Valeurs de la puissance réelle pour les points finaux (P).  Valeur typique = 0.9. Valeur par défaut : 0.0  - `p4`: Valeurs de puissance réelle pour les points finaux (P).  Valeur typique = 1.02. Valeur par défaut : 0.0  - `p5`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p6`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p7`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p8`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `p9`: Valeurs de la puissance réelle pour les points finaux (P). Valeur par défaut : 0.0  - `q0`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.31. Valeur par défaut : 0.0  - `q1`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.31. Valeur par défaut : 0.0  - `q10`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q2`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.28. Valeur par défaut : 0.0  - `q3`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = -0.21. Valeur par défaut : 0.0  - `q4`: Valeurs de la puissance réactive pour les points d'extrémité (Q).  Valeur typique = 0. Valeur par défaut : 0.0  - `q5`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q6`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q7`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q8`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `q9`: Valeurs de la puissance réactive pour les points d'extrémité (Q). Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tu1`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu2`: Constante de temps du décalage UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu3`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu4`: Constante de temps du décalage UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tul`: Constante de temps associée au signal d'entrée de retour de l'intégrateur optionnel vers UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tup`: Constante de temps du filtre de puissance réelle (T).  Valeur typique = 5. Valeur par défaut : 0  - `tuq`: Constante de temps du filtre de puissance réactive (T).  Valeur typique = 0. Valeur par défaut : 0  - `tuv`: Constante de temps du filtre de tension (T).  Valeur typique = 5. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être UnderexcLimIEEE2.  - `vuimax`: Limite maximale de la sortie de l'intégrateur UEL (V).  Valeur typique = 0.25. Valeur par défaut : 0.0  - `vuimin`: Limite minimale de la sortie de l'intégrateur UEL (V).  Valeur typique = 0. Valeur par défaut : 0.0  - `vulmax`: Limite maximale de la sortie UEL (V).  Valeur typique = 0.25. Valeur par défaut : 0.0  - `vulmin`: Limite minimale de la sortie UEL (V).  Valeur typique = 0. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -105,10 +105,10 @@ UnderexcLimIEEE2:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -128,7 +128,8 @@ UnderexcLimIEEE2:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +152,8 @@ UnderexcLimIEEE2:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +178,8 @@ UnderexcLimIEEE2:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +201,8 @@ UnderexcLimIEEE2:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +227,8 @@ UnderexcLimIEEE2:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -250,7 +255,7 @@ UnderexcLimIEEE2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
