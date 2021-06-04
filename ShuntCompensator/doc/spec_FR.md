@@ -6,7 +6,7 @@ Entité : ShuntCompensator
 
 ## Liste des propriétés  
 
-- `SvShuntCompensatorSections`: L'état pour le nombre de sections de compensateur shunt en service. Par défaut : Aucun  - `aVRDelay`: Délai nécessaire pour que le dispositif soit connecté ou déconnecté par la régulation automatique de tension (AVR). Valeur par défaut : 0  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `grounded`: Utilisé pour les connexions Yn et Zn. Vrai si le neutre est solidement mis à la terre. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`:   - `maximumSections`: Le nombre maximum de sections qui peuvent être commutées. Valeur par défaut : 0  - `name`: Le nom de cet élément.  - `nomU`: La tension à laquelle la puissance réactive nominale peut être calculée. Elle doit normalement se situer dans les 10% de la tension à laquelle le condensateur est connecté au réseau. Valeur par défaut : 0.0  - `normalSections`: Le nombre normal de sections activées. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `sections`: Sections du compensateur shunt en service. Valeur de départ pour la solution en régime permanent. Les valeurs non entières sont autorisées pour soutenir les variables continues. Les raisons de la valeur continue sont de soutenir les cas d'étude où aucun compensateur shunt discret n'a encore été conçu, une solution où une bande de tension étroite force les sections à osciller ou de s'adapter à une solution continue comme entrée. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `switchOnCount`: Le nombre d'allumages depuis la dernière réinitialisation ou initialisation du compteur de condensateurs. Valeur par défaut : 0  - `switchOnDate`: La date et l'heure de la dernière mise sous tension de la batterie de condensateurs. Valeur par défaut : ''.  - `type`: Type de NGSI. Il doit être ShuntCompensator.  - `voltageSensitivity`: Sensibilité de la tension requise pour que le dispositif puisse réguler la tension du bus, en tension/puissance réactive. Valeur par défaut : 0,0    
+- `SvShuntCompensatorSections`: L'état pour le nombre de sections de compensateur shunt en service. Par défaut : Aucun  - `aVRDelay`: Délai nécessaire pour que le dispositif soit connecté ou déconnecté par la régulation automatique de tension (AVR). Valeur par défaut : 0  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `grounded`: Utilisé pour les connexions Yn et Zn. Vrai si le neutre est solidement mis à la terre. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maximumSections`: Le nombre maximum de sections qui peuvent être commutées. Valeur par défaut : 0  - `name`: Le nom de cet élément.  - `nomU`: La tension à laquelle la puissance réactive nominale peut être calculée. Elle doit normalement se situer dans les 10% de la tension à laquelle le condensateur est connecté au réseau. Valeur par défaut : 0.0  - `normalSections`: Le nombre normal de sections activées. Valeur par défaut : 0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `sections`: Sections du compensateur shunt en service. Valeur de départ pour la solution en régime permanent. Les valeurs non entières sont autorisées pour soutenir les variables continues. Les raisons de la valeur continue sont de soutenir les cas d'étude où aucun compensateur shunt discret n'a encore été conçu, une solution où une bande de tension étroite force les sections à osciller ou de s'adapter à une solution continue comme entrée. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `switchOnCount`: Le nombre d'allumages depuis la dernière réinitialisation ou initialisation du compteur de condensateurs. Valeur par défaut : 0  - `switchOnDate`: La date et l'heure de la dernière mise sous tension de la batterie de condensateurs. Valeur par défaut : ''.  - `type`: Type de NGSI. Il doit être ShuntCompensator.  - `voltageSensitivity`: Sensibilité de la tension requise pour que le dispositif puisse réguler la tension du bus, en tension/puissance réactive. Valeur par défaut : 0,0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -90,10 +90,10 @@ ShuntCompensator:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -113,7 +113,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +137,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +163,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -183,7 +186,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +212,8 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -235,7 +240,7 @@ ShuntCompensator:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maximumSections:    
       description: 'The maximum number of sections that may be switched in. Default: 0'    
       type: number    
