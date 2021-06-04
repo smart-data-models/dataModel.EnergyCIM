@@ -6,7 +6,7 @@ Entité : ExcPIC
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `e1`: Valeur de la tension de champ 1 (E1).  Valeur typique = 0. Valeur par défaut : 0.0  - `e2`: Valeur de la tension de champ 2 (E2).  Valeur typique = 0. Valeur par défaut : 0.0  - `efdmax`: Limite maximale de l'excitateur (Efdmax).  Valeur typique = 8. Valeur par défaut : 0.0  - `efdmin`: Limite minimale de l'excitateur (Efdmin).  Valeur typique = -0.87. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ka`: Gain du contrôleur PI (Ka).  Valeur typique = 3.15. Valeur par défaut : 0.0  - `kc`: Facteur de régulation de l'excitateur (Kc).  Valeur typique = 0.08. Valeur par défaut : 0.0  - `ke`: Constante d'excitation (Ke).  Valeur typique = 0. Valeur par défaut : 0.0  - `kf`: Gain de rétroaction du taux (Kf).  Valeur typique = 0. Valeur par défaut : 0.0  - `ki`: Gain de la source de courant (Ki).  Valeur typique = 0. Valeur par défaut : 0.0  - `kp`: Gain potentiel de la source (Kp).  Valeur typique = 6.5. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `se1`: Facteur de saturation à E1 (Se1).  Valeur typique = 0. Valeur par défaut : 0.0  - `se2`: Facteur de saturation à E2 (Se2).  Valeur typique = 0. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta1`: Constante de temps du contrôleur PI (Ta1).  Valeur typique = 1. Valeur par défaut : 0  - `ta2`: Constante de temps du régulateur de tension (Ta2).  Valeur typique = 0,01. Valeur par défaut : 0  - `ta3`: Constante de temps de plomb (Ta3).  Valeur typique = 0. Valeur par défaut : 0  - `ta4`: Constante de temps de décalage (Ta4).  Valeur typique = 0. Valeur par défaut : 0  - `te`: Constante de temps de l'excitateur (Te).  Valeur typique = 0. Valeur par défaut : 0  - `tf1`: Constante de temps du retour de vitesse (Tf1).  Valeur typique = 0. Valeur par défaut : 0  - `tf2`: Constante de temps de retard de la rétroaction du taux (Tf2).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il faut que ce soit ExcPIC  - `vr1`: Limite maximale de PI (Vr1).  Valeur typique = 1. Valeur par défaut : 0.0  - `vr2`: Limite minimale de l'IP (Vr2).  Valeur typique = -0.87. Valeur par défaut : 0.0  - `vrmax`: Limite maximale du régulateur de tension (Vrmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `vrmin`: Limite minimale du régulateur de tension (Vrmin).  Valeur typique = -0.87. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `e1`: Valeur de la tension de champ 1 (E1).  Valeur typique = 0. Valeur par défaut : 0.0  - `e2`: Valeur de la tension de champ 2 (E2).  Valeur typique = 0. Valeur par défaut : 0.0  - `efdmax`: Limite maximale de l'excitateur (Efdmax).  Valeur typique = 8. Valeur par défaut : 0.0  - `efdmin`: Limite minimale de l'excitateur (Efdmin).  Valeur typique = -0.87. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `ka`: Gain du contrôleur PI (Ka).  Valeur typique = 3.15. Valeur par défaut : 0.0  - `kc`: Facteur de régulation de l'excitateur (Kc).  Valeur typique = 0.08. Valeur par défaut : 0.0  - `ke`: Constante d'excitation (Ke).  Valeur typique = 0. Valeur par défaut : 0.0  - `kf`: Gain de rétroaction du taux (Kf).  Valeur typique = 0. Valeur par défaut : 0.0  - `ki`: Gain de la source de courant (Ki).  Valeur typique = 0. Valeur par défaut : 0.0  - `kp`: Gain potentiel de la source (Kp).  Valeur typique = 6.5. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `se1`: Facteur de saturation à E1 (Se1).  Valeur typique = 0. Valeur par défaut : 0.0  - `se2`: Facteur de saturation à E2 (Se2).  Valeur typique = 0. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta1`: Constante de temps du contrôleur PI (Ta1).  Valeur typique = 1. Valeur par défaut : 0  - `ta2`: Constante de temps du régulateur de tension (Ta2).  Valeur typique = 0,01. Valeur par défaut : 0  - `ta3`: Constante de temps de plomb (Ta3).  Valeur typique = 0. Valeur par défaut : 0  - `ta4`: Constante de temps de décalage (Ta4).  Valeur typique = 0. Valeur par défaut : 0  - `te`: Constante de temps de l'excitateur (Te).  Valeur typique = 0. Valeur par défaut : 0  - `tf1`: Constante de temps du retour de vitesse (Tf1).  Valeur typique = 0. Valeur par défaut : 0  - `tf2`: Constante de temps de retard de la rétroaction du taux (Tf2).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il faut que ce soit ExcPIC  - `vr1`: Limite maximale de PI (Vr1).  Valeur typique = 1. Valeur par défaut : 0.0  - `vr2`: Limite minimale de l'IP (Vr2).  Valeur typique = -0.87. Valeur par défaut : 0.0  - `vrmax`: Limite maximale du régulateur de tension (Vrmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `vrmin`: Limite minimale du régulateur de tension (Vrmin).  Valeur typique = -0.87. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -125,10 +125,10 @@ ExcPIC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ ExcPIC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -370,6 +375,6 @@ ExcPIC:
 </details>    
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un ExcPIC au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un ExcPIC au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcPIC au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcPIC au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcPIC au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
