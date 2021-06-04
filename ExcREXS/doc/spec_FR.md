@@ -6,7 +6,7 @@ Entité : ExcREXS
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `e1`: Valeur de la tension de champ 1 (E1).  Valeur typique = 3. Valeur par défaut : 0.0  - `e2`: Valeur de la tension de champ 2 (E2).  Valeur typique = 4. Valeur par défaut : 0.0  - `fbf`: Indicateur de signal de retour de vitesse (Fbf). Valeur typique = fieldCurrent. Valeur par défaut : Aucun  - `flimf`: Indicateur de type de limite (Flimf).  Valeur typique = 0. Par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kc`: Facteur de régulation du redresseur (Kc).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `kd`: Facteur de régulation de l'excitateur (Kd).  Valeur typique = 2. Valeur par défaut : 0.0  - `ke`: Constante proportionnelle du champ de l'excitateur (Ke).  Valeur typique = 1. Valeur par défaut : 0.0  - `kefd`: Gain de rétroaction de la tension de champ (Kefd).  Valeur typique = 0. Valeur par défaut : 0.0  - `kf`: Gain de rétroaction du taux (Kf).  Valeur typique = 0,05. Valeur par défaut : 0  - `kh`: Gain de rétroaction du contrôleur de tension de champ (Kh).  Valeur typique = 0. Valeur par défaut : 0.0  - `kii`: Gain intégral du régulateur de courant de champ (Kii).  Valeur typique = 0. Valeur par défaut : 0.0  - `kip`: Gain proportionnel du régulateur de courant de champ (Kip).  Valeur typique = 1. Valeur par défaut : 0.0  - `ks`: Coefficient permettant une utilisation différente du coefficient de vitesse du modèle (Ks).  Valeur typique = 0. Valeur par défaut : 0.0  - `kvi`: Gain intégral du régulateur de tension (Kvi).  Valeur typique = 0. Valeur par défaut : 0.0  - `kvp`: Gain proportionnel du régulateur de tension (Kvp).  Valeur typique = 2800. Valeur par défaut : 0.0  - `kvphz`: Gain du limiteur V/Hz (Kvphz).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `nvphz`: Vitesse de ramassage du limiteur V/Hz (Nvphz).  Valeur typique = 0. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `se1`: Facteur de saturation à E1 (Se1).  Valeur typique = 0.0001. Valeur par défaut : 0.0  - `se2`: Facteur de saturation à E2 (Se2).  Valeur typique = 0.001. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.01. Valeur par défaut : 0  - `tb1`: Constante de temps de décalage (Tb1).  Valeur typique = 0. Valeur par défaut : 0  - `tb2`: Constante de temps de retard (Tb2).  Valeur typique = 0. Valeur par défaut : 0  - `tc1`: Constante de temps de plomb (Tc1).  Valeur typique = 0. Valeur par défaut : 0  - `tc2`: Constante de temps de plomb (Tc2).  Valeur typique = 0. Valeur par défaut : 0  - `te`: Constante de temps du champ d'excitation (Te).  Valeur typique = 1,2. Valeur par défaut : 0  - `tf`: Constante de temps de la rétroaction du taux (Tf).  Valeur typique = 1. Valeur par défaut : 0  - `tf1`: Constante de temps de rétroaction (Tf1).  Valeur typique = 0. Valeur par défaut : 0  - `tf2`: Constante de temps de retard de la rétroaction (Tf2).  Valeur typique = 0. Valeur par défaut : 0  - `tp`: Constante de temps du pont de courant de champ (Tp).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Ce doit être ExcREXS  - `vcmax`: Tension de compoundage maximale (Vcmax).  Valeur typique = 0. Valeur par défaut : 0.0  - `vfmax`: Courant maximal du champ d'excitation (Vfmax).  Valeur typique = 47. Valeur par défaut : 0.0  - `vfmin`: Courant minimum du champ d'excitation (Vfmin).  Valeur typique = -20. Valeur par défaut : 0.0  - `vimax`: Limite d'entrée du régulateur de tension (Vimax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vrmax`: Sortie maximale du contrôleur (Vrmax).  Valeur typique = 47. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du contrôleur (Vrmin).  Valeur typique = -20. Valeur par défaut : 0.0  - `xc`: Réactance de compoundage de l'excitateur (Xc).  Valeur typique = 0. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `e1`: Valeur de la tension de champ 1 (E1).  Valeur typique = 3. Valeur par défaut : 0.0  - `e2`: Valeur de la tension de champ 2 (E2).  Valeur typique = 4. Valeur par défaut : 0.0  - `fbf`: Indicateur de signal de retour de vitesse (Fbf). Valeur typique = fieldCurrent. Valeur par défaut : Aucun  - `flimf`: Indicateur de type de limite (Flimf).  Valeur typique = 0. Par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kc`: Facteur de régulation du redresseur (Kc).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `kd`: Facteur de régulation de l'excitateur (Kd).  Valeur typique = 2. Valeur par défaut : 0.0  - `ke`: Constante proportionnelle du champ de l'excitateur (Ke).  Valeur typique = 1. Valeur par défaut : 0.0  - `kefd`: Gain de rétroaction de la tension de champ (Kefd).  Valeur typique = 0. Valeur par défaut : 0.0  - `kf`: Gain de rétroaction du taux (Kf).  Valeur typique = 0,05. Valeur par défaut : 0  - `kh`: Gain de rétroaction du contrôleur de tension de champ (Kh).  Valeur typique = 0. Valeur par défaut : 0.0  - `kii`: Gain intégral du régulateur de courant de champ (Kii).  Valeur typique = 0. Valeur par défaut : 0.0  - `kip`: Gain proportionnel du régulateur de courant de champ (Kip).  Valeur typique = 1. Valeur par défaut : 0.0  - `ks`: Coefficient permettant une utilisation différente du coefficient de vitesse du modèle (Ks).  Valeur typique = 0. Valeur par défaut : 0.0  - `kvi`: Gain intégral du régulateur de tension (Kvi).  Valeur typique = 0. Valeur par défaut : 0.0  - `kvp`: Gain proportionnel du régulateur de tension (Kvp).  Valeur typique = 2800. Valeur par défaut : 0.0  - `kvphz`: Gain du limiteur V/Hz (Kvphz).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `nvphz`: Vitesse de ramassage du limiteur V/Hz (Nvphz).  Valeur typique = 0. Valeur par défaut : 0.0  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `se1`: Facteur de saturation à E1 (Se1).  Valeur typique = 0.0001. Valeur par défaut : 0.0  - `se2`: Facteur de saturation à E2 (Se2).  Valeur typique = 0.001. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.01. Valeur par défaut : 0  - `tb1`: Constante de temps de décalage (Tb1).  Valeur typique = 0. Valeur par défaut : 0  - `tb2`: Constante de temps de retard (Tb2).  Valeur typique = 0. Valeur par défaut : 0  - `tc1`: Constante de temps de plomb (Tc1).  Valeur typique = 0. Valeur par défaut : 0  - `tc2`: Constante de temps de plomb (Tc2).  Valeur typique = 0. Valeur par défaut : 0  - `te`: Constante de temps du champ d'excitation (Te).  Valeur typique = 1,2. Valeur par défaut : 0  - `tf`: Constante de temps de la rétroaction du taux (Tf).  Valeur typique = 1. Valeur par défaut : 0  - `tf1`: Constante de temps de rétroaction (Tf1).  Valeur typique = 0. Valeur par défaut : 0  - `tf2`: Constante de temps de retard de la rétroaction (Tf2).  Valeur typique = 0. Valeur par défaut : 0  - `tp`: Constante de temps du pont de courant de champ (Tp).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Ce doit être ExcREXS  - `vcmax`: Tension de compoundage maximale (Vcmax).  Valeur typique = 0. Valeur par défaut : 0.0  - `vfmax`: Courant maximal du champ d'excitation (Vfmax).  Valeur typique = 47. Valeur par défaut : 0.0  - `vfmin`: Courant minimum du champ d'excitation (Vfmin).  Valeur typique = -20. Valeur par défaut : 0.0  - `vimax`: Limite d'entrée du régulateur de tension (Vimax).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vrmax`: Sortie maximale du contrôleur (Vrmax).  Valeur typique = 47. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du contrôleur (Vrmin).  Valeur typique = -20. Valeur par défaut : 0.0  - `xc`: Réactance de compoundage de l'excitateur (Xc).  Valeur typique = 0. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -155,10 +155,10 @@ ExcREXS:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -178,7 +178,8 @@ ExcREXS:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +202,8 @@ ExcREXS:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -226,7 +228,8 @@ ExcREXS:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +251,8 @@ ExcREXS:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -273,7 +277,8 @@ ExcREXS:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -300,7 +305,7 @@ ExcREXS:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
