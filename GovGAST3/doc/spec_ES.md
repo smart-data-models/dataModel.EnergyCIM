@@ -6,7 +6,7 @@ Entidad: GovGAST3
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bca`: Consigna de límite de aceleración (Bca).  Unidad = 1/s.  Valor típico = 0,01. Por defecto: 0,0  - `bp`: Caída (bp).  Valor típico = 0,05. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dtc`: Variación de la temperatura de escape debida al aumento del caudal de combustible de 0 a 1 PU (deltaTc).  Valor típico = 390. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Caudal mínimo de combustible (Ka).  Valor típico = 0,23. Por defecto: 0,0  - `kac`: Retroalimentación del sistema de combustible (K).  Valor típico = 0. Por defecto: 0.0  - `kca`: Ganancia integral de control de aceleración (Kca). Unidad = 1/s.  Valor típico = 100. Por defecto: 0,0  - `ksi`: Ganancia del escudo contra la radiación (Ksi).  Valor típico = 0,8. Por defecto: 0,0  - `ky`: Coeficiente de la función de transferencia del posicionador de la válvula de combustible (Ky).  Valor típico = 1. Por defecto: 0,0  - `location`:   - `mnef`: Valor máximo de error negativo del flujo de combustible (MN).  Valor típico = -0,05. Por defecto: 0,0  - `mxef`: Valor máximo de error positivo del flujo de combustible (MX).  Valor típico = 0,05. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rcmn`: Flujo mínimo de combustible (RCMN).  Valor típico = -0,1. Por defecto: 0,0  - `rcmx`: Caudal máximo de combustible (RCMX).  Valor típico = 1. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tac`: Constante de tiempo de control de combustible (Tac).  Valor típico = 0,1. Por defecto: 0  - `tc`: Constante de tiempo del volumen de descarga del compresor (Tc).  Valor típico = 0,2. Por defecto: 0  - `td`: Ganancia derivada del controlador de temperatura (Td).  Valor típico = 3,3. Por defecto: 0  - `tfen`: Temperatura nominal de escape de la turbina correspondiente a Pm=1 PU (Tfen).  Valor típico = 540. Por defecto: 0,0  - `tg`: Constante de tiempo del regulador de velocidad (Tg).  Valor típico = 0,05. Por defecto: 0  - `tsi`: Constante de tiempo del escudo contra la radiación (Tsi).  Valor típico = 15. Por defecto: 0  - `tt`: Tasa de integración del controlador de temperatura (Tt).  Valor típico = 250. Por defecto: 0,0  - `ttc`: Constante de tiempo del termopar (Ttc).  Valor típico = 2,5. Por defecto: 0  - `ty`: Constante de tiempo del posicionador de la válvula de combustible (Ty).  Valor típico = 0,2. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovGAST3    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bca`: Consigna de límite de aceleración (Bca).  Unidad = 1/s.  Valor típico = 0,01. Por defecto: 0,0  - `bp`: Caída (bp).  Valor típico = 0,05. Por defecto: 0,0  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dtc`: Variación de la temperatura de escape debida al aumento del caudal de combustible de 0 a 1 PU (deltaTc).  Valor típico = 390. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ka`: Caudal mínimo de combustible (Ka).  Valor típico = 0,23. Por defecto: 0,0  - `kac`: Retroalimentación del sistema de combustible (K).  Valor típico = 0. Por defecto: 0.0  - `kca`: Ganancia integral de control de aceleración (Kca). Unidad = 1/s.  Valor típico = 100. Por defecto: 0,0  - `ksi`: Ganancia del escudo contra la radiación (Ksi).  Valor típico = 0,8. Por defecto: 0,0  - `ky`: Coeficiente de la función de transferencia del posicionador de la válvula de combustible (Ky).  Valor típico = 1. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mnef`: Valor máximo de error negativo del flujo de combustible (MN).  Valor típico = -0,05. Por defecto: 0,0  - `mxef`: Valor máximo de error positivo del flujo de combustible (MX).  Valor típico = 0,05. Por defecto: 0,0  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rcmn`: Flujo mínimo de combustible (RCMN).  Valor típico = -0,1. Por defecto: 0,0  - `rcmx`: Caudal máximo de combustible (RCMX).  Valor típico = 1. Por defecto: 0,0  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tac`: Constante de tiempo de control de combustible (Tac).  Valor típico = 0,1. Por defecto: 0  - `tc`: Constante de tiempo del volumen de descarga del compresor (Tc).  Valor típico = 0,2. Por defecto: 0  - `td`: Ganancia derivada del controlador de temperatura (Td).  Valor típico = 3,3. Por defecto: 0  - `tfen`: Temperatura nominal de escape de la turbina correspondiente a Pm=1 PU (Tfen).  Valor típico = 540. Por defecto: 0,0  - `tg`: Constante de tiempo del regulador de velocidad (Tg).  Valor típico = 0,05. Por defecto: 0  - `tsi`: Constante de tiempo del escudo contra la radiación (Tsi).  Valor típico = 15. Por defecto: 0  - `tt`: Tasa de integración del controlador de temperatura (Tt).  Valor típico = 250. Por defecto: 0,0  - `ttc`: Constante de tiempo del termopar (Ttc).  Valor típico = 2,5. Por defecto: 0  - `ty`: Constante de tiempo del posicionador de la válvula de combustible (Ty).  Valor típico = 0,2. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser GovGAST3    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -115,10 +115,10 @@ GovGAST3:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ GovGAST3:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mnef:    
       description: 'Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0'    
       type: number    
