@@ -6,7 +6,7 @@ Entity: WindContPType3IEC
 
 ## List of properties  
 
-- `WindDynamicsLookupTable`: The P control type 3 model with which this wind dynamics lookup table is associated. Default: 'list'  - `WindGenTurbineType3IEC`: Wind turbine type 3 model with which this Wind control P type 3 model is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dpmax`: Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0  - `dtrisemaxlvrt`: Limitation of torque rise rate during LVRT for S (d). It is project dependent parameter. Default: 0.0  - `id`: Unique identifier of the entity  - `kdtd`: Gain for active drive train damping (). It is type dependent parameter. Default: 0.0  - `kip`: PI controller integration parameter (). It is type dependent parameter. Default: 0.0  - `kpp`: PI controller proportional gain (). It is type dependent parameter. Default: 0.0  - `location`:   - `mplvrt`: Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False  - `name`: The name of this item.  - `omegaoffset`: Offset to reference value that limits controller action during rotor speed changes (omega). It is case dependent parameter. Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pdtdmax`: Maximum active drive train damping power (). It is type dependent parameter. Default: 0.0  - `rramp`: Ramp limitation of torque, required in some grid codes (). It is project dependent parameter. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tdvs`: Timedelay after deep voltage sags (T). It is project dependent parameter. Default: 0  - `temin`: Minimum electrical generator torque (). It is type dependent parameter. Default: 0.0  - `tomegafilt`: Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0  - `tpfilt`: Filter time constant for power measurement (). It is type dependent parameter. Default: 0  - `tpord`: Time constant in power order lag (). It is type dependent parameter. Default: 0.0  - `tufilt`: Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0  - `tuscale`: Voltage scaling factor of reset-torque (T). It is project dependent parameter. Default: 0.0  - `twref`: Time constant in speed reference filter (). It is type dependent parameter. Default: 0  - `type`: NGSI type. It has to be WindContPType3IEC  - `udvs`: Voltage limit for hold LVRT status after deep voltage sags (). It is project dependent parameter. Default: 0.0  - `updip`: Voltage dip threshold for P-control ().  Part of turbine control, often different (e.g 0.8) from converter thresholds. It is project dependent parameter. Default: 0.0  - `wdtd`: Active drive train damping frequency (omega). It can be calculated from two mass model parameters. It is type dependent parameter. Default: 0.0  - `zeta`: Coefficient for active drive train damping (zeta). It is type dependent parameter. Default: 0.0    
+- `WindDynamicsLookupTable`: The P control type 3 model with which this wind dynamics lookup table is associated. Default: 'list'  - `WindGenTurbineType3IEC`: Wind turbine type 3 model with which this Wind control P type 3 model is associated. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dpmax`: Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0  - `dtrisemaxlvrt`: Limitation of torque rise rate during LVRT for S (d). It is project dependent parameter. Default: 0.0  - `id`: Unique identifier of the entity  - `kdtd`: Gain for active drive train damping (). It is type dependent parameter. Default: 0.0  - `kip`: PI controller integration parameter (). It is type dependent parameter. Default: 0.0  - `kpp`: PI controller proportional gain (). It is type dependent parameter. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mplvrt`: Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False  - `name`: The name of this item.  - `omegaoffset`: Offset to reference value that limits controller action during rotor speed changes (omega). It is case dependent parameter. Default: 0.0  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pdtdmax`: Maximum active drive train damping power (). It is type dependent parameter. Default: 0.0  - `rramp`: Ramp limitation of torque, required in some grid codes (). It is project dependent parameter. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tdvs`: Timedelay after deep voltage sags (T). It is project dependent parameter. Default: 0  - `temin`: Minimum electrical generator torque (). It is type dependent parameter. Default: 0.0  - `tomegafilt`: Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0  - `tpfilt`: Filter time constant for power measurement (). It is type dependent parameter. Default: 0  - `tpord`: Time constant in power order lag (). It is type dependent parameter. Default: 0.0  - `tufilt`: Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0  - `tuscale`: Voltage scaling factor of reset-torque (T). It is project dependent parameter. Default: 0.0  - `twref`: Time constant in speed reference filter (). It is type dependent parameter. Default: 0  - `type`: NGSI type. It has to be WindContPType3IEC  - `udvs`: Voltage limit for hold LVRT status after deep voltage sags (). It is project dependent parameter. Default: 0.0  - `updip`: Voltage dip threshold for P-control ().  Part of turbine control, often different (e.g 0.8) from converter thresholds. It is project dependent parameter. Default: 0.0  - `wdtd`: Active drive train damping frequency (omega). It can be calculated from two mass model parameters. It is type dependent parameter. Default: 0.0  - `zeta`: Coefficient for active drive train damping (zeta). It is type dependent parameter. Default: 0.0    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -110,10 +110,10 @@ WindContPType3IEC:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -133,7 +133,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -156,7 +157,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +183,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -203,7 +206,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +232,8 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +260,7 @@ WindContPType3IEC:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     mplvrt:    
       description: 'Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False'    
       type: number    
