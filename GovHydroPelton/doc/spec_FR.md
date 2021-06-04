@@ -6,7 +6,7 @@ Entité : GovHydroPelton
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `av0`: Surface du réservoir d'équilibre (A). Unité = m. Valeur typique = 30. Valeur par défaut : 0.0  - `av1`: Surface du réservoir de compensation (A). Unité = m. Valeur typique = 700. Valeur par défaut : 0.0  - `bp`: Droop (bp).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db1`: Largeur de la bande morte intentionnelle (DB1).  Unité = Hz.  Valeur typique = 0. Valeur par défaut : 0.0  - `db2`: Largeur de la bande morte intentionnelle de l'erreur d'ouverture de la vanne (DB2). Unité = Hz.  Valeur typique = 0.01. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `h1`: Hauteur du niveau d'eau de la chambre de compensation par rapport au niveau de la conduite forcée (H).  Unité = m. Valeur typique = 4. Valeur par défaut : 0.0  - `h2`: Hauteur du niveau d'eau du réservoir d'équilibre par rapport au niveau de la conduite forcée (H).  Unité = m. Valeur typique = 40. Valeur par défaut : 0.0  - `hn`: Hauteur de chute hydraulique nominale (H).  Unité = m. Valeur typique = 250. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kc`: Coefficient de perte de la conduite forcée (due à la friction) (Kc).  Valeur typique = 0,025. Valeur par défaut : 0.0  - `kg`: Coefficient de perte du tunnel d'eau et de la chambre d'équilibre (due à la friction) (Kg).  Valeur typique = -0.025. Valeur par défaut : 0.0  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qc0`: Débit de la turbine à vide à la hauteur de chute nominale (Qc0).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `qn`: Débit nominal (Q). Unité = m/s. Valeur typique = 40. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `simplifiedPelton`: Simulation simplifiée du modèle Pelton (Sflag). true = activation de la simulation simplifiée du modèle Pelton false = activation de la simulation complète du modèle Pelton (gain non linéaire). Valeur typique = false. Valeur par défaut : False  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `staticCompensating`: Caractéristique de compensation statique (Cflag). true = activation de la caractéristique de compensation statique false = inhibition de la caractéristique de compensation statique. Valeur typique = false. Valeur par défaut : False  - `ta`: Gain dérivatif (constante de temps de l'accéléromètre) (Ta).  Valeur typique = 3. Valeur par défaut : 0  - `ts`: Constante de temps de l'asservissement de la porte (Ts).  Valeur typique = 0.15. Valeur par défaut : 0  - `tv`: Constante de temps de l'intégrateur du servomoteur (TV).  Valeur typique = 0,3. Valeur par défaut : 0  - `twnc`: Constante de temps de l'inertie de l'eau (Twnc).  Valeur typique = 1. Valeur par défaut : 0  - `twng`: Constante de temps d'inertie du tunnel d'eau et de la chambre d'équilibre (Twng). Valeur typique = 3. Valeur par défaut : 0  - `tx`: Constante de temps de l'intégrateur électronique (Tx).  Valeur typique = 0,5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovHydroPelton.  - `va`: Vitesse maximale d'ouverture du portail (Va).  Unité = PU/sec.  Valeur typique = 0.016. Valeur par défaut : 0.0  - `valvmax`: Ouverture maximale du portail (ValvMax).  Valeur typique = 1. Valeur par défaut : 0.0  - `valvmin`: Ouverture minimale du portail (ValvMin).  Valeur typique = 0. Valeur par défaut : 0.0  - `vav`: Vitesse maximale d'ouverture de la valve du servomoteur (Vav).  Valeur typique = 0.017. Valeur par défaut : 0.0  - `vc`: Vitesse maximale de fermeture du portail (Vc).  Unité = PU/sec.  Valeur typique = -0.016. Valeur par défaut : 0.0  - `vcv`: Vitesse de fermeture maximale de la valve du servomoteur (Vcv).  Valeur typique = -0.017. Valeur par défaut : 0.0  - `waterTunnelSurgeChamberSimulation`: Simulation de tunnel d'eau et de chambre d'équilibre (Tflag). true = activer la simulation de tunnel d'eau et de chambre d'équilibre false = inhiber la simulation de tunnel d'eau et de chambre d'équilibre. Valeur typique = false. Valeur par défaut : False  - `zsfc`: Hauteur du niveau d'eau supérieur par rapport au niveau de la conduite forcée (Zsfc).  Unité = m. Valeur typique = 25. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `av0`: Surface du réservoir d'équilibre (A). Unité = m. Valeur typique = 30. Valeur par défaut : 0.0  - `av1`: Surface du réservoir de compensation (A). Unité = m. Valeur typique = 700. Valeur par défaut : 0.0  - `bp`: Droop (bp).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `db1`: Largeur de la bande morte intentionnelle (DB1).  Unité = Hz.  Valeur typique = 0. Valeur par défaut : 0.0  - `db2`: Largeur de la bande morte intentionnelle de l'erreur d'ouverture de la vanne (DB2). Unité = Hz.  Valeur typique = 0.01. Valeur par défaut : 0.0  - `description`: Une description de cet article  - `h1`: Hauteur du niveau d'eau de la chambre de compensation par rapport au niveau de la conduite forcée (H).  Unité = m. Valeur typique = 4. Valeur par défaut : 0.0  - `h2`: Hauteur du niveau d'eau du réservoir d'équilibre par rapport au niveau de la conduite forcée (H).  Unité = m. Valeur typique = 40. Valeur par défaut : 0.0  - `hn`: Hauteur de chute hydraulique nominale (H).  Unité = m. Valeur typique = 250. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kc`: Coefficient de perte de la conduite forcée (due à la friction) (Kc).  Valeur typique = 0,025. Valeur par défaut : 0.0  - `kg`: Coefficient de perte du tunnel d'eau et de la chambre d'équilibre (due à la friction) (Kg).  Valeur typique = -0.025. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `qc0`: Débit de la turbine à vide à la hauteur de chute nominale (Qc0).  Valeur typique = 0.05. Valeur par défaut : 0.0  - `qn`: Débit nominal (Q). Unité = m/s. Valeur typique = 40. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `simplifiedPelton`: Simulation simplifiée du modèle Pelton (Sflag). true = activation de la simulation simplifiée du modèle Pelton false = activation de la simulation complète du modèle Pelton (gain non linéaire). Valeur typique = false. Valeur par défaut : False  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `staticCompensating`: Caractéristique de compensation statique (Cflag). true = activation de la caractéristique de compensation statique false = inhibition de la caractéristique de compensation statique. Valeur typique = false. Valeur par défaut : False  - `ta`: Gain dérivatif (constante de temps de l'accéléromètre) (Ta).  Valeur typique = 3. Valeur par défaut : 0  - `ts`: Constante de temps de l'asservissement de la porte (Ts).  Valeur typique = 0.15. Valeur par défaut : 0  - `tv`: Constante de temps de l'intégrateur du servomoteur (TV).  Valeur typique = 0,3. Valeur par défaut : 0  - `twnc`: Constante de temps de l'inertie de l'eau (Twnc).  Valeur typique = 1. Valeur par défaut : 0  - `twng`: Constante de temps d'inertie du tunnel d'eau et de la chambre d'équilibre (Twng). Valeur typique = 3. Valeur par défaut : 0  - `tx`: Constante de temps de l'intégrateur électronique (Tx).  Valeur typique = 0,5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovHydroPelton.  - `va`: Vitesse maximale d'ouverture du portail (Va).  Unité = PU/sec.  Valeur typique = 0.016. Valeur par défaut : 0.0  - `valvmax`: Ouverture maximale du portail (ValvMax).  Valeur typique = 1. Valeur par défaut : 0.0  - `valvmin`: Ouverture minimale du portail (ValvMin).  Valeur typique = 0. Valeur par défaut : 0.0  - `vav`: Vitesse maximale d'ouverture de la valve du servomoteur (Vav).  Valeur typique = 0.017. Valeur par défaut : 0.0  - `vc`: Vitesse maximale de fermeture du portail (Vc).  Unité = PU/sec.  Valeur typique = -0.016. Valeur par défaut : 0.0  - `vcv`: Vitesse de fermeture maximale de la valve du servomoteur (Vcv).  Valeur typique = -0.017. Valeur par défaut : 0.0  - `waterTunnelSurgeChamberSimulation`: Simulation de tunnel d'eau et de chambre d'équilibre (Tflag). true = activer la simulation de tunnel d'eau et de chambre d'équilibre false = inhiber la simulation de tunnel d'eau et de chambre d'équilibre. Valeur typique = false. Valeur par défaut : False  - `zsfc`: Hauteur du niveau d'eau supérieur par rapport au niveau de la conduite forcée (Zsfc).  Unité = m. Valeur typique = 25. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -125,10 +125,10 @@ GovHydroPelton:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -148,7 +148,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -171,7 +172,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -196,7 +198,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -218,7 +221,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -243,7 +247,8 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -270,7 +275,7 @@ GovHydroPelton:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
