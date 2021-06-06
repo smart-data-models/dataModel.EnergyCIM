@@ -22,31 +22,43 @@ UnderexcLimIEEE2:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     id:
       anyOf: &underexclimieee2_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -58,37 +70,44 @@ UnderexcLimIEEE2:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     k1:
       description: 'UEL terminal voltage exponent applied to real power input to UEL limit look-up table (k1).  Typical Value = 2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     k2:
       description: 'UEL terminal voltage exponent applied to reactive power output from UEL limit look-up table (k2).  Typical Value = 2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kfb:
       description: 'Gain associated with optional integrator feedback input signal to UEL (K).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kuf:
       description: 'UEL excitation system stabilizer gain (K).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kui:
       description: 'UEL integral gain (K).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kul:
       description: 'UEL proportional gain (K).  Typical Value = 0.8. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -240,126 +259,153 @@ UnderexcLimIEEE2:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *underexclimieee2_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     p0:
       description: 'Real power values for endpoints (P).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p1:
       description: 'Real power values for endpoints (P).  Typical Value = 0.3. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p10:
       description: 'Real power values for endpoints (P). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p2:
       description: 'Real power values for endpoints (P).  Typical Value = 0.6. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p3:
       description: 'Real power values for endpoints (P).  Typical Value = 0.9. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p4:
       description: 'Real power values for endpoints (P).  Typical Value = 1.02. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p5:
       description: 'Real power values for endpoints (P). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p6:
       description: 'Real power values for endpoints (P). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p7:
       description: 'Real power values for endpoints (P). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p8:
       description: 'Real power values for endpoints (P). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     p9:
       description: 'Real power values for endpoints (P). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q0:
       description: 'Reactive power values for endpoints (Q).  Typical Value = -0.31. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q1:
       description: 'Reactive power values for endpoints (Q).  Typical Value = -0.31. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q10:
       description: 'Reactive power values for endpoints (Q). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q2:
       description: 'Reactive power values for endpoints (Q).  Typical Value = -0.28. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q3:
       description: 'Reactive power values for endpoints (Q).  Typical Value = -0.21. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q4:
       description: 'Reactive power values for endpoints (Q).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q5:
       description: 'Reactive power values for endpoints (Q). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q6:
       description: 'Reactive power values for endpoints (Q). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q7:
       description: 'Reactive power values for endpoints (Q). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q8:
       description: 'Reactive power values for endpoints (Q). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     q9:
       description: 'Reactive power values for endpoints (Q). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -370,74 +416,91 @@ UnderexcLimIEEE2:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     tu1:
       description: 'UEL lead time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tu2:
       description: 'UEL lag time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tu3:
       description: 'UEL lead time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tu4:
       description: 'UEL lag time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tul:
       description: 'Time constant associated with optional integrator feedback input signal to UEL (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tup:
       description: 'Real power filter time constant (T).  Typical Value = 5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tuq:
       description: 'Reactive power filter time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tuv:
       description: 'Voltage filter time constant (T).  Typical Value = 5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     type:
       description: 'NGSI type. It has to be UnderexcLimIEEE2'
       enum:
         - UnderexcLimIEEE2
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     vuimax:
       description: 'UEL integrator output maximum limit (V).  Typical Value = 0.25. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vuimin:
       description: 'UEL integrator output minimum limit (V).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vulmax:
       description: 'UEL output maximum limit (V).  Typical Value = 0.25. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vulmin:
       description: 'UEL output minimum limit (V).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
   required: []
   type: object
