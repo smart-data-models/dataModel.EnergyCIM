@@ -22,51 +22,67 @@ ExcSK:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     efdmax:
       description: 'Field voltage clipping limit (Efdmax). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     efdmin:
       description: 'Field voltage clipping limit (Efdmin). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     emax:
       description: 'Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     emin:
       description: 'Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     id:
       anyOf: &excsk_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -78,62 +94,74 @@ ExcSK:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     k:
       description: 'Gain (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     k1:
       description: 'Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     k2:
       description: 'Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kc:
       description: 'PI controller gain (Kc).  Typical Value = 70. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kce:
       description: 'Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kd:
       description: 'Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kgob:
       description: 'P controller gain (Kgob).  Typical Value = 10. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kp:
       description: 'PI controller gain (Kp).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kqi:
       description: 'PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kqob:
       description: 'Rate of rise of the reactive power (Kqob). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kqp:
       description: 'PI controller gain (Kqp).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -285,41 +313,51 @@ ExcSK:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     nq:
       description: 'Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *excsk_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     qconoff:
       description: 'Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     qz:
       description: 'Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     remote:
       description: 'Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     sbase:
       description: 'Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -330,74 +368,91 @@ ExcSK:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     tc:
       description: 'PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     te:
       description: 'Time constant of gain block (Te).  Typical Value = 0.1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     ti:
       description: 'PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tp:
       description: 'Time constant (Tp).  Typical Value = 0.1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tr:
       description: 'Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     type:
       description: 'NGSI type. It has to be ExcSK'
       enum:
         - ExcSK
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     uimax:
       description: 'Maximum error (Uimax).  Typical Value = 10. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     uimin:
       description: 'Minimum error (UImin).  Typical Value = -10. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     urmax:
       description: 'Maximum controller output (URmax).  Typical Value = 10. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     urmin:
       description: 'Minimum controller output (URmin).  Typical Value = -10. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vtmax:
       description: 'Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vtmin:
       description: 'Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     yp:
       description: 'Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
   required: []
   type: object
