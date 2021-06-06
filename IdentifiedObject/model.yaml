@@ -6,6 +6,7 @@ IdentifiedObject:
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     address:
       description: 'The mailing address'
       properties:
@@ -27,38 +28,50 @@ IdentifiedObject:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     energyIdentCodeEic:
       description: 'The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code. References: Default: '''''
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     id:
       anyOf: &identifiedobject_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -70,7 +83,8 @@ IdentifiedObject:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -222,23 +236,28 @@ IdentifiedObject:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     mRID:
       description: 'Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended. For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements. Default: '''''
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     name:
       description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *identifiedobject_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -249,19 +268,25 @@ IdentifiedObject:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     shortName:
       description: 'The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum. Default: '''''
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI type. It has to be IdentifiedObject'
       enum:
         - IdentifiedObject
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
   required: []
   type: object
