@@ -6,6 +6,7 @@ PowerTransformerEnd:
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     address:
       description: 'The mailing address'
       properties:
@@ -27,56 +28,73 @@ PowerTransformerEnd:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     b:
       description: 'Magnetizing branch susceptance (B mag).  The value can be positive or negative. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     b0:
       description: 'Zero sequence magnetizing branch susceptance. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     connectionKind:
       description: 'Kind of connection. Default: None'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     g:
       description: 'Magnetizing branch conductance. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     g0:
       description: 'Zero sequence magnetizing branch conductance (star-model). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     id:
       anyOf: &powertransformerend_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -88,7 +106,8 @@ PowerTransformerEnd:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -240,41 +259,51 @@ PowerTransformerEnd:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *powertransformerend_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     phaseAngleClock:
       description: 'Terminal voltage phase angle displacement where 360 degrees are represented with clock hours. The valid values are 0 to 11. For example, for the secondary side end of a transformer with vector group code of `Dyn11`, specify the connection kind as wye with neutral and specify the phase angle of the clock as 11.  The clock value of the transformer end number specified as 1, is assumed to be zero.  Note the transformer end number is not assumed to be the same as the terminal sequence number. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     r:
       description: 'Resistance (star-model) of the transformer end. The attribute shall be equal or greater than zero for non-equivalent transformers. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     r0:
       description: 'Zero sequence series resistance (star-model) of the transformer end. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     ratedS:
       description: 'Normal apparent power rating. The attribute shall be a positive value. For a two-winding transformer the values for the high and low voltage sides shall be identical. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     ratedU:
       description: 'Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings. A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater or equal than ratedU for the lower voltage sides. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -285,24 +314,31 @@ PowerTransformerEnd:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI type. It has to be PowerTransformerEnd'
       enum:
         - PowerTransformerEnd
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     x:
       description: 'Positive sequence series reactance (star-model) of the transformer end. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     x0:
       description: 'Zero sequence series reactance of the transformer end. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
   required: []
   type: object
