@@ -22,46 +22,61 @@ ExcDC2A:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     efd1:
       description: 'Exciter voltage at which exciter saturation is defined (Efd1).  Typical Value = 3.05. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     efd2:
       description: 'Exciter voltage at which exciter saturation is defined (Efd2).  Typical Value = 2.29. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     exclim:
       description: '(exclim).  IEEE standard is ambiguous about lower limit on exciter output. true = a lower limit of zero is applied to integrator output false = a lower limit of zero is not applied to integrator output. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     id:
       anyOf: &excdc2a_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -73,27 +88,32 @@ ExcDC2A:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     ka:
       description: 'Voltage regulator gain (Ka).  Typical Value = 300. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     ke:
       description: 'Exciter constant related to self-excited field (Ke).  If Ke is entered as zero, the model calculates an effective value of Ke such that the initial condition value of Vr is zero. The zero value of Ke is not changed.  If Ke is entered as non-zero, its value is used directly, without change.  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     kf:
       description: 'Excitation control system stabilizer gain (Kf).  Typical Value = 0.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     ks:
       description: 'Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -245,16 +265,21 @@ ExcDC2A:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *excdc2a_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -265,69 +290,85 @@ ExcDC2A:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     seefd1:
       description: 'Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Eefd1]).  Typical Value = 0.279. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     seefd2:
       description: 'Exciter saturation function value at the corresponding exciter voltage, Efd2 (Se[Efd2]).  Typical Value = 0.117. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     ta:
       description: 'Voltage regulator time constant (Ta).  Typical Value = 0.01. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tb:
       description: 'Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tc:
       description: 'Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     te:
       description: 'Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.33. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tf:
       description: 'Excitation control system stabilizer time constant (Tf).  Typical Value = 0.675. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     tf1:
       description: 'Excitation control system stabilizer time constant (Tf1).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     type:
       description: 'NGSI type. It has to be ExcDC2A'
       enum:
         - ExcDC2A
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     vrmax:
       description: 'Maximum voltage regulator output (Vrmax).  Typical Value = 4.95. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vrmin:
       description: 'Minimum voltage regulator output (Vrmin).  Typical Value = -4.9. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
     vtlim:
       description: '(Vtlim). true = limiter at the block [Ka/(1+sTa)] is dependent on Vt  false = limiter at the block is not dependent on Vt. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
   required: []
   type: object
