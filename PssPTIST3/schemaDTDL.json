@@ -1,0 +1,423 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PssPTIST3;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - PssPTIST3 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PssPTIST3/schema.json",
+    "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 3.",
+    "displayName": "PssPTIST3",
+    "contents": [
+        {
+            "name": "a0",
+            "writable": true,
+            "displayName": "a0",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (A0). Default: 0.0"
+        },
+        {
+            "name": "a1",
+            "writable": true,
+            "displayName": "a1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter (Al). Default: 0.0"
+        },
+        {
+            "name": "a2",
+            "writable": true,
+            "displayName": "a2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (A2). Default: 0.0"
+        },
+        {
+            "name": "a3",
+            "writable": true,
+            "displayName": "a3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (A3). Default: 0.0"
+        },
+        {
+            "name": "a4",
+            "writable": true,
+            "displayName": "a4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (A4). Default: 0.0"
+        },
+        {
+            "name": "a5",
+            "writable": true,
+            "displayName": "a5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (A5). Default: 0.0"
+        },
+        {
+            "name": "al",
+            "writable": true,
+            "displayName": "al",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter (Al). Default: 0.0"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "athres",
+            "writable": true,
+            "displayName": "athres",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0"
+        },
+        {
+            "name": "b0",
+            "writable": true,
+            "displayName": "b0",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (B0). Default: 0.0"
+        },
+        {
+            "name": "b1",
+            "writable": true,
+            "displayName": "b1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (B1). Default: 0.0"
+        },
+        {
+            "name": "b2",
+            "writable": true,
+            "displayName": "b2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (B2). Default: 0.0"
+        },
+        {
+            "name": "b3",
+            "writable": true,
+            "displayName": "b3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (B3). Default: 0.0"
+        },
+        {
+            "name": "b4",
+            "writable": true,
+            "displayName": "b4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (B4). Default: 0.0"
+        },
+        {
+            "name": "b5",
+            "writable": true,
+            "displayName": "b5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter coefficient (B5). Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dl",
+            "writable": true,
+            "displayName": "dl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter (Dl). Default: 0.0"
+        },
+        {
+            "name": "dtc",
+            "writable": true,
+            "displayName": "dtc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0"
+        },
+        {
+            "name": "dtf",
+            "writable": true,
+            "displayName": "dtf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0"
+        },
+        {
+            "name": "dtp",
+            "writable": true,
+            "displayName": "dtp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0"
+        },
+        {
+            "name": "isw",
+            "writable": true,
+            "displayName": "isw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False"
+        },
+        {
+            "name": "k",
+            "writable": true,
+            "displayName": "k",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain (K).  Typical Value = 9. Default: 0.0"
+        },
+        {
+            "name": "lthres",
+            "writable": true,
+            "displayName": "lthres",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Threshold value (Lthres). Default: 0.0"
+        },
+        {
+            "name": "m",
+            "writable": true,
+            "displayName": "m",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "(M).  M=2*H.  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nav",
+            "writable": true,
+            "displayName": "nav",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0"
+        },
+        {
+            "name": "ncl",
+            "writable": true,
+            "displayName": "ncl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0"
+        },
+        {
+            "name": "ncr",
+            "writable": true,
+            "displayName": "ncr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of counts until reset after limit function is triggered (Ncr). Default: 0.0"
+        },
+        {
+            "name": "pmin",
+            "writable": true,
+            "displayName": "pmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "(Pmin). Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t1",
+            "writable": true,
+            "displayName": "t1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T1).  Typical Value = 0.3. Default: 0"
+        },
+        {
+            "name": "t2",
+            "writable": true,
+            "displayName": "t2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T2).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "t3",
+            "writable": true,
+            "displayName": "t3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T3).  Typical Value = 0.2. Default: 0"
+        },
+        {
+            "name": "t4",
+            "writable": true,
+            "displayName": "t4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T4).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "name": "t5",
+            "writable": true,
+            "displayName": "t5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T5). Default: 0"
+        },
+        {
+            "name": "t6",
+            "writable": true,
+            "displayName": "t6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T6). Default: 0"
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Tf).  Typical Value = 0.2. Default: 0"
+        },
+        {
+            "name": "tp",
+            "writable": true,
+            "displayName": "tp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Tp).  Typical Value = 0.2. Default: 0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
