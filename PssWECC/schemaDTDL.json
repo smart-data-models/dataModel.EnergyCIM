@@ -1,0 +1,295 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PssWECC;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - PssWECC adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PssWECC/schema.json",
+    "description": "Adapted from CIM data models. Dual input Power System Stabilizer, based on IEEE type 2, with modified output limiter defined by WECC (Western Electricity Coordinating Council, USA).",
+    "displayName": "PssWECC",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "inputSignal1Type",
+            "writable": true,
+            "displayName": "inputSignal1Type",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Type of input signal #1. Default: None"
+        },
+        {
+            "name": "inputSignal2Type",
+            "writable": true,
+            "displayName": "inputSignal2Type",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Type of input signal #2. Default: None"
+        },
+        {
+            "name": "k1",
+            "writable": true,
+            "displayName": "k1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Input signal 1 gain  (K). Default: 0.0"
+        },
+        {
+            "name": "k2",
+            "writable": true,
+            "displayName": "k2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Input signal 2 gain (K). Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t1",
+            "writable": true,
+            "displayName": "t1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Input signal 1 transducer time constant (T). Default: 0"
+        },
+        {
+            "name": "t10",
+            "writable": true,
+            "displayName": "t10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant (T). Default: 0"
+        },
+        {
+            "name": "t2",
+            "writable": true,
+            "displayName": "t2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Input signal 2 transducer time constant (T). Default: 0"
+        },
+        {
+            "name": "t3",
+            "writable": true,
+            "displayName": "t3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Stabilizer washout time constant (T). Default: 0"
+        },
+        {
+            "name": "t4",
+            "writable": true,
+            "displayName": "t4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Stabilizer washout time lag constant (T) (>0). Default: 0"
+        },
+        {
+            "name": "t5",
+            "writable": true,
+            "displayName": "t5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant (T). Default: 0"
+        },
+        {
+            "name": "t6",
+            "writable": true,
+            "displayName": "t6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant (T). Default: 0"
+        },
+        {
+            "name": "t7",
+            "writable": true,
+            "displayName": "t7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant (T). Default: 0"
+        },
+        {
+            "name": "t8",
+            "writable": true,
+            "displayName": "t8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant (T). Default: 0"
+        },
+        {
+            "name": "t9",
+            "writable": true,
+            "displayName": "t9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant (T). Default: 0"
+        },
+        {
+            "name": "vcl",
+            "writable": true,
+            "displayName": "vcl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum value for voltage compensator output (V). Default: 0.0"
+        },
+        {
+            "name": "vcu",
+            "writable": true,
+            "displayName": "vcu",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum value for voltage compensator output (V). Default: 0.0"
+        },
+        {
+            "name": "vsmax",
+            "writable": true,
+            "displayName": "vsmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum output signal (Vsmax). Default: 0.0"
+        },
+        {
+            "name": "vsmin",
+            "writable": true,
+            "displayName": "vsmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum output signal (Vsmin). Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
