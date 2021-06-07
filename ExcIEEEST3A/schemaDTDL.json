@@ -1,0 +1,311 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcIEEEST3A;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcIEEEST3A adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcIEEEST3A/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST3A model.  Some static systems utilize a field voltage control loop to linearize the exciter control characteristic. This also makes the output independent of supply source variations until supply limitations are reached.  These systems utilize a variety of controlled-rectifier designs: full thyristor complements or hybrid bridges in either series or shunt configurations. The power source may consist of only a potential source, ei",
+    "displayName": "ExcIEEEST3A",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "ka",
+            "writable": true,
+            "displayName": "ka",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator gain (K). This is parameter K in the IEEE Std. Typical Value = 200. Default: 0.0"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "name": "kg",
+            "writable": true,
+            "displayName": "kg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback gain constant of the inner loop field regulator (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "ki",
+            "writable": true,
+            "displayName": "ki",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Potential circuit gain coefficient (K).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "km",
+            "writable": true,
+            "displayName": "km",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Forward gain constant of the inner loop field regulator (K).  Typical Value = 7.93. Default: 0.0"
+        },
+        {
+            "name": "kp",
+            "writable": true,
+            "displayName": "kp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Potential circuit gain coefficient (K).  Typical Value = 6.15. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ta",
+            "writable": true,
+            "displayName": "ta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (T).  Typical Value = 10. Default: 0"
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (T).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "thetap",
+            "writable": true,
+            "displayName": "thetap",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Potential circuit phase angle (thetap).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "tm",
+            "writable": true,
+            "displayName": "tm",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Forward time constant of inner loop field regulator (T).  Typical Value = 0.4. Default: 0"
+        },
+        {
+            "name": "vbmax",
+            "writable": true,
+            "displayName": "vbmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum excitation voltage (V).  Typical Value = 6.9. Default: 0.0"
+        },
+        {
+            "name": "vgmax",
+            "writable": true,
+            "displayName": "vgmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum inner loop feedback voltage (V).  Typical Value = 5.8. Default: 0.0"
+        },
+        {
+            "name": "vimax",
+            "writable": true,
+            "displayName": "vimax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator input limit (V).  Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "name": "vimin",
+            "writable": true,
+            "displayName": "vimin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator input limit (V).  Typical Value = -0.2. Default: 0.0"
+        },
+        {
+            "name": "vmmax",
+            "writable": true,
+            "displayName": "vmmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum inner loop output (V).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "vmmin",
+            "writable": true,
+            "displayName": "vmmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum inner loop output (V).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator output (V).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator output (V).  Typical Value = -10. Default: 0.0"
+        },
+        {
+            "name": "xl",
+            "writable": true,
+            "displayName": "xl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactance associated with potential source (X).  Typical Value = 0.081. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
