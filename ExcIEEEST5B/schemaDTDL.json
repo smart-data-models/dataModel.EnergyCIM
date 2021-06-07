@@ -1,0 +1,287 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcIEEEST5B;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcIEEEST5B adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcIEEEST5B/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type ST5B model. The Type ST5B excitation system is a variation of the Type ST1A model, with alternative overexcitation and underexcitation inputs and additional limits.  Reference: IEEE Standard 421.5-2005 Section 7.5.   Note: the block diagram in the IEEE 421.5 standard has input signal Vc and does not indicate the summation point with Vref. The implementation of the ExcIEEEST5B shall consider summation point with Vref.",
+    "displayName": "ExcIEEEST5B",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier regulation factor (K).  Typical Value = 0.004. Default: 0.0"
+        },
+        {
+            "name": "kr",
+            "writable": true,
+            "displayName": "kr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator gain (K).  Typical Value = 200. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t1",
+            "writable": true,
+            "displayName": "t1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Firing circuit time constant (T1).  Typical Value = 0.004. Default: 0"
+        },
+        {
+            "name": "tb1",
+            "writable": true,
+            "displayName": "tb1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator lag time constant (T).  Typical Value = 6. Default: 0"
+        },
+        {
+            "name": "tb2",
+            "writable": true,
+            "displayName": "tb2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator lag time constant (T).  Typical Value = 0.01. Default: 0"
+        },
+        {
+            "name": "tc1",
+            "writable": true,
+            "displayName": "tc1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator lead time constant (T).  Typical Value = 0.8. Default: 0"
+        },
+        {
+            "name": "tc2",
+            "writable": true,
+            "displayName": "tc2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator lead time constant (T).  Typical Value = 0.08. Default: 0"
+        },
+        {
+            "name": "tob1",
+            "writable": true,
+            "displayName": "tob1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "OEL lag time constant (T).  Typical Value = 2. Default: 0"
+        },
+        {
+            "name": "tob2",
+            "writable": true,
+            "displayName": "tob2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "OEL lag time constant (T).  Typical Value = 0.08. Default: 0"
+        },
+        {
+            "name": "toc1",
+            "writable": true,
+            "displayName": "toc1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "OEL lead time constant (T).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "toc2",
+            "writable": true,
+            "displayName": "toc2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "OEL lead time constant (T).  Typical Value = 0.08. Default: 0"
+        },
+        {
+            "name": "tub1",
+            "writable": true,
+            "displayName": "tub1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "UEL lag time constant (T).  Typical Value = 10. Default: 0"
+        },
+        {
+            "name": "tub2",
+            "writable": true,
+            "displayName": "tub2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "UEL lag time constant (T).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "name": "tuc1",
+            "writable": true,
+            "displayName": "tuc1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "UEL lead time constant (T).  Typical Value = 2. Default: 0"
+        },
+        {
+            "name": "tuc2",
+            "writable": true,
+            "displayName": "tuc2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "UEL lead time constant (T).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator output (V).  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator output (V).  Typical Value = -4. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
