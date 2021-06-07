@@ -1,0 +1,263 @@
+{
+    "@id": "dtmi:com:ngsi-ld:WindPlantReactiveControlIEC;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - WindPlantReactiveControlIEC adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindPlantReactiveControlIEC/schema.json",
+    "description": "Adapted from CIM data models. Simplified plant voltage and reactive power control model for use with type 3 and type 4 wind turbine models.  Reference: IEC Standard 61400-27-1 Annex E.",
+    "displayName": "WindPlantReactiveControlIEC",
+    "contents": [
+        {
+            "name": "WindPlantIEC",
+            "writable": true,
+            "displayName": "WindPlantIEC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Wind plant model with which this wind reactive control is associated. Default: None"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "kiwpx",
+            "writable": true,
+            "displayName": "kiwpx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Plant Q controller integral gain (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kpwpx",
+            "writable": true,
+            "displayName": "kpwpx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Plant Q controller proportional gain (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kwpqu",
+            "writable": true,
+            "displayName": "kwpqu",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Plant voltage control droop (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "mwppf",
+            "writable": true,
+            "displayName": "mwppf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor control modes selector (). Used only if mwpu is set to false. true = 1: power factor control false = 0: reactive power control. It is project dependent parameter. Default: False"
+        },
+        {
+            "name": "mwpu",
+            "writable": true,
+            "displayName": "mwpu",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactive power control modes selector (). true = 1: voltage control false = 0: reactive power control. It is project dependent parameter. Default: False"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "twppfilt",
+            "writable": true,
+            "displayName": "twppfilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for active power measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "twpqfilt",
+            "writable": true,
+            "displayName": "twpqfilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for reactive power measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "twpufilt",
+            "writable": true,
+            "displayName": "twpufilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "txft",
+            "writable": true,
+            "displayName": "txft",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "txfv",
+            "writable": true,
+            "displayName": "txfv",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "uwpqdip",
+            "writable": true,
+            "displayName": "uwpqdip",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage threshold for LVRT detection in q control (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "xrefmax",
+            "writable": true,
+            "displayName": "xrefmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum  ( or delta ) request from the plant controller (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "xrefmin",
+            "writable": true,
+            "displayName": "xrefmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum  ( or delta) request from the plant controller (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
