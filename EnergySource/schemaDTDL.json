@@ -1,0 +1,255 @@
+{
+    "@id": "dtmi:com:ngsi-ld:EnergySource;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - EnergySource adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/EnergySource/schema.json",
+    "description": "Adapted from CIM data models. A generic equivalent for an energy supplier on a transmission or distribution voltage level.",
+    "displayName": "EnergySource",
+    "contents": [
+        {
+            "name": "EnergySchedulingType",
+            "writable": true,
+            "displayName": "EnergySchedulingType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Energy Source of a particular Energy Scheduling Type Default: None"
+        },
+        {
+            "name": "WindTurbineType3or4Dynamics",
+            "writable": true,
+            "displayName": "WindTurbineType3or4Dynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Wind generator Type 3 or 4 dynamics model associated with this energy source. Default: None"
+        },
+        {
+            "name": "activePower",
+            "writable": true,
+            "displayName": "activePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nominalVoltage",
+            "writable": true,
+            "displayName": "nominalVoltage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Phase-to-phase nominal voltage. Default: 0.0"
+        },
+        {
+            "name": "r",
+            "writable": true,
+            "displayName": "r",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence Thevenin resistance. Default: 0.0"
+        },
+        {
+            "name": "r0",
+            "writable": true,
+            "displayName": "r0",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Zero sequence Thevenin resistance. Default: 0.0"
+        },
+        {
+            "name": "reactivePower",
+            "writable": true,
+            "displayName": "reactivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0"
+        },
+        {
+            "name": "rn",
+            "writable": true,
+            "displayName": "rn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Negative sequence Thevenin resistance. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "voltageAngle",
+            "writable": true,
+            "displayName": "voltageAngle",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Phase angle of a-phase open circuit. Default: 0.0"
+        },
+        {
+            "name": "voltageMagnitude",
+            "writable": true,
+            "displayName": "voltageMagnitude",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Phase-to-phase open circuit voltage magnitude. Default: 0.0"
+        },
+        {
+            "name": "x",
+            "writable": true,
+            "displayName": "x",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence Thevenin reactance. Default: 0.0"
+        },
+        {
+            "name": "x0",
+            "writable": true,
+            "displayName": "x0",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Zero sequence Thevenin reactance. Default: 0.0"
+        },
+        {
+            "name": "xn",
+            "writable": true,
+            "displayName": "xn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Negative sequence Thevenin reactance. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
