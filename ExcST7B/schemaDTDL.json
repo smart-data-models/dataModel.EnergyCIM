@@ -1,0 +1,279 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcST7B;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcST7B adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcST7B/schema.json",
+    "description": "Adapted from CIM data models. Modified IEEE ST7B static excitation system without stator current limiter (SCL) and current compensator (DROOP) inputs.",
+    "displayName": "ExcST7B",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "kh",
+            "writable": true,
+            "displayName": "kh",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High-value gate feedback gain (Kh).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kia",
+            "writable": true,
+            "displayName": "kia",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator integral gain (Kia).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kl",
+            "writable": true,
+            "displayName": "kl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low-value gate feedback gain (Kl).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kpa",
+            "writable": true,
+            "displayName": "kpa",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator proportional gain (Kpa).  Typical Value = 40. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "oelin",
+            "writable": true,
+            "displayName": "oelin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "OEL input selector (OELin). Typical Value = noOELinput. Default: None"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator lag time constant (Tb).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator lead time constant (Tc).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tg",
+            "writable": true,
+            "displayName": "tg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback time constant of inner loop field voltage regulator (Tg).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tia",
+            "writable": true,
+            "displayName": "tia",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback time constant (Tia).  Typical Value = 3. Default: 0"
+        },
+        {
+            "name": "ts",
+            "writable": true,
+            "displayName": "ts",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier firing time constant (Ts).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "uelin",
+            "writable": true,
+            "displayName": "uelin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "UEL input selector (UELin). Typical Value = noUELinput. Default: None"
+        },
+        {
+            "name": "vmax",
+            "writable": true,
+            "displayName": "vmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage reference signal (Vmax).  Typical Value = 1.1. Default: 0.0"
+        },
+        {
+            "name": "vmin",
+            "writable": true,
+            "displayName": "vmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage reference signal (Vmin).  Typical Value = 0.9. Default: 0.0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator output (Vrmin).  Typical Value = -4.5. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
