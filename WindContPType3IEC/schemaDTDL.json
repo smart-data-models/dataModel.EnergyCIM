@@ -1,0 +1,335 @@
+{
+    "@id": "dtmi:com:ngsi-ld:WindContPType3IEC;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - WindContPType3IEC adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindContPType3IEC/schema.json",
+    "description": "Adapted from CIM data models. P control model Type 3.  Reference: IEC Standard 61400-27-1 Section 6.6.5.3.",
+    "displayName": "WindContPType3IEC",
+    "contents": [
+        {
+            "name": "WindDynamicsLookupTable",
+            "writable": true,
+            "displayName": "WindDynamicsLookupTable",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The P control type 3 model with which this wind dynamics lookup table is associated. Default: 'list'"
+        },
+        {
+            "name": "WindGenTurbineType3IEC",
+            "writable": true,
+            "displayName": "WindGenTurbineType3IEC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Wind turbine type 3 model with which this Wind control P type 3 model is associated. Default: None"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dpmax",
+            "writable": true,
+            "displayName": "dpmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "dtrisemaxlvrt",
+            "writable": true,
+            "displayName": "dtrisemaxlvrt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limitation of torque rise rate during LVRT for S (d). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kdtd",
+            "writable": true,
+            "displayName": "kdtd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain for active drive train damping (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kip",
+            "writable": true,
+            "displayName": "kip",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller integration parameter (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kpp",
+            "writable": true,
+            "displayName": "kpp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller proportional gain (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "mplvrt",
+            "writable": true,
+            "displayName": "mplvrt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "omegaoffset",
+            "writable": true,
+            "displayName": "omegaoffset",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Offset to reference value that limits controller action during rotor speed changes (omega). It is case dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "pdtdmax",
+            "writable": true,
+            "displayName": "pdtdmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum active drive train damping power (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "rramp",
+            "writable": true,
+            "displayName": "rramp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ramp limitation of torque, required in some grid codes (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tdvs",
+            "writable": true,
+            "displayName": "tdvs",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Timedelay after deep voltage sags (T). It is project dependent parameter. Default: 0"
+        },
+        {
+            "name": "temin",
+            "writable": true,
+            "displayName": "temin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum electrical generator torque (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "tomegafilt",
+            "writable": true,
+            "displayName": "tomegafilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "tpfilt",
+            "writable": true,
+            "displayName": "tpfilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for power measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "tpord",
+            "writable": true,
+            "displayName": "tpord",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant in power order lag (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "tufilt",
+            "writable": true,
+            "displayName": "tufilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "tuscale",
+            "writable": true,
+            "displayName": "tuscale",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage scaling factor of reset-torque (T). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "twref",
+            "writable": true,
+            "displayName": "twref",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant in speed reference filter (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "udvs",
+            "writable": true,
+            "displayName": "udvs",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage limit for hold LVRT status after deep voltage sags (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "updip",
+            "writable": true,
+            "displayName": "updip",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage dip threshold for P-control ().  Part of turbine control, often different (e.g 0.8) from converter thresholds. It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "wdtd",
+            "writable": true,
+            "displayName": "wdtd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Active drive train damping frequency (omega). It can be calculated from two mass model parameters. It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "zeta",
+            "writable": true,
+            "displayName": "zeta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Coefficient for active drive train damping (zeta). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
