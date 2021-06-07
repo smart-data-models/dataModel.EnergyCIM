@@ -1,0 +1,263 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovHydro1;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovHydro1 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovHydro1/schema.json",
+    "description": "Adapted from CIM data models. Basic Hydro turbine governor model.",
+    "displayName": "GovHydro1",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "at",
+            "writable": true,
+            "displayName": "at",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine gain (At) (>0).  Typical Value = 1.2. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dturb",
+            "writable": true,
+            "displayName": "dturb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine damping factor (Dturb) (>=0).  Typical Value = 0.5. Default: 0.0"
+        },
+        {
+            "name": "gmax",
+            "writable": true,
+            "displayName": "gmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate opening (Gmax) (>0).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "gmin",
+            "writable": true,
+            "displayName": "gmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum gate opening (Gmin) (>=0).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "hdam",
+            "writable": true,
+            "displayName": "hdam",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine nominal head (hdam).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "mwbase",
+            "writable": true,
+            "displayName": "mwbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "qnl",
+            "writable": true,
+            "displayName": "qnl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "No-load flow at nominal head (qnl) (>=0).  Typical Value = 0.08. Default: 0.0"
+        },
+        {
+            "name": "rperm",
+            "writable": true,
+            "displayName": "rperm",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Permanent droop (R) (>0).  Typical Value = 0.04. Default: 0.0"
+        },
+        {
+            "name": "rtemp",
+            "writable": true,
+            "displayName": "rtemp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temporary droop (r) (>R).  Typical Value = 0.3. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant () (>0).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "name": "tg",
+            "writable": true,
+            "displayName": "tg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate servo time constant (Tg) (>0).  Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "tr",
+            "writable": true,
+            "displayName": "tr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Washout time constant (Tr) (>0).  Typical Value = 5. Default: 0"
+        },
+        {
+            "name": "tw",
+            "writable": true,
+            "displayName": "tw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water inertia time constant (Tw) (>0).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "velm",
+            "writable": true,
+            "displayName": "velm",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate velocity (Vlem) (>0).  Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
