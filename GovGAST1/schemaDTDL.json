@@ -1,0 +1,423 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovGAST1;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovGAST1 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovGAST1/schema.json",
+    "description": "Adapted from CIM data models. Modified single shaft gas turbine.",
+    "displayName": "GovGAST1",
+    "contents": [
+        {
+            "name": "a",
+            "writable": true,
+            "displayName": "a",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine power time constant numerator scale factor (a).  Typical Value = 0.8. Default: 0.0"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "b",
+            "writable": true,
+            "displayName": "b",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine power time constant denominator scale factor (b).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "db1",
+            "writable": true,
+            "displayName": "db1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "db2",
+            "writable": true,
+            "displayName": "db2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "eps",
+            "writable": true,
+            "displayName": "eps",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "fidle",
+            "writable": true,
+            "displayName": "fidle",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Fuel flow at zero power output (Fidle).  Typical Value = 0.18. Default: 0.0"
+        },
+        {
+            "name": "gv1",
+            "writable": true,
+            "displayName": "gv1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "gv2",
+            "writable": true,
+            "displayName": "gv2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 2,PU gv (Gv2).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "gv3",
+            "writable": true,
+            "displayName": "gv3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "gv4",
+            "writable": true,
+            "displayName": "gv4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "gv5",
+            "writable": true,
+            "displayName": "gv5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "gv6",
+            "writable": true,
+            "displayName": "gv6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "ka",
+            "writable": true,
+            "displayName": "ka",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor gain (Ka).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kt",
+            "writable": true,
+            "displayName": "kt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temperature limiter gain (Kt).  Typical Value = 3. Default: 0.0"
+        },
+        {
+            "name": "lmax",
+            "writable": true,
+            "displayName": "lmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ambient temperature load limit (Lmax).  Lmax is the turbine power output corresponding to the limiting exhaust gas temperature.  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "loadinc",
+            "writable": true,
+            "displayName": "loadinc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Valve position change allowed at fast rate (Loadinc).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "ltrate",
+            "writable": true,
+            "displayName": "ltrate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum long term fuel valve opening rate (Ltrate).  Typical Value = 0.02. Default: 0.0"
+        },
+        {
+            "name": "mwbase",
+            "writable": true,
+            "displayName": "mwbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pgv1",
+            "writable": true,
+            "displayName": "pgv1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "pgv2",
+            "writable": true,
+            "displayName": "pgv2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "pgv3",
+            "writable": true,
+            "displayName": "pgv3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "pgv4",
+            "writable": true,
+            "displayName": "pgv4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "pgv5",
+            "writable": true,
+            "displayName": "pgv5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "pgv6",
+            "writable": true,
+            "displayName": "pgv6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "r",
+            "writable": true,
+            "displayName": "r",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Permanent droop (R).  Typical Value = 0.04. Default: 0.0"
+        },
+        {
+            "name": "rmax",
+            "writable": true,
+            "displayName": "rmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum fuel valve opening rate (Rmax).  Unit = PU/sec.  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t1",
+            "writable": true,
+            "displayName": "t1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor mechanism time constant (T1).  T1 represents the natural valve positioning time constant of the governor for small disturbances, as seen when rate limiting is not in effect.  Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "t2",
+            "writable": true,
+            "displayName": "t2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine power time constant (T2).  T2 represents delay due to internal energy storage of the gas turbine engine. T2 can be used to give a rough approximation to the delay associated with acceleration of the compressor spool of a multi-shaft engine, or with the compressibility of gas in the plenum of the free power turbine of an aero-derivative unit, for example.  Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "t3",
+            "writable": true,
+            "displayName": "t3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine exhaust temperature time constant (T3).  T3 represents delay in the exhaust temperature and load limiting system. Typical Value = 3. Default: 0"
+        },
+        {
+            "name": "t4",
+            "writable": true,
+            "displayName": "t4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor lead time constant (T4).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "t5",
+            "writable": true,
+            "displayName": "t5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor lag time constant (T5).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tltr",
+            "writable": true,
+            "displayName": "tltr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Valve position averaging time constant (Tltr).  Typical Value = 10. Default: 0"
+        },
+        {
+            "name": "vmax",
+            "writable": true,
+            "displayName": "vmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum turbine power, PU of MWbase (Vmax).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "vmin",
+            "writable": true,
+            "displayName": "vmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum turbine power, PU of MWbase (Vmin).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
