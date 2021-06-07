@@ -1,0 +1,439 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcREXS;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcREXS adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcREXS/schema.json",
+    "description": "Adapted from CIM data models. General Purpose Rotating Excitation System Model.  This model can be used to represent a wide range of excitation systems whose DC power source is an AC or DC generator. It encompasses IEEE type AC1, AC2, DC1, and DC2 excitation system models.",
+    "displayName": "ExcREXS",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "e1",
+            "writable": true,
+            "displayName": "e1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage value 1 (E1).  Typical Value = 3. Default: 0.0"
+        },
+        {
+            "name": "e2",
+            "writable": true,
+            "displayName": "e2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage value 2 (E2).  Typical Value = 4. Default: 0.0"
+        },
+        {
+            "name": "fbf",
+            "writable": true,
+            "displayName": "fbf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rate feedback signal flag (Fbf). Typical Value = fieldCurrent. Default: None"
+        },
+        {
+            "name": "flimf",
+            "writable": true,
+            "displayName": "flimf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limit type flag (Flimf).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier regulation factor (Kc).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "kd",
+            "writable": true,
+            "displayName": "kd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter regulation factor (Kd).  Typical Value = 2. Default: 0.0"
+        },
+        {
+            "name": "ke",
+            "writable": true,
+            "displayName": "ke",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter field proportional constant (Ke).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kefd",
+            "writable": true,
+            "displayName": "kefd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage feedback gain (Kefd).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kf",
+            "writable": true,
+            "displayName": "kf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rate feedback gain (Kf).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "name": "kh",
+            "writable": true,
+            "displayName": "kh",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage controller feedback gain (Kh).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kii",
+            "writable": true,
+            "displayName": "kii",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field Current Regulator Integral Gain (Kii).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kip",
+            "writable": true,
+            "displayName": "kip",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field Current Regulator Proportional Gain (Kip).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "ks",
+            "writable": true,
+            "displayName": "ks",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kvi",
+            "writable": true,
+            "displayName": "kvi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage Regulator Integral Gain (Kvi).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kvp",
+            "writable": true,
+            "displayName": "kvp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage Regulator Proportional Gain (Kvp).  Typical Value = 2800. Default: 0.0"
+        },
+        {
+            "name": "kvphz",
+            "writable": true,
+            "displayName": "kvphz",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "V/Hz limiter gain (Kvphz).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nvphz",
+            "writable": true,
+            "displayName": "nvphz",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pickup speed of V/Hz limiter (Nvphz).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "se1",
+            "writable": true,
+            "displayName": "se1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Saturation factor at E1 (Se1).  Typical Value = 0.0001. Default: 0.0"
+        },
+        {
+            "name": "se2",
+            "writable": true,
+            "displayName": "se2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Saturation factor at E2 (Se2).  Typical Value = 0.001. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ta",
+            "writable": true,
+            "displayName": "ta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage Regulator time constant (Ta).  Typical Value = 0.01. Default: 0"
+        },
+        {
+            "name": "tb1",
+            "writable": true,
+            "displayName": "tb1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant (Tb1).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tb2",
+            "writable": true,
+            "displayName": "tb2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant (Tb2).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tc1",
+            "writable": true,
+            "displayName": "tc1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant (Tc1).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tc2",
+            "writable": true,
+            "displayName": "tc2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant (Tc2).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "te",
+            "writable": true,
+            "displayName": "te",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter field time constant (Te).  Typical Value = 1.2. Default: 0"
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rate feedback time constant (Tf).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tf1",
+            "writable": true,
+            "displayName": "tf1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback lead time constant (Tf1).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tf2",
+            "writable": true,
+            "displayName": "tf2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback lag time constant (Tf2).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tp",
+            "writable": true,
+            "displayName": "tp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field current Bridge time constant (Tp).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "vcmax",
+            "writable": true,
+            "displayName": "vcmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum compounding voltage (Vcmax).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "vfmax",
+            "writable": true,
+            "displayName": "vfmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Exciter Field Current (Vfmax).  Typical Value = 47. Default: 0.0"
+        },
+        {
+            "name": "vfmin",
+            "writable": true,
+            "displayName": "vfmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum Exciter Field Current (Vfmin).  Typical Value = -20. Default: 0.0"
+        },
+        {
+            "name": "vimax",
+            "writable": true,
+            "displayName": "vimax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage Regulator Input Limit (Vimax).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum controller output (Vrmax).  Typical Value = 47. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum controller output (Vrmin).  Typical Value = -20. Default: 0.0"
+        },
+        {
+            "name": "xc",
+            "writable": true,
+            "displayName": "xc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter compounding reactance (Xc).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
