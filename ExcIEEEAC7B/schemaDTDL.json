@@ -1,0 +1,359 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcIEEEAC7B;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcIEEEAC7B adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcIEEEAC7B/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type AC7B model. The model represents excitation systems which consist of an ac alternator with either stationary or rotating rectifiers to produce the dc field requirements. It is an upgrade to earlier ac excitation systems, which replace only the controls but retain the ac alternator and diode rectifier bridge.  Reference: IEEE Standard 421.5-2005 Section 6.7.  In the IEEE Standard 421.5 - 2005, the [1 / sT] block is shown as [1 / (1 +",
+    "displayName": "ExcIEEEAC7B",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.18. Default: 0.0"
+        },
+        {
+            "name": "kd",
+            "writable": true,
+            "displayName": "kd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.02. Default: 0.0"
+        },
+        {
+            "name": "kdr",
+            "writable": true,
+            "displayName": "kdr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator derivative gain (K).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "ke",
+            "writable": true,
+            "displayName": "ke",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kf1",
+            "writable": true,
+            "displayName": "kf1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer gain (K).  Typical Value = 0.212. Default: 0.0"
+        },
+        {
+            "name": "kf2",
+            "writable": true,
+            "displayName": "kf2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer gain (K).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kf3",
+            "writable": true,
+            "displayName": "kf3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer gain (K).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kia",
+            "writable": true,
+            "displayName": "kia",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator integral gain (K).  Typical Value = 59.69. Default: 0.0"
+        },
+        {
+            "name": "kir",
+            "writable": true,
+            "displayName": "kir",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator integral gain (K).  Typical Value = 4.24. Default: 0.0"
+        },
+        {
+            "name": "kl",
+            "writable": true,
+            "displayName": "kl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter field voltage lower limit parameter (K).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "kp",
+            "writable": true,
+            "displayName": "kp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Potential circuit gain coefficient (K).  Typical Value = 4.96. Default: 0.0"
+        },
+        {
+            "name": "kpa",
+            "writable": true,
+            "displayName": "kpa",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator proportional gain (K).  Typical Value = 65.36. Default: 0.0"
+        },
+        {
+            "name": "kpr",
+            "writable": true,
+            "displayName": "kpr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator proportional gain (K).  Typical Value = 4.24. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "seve1",
+            "writable": true,
+            "displayName": "seve1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.44. Default: 0.0"
+        },
+        {
+            "name": "seve2",
+            "writable": true,
+            "displayName": "seve2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.075. Default: 0.0"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tdr",
+            "writable": true,
+            "displayName": "tdr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "te",
+            "writable": true,
+            "displayName": "te",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.1. Default: 0"
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "vamax",
+            "writable": true,
+            "displayName": "vamax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator output (V).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "vamin",
+            "writable": true,
+            "displayName": "vamin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator output (V).  Typical Value = -0.95. Default: 0.0"
+        },
+        {
+            "name": "ve1",
+            "writable": true,
+            "displayName": "ve1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter alternator output voltages back of commutating reactance at which saturation is defined (V) equals V (V).  Typical Value = 6.3. Default: 0.0"
+        },
+        {
+            "name": "ve2",
+            "writable": true,
+            "displayName": "ve2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.02. Default: 0.0"
+        },
+        {
+            "name": "vemin",
+            "writable": true,
+            "displayName": "vemin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum exciter voltage output (V).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "vfemax",
+            "writable": true,
+            "displayName": "vfemax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter field current limit reference (V).  Typical Value = 6.9. Default: 0.0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator output (V).  Typical Value = 5.79. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator output (V).  Typical Value = -5.79. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
