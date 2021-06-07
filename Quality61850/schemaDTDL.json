@@ -1,0 +1,239 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Quality61850;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - Quality61850 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Quality61850/schema.json",
+    "description": "Adapted from CIM data models. Quality flags in this class are as defined in IEC 61850, except for estimatorReplaced, which has been included in this class for convenience.",
+    "displayName": "Quality61850",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "badReference",
+            "writable": true,
+            "displayName": "badReference",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measurement value may be incorrect due to a reference being out of calibration. Default: False"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "estimatorReplaced",
+            "writable": true,
+            "displayName": "estimatorReplaced",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Value has been replaced by State Estimator. estimatorReplaced is not an IEC61850 quality bit but has been put in this class for convenience. Default: False"
+        },
+        {
+            "name": "failure",
+            "writable": true,
+            "displayName": "failure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "This identifier indicates that a supervision function has detected an internal or external failure, e.g. communication failure. Default: False"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "oldData",
+            "writable": true,
+            "displayName": "oldData",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measurement value is old and possibly invalid, as it has not been successfully updated during a specified time interval. Default: False"
+        },
+        {
+            "name": "operatorBlocked",
+            "writable": true,
+            "displayName": "operatorBlocked",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measurement value is blocked and hence unavailable for transmission. Default: False"
+        },
+        {
+            "name": "oscillatory",
+            "writable": true,
+            "displayName": "oscillatory",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "To prevent some overload of the communication it is sensible to detect and suppress oscillating (fast changing) binary inputs. If a signal changes in a defined time (tosc) twice in the same direction (from 0 to 1 or from 1 to 0) then oscillation is detected and the detail quality identifier `oscillatory` is set. If it is detected a configured numbers of transient changes could be passed by. In this time the validity status `questionable` is set. If after this defined numbers of changes the signal is still i"
+        },
+        {
+            "name": "outOfRange",
+            "writable": true,
+            "displayName": "outOfRange",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measurement value is beyond a predefined range of value. Default: False"
+        },
+        {
+            "name": "overFlow",
+            "writable": true,
+            "displayName": "overFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measurement value is beyond the capability of being  represented properly. For example, a counter value overflows from maximum count back to a value of zero. Default: False"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Source gives information related to the origin of a value. The value may be acquired from the process, defaulted or substituted. Default: None"
+        },
+        {
+            "name": "suspect",
+            "writable": true,
+            "displayName": "suspect",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "A correlation function has detected that the value is not consitent with other values. Typically set by a network State Estimator. Default: False"
+        },
+        {
+            "name": "test",
+            "writable": true,
+            "displayName": "test",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Measurement value is transmitted for test purposes. Default: False"
+        },
+        {
+            "name": "validity",
+            "writable": true,
+            "displayName": "validity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Validity of the measurement value. Default: None"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
