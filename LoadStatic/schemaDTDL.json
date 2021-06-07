@@ -1,0 +1,295 @@
+{
+    "@id": "dtmi:com:ngsi-ld:LoadStatic;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - LoadStatic adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/LoadStatic/schema.json",
+    "description": "Adapted from CIM data models. General static load model representing the sensitivity of the real and reactive power consumed by the load to the amplitude and frequency of the bus voltage.",
+    "displayName": "LoadStatic",
+    "contents": [
+        {
+            "name": "LoadAggregate",
+            "writable": true,
+            "displayName": "LoadAggregate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Aggregate load to which this aggregate static load belongs. Default: None"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "ep1",
+            "writable": true,
+            "displayName": "ep1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "First term voltage exponent for active power (Ep1).  Used only when .staticLoadModelType = exponential. Default: 0.0"
+        },
+        {
+            "name": "ep2",
+            "writable": true,
+            "displayName": "ep2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Second term voltage exponent for active power (Ep2).  Used only when .staticLoadModelType = exponential. Default: 0.0"
+        },
+        {
+            "name": "ep3",
+            "writable": true,
+            "displayName": "ep3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Third term voltage exponent for active power (Ep3).  Used only when .staticLoadModelType = exponential. Default: 0.0"
+        },
+        {
+            "name": "eq1",
+            "writable": true,
+            "displayName": "eq1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "First term voltage exponent for reactive power (Eq1).  Used only when .staticLoadModelType = exponential. Default: 0.0"
+        },
+        {
+            "name": "eq2",
+            "writable": true,
+            "displayName": "eq2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Second term voltage exponent for reactive power (Eq2).  Used only when .staticLoadModelType = exponential. Default: 0.0"
+        },
+        {
+            "name": "eq3",
+            "writable": true,
+            "displayName": "eq3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Third term voltage exponent for reactive power (Eq3).  Used only when .staticLoadModelType = exponential. Default: 0.0"
+        },
+        {
+            "name": "kp1",
+            "writable": true,
+            "displayName": "kp1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "First term voltage coefficient for active power (Kp1).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kp2",
+            "writable": true,
+            "displayName": "kp2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Second term voltage coefficient for active power (Kp2).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kp3",
+            "writable": true,
+            "displayName": "kp3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Third term voltage coefficient for active power (Kp3).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kp4",
+            "writable": true,
+            "displayName": "kp4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Frequency coefficient for active power (Kp4).  Must be non-zero when .staticLoadModelType = ZIP2.  Not used for all other values of .staticLoadModelType. Default: 0.0"
+        },
+        {
+            "name": "kpf",
+            "writable": true,
+            "displayName": "kpf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Frequency deviation coefficient for active power (Kpf).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kq1",
+            "writable": true,
+            "displayName": "kq1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "First term voltage coefficient for reactive power (Kq1).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kq2",
+            "writable": true,
+            "displayName": "kq2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Second term voltage coefficient for reactive power (Kq2).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kq3",
+            "writable": true,
+            "displayName": "kq3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Third term voltage coefficient for reactive power (Kq3).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "kq4",
+            "writable": true,
+            "displayName": "kq4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Frequency coefficient for reactive power (Kq4).  Must be non-zero when .staticLoadModelType = ZIP2.  Not used for all other values of .staticLoadModelType. Default: 0.0"
+        },
+        {
+            "name": "kqf",
+            "writable": true,
+            "displayName": "kqf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Frequency deviation coefficient for reactive power (Kqf).  Not used when .staticLoadModelType = constantZ. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "staticLoadModelType",
+            "writable": true,
+            "displayName": "staticLoadModelType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Type of static load model.  Typical Value = constantZ. Default: None"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
