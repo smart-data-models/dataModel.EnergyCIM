@@ -1,0 +1,231 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcSEXS;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcSEXS adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcSEXS/schema.json",
+    "description": "Adapted from CIM data models. Simplified Excitation System Model.",
+    "displayName": "ExcSEXS",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "efdmax",
+            "writable": true,
+            "displayName": "efdmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage clipping maximum limit (Efdmax).  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "efdmin",
+            "writable": true,
+            "displayName": "efdmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage clipping minimum limit (Efdmin).  Typical Value = -5. Default: 0.0"
+        },
+        {
+            "name": "emax",
+            "writable": true,
+            "displayName": "emax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum field voltage output (Emax).  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "emin",
+            "writable": true,
+            "displayName": "emin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum field voltage output (Emin).  Typical Value = -5. Default: 0.0"
+        },
+        {
+            "name": "k",
+            "writable": true,
+            "displayName": "k",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain (K) (>0).  Typical Value = 100. Default: 0.0"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller gain (Kc).  Typical Value = 0.08. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tatb",
+            "writable": true,
+            "displayName": "tatb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ta/Tb - gain reduction ratio of lag-lead element (TaTb).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Denominator time constant of lag-lead block (Tb).  Typical Value = 10. Default: 0"
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller phase lead time constant (Tc).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "te",
+            "writable": true,
+            "displayName": "te",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant of gain block (Te).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
