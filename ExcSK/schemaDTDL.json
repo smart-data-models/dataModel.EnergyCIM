@@ -1,0 +1,407 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcSK;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcSK adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcSK/schema.json",
+    "description": "Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.",
+    "displayName": "ExcSK",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "efdmax",
+            "writable": true,
+            "displayName": "efdmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage clipping limit (Efdmax). Default: 0.0"
+        },
+        {
+            "name": "efdmin",
+            "writable": true,
+            "displayName": "efdmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage clipping limit (Efdmin). Default: 0.0"
+        },
+        {
+            "name": "emax",
+            "writable": true,
+            "displayName": "emax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0"
+        },
+        {
+            "name": "emin",
+            "writable": true,
+            "displayName": "emin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0"
+        },
+        {
+            "name": "k",
+            "writable": true,
+            "displayName": "k",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "k1",
+            "writable": true,
+            "displayName": "k1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0"
+        },
+        {
+            "name": "k2",
+            "writable": true,
+            "displayName": "k2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller gain (Kc).  Typical Value = 70. Default: 0.0"
+        },
+        {
+            "name": "kce",
+            "writable": true,
+            "displayName": "kce",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kd",
+            "writable": true,
+            "displayName": "kd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kgob",
+            "writable": true,
+            "displayName": "kgob",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "P controller gain (Kgob).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "kp",
+            "writable": true,
+            "displayName": "kp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller gain (Kp).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kqi",
+            "writable": true,
+            "displayName": "kqi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kqob",
+            "writable": true,
+            "displayName": "kqob",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rate of rise of the reactive power (Kqob). Default: 0.0"
+        },
+        {
+            "name": "kqp",
+            "writable": true,
+            "displayName": "kqp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller gain (Kqp).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nq",
+            "writable": true,
+            "displayName": "nq",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0"
+        },
+        {
+            "name": "qconoff",
+            "writable": true,
+            "displayName": "qconoff",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False"
+        },
+        {
+            "name": "qz",
+            "writable": true,
+            "displayName": "qz",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0"
+        },
+        {
+            "name": "remote",
+            "writable": true,
+            "displayName": "remote",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False"
+        },
+        {
+            "name": "sbase",
+            "writable": true,
+            "displayName": "sbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0"
+        },
+        {
+            "name": "te",
+            "writable": true,
+            "displayName": "te",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant of gain block (Te).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "ti",
+            "writable": true,
+            "displayName": "ti",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0"
+        },
+        {
+            "name": "tp",
+            "writable": true,
+            "displayName": "tp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Tp).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "tr",
+            "writable": true,
+            "displayName": "tr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0"
+        },
+        {
+            "name": "uimax",
+            "writable": true,
+            "displayName": "uimax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum error (Uimax).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "uimin",
+            "writable": true,
+            "displayName": "uimin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum error (UImin).  Typical Value = -10. Default: 0.0"
+        },
+        {
+            "name": "urmax",
+            "writable": true,
+            "displayName": "urmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum controller output (URmax).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "urmin",
+            "writable": true,
+            "displayName": "urmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum controller output (URmin).  Typical Value = -10. Default: 0.0"
+        },
+        {
+            "name": "vtmax",
+            "writable": true,
+            "displayName": "vtmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0"
+        },
+        {
+            "name": "vtmin",
+            "writable": true,
+            "displayName": "vtmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0"
+        },
+        {
+            "name": "yp",
+            "writable": true,
+            "displayName": "yp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
