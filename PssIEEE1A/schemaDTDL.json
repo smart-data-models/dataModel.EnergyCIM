@@ -1,0 +1,247 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PssIEEE1A;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - PssIEEE1A adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PssIEEE1A/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS1A power system stabilizer model. PSS1A is the generalized form of a PSS with a single input. Some common stabilizer input signals are speed, frequency, and power.  Reference: IEEE 1A 421.5-2005 Section 8.1.",
+    "displayName": "PssIEEE1A",
+    "contents": [
+        {
+            "name": "a1",
+            "writable": true,
+            "displayName": "a1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PSS signal conditioning frequency filter constant (A1).  Typical Value = 0.061. Default: 0.0"
+        },
+        {
+            "name": "a2",
+            "writable": true,
+            "displayName": "a2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PSS signal conditioning frequency filter constant (A2).  Typical Value = 0.0017. Default: 0.0"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "inputSignalType",
+            "writable": true,
+            "displayName": "inputSignalType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Type of input signal.  Typical Value = rotorAngularFrequencyDeviation. Default: None"
+        },
+        {
+            "name": "ks",
+            "writable": true,
+            "displayName": "ks",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Stabilizer gain (Ks).  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t1",
+            "writable": true,
+            "displayName": "t1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T1).  Typical Value = 0.3. Default: 0"
+        },
+        {
+            "name": "t2",
+            "writable": true,
+            "displayName": "t2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T2).  Typical Value = 0.03. Default: 0"
+        },
+        {
+            "name": "t3",
+            "writable": true,
+            "displayName": "t3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0"
+        },
+        {
+            "name": "t4",
+            "writable": true,
+            "displayName": "t4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T4).  Typical Value = 0.03. Default: 0"
+        },
+        {
+            "name": "t5",
+            "writable": true,
+            "displayName": "t5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Washout time constant (T5).  Typical Value = 10. Default: 0"
+        },
+        {
+            "name": "t6",
+            "writable": true,
+            "displayName": "t6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Transducer time constant (T6).  Typical Value = 0.01. Default: 0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum stabilizer output (Vrmax).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum stabilizer output (Vrmin).  Typical Value = -0.05. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
