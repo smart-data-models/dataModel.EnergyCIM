@@ -1,0 +1,247 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcHU;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcHU adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcHU/schema.json",
+    "description": "Adapted from CIM data models. Hungarian Excitation System Model, with built-in voltage transducer.",
+    "displayName": "ExcHU",
+    "contents": [
+        {
+            "name": "ae",
+            "writable": true,
+            "displayName": "ae",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Major loop PI tag gain factor (Ae).  Typical Value = 3. Default: 0.0"
+        },
+        {
+            "name": "ai",
+            "writable": true,
+            "displayName": "ai",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minor loop PI tag gain factor (Ai).  Typical Value = 22. Default: 0.0"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "atr",
+            "writable": true,
+            "displayName": "atr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "AVR constant (Atr).  Typical Value = 2.19. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "emax",
+            "writable": true,
+            "displayName": "emax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage control signal upper limit on AVR base (Emax).  Typical Value = 0.996. Default: 0.0"
+        },
+        {
+            "name": "emin",
+            "writable": true,
+            "displayName": "emin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Field voltage control signal lower limit on AVR base (Emin).  Typical Value = -0.866. Default: 0.0"
+        },
+        {
+            "name": "imax",
+            "writable": true,
+            "displayName": "imax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Major loop PI tag output signal upper limit (Imax).  Typical Value = 2.19. Default: 0.0"
+        },
+        {
+            "name": "imin",
+            "writable": true,
+            "displayName": "imin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Major loop PI tag output signal lower limit (Imin).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "ke",
+            "writable": true,
+            "displayName": "ke",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage base conversion constant (Ke).  Typical Value = 4.666. Default: 0.0"
+        },
+        {
+            "name": "ki",
+            "writable": true,
+            "displayName": "ki",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Current base conversion constant (Ki).  Typical Value = 0.21428. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "te",
+            "writable": true,
+            "displayName": "te",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Major loop PI tag integration time constant (Te).  Typical Value = 0.154. Default: 0"
+        },
+        {
+            "name": "ti",
+            "writable": true,
+            "displayName": "ti",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minor loop PI control tag integration time constant (Ti).  Typical Value = 0.01333. Default: 0"
+        },
+        {
+            "name": "tr",
+            "writable": true,
+            "displayName": "tr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant (Tr). If a voltage compensator is used in conjunction with this excitation system model, Tr should be set to 0.  Typical Value = 0.01. Default: 0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
