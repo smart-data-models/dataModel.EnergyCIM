@@ -1,0 +1,247 @@
+{
+    "@id": "dtmi:com:ngsi-ld:WindPlantFreqPcontrolIEC;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - WindPlantFreqPcontrolIEC adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindPlantFreqPcontrolIEC/schema.json",
+    "description": "Adapted from CIM data models. Frequency and active power controller model.  Reference: IEC Standard 61400-27-1 Annex E.",
+    "displayName": "WindPlantFreqPcontrolIEC",
+    "contents": [
+        {
+            "name": "WindDynamicsLookupTable",
+            "writable": true,
+            "displayName": "WindDynamicsLookupTable",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The frequency and active power wind plant control model with which this wind dynamics lookup table is associated. Default: 'list'"
+        },
+        {
+            "name": "WindPlantIEC",
+            "writable": true,
+            "displayName": "WindPlantIEC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Wind plant model with which this wind plant frequency and active power control is associated. Default: None"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dprefmax",
+            "writable": true,
+            "displayName": "dprefmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "dprefmin",
+            "writable": true,
+            "displayName": "dprefmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum (negative) ramp rate of  request from the plant controller to the wind turbines (). It is project dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kiwpp",
+            "writable": true,
+            "displayName": "kiwpp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Plant P controller integral gain (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "kpwpp",
+            "writable": true,
+            "displayName": "kpwpp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Plant P controller proportional gain (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "prefmax",
+            "writable": true,
+            "displayName": "prefmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "prefmin",
+            "writable": true,
+            "displayName": "prefmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum  request from the plant controller to the wind turbines (). It is type dependent parameter. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tpft",
+            "writable": true,
+            "displayName": "tpft",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead time constant in reference value transfer function (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "tpfv",
+            "writable": true,
+            "displayName": "tpfv",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lag time constant in reference value transfer function (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "twpffilt",
+            "writable": true,
+            "displayName": "twpffilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for frequency measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "name": "twppfilt",
+            "writable": true,
+            "displayName": "twppfilt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant for active power measurement (). It is type dependent parameter. Default: 0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
