@@ -1,0 +1,295 @@
+{
+    "@id": "dtmi:com:ngsi-ld:DiscExcContIEEEDEC1A;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - DiscExcContIEEEDEC1A adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/DiscExcContIEEEDEC1A/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.  Reference: IEEE Standard 421.5-2005 Section 12.2.",
+    "displayName": "DiscExcContIEEEDEC1A",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "esc",
+            "writable": true,
+            "displayName": "esc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed change reference ().  Typical Value = 0.0015. Default: 0.0"
+        },
+        {
+            "name": "kan",
+            "writable": true,
+            "displayName": "kan",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Discontinuous controller gain ().  Typical Value = 400. Default: 0.0"
+        },
+        {
+            "name": "ketl",
+            "writable": true,
+            "displayName": "ketl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tan",
+            "writable": true,
+            "displayName": "tan",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0"
+        },
+        {
+            "name": "td",
+            "writable": true,
+            "displayName": "td",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant ().  Typical Value = 0.03. Default: 0"
+        },
+        {
+            "name": "tl1",
+            "writable": true,
+            "displayName": "tl1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant ().  Typical Value = 0.025. Default: 0"
+        },
+        {
+            "name": "tl2",
+            "writable": true,
+            "displayName": "tl2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant ().  Typical Value = 1.25. Default: 0"
+        },
+        {
+            "name": "tw5",
+            "writable": true,
+            "displayName": "tw5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "DEC washout time constant ().  Typical Value = 5. Default: 0"
+        },
+        {
+            "name": "val",
+            "writable": true,
+            "displayName": "val",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0"
+        },
+        {
+            "name": "vanmax",
+            "writable": true,
+            "displayName": "vanmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter for Van (). Default: 0.0"
+        },
+        {
+            "name": "vomax",
+            "writable": true,
+            "displayName": "vomax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter ().  Typical Value = 0.3. Default: 0.0"
+        },
+        {
+            "name": "vomin",
+            "writable": true,
+            "displayName": "vomin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter ().  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "vsmax",
+            "writable": true,
+            "displayName": "vsmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter ().  Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "name": "vsmin",
+            "writable": true,
+            "displayName": "vsmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Limiter ().  Typical Value = -0.066. Default: 0.0"
+        },
+        {
+            "name": "vtc",
+            "writable": true,
+            "displayName": "vtc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0"
+        },
+        {
+            "name": "vtlmt",
+            "writable": true,
+            "displayName": "vtlmt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage reference ().  Typical Value = 1.1. Default: 0.0"
+        },
+        {
+            "name": "vtm",
+            "writable": true,
+            "displayName": "vtm",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage limits ().  Typical Value = 1.13. Default: 0.0"
+        },
+        {
+            "name": "vtn",
+            "writable": true,
+            "displayName": "vtn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage limits ().  Typical Value = 1.12. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
