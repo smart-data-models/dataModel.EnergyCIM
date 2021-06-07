@@ -1,0 +1,295 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcST1A;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcST1A adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcST1A/schema.json",
+    "description": "Adapted from CIM data models. Modification of an old IEEE ST1A static excitation system without overexcitation limiter (OEL) and underexcitation limiter (UEL).",
+    "displayName": "ExcST1A",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "ilr",
+            "writable": true,
+            "displayName": "ilr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter output current limit reference (Ilr).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "ka",
+            "writable": true,
+            "displayName": "ka",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator gain (Ka).  Typical Value = 190. Default: 0.0"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "kf",
+            "writable": true,
+            "displayName": "kf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer gains (Kf).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "klr",
+            "writable": true,
+            "displayName": "klr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter output current limiter gain (Klr).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ta",
+            "writable": true,
+            "displayName": "ta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0"
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (Tb).  Typical Value = 10. Default: 0"
+        },
+        {
+            "name": "tb1",
+            "writable": true,
+            "displayName": "tb1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (Tc).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tc1",
+            "writable": true,
+            "displayName": "tc1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator time constant (Tc).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "vamax",
+            "writable": true,
+            "displayName": "vamax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator output (Vamax).  Typical Value = 999. Default: 0.0"
+        },
+        {
+            "name": "vamin",
+            "writable": true,
+            "displayName": "vamin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator output (Vamin).  Typical Value = -999. Default: 0.0"
+        },
+        {
+            "name": "vimax",
+            "writable": true,
+            "displayName": "vimax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator input limit (Vimax).  Typical Value = 999. Default: 0.0"
+        },
+        {
+            "name": "vimin",
+            "writable": true,
+            "displayName": "vimin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator input limit (Vimin).  Typical Value = -999. Default: 0.0"
+        },
+        {
+            "name": "vrmax",
+            "writable": true,
+            "displayName": "vrmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum voltage regulator outputs (Vrmax).  Typical Value = 7.8. Default: 0.0"
+        },
+        {
+            "name": "vrmin",
+            "writable": true,
+            "displayName": "vrmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum voltage regulator outputs (Vrmin).  Typical Value = -6.7. Default: 0.0"
+        },
+        {
+            "name": "xe",
+            "writable": true,
+            "displayName": "xe",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Excitation xfmr effective reactance (Xe).  Typical Value = 0.04. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
