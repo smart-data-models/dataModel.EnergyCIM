@@ -5,15 +5,15 @@
 Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS3B power system stabilizer model. The PSS model PSS3B has dual inputs of electrical power and rotor angular frequency deviation. The signals are used to derive an equivalent mechanical power signal.  Reference: IEEE 3B 421.5-2005 Section 8.3.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE3B/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/PssIEEE3B/swagger.yaml)
 
-Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE3B/doc/spec.md)
+Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/PssIEEE3B/doc/spec.md)
 
-Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE3B/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.EnergyCIM/PssIEEE3B/doc/spec_ES.md)
 
-Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE3B/doc/spec_FR.md)
+Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.EnergyCIM/PssIEEE3B/doc/spec_FR.md)
 
-Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE3B/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.EnergyCIM/PssIEEE3B/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
