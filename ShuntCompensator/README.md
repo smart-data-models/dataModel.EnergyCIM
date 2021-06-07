@@ -5,15 +5,15 @@
 Adapted from CIM data models. A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor.  A negative value for reactivePerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ShuntCompensator/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/ShuntCompensator/swagger.yaml)
 
-Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ShuntCompensator/doc/spec.md)
+Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/ShuntCompensator/doc/spec.md)
 
-Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ShuntCompensator/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.EnergyCIM/ShuntCompensator/doc/spec_ES.md)
 
-Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ShuntCompensator/doc/spec_FR.md)
+Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.EnergyCIM/ShuntCompensator/doc/spec_FR.md)
 
-Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ShuntCompensator/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.EnergyCIM/ShuntCompensator/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
