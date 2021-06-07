@@ -1,0 +1,279 @@
+{
+    "@id": "dtmi:com:ngsi-ld:TopologicalNode;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - TopologicalNode adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/TopologicalNode/schema.json",
+    "description": "Adapted from CIM data models. For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state). For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintaine",
+    "displayName": "TopologicalNode",
+    "contents": [
+        {
+            "name": "AngleRefTopologicalIsland",
+            "writable": true,
+            "displayName": "AngleRefTopologicalIsland",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The island for which the node is an angle reference.   Normally there is one angle reference node for each island. Default: None"
+        },
+        {
+            "name": "BaseVoltage",
+            "writable": true,
+            "displayName": "BaseVoltage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The base voltage of the topologocial node. Default: None"
+        },
+        {
+            "name": "ConnectivityNodeContainer",
+            "writable": true,
+            "displayName": "ConnectivityNodeContainer",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The connectivity node container to which the toplogical node belongs. Default: None"
+        },
+        {
+            "name": "ConnectivityNodes",
+            "writable": true,
+            "displayName": "ConnectivityNodes",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network. Default: 'list'"
+        },
+        {
+            "name": "ReportingGroup",
+            "writable": true,
+            "displayName": "ReportingGroup",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The topological nodes that belong to the reporting group. Default: None"
+        },
+        {
+            "name": "SvInjection",
+            "writable": true,
+            "displayName": "SvInjection",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The topological node associated with the flow injection state variable. Default: None"
+        },
+        {
+            "name": "SvVoltage",
+            "writable": true,
+            "displayName": "SvVoltage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The topological node associated with the voltage state. Default: None"
+        },
+        {
+            "name": "Terminal",
+            "writable": true,
+            "displayName": "Terminal",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unneccesary to model connectivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: 'list'"
+        },
+        {
+            "name": "TopologicalIsland",
+            "writable": true,
+            "displayName": "TopologicalIsland",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "A topological node belongs to a topological island. Default: None"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "boundaryPoint",
+            "writable": true,
+            "displayName": "boundaryPoint",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. Default: False"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "fromEndIsoCode",
+            "writable": true,
+            "displayName": "fromEndIsoCode",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The attribute is used for an exchange of the ISO code of the region to which the `From` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''"
+        },
+        {
+            "name": "fromEndName",
+            "writable": true,
+            "displayName": "fromEndName",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''"
+        },
+        {
+            "name": "fromEndNameTso",
+            "writable": true,
+            "displayName": "fromEndNameTso",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The attribute is used for an exchange of the name of the TSO to which the `From` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "toEndIsoCode",
+            "writable": true,
+            "displayName": "toEndIsoCode",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The attribute is used for an exchange of the ISO code of the region to which the `To` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''"
+        },
+        {
+            "name": "toEndName",
+            "writable": true,
+            "displayName": "toEndName",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''"
+        },
+        {
+            "name": "toEndNameTso",
+            "writable": true,
+            "displayName": "toEndNameTso",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The attribute is used for an exchange of the name of the TSO to which the `To` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: ''"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
