@@ -1,0 +1,431 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovSteamEU;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovSteamEU adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovSteamEU/schema.json",
+    "description": "Adapted from CIM data models. Simplified model  of boiler and steam turbine with PID governor.",
+    "displayName": "GovSteamEU",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "chc",
+            "writable": true,
+            "displayName": "chc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Control valves rate closing limit (Chc).  Unit = PU/sec.  Typical Value = -3.3. Default: 0.0"
+        },
+        {
+            "name": "cho",
+            "writable": true,
+            "displayName": "cho",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Control valves rate opening limit (Cho).  Unit = PU/sec.  Typical Value = 0.17. Default: 0.0"
+        },
+        {
+            "name": "cic",
+            "writable": true,
+            "displayName": "cic",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intercept valves rate closing limit (Cic).  Typical Value = -2.2. Default: 0.0"
+        },
+        {
+            "name": "cio",
+            "writable": true,
+            "displayName": "cio",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intercept valves rate opening limit (Cio).  Typical Value = 0.123. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "db1",
+            "writable": true,
+            "displayName": "db1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dead band of the frequency corrector (db1).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "db2",
+            "writable": true,
+            "displayName": "db2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dead band of the speed governor (db2).  Typical Value = 0.0004. Default: 0.0"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "hhpmax",
+            "writable": true,
+            "displayName": "hhpmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum control valve position (Hhpmax).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "ke",
+            "writable": true,
+            "displayName": "ke",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain of the power controller (Ke).  Typical Value = 0.65. Default: 0.0"
+        },
+        {
+            "name": "kfcor",
+            "writable": true,
+            "displayName": "kfcor",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain of the frequency corrector (Kfcor).  Typical Value = 20. Default: 0.0"
+        },
+        {
+            "name": "khp",
+            "writable": true,
+            "displayName": "khp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Fraction of total turbine output generated by HP part (Khp).  Typical Value = 0.277. Default: 0.0"
+        },
+        {
+            "name": "klp",
+            "writable": true,
+            "displayName": "klp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Fraction of total turbine output generated by HP part (Klp).  Typical Value = 0.723. Default: 0.0"
+        },
+        {
+            "name": "kwcor",
+            "writable": true,
+            "displayName": "kwcor",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain of the speed governor (Kwcor).  Typical Value = 20. Default: 0.0"
+        },
+        {
+            "name": "mwbase",
+            "writable": true,
+            "displayName": "mwbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pmax",
+            "writable": true,
+            "displayName": "pmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximal active power of the turbine (Pmax).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "prhmax",
+            "writable": true,
+            "displayName": "prhmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum low pressure limit (Prhmax).  Typical Value = 1.4. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "simx",
+            "writable": true,
+            "displayName": "simx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intercept valves transfer limit (Simx).  Typical Value = 0.425. Default: 0.0"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Boiler time constant (Tb).  Typical Value = 100. Default: 0"
+        },
+        {
+            "name": "tdp",
+            "writable": true,
+            "displayName": "tdp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative time constant of the power controller (Tdp).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ten",
+            "writable": true,
+            "displayName": "ten",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electro hydraulic transducer (Ten).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "tf",
+            "writable": true,
+            "displayName": "tf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Frequency transducer time constant (Tf).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tfp",
+            "writable": true,
+            "displayName": "tfp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant of the power controller (Tfp).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "thp",
+            "writable": true,
+            "displayName": "thp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High pressure (HP) time constant of the turbine (Thp).  Typical Value = 0.31. Default: 0"
+        },
+        {
+            "name": "tip",
+            "writable": true,
+            "displayName": "tip",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Integral time constant of the power controller (Tip).  Typical Value = 2. Default: 0"
+        },
+        {
+            "name": "tlp",
+            "writable": true,
+            "displayName": "tlp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low pressure(LP) time constant of the turbine (Tlp).  Typical Value = 0.45. Default: 0"
+        },
+        {
+            "name": "tp",
+            "writable": true,
+            "displayName": "tp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power transducer time constant (Tp).  Typical Value = 0.07. Default: 0"
+        },
+        {
+            "name": "trh",
+            "writable": true,
+            "displayName": "trh",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reheater  time constant of the turbine (Trh).  Typical Value = 8. Default: 0"
+        },
+        {
+            "name": "tvhp",
+            "writable": true,
+            "displayName": "tvhp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Control valves servo time constant (Tvhp).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "tvip",
+            "writable": true,
+            "displayName": "tvip",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intercept valves servo time constant (Tvip).  Typical Value = 0.15. Default: 0"
+        },
+        {
+            "name": "tw",
+            "writable": true,
+            "displayName": "tw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed transducer time constant (Tw).  Typical Value = 0.02. Default: 0"
+        },
+        {
+            "name": "wfmax",
+            "writable": true,
+            "displayName": "wfmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Upper limit for frequency correction (Wfmax).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "wfmin",
+            "writable": true,
+            "displayName": "wfmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lower limit for frequency correction (Wfmin).  Typical Value = -0.05. Default: 0.0"
+        },
+        {
+            "name": "wmax1",
+            "writable": true,
+            "displayName": "wmax1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Emergency speed control lower limit (wmax1).  Typical Value = 1.025. Default: 0.0"
+        },
+        {
+            "name": "wmax2",
+            "writable": true,
+            "displayName": "wmax2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Emergency speed control upper limit (wmax2).  Typical Value = 1.05. Default: 0.0"
+        },
+        {
+            "name": "wwmax",
+            "writable": true,
+            "displayName": "wwmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Upper limit for the speed governor (Wwmax).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "wwmin",
+            "writable": true,
+            "displayName": "wwmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lower limit for the speed governor frequency correction (Wwmin).  Typical Value = -1. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
