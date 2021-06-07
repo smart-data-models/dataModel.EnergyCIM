@@ -1,0 +1,375 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovHydroPelton;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovHydroPelton adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovHydroPelton/schema.json",
+    "description": "Adapted from CIM data models. Detailed hydro unit - Pelton model.  This model can be used to represent the dynamic related to water tunnel and surge chamber. A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is located under the GovHydroFrancis class.",
+    "displayName": "GovHydroPelton",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "av0",
+            "writable": true,
+            "displayName": "av0",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Area of the surge tank (A). Unit = m. Typical Value = 30. Default: 0.0"
+        },
+        {
+            "name": "av1",
+            "writable": true,
+            "displayName": "av1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Area of the compensation tank (A). Unit = m. Typical Value = 700. Default: 0.0"
+        },
+        {
+            "name": "bp",
+            "writable": true,
+            "displayName": "bp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Droop (bp).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "db1",
+            "writable": true,
+            "displayName": "db1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intentional dead-band width (DB1).  Unit = Hz.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "db2",
+            "writable": true,
+            "displayName": "db2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intentional dead-band width of valve opening error (DB2). Unit = Hz.  Typical Value = 0.01. Default: 0.0"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "h1",
+            "writable": true,
+            "displayName": "h1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Head of compensation chamber water level with respect to the level of penstock (H).  Unit = m. Typical Value = 4. Default: 0.0"
+        },
+        {
+            "name": "h2",
+            "writable": true,
+            "displayName": "h2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Head of surge tank water level with respect to the level of penstock (H).  Unit = m. Typical Value = 40. Default: 0.0"
+        },
+        {
+            "name": "hn",
+            "writable": true,
+            "displayName": "hn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rated hydraulic head (H).  Unit = m. Typical Value = 250. Default: 0.0"
+        },
+        {
+            "name": "kc",
+            "writable": true,
+            "displayName": "kc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Penstock loss coefficient (due to friction) (Kc).  Typical Value = 0.025. Default: 0.0"
+        },
+        {
+            "name": "kg",
+            "writable": true,
+            "displayName": "kg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water tunnel and surge chamber loss coefficient (due to friction) (Kg).  Typical Value = -0.025. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "qc0",
+            "writable": true,
+            "displayName": "qc0",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "No-load turbine flow at nominal head (Qc0).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "qn",
+            "writable": true,
+            "displayName": "qn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rated flow (Q). Unit = m/s. Typical Value = 40. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "simplifiedPelton",
+            "writable": true,
+            "displayName": "simplifiedPelton",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Simplified Pelton model simulation (Sflag). true = enable of simplified Pelton model simulation false = enable of complete Pelton model simulation (non linear gain). Typical Value = false. Default: False"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "staticCompensating",
+            "writable": true,
+            "displayName": "staticCompensating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Static compensating characteristic (Cflag). true = enable of static compensating characteristic  false = inhibit of static compensating characteristic. Typical Value = false. Default: False"
+        },
+        {
+            "name": "ta",
+            "writable": true,
+            "displayName": "ta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative gain (accelerometer time constant) (Ta).  Typical Value = 3. Default: 0"
+        },
+        {
+            "name": "ts",
+            "writable": true,
+            "displayName": "ts",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate servo time constant (Ts).  Typical Value = 0.15. Default: 0"
+        },
+        {
+            "name": "tv",
+            "writable": true,
+            "displayName": "tv",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Servomotor integrator time constant (TV).  Typical Value = 0.3. Default: 0"
+        },
+        {
+            "name": "twnc",
+            "writable": true,
+            "displayName": "twnc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water inertia time constant (Twnc).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "twng",
+            "writable": true,
+            "displayName": "twng",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water tunnel and surge chamber inertia time constant (Twng). Typical Value = 3. Default: 0"
+        },
+        {
+            "name": "tx",
+            "writable": true,
+            "displayName": "tx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electronic integrator time constant (Tx).  Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "va",
+            "writable": true,
+            "displayName": "va",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate opening velocity (Va).  Unit = PU/sec.  Typical Value = 0.016. Default: 0.0"
+        },
+        {
+            "name": "valvmax",
+            "writable": true,
+            "displayName": "valvmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate opening (ValvMax).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "valvmin",
+            "writable": true,
+            "displayName": "valvmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum gate opening (ValvMin).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "vav",
+            "writable": true,
+            "displayName": "vav",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum servomotor valve opening velocity (Vav).  Typical Value = 0.017. Default: 0.0"
+        },
+        {
+            "name": "vc",
+            "writable": true,
+            "displayName": "vc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate closing velocity (Vc).  Unit = PU/sec.  Typical Value = -0.016. Default: 0.0"
+        },
+        {
+            "name": "vcv",
+            "writable": true,
+            "displayName": "vcv",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum servomotor valve closing velocity (Vcv).  Typical Value = -0.017. Default: 0.0"
+        },
+        {
+            "name": "waterTunnelSurgeChamberSimulation",
+            "writable": true,
+            "displayName": "waterTunnelSurgeChamberSimulation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water tunnel and surge chamber simulation (Tflag). true = enable of water tunnel and surge chamber simulation false = inhibit of water tunnel and surge chamber simulation. Typical Value = false. Default: False"
+        },
+        {
+            "name": "zsfc",
+            "writable": true,
+            "displayName": "zsfc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m. Typical Value = 25. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
