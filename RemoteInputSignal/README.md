@@ -5,15 +5,15 @@
 Adapted from CIM data models. Supports connection to a terminal associated with a remote bus from which an input signal of a specific type is coming.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/RemoteInputSignal/swagger.yaml)
 
-Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/doc/spec.md)
+Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/RemoteInputSignal/doc/spec.md)
 
-Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.EnergyCIM/RemoteInputSignal/doc/spec_ES.md)
 
-Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/doc/spec_FR.md)
+Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.EnergyCIM/RemoteInputSignal/doc/spec_FR.md)
 
-Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.EnergyCIM/RemoteInputSignal/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
