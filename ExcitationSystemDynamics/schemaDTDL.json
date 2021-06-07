@@ -1,0 +1,215 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcitationSystemDynamics;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcitationSystemDynamics adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcitationSystemDynamics/schema.json",
+    "description": "Adapted from CIM data models. Excitation system function block whose behavior is described by reference to a standard model",
+    "displayName": "ExcitationSystemDynamics",
+    "contents": [
+        {
+            "name": "DiscontinuousExcitationControlDynamics",
+            "writable": true,
+            "displayName": "DiscontinuousExcitationControlDynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Discontinuous excitation control model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "OverexcitationLimiterDynamics",
+            "writable": true,
+            "displayName": "OverexcitationLimiterDynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Overexcitation limiter model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "PFVArControllerType1Dynamics",
+            "writable": true,
+            "displayName": "PFVArControllerType1Dynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power Factor or VAr controller Type I model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "PFVArControllerType2Dynamics",
+            "writable": true,
+            "displayName": "PFVArControllerType2Dynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power Factor or VAr controller Type II model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "PowerSystemStabilizerDynamics",
+            "writable": true,
+            "displayName": "PowerSystemStabilizerDynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power system stabilizer model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "SynchronousMachineDynamics",
+            "writable": true,
+            "displayName": "SynchronousMachineDynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Synchronous machine model with which this excitation system model is associated. Default: None"
+        },
+        {
+            "name": "UnderexcitationLimiterDynamics",
+            "writable": true,
+            "displayName": "UnderexcitationLimiterDynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Undrexcitation limiter model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "VoltageCompensatorDynamics",
+            "writable": true,
+            "displayName": "VoltageCompensatorDynamics",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage compensator model associated with this excitation system model. Default: None"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
