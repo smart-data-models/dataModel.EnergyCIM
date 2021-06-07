@@ -1,0 +1,327 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovHydroWPID;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovHydroWPID adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovHydroWPID/schema.json",
+    "description": "Adapted from CIM data models. Woodward PID Hydro Governor.",
+    "displayName": "GovHydroWPID",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "d",
+            "writable": true,
+            "displayName": "d",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine damping factor (D).  Unit = delta P / delta speed. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "gatmax",
+            "writable": true,
+            "displayName": "gatmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate opening Limit Maximum (Gatmax). Default: 0.0"
+        },
+        {
+            "name": "gatmin",
+            "writable": true,
+            "displayName": "gatmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate opening Limit Minimum (Gatmin). Default: 0.0"
+        },
+        {
+            "name": "gv1",
+            "writable": true,
+            "displayName": "gv1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate position 1 (Gv1). Default: 0.0"
+        },
+        {
+            "name": "gv2",
+            "writable": true,
+            "displayName": "gv2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate position 2 (Gv2). Default: 0.0"
+        },
+        {
+            "name": "gv3",
+            "writable": true,
+            "displayName": "gv3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate position 3 (Gv3). Default: 0.0"
+        },
+        {
+            "name": "kd",
+            "writable": true,
+            "displayName": "kd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0"
+        },
+        {
+            "name": "ki",
+            "writable": true,
+            "displayName": "ki",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reset gain (Ki).  Typical Value = 0.36. Default: 0.0"
+        },
+        {
+            "name": "kp",
+            "writable": true,
+            "displayName": "kp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "mwbase",
+            "writable": true,
+            "displayName": "mwbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Base for power values  (MWbase) (>0).  Unit = MW. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pgv1",
+            "writable": true,
+            "displayName": "pgv1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Output at Gv1 PU of MWbase (Pgv1). Default: 0.0"
+        },
+        {
+            "name": "pgv2",
+            "writable": true,
+            "displayName": "pgv2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Output at Gv2 PU of MWbase (Pgv2). Default: 0.0"
+        },
+        {
+            "name": "pgv3",
+            "writable": true,
+            "displayName": "pgv3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Output at Gv3 PU of MWbase (Pgv3). Default: 0.0"
+        },
+        {
+            "name": "pmax",
+            "writable": true,
+            "displayName": "pmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Power Output (Pmax). Default: 0.0"
+        },
+        {
+            "name": "pmin",
+            "writable": true,
+            "displayName": "pmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum Power Output (Pmin). Default: 0.0"
+        },
+        {
+            "name": "reg",
+            "writable": true,
+            "displayName": "reg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Permanent drop (Reg). Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ta",
+            "writable": true,
+            "displayName": "ta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Controller time constant (Ta) (>0).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate servo time constant (Tb) (>0).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "treg",
+            "writable": true,
+            "displayName": "treg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed detector time constant (Treg). Default: 0"
+        },
+        {
+            "name": "tw",
+            "writable": true,
+            "displayName": "tw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water inertia time constant (Tw) (>0).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "velmax",
+            "writable": true,
+            "displayName": "velmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate opening velocity (Velmax).  Unit = PU/sec.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "velmin",
+            "writable": true,
+            "displayName": "velmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate closing velocity (Velmin).  Unit = PU/sec.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
