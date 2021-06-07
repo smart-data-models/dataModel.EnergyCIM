@@ -1,0 +1,207 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PFVArType2IEEEPFController;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - PFVArType2IEEEPFController adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PFVArType2IEEEPFController/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE PF Controller Type 2 which is a summing point type controller and makes up the outside loop of a two-loop system. This controller is implemented as a slow PI type controller. The voltage regulator forms the inner loop and is implemented as a fast controller.  Reference: IEEE Standard 421.5-2005 Section 11.4.",
+    "displayName": "PFVArType2IEEEPFController",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "exlon",
+            "writable": true,
+            "displayName": "exlon",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Overexcitation or under excitation flag () true = 1 (not in the overexcitation or underexcitation state, integral action is active) false = 0 (in the overexcitation or underexcitation state, so integral action is disabled to allow the limiter to play its role). Default: False"
+        },
+        {
+            "name": "ki",
+            "writable": true,
+            "displayName": "ki",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Integral gain of the pf controller ().  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kp",
+            "writable": true,
+            "displayName": "kp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Proportional gain of the pf controller ().  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pfref",
+            "writable": true,
+            "displayName": "pfref",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor reference (). Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "vclmt",
+            "writable": true,
+            "displayName": "vclmt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum output of the pf controller ().  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "vref",
+            "writable": true,
+            "displayName": "vref",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage regulator reference (). Default: 0.0"
+        },
+        {
+            "name": "vs",
+            "writable": true,
+            "displayName": "vs",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Generator sensing voltage (). Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
