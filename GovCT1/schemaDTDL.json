@@ -1,0 +1,431 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovCT1;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovCT1 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovCT1/schema.json",
+    "description": "Adapted from CIM data models. General model for any prime mover with a PID governor, used primarily for combustion turbine and combined cycle units. This model can be used to represent a variety of prime movers controlled by PID governors.  It is suitable, for example, for representation of     Additional information on this model is available in the 2012 IEEE report, , section 3.1.2.3 page 3-4 (GGOV1).",
+    "displayName": "GovCT1",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "aset",
+            "writable": true,
+            "displayName": "aset",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 0.01. Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "db",
+            "writable": true,
+            "displayName": "db",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dm",
+            "writable": true,
+            "displayName": "dm",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissib"
+        },
+        {
+            "name": "ka",
+            "writable": true,
+            "displayName": "ka",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Acceleration limiter gain (Ka).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "kdgov",
+            "writable": true,
+            "displayName": "kdgov",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "kigov",
+            "writable": true,
+            "displayName": "kigov",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor integral gain (Kigov).  Typical Value = 2. Default: 0.0"
+        },
+        {
+            "name": "kiload",
+            "writable": true,
+            "displayName": "kiload",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Load limiter integral gain for PI controller (Kiload).  Typical Value = 0.67. Default: 0.0"
+        },
+        {
+            "name": "kimw",
+            "writable": true,
+            "displayName": "kimw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0.01. Default: 0.0"
+        },
+        {
+            "name": "kpgov",
+            "writable": true,
+            "displayName": "kpgov",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor proportional gain (Kpgov).  Typical Value = 10. Default: 0.0"
+        },
+        {
+            "name": "kpload",
+            "writable": true,
+            "displayName": "kpload",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Load limiter proportional gain for PI controller (Kpload).  Typical Value = 2. Default: 0.0"
+        },
+        {
+            "name": "kturb",
+            "writable": true,
+            "displayName": "kturb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine gain (Kturb) (>0).  Typical Value = 1.5. Default: 0.0"
+        },
+        {
+            "name": "ldref",
+            "writable": true,
+            "displayName": "ldref",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "maxerr",
+            "writable": true,
+            "displayName": "maxerr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum value for speed error signal (maxerr).  Typical Value = 0.05. Default: 0.0"
+        },
+        {
+            "name": "minerr",
+            "writable": true,
+            "displayName": "minerr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum value for speed error signal (minerr).  Typical Value = -0.05. Default: 0.0"
+        },
+        {
+            "name": "mwbase",
+            "writable": true,
+            "displayName": "mwbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "r",
+            "writable": true,
+            "displayName": "r",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Permanent droop (R).  Typical Value = 0.04. Default: 0.0"
+        },
+        {
+            "name": "rclose",
+            "writable": true,
+            "displayName": "rclose",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -0.1. Default: 0.0"
+        },
+        {
+            "name": "rdown",
+            "writable": true,
+            "displayName": "rdown",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0"
+        },
+        {
+            "name": "ropen",
+            "writable": true,
+            "displayName": "ropen",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 0.10. Default: 0.0"
+        },
+        {
+            "name": "rselect",
+            "writable": true,
+            "displayName": "rselect",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None"
+        },
+        {
+            "name": "rup",
+            "writable": true,
+            "displayName": "rup",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ta",
+            "writable": true,
+            "displayName": "ta",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Acceleration limiter time constant (Ta) (>0).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "tact",
+            "writable": true,
+            "displayName": "tact",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Actuator time constant (Tact).  Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine lag time constant (Tb) (>0).  Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine lead time constant (Tc).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tdgov",
+            "writable": true,
+            "displayName": "tdgov",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "teng",
+            "writable": true,
+            "displayName": "teng",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tfload",
+            "writable": true,
+            "displayName": "tfload",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Load Limiter time constant (Tfload) (>0).  Typical Value = 3. Default: 0"
+        },
+        {
+            "name": "tpelec",
+            "writable": true,
+            "displayName": "tpelec",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electrical power transducer time constant (Tpelec) (>0).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "tsa",
+            "writable": true,
+            "displayName": "tsa",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temperature detection lead time constant (Tsa).  Typical Value = 4. Default: 0"
+        },
+        {
+            "name": "tsb",
+            "writable": true,
+            "displayName": "tsb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temperature detection lag time constant (Tsb).  Typical Value = 5. Default: 0"
+        },
+        {
+            "name": "vmax",
+            "writable": true,
+            "displayName": "vmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "vmin",
+            "writable": true,
+            "displayName": "vmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum valve position limit (Vmin).  Typical Value = 0.15. Default: 0.0"
+        },
+        {
+            "name": "wfnl",
+            "writable": true,
+            "displayName": "wfnl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "No load fuel flow (Wfnl).  Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "name": "wfspd",
+            "writable": true,
+            "displayName": "wfspd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = true. Default: False"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
