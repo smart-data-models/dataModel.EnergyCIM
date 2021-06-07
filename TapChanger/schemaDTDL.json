@@ -1,0 +1,239 @@
+{
+    "@id": "dtmi:com:ngsi-ld:TapChanger;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - TapChanger adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/TapChanger/schema.json",
+    "description": "Adapted from CIM data models. Mechanism for changing transformer winding tap positions.",
+    "displayName": "TapChanger",
+    "contents": [
+        {
+            "name": "SvTapStep",
+            "writable": true,
+            "displayName": "SvTapStep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The tap step state associated with the tap changer. Default: None"
+        },
+        {
+            "name": "TapChangerControl",
+            "writable": true,
+            "displayName": "TapChangerControl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The tap changers that participates in this regulating tap control scheme. Default: None"
+        },
+        {
+            "name": "TapSchedules",
+            "writable": true,
+            "displayName": "TapSchedules",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "A TapSchedule is associated with a TapChanger. Default: 'list'"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "controlEnabled",
+            "writable": true,
+            "displayName": "controlEnabled",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Specifies the regulation status of the equipment.  True is regulating, false is not regulating. Default: False"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "highStep",
+            "writable": true,
+            "displayName": "highStep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Highest possible tap step position, advance from neutral. The attribute shall be greater than lowStep. Default: 0"
+        },
+        {
+            "name": "lowStep",
+            "writable": true,
+            "displayName": "lowStep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lowest possible tap step position, retard from neutral Default: 0"
+        },
+        {
+            "name": "ltcFlag",
+            "writable": true,
+            "displayName": "ltcFlag",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Specifies whether or not a TapChanger has load tap changing capabilities. Default: False"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "neutralStep",
+            "writable": true,
+            "displayName": "neutralStep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The neutral tap step position for this winding. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: 0"
+        },
+        {
+            "name": "neutralU",
+            "writable": true,
+            "displayName": "neutralU",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage at which the winding operates at the neutral tap setting. Default: 0.0"
+        },
+        {
+            "name": "normalStep",
+            "writable": true,
+            "displayName": "normalStep",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The tap step position used in `normal` network operation for this winding. For a `Fixed` tap changer indicates the current physical tap setting. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: 0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "step",
+            "writable": true,
+            "displayName": "step",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Tap changer position. Starting step for a steady state solution. Non integer values are allowed to support continuous tap variables. The reasons for continuous value are to support study cases where no discrete tap changers has yet been designed, a solutions where a narrow voltage band force the tap step to oscillate or accommodate for a continuous solution as input. The attribute shall be equal or greater than lowStep and equal or less than highStep. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
