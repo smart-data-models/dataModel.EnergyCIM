@@ -1,0 +1,263 @@
+{
+    "@id": "dtmi:com:ngsi-ld:ExcANS;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - ExcANS adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcANS/schema.json",
+    "description": "Adapted from CIM data models. Italian excitation system. It represents static field voltage or excitation current feedback excitation system.",
+    "displayName": "ExcANS",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "blint",
+            "writable": true,
+            "displayName": "blint",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Governor Control Flag (BLINT).  0 = lead-lag regulator 1 = proportional integral regulator. Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "ifmn",
+            "writable": true,
+            "displayName": "ifmn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum exciter current (I).  Typical Value = -5.2. Default: 0.0"
+        },
+        {
+            "name": "ifmx",
+            "writable": true,
+            "displayName": "ifmx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum exciter current (I).  Typical Value = 6.5. Default: 0.0"
+        },
+        {
+            "name": "k2",
+            "writable": true,
+            "displayName": "k2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter gain (K).  Typical Value = 20. Default: 0.0"
+        },
+        {
+            "name": "k3",
+            "writable": true,
+            "displayName": "k3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "AVR gain (K).  Typical Value = 1000. Default: 0.0"
+        },
+        {
+            "name": "kce",
+            "writable": true,
+            "displayName": "kce",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Ceiling factor (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "krvecc",
+            "writable": true,
+            "displayName": "krvecc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback enabling (K).  0 = Open loop control 1 = Closed loop control. Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "kvfif",
+            "writable": true,
+            "displayName": "kvfif",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rate feedback signal flag (K).  0 = output voltage of the exciter 1 = exciter field current. Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t1",
+            "writable": true,
+            "displayName": "t1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T).  Typical Value = 20. Default: 0"
+        },
+        {
+            "name": "t2",
+            "writable": true,
+            "displayName": "t2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "name": "t3",
+            "writable": true,
+            "displayName": "t3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (T).  Typical Value = 1.6. Default: 0"
+        },
+        {
+            "name": "tb",
+            "writable": true,
+            "displayName": "tb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Exciter time constant (T).  Typical Value = 0.04. Default: 0"
+        },
+        {
+            "name": "vrmn",
+            "writable": true,
+            "displayName": "vrmn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum AVR output (V).  Typical Value = -5.2. Default: 0.0"
+        },
+        {
+            "name": "vrmx",
+            "writable": true,
+            "displayName": "vrmx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum AVR output (V).  Typical Value = 6.5. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
