@@ -1,0 +1,559 @@
+{
+    "@id": "dtmi:com:ngsi-ld:GovHydroWEH;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - GovHydroWEH adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovHydroWEH/schema.json",
+    "description": "Adapted from CIM data models. Woodward Electric Hydro Governor Model.",
+    "displayName": "GovHydroWEH",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "db",
+            "writable": true,
+            "displayName": "db",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed Dead Band (db). Default: 0.0"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dicn",
+            "writable": true,
+            "displayName": "dicn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Value to allow the integral controller to advance beyond the gate limits (Dicn). Default: 0.0"
+        },
+        {
+            "name": "dpv",
+            "writable": true,
+            "displayName": "dpv",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Value to allow the Pilot valve controller to advance beyond the gate limits (Dpv). Default: 0.0"
+        },
+        {
+            "name": "dturb",
+            "writable": true,
+            "displayName": "dturb",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Default: 0.0"
+        },
+        {
+            "name": "feedbackSignal",
+            "writable": true,
+            "displayName": "feedbackSignal",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Feedback signal selection (Sw). true = PID Output (if R-Perm-Gate=droop and R-Perm-Pe=0) false = Electrical Power (if R-Perm-Gate=0 and R-Perm-Pe=droop) or false = Gate Position (if R-Perm-Gate=droop and R-Perm-Pe=0). Default: False"
+        },
+        {
+            "name": "fl1",
+            "writable": true,
+            "displayName": "fl1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow Gate 1 (Fl1).  Flow value for gate position point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "fl2",
+            "writable": true,
+            "displayName": "fl2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow Gate 2 (Fl2).  Flow value for gate position point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "fl3",
+            "writable": true,
+            "displayName": "fl3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow Gate 3 (Fl3).  Flow value for gate position point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "fl4",
+            "writable": true,
+            "displayName": "fl4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow Gate 4 (Fl4).  Flow value for gate position point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "fl5",
+            "writable": true,
+            "displayName": "fl5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow Gate 5 (Fl5).  Flow value for gate position point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "fp1",
+            "writable": true,
+            "displayName": "fp1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P1 (Fp1).  Turbine Flow value for point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp10",
+            "writable": true,
+            "displayName": "fp10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P10 (Fp10).  Turbine Flow value for point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp2",
+            "writable": true,
+            "displayName": "fp2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P2 (Fp2).  Turbine Flow value for point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp3",
+            "writable": true,
+            "displayName": "fp3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P3 (Fp3).  Turbine Flow value for point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp4",
+            "writable": true,
+            "displayName": "fp4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P4 (Fp4).  Turbine Flow value for point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp5",
+            "writable": true,
+            "displayName": "fp5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P5 (Fp5).  Turbine Flow value for point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp6",
+            "writable": true,
+            "displayName": "fp6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P6 (Fp6).  Turbine Flow value for point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp7",
+            "writable": true,
+            "displayName": "fp7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P7 (Fp7).  Turbine Flow value for point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp8",
+            "writable": true,
+            "displayName": "fp8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P8 (Fp8).  Turbine Flow value for point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "fp9",
+            "writable": true,
+            "displayName": "fp9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Flow P9 (Fp9).  Turbine Flow value for point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "gmax",
+            "writable": true,
+            "displayName": "gmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Gate Position (Gmax). Default: 0.0"
+        },
+        {
+            "name": "gmin",
+            "writable": true,
+            "displayName": "gmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum Gate Position (Gmin). Default: 0.0"
+        },
+        {
+            "name": "gtmxcl",
+            "writable": true,
+            "displayName": "gtmxcl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate closing rate (Gtmxcl). Default: 0.0"
+        },
+        {
+            "name": "gtmxop",
+            "writable": true,
+            "displayName": "gtmxop",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum gate opening rate (Gtmxop). Default: 0.0"
+        },
+        {
+            "name": "gv1",
+            "writable": true,
+            "displayName": "gv1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate 1 (Gv1).  Gate Position value for point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "gv2",
+            "writable": true,
+            "displayName": "gv2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate 2 (Gv2).  Gate Position value for point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "gv3",
+            "writable": true,
+            "displayName": "gv3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate 3 (Gv3).  Gate Position value for point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "gv4",
+            "writable": true,
+            "displayName": "gv4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate 4 (Gv4).  Gate Position value for point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "gv5",
+            "writable": true,
+            "displayName": "gv5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gate 5 (Gv5).  Gate Position value for point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0"
+        },
+        {
+            "name": "kd",
+            "writable": true,
+            "displayName": "kd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative controller derivative gain (Kd). Default: 0.0"
+        },
+        {
+            "name": "ki",
+            "writable": true,
+            "displayName": "ki",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative controller Integral gain (Ki). Default: 0.0"
+        },
+        {
+            "name": "kp",
+            "writable": true,
+            "displayName": "kp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative control gain (Kp). Default: 0.0"
+        },
+        {
+            "name": "mwbase",
+            "writable": true,
+            "displayName": "mwbase",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pmss1",
+            "writable": true,
+            "displayName": "pmss1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P1 (Pmss1).  Mechanical Power output Pmss for Turbine Flow point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss10",
+            "writable": true,
+            "displayName": "pmss10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P10 (Pmss10).  Mechanical Power output Pmss for Turbine Flow point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss2",
+            "writable": true,
+            "displayName": "pmss2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P2 (Pmss2).  Mechanical Power output Pmss for Turbine Flow point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss3",
+            "writable": true,
+            "displayName": "pmss3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P3 (Pmss3).  Mechanical Power output Pmss for Turbine Flow point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss4",
+            "writable": true,
+            "displayName": "pmss4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P4 (Pmss4).  Mechanical Power output Pmss for Turbine Flow point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss5",
+            "writable": true,
+            "displayName": "pmss5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P5 (Pmss5).  Mechanical Power output Pmss for Turbine Flow point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss6",
+            "writable": true,
+            "displayName": "pmss6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P6 (Pmss6).  Mechanical Power output Pmss for Turbine Flow point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss7",
+            "writable": true,
+            "displayName": "pmss7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P7 (Pmss7).  Mechanical Power output Pmss for Turbine Flow point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss8",
+            "writable": true,
+            "displayName": "pmss8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P8 (Pmss8).  Mechanical Power output Pmss for Turbine Flow point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "pmss9",
+            "writable": true,
+            "displayName": "pmss9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pmss Flow P9 (Pmss9).  Mechanical Power output Pmss for Turbine Flow point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0"
+        },
+        {
+            "name": "rpg",
+            "writable": true,
+            "displayName": "rpg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Permanent droop for governor output feedback (R-Perm-Gate). Default: 0.0"
+        },
+        {
+            "name": "rpp",
+            "writable": true,
+            "displayName": "rpp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Permanent droop for electrical power feedback (R-Perm-Pe). Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "td",
+            "writable": true,
+            "displayName": "td",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Derivative controller time constant to limit the derivative characteristic beyond a breakdown frequency to avoid amplification of high-frequency noise (Td). Default: 0"
+        },
+        {
+            "name": "tdv",
+            "writable": true,
+            "displayName": "tdv",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Distributive Valve time lag time constant (Tdv). Default: 0"
+        },
+        {
+            "name": "tg",
+            "writable": true,
+            "displayName": "tg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Value to allow the Distribution valve controller to advance beyond the gate movement rate limit (Tg). Default: 0"
+        },
+        {
+            "name": "tp",
+            "writable": true,
+            "displayName": "tp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Pilot Valve time lag time constant (Tp). Default: 0"
+        },
+        {
+            "name": "tpe",
+            "writable": true,
+            "displayName": "tpe",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electrical power droop time constant (Tpe). Default: 0"
+        },
+        {
+            "name": "tw",
+            "writable": true,
+            "displayName": "tw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water inertia time constant (Tw) (>0). Default: 0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
