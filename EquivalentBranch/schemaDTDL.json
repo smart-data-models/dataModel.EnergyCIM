@@ -1,0 +1,279 @@
+{
+    "@id": "dtmi:com:ngsi-ld:EquivalentBranch;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - EquivalentBranch adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/EquivalentBranch/schema.json",
+    "description": "Adapted from CIM data models. The class represents equivalent branches.",
+    "displayName": "EquivalentBranch",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "negativeR12",
+            "writable": true,
+            "displayName": "negativeR12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Negative sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "negativeR21",
+            "writable": true,
+            "displayName": "negativeR21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Negative sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "negativeX12",
+            "writable": true,
+            "displayName": "negativeX12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Negative sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "negativeX21",
+            "writable": true,
+            "displayName": "negativeX21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Negative sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909. Usage: EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "positiveR12",
+            "writable": true,
+            "displayName": "positiveR12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence series resistance from terminal sequence  1 to terminal sequence 2 . Used for short circuit data exchange according to IEC 60909.  EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0"
+        },
+        {
+            "name": "positiveR21",
+            "writable": true,
+            "displayName": "positiveR21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "positiveX12",
+            "writable": true,
+            "displayName": "positiveX12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "positiveX21",
+            "writable": true,
+            "displayName": "positiveX21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "r",
+            "writable": true,
+            "displayName": "r",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence series resistance of the reduced branch. Default: 0.0"
+        },
+        {
+            "name": "r21",
+            "writable": true,
+            "displayName": "r21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Resistance from terminal sequence 2 to terminal sequence 1 .Used for steady state power flow. This attribute is optional and represent unbalanced network such as off-nominal phase shifter. If only EquivalentBranch.r is given, then EquivalentBranch.r21 is assumed equal to EquivalentBranch.r. Usage rule : EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "x",
+            "writable": true,
+            "displayName": "x",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Positive sequence series reactance of the reduced branch. Default: 0.0"
+        },
+        {
+            "name": "x21",
+            "writable": true,
+            "displayName": "x21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactance from terminal sequence 2 to terminal sequence 1 .Used for steady state power flow. This attribute is optional and represent unbalanced network such as off-nominal phase shifter. If only EquivalentBranch.x is given, then EquivalentBranch.x21 is assumed equal to EquivalentBranch.x. Usage rule : EquivalentBranch is a result of network reduction prior to the data exchange. Default: 0.0"
+        },
+        {
+            "name": "zeroR12",
+            "writable": true,
+            "displayName": "zeroR12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Zero sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "zeroR21",
+            "writable": true,
+            "displayName": "zeroR21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Zero sequence series resistance from terminal sequence  2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "zeroX12",
+            "writable": true,
+            "displayName": "zeroX12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Zero sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "name": "zeroX21",
+            "writable": true,
+            "displayName": "zeroX21",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Zero sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909 Usage : EquivalentBranch is a result of network reduction prior to the data exchange Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
