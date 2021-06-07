@@ -1,0 +1,247 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Terminal;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - Terminal adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Terminal/schema.json",
+    "description": "Adapted from CIM data models. An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.",
+    "displayName": "Terminal",
+    "contents": [
+        {
+            "name": "ConductingEquipment",
+            "writable": true,
+            "displayName": "ConductingEquipment",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes. Default: None"
+        },
+        {
+            "name": "ConnectivityNode",
+            "writable": true,
+            "displayName": "ConnectivityNode",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Terminals interconnected with zero impedance at a this connectivity node. Default: None"
+        },
+        {
+            "name": "ConverterDCSides",
+            "writable": true,
+            "displayName": "ConverterDCSides",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Point of common coupling terminal for this converter DC side. It is typically the terminal on the power transformer (or switch) closest to the AC network. The power flow measurement must be the sum of all flows into the transformer. Default: 'list'"
+        },
+        {
+            "name": "HasFirstMutualCoupling",
+            "writable": true,
+            "displayName": "HasFirstMutualCoupling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Mutual couplings associated with the branch as the first branch. Default: 'list'"
+        },
+        {
+            "name": "HasSecondMutualCoupling",
+            "writable": true,
+            "displayName": "HasSecondMutualCoupling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Mutual couplings with the branch associated as the first branch. Default: 'list'"
+        },
+        {
+            "name": "RegulatingControl",
+            "writable": true,
+            "displayName": "RegulatingControl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The terminal associated with this regulating control.  The terminal is associated instead of a node, since the terminal could connect into either a topological node (bus in bus-branch model) or a connectivity node (detailed switch model).  Sometimes it is useful to model regulation at a terminal of a bus bar object since the bus bar can be present in both a bus-branch model or a model with switch detail. Default: None"
+        },
+        {
+            "name": "RemoteInputSignal",
+            "writable": true,
+            "displayName": "RemoteInputSignal",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Input signal coming from this terminal. Default: 'list'"
+        },
+        {
+            "name": "SvPowerFlow",
+            "writable": true,
+            "displayName": "SvPowerFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The power flow state variable associated with the terminal. Default: None"
+        },
+        {
+            "name": "TieFlow",
+            "writable": true,
+            "displayName": "TieFlow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The control area tie flows to which this terminal associates. Default: 'list'"
+        },
+        {
+            "name": "TopologicalNode",
+            "writable": true,
+            "displayName": "TopologicalNode",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unneccesary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification. Default: None"
+        },
+        {
+            "name": "TransformerEnd",
+            "writable": true,
+            "displayName": "TransformerEnd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "All transformer ends connected at this terminal. Default: 'list'"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "phases",
+            "writable": true,
+            "displayName": "phases",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Represents the normal network phasing condition. If the attribute is missing three phases (ABC or ABCN) shall be assumed. Default: None"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
