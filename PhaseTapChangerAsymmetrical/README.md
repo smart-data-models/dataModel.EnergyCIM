@@ -5,15 +5,15 @@
 Adapted from CIM data models. Describes the tap model for an asymmetrical phase shifting transformer in which the difference voltage vector adds to the primary side voltage. The angle between the primary side voltage and the difference voltage is named the winding connection angle. The phase shift depends on both the difference voltage magnitude and the winding connection angle.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerAsymmetrical/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerAsymmetrical/swagger.yaml)
 
-Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerAsymmetrical/doc/spec.md)
+Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerAsymmetrical/doc/spec.md)
 
-Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerAsymmetrical/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerAsymmetrical/doc/spec_ES.md)
 
-Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerAsymmetrical/doc/spec_FR.md)
+Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerAsymmetrical/doc/spec_FR.md)
 
-Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerAsymmetrical/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerAsymmetrical/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
