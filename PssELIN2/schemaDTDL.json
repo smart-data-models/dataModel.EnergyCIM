@@ -1,0 +1,239 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PssELIN2;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - PssELIN2 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PssELIN2/schema.json",
+    "description": "Adapted from CIM data models. Power system stabilizer typically associated with ExcELIN2 (though PssIEEE2B or Pss2B can also be used).",
+    "displayName": "PssELIN2",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "apss",
+            "writable": true,
+            "displayName": "apss",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Coefficient (a_PSS).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "ks1",
+            "writable": true,
+            "displayName": "ks1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain (Ks1).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "ks2",
+            "writable": true,
+            "displayName": "ks2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gain (Ks2).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "ppss",
+            "writable": true,
+            "displayName": "ppss",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Coefficient (p_PSS) (>=0 and <=4).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "psslim",
+            "writable": true,
+            "displayName": "psslim",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PSS limiter (psslim).  Typical Value = 0.1. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ts1",
+            "writable": true,
+            "displayName": "ts1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Ts1).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ts2",
+            "writable": true,
+            "displayName": "ts2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Ts2).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "ts3",
+            "writable": true,
+            "displayName": "ts3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Ts3).  Typical Value = 1. Default: 0"
+        },
+        {
+            "name": "ts4",
+            "writable": true,
+            "displayName": "ts4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Ts4).  Typical Value = 0.1. Default: 0"
+        },
+        {
+            "name": "ts5",
+            "writable": true,
+            "displayName": "ts5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Ts5).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ts6",
+            "writable": true,
+            "displayName": "ts6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Time constant (Ts6).  Typical Value = 1. Default: 0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
