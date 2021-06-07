@@ -1,0 +1,271 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Pss1;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - Pss1 adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Pss1/schema.json",
+    "description": "Adapted from CIM data models. Italian PSS - three input PSS (speed, frequency, power).",
+    "displayName": "Pss1",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "kf",
+            "writable": true,
+            "displayName": "kf",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Frequency power input gain (K).  Typical Value = 5. Default: 0.0"
+        },
+        {
+            "name": "kpe",
+            "writable": true,
+            "displayName": "kpe",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric power input gain (K).  Typical Value = 0.3. Default: 0.0"
+        },
+        {
+            "name": "ks",
+            "writable": true,
+            "displayName": "ks",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PSS gain (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kw",
+            "writable": true,
+            "displayName": "kw",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Shaft speed power input gain (K).  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pmin",
+            "writable": true,
+            "displayName": "pmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "t10",
+            "writable": true,
+            "displayName": "t10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "t5",
+            "writable": true,
+            "displayName": "t5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Washout (T).  Typical Value = 3.5. Default: 0"
+        },
+        {
+            "name": "t6",
+            "writable": true,
+            "displayName": "t6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Filter time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "t7",
+            "writable": true,
+            "displayName": "t7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "t8",
+            "writable": true,
+            "displayName": "t8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "t9",
+            "writable": true,
+            "displayName": "t9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Lead/lag time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tpe",
+            "writable": true,
+            "displayName": "tpe",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric power filter time constant (T).  Typical Value = 0.05. Default: 0"
+        },
+        {
+            "name": "vadat",
+            "writable": true,
+            "displayName": "vadat",
+            "@type": "Property",
+            "schema": "long",
+            "comment": " Default: False"
+        },
+        {
+            "name": "vsmn",
+            "writable": true,
+            "displayName": "vsmn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Stabilizer output max limit (V).  Typical Value = -0.06. Default: 0.0"
+        },
+        {
+            "name": "vsmx",
+            "writable": true,
+            "displayName": "vsmx",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Stabilizer output min limit (V).  Typical Value = 0.06. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
