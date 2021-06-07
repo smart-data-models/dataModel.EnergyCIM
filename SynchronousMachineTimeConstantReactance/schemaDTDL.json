@@ -1,0 +1,263 @@
+{
+    "@id": "dtmi:com:ngsi-ld:SynchronousMachineTimeConstantReactance;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - SynchronousMachineTimeConstantReactance adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SynchronousMachineTimeConstantReactance/schema.json",
+    "description": "Adapted from CIM data models. Synchronous machine detailed modelling types are defined by the combination of the attributes SynchronousMachineTimeConstantReactance.modelType and SynchronousMachineTimeConstantReactance.rotorType.     The parameters used for models expressed in time constant reactance form include:",
+    "displayName": "SynchronousMachineTimeConstantReactance",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "ks",
+            "writable": true,
+            "displayName": "ks",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Saturation loading correction factor (Ks) (>= 0).  Used only by Type J model.  Typical Value = 0. Default: 0.0"
+        },
+        {
+            "name": "modelType",
+            "writable": true,
+            "displayName": "modelType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Type of synchronous machine model used in Dynamic simulation applications. Default: None"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "rotorType",
+            "writable": true,
+            "displayName": "rotorType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Type of rotor on physical machine. Default: None"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tc",
+            "writable": true,
+            "displayName": "tc",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Damping time constant for `Canay` reactance.  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tpdo",
+            "writable": true,
+            "displayName": "tpdo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direct-axis transient rotor time constant (T`do) (> T``do).  Typical Value = 5. Default: 0"
+        },
+        {
+            "name": "tppdo",
+            "writable": true,
+            "displayName": "tppdo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direct-axis subtransient rotor time constant (T``do) (> 0).  Typical Value = 0.03. Default: 0"
+        },
+        {
+            "name": "tppqo",
+            "writable": true,
+            "displayName": "tppqo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Quadrature-axis subtransient rotor time constant (T``qo) (> 0). Typical Value = 0.03. Default: 0"
+        },
+        {
+            "name": "tpqo",
+            "writable": true,
+            "displayName": "tpqo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Quadrature-axis transient rotor time constant (T`qo) (> T``qo). Typical Value = 0.5. Default: 0"
+        },
+        {
+            "name": "xDirectSubtrans",
+            "writable": true,
+            "displayName": "xDirectSubtrans",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direct-axis subtransient reactance (unsaturated) (X``d) (> Xl).  Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "name": "xDirectSync",
+            "writable": true,
+            "displayName": "xDirectSync",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direct-axis synchronous reactance (Xd) (>= X`d). The quotient of a sustained value of that AC component of armature voltage that is produced by the total direct-axis flux due to direct-axis armature current and the value of the AC component of this current, the machine running at rated speed. Typical Value = 1.8. Default: 0.0"
+        },
+        {
+            "name": "xDirectTrans",
+            "writable": true,
+            "displayName": "xDirectTrans",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Direct-axis transient reactance (unsaturated) (X`d) (> =X``d).  Typical Value = 0.5. Default: 0.0"
+        },
+        {
+            "name": "xQuadSubtrans",
+            "writable": true,
+            "displayName": "xQuadSubtrans",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Quadrature-axis subtransient reactance (X``q) (> Xl).  Typical Value = 0.2. Default: 0.0"
+        },
+        {
+            "name": "xQuadSync",
+            "writable": true,
+            "displayName": "xQuadSync",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Quadrature-axis synchronous reactance (Xq) (> =X`q). The ratio of the component of reactive armature voltage, due to the quadrature-axis component of armature current, to this component of current, under steady state conditions and at rated frequency.  Typical Value = 1.6. Default: 0.0"
+        },
+        {
+            "name": "xQuadTrans",
+            "writable": true,
+            "displayName": "xQuadTrans",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Quadrature-axis transient reactance (X`q) (> =X``q).  Typical Value = 0.3. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
