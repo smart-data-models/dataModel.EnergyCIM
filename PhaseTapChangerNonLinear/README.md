@@ -5,15 +5,15 @@
 Adapted from CIM data models. The non-linear phase tap changer describes the non-linear behavior of a phase tap changer. This is a base class for the symmetrical and asymmetrical phase tap changer models. The details of these models can be found in the IEC 61970-301 document.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerNonLinear/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerNonLinear/swagger.yaml)
 
-Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerNonLinear/doc/spec.md)
+Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerNonLinear/doc/spec.md)
 
-Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerNonLinear/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerNonLinear/doc/spec_ES.md)
 
-Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerNonLinear/doc/spec_FR.md)
+Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerNonLinear/doc/spec_FR.md)
 
-Link zu der [deutchen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PhaseTapChangerNonLinear/doc/spec_DE.md)
+Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.EnergyCIM/PhaseTapChangerNonLinear/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
