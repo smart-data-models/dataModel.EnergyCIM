@@ -1,0 +1,687 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PssIEEE4B;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models - PssIEEE4B adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PssIEEE4B/schema.json",
+    "description": "Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.  Reference: IEEE 4B 421.5-2005 Section 8.4.",
+    "displayName": "PssIEEE4B",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bwh1",
+            "writable": true,
+            "displayName": "bwh1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 1 (high-frequency band): Three dB bandwidth (B). Default: 0.0"
+        },
+        {
+            "name": "bwh2",
+            "writable": true,
+            "displayName": "bwh2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 2 (high-frequency band): Three dB bandwidth (B). Default: 0.0"
+        },
+        {
+            "name": "bwl1",
+            "writable": true,
+            "displayName": "bwl1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 1 (low-frequency band): Three dB bandwidth (B). Default: 0.0"
+        },
+        {
+            "name": "bwl2",
+            "writable": true,
+            "displayName": "bwl2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 2 (low-frequency band): Three dB bandwidth (B). Default: 0.0"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "kh",
+            "writable": true,
+            "displayName": "kh",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band gain (K).  Typical Value = 120. Default: 0.0"
+        },
+        {
+            "name": "kh1",
+            "writable": true,
+            "displayName": "kh1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band differential filter gain (K).  Typical Value = 66. Default: 0.0"
+        },
+        {
+            "name": "kh11",
+            "writable": true,
+            "displayName": "kh11",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kh17",
+            "writable": true,
+            "displayName": "kh17",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kh2",
+            "writable": true,
+            "displayName": "kh2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band differential filter gain (K).  Typical Value = 66. Default: 0.0"
+        },
+        {
+            "name": "ki",
+            "writable": true,
+            "displayName": "ki",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band gain (K).  Typical Value = 30. Default: 0.0"
+        },
+        {
+            "name": "ki1",
+            "writable": true,
+            "displayName": "ki1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0"
+        },
+        {
+            "name": "ki11",
+            "writable": true,
+            "displayName": "ki11",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "ki17",
+            "writable": true,
+            "displayName": "ki17",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "ki2",
+            "writable": true,
+            "displayName": "ki2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0"
+        },
+        {
+            "name": "kl",
+            "writable": true,
+            "displayName": "kl",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band gain (K).  Typical Value = 7.5. Default: 0.0"
+        },
+        {
+            "name": "kl1",
+            "writable": true,
+            "displayName": "kl1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band differential filter gain (K).  Typical Value = 66. Default: 0.0"
+        },
+        {
+            "name": "kl11",
+            "writable": true,
+            "displayName": "kl11",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kl17",
+            "writable": true,
+            "displayName": "kl17",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0"
+        },
+        {
+            "name": "kl2",
+            "writable": true,
+            "displayName": "kl2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band differential filter gain (K).  Typical Value = 66. Default: 0.0"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "omeganh1",
+            "writable": true,
+            "displayName": "omeganh1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 1 (high-frequency band): filter frequency (omega). Default: 0.0"
+        },
+        {
+            "name": "omeganh2",
+            "writable": true,
+            "displayName": "omeganh2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 2 (high-frequency band): filter frequency (omega). Default: 0.0"
+        },
+        {
+            "name": "omeganl1",
+            "writable": true,
+            "displayName": "omeganl1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 1 (low-frequency band): filter frequency (omega). Default: 0.0"
+        },
+        {
+            "name": "omeganl2",
+            "writable": true,
+            "displayName": "omeganl2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Notch filter 2 (low-frequency band): filter frequency (omega). Default: 0.0"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "th1",
+            "writable": true,
+            "displayName": "th1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0.01513. Default: 0"
+        },
+        {
+            "name": "th10",
+            "writable": true,
+            "displayName": "th10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th11",
+            "writable": true,
+            "displayName": "th11",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th12",
+            "writable": true,
+            "displayName": "th12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th2",
+            "writable": true,
+            "displayName": "th2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0.01816. Default: 0"
+        },
+        {
+            "name": "th3",
+            "writable": true,
+            "displayName": "th3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th4",
+            "writable": true,
+            "displayName": "th4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th5",
+            "writable": true,
+            "displayName": "th5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th6",
+            "writable": true,
+            "displayName": "th6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "th7",
+            "writable": true,
+            "displayName": "th7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0.01816. Default: 0"
+        },
+        {
+            "name": "th8",
+            "writable": true,
+            "displayName": "th8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0.02179. Default: 0"
+        },
+        {
+            "name": "th9",
+            "writable": true,
+            "displayName": "th9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti1",
+            "writable": true,
+            "displayName": "ti1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0.173. Default: 0"
+        },
+        {
+            "name": "ti10",
+            "writable": true,
+            "displayName": "ti10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti11",
+            "writable": true,
+            "displayName": "ti11",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti12",
+            "writable": true,
+            "displayName": "ti12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti2",
+            "writable": true,
+            "displayName": "ti2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0"
+        },
+        {
+            "name": "ti3",
+            "writable": true,
+            "displayName": "ti3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti4",
+            "writable": true,
+            "displayName": "ti4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti5",
+            "writable": true,
+            "displayName": "ti5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti6",
+            "writable": true,
+            "displayName": "ti6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "ti7",
+            "writable": true,
+            "displayName": "ti7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0"
+        },
+        {
+            "name": "ti8",
+            "writable": true,
+            "displayName": "ti8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0.2491. Default: 0"
+        },
+        {
+            "name": "ti9",
+            "writable": true,
+            "displayName": "ti9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl1",
+            "writable": true,
+            "displayName": "tl1",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 1.73. Default: 0"
+        },
+        {
+            "name": "tl10",
+            "writable": true,
+            "displayName": "tl10",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl11",
+            "writable": true,
+            "displayName": "tl11",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl12",
+            "writable": true,
+            "displayName": "tl12",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl2",
+            "writable": true,
+            "displayName": "tl2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 2.075. Default: 0"
+        },
+        {
+            "name": "tl3",
+            "writable": true,
+            "displayName": "tl3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl4",
+            "writable": true,
+            "displayName": "tl4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl5",
+            "writable": true,
+            "displayName": "tl5",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl6",
+            "writable": true,
+            "displayName": "tl6",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "tl7",
+            "writable": true,
+            "displayName": "tl7",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 2.075. Default: 0"
+        },
+        {
+            "name": "tl8",
+            "writable": true,
+            "displayName": "tl8",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 2.491. Default: 0"
+        },
+        {
+            "name": "tl9",
+            "writable": true,
+            "displayName": "tl9",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band time constant (T).  Typical Value = 0. Default: 0"
+        },
+        {
+            "name": "vhmax",
+            "writable": true,
+            "displayName": "vhmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band output maximum limit (V).  Typical Value = 0.6. Default: 0.0"
+        },
+        {
+            "name": "vhmin",
+            "writable": true,
+            "displayName": "vhmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "High band output minimum limit (V).  Typical Value = -0.6. Default: 0.0"
+        },
+        {
+            "name": "vimax",
+            "writable": true,
+            "displayName": "vimax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band output maximum limit (V).  Typical Value = 0.6. Default: 0.0"
+        },
+        {
+            "name": "vimin",
+            "writable": true,
+            "displayName": "vimin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Intermediate band output minimum limit (V).  Typical Value = -0.6. Default: 0.0"
+        },
+        {
+            "name": "vlmax",
+            "writable": true,
+            "displayName": "vlmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band output maximum limit (V).  Typical Value = 0.075. Default: 0.0"
+        },
+        {
+            "name": "vlmin",
+            "writable": true,
+            "displayName": "vlmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low band output minimum limit (V).  Typical Value = -0.075. Default: 0.0"
+        },
+        {
+            "name": "vstmax",
+            "writable": true,
+            "displayName": "vstmax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PSS output maximum limit (V).  Typical Value = 0.15. Default: 0.0"
+        },
+        {
+            "name": "vstmin",
+            "writable": true,
+            "displayName": "vstmin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "PSS output minimum limit (V).  Typical Value = -0.15. Default: 0.0"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
