@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCTerminal/schema.json",
     "title": " Smart Data Models - ACDCTerminal",
-    "description": "Adapted from CIM data models. An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes."
+    "description": "Adapted from CIM data models. An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.",
+    "type": "object"
 }
