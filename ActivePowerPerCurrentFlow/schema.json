@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ActivePowerPerCurrentFlow/schema.json",
-    "title": " Smart Data Models - ActivePowerPerCurrentFlow"
+    "title": " Smart Data Models - ActivePowerPerCurrentFlow",
+    "description": "Adapted from CIM data models. "
 }
