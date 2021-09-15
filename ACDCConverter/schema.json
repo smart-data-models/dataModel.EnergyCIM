@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCConverter/schema.json",
-    "title": " Smart Data Models - ACDCConverter"
+    "title": " Smart Data Models - ACDCConverter",
+    "description": "Adapted from CIM data models. A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion."
 }
