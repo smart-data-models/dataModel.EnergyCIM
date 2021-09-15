@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ActivePower/schema.json",
-    "title": " Smart Data Models - ActivePower"
+    "title": " Smart Data Models - ActivePower",
+    "description": "Adapted from CIM data models. Product of RMS value of the voltage and the RMS value of the in-phase component of the current."
 }
