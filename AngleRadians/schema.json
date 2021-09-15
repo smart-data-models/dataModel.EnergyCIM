@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AngleRadians/schema.json",
     "title": " Smart Data Models - AngleRadians",
-    "description": "Adapted from CIM data models. Phase angle in radians."
+    "description": "Adapted from CIM data models. Phase angle in radians.",
+    "type": "object"
 }
