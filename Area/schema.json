@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Area/schema.json",
-    "title": " Smart Data Models - Area"
+    "title": " Smart Data Models - Area",
+    "description": "Adapted from CIM data models. Area."
 }
