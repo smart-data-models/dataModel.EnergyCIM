@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ApparentPowerLimit/schema.json",
     "title": " Smart Data Models - ApparentPowerLimit",
-    "description": "Adapted from CIM data models. Apparent power limit."
+    "description": "Adapted from CIM data models. Apparent power limit.",
+    "type": "object"
 }
