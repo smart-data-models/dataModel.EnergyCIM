@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AccumulatorReset/schema.json",
     "title": " Smart Data Models - AccumulatorReset",
-    "description": "Adapted from CIM data models. This command reset the counter value to zero."
+    "description": "Adapted from CIM data models. This command reset the counter value to zero.",
+    "type": "object"
 }
