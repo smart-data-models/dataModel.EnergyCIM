@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineDynamics/schema.json",
     "title": " Smart Data Models - AsynchronousMachineDynamics",
-    "description": "Adapted from CIM data models. Asynchronous machine whose behaviour is described by reference to a standard model expressed in either time constant reactance form or equivalent circuit form"
+    "description": "Adapted from CIM data models. Asynchronous machine whose behaviour is described by reference to a standard model expressed in either time constant reactance form or equivalent circuit form",
+    "type": "object"
 }
