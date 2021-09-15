@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineTimeConstantReactance/schema.json",
     "title": " Smart Data Models - AsynchronousMachineTimeConstantReactance",
-    "description": "Adapted from CIM data models. The parameters used for models expressed in time constant reactance form include:"
+    "description": "Adapted from CIM data models. The parameters used for models expressed in time constant reactance form include:",
+    "type": "object"
 }
