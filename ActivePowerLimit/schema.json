@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ActivePowerLimit/schema.json",
-    "title": " Smart Data Models - ActivePowerLimit"
+    "title": " Smart Data Models - ActivePowerLimit",
+    "description": "Adapted from CIM data models. Limit on active power flow."
 }
