@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ApparentPower/schema.json",
     "title": " Smart Data Models - ApparentPower",
-    "description": "Adapted from CIM data models. Product of the RMS value of the voltage and the RMS value of the current."
+    "description": "Adapted from CIM data models. Product of the RMS value of the voltage and the RMS value of the current.",
+    "type": "object"
 }
