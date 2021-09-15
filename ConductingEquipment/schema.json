@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConductingEquipment/schema.json",
     "title": " Smart Data Models - ConductingEquipment",
-    "description": "Adapted from CIM data models. The parts of the AC power system that are designed to carry current or that are conductively connected through terminals."
+    "description": "Adapted from CIM data models. The parts of the AC power system that are designed to carry current or that are conductively connected through terminals.",
+    "type": "object"
 }
