@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Accumulator/schema.json",
     "title": " Smart Data Models - Accumulator",
-    "description": "Adapted from CIM data models. Accumulator represents an accumulated (counted) Measurement, e.g. an energy value."
+    "description": "Adapted from CIM data models. Accumulator represents an accumulated (counted) Measurement, e.g. an energy value.",
+    "type": "object"
 }
