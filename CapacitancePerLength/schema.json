@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/CapacitancePerLength/schema.json",
     "title": " Smart Data Models - CapacitancePerLength",
-    "description": "Adapted from CIM data models. Capacitance per unit of length."
+    "description": "Adapted from CIM data models. Capacitance per unit of length.",
+    "type": "object"
 }
