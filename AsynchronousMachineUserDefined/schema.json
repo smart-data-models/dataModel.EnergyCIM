@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachineUserDefined/schema.json",
-    "title": " Smart Data Models - AsynchronousMachineUserDefined"
+    "title": " Smart Data Models - AsynchronousMachineUserDefined",
+    "description": "Adapted from CIM data models. Asynchronous machine whose dynamic behaviour is described by a user-defined model."
 }
