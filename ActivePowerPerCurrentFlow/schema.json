@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ActivePowerPerCurrentFlow/schema.json",
     "title": " Smart Data Models - ActivePowerPerCurrentFlow",
-    "description": "Adapted from CIM data models. "
+    "description": "Adapted from CIM data models. ",
+    "type": "object"
 }
