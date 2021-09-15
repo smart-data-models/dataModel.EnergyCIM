@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Command/schema.json",
     "title": " Smart Data Models - Command",
-    "description": "Adapted from CIM data models. A Command is a discrete control used for supervisory control."
+    "description": "Adapted from CIM data models. A Command is a discrete control used for supervisory control.",
+    "type": "object"
 }
