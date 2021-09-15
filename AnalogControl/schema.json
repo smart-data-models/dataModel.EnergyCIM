@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogControl/schema.json",
-    "title": " Smart Data Models - AnalogControl"
+    "title": " Smart Data Models - AnalogControl",
+    "description": "Adapted from CIM data models. An analog control used for supervisory control."
 }
