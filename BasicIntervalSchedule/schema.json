@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BasicIntervalSchedule/schema.json",
-    "title": " Smart Data Models - BasicIntervalSchedule"
+    "title": " Smart Data Models - BasicIntervalSchedule",
+    "description": "Adapted from CIM data models. Schedule of values at points in time."
 }
