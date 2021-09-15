@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Analog/schema.json",
     "title": " Smart Data Models - Analog",
-    "description": "Adapted from CIM data models. Analog represents an analog Measurement."
+    "description": "Adapted from CIM data models. Analog represents an analog Measurement.",
+    "type": "object"
 }
