@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogLimitSet/schema.json",
-    "title": " Smart Data Models - AnalogLimitSet"
+    "title": " Smart Data Models - AnalogLimitSet",
+    "description": "Adapted from CIM data models. An AnalogLimitSet specifies a set of Limits that are associated with an Analog measurement."
 }
