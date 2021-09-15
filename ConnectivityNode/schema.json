@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConnectivityNode/schema.json",
-    "title": " Smart Data Models - ConnectivityNode"
+    "title": " Smart Data Models - ConnectivityNode",
+    "description": "Adapted from CIM data models. Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance."
 }
