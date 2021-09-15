@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/BaseVoltage/schema.json",
     "title": " Smart Data Models - BaseVoltage",
-    "description": "Adapted from CIM data models. Defines a system base voltage which is referenced."
+    "description": "Adapted from CIM data models. Defines a system base voltage which is referenced.",
+    "type": "object"
 }
