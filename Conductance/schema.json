@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Conductance/schema.json",
-    "title": " Smart Data Models - Conductance"
+    "title": " Smart Data Models - Conductance",
+    "description": "Adapted from CIM data models. Factor by which voltage must be multiplied to give corresponding power lost from a circuit. Real part of admittance."
 }
