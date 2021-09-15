@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConnectivityNodeContainer/schema.json",
     "title": " Smart Data Models - ConnectivityNodeContainer",
-    "description": "Adapted from CIM data models. A base class for all objects that may contain connectivity nodes or topological nodes."
+    "description": "Adapted from CIM data models. A base class for all objects that may contain connectivity nodes or topological nodes.",
+    "type": "object"
 }
