@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConformLoad/schema.json",
     "title": " Smart Data Models - ConformLoad",
-    "description": "Adapted from CIM data models. ConformLoad represent loads that follow a daily load change pattern where the pattern can be used to scale the load with a system load."
+    "description": "Adapted from CIM data models. ConformLoad represent loads that follow a daily load change pattern where the pattern can be used to scale the load with a system load.",
+    "type": "object"
 }
