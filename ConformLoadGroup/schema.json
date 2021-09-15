@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ConformLoadGroup/schema.json",
-    "title": " Smart Data Models - ConformLoadGroup"
+    "title": " Smart Data Models - ConformLoadGroup",
+    "description": "Adapted from CIM data models. A group of loads conforming to an allocation pattern."
 }
