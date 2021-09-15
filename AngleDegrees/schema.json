@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AngleDegrees/schema.json",
     "title": " Smart Data Models - AngleDegrees",
-    "description": "Adapted from CIM data models. Measurement of angle in degrees."
+    "description": "Adapted from CIM data models. Measurement of angle in degrees.",
+    "type": "object"
 }
