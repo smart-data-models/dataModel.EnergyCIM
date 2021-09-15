@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Capacitance/schema.json",
     "title": " Smart Data Models - Capacitance",
-    "description": "Adapted from CIM data models. Capacitive part of reactance (imaginary part of impedance), at rated frequency."
+    "description": "Adapted from CIM data models. Capacitive part of reactance (imaginary part of impedance), at rated frequency.",
+    "type": "object"
 }
