@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AccumulatorLimit/schema.json",
-    "title": " Smart Data Models - AccumulatorLimit"
+    "title": " Smart Data Models - AccumulatorLimit",
+    "description": "Adapted from CIM data models. Limit values for Accumulator measurements."
 }
