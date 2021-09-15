@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ActivePowerPerFrequency/schema.json",
     "title": " Smart Data Models - ActivePowerPerFrequency",
-    "description": "Adapted from CIM data models. Active power variation with frequency."
+    "description": "Adapted from CIM data models. Active power variation with frequency.",
+    "type": "object"
 }
