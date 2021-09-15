@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AnalogValue/schema.json",
-    "title": " Smart Data Models - AnalogValue"
+    "title": " Smart Data Models - AnalogValue",
+    "description": "Adapted from CIM data models. AnalogValue represents an analog MeasurementValue."
 }
