@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Curve/schema.json",
     "title": " Smart Data Models - Curve",
     "description": "Adapted from CIM data models. A multi-purpose curve or functional relationship between an independent variable (X-axis) and dependent (Y-axis) variables.",
