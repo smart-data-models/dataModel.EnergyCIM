@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LinearShuntCompensator/schema.json",
     "title": " Smart Data Models - LinearShuntCompensator",
     "description": "Adapted from CIM data models. A linear shunt compensator has banks or sections with equal admittance values.",
