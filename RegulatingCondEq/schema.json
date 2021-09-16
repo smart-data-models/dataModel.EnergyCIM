@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegulatingCondEq/schema.json",
     "title": " Smart Data Models - RegulatingCondEq",
     "description": "Adapted from CIM data models. A type of conducting equipment that can regulate a quantity (i.e. voltage or flow) at a specific point in the network.",
