@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC3A/schema.json",
     "title": " Smart Data Models - ExcAC3A",
     "description": "Adapted from CIM data models. Modified IEEE AC3A alternator-supplied rectifier excitation system with different field current limit.",
