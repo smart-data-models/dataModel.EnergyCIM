@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RotatingMachine/schema.json",
     "title": " Smart Data Models - RotatingMachine",
     "description": "Adapted from CIM data models. A rotating machine which may be used as a generator or motor.",
