@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcDC1A/schema.json",
     "title": " Smart Data Models - ExcDC1A",
     "description": "Adapted from CIM data models. Modified IEEE DC1A direct current commutator exciter with speed input and without underexcitation limiters (UEL) inputs.",
