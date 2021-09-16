@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExternalNetworkInjection/schema.json",
     "title": " Smart Data Models - ExternalNetworkInjection",
     "description": "Adapted from CIM data models. This class represents external network and it is used for IEC 60909 calculations.",
