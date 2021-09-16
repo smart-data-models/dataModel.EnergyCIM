@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST2A/schema.json",
     "title": " Smart Data Models - ExcST2A",
     "description": "Adapted from CIM data models. Modified IEEE ST2A static excitation system - another lead-lag block added to match  the model defined by WECC.",
