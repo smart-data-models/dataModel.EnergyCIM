@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvShuntCompensatorSections/schema.json",
     "title": " Smart Data Models - SvShuntCompensatorSections",
     "description": "Adapted from CIM data models. State variable for the number of sections in service for a shunt compensator.",
