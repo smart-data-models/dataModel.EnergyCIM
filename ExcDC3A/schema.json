@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcDC3A/schema.json",
     "title": " Smart Data Models - ExcDC3A",
     "description": "Adapted from CIM data models. This is modified IEEE DC3A direct current commutator exciters with speed input, and death band.  DC old type 4.",
