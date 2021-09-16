@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SvPowerFlow/schema.json",
     "title": " Smart Data Models - SvPowerFlow",
     "description": "Adapted from CIM data models. State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive.",
