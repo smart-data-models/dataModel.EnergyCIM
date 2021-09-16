@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType4bIEC/schema.json",
     "title": " Smart Data Models - WindTurbineType4bIEC",
     "description": "Adapted from CIM data models. Wind turbine IEC Type 4A.  Reference: IEC Standard 61400-27-1, section 6.5.5.3.",
