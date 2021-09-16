@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TopologyBoundaryVersion/schema.json",
     "title": " Smart Data Models - TopologyBoundaryVersion",
     "description": "Adapted from CIM data models. Version details.",
