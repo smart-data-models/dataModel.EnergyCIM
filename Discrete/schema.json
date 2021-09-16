@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Discrete/schema.json",
     "title": " Smart Data Models - Discrete",
     "description": "Adapted from CIM data models. Discrete represents a discrete Measurement, i.e. a Measurement representing discrete values, e.g. a Breaker position.",
