@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPlantIEC/schema.json",
     "title": " Smart Data Models - WindPlantIEC",
     "description": "Adapted from CIM data models. Simplified IEC type plant level model.   Reference: IEC 61400-27-1, AnnexE.",
