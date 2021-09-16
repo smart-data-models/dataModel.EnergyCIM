@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergyConsumer/schema.json",
     "title": " Smart Data Models - EnergyConsumer",
     "description": "Adapted from CIM data models. Generic user of energy - a  point of consumption on the power system model.",
