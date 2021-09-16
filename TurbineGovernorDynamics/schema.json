@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TurbineGovernorDynamics/schema.json",
     "title": " Smart Data Models - TurbineGovernorDynamics",
     "description": "Adapted from CIM data models. Turbine-governor function block whose behavior is described by reference to a standard model",
