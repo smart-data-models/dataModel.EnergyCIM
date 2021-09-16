@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/MutualCoupling/schema.json",
     "title": " Smart Data Models - MutualCoupling",
     "description": "Adapted from CIM data models. This class represents the zero sequence line mutual coupling.",
