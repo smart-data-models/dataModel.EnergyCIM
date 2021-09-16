@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PFVArControllerType2Dynamics/schema.json",
     "title": " Smart Data Models - PFVArControllerType2Dynamics",
     "description": "Adapted from CIM data models. Power Factor or VAr controller Type II function block whose behaviour is described by reference to a standard model",
