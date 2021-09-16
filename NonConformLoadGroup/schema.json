@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonConformLoadGroup/schema.json",
     "title": " Smart Data Models - NonConformLoadGroup",
     "description": "Adapted from CIM data models. Loads that do not follow a daily and seasonal load variation pattern.",
