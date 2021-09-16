@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindTurbineType1or2Dynamics/schema.json",
     "title": " Smart Data Models - WindTurbineType1or2Dynamics",
     "description": "Adapted from CIM data models. Parent class supporting relationships to wind turbines Type 1 and 2 and their control models.",
