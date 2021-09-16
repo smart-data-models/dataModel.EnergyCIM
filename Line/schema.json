@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Line/schema.json",
     "title": " Smart Data Models - Line",
     "description": "Adapted from CIM data models. Contains equipment beyond a substation belonging to a power transmission line.",
