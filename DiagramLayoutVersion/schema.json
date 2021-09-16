@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiagramLayoutVersion/schema.json",
     "title": " Smart Data Models - DiagramLayoutVersion",
     "description": "Adapted from CIM data models. Version details.",
