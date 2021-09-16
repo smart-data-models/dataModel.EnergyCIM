@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType3aIEC/schema.json",
     "title": " Smart Data Models - WindGenTurbineType3aIEC",
     "description": "Adapted from CIM data models. IEC Type 3A generator set model.  Reference: IEC Standard 61400-27-1 Section 6.6.3.2.",
