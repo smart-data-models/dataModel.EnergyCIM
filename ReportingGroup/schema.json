@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReportingGroup/schema.json",
     "title": " Smart Data Models - ReportingGroup",
     "description": "Adapted from CIM data models. A reporting group is used for various ad-hoc groupings used for reporting.",
