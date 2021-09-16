@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DayType/schema.json",
     "title": " Smart Data Models - DayType",
     "description": "Adapted from CIM data models. Group of similar days.   For example it could be used to represent weekdays, weekend, or holidays.",
