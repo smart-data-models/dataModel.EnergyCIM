@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/HydroPump/schema.json",
     "title": " Smart Data Models - HydroPump",
     "description": "Adapted from CIM data models. A synchronous motor-driven pump, typically associated with a pumped storage plant.",
