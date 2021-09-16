@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/HydroGeneratingUnit/schema.json",
     "title": " Smart Data Models - HydroGeneratingUnit",
     "description": "Adapted from CIM data models. A generating unit whose prime mover is a hydraulic turbine (e.g., Francis, Pelton, Kaplan).",
