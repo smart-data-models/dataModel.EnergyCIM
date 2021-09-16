@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssSH/schema.json",
     "title": " Smart Data Models - PssSH",
     "description": "Adapted from CIM data models. Model for Siemens 'H infinity' power system stabilizer with generator electrical power input.",
