@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindMechIEC/schema.json",
     "title": " Smart Data Models - WindMechIEC",
     "description": "Adapted from CIM data models. Two mass model.  Reference: IEC Standard 61400-27-1 Section 6.6.2.1.",
