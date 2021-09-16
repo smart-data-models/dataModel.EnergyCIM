@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindPlantFreqPcontrolIEC/schema.json",
     "title": " Smart Data Models - WindPlantFreqPcontrolIEC",
     "description": "Adapted from CIM data models. Frequency and active power controller model.  Reference: IEC Standard 61400-27-1 Annex E.",
