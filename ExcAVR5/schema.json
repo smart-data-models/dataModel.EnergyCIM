@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR5/schema.json",
     "title": " Smart Data Models - ExcAVR5",
     "description": "Adapted from CIM data models. Manual excitation control with field circuit resistance. This model can be used as a very simple representation of manual voltage control.",
