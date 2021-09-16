@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/CurveData/schema.json",
     "title": " Smart Data Models - CurveData",
     "description": "Adapted from CIM data models. Multi-purpose data points for defining a curve.  The use of this generic class is discouraged if a more specific class  can be used to specify the x and y axis values along with their specific data types.",
