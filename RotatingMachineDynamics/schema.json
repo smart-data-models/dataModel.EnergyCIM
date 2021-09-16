@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RotatingMachineDynamics/schema.json",
     "title": " Smart Data Models - RotatingMachineDynamics",
     "description": "Adapted from CIM data models. Abstract parent class for all synchronous and asynchronous machine standard models.",
