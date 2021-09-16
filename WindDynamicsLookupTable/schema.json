@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindDynamicsLookupTable/schema.json",
     "title": " Smart Data Models - WindDynamicsLookupTable",
     "description": "Adapted from CIM data models. The class models a look up table for the purpose of wind standard models.",
