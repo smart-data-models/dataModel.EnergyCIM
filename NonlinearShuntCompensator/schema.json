@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/NonlinearShuntCompensator/schema.json",
     "title": " Smart Data Models - NonlinearShuntCompensator",
     "description": "Adapted from CIM data models. A non linear shunt compensator has bank or section admittance values that differs.",
