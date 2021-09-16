@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SeasonDayTypeSchedule/schema.json",
     "title": " Smart Data Models - SeasonDayTypeSchedule",
     "description": "Adapted from CIM data models. A time schedule covering a 24 hour period, with curve data for a specific type of season and day.",
