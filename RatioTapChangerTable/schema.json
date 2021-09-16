@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RatioTapChangerTable/schema.json",
     "title": " Smart Data Models - RatioTapChangerTable",
     "description": "Adapted from CIM data models. Describes a curve for how the voltage magnitude and impedance varies with the tap step.",
