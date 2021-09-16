@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST3A/schema.json",
     "title": " Smart Data Models - ExcST3A",
     "description": "Adapted from CIM data models. Modified IEEE ST3A static excitation system with added speed multiplier.",
