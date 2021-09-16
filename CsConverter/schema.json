@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/CsConverter/schema.json",
     "title": " Smart Data Models - CsConverter",
     "description": "Adapted from CIM data models. DC side of the current source converter (CSC).",
