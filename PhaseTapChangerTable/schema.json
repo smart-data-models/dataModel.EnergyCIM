@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PhaseTapChangerTable/schema.json",
     "title": " Smart Data Models - PhaseTapChangerTable",
     "description": "Adapted from CIM data models. Describes a tabular curve for how the phase angle difference and impedance varies with the tap step.",
