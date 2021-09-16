@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PhaseTapChangerTablePoint/schema.json",
     "title": " Smart Data Models - PhaseTapChangerTablePoint",
     "description": "Adapted from CIM data models. Describes each tap step in the phase tap changer tabular curve.",
