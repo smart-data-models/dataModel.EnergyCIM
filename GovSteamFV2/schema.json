@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV2/schema.json",
     "title": " Smart Data Models - GovSteamFV2",
     "description": "Adapted from CIM data models. Steam turbine governor with reheat time constants and modeling of the effects of fast valve closing to reduce mechanical power.",
