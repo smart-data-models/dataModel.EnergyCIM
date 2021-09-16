@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TieFlow/schema.json",
     "title": " Smart Data Models - TieFlow",
     "description": "Adapted from CIM data models. A flow specification in terms of location and direction for a control area.",
