@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssPTIST3/schema.json",
     "title": " Smart Data Models - PssPTIST3",
     "description": "Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 3.",
