@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenTurbineType1IEC/schema.json",
     "title": " Smart Data Models - WindGenTurbineType1IEC",
     "description": "Adapted from CIM data models. Wind turbine IEC Type 1.  Reference: IEC Standard 61400-27-1, section 6.5.2.",
