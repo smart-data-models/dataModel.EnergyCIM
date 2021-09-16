@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RemoteInputSignal/schema.json",
     "title": " Smart Data Models - RemoteInputSignal",
     "description": "Adapted from CIM data models. Supports connection to a terminal associated with a remote bus from which an input signal of a specific type is coming.",
