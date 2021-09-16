@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Equipment/schema.json",
     "title": " Smart Data Models - Equipment",
     "description": "Adapted from CIM data models. The parts of a power system that are physical devices, electronic or mechanical.",
