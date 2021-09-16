@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss1A/schema.json",
     "title": " Smart Data Models - Pss1A",
     "description": "Adapted from CIM data models. Single input power system stabilizer. It is a modified version in order to allow representation of various vendors' implementations on PSS type 1A.",
