@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadArea/schema.json",
     "title": " Smart Data Models - LoadArea",
     "description": "Adapted from CIM data models. The class is the root or first level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.",
