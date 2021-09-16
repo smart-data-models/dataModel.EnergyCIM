@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TextDiagramObject/schema.json",
     "title": " Smart Data Models - TextDiagramObject",
     "description": "Adapted from CIM data models. A diagram object for placing free-text or text derived from an associated domain object.",
