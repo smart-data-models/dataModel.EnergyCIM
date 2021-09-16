@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GeographicalRegion/schema.json",
     "title": " Smart Data Models - GeographicalRegion",
     "description": "Adapted from CIM data models. A geographical region of a power system network model.",
