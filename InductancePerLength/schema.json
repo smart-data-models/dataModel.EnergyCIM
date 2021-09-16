@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/InductancePerLength/schema.json",
     "title": " Smart Data Models - InductancePerLength",
     "description": "Adapted from CIM data models. Inductance per unit of length.",
