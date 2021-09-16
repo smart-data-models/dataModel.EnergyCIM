@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PowerSystemStabilizerUserDefined/schema.json",
     "title": " Smart Data Models - PowerSystemStabilizerUserDefined",
     "description": "Adapted from CIM data models. function block whose dynamic behaviour is described by",
