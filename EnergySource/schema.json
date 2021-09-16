@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EnergySource/schema.json",
     "title": " Smart Data Models - EnergySource",
     "description": "Adapted from CIM data models. A generic equivalent for an energy supplier on a transmission or distribution voltage level.",
