@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PerCent/schema.json",
     "title": " Smart Data Models - PerCent",
     "description": "Adapted from CIM data models. Percentage on a defined base.   For example, specify as 100 to indicate at the defined base.",
