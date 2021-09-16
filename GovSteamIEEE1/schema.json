@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamIEEE1/schema.json",
     "title": " Smart Data Models - GovSteamIEEE1",
     "description": "Adapted from CIM data models. IEEE steam turbine governor model.  Ref",
