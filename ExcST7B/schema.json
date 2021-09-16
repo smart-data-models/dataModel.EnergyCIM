@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST7B/schema.json",
     "title": " Smart Data Models - ExcST7B",
     "description": "Adapted from CIM data models. Modified IEEE ST7B static excitation system without stator current limiter (SCL) and current compensator (DROOP) inputs.",
