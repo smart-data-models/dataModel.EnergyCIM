@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGeneratingUnit/schema.json",
     "title": " Smart Data Models - WindGeneratingUnit",
     "description": "Adapted from CIM data models. A wind driven generating unit.  May be used to represent a single turbine or an aggregation.",
