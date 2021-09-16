@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindType1or2UserDefined/schema.json",
     "title": " Smart Data Models - WindType1or2UserDefined",
     "description": "Adapted from CIM data models. Wind Type 1 or Type 2 function block whose dynamic behaviour is described by",
