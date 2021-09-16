@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DynamicsFunctionBlock/schema.json",
     "title": " Smart Data Models - DynamicsFunctionBlock",
     "description": "Adapted from CIM data models. Abstract parent class for all Dynamics function blocks.",
