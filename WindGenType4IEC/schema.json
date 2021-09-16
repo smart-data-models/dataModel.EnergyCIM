@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindGenType4IEC/schema.json",
     "title": " Smart Data Models - WindGenType4IEC",
     "description": "Adapted from CIM data models. IEC Type 4 generator set model.  Reference: IEC Standard 61400-27-1 Section 6.6.3.4.",
