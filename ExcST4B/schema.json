@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST4B/schema.json",
     "title": " Smart Data Models - ExcST4B",
     "description": "Adapted from CIM data models. Modified IEEE ST4B static excitation system with maximum inner loop feedback gain .",
