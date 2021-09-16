@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCLine/schema.json",
     "title": " Smart Data Models - DCLine",
     "description": "Adapted from CIM data models. Overhead lines and/or cables connecting two or more HVDC substations.",
