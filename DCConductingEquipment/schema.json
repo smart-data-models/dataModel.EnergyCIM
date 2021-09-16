@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DCConductingEquipment/schema.json",
     "title": " Smart Data Models - DCConductingEquipment",
     "description": "Adapted from CIM data models. The parts of the DC power system that are designed to carry current or that are conductively connected through DC terminals.",
