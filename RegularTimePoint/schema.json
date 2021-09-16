@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/RegularTimePoint/schema.json",
     "title": " Smart Data Models - RegularTimePoint",
     "description": "Adapted from CIM data models. Time point for a schedule where the time between the consecutive points is constant.",
