@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss5/schema.json",
     "title": " Smart Data Models - Pss5",
     "description": "Adapted from CIM data models. Italian PSS - Detailed PSS.",
