@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VoltageCompensatorUserDefined/schema.json",
     "title": " Smart Data Models - VoltageCompensatorUserDefined",
     "description": "Adapted from CIM data models. Voltage compensator function block whose dynamic behaviour is described by",
