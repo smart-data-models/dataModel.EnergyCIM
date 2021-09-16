@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType4aIEC/schema.json",
     "title": " Smart Data Models - WindContPType4aIEC",
     "description": "Adapted from CIM data models. P control model Type 4A.  Reference: IEC Standard 61400-27-1 Section 6.6.5.4.",
