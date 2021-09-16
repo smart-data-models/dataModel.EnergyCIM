@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/EquivalentEquipment/schema.json",
     "title": " Smart Data Models - EquivalentEquipment",
     "description": "Adapted from CIM data models. The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of different types.",
