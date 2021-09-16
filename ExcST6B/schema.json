@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST6B/schema.json",
     "title": " Smart Data Models - ExcST6B",
     "description": "Adapted from CIM data models. Modified IEEE ST6B static excitation system with PID controller and optional inner feedbacks loop.",
