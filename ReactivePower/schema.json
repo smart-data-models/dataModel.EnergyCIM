@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ReactivePower/schema.json",
     "title": " Smart Data Models - ReactivePower",
     "description": "Adapted from CIM data models. Product of RMS value of the voltage and the RMS value of the quadrature component of the current.",
