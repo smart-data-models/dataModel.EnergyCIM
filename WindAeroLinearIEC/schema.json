@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindAeroLinearIEC/schema.json",
     "title": " Smart Data Models - WindAeroLinearIEC",
     "description": "Adapted from CIM data models. The linearised aerodynamic model.    Reference: IEC Standard 614000-27-1 Section 6.6.1.2.",
