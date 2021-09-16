@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR4/schema.json",
     "title": " Smart Data Models - ExcAVR4",
     "description": "Adapted from CIM data models. Italian excitation system. It represents static exciter and electric voltage regulator.",
