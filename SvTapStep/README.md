@@ -1,25 +1,26 @@
 # SvTapStep
+Version: 0.0.1
 
 ## Description 
 
 Adapted from CIM data models. State variable for transformer tap step.     This class is to be used for taps of LTC (load tap changing) transformers, not fixed tap transformers.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.EnergyCIM/SvTapStep/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvTapStep/swagger.yaml)
 
-Link to the [specification](https://smart-data-models.github.io/dataModel.EnergyCIM/SvTapStep/doc/spec.md)
+Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvTapStep/doc/spec.md)
 
-Enlace a la [Especificación en español](https://smart-data-models.github.io/dataModel.EnergyCIM/SvTapStep/doc/spec_ES.md)
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvTapStep/doc/spec_ES.md)
 
-Lien vers le [spécification en français](https://smart-data-models.github.io/dataModel.EnergyCIM/SvTapStep/doc/spec_FR.md)
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvTapStep/doc/spec_FR.md)
 
-Link zu der [deutchen Spezifikation](https://smart-data-models.github.io/dataModel.EnergyCIM/SvTapStep/doc/spec_DE.md)
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvTapStep/doc/spec_DE.md)
 ### Examples
 ### Dynamic Examples generation
 
-Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_v0.92.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SvTapStep/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
+Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SvTapStep/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
 
-Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_keyvalues_v0.92.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SvTapStep/schema.json&email=info@smartdatamodels.org) of NGSI-LD keyvalues payloads compliant with this data model. Refresh for new values
+Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_keyvalues.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SvTapStep/schema.json&email=info@smartdatamodels.org) of NGSI-LD keyvalues payloads compliant with this data model. Refresh for new values
 
 Link to the [Generator](https://smartdatamodels.org/extra/geojson_features_generator_v1.0.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SvTapStep/schema.json&email=info@smartdatamodels.org) of geojson feature format payloads compliant with this data model. Refresh for new values
 ### Contribution
