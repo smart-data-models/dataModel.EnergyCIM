@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. AccumulatorValue represents an accumulated (counted) MeasurementValue.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AccumulatorValue/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/AccumulatorValue/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AccumulatorValue/doc/spec.md)
 
