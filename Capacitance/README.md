@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Capacitive part of reactance (imaginary part of impedance), at rated frequency.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Capacitance/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Capacitance/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Capacitance/doc/spec.md)
 
