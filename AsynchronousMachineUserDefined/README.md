@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Asynchronous machine whose dynamic behaviour is described by a user-defined model.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AsynchronousMachineUserDefined/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/AsynchronousMachineUserDefined/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AsynchronousMachineUserDefined/doc/spec.md)
 
