@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Factor by which voltage must be multiplied to give corresponding power lost from a circuit. Real part of admittance.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Conductance/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Conductance/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Conductance/doc/spec.md)
 
