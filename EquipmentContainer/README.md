@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. A modeling construct to provide a root class for containing equipment.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/EquipmentContainer/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/EquipmentContainer/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/EquipmentContainer/doc/spec.md)
 
