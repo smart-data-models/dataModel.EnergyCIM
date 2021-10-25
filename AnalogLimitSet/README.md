@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. An AnalogLimitSet specifies a set of Limits that are associated with an Analog measurement.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AnalogLimitSet/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/AnalogLimitSet/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AnalogLimitSet/doc/spec.md)
 
