@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Conductor/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Conductor/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Conductor/doc/spec.md)
 
