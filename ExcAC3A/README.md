@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Modified IEEE AC3A alternator-supplied rectifier excitation system with different field current limit.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcAC3A/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcAC3A/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcAC3A/doc/spec.md)
 
