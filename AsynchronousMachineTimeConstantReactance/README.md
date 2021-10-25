@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The parameters used for models expressed in time constant reactance form include:
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AsynchronousMachineTimeConstantReactance/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/AsynchronousMachineTimeConstantReactance/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AsynchronousMachineTimeConstantReactance/doc/spec.md)
 
