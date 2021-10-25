@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ConnectivityNode/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ConnectivityNode/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ConnectivityNode/doc/spec.md)
 
