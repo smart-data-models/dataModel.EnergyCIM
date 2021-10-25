@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. This is modified IEEE DC3A direct current commutator exciters with speed input, and death band.  DC old type 4.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcDC3A/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcDC3A/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcDC3A/doc/spec.md)
 
