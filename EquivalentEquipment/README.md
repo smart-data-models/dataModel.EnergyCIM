@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of different types.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/EquivalentEquipment/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/EquivalentEquipment/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/EquivalentEquipment/doc/spec.md)
 
