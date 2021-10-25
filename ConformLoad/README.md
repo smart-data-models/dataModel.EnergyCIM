@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. ConformLoad represent loads that follow a daily load change pattern where the pattern can be used to scale the load with a system load.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ConformLoad/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ConformLoad/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ConformLoad/doc/spec.md)
 
