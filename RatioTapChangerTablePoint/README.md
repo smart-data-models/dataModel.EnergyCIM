@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Describes each tap step in the ratio tap changer tabular curve.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RatioTapChangerTablePoint/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/RatioTapChangerTablePoint/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RatioTapChangerTablePoint/doc/spec.md)
 
