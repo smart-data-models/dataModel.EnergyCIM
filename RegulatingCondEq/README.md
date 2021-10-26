@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. A type of conducting equipment that can regulate a quantity (i.e. voltage or flow) at a specific point in the network.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RegulatingCondEq/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/RegulatingCondEq/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RegulatingCondEq/doc/spec.md)
 
