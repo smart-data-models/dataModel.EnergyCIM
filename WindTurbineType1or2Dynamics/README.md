@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Parent class supporting relationships to wind turbines Type 1 and 2 and their control models.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindTurbineType1or2Dynamics/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindTurbineType1or2Dynamics/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindTurbineType1or2Dynamics/doc/spec.md)
 
