@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Loads that do not follow a daily and seasonal load variation pattern.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/NonConformLoadGroup/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/NonConformLoadGroup/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/NonConformLoadGroup/doc/spec.md)
 
