@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Modified IEEE ST2A static excitation system - another lead-lag block added to match  the model defined by WECC.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST2A/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcST2A/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST2A/doc/spec.md)
 
