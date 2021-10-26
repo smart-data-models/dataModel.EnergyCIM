@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Per Unit - a positive or negative value referred to a defined base. Values typically range from -10 to +10.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PU/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PU/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PU/doc/spec.md)
 
