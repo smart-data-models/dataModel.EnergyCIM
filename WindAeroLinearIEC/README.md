@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The linearised aerodynamic model.    Reference: IEC Standard 614000-27-1 Section 6.6.1.2.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindAeroLinearIEC/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindAeroLinearIEC/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindAeroLinearIEC/doc/spec.md)
 
