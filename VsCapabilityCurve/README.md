@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The P-Q capability curve for a voltage source converter, with P on x-axis and Qmin and Qmax on y1-axis and y2-axis.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/VsCapabilityCurve/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/VsCapabilityCurve/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/VsCapabilityCurve/doc/spec.md)
 
