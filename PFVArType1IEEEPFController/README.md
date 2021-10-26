@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The class represents IEEE PF Controller Type 1 which operates by moving the voltage reference directly.  Reference: IEEE Standard 421.5-2005 Section 11.2.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PFVArType1IEEEPFController/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PFVArType1IEEEPFController/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PFVArType1IEEEPFController/doc/spec.md)
 
