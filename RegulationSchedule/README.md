@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. A pre-established pattern over time for a controlled variable, e.g., busbar voltage.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RegulationSchedule/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/RegulationSchedule/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RegulationSchedule/doc/spec.md)
 
