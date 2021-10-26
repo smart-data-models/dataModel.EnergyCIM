@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Specifies a set of Limits that are associated with a Measurement. A Measurement may have several LimitSets corresponding to seasonal or other changing conditions. The condition is captured in the name and description attributes. The same LimitSet may be used for several Measurements. In particular percentage limits are used this way.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/LimitSet/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/LimitSet/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/LimitSet/doc/spec.md)
 
