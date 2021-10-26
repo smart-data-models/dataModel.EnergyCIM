@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Modified IEEE Hydro Governor-Turbine Model.  This model differs from that defined in the IEEE modeling guideline paper in that the limits on gate position and velocity do not permit wind up of the upstream signals.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro3/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/GovHydro3/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro3/doc/spec.md)
 
