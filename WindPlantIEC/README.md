@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Simplified IEC type plant level model.   Reference: IEC 61400-27-1, AnnexE.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindPlantIEC/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindPlantIEC/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindPlantIEC/doc/spec.md)
 
