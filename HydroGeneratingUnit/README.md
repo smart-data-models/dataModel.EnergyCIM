@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. A generating unit whose prime mover is a hydraulic turbine (e.g., Francis, Pelton, Kaplan).
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/HydroGeneratingUnit/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/HydroGeneratingUnit/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/HydroGeneratingUnit/doc/spec.md)
 
