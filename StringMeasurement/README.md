@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. StringMeasurement represents a measurement with values of type string.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/StringMeasurement/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/StringMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/StringMeasurement/doc/spec.md)
 
