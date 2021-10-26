@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The class models a look up table for the purpose of wind standard models.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindDynamicsLookupTable/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/WindDynamicsLookupTable/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindDynamicsLookupTable/doc/spec.md)
 
