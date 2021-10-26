@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Power system stabilizer typically associated with ExcELIN2 (though PssIEEE2B or Pss2B can also be used).
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssELIN2/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PssELIN2/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssELIN2/doc/spec.md)
 
