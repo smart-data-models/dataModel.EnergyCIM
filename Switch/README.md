@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Switch/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/Switch/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Switch/doc/spec.md)
 
