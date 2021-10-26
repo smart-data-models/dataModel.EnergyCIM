@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Supports connection to a terminal associated with a remote bus from which an input signal of a specific type is coming.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/RemoteInputSignal/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RemoteInputSignal/doc/spec.md)
 
