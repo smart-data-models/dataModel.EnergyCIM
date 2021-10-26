@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Modified IEEE Type ST1 Excitation System with semi-continuous and acting terminal voltage limiter.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcOEX3T/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ExcOEX3T/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcOEX3T/doc/spec.md)
 
