@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Time point for a schedule where the time between the consecutive points is constant.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RegularTimePoint/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/RegularTimePoint/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/RegularTimePoint/doc/spec.md)
 
