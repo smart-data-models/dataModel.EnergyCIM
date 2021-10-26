@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvPowerFlow/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/SvPowerFlow/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SvPowerFlow/doc/spec.md)
 
