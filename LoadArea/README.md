@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. The class is the root or first level in a hierarchical structure for grouping of loads for the purpose of load flow load scaling.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/LoadArea/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/LoadArea/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/LoadArea/doc/spec.md)
 
