@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. A reporting group is used for various ad-hoc groupings used for reporting.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ReportingGroup/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ReportingGroup/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ReportingGroup/doc/spec.md)
 
