@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Power Factor or VAr controller Type I function block whose dynamic behaviour is described by
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PFVArControllerType1UserDefined/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PFVArControllerType1UserDefined/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PFVArControllerType1UserDefined/doc/spec.md)
 
