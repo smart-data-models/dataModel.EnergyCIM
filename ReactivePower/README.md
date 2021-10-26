@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Product of RMS value of the voltage and the RMS value of the quadrature component of the current.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ReactivePower/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/ReactivePower/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ReactivePower/doc/spec.md)
 
