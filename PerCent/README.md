@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. Percentage on a defined base.   For example, specify as 100 to indicate at the defined base.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PerCent/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/PerCent/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PerCent/doc/spec.md)
 
