@@ -6,7 +6,7 @@ Version: 0.0.1
 Adapted from CIM data models. This is a root class to provide common identification for all classes needing identification and naming attributes.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.EnergyCIM/master/IdentifiedObject/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/doc/spec.md)
 
