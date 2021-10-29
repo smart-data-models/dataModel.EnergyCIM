@@ -2,7 +2,7 @@ Entité : ConformLoadSchedule
 ============================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ConformLoadSchedule/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adapté des modèles de données CIM. Courbe de la charge en fonction du temps (axe des X) montrant les valeurs de la puissance active (axe des Y1) et de la puissance réactive (axe des Y2) pour chaque unité de la période couverte. Cette courbe représente un modèle typique de charge sur la période de temps pour un type de jour et une saison donnés**.  
+Description globale : **Adapté des modèles de données CIM. Courbe de la charge en fonction du temps (axe des X) montrant les valeurs de la puissance active (axe des Y1) et de la puissance réactive (axe des Y2) pour chaque unité de la période couverte. Cette courbe représente un modèle typique de charge sur la période de temps pour un type de jour et une saison donnés.**  
 
 ## Liste des propriétés  
 
