@@ -2,7 +2,7 @@ Entität: ConformLoadSchedule
 ============================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ConformLoadSchedule/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Lastkurve in Abhängigkeit von der Zeit (X-Achse) mit den Werten für Wirkleistung (Y1-Achse) und Blindleistung (Y2-Achse) für jede Einheit des erfassten Zeitraums. Diese Kurve stellt ein typisches Muster der Last über den Zeitraum für einen bestimmten Tag und eine bestimmte Jahreszeit dar.**  
+Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Lastkurve in Abhängigkeit von der Zeit (X-Achse) mit Angabe der Wirkleistungswerte (Y1-Achse) und der Blindleistung (Y2-Achse) für jede Einheit des erfassten Zeitraums. Diese Kurve stellt ein typisches Muster der Belastung über den Zeitraum für einen bestimmten Tag und eine bestimmte Jahreszeit dar.**  
 
 ## Liste der Eigenschaften  
 
@@ -288,7 +288,7 @@ ConformLoadSchedule:
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
-Nicht verfügbar ist das Beispiel eines ConformLoadSchedule im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines ConformLoadSchedule im JSON-LD Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines ConformLoadSchedule im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines ConformLoadSchedule im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines ConformLoadSchedule im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
