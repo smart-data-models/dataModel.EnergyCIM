@@ -6,7 +6,7 @@ Entité : ConnectivityNode
 
 ## Liste des propriétés  
 
-- `ConnectivityNodeContainer`: Conteneur de ce nœud de connectivité. Par défaut : Aucun  - `Terminals`: Le nœud de connectivité auquel cette borne se connecte avec une impédance nulle. Valeur par défaut : 'list'.  - `TopologicalNode`: Les nœuds de connectivité se combinent pour former ce nœud topologique.  Peut dépendre de l'état actuel des commutateurs du réseau. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `boundaryPoint`: Identifie si un noeud est un BoundaryPoint. Si boundaryPoint=true, le ConnectivityNode ou le TopologicalNode représente un BoundaryPoint. Valeur par défaut : False  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `fromEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "From" du point de frontière appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `fromEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `fromEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel le côté "From" du point de frontière appartient ou auquel il est connecté. La longueur de la chaîne est de 32 caractères maximum. L'attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `toEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "à" du point de délimitation appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `toEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `toEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel appartient ou auquel est connecté le côté "à" du point de frontière. La longueur de la chaîne est de 32 caractères maximum. L'attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `type`: Type de NGSI. Il doit s'agir de ConnectivityNode    
+- `ConnectivityNodeContainer`: Conteneur de ce nœud de connectivité. Par défaut : Aucun  - `Terminals`: Le nœud de connectivité auquel cette borne se connecte avec une impédance nulle. Valeur par défaut : 'list'.  - `TopologicalNode`: Les nœuds de connectivité se combinent pour former ce nœud topologique.  Peut dépendre de l'état actuel des commutateurs du réseau. Valeur par défaut : Aucun  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `boundaryPoint`: Identifie si un noeud est un BoundaryPoint. Si boundaryPoint=true, le ConnectivityNode ou le TopologicalNode représente un BoundaryPoint. Valeur par défaut : False  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `fromEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "From" du point de frontière appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `fromEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `fromEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel le côté "From" du point de frontière appartient ou auquel il est connecté. La longueur de la chaîne est de 32 caractères maximum. L'attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `toEndIsoCode`: Cet attribut est utilisé pour l'échange du code ISO de la région à laquelle le côté "à" du point de délimitation appartient ou à laquelle il est connecté. Le code ISO est un code pays à deux caractères tel que défini par la norme ISO 3166 (). La longueur de la chaîne est de 2 caractères maximum. Cet attribut est obligatoire pour l'ensemble d'autorités du modèle Boundary où il n'est utilisé que pour le TopologicalNode du profil Boundary Topology et le ConnectivityNode du profil Boundary Equipment. Valeur par défaut : ''.  - `toEndName`: L'attribut est utilisé pour l'échange d'un nom lisible par l'homme avec une longueur de la chaîne de 32 caractères maximum. L'attribut couvre deux cas :  L'attribut est requis pour l'ensemble d'autorités du modèle frontalier où il est utilisé uniquement pour le TopologicalNode dans le profil de topologie frontalier et le ConnectivityNode dans le profil d'équipement frontalier. Valeur par défaut : "  - `toEndNameTso`: Cet attribut est utilisé pour l'échange du nom du TSO auquel appartient ou auquel est connecté le côté "à" du point de frontière. La longueur de la chaîne est de 32 caractères maximum. Cet attribut est requis pour l'ensemble d'autorités du modèle Boundary où il est utilisé uniquement pour le TopologicalNode dans le profil Boundary Topology et le ConnectivityNode dans le profil Boundary Equipment. Valeur par défaut : "  - `type`: Type de NGSI. Il doit s'agir de ConnectivityNode    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -21,16 +21,19 @@ ConnectivityNode:
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     Terminals:    
       description: 'The connectivity node to which this terminal connects with zero impedance. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     TopologicalNode:    
       description: 'The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -52,51 +55,67 @@ ConnectivityNode:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     boundaryPoint:    
       description: 'Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     fromEndIsoCode:    
       description: 'The attribute is used for an exchange of the ISO code of the region to which the `From` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '''''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     fromEndName:    
       description: 'The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '''''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     fromEndNameTso:    
       description: 'The attribute is used for an exchange of the name of the TSO to which the `From` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '''''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &connectivitynode_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -108,7 +127,8 @@ ConnectivityNode:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -260,16 +280,21 @@ ConnectivityNode:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *connectivitynode_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -280,30 +305,38 @@ ConnectivityNode:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     toEndIsoCode:    
       description: 'The attribute is used for an exchange of the ISO code of the region to which the `To` side of the Boundary point belongs to or it is connected to. The ISO code is two characters country code as defined by ISO 3166 (). The length of the string is 2 characters maximum. The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '''''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     toEndName:    
       description: 'The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '''''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     toEndNameTso:    
       description: 'The attribute is used for an exchange of the name of the TSO to which the `To` side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum. The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. Default: '''''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ConnectivityNode'    
       enum:    
         - ConnectivityNode    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
 ```  
