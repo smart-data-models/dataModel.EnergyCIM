@@ -6,7 +6,7 @@ Entité : DiscExcContIEEEDEC1A
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `esc`: Référence de changement de vitesse ().  Valeur typique = 0.0015. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kan`: Gain du contrôleur discontinu ().  Valeur typique = 400. Valeur par défaut : 0.0  - `ketl`: Gain du limiteur de tension aux bornes ().  Valeur typique = 47. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tan`: Constante de temps du contrôleur discontinu ().  Valeur typique = 0.08. Valeur par défaut : 0  - `td`: Constante de temps ().  Valeur typique = 0.03. Valeur par défaut : 0  - `tl1`: Constante de temps ().  Valeur typique = 0.025. Valeur par défaut : 0  - `tl2`: Constante de temps ().  Valeur typique = 1,25. Valeur par défaut : 0  - `tw5`: Constante de temps de lavage DEC ().  Valeur typique = 5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être DiscExcContIEEEDEC1A.  - `val`: Référence de tension du régulateur ().  Valeur typique = 5.5. Valeur par défaut : 0.0  - `vanmax`: Limiteur pour Van (). Valeur par défaut : 0.0  - `vomax`: Limiteur ().  Valeur typique = 0.3. Valeur par défaut : 0.0  - `vomin`: Limiteur ().  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vsmax`: Limiteur ().  Valeur typique = 0.2. Valeur par défaut : 0.0  - `vsmin`: Limiteur ( ).  Valeur typique = -0.066. Valeur par défaut : 0.0  - `vtc`: Référence du niveau de tension aux bornes ().  Valeur typique = 0.95. Valeur par défaut : 0.0  - `vtlmt`: Référence de tension ().  Valeur typique = 1.1. Valeur par défaut : 0.0  - `vtm`: Limites de tension ().  Valeur typique = 1.13. Valeur par défaut : 0.0  - `vtn`: Limites de tension ().  Valeur typique = 1.12. Valeur par défaut : 0.0    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `esc`: Référence de changement de vitesse ().  Valeur typique = 0.0015. Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `kan`: Gain du contrôleur discontinu ().  Valeur typique = 400. Valeur par défaut : 0.0  - `ketl`: Gain du limiteur de tension aux bornes ().  Valeur typique = 47. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tan`: Constante de temps du contrôleur discontinu ().  Valeur typique = 0.08. Valeur par défaut : 0  - `td`: Constante de temps ().  Valeur typique = 0.03. Valeur par défaut : 0  - `tl1`: Constante de temps ().  Valeur typique = 0.025. Valeur par défaut : 0  - `tl2`: Constante de temps ().  Valeur typique = 1,25. Valeur par défaut : 0  - `tw5`: Constante de temps de lavage DEC ().  Valeur typique = 5. Valeur par défaut : 0  - `type`: Type de NGSI. Il doit être DiscExcContIEEEDEC1A.  - `val`: Référence de tension du régulateur ().  Valeur typique = 5.5. Valeur par défaut : 0.0  - `vanmax`: Limiteur pour Van (). Valeur par défaut : 0.0  - `vomax`: Limiteur ().  Valeur typique = 0.3. Valeur par défaut : 0.0  - `vomin`: Limiteur ().  Valeur typique = 0.1. Valeur par défaut : 0.0  - `vsmax`: Limiteur ().  Valeur typique = 0.2. Valeur par défaut : 0.0  - `vsmin`: Limiteur ( ).  Valeur typique = -0.066. Valeur par défaut : 0.0  - `vtc`: Référence du niveau de tension aux bornes ().  Valeur typique = 0.95. Valeur par défaut : 0.0  - `vtlmt`: Référence de tension ().  Valeur typique = 1.1. Valeur par défaut : 0.0  - `vtm`: Limites de tension ().  Valeur typique = 1.13. Valeur par défaut : 0.0  - `vtn`: Limites de tension ().  Valeur typique = 1.12. Valeur par défaut : 0.0    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -37,36 +37,49 @@ DiscExcContIEEEDEC1A:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     esc:    
       description: 'Speed change reference ().  Typical Value = 0.0015. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &discexccontieeedec1a_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -78,17 +91,20 @@ DiscExcContIEEEDEC1A:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     kan:    
       description: 'Discontinuous controller gain ().  Typical Value = 400. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ketl:    
       description: 'Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -240,16 +256,21 @@ DiscExcContIEEEDEC1A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *discexccontieeedec1a_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -260,90 +281,110 @@ DiscExcContIEEEDEC1A:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tan:    
       description: 'Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     td:    
       description: 'Time constant ().  Typical Value = 0.03. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tl1:    
       description: 'Time constant ().  Typical Value = 0.025. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tl2:    
       description: 'Time constant ().  Typical Value = 1.25. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tw5:    
       description: 'DEC washout time constant ().  Typical Value = 5. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be DiscExcContIEEEDEC1A'    
       enum:    
         - DiscExcContIEEEDEC1A    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     val:    
       description: 'Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vanmax:    
       description: 'Limiter for Van (). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vomax:    
       description: 'Limiter ().  Typical Value = 0.3. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vomin:    
       description: 'Limiter ().  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vsmax:    
       description: 'Limiter ().  Typical Value = 0.2. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vsmin:    
       description: 'Limiter ().  Typical Value = -0.066. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vtc:    
       description: 'Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vtlmt:    
       description: 'Voltage reference ().  Typical Value = 1.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vtm:    
       description: 'Voltage limits ().  Typical Value = 1.13. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vtn:    
       description: 'Voltage limits ().  Typical Value = 1.12. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
