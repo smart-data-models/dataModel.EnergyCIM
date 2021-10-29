@@ -295,6 +295,6 @@ ControlAreaGeneratingUnit:
 </details>    
 ## Beispiel-Nutzlasten  
 Nicht verfügbar ist das Beispiel einer ControlAreaGeneratingUnit im JSON-LD Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar ist das Beispiel einer ControlAreaGeneratingUnit im JSON-LD Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Einheit.  
+Nicht verfügbar ist das Beispiel einer ControlAreaGeneratingUnit im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Einheit.  
 Nicht verfügbar ist das Beispiel einer ControlAreaGeneratingUnit im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer ControlAreaGeneratingUnit im JSON-LD Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Einheit.  
