@@ -6,7 +6,7 @@ Entity: ConformLoad
 
 ## List of properties  
 
-- `LoadGroup`: Group of this ConformLoad. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be ConformLoad    
+- `LoadGroup`: Group of this ConformLoad. Default: None  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI type. It has to be ConformLoad    
 Required properties  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
 ## Data Model description of properties  
@@ -21,6 +21,7 @@ ConformLoad:
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -42,31 +43,43 @@ ConformLoad:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &conformload_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -78,12 +91,13 @@ ConformLoad:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -103,7 +117,8 @@ ConformLoad:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -126,7 +141,8 @@ ConformLoad:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -151,7 +167,8 @@ ConformLoad:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -173,7 +190,8 @@ ConformLoad:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -198,7 +216,8 @@ ConformLoad:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -225,16 +244,21 @@ ConformLoad:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *conformload_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -245,15 +269,20 @@ ConformLoad:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ConformLoad'    
       enum:    
         - ConformLoad    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
 ```  
