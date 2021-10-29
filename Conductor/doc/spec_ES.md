@@ -2,7 +2,7 @@ Entidad: Conductor
 ==================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Conductor/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Adaptado de los modelos de datos CIM. Combinación de material conductor con características eléctricas coherentes, que construye un sistema eléctrico único, utilizado para transportar la corriente entre puntos del sistema eléctrico.**  
+Descripción global: **Adaptado de los modelos de datos CIM. Combinación de material conductor con características eléctricas coherentes, que construye un único sistema eléctrico, utilizado para transportar la corriente entre puntos del sistema eléctrico.**  
 
 ## Lista de propiedades  
 
