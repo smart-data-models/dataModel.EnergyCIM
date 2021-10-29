@@ -2,7 +2,7 @@ Entité : ControlArea
 ====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adapté des modèles de données CIM. Une zone de contrôle est un regroupement d'unités de production et/ou de charges et un ensemble de lignes de raccordement (en tant que terminaux) qui peuvent être utilisés à des fins diverses, y compris le contrôle automatique de la production, la spécification de contrôle de l'échange de zones de solution de flux de puissance et l'entrée dans la prévision de la charge.   Notez que n'importe quel nombre de spécifications de zones de contrôle se chevauchant peut être superposé au modèle physique.**  
+Description globale : **Adaptée des modèles de données CIM. Une zone de contrôle est un regroupement d'unités de production et/ou de charges et un ensemble de lignes de raccordement (en tant que terminaux) qui peuvent être utilisés à des fins diverses, y compris le contrôle automatique de la production, la spécification de contrôle de l'échange de zones de solution de flux de puissance et l'entrée dans la prévision de la charge.   Notez que n'importe quel nombre de spécifications de zones de contrôle se chevauchant peut être superposé au modèle physique.**  
 
 ## Liste des propriétés  
 
@@ -21,16 +21,19 @@ ControlArea:
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     EnergyArea:    
       description: 'The energy area that is forecast from this control area specification. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     TieFlow:    
       description: 'The tie flows associated with the control area. Default: ''list'''    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -52,31 +55,43 @@ ControlArea:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &controlarea_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -88,7 +103,8 @@ ControlArea:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -240,26 +256,33 @@ ControlArea:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     netInterchange:    
       description: 'The specified positive net interchange into the control area, i.e. positive sign means flow in to the area. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *controlarea_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pTolerance:    
       description: 'Active power net interchange tolerance Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -270,15 +293,19 @@ ControlArea:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.   A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
