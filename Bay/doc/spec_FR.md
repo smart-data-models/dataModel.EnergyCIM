@@ -2,7 +2,7 @@ Entité : Bay
 ============  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Bay/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Adapté des modèles de données CIM. Un ensemble de ressources du système électrique (dans une sous-station donnée) comprenant l'équipement de conduite, les relais de protection, les mesures et la télémétrie.  Une baie représente généralement un regroupement physique lié à la modularisation de l'équipement**.  
+Description globale : **Adapté des modèles de données CIM. Ensemble des ressources d'un système d'alimentation (dans une sous-station donnée), y compris l'équipement de conduite, les relais de protection, les mesures et la télémétrie.  Une baie représente généralement un regroupement physique lié à la modularisation de l'équipement**.  
 
 ## Liste des propriétés  
 
