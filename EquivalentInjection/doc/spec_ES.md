@@ -2,7 +2,7 @@ Entidad: EquivalentInjection
 ============================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/EquivalentInjection/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Adaptado de los modelos de datos CIM. Esta clase representa las inyecciones equivalentes (generación o carga).  La regulación de la tensión sólo se permite en el punto de conexión.**  
+Descripción global: **Adaptado de los modelos de datos CIM. Esta clase representa inyecciones equivalentes (generación o carga).  La regulación de la tensión sólo se permite en el punto de conexión.**  
 
 ## Lista de propiedades  
 
@@ -21,6 +21,7 @@ EquivalentInjection:
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -42,31 +43,43 @@ EquivalentInjection:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &equivalentinjection_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -78,7 +91,8 @@ EquivalentInjection:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -230,76 +244,93 @@ EquivalentInjection:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     maxP:    
       description: 'Maximum active power of the injection. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     maxQ:    
       description: 'Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     minP:    
       description: 'Minimum active power of the injection. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     minQ:    
       description: 'Used for modeling of infeed for load flow exchange. Not used for short circuit modeling.  If maxQ and minQ are not used ReactiveCapabilityCurve can be used. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *equivalentinjection_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     p:    
       description: 'Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     q:    
       description: 'Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     r:    
       description: 'Positive sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     r0:    
       description: 'Zero sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     r2:    
       description: 'Negative sequence resistance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     regulationCapability:    
       description: 'Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     regulationStatus:    
       description: 'Specifies the default regulation status of the EquivalentInjection.  True is regulating.  False is not regulating. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     regulationTarget:    
       description: 'The target voltage for voltage regulation. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -310,30 +341,38 @@ EquivalentInjection:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be EquivalentInjection'    
       enum:    
         - EquivalentInjection    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     x:    
       description: 'Positive sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     x0:    
       description: 'Zero sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     x2:    
       description: 'Negative sequence reactance. Used to represent Extended-Ward (IEC 60909). Usage : Extended-Ward is a result of network reduction prior to the data exchange. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
