@@ -2,7 +2,7 @@ Entität: DCEquipmentContainer
 =============================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/DCEquipmentContainer/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Ein Modellierungskonstrukt zur Bereitstellung einer Wurzelklasse für die Aufnahme von Gleichstrom- und Wechselstromgeräten. Die Klasse unterscheidet sich vom EquipmentContaner für AC dadurch, dass sie auch DCNodes enthalten kann. Daher kann sie sowohl AC- als auch DC-Ausrüstung enthalten.  
+Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Ein Modellierungskonstrukt zur Bereitstellung einer Wurzelklasse für die Aufnahme von Gleichstrom- und Wechselstromgeräten. Die Klasse unterscheidet sich vom EquipmentContaner für AC darin, dass sie auch DCNodes enthalten kann. Daher kann sie sowohl AC- als auch DC-Ausrüstung enthalten.  
 
 ## Liste der Eigenschaften  
 
