@@ -6,7 +6,7 @@ Entité : ExcHU
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `ae`: Facteur de gain de l'étiquette PI de la boucle principale (Ae).  Valeur typique = 3. Valeur par défaut : 0.0  - `ai`: Facteur de gain de l'étiquette PI de la boucle mineure (Ai).  Valeur typique = 22. Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `atr`: Constante AVR (Atr).  Valeur typique = 2.19. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `emax`: Limite supérieure du signal de contrôle de la tension de champ sur la base du régulateur (Emax).  Valeur typique = 0.996. Valeur par défaut : 0.0  - `emin`: Limite inférieure du signal de contrôle de la tension de champ sur la base du régulateur (Emin).  Valeur typique = -0.866. Défaut : 0.0  - `id`: Identifiant unique de l'entité  - `imax`: Limite supérieure du signal de sortie de la balise PI de la boucle principale (Imax).  Valeur typique = 2.19. Valeur par défaut : 0.0  - `imin`: Limite inférieure du signal de sortie de la balise PI de la boucle principale (Imin).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `ke`: Constante de conversion de la base de tension (Ke).  Valeur typique = 4.666. Valeur par défaut : 0.0  - `ki`: Constante de conversion de la base de courant (Ki).  Valeur typique = 0.21428. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `te`: Constante de temps d'intégration de la balise PI de la boucle principale (Te).  Valeur typique = 0,154. Valeur par défaut : 0  - `ti`: Constante de temps d'intégration de la balise de contrôle PI en boucle mineure (Ti).  Valeur typique = 0.01333. Valeur par défaut : 0  - `tr`: Constante de temps du filtre (Tr). Si un compensateur de tension est utilisé en conjonction avec ce modèle de système d'excitation, Tr doit être réglé sur 0. Valeur typique = 0.01. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcHU    
+- `address`: L'adresse postale  - `ae`: Facteur de gain de l'étiquette PI de la boucle principale (Ae).  Valeur typique = 3. Valeur par défaut : 0.0  - `ai`: Facteur de gain de l'étiquette PI de la boucle mineure (Ai).  Valeur typique = 22. Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `atr`: Constante AVR (Atr).  Valeur typique = 2.19. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `emax`: Limite supérieure du signal de contrôle de la tension de champ sur la base du régulateur (Emax).  Valeur typique = 0.996. Valeur par défaut : 0.0  - `emin`: Limite inférieure du signal de contrôle de la tension d'excitation sur la base du régulateur (Emin).  Valeur typique = -0.866. Défaut : 0.0  - `id`: Identifiant unique de l'entité  - `imax`: Limite supérieure du signal de sortie de la balise PI de la boucle principale (Imax).  Valeur typique = 2.19. Valeur par défaut : 0.0  - `imin`: Limite inférieure du signal de sortie de la balise PI de la boucle principale (Imin).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `ke`: Constante de conversion de la base de tension (Ke).  Valeur typique = 4.666. Valeur par défaut : 0.0  - `ki`: Constante de conversion de la base de courant (Ki).  Valeur typique = 0.21428. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `te`: Constante de temps d'intégration de la balise PI de la boucle principale (Te).  Valeur typique = 0,154. Valeur par défaut : 0  - `ti`: Constante de temps d'intégration de la balise de contrôle PI en boucle mineure (Ti).  Valeur typique = 0.01333. Valeur par défaut : 0  - `tr`: Constante de temps du filtre (Tr). Si un compensateur de tension est utilisé en conjonction avec ce modèle de système d'excitation, Tr doit être réglé sur 0. Valeur typique = 0.01. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcHU    
 Propriétés requises  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
 ## Description des propriétés du modèle de données  
@@ -37,56 +37,73 @@ ExcHU:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     ae:    
       description: 'Major loop PI tag gain factor (Ae).  Typical Value = 3. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ai:    
       description: 'Minor loop PI tag gain factor (Ai).  Typical Value = 22. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     atr:    
       description: 'AVR constant (Atr).  Typical Value = 2.19. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     emax:    
       description: 'Field voltage control signal upper limit on AVR base (Emax).  Typical Value = 0.996. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     emin:    
       description: 'Field voltage control signal lower limit on AVR base (Emin).  Typical Value = -0.866. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &exchu_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -98,27 +115,32 @@ ExcHU:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     imax:    
       description: 'Major loop PI tag output signal upper limit (Imax).  Typical Value = 2.19. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     imin:    
       description: 'Major loop PI tag output signal lower limit (Imin).  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ke:    
       description: 'Voltage base conversion constant (Ke).  Typical Value = 4.666. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ki:    
       description: 'Current base conversion constant (Ki).  Typical Value = 0.21428. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -270,16 +292,21 @@ ExcHU:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *exchu_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -290,30 +317,38 @@ ExcHU:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     te:    
       description: 'Major loop PI tag integration time constant (Te).  Typical Value = 0.154. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ti:    
       description: 'Minor loop PI control tag integration time constant (Ti).  Typical Value = 0.01333. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tr:    
       description: 'Filter time constant (Tr). If a voltage compensator is used in conjunction with this excitation system model, Tr should be set to 0.  Typical Value = 0.01. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcHU'    
       enum:    
         - ExcHU    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
 ```  
