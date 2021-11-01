@@ -37,36 +37,49 @@ ExcAC3A:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     efdn:    
       description: 'Value of at which feedback gain changes (Efdn).  Typical Value = 2.36. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &excac3a_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -78,62 +91,74 @@ ExcAC3A:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     ka:    
       description: 'Voltage regulator gain (Ka).  Typical Value = 45.62. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kc:    
       description: 'Rectifier loading factor proportional to commutating reactance (Kc).  Typical Value = 0.104. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kd:    
       description: 'Demagnetizing factor, a function of exciter alternator reactances (Kd).  Typical Value = 0.499. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ke:    
       description: 'Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf:    
       description: 'Excitation control system stabilizer gains (Kf).  Typical Value = 0.143. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf1:    
       description: 'Coefficient to allow different usage of the model (Kf1).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf2:    
       description: 'Coefficient to allow different usage of the model (Kf2).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     klv:    
       description: 'Gain used in the minimum field voltage limiter loop (Klv).  Typical Value = 0.194. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kn:    
       description: 'Excitation control system stabilizer gain (Kn).  Typical Value =0.05. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kr:    
       description: 'Constant associated with regulator and alternator field power supply (Kr).  Typical Value =3.77. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ks:    
       description: 'Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -285,16 +310,21 @@ ExcAC3A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *excac3a_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -305,85 +335,104 @@ ExcAC3A:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     seve1:    
       description: 'Exciter saturation function value at the corresponding exciter voltage, Ve, back of commutating reactance (Se[Ve]).  Typical Value = 1.143. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seve2:    
       description: 'Exciter saturation function value at the corresponding exciter voltage, Ve, back of commutating reactance (Se[Ve]).  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     ta:    
       description: 'Voltage regulator time constant (Ta).  Typical Value = 0.013. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tb:    
       description: 'Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc:    
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     te:    
       description: 'Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 1.17. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tf:    
       description: 'Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcAC3A'    
       enum:    
         - ExcAC3A    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vamax:    
       description: 'Maximum voltage regulator output (V).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vamin:    
       description: 'Minimum voltage regulator output (V).  Typical Value = -0.95. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ve1:    
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1) equals Vemax (Ve1).  Typical Value = 6.24. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ve2:    
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve).  Typical Value = 4.68. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vemin:    
       description: 'Minimum exciter voltage output (Vemin).  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vfemax:    
       description: 'Exciter field current limit reference (Vfemax).  Typical Value = 16. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vlv:    
       description: 'Field voltage used in the minimum field voltage limiter loop (Vlv).  Typical Value = 0.79. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
