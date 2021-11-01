@@ -294,7 +294,7 @@ ControlAreaGeneratingUnit:
 ```  
 </details>    
 ## Esempio di payloads  
-Non è disponibile l'esempio di una ControlAreaGeneratingUnit in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di una ControlAreaGeneratingUnit in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 Non disponibile l'esempio di una ControlAreaGeneratingUnit in formato JSON-LD come normalizzata. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 Non è disponibile l'esempio di una ControlAreaGeneratingUnit in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 Non disponibile l'esempio di una ControlAreaGeneratingUnit in formato JSON-LD come normalizzata. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
