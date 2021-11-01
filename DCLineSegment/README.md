@@ -15,6 +15,10 @@ Enlace a la [Especificación en español](https://github.com/smart-data-models/d
 Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCLineSegment/doc/spec_FR.md)
 
 Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCLineSegment/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCLineSegment/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCLineSegment/doc/spec_JA.md)
 ### Examples
 ### Dynamic Examples generation
 
