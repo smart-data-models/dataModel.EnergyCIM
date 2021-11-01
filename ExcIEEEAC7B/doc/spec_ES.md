@@ -6,7 +6,7 @@ Entidad: ExcIEEEAC7B
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (K). Valor típico = 0,18. Por defecto: 0,0  - `kd`: Factor de desmagnetización, en función de las reactancias del alternador de la excitadora (K).  Valor típico = 0,02. Por defecto: 0,0  - `kdr`: Ganancia derivada del regulador de tensión (K).  Valor típico = 0. Por defecto: 0.0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf1`: Ganancia del estabilizador del sistema de control de la excitación (K).  Valor típico = 0,212. Por defecto: 0,0  - `kf2`: Ganancia del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `kf3`: Ganancia del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 59,69. Por defecto: 0,0  - `kir`: Ganancia integral del regulador de tensión (K).  Valor típico = 4,24. Por defecto: 0,0  - `kl`: Parámetro del límite inferior de la tensión de campo del excitador (K).  Valor típico = 10. Por defecto: 0,0  - `kp`: Coeficiente de ganancia del circuito potencial (K).  Valor típico = 4,96. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 65,36. Por defecto: 0,0  - `kpr`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 4,24. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seve1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, V, detrás de la reactancia de conmutación (S[V]).  Valor típico = 0,44. Por defecto: 0,0  - `seve2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, V, detrás de la reactancia de conmutación (S[V]).  Valor típico = 0,075. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tdr`: Constante de tiempo de retardo (T).  Valor típico = 0. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 1,1. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEAC7B  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 1. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -0,95. Por defecto: 0,0  - `ve1`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (V) es igual a V (V).  Valor típico = 6,3. Por defecto: 0,0  - `ve2`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (V).  Valor típico = 3,02. Por defecto: 0,0  - `vemin`: Tensión mínima de salida del excitador (V).  Valor típico = 0. Por defecto: 0.0  - `vfemax`: Referencia de límite de corriente de campo del excitador (V).  Valor típico = 6,9. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5,79. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -5,79. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (K). Valor típico = 0,18. Por defecto: 0,0  - `kd`: Factor de desmagnetización, en función de las reactancias del alternador de la excitadora (K).  Valor típico = 0,02. Por defecto: 0,0  - `kdr`: Ganancia derivada del regulador de tensión (K).  Valor típico = 0. Por defecto: 0.0  - `ke`: Constante de excitación relacionada con el campo autoexcitado (K).  Valor típico = 1. Por defecto: 0,0  - `kf1`: Ganancia del estabilizador del sistema de control de la excitación (K).  Valor típico = 0,212. Por defecto: 0,0  - `kf2`: Ganancia del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `kf3`: Ganancia del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `kia`: Ganancia integral del regulador de tensión (K).  Valor típico = 59,69. Por defecto: 0,0  - `kir`: Ganancia integral del regulador de tensión (K).  Valor típico = 4,24. Por defecto: 0,0  - `kl`: Parámetro del límite inferior de la tensión de campo del excitador (K).  Valor típico = 10. Por defecto: 0,0  - `kp`: Coeficiente de ganancia del circuito potencial (K).  Valor típico = 4,96. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 65,36. Por defecto: 0,0  - `kpr`: Ganancia proporcional del regulador de tensión (K).  Valor típico = 4,24. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `seve1`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, V, detrás de la reactancia de conmutación (S[V]).  Valor típico = 0,44. Por defecto: 0,0  - `seve2`: Valor de la función de saturación del excitador a la tensión correspondiente del excitador, V, detrás de la reactancia de conmutación (S[V]).  Valor típico = 0,075. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tdr`: Constante de tiempo de retardo (T).  Valor típico = 0. Por defecto: 0  - `te`: Constante de tiempo del excitador, tasa de integración asociada al control del excitador (T).  Valor típico = 1,1. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEAC7B  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 1. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -0,95. Por defecto: 0,0  - `ve1`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (V) es igual a V (V).  Valor típico = 6,3. Por defecto: 0,0  - `ve2`: Tensiones de salida del alternador del excitador detrás de la reactancia de conmutación a la que se define la saturación (V).  Valor típico = 3,02. Por defecto: 0,0  - `vemin`: Tensión mínima de salida del excitador (V).  Valor típico = 0. Por defecto: 0.0  - `vfemax`: Referencia de límite de corriente de campo del excitador (V).  Valor típico = 6,9. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5,79. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -5,79. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -37,31 +37,43 @@ ExcIEEEAC7B:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &excieeeac7b_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -73,72 +85,86 @@ ExcIEEEAC7B:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     kc:    
       description: 'Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.18. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kd:    
       description: 'Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.02. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kdr:    
       description: 'Voltage regulator derivative gain (K).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ke:    
       description: 'Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf1:    
       description: 'Excitation control system stabilizer gain (K).  Typical Value = 0.212. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf2:    
       description: 'Excitation control system stabilizer gain (K).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf3:    
       description: 'Excitation control system stabilizer gain (K).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kia:    
       description: 'Voltage regulator integral gain (K).  Typical Value = 59.69. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kir:    
       description: 'Voltage regulator integral gain (K).  Typical Value = 4.24. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kl:    
       description: 'Exciter field voltage lower limit parameter (K).  Typical Value = 10. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kp:    
       description: 'Potential circuit gain coefficient (K).  Typical Value = 4.96. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kpa:    
       description: 'Voltage regulator proportional gain (K).  Typical Value = 65.36. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kpr:    
       description: 'Voltage regulator proportional gain (K).  Typical Value = 4.24. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -290,16 +316,21 @@ ExcIEEEAC7B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *excieeeac7b_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -310,80 +341,98 @@ ExcIEEEAC7B:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     seve1:    
       description: 'Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.44. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seve2:    
       description: 'Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.075. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tdr:    
       description: 'Lag time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     te:    
       description: 'Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 1.1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tf:    
       description: 'Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcIEEEAC7B'    
       enum:    
         - ExcIEEEAC7B    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vamax:    
       description: 'Maximum voltage regulator output (V).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vamin:    
       description: 'Minimum voltage regulator output (V).  Typical Value = -0.95. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ve1:    
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (V) equals V (V).  Typical Value = 6.3. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ve2:    
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.02. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vemin:    
       description: 'Minimum exciter voltage output (V).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vfemax:    
       description: 'Exciter field current limit reference (V).  Typical Value = 6.9. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmax:    
       description: 'Maximum voltage regulator output (V).  Typical Value = 5.79. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmin:    
       description: 'Minimum voltage regulator output (V).  Typical Value = -5.79. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
