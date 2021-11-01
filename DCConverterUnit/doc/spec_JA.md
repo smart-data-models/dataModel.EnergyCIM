@@ -294,7 +294,7 @@ DCConverterUnit:
 ```  
 </details>    
 ## ペイロードの例  
-DCConverterUnitをJSON-LD形式でkey-valuesにした例は利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+DCConverterUnitをJSON-LD形式でkey-valuesにした例は利用できません。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 DCConverterUnitをJSON-LD形式で正規化した例はありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 DCConverterUnitをJSON-LD形式でkey-valuesにした例は利用できません。これは`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 DCConverterUnitをJSON-LD形式で正規化した例はありません。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
