@@ -6,7 +6,7 @@ Entidad: ExcIEEEST1A
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ilr`: Referencia de límite de corriente de salida del excitador (I).  Valor típico = 0. Por defecto: 0.0  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 190. Por defecto: 0,0  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (K). Valor típico = 0,08. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `klr`: Ganancia del limitador de corriente de salida del excitador (K).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pssin`: Selector de la entrada del Estabilizador del Sistema de Potencia (PSS) (PSSin). verdadero = entrada PSS (Vs) añadida a la señal de error falso = entrada PSS (Vs) añadida a la salida del regulador de tensión. Valor típico = verdadero. Por defecto: Falso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tb`: Constante de tiempo del regulador de tensión (T).  Valor típico = 10. Por defecto: 0  - `tb1`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tc`: Constante de tiempo del regulador de tensión (T).  Valor típico = 1. Por defecto: 0  - `tc1`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST1A  - `uelin`: Selector de la conexión de la entrada UEL (UELin). Valor típico = ignorar la señal UEL. Por defecto: Ninguno  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 14,5. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -14,5. Por defecto: 0,0  - `vimax`: Límite máximo de entrada del regulador de tensión (V).  Valor típico = 999. Por defecto: 0,0  - `vimin`: Límite mínimo de entrada del regulador de tensión (V).  Valor típico = -999. Por defecto: 0,0  - `vrmax`: Salidas máximas del regulador de tensión (V).  Valor típico = 7,8. Por defecto: 0,0  - `vrmin`: Salidas mínimas del regulador de tensión (V).  Valor típico = -6,7. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `ilr`: Referencia de límite de corriente de salida del excitador (I).  Valor típico = 0. Por defecto: 0.0  - `ka`: Ganancia del regulador de tensión (K).  Valor típico = 190. Por defecto: 0,0  - `kc`: Factor de carga del rectificador proporcional a la reactancia de conmutación (K). Valor típico = 0,08. Por defecto: 0,0  - `kf`: Ganancias del estabilizador del sistema de control de excitación (K).  Valor típico = 0. Por defecto: 0.0  - `klr`: Ganancia del limitador de corriente de salida del excitador (K).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pssin`: Selector de la entrada del Estabilizador del Sistema de Potencia (PSS) (PSSin). verdadero = entrada PSS (Vs) añadida a la señal de error falso = entrada PSS (Vs) añadida a la salida del regulador de tensión. Valor típico = verdadero. Por defecto: Falso  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ta`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tb`: Constante de tiempo del regulador de tensión (T).  Valor típico = 10. Por defecto: 0  - `tb1`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tc`: Constante de tiempo del regulador de tensión (T).  Valor típico = 1. Por defecto: 0  - `tc1`: Constante de tiempo del regulador de tensión (T).  Valor típico = 0. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (T).  Valor típico = 1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST1A  - `uelin`: Selector de la conexión de la entrada UEL (UELin). Valor típico = ignorar la señal UEL. Por defecto: Ninguno  - `vamax`: Salida máxima del regulador de tensión (V).  Valor típico = 14,5. Por defecto: 0,0  - `vamin`: Salida mínima del regulador de tensión (V).  Valor típico = -14,5. Por defecto: 0,0  - `vimax`: Límite máximo de entrada del regulador de tensión (V).  Valor típico = 999. Por defecto: 0,0  - `vimin`: Límite mínimo de entrada del regulador de tensión (V).  Valor típico = -999. Por defecto: 0,0  - `vrmax`: Salidas máximas del regulador de tensión (V).  Valor típico = 7,8. Por defecto: 0,0  - `vrmin`: Salidas mínimas del regulador de tensión (V).  Valor típico = -6,7. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -37,31 +37,43 @@ ExcIEEEST1A:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &excieeest1a_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -73,32 +85,38 @@ ExcIEEEST1A:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     ilr:    
       description: 'Exciter output current limit reference (I).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ka:    
       description: 'Voltage regulator gain (K).  Typical Value = 190. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kc:    
       description: 'Rectifier loading factor proportional to commutating reactance (K). Typical Value = 0.08. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf:    
       description: 'Excitation control system stabilizer gains (K).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     klr:    
       description: 'Exciter output current limiter gain (K).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -250,21 +268,27 @@ ExcIEEEST1A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *excieeest1a_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pssin:    
       description: 'Selector of the Power System Stabilizer (PSS) input (PSSin). true = PSS input (Vs) added to error signal false = PSS input (Vs) added to voltage regulator output. Typical Value = true. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -275,80 +299,98 @@ ExcIEEEST1A:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     ta:    
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tb:    
       description: 'Voltage regulator time constant (T).  Typical Value = 10. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tb1:    
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc:    
       description: 'Voltage regulator time constant (T).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc1:    
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tf:    
       description: 'Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcIEEEST1A'    
       enum:    
         - ExcIEEEST1A    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     uelin:    
       description: 'Selector of the connection of the UEL input (UELin). Typical Value = ignoreUELsignal. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vamax:    
       description: 'Maximum voltage regulator output (V).  Typical Value = 14.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vamin:    
       description: 'Minimum voltage regulator output (V).  Typical Value = -14.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vimax:    
       description: 'Maximum voltage regulator input limit (V).  Typical Value = 999. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vimin:    
       description: 'Minimum voltage regulator input limit (V).  Typical Value = -999. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmax:    
       description: 'Maximum voltage regulator outputs (V).  Typical Value = 7.8. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmin:    
       description: 'Minimum voltage regulator outputs (V).  Typical Value = -6.7. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
