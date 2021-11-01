@@ -392,5 +392,5 @@ DiscExcContIEEEDEC1A:
 ## ペイロードの例  
 キーバリューとしてJSON-LD形式のDiscExcContIEEEDEC1Aの例を利用できません。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 DiscExcContIEEEDEC1Aの例をJSON-LD形式で正規化したものは利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-DiscExcContIEEEDEC1Aの例をJSON-LD形式でkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+キーバリューとしてJSON-LD形式のDiscExcContIEEEDEC1Aの例を利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 DiscExcContIEEEDEC1Aの例をJSON-LD形式で正規化したものは利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
