@@ -345,4 +345,4 @@ DiagramObject:
 key-valuesとしてJSON-LD形式のDiagramObjectの例を利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 利用できないのは、正規化されたJSON-LD形式のDiagramObjectの例です。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 key-valuesとしてJSON-LD形式のDiagramObjectの例を利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-利用できないのは、正規化されたJSON-LD形式のDiagramObjectの例です。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキスト・データを返します。  
+利用できないのは、正規化されたJSON-LD形式のDiagramObjectの例です。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
