@@ -2,13 +2,13 @@ Entität: ExcAC1A
 ================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcAC1A/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Modifiziertes IEEE AC1A-Gleichrichter-Erregersystem mit alternatorgespeister Rückkopplungsquelle mit unterschiedlicher Rate.**  
+Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Modifiziertes IEEE AC1A Gleichrichter-Erregersystem mit Wechselstromversorgung und unterschiedlicher Rückkopplungsquelle **.  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hvlvgates`: Gibt an, ob sowohl HV-Gate als auch LV-Gate aktiv sind (HVLVgates). true = Gates werden verwendet false = Gates werden nicht verwendet. Typischer Wert = true. Voreinstellung: False  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (Ka).  Typischer Wert = 400. Voreinstellung: 0,0  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (Kc). Typischer Wert = 0,2. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen des Erregergenerators (Kd).  Typischer Wert = 0,38. Voreinstellung: 0,0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (Ke).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf`: Erregungssteuerungssystem Stabilisatorverstärkungen (Kf).  Typischer Wert = 0,03. Voreinstellung: 0.0  - `kf1`: Koeffizient, um eine unterschiedliche Nutzung des Modells zu ermöglichen (Kf1).  Typischer Wert = 0. Voreinstellung: 0.0  - `kf2`: Koeffizient, um eine unterschiedliche Verwendung des Modells zu ermöglichen (Kf2).  Typischer Wert = 1. Voreinstellung: 0.0  - `ks`: Koeffizient, um eine unterschiedliche Verwendung des Modell-Geschwindigkeitskoeffizienten (Ks) zu ermöglichen.  Typischer Wert = 0. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve1, hinter der Kommutierungsreaktanz (Se[Ve1]).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve2, hinter der Kommutierungsreaktanz (Se[Ve2]).  Typischer Wert = 0,03. Voreinstellung: 0.0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ta`: Zeitkonstante des Spannungsreglers (Ta).  Typischer Wert = 0,02. Voreinstellung: 0  - `tb`: Zeitkonstante des Spannungsreglers (Tb).  Typischer Wert = 0. Voreinstellung: 0  - `tc`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate in Verbindung mit der Erregersteuerung (Te).  Typischer Wert = 0,8. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators des Erregungssteuerungssystems (Tf).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcAC1A sein  - `vamax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 14,5. Voreinstellung: 0.0  - `vamin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -14,5. Voreinstellung: 0,0  - `ve1`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve1).  Typischer Wert = 4,18. Voreinstellung: 0,0  - `ve2`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve2).  Typischer Wert = 3,14. Voreinstellung: 0,0  - `vrmax`: Maximale Spannungsreglerausgänge (Vrmax).  Typischer Wert = 6,03. Voreinstellung: 0.0  - `vrmin`: Minimale Spannungsreglerausgänge (Rrmin).  Typischer Wert = -5,43. Voreinstellung: 0,0    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hvlvgates`: Gibt an, ob sowohl HV-Gate als auch LV-Gate aktiv sind (HVLVgates). true = Gates werden verwendet false = Gates werden nicht verwendet. Typischer Wert = true. Voreinstellung: Falsch  - `id`: Eindeutiger Bezeichner der Entität  - `ka`: Verstärkung des Spannungsreglers (Ka).  Typischer Wert = 400. Voreinstellung: 0,0  - `kc`: Belastungsfaktor des Gleichrichters proportional zur Kommutierungsreaktanz (Kc). Typischer Wert = 0,2. Voreinstellung: 0,0  - `kd`: Entmagnetisierungsfaktor, eine Funktion der Reaktanzen der Erregergeneratoren (Kd).  Typischer Wert = 0,38. Voreinstellung: 0,0  - `ke`: Erregerkonstante bezogen auf das selbsterregte Feld (Ke).  Typischer Wert = 1. Voreinstellung: 0,0  - `kf`: Verstärkung des Stabilisators des Erregungssteuerungssystems (Kf).  Typischer Wert = 0,03. Voreinstellung: 0.0  - `kf1`: Koeffizient für die unterschiedliche Verwendung des Modells (Kf1).  Typischer Wert = 0. Voreinstellung: 0.0  - `kf2`: Koeffizient, der eine unterschiedliche Verwendung des Modells ermöglicht (Kf2).  Typischer Wert = 1. Voreinstellung: 0,0  - `ks`: Koeffizient, um eine unterschiedliche Verwendung des Modell-Geschwindigkeitskoeffizienten (Ks) zu ermöglichen.  Typischer Wert = 0. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `seve1`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve1, hinter der Kommutierungsreaktanz (Se[Ve1]).  Typischer Wert = 0,1. Voreinstellung: 0,0  - `seve2`: Wert der Erregersättigungsfunktion bei der entsprechenden Erregerspannung, Ve2, hinter der Kommutierungsreaktanz (Se[Ve2]).  Typischer Wert = 0,03. Voreinstellung: 0.0  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `ta`: Zeitkonstante des Spannungsreglers (Ta).  Typischer Wert = 0,02. Voreinstellung: 0  - `tb`: Zeitkonstante des Spannungsreglers (Tb).  Typischer Wert = 0. Voreinstellung: 0  - `tc`: Zeitkonstante des Spannungsreglers (T).  Typischer Wert = 0. Voreinstellung: 0  - `te`: Erregerzeitkonstante, Integrationsrate im Zusammenhang mit der Erregersteuerung (Te).  Typischer Wert = 0,8. Voreinstellung: 0  - `tf`: Zeitkonstante des Stabilisators des Erregungssteuerungssystems (Tf).  Typischer Wert = 1. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss ExcAC1A sein  - `vamax`: Maximaler Spannungsreglerausgang (V).  Typischer Wert = 14,5. Voreinstellung: 0.0  - `vamin`: Minimaler Spannungsreglerausgang (V).  Typischer Wert = -14,5. Voreinstellung: 0,0  - `ve1`: Ausgangsspannungen des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve1).  Typischer Wert = 4,18. Voreinstellung: 0,0  - `ve2`: Ausgangsspannung des Erregergenerators hinter der Kommutierungsreaktanz, bei der die Sättigung definiert ist (Ve2).  Typischer Wert = 3,14. Voreinstellung: 0,0  - `vrmax`: Maximale Spannungsreglerausgänge (Vrmax).  Typischer Wert = 6,03. Voreinstellung: 0.0  - `vrmin`: Minimale Spannungsreglerausgänge (Rrmin).  Typischer Wert = -5,43. Voreinstellung: 0.0    
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Konvertierung des Common Information Model (CIM), das in der Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können einen falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -37,36 +37,49 @@ ExcAC1A:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     hvlvgates:    
       description: 'Indicates if both HV gate and LV gate are active (HVLVgates). true = gates are used false = gates are not used. Typical Value = true. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &excac1a_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -78,47 +91,56 @@ ExcAC1A:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     ka:    
       description: 'Voltage regulator gain (Ka).  Typical Value = 400. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kc:    
       description: 'Rectifier loading factor proportional to commutating reactance (Kc). Typical Value = 0.2. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kd:    
       description: 'Demagnetizing factor, a function of exciter alternator reactances (Kd).  Typical Value = 0.38. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ke:    
       description: 'Exciter constant related to self-excited field (Ke).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf:    
       description: 'Excitation control system stabilizer gains (Kf).  Typical Value = 0.03. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf1:    
       description: 'Coefficient to allow different usage of the model (Kf1).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf2:    
       description: 'Coefficient to allow different usage of the model (Kf2).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ks:    
       description: 'Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -270,16 +292,21 @@ ExcAC1A:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *excac1a_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -290,86 +317,104 @@ ExcAC1A:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     seve1:    
       description: 'Exciter saturation function value at the corresponding exciter voltage, Ve1, back of commutating reactance (Se[Ve1]).  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seve2:    
       description: 'Exciter saturation function value at the corresponding exciter voltage, Ve2, back of commutating reactance (Se[Ve2]).  Typical Value = 0.03. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     ta:    
       description: 'Voltage regulator time constant (Ta).  Typical Value = 0.02. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tb:    
       description: 'Voltage regulator time constant (Tb).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc:    
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     te:    
       description: 'Exciter time constant, integration rate associated with exciter control (Te).  Typical Value = 0.8. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tf:    
       description: 'Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcAC1A'    
       enum:    
         - ExcAC1A    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vamax:    
       description: 'Maximum voltage regulator output (V).  Typical Value = 14.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vamin:    
       description: 'Minimum voltage regulator output (V).  Typical Value = -14.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ve1:    
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1).  Typical Value = 4.18. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ve2:    
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve2).  Typical Value = 3.14. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmax:    
       description: 'Maximum voltage regulator outputs (Vrmax).  Typical Value = 6.03. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmin:    
       description: 'Minimum voltage regulator outputs (Rrmin).  Typical Value = -5.43. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
-Nicht verfügbar das Beispiel einer ExcAC1A im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel einer ExcAC1A im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel einer ExcAC1A im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel einer ExcAC1A im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel einer ExcAC1A im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel einer ExcAC1A im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel einer ExcAC1A im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel einer ExcAC1A im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
