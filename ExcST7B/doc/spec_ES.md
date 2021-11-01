@@ -6,7 +6,7 @@ Entidad: ExcST7B
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kh`: Ganancia de retroalimentación de la puerta de alto valor (Kh).  Valor típico = 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (Kia).  Valor típico = 1. Por defecto: 0,0  - `kl`: Ganancia de retroalimentación de la puerta de bajo valor (Kl).  Valor típico = 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (Kpa).  Valor típico = 40. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tb`: Constante de tiempo de retardo del regulador (Tb).  Valor típico = 1. Por defecto: 0  - `tc`: Constante de tiempo del regulador (Tc).  Valor típico = 1. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (Tf).  Valor típico = 1. Por defecto: 0  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (Tg).  Valor típico = 1. Por defecto: 0  - `tia`: Constante de tiempo de retroalimentación (Tia).  Valor típico = 3. Por defecto: 0  - `ts`: Constante de tiempo de disparo del rectificador (Ts).  Valor típico = 0. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcST7B  - `uelin`: Selector de entrada UEL (UELin). Valor típico = noUELinput. Por defecto: Ninguno  - `vmax`: Señal de referencia de tensión máxima (Vmax).  Valor típico = 1,1. Por defecto: 0,0  - `vmin`: Señal mínima de referencia de tensión (Vmin).  Valor típico = 0,9. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (Vrmin).  Valor típico = -4,5. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kh`: Ganancia de retroalimentación de la puerta de alto valor (Kh).  Valor típico = 1. Por defecto: 0,0  - `kia`: Ganancia integral del regulador de tensión (Kia).  Valor típico = 1. Por defecto: 0,0  - `kl`: Ganancia de retroalimentación de la puerta de bajo valor (Kl).  Valor típico = 1. Por defecto: 0,0  - `kpa`: Ganancia proporcional del regulador de tensión (Kpa).  Valor típico = 40. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `oelin`: Selector de entrada OEL (OELin). Valor típico = noOELinput. Por defecto: Ninguno  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tb`: Constante de tiempo de retardo del regulador (Tb).  Valor típico = 1. Por defecto: 0  - `tc`: Constante de tiempo del regulador (Tc).  Valor típico = 1. Por defecto: 0  - `tf`: Constante de tiempo del estabilizador del sistema de control de la excitación (Tf).  Valor típico = 1. Por defecto: 0  - `tg`: Constante de tiempo de realimentación del regulador de tensión de campo del bucle interior (Tg).  Valor típico = 1. Por defecto: 0  - `tia`: Constante de tiempo de retroalimentación (Tia).  Valor típico = 3. Por defecto: 0  - `ts`: Constante de tiempo de disparo del rectificador (Ts).  Valor típico = 0. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcST7B  - `uelin`: Selector de entrada UEL (UELin). Valor típico = noUELinput. Por defecto: Ninguno  - `vmax`: Señal de referencia de tensión máxima (Vmax).  Valor típico = 1,1. Por defecto: 0,0  - `vmin`: Señal mínima de referencia de tensión (Vmin).  Valor típico = 0,9. Por defecto: 0,0  - `vrmax`: Salida máxima del regulador de tensión (Vrmax).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (Vrmin).  Valor típico = -4,5. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -37,31 +37,43 @@ ExcST7B:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &excst7b_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -73,27 +85,32 @@ ExcST7B:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     kh:    
       description: 'High-value gate feedback gain (Kh).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kia:    
       description: 'Voltage regulator integral gain (Kia).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kl:    
       description: 'Low-value gate feedback gain (Kl).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kpa:    
       description: 'Voltage regulator proportional gain (Kpa).  Typical Value = 40. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -245,21 +262,27 @@ ExcST7B:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     oelin:    
       description: 'OEL input selector (OELin). Typical Value = noOELinput. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *excst7b_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -270,70 +293,86 @@ ExcST7B:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tb:    
       description: 'Regulator lag time constant (Tb).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc:    
       description: 'Regulator lead time constant (Tc).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tf:    
       description: 'Excitation control system stabilizer time constant (Tf).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tg:    
       description: 'Feedback time constant of inner loop field voltage regulator (Tg).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tia:    
       description: 'Feedback time constant (Tia).  Typical Value = 3. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ts:    
       description: 'Rectifier firing time constant (Ts).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcST7B'    
       enum:    
         - ExcST7B    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     uelin:    
       description: 'UEL input selector (UELin). Typical Value = noUELinput. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vmax:    
       description: 'Maximum voltage reference signal (Vmax).  Typical Value = 1.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vmin:    
       description: 'Minimum voltage reference signal (Vmin).  Typical Value = 0.9. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmax:    
       description: 'Maximum voltage regulator output (Vrmax).  Typical Value = 5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vrmin:    
       description: 'Minimum voltage regulator output (Vrmin).  Typical Value = -4.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
