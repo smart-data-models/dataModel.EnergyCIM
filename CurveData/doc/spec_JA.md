@@ -2,7 +2,7 @@
 ============  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/CurveData/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。曲線を定義するための多目的データポイント。  X軸とY軸の値を特定のデータタイプとともに指定するために、より具体的なクラスを使用できる場合は、この汎用クラスの使用は推奨されません。  
+グローバルな記述です。**CIMデータモデルからの採用。曲線を定義するための多目的データポイント。  X軸とY軸の値を特定のデータタイプとともに指定するために、より具体的なクラスを使用できる場合、この汎用クラスの使用は推奨されません。  
 
 ## プロパティのリスト  
 
