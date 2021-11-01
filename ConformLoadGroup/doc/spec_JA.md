@@ -294,7 +294,7 @@ ConformLoadGroup:
 ```  
 </details>    
 ## ペイロードの例  
-JSON-LD形式のConformLoadGroupの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-利用できないのは、ConformLoadGroupを正規化したJSON-LD形式の例です。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-ConformLoadGroupの例をkey-valuesとしてJSON-LD形式で利用できません。これは、`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のConformLoadGroupの例をkey-valuesとして利用できません。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+利用できないのは、ConformLoadGroupを正規化したJSON-LD形式の例です。これはオプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+ConformLoadGroupの例をkey-valuesとしてJSON-LD形式で利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 利用できないのは、ConformLoadGroupを正規化したJSON-LD形式の例です。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
