@@ -2,7 +2,7 @@ Entität: ACDCConverterDCTerminal
 ================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ACDCConverterDCTerminal/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Ein elektrischer DC-Anschlusspunkt am AC/DC-Wandler. Der AC/DC-Wandler ist auch mit der AC-Seite elektrisch verbunden. Der Wechselstromanschluss wird von den wechselstromführenden Geräten auf die gleiche Weise übernommen wie bei allen anderen Wechselstromgeräten. Die Gleichstromklemme des AC/DC-Wandlers ist von der allgemeinen Gleichstromklemme getrennt, um die Verbindung mit der Wechselstromseite auf den AC/DC-Wandler zu beschränken und um zu verhindern, dass andere gleichstromführende Geräte an die Wechselstromseite angeschlossen werden können.  
+Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Ein elektrischer DC-Anschlusspunkt am AC/DC-Wandler. Der AC/DC-Wandler ist auch mit der AC-Seite elektrisch verbunden. Die AC-Verbindung wird von der AC-leitenden Ausrüstung in der gleichen Weise wie jede andere AC-Ausrüstung vererbt. Die Gleichstromklemme des AC/DC-Wandlers ist von der allgemeinen Gleichstromklemme getrennt, um die Verbindung mit der Wechselstromseite auf den AC/DC-Wandler zu beschränken und um zu verhindern, dass andere gleichstromführende Geräte an die Wechselstromseite angeschlossen werden können.  
 
 ## Liste der Eigenschaften  
 
