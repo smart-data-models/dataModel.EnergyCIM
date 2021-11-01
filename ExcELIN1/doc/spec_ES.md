@@ -6,7 +6,7 @@ Entidad: ExcELIN1
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dpnf`: Banda muerta de seguimiento del regulador (Dpnf).  Valor típico = 0. Por defecto: 0.0  - `efmax`: Tensión máxima de excitación en circuito abierto (Efmax).  Valor típico = 5. Por defecto: 0,0  - `efmin`: Tensión mínima de excitación en circuito abierto (Efmin).  Valor típico = -5. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ks1`: Ganancia del estabilizador 1 (Ks1).  Valor típico = 0. Por defecto: 0.0  - `ks2`: Ganancia del estabilizador 2 (Ks2).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `smax`: Salida límite del estabilizador (smax).  Valor típico = 0,1. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tfi`: Constante de tiempo del transductor de corriente (Tfi).  Valor típico = 0. Por defecto: 0  - `tnu`: Constante de tiempo de reposición del regulador (Tnu).  Valor típico = 2. Por defecto: 0  - `ts1`: Constante de tiempo de retraso de fase del estabilizador (Ts1).  Valor típico = 1. Por defecto: 0  - `ts2`: Constante de tiempo del filtro estabilizador (Ts2).  Valor típico = 1. Por defecto: 0  - `tsw`: Parámetros del estabilizador (Tsw).  Valor típico = 3. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcELIN1  - `vpi`: Ganancia del regulador de corriente (Vpi).  Valor típico = 12,45. Por defecto: 0,0  - `vpnf`: Ganancia de seguimiento del regulador (Vpnf).  Valor típico = 2. Por defecto: 0,0  - `vpu`: Ganancia proporcional del regulador de tensión (Vpu).  Valor típico = 34,5. Por defecto: 0,0  - `xe`: Reactancia efectiva del transformador de excitación (Xe) (>=0).  Xe representa la regulación del conjunto transformador/rectificador.  Valor típico = 0,06. Por defecto: 0,0    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dpnf`: Banda muerta de seguimiento del regulador (Dpnf).  Valor típico = 0. Por defecto: 0.0  - `efmax`: Tensión máxima de excitación en circuito abierto (Efmax).  Valor típico = 5. Por defecto: 0,0  - `efmin`: Tensión mínima de excitación en circuito abierto (Efmin).  Valor típico = -5. Por defecto: 0,0  - `id`: Identificador único de la entidad  - `ks1`: Ganancia del estabilizador 1 (Ks1).  Valor típico = 0. Por defecto: 0.0  - `ks2`: Ganancia del estabilizador 2 (Ks2).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `smax`: Salida límite del estabilizador (smax).  Valor típico = 0,1. Por defecto: 0,0  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tfi`: Constante de tiempo del transductor de corriente (Tfi).  Valor típico = 0. Por defecto: 0  - `tnu`: Constante de tiempo de reposición del regulador (Tnu).  Valor típico = 2. Por defecto: 0  - `ts1`: Constante de tiempo de retraso de fase del estabilizador (Ts1).  Valor típico = 1. Por defecto: 0  - `ts2`: Constante de tiempo del filtro estabilizador (Ts2).  Valor típico = 1. Por defecto: 0  - `tsw`: Parámetros del estabilizador (Tsw).  Valor típico = 3. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcELIN1  - `vpi`: Ganancia del regulador de corriente (Vpi).  Valor típico = 12,45. Por defecto: 0,0  - `vpnf`: Ganancia de seguimiento del regulador (Vpnf).  Valor típico = 2. Por defecto: 0,0  - `vpu`: Ganancia proporcional del regulador de tensión (Vpu).  Valor típico = 34,5. Por defecto: 0,0  - `xe`: Reactancia efectiva del transformador de excitación (Xe) (>=0).  Xe representa la regulación del conjunto transformador/rectificador.  Valor típico = 0,06. Por defecto: 0,0    
 Propiedades requeridas  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 ## Descripción del modelo de datos de las propiedades  
@@ -37,46 +37,61 @@ ExcELIN1:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dpnf:    
       description: 'Controller follow up dead band (Dpnf).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     efmax:    
       description: 'Maximum open circuit excitation voltage (Efmax).  Typical Value = 5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     efmin:    
       description: 'Minimum open circuit excitation voltage (Efmin).  Typical Value = -5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &excelin1_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -88,17 +103,20 @@ ExcELIN1:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     ks1:    
       description: 'Stabilizer Gain 1 (Ks1).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ks2:    
       description: 'Stabilizer Gain 2 (Ks2).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -250,16 +268,21 @@ ExcELIN1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *excelin1_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -270,65 +293,80 @@ ExcELIN1:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     smax:    
       description: 'Stabilizer Limit Output (smax).  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tfi:    
       description: 'Current transducer time constant (Tfi).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tnu:    
       description: 'Controller reset time constant (Tnu).  Typical Value = 2. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ts1:    
       description: 'Stabilizer Phase Lag Time Constant (Ts1).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ts2:    
       description: 'Stabilizer Filter Time Constant (Ts2).  Typical Value = 1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tsw:    
       description: 'Stabilizer parameters (Tsw).  Typical Value = 3. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be ExcELIN1'    
       enum:    
         - ExcELIN1    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vpi:    
       description: 'Current controller gain (Vpi).  Typical Value = 12.45. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vpnf:    
       description: 'Controller follow up gain (Vpnf).  Typical Value = 2. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vpu:    
       description: 'Voltage controller proportional gain (Vpu).  Typical Value = 34.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     xe:    
       description: 'Excitation transformer effective reactance (Xe) (>=0).  Xe represents the regulation of the transformer/rectifier unit.  Typical Value = 0.06. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
 ```  
