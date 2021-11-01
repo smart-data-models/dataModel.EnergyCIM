@@ -1,0 +1,504 @@
+エンティティExcREXS  
+=============  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcREXS/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**CIMデータモデルからの採用。General Purpose Rotating Excitation System Model（汎用回転励起システムモデル）。  このモデルは、DC電源がACまたはDC発電機である広範囲の励磁システムを表現するために使用することができる。IEEEタイプのAC1、AC2、DC1、DC2の各励磁システムモデルを網羅している。  
+
+## プロパティのリスト  
+
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `e1`: フィールド電圧値1（E1）。  代表値＝3。デフォルト：0.0  - `e2`: フィールド電圧値2（E2）。  代表値＝4。デフォルト：0.0  - `fbf`: レートフィードバック信号フラグ（Fbf）。代表値＝fieldCurrent。デフォルトなし  - `flimf`: リミットタイプフラグ（Flimf）。  代表値＝0、デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `kc`: 整流器レギュレーションファクター（Kc）。  代表値＝0.05初期値：0.0  - `kd`: エキサイターレギュレーションファクター（Kd）。  代表値＝2。初期値：0.0  - `ke`: エキサイターフィールド比例定数（Ke）。  典型的な値は1です。初期値：0.0  - `kefd`: フィールド電圧フィードバックゲイン（Kefd）。  代表値＝0、デフォルト：0.0  - `kf`: レートフィードバックゲイン（Kf）。  代表値＝0.05。デフォルト：0  - `kh`: フィールド電圧コントローラのフィードバックゲイン（Kh）。  代表値＝0、デフォルト：0.0  - `kii`: Field Current Regulator Integral Gain (Kii)の略。  代表値＝0、デフォルト：0.0  - `kip`: フィールド電流レギュレータの比例ゲイン（Kip）。  代表値＝1。初期値：0.0  - `ks`: モデルスピード係数(Ks)を使い分けるための係数。  代表値＝0、初期値＝0.0  - `kvi`: 電圧レギュレータ積分ゲイン（Kvi）。  代表値＝0、初期値＝0.0  - `kvp`: ボルテージレギュレータの比例ゲイン（Kvp）。  代表値＝2800。初期値：0.0  - `kvphz`: V/Hzリミッターゲイン（Kvphz）。  代表値＝0、デフォルト：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nvphz`: V/Hzリミッターのピックアップ速度（Nvphz）。  代表値＝0、初期値＝0.0  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `se1`: E1(Se1)の飽和係数。  代表値＝0.0001。初期値：0.0  - `se2`: E2(Se2)の飽和係数。  代表値＝0.001。初期値：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 電圧レギュレータ時定数（Ta）。  Typical Value = 0.01.デフォルト：0  - `tb1`: ラグ時定数（Tb1）。  代表値＝0 既定値：0  - `tb2`: ラグ時定数（Tb2）。  代表値＝0、デフォルト：0  - `tc1`: リードタイム定数（Tc1）。  代表値＝0、デフォルト：0  - `tc2`: リードタイム定数（Tc2）。  代表値＝0、デフォルト：0  - `te`: Exciter Field Time Constant (Te)の略。  典型的な値は1.2です。デフォルト：0  - `tf`: レートフィードバック時定数（Tf）。  代表値＝1。デフォルト：0  - `tf1`: フィードバックリード時定数（Tf1）。  代表値＝0、初期値＝0  - `tf2`: フィードバック・ラグ時定数（Tf2）。  代表値＝0、初期値＝0  - `tp`: フィールド電流ブリッジ時定数（Tp）。  代表値＝0 既定値＝0  - `type`: NGSIタイプです。ExcREXSである必要があります。  - `vcmax`: 最大化合物電圧（Vcmax）。  代表値＝0、初期値＝0.0  - `vfmax`: 最大エキサイターフィールド電流（Vfmax）。  代表値＝47。初期値：0.0  - `vfmin`: 最小エキサイターフィールド電流（Vfmin）。  代表値＝-20。初期値：0.0  - `vimax`: ボルテージレギュレータ入力制限（Vimax）。  代表値＝0.1。初期値：0.0  - `vrmax`: コントローラの最大出力（Vrmax）。  代表値＝47。デフォルト：0.0  - `vrmin`: コントローラの最小出力（Vrmin）。  代表値＝-20。初期値：0.0  - `xc`: Exciter compounding reactance (Xc).  代表値＝0、初期値＝0.0    
+必須項目  
+CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+ExcREXS:    
+  description: 'Adapted from CIM data models. General Purpose Rotating Excitation System Model.  This model can be used to represent a wide range of excitation systems whose DC power source is an AC or DC generator. It encompasses IEEE type AC1, AC2, DC1, and DC2 excitation system models.'    
+  properties:    
+    address:    
+      description: 'The mailing address'    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: 'An alternative name for this item'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: 'The geographic area where a service or offered item is provided'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: 'A description of this item'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    e1:    
+      description: 'Field voltage value 1 (E1).  Typical Value = 3. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    e2:    
+      description: 'Field voltage value 2 (E2).  Typical Value = 4. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    fbf:    
+      description: 'Rate feedback signal flag (Fbf). Typical Value = fieldCurrent. Default: None'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    flimf:    
+      description: 'Limit type flag (Flimf).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    id:    
+      anyOf: &excrexs_-_properties_-_owner_-_items_-_anyof    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Unique identifier of the entity'    
+      x-ngsi:    
+        type: Property    
+    kc:    
+      description: 'Rectifier regulation factor (Kc).  Typical Value = 0.05. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kd:    
+      description: 'Exciter regulation factor (Kd).  Typical Value = 2. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    ke:    
+      description: 'Exciter field proportional constant (Ke).  Typical Value = 1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kefd:    
+      description: 'Field voltage feedback gain (Kefd).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kf:    
+      description: 'Rate feedback gain (Kf).  Typical Value = 0.05. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kh:    
+      description: 'Field voltage controller feedback gain (Kh).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kii:    
+      description: 'Field Current Regulator Integral Gain (Kii).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kip:    
+      description: 'Field Current Regulator Proportional Gain (Kip).  Typical Value = 1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    ks:    
+      description: 'Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kvi:    
+      description: 'Voltage Regulator Integral Gain (Kvi).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kvp:    
+      description: 'Voltage Regulator Proportional Gain (Kvp).  Typical Value = 2800. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kvphz:    
+      description: 'V/Hz limiter gain (Kvphz).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Point'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON LineString'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Polygon'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPoint'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiLineString'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPolygon'    
+          type: object    
+      x-ngsi:    
+        type: Geoproperty    
+    name:    
+      description: 'The name of this item.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    nvphz:    
+      description: 'Pickup speed of V/Hz limiter (Nvphz).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf: *excrexs_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    se1:    
+      description: 'Saturation factor at E1 (Se1).  Typical Value = 0.0001. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    se2:    
+      description: 'Saturation factor at E2 (Se2).  Typical Value = 0.001. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    ta:    
+      description: 'Voltage Regulator time constant (Ta).  Typical Value = 0.01. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tb1:    
+      description: 'Lag time constant (Tb1).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tb2:    
+      description: 'Lag time constant (Tb2).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tc1:    
+      description: 'Lead time constant (Tc1).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tc2:    
+      description: 'Lead time constant (Tc2).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    te:    
+      description: 'Exciter field time constant (Te).  Typical Value = 1.2. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tf:    
+      description: 'Rate feedback time constant (Tf).  Typical Value = 1. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tf1:    
+      description: 'Feedback lead time constant (Tf1).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tf2:    
+      description: 'Feedback lag time constant (Tf2).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tp:    
+      description: 'Field current Bridge time constant (Tp).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    type:    
+      description: 'NGSI type. It has to be ExcREXS'    
+      enum:    
+        - ExcREXS    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    vcmax:    
+      description: 'Maximum compounding voltage (Vcmax).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vfmax:    
+      description: 'Maximum Exciter Field Current (Vfmax).  Typical Value = 47. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vfmin:    
+      description: 'Minimum Exciter Field Current (Vfmin).  Typical Value = -20. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vimax:    
+      description: 'Voltage Regulator Input Limit (Vimax).  Typical Value = 0.1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vrmax:    
+      description: 'Maximum controller output (Vrmax).  Typical Value = 47. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vrmin:    
+      description: 'Minimum controller output (Vrmin).  Typical Value = -20. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    xc:    
+      description: 'Exciter compounding reactance (Xc).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+  required: []    
+  type: object    
+```  
+</details>    
+## ペイロードの例  
+キーバリューとしてJSON-LD形式のExcREXSの例を利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+正規化されたJSON-LD形式のExcREXSの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のExcREXSをkey-valuesにした例はありません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+正規化されたJSON-LD形式のExcREXSの例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
