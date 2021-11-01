@@ -2,13 +2,13 @@
 ===================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/BusNameMarker/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。ユーザー標準の名前をトポロジーバスに適用するために使用される。通常、バス／ブランチケースの生成に使用される。バス名で通常接続されている1つ以上の端子に関連付けられている。関連するターミナルは、通常、非保持型スイッチによって接続される。リングバスステーション構成の場合、リング内のすべてのバスバーターミナルが通常関連付けられる。ブレーカー・アンド・ハーフ方式の場合、通常は両方のバスバーが関連付けられます。  リングバスでは、通常、すべてのバスバーが関連付けられます。  ストレート」バスバー構成の場合は、通常、バスバーのメインターミナルのみが関連付けられます**。  
+グローバルな記述です。**CIMデータモデルからの採用。ユーザー標準の名前をトポロジーバスに適用するために使用される。通常、バス／ブランチケースの生成に使用される。バス名で通常接続されている1つ以上の端子に関連付けられている。関連する端末は、通常、非保持型スイッチによって接続される。リングバスステーション構成の場合、リング内のすべてのバスバーターミナルが通常関連付けられる。ブレーカー・アンド・ハーフ方式の場合、通常は両方のバスバーが関連付けられます。  リングバスでは、通常、すべてのバスバーが関連付けられます。  ストレート」バスバー構成の場合は、通常、バスバーのメインターミナルのみが関連付けられます**。  
 
 ## プロパティのリスト  
 
 - `ReportingGroup`: このレポートグループに属するバス名マーカ。デフォルトです。なし  - `Terminal`: このバス・ネーム・マーカーに関連する端子です。デフォルト：'list'  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `priority`: トポロジーバス名として使用するバス名マーカーの優先度。  気にしない場合は0を使用する。  優先度が最も高い場合は 1 を使用する。  優先度が1よりも低い場合は2を使用し、以下同様です。デフォルト：0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプです。それはBusNameMarkerでなければなりません。    
 必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合は、問題を提起するか、 info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
 ## データモデルによるプロパティの記述  
 アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
