@@ -378,3 +378,9 @@ ExcST4B:
         type: Property
   required: []
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST4B/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST4B/schema.json
+  x-model-tags: ""
+  x-version: 0.0.1
