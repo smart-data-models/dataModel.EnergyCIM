@@ -1,7 +1,5 @@
 {
     "@context": {
-        "Accumulator": "https://smartdatamodels.org/dataModel.EnergyCIM/Accumulator",
-        "AccumulatorReset": "https://smartdatamodels.org/dataModel.EnergyCIM/AccumulatorReset",
         "AccumulatorValue": "https://smartdatamodels.org/dataModel.EnergyCIM/AccumulatorValue",
         "AccumulatorValues": "https://smartdatamodels.org/dataModel.EnergyCIM/AccumulatorValues",
         "Analog": "https://smartdatamodels.org/dataModel.EnergyCIM/Analog",
@@ -320,7 +318,6 @@
         "connected": "https://smartdatamodels.org/dataModel.EnergyCIM/connected",
         "connectionKind": "https://smartdatamodels.org/dataModel.EnergyCIM/connectionKind",
         "controlEnabled": "https://smartdatamodels.org/dataModel.EnergyCIM/controlEnabled",
-        "controlType": "https://smartdatamodels.org/dataModel.EnergyCIM/controlType",
         "converterFedDrive": "https://smartdatamodels.org/dataModel.EnergyCIM/converterFedDrive",
         "cpsmn": "https://smartdatamodels.org/dataModel.EnergyCIM/cpsmn",
         "cpsmx": "https://smartdatamodels.org/dataModel.EnergyCIM/cpsmx",
@@ -808,6 +805,7 @@
         "netInterchange": "https://smartdatamodels.org/dataModel.EnergyCIM/netInterchange",
         "neutralStep": "https://smartdatamodels.org/dataModel.EnergyCIM/neutralStep",
         "neutralU": "https://smartdatamodels.org/dataModel.EnergyCIM/neutralU",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "nomU": "https://smartdatamodels.org/dataModel.EnergyCIM/nomU",
         "nominalFrequency": "https://smartdatamodels.org/dataModel.EnergyCIM/nominalFrequency",
         "nominalP": "https://smartdatamodels.org/dataModel.EnergyCIM/nominalP",
@@ -836,7 +834,6 @@
         "omegazero": "https://smartdatamodels.org/dataModel.EnergyCIM/omegazero",
         "open": "https://smartdatamodels.org/dataModel.EnergyCIM/open",
         "operatingMode": "https://smartdatamodels.org/dataModel.EnergyCIM/operatingMode",
-        "operationInProgress": "https://smartdatamodels.org/dataModel.EnergyCIM/operationInProgress",
         "operationMode": "https://smartdatamodels.org/dataModel.EnergyCIM/operationMode",
         "operationalValuesConsidered": "https://smartdatamodels.org/dataModel.EnergyCIM/operationalValuesConsidered",
         "operatorBlocked": "https://smartdatamodels.org/dataModel.EnergyCIM/operatorBlocked",
