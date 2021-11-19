@@ -1,0 +1,396 @@
+エンティティPss5  
+==========  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss5/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**CIMデータモデルからの採用。イタリア語PSS - 詳細PSS.**  
+
+## プロパティのリスト  
+
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `ctw2`: セカンド・ウォッシュアウト・イネーブル（C）のセレクタ。true = セカンド・ウォッシュアウト・フィルタがバイパスされている false = セカンド・ウォッシュアウト・フィルタが使用されている。典型的な値はtrueです。デフォルトは偽  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `deadband`: スタビライザー出力のデッドバンド（DeadBand）。  代表値＝0、デフォルト：0.0  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `isfreq`: 周波数／軸速度入力（IsFreq）の選択。true = 速度 false = 周波数。代表値＝trueデフォルトはFalse  - `kf`: 周波数／軸速度入力ゲイン（K）。  代表値＝5です。初期値：0.0  - `kpe`: 電力入力ゲイン（K）。  代表値＝0.3。初期値：0.0  - `kpss`: PSSゲイン（K）。  典型的な値＝1です。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pmm`: 最小限の電力でPSSを有効にする（P）。  代表値＝0.25初期値：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tl1`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tl2`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tl3`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tl4`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tpe`: 電力フィルター時定数（T）。  代表値＝0.05。デフォルト：0  - `tw1`: ファーストウォッシュアウト（T）。  典型的な値＝3.5デフォルト：0  - `tw2`: セカンドウォッシュアウト（T）。  代表値＝0、デフォルト：0  - `type`: NGSIタイプであること。Pss5でなければならない  - `vadat`: デフォルト。False  - `vsmn`: スタビライザー出力の上限値（V）。  代表値＝-0.1初期値：0.0  - `vsmx`: スタビライザー出力の下限値（V）。  代表値＝0.1初期値：0.0    
+必須項目  
+CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+Pss5:    
+  description: 'Adapted from CIM data models. Italian PSS - Detailed PSS.'    
+  properties:    
+    address:    
+      description: 'The mailing address'    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: 'An alternative name for this item'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: 'The geographic area where a service or offered item is provided'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    ctw2:    
+      description: 'Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    dataProvider:    
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    deadband:    
+      description: 'Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    description:    
+      description: 'A description of this item'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf: &pss5_-_properties_-_owner_-_items_-_anyof    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Unique identifier of the entity'    
+      x-ngsi:    
+        type: Property    
+    isfreq:    
+      description: 'Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kf:    
+      description: 'Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kpe:    
+      description: 'Electric power input gain (K).  Typical Value = 0.3. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    kpss:    
+      description: 'PSS gain (K).  Typical Value = 1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Point'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON LineString'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON Polygon'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPoint'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiLineString'    
+          type: object    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: 'GeoJSON MultiPolygon'    
+          type: object    
+      x-ngsi:    
+        type: Geoproperty    
+    name:    
+      description: 'The name of this item.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf: *pss5_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    pmm:    
+      description: 'Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    tl1:    
+      description: 'Lead/lag time constant (T).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tl2:    
+      description: 'Lead/lag time constant (T).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tl3:    
+      description: 'Lead/lag time constant (T).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tl4:    
+      description: 'Lead/lag time constant (T).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tpe:    
+      description: 'Electric power filter time constant (T).  Typical Value = 0.05. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tw1:    
+      description: 'First WashOut (T).  Typical Value = 3.5. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    tw2:    
+      description: 'Second WashOut (T).  Typical Value = 0. Default: 0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    type:    
+      description: 'NGSI type. It has to be Pss5'    
+      enum:    
+        - Pss5    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    vadat:    
+      description: ' Default: False'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vsmn:    
+      description: 'Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    vsmx:    
+      description: 'Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+  required: []    
+  type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Pss5/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss5/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
+```  
+</details>    
+## ペイロードの例  
+key-valuesとしてJSON-LD形式のPss5の例を利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+Pss5をJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+key-valuesとしてJSON-LD形式のPss5の例を利用できません。これは`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+Pss5をJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
