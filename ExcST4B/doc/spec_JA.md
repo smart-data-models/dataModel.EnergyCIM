@@ -400,3 +400,4 @@ ExcST4B:
 正規化されたJSON-LD形式のExcST4Bの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ExcST4Bの例をkey-valuesとしてJSON-LD形式にしたものは利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ExcST4Bを正規化してJSON-LD形式にした例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
