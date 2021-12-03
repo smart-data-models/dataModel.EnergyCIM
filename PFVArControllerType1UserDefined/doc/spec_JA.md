@@ -304,3 +304,4 @@ PFVArControllerType1UserDefined:
 PFVArControllerType1UserDefinedをJSON-LD形式で正規化した例はありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 PFVArControllerType1UserDefinedの例をJSON-LD形式のkey-valuesとして利用することはできません。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 PFVArControllerType1UserDefinedをJSON-LD形式で正規化した例はありません。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
