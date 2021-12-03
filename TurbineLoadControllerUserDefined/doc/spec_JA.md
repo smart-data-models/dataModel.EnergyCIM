@@ -304,3 +304,4 @@ TurbineLoadControllerUserDefined:
 利用できないのは、TurbineLoadControllerUserDefinedの例をJSON-LD形式で正規化したものです。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 JSON-LD形式のTurbineLoadControllerUserDefinedの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 利用できないのは、TurbineLoadControllerUserDefined の例を JSON-LD 形式で正規化したものです。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
