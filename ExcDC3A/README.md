@@ -1,4 +1,5 @@
-# ExcDC3A
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# ExcDC3A
 Version: 0.0.1
 
 ## Description 
