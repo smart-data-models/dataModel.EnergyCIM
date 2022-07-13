@@ -1,4 +1,5 @@
-# Bay
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# Bay
 Version: 0.0.1
 
 ## Description 
