@@ -1,16 +1,18 @@
-エンティティSynchronousMachine  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティSynchronousMachine  
 ========================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SynchronousMachine/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルより引用。ネットワークと同期して回転するシャフトで動作する電気機械装置。それは、発電機または同期コンデンサーまたはポンプのいずれかとして動作する単一の機械である。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**CIM データモデルから引用した。ネットワークと同期して回転するシャフトで動作する電気機械装置。発電機または同期コンデンサーまたはポンプとして動作する単一機械である。  
+バージョン: 0.0.1  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `InitialReactiveCapabilityCurve`: このカーブをデフォルトで使用する同期機デフォルト。なし  - `SynchronousMachineDynamics`: この同期機の動的な動作を記述するために使用される同期機ダイナミクスモデル。デフォルトはなし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `earthing`: 発電機がアースされているかどうかを示す。IEC 60909に基づく短絡データ交換に使用される デフォルトFalse  - `earthingStarPointR`: 発電機のスターポイント接地抵抗（Re）。IEC 60909に基づく短絡データ交換に使用される デフォルト：0.0  - `earthingStarPointX`: 発電機のスターポイント接地リアクタンス（Xe）。IEC 60909に基づく短絡データ交換に使用される デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `ikk`: 三相短絡時の複合励磁の発電機の定常短絡電流（プロファイルはA）。- Ikk=0：複合励磁をしていない発電機。- Ikk?0：複合励磁のある発電機。Ikkは複合励磁の発電機の最小定常短絡電流の計算に使用される（IEC 60909-0の4.6.1.2項） 発電機の単相短絡にのみ使用される。(IEC 60909-0の4.3.4.2項) デフォルト： 0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxQ`: 最大無効電力の制限。本機の最大（銘板）制限値です。デフォルト：0.0  - `minQ`: 本機の最小無効電力制限値。デフォルト：0.0  - `mu`: 遮断電流を計算するための係数（IEC 60909-0の4.5.2.1項）。発電機の単給短絡にのみ使用される（IEC 60909-0の4.3.4.2項）。デフォルト：0.0  - `name`: このアイテムの名前です。  - `operatingMode`: 現在の動作モード。デフォルトなし  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `qPercent`: このマシンから得られる協調反応制御の割合。デフォルト：0.0  - `r`: 発電機の等価抵抗（RG）。RGは、ピーク電流ipの計算を除き、すべての電流の計算に考慮される。IEC 60909に基づく短絡データ交換に使用される デフォルト：0.0  - `r0`: 同期機のゼロシーケンス抵抗。デフォルト：0.0  - `r2`: 負のシーケンス抵抗。デフォルト：0.0  - `referencePriority`: パワーフロー電圧位相角参照バス選択として使用するユニットの優先順位。0 = 気にしない（デフォルト） 1 = 最優先。2は1よりも小さい、というように。デフォルト：0  - `satDirectSubtransX`: Direct-axis subtransient reactance saturated (Xd`sat とも呼ばれる)デフォルト：0.0  - `satDirectSyncX`: 直接軸飽和同期リアクタンス（xdsat）、短絡率の逆数。短絡データの交換に使用されるが，発電機上の単一の短絡にのみ適用される。(IEC 60909-0の4.3.4.2項)。デフォルト：0.0  - `satDirectTransX`: Saturated Direct-axis transient reactance。この属性は、主に ANSI に基づく短絡計算に使用される。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `shortCircuitRotorType`: 短絡アプリケーションで使用されるロータのタイプ。IEC 60909に準拠した単給短絡の場合のみ。デフォルト。なし  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: この同期機が動作可能なモード。デフォルトはなし  - `voltageRegulationRange`: IEC 60909-0 で定義されているインピーダンス補正係数 KG の計算に使用される発電機電圧調整（IEC 60909-0 の PG）の範囲 この属性は，発電ユニットの動作電圧を記述するために使用される。デフォルト：0.0  - `x0`: 同期機のゼロ・シーケンス・リアクタンス。デフォルト：0.0  - `x2`: 負のシーケンスリアクタンス。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `InitialReactiveCapabilityCurve`: このカーブをデフォルトとして使用する同期機。デフォルトなし  - `SynchronousMachineDynamics`: この同期機の動的挙動を記述するために使用される同期機ダイナミクスモデル。デフォルトなし  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `earthing`: ジェネレーターが接地されているかどうかを示す。IEC 60909に従った短絡データ交換に使用 デフォルト。False  - `earthingStarPointR`: 発電機スターポイントアース抵抗（Re）。IEC 60909 に従った短絡データ交換に使用される デフォルト：0.0  - `earthingStarPointX`: 発電機スターポイントアースリアクタンス (Xe)。IEC 60909 に従った短絡データ交換に使用される デフォルト：0.0  - `id`: エンティティの一意な識別子  - `ikk`: 複合励磁の発電機の三相短絡時の定常短絡電流（プロファイルの単位はA）。- Ikk=0：複合励磁のない発電機。- Ikk?0：複合励磁の発電機。Ikk は，複合励磁の発電機の最小定常短絡電流の計算に使用する（IEC 60909-0 の 4.6.1.2 節） 発電機の単給短絡にのみ使用される。(IEC 60909-0 の 4.3.4.2 節) 初期値：0.0  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxQ`: Maximum reactive power limit（最大無効電力制限値）。本機の最大（銘板）制限値です。デフォルト：0.0  - `minQ`: 本機の無効電力下限値。デフォルト：0.0  - `mu`: 遮断電流を計算するための係数（IEC 60909-0 の 4.5.2.1 節）。発電機の単一給電短絡（IEC 60909-0の4.3.4.2項）のみに使用される。デフォルト：0.0  - `name`: このアイテムの名称です。  - `operatingMode`: 現在の動作モード。デフォルト。なし  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `qPercent`: このマシンから得られる協調無効制御の割合（％）。デフォルト：0.0  - `r`: 発電機の等価抵抗(RG)。ピーク電流 ip の計算を除き，すべての電流の計算で RG が考慮される。IEC 60909に従った短絡データ交換に使用 デフォルト：0.0  - `r0`: 同期機の零相抵抗。初期値：0.0  - `r2`: 負極性シーケンス抵抗。デフォルト：0.0  - `referencePriority`: パワーフロー電圧位相角参照バス選択として使用するユニットの優先順位。0 = don't care（デフォルト） 1 = 最優先。2は1より小さく、以下同様。デフォルト：0  - `satDirectSubtransX`: 直接軸の過渡リアクタンスの飽和状態，Xd`sat とも呼ばれる。デフォルト：0.0  - `satDirectSyncX`: 直交軸飽和同期リアクタンス（xdsat）；短絡比の逆数。短絡データ交換に使用され，発電機の単一給電短絡にのみ使用される。(IEC 60909-0の4.3.4.2節）。デフォルト：0.0  - `satDirectTransX`: Saturated 直接軸の過渡リアクタンス。この属性は，主にANSIに準拠した短絡計算に使用される。デフォルト：0.0  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `shortCircuitRotorType`: ローターの種類。短絡アプリケーションで使用され、IEC 60909に準拠した単一給電短絡の場合のみ使用される。デフォルト。なし  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: この同期機が動作可能なモード。デフォルトはなし  - `voltageRegulationRange`: IEC 60909-0 で定義されたインピーダンス補正係数 KG の計算に使用される発電機電圧変動（PG）の範囲 この属性は、発電ユニットの動作電圧を記述するために使用される。デフォルト：0.0  - `x0`: 同期機の零相リアクタンス。デフォルト：0.0  - `x2`: 負方向のリアクタンス。初期値：0.0    
+必要なプロパティ  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SynchronousMachine:    
@@ -385,8 +387,10 @@ SynchronousMachine:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'Modes that this synchronous machine can operate in. Default: None'    
-      type: number    
+      description: 'Modes that this synchronous machine can operate in. Default: None. NGSI entity type. it has to be SynchronousMachine'    
+      enum:    
+        - SynchronousMachine    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -415,12 +419,12 @@ SynchronousMachine:
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SynchronousMachine/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachine/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-JSON-LD形式のSynchronousMachineの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のSynchronousMachineの例は利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のSynchronousMachineの例をkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のSynchronousMachineの例は利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のSynchronousMachineの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+利用不可 SynchronousMachine の例を JSON-LD 形式で正規化したもの。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のSynchronousMachineの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+SynchronousMachineのJSON-LD形式を正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
