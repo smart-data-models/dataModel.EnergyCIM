@@ -286,10 +286,11 @@ ControlArea:
       x-ngsi:
         type: Property
     type:
-      description: 'The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.   A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis. Default: None'
-      type: number
+      description: 'The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes. A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis. Default: None. NGSI entity type. it has to be ControlArea'
+      enum:
+        - ControlArea
+      type: string
       x-ngsi:
-        model: https://schema.org/Number
         type: Property
   required: []
   type: object
@@ -298,4 +299,4 @@ ControlArea:
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ControlArea/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
