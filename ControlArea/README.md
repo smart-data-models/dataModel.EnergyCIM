@@ -1,6 +1,5 @@
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-# ControlArea
-Version: 0.0.1
+# ControlArea
+Version: 0.0.2
 
 ## Description 
 
