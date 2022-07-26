@@ -1,15 +1,17 @@
-Entità: ControlArea  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: ControlArea  
 ===================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Un'area di controllo è un raggruppamento di unità di generazione e/o carichi e un insieme di linee di collegamento (come terminali) che può essere usato per una varietà di scopi tra cui il controllo automatico della generazione, le specifiche di controllo dell'interscambio dell'area di soluzione del flusso di potenza e l'input per la previsione del carico.   Si noti che qualsiasi numero di specifiche di aree di controllo sovrapposte può essere sovrapposto al modello fisico.**  
+Descrizione globale: **Adattato dai modelli di dati CIM. Un'area di controllo è un raggruppamento di unità di generazione e/o di carichi e un insieme di linee di collegamento (come terminali) che può essere utilizzato per una varietà di scopi, tra cui il controllo automatico della generazione, le specifiche di controllo dell'area di interscambio della soluzione del flusso di potenza e l'input per la previsione del carico.   Si noti che è possibile sovrapporre al modello fisico un numero qualsiasi di specifiche di aree di controllo.  
+versione: 0.0.1  
 
 ## Elenco delle proprietà  
 
-- `ControlAreaGeneratingUnit`: Le specifiche dell'unità di generazione per l'area di controllo. Predefinito: 'elenco'.  - `EnergyArea`: L'area di energia che è prevista da questa specifica dell'area di controllo. Predefinito: Nessuno  - `TieFlow`: I flussi di legame associati all'area di controllo. Predefinito: 'elenco'.  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `netInterchange`: L'interscambio netto positivo specificato nell'area di controllo, cioè il segno positivo significa flusso nell'area. Predefinito: 0,0  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pTolerance`: Tolleranza di scambio della rete di potenza attiva Default: 0.0  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: La definizione del tipo primario di area di controllo usata per determinare se questa è usata per il controllo automatico della generazione, per pianificare il controllo dell'interscambio, o per altri scopi.   Un'area di controllo specificata con il tipo primario di controllo automatico della generazione potrebbe ancora essere prevista e utilizzata come area di interscambio nell'analisi del flusso di potenza. Predefinito: Nessuno    
+- `ControlAreaGeneratingUnit`: Le specifiche dell'unità di generazione per l'area di controllo. Predefinito: "elenco".  - `EnergyArea`: L'area energetica prevista da questa specifica area di controllo. Predefinito: Nessuno  - `TieFlow`: I flussi di vincolo associati all'area di controllo. Predefinito: "elenco".  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `netInterchange`: L'interscambio netto positivo specificato nell'area di controllo, vale a dire che il segno positivo significa flusso in entrata nell'area. Valore predefinito: 0,0  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pTolerance`: Tolleranza di interscambio della rete di potenza attiva Predefinito: 0,0  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type`: La definizione del tipo primario di area di controllo serve a determinare se questa viene utilizzata per il controllo automatico della generazione, per la pianificazione del controllo degli interscambi o per altri scopi.   Un'area di controllo specificata con il tipo primario di controllo automatico della generazione potrebbe comunque essere prevista e utilizzata come area di interscambio nell'analisi dei flussi di potenza. Predefinito: Nessuno    
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -301,18 +303,25 @@ ControlArea:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.   A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis. Default: None'    
-      type: number    
+      description: 'The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes. A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis. Default: None. NGSI entity type. it has to be ControlArea'    
+      enum:    
+        - ControlArea    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ControlArea/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
-## Esempio di payloads  
-Non è disponibile l'esempio di una ControlArea in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di una ControlArea in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di una ControlArea in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di una ControlArea in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+## Esempi di payload  
+Non è disponibile l'esempio di una ControlArea in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di una ControlArea in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di una ControlArea in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di una ControlArea in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
