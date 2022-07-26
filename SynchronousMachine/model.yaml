@@ -370,8 +370,10 @@ SynchronousMachine:
       x-ngsi:
         type: Property
     type:
-      description: 'Modes that this synchronous machine can operate in. Default: None'
-      type: number
+      description: 'Modes that this synchronous machine can operate in. Default: None. NGSI entity type. it has to be SynchronousMachine'
+      enum:
+        - SynchronousMachine
+      type: string
       x-ngsi:
         model: https://schema.org/Number
         type: Property
@@ -400,4 +402,4 @@ SynchronousMachine:
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SynchronousMachine/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachine/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
