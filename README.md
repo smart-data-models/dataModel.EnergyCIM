@@ -11,8 +11,6 @@ The following entity types are available:
 
 - [AccumulatorReset](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AccumulatorReset/README.md). Adapted from CIM data models. This command reset the counter value to zero.
 
-- [AccumulatorValue](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AccumulatorValue/README.md). Adapted from CIM data models. AccumulatorValue represents an accumulated (counted) MeasurementValue.
-
 - [ACDCConverter](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ACDCConverter/README.md). Adapted from CIM data models. A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion.
 
 - [ACDCConverterDCTerminal](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ACDCConverterDCTerminal/README.md). Adapted from CIM data models. A DC electrical connection point at the AC/DC converter. The AC/DC converter is electrically connected also to the AC side. The AC connection is inherited from the AC conducting equipment in the same way as any other AC equipment. The AC/DC converter DC terminal is separate from generic DC terminal to restrict the connection with the AC side to AC/DC converter and so that no other DC conducting equipment can be connected to the AC side.
@@ -90,8 +88,6 @@ The following entity types are available:
 - [ConnectivityNode](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ConnectivityNode/README.md). Adapted from CIM data models. Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.
 
 - [ConnectivityNodeContainer](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ConnectivityNodeContainer/README.md). Adapted from CIM data models. A base class for all objects that may contain connectivity nodes or topological nodes.
-
-- [Control](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Control/README.md). Adapted from CIM data models. Control is used for supervisory/device control. It represents control outputs that are used to change the state in a process, e.g. close or open breaker, a set point value or a raise lower command.
 
 - [ControlArea](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ControlArea/README.md). Adapted from CIM data models. A control areais a grouping of generating units and/or loads and a cutset of tie lines (as terminals) which may be used for a variety of purposes including automatic generation control, powerflow solution area interchange control specification, and input to load forecasting.   Note that any number of overlapping control area specifications can be superimposed on the physical model.
 
