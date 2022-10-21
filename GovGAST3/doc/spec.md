@@ -1,16 +1,32 @@
-Entity: GovGAST3  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: GovGAST3  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovGAST3/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Adapted from CIM data models. Generic turbogas with acceleration and temperature controller.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bca`: Acceleration limit set-point (Bca).  Unit = 1/s.  Typical Value = 0.01. Default: 0.0  - `bp`: Droop (bp).  Typical Value = 0.05. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dtc`: Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (deltaTc).  Typical Value = 390. Default: 0.0  - `id`: Unique identifier of the entity  - `ka`: Minimum fuel flow (Ka).  Typical Value = 0.23. Default: 0.0  - `kac`: Fuel system feedback (K).  Typical Value = 0. Default: 0.0  - `kca`: Acceleration control integral gain (Kca). Unit = 1/s.  Typical Value = 100. Default: 0.0  - `ksi`: Gain of radiation shield (Ksi).  Typical Value = 0.8. Default: 0.0  - `ky`: Coefficient of transfer function of fuel valve positioner (Ky).  Typical Value = 1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mnef`: Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0  - `mxef`: Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rcmn`: Minimum fuel flow (RCMN).  Typical Value = -0.1. Default: 0.0  - `rcmx`: Maximum fuel flow (RCMX).  Typical Value = 1. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tac`: Fuel control time constant (Tac).  Typical Value = 0.1. Default: 0  - `tc`: Compressor discharge volume time constant (Tc).  Typical Value = 0.2. Default: 0  - `td`: Temperature controller derivative gain (Td).  Typical Value = 3.3. Default: 0  - `tfen`: Turbine rated exhaust temperature correspondent to Pm=1 PU (Tfen).  Typical Value = 540. Default: 0.0  - `tg`: Time constant of speed governor (Tg).  Typical Value = 0.05. Default: 0  - `tsi`: Time constant of radiation shield (Tsi).  Typical Value = 15. Default: 0  - `tt`: Temperature controller integration rate (Tt).  Typical Value = 250. Default: 0.0  - `ttc`: Time constant of thermocouple (Ttc).  Typical Value = 2.5. Default: 0  - `ty`: Time constant of fuel valve positioner (Ty).  Typical Value = 0.2. Default: 0  - `type`: NGSI type. It has to be GovGAST3    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bca[number]`: Acceleration limit set-point (Bca).  Unit = 1/s.  Typical Value = 0.01. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: Droop (bp).  Typical Value = 0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `dtc[number]`: Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (deltaTc).  Typical Value = 390. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `ka[number]`: Minimum fuel flow (Ka).  Typical Value = 0.23. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kac[number]`: Fuel system feedback (K).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kca[number]`: Acceleration control integral gain (Kca). Unit = 1/s.  Typical Value = 100. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ksi[number]`: Gain of radiation shield (Ksi).  Typical Value = 0.8. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ky[number]`: Coefficient of transfer function of fuel valve positioner (Ky).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mnef[number]`: Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mxef[number]`: Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `rcmn[number]`: Minimum fuel flow (RCMN).  Typical Value = -0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rcmx[number]`: Maximum fuel flow (RCMX).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tac[number]`: Fuel control time constant (Tac).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Compressor discharge volume time constant (Tc).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Temperature controller derivative gain (Td).  Typical Value = 3.3. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfen[number]`: Turbine rated exhaust temperature correspondent to Pm=1 PU (Tfen).  Typical Value = 540. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Time constant of speed governor (Tg).  Typical Value = 0.05. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsi[number]`: Time constant of radiation shield (Tsi).  Typical Value = 15. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Temperature controller integration rate (Tt).  Typical Value = 250. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ttc[number]`: Time constant of thermocouple (Ttc).  Typical Value = 2.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ty[number]`: Time constant of fuel valve positioner (Ty).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovGAST3  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGAST3:    
@@ -405,11 +421,29 @@ GovGAST3:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovGAST3/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST3/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 Not available the example of a GovGAST3 in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a GovGAST3 in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 Not available the example of a GovGAST3 in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a GovGAST3 in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
