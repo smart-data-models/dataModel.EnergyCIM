@@ -1,16 +1,32 @@
-Entity: ExcHU  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: ExcHU  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcHU/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Adapted from CIM data models. Hungarian Excitation System Model, with built-in voltage transducer.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `ae`: Major loop PI tag gain factor (Ae).  Typical Value = 3. Default: 0.0  - `ai`: Minor loop PI tag gain factor (Ai).  Typical Value = 22. Default: 0.0  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `atr`: AVR constant (Atr).  Typical Value = 2.19. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `emax`: Field voltage control signal upper limit on AVR base (Emax).  Typical Value = 0.996. Default: 0.0  - `emin`: Field voltage control signal lower limit on AVR base (Emin).  Typical Value = -0.866. Default: 0.0  - `id`: Unique identifier of the entity  - `imax`: Major loop PI tag output signal upper limit (Imax).  Typical Value = 2.19. Default: 0.0  - `imin`: Major loop PI tag output signal lower limit (Imin).  Typical Value = 0.1. Default: 0.0  - `ke`: Voltage base conversion constant (Ke).  Typical Value = 4.666. Default: 0.0  - `ki`: Current base conversion constant (Ki).  Typical Value = 0.21428. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `te`: Major loop PI tag integration time constant (Te).  Typical Value = 0.154. Default: 0  - `ti`: Minor loop PI control tag integration time constant (Ti).  Typical Value = 0.01333. Default: 0  - `tr`: Filter time constant (Tr). If a voltage compensator is used in conjunction with this excitation system model, Tr should be set to 0.  Typical Value = 0.01. Default: 0  - `type`: NGSI type. It has to be ExcHU    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `ae[number]`: Major loop PI tag gain factor (Ae).  Typical Value = 3. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ai[number]`: Minor loop PI tag gain factor (Ai).  Typical Value = 22. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `atr[number]`: AVR constant (Atr).  Typical Value = 2.19. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `emax[number]`: Field voltage control signal upper limit on AVR base (Emax).  Typical Value = 0.996. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Field voltage control signal lower limit on AVR base (Emin).  Typical Value = -0.866. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `imax[number]`: Major loop PI tag output signal upper limit (Imax).  Typical Value = 2.19. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `imin[number]`: Major loop PI tag output signal lower limit (Imin).  Typical Value = 0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: Voltage base conversion constant (Ke).  Typical Value = 4.666. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Current base conversion constant (Ki).  Typical Value = 0.21428. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `te[number]`: Major loop PI tag integration time constant (Te).  Typical Value = 0.154. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: Minor loop PI control tag integration time constant (Ti).  Typical Value = 0.01333. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Filter time constant (Tr). If a voltage compensator is used in conjunction with this excitation system model, Tr should be set to 0.  Typical Value = 0.01. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be ExcHU  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcHU:    
@@ -351,11 +367,29 @@ ExcHU:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcHU/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcHU/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 Not available the example of a ExcHU in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a ExcHU in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 Not available the example of a ExcHU in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a ExcHU in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
