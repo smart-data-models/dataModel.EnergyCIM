@@ -1,16 +1,32 @@
-Entity: GovHydro1  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: GovHydro1  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydro1/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Adapted from CIM data models. Basic Hydro turbine governor model.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `at`: Turbine gain (At) (>0).  Typical Value = 1.2. Default: 0.0  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dturb`: Turbine damping factor (Dturb) (>=0).  Typical Value = 0.5. Default: 0.0  - `gmax`: Maximum gate opening (Gmax) (>0).  Typical Value = 1. Default: 0.0  - `gmin`: Minimum gate opening (Gmin) (>=0).  Typical Value = 0. Default: 0.0  - `hdam`: Turbine nominal head (hdam).  Typical Value = 1. Default: 0.0  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `qnl`: No-load flow at nominal head (qnl) (>=0).  Typical Value = 0.08. Default: 0.0  - `rperm`: Permanent droop (R) (>0).  Typical Value = 0.04. Default: 0.0  - `rtemp`: Temporary droop (r) (>R).  Typical Value = 0.3. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tf`: Filter time constant () (>0).  Typical Value = 0.05. Default: 0  - `tg`: Gate servo time constant (Tg) (>0).  Typical Value = 0.5. Default: 0  - `tr`: Washout time constant (Tr) (>0).  Typical Value = 5. Default: 0  - `tw`: Water inertia time constant (Tw) (>0).  Typical Value = 1. Default: 0  - `type`: NGSI type. It has to be GovHydro1  - `velm`: Maximum gate velocity (Vlem) (>0).  Typical Value = 0.2. Default: 0.0    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `at[number]`: Turbine gain (At) (>0).  Typical Value = 1.2. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `dturb[number]`: Turbine damping factor (Dturb) (>=0).  Typical Value = 0.5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: Maximum gate opening (Gmax) (>0).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: Minimum gate opening (Gmin) (>=0).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hdam[number]`: Turbine nominal head (hdam).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase[number]`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `qnl[number]`: No-load flow at nominal head (qnl) (>=0).  Typical Value = 0.08. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: Permanent droop (R) (>0).  Typical Value = 0.04. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: Temporary droop (r) (>R).  Typical Value = 0.3. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tf[number]`: Filter time constant () (>0).  Typical Value = 0.05. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Gate servo time constant (Tg) (>0).  Typical Value = 0.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Washout time constant (Tr) (>0).  Typical Value = 5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Water inertia time constant (Tw) (>0).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovHydro1  - `velm[number]`: Maximum gate velocity (Vlem) (>0).  Typical Value = 0.2. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydro1:    
@@ -363,11 +379,29 @@ GovHydro1:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro1/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro1/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 Not available the example of a GovHydro1 in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a GovHydro1 in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 Not available the example of a GovHydro1 in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a GovHydro1 in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
