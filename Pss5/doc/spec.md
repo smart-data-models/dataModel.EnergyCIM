@@ -1,16 +1,32 @@
-Entity: Pss5  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Pss5  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss5/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **Adapted from CIM data models. Italian PSS - Detailed PSS.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `ctw2`: Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deadband`: Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `isfreq`: Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False  - `kf`: Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0  - `kpe`: Electric power input gain (K).  Typical Value = 0.3. Default: 0.0  - `kpss`: PSS gain (K).  Typical Value = 1. Default: 0.0  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmm`: Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tl1`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl2`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl3`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tl4`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  - `tpe`: Electric power filter time constant (T).  Typical Value = 0.05. Default: 0  - `tw1`: First WashOut (T).  Typical Value = 3.5. Default: 0  - `tw2`: Second WashOut (T).  Typical Value = 0. Default: 0  - `type`: NGSI type. It has to be Pss5  - `vadat`:  Default: False  - `vsmn`: Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0  - `vsmx`: Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `ctw2[number]`: Selector for Second washout enabling (C). true = second washout filter is bypassed false = second washout filter in use. Typical Value = true. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deadband[number]`: Stabilizer output dead band (DeadBand).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `isfreq[number]`: Selector for Frequency/shaft speed input (IsFreq). true = speed false = frequency. Typical Value = true. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Frequency/shaft speed input gain (K).  Typical Value = 5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpe[number]`: Electric power input gain (K).  Typical Value = 0.3. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpss[number]`: PSS gain (K).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmm[number]`: Minimum power PSS enabling (P).  Typical Value = 0.25. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tl1[number]`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl2[number]`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl3[number]`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl4[number]`: Lead/lag time constant (T).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpe[number]`: Electric power filter time constant (T).  Typical Value = 0.05. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw1[number]`: First WashOut (T).  Typical Value = 3.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw2[number]`: Second WashOut (T).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be Pss5  - `vadat[number]`:  Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsmn[number]`: Stabilizer output max limit (V).  Typical Value = -0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsmx[number]`: Stabilizer output min limit (V).  Typical Value = 0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). This data model is a direct conversion of the Common Information Model (CIM) specified by the IEC61970 standard into smart data models. The python classes this model is based on were developed by these entities Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germany. Some properties can have wrong type. This was the case, please raise an issue or send mail to info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pss5:    
@@ -381,11 +397,29 @@ Pss5:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Pss5/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss5/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 Not available the example of a Pss5 in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a Pss5 in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 Not available the example of a Pss5 in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 Not available the example of a Pss5 in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
