@@ -1,16 +1,32 @@
-エンティティパワートランスフォーマー  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPowerTransformer  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformer/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。電気回路間に相互結合を導入するための、磁気コアの有無にかかわらず、2つ以上の結合された巻線で構成される電気機器のこと。変圧器は、電圧および位相シフト（アクティブパワーフロー）を制御するために使用できる。電力用変圧器は、同一でなくてもよい個別の変圧器タンクで構成されることがある。電力変圧器は、タンクがあってもなくてもモデル化することができ、平衡および不平衡の両方の表現で使用することを意図している。   電源トランスは通常2つの端子を持つが、1つ（接地）、3つまたはそれ以上の端子を持つこともある。継承された関連性ConductiveEquipment.BaseVoltageは使用してはならない。  代わりに、TransformerEndからBaseVoltageへの関連付けを使用する必要があります。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。電気回路間に相互結合を導入するための、磁気コアの有無にかかわらず、2つ以上の結合した巻線からなる電気装置。変圧器は、電圧および位相シフト（アクティブパワーフロー）を制御するために使用されることがある。電力用変圧器は、同一である必要はなく、別々の変圧器タンクで構成されることもある。電力トランスは、タンク付きでもタンクなしでもモデル化でき、バランス型とアンバランス型の両方で使用することが意図されています。   電力変圧器は通常2つの端子を持つが、1つ（接地）、3つ、またはそれ以上の端子を持つこともある。継承された関連付けであるConductingEquipment.BaseVoltageは使用しないでください。  代わりにTransformerEndからBaseVoltageへの関連付けを使用する必要があります**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `PowerTransformerEnd`: このパワー・トランス・エンドのパワー・トランス。デフォルト： 'list'  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `beforeShCircuitHighestOperatingCurrent`: 短絡前の最高動作電流（IEC 60909-0のIb）（ネットワークの構成や関連する信頼性の考え方に依存する）。この値は，IEC 60909-0で定義されているインピーダンス補正係数KTの計算に使用される。デフォルト：0.0  - `beforeShCircuitHighestOperatingVoltage`: 短絡前の最高動作電圧（IEC 60909-0のUb）。IEC 60909-0で定義されているインピーダンス補正係数KTの計算に使用される。ローサイド巻線のワーストケース電圧である（規格の3.7.1項）。動作条件の定義に使用します。デフォルト：0.0  - `beforeShortCircuitAnglePf`: 短絡前の力率の角度（IEC 60909-0ではphib）。IEC 60909-0で定義されているインピーダンス補正係数KTの計算に使用される。これはワーストケースの力率である。動作条件の定義に使用される。デフォルト：0.0  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `highSideMinOperatingU`: 発電所ユニットの単位変圧器の高電圧側（Q側）における最小動作電圧（IEC 60909-0ではuQmin）のこと。システムの長期運転経験から十分に確立された値である。IEC 60909-0で定義されているインピーダンス補正係数KGの計算に使用される デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `isPartOfGeneratorUnit`: マシンが発電所ユニットの一部であるかどうかを示す。IEC 60909に基づく短絡データ交換に使用される デフォルトFalse  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `operationalValuesConsidered`: データ（短絡データ交換に関連する他の属性）が長期的な運用条件を定義しているかどうかを定義するために使用されます。IEC 60909に準拠した短絡データ交換に使用される。デフォルト。False  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。PowerTransformerである必要があります。    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `PowerTransformerEnd[number]`: この電源トランス端の電源トランス。デフォルト: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `beforeShCircuitHighestOperatingCurrent[number]`: 短絡前の最高動作電流（IEC 60909-0のIb）（ネットワーク構成や関連する信頼性の考え方によって異なる）。IEC 60909-0で定義されているインピーダンス補正係数KTの算出に使用される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `beforeShCircuitHighestOperatingVoltage[number]`: 短絡前の最高使用電圧（IEC 60909-0のUb）です。IEC 60909-0で規定されているインピーダンス補正係数KTの算出に使用される。ローサイド巻線のワーストケース電圧（規格3.7.1項）。動作条件を定義するために使用する。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `beforeShortCircuitAnglePf[number]`: 短絡前の力率角度（IEC 60909-0ではphib）。IEC 60909-0で定義されているインピーダンス補正係数KTの計算に使用される。最悪の場合の力率である。動作条件を定義するために使用する。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `highSideMinOperatingU[number]`: 発電所ユニットのユニットトランスの高圧側（Q側）の最低動作電圧（IEC 60909-0ではuQmin）。系統の長期運転経験により確立された値。IEC 60909-0で定義されているインピーダンス補正係数KGの計算に使用される。 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `isPartOfGeneratorUnit[number]`: 機械が発電所ユニットに属しているかどうかを示す。IEC 60909 に従った短絡データ交換に使用 デフォルト。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `operationalValuesConsidered[number]`: データ（短絡データ交換に関連する他の属性）が長期的な運転条件を定義しているかどうかを定義するために使用される。IEC 60909 に従った短絡データ交換に使用する。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプであること。PowerTransformerである必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PowerTransformer:    
@@ -329,9 +345,21 @@ PowerTransformer:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-PowerTransformerの例をkey-valuesとしてJSON-LD形式で提供しています。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-PowerTransformerの例をJSON-LD形式で正規化したものは利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-PowerTransformerの例をkey-valuesとしてJSON-LD形式で提供しています。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-PowerTransformerの例をJSON-LD形式で正規化したものは利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のPowerTransformerの例をkey-valuesとして利用できない。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+PowerTransformer を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のPowerTransformerの例をkey-valuesとして利用することはできません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+PowerTransformer を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
