@@ -1,16 +1,32 @@
-Entité : ExcST4B  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ExcST4B  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcST4B/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. Système d'excitation statique IEEE ST4B modifié avec un gain maximal de rétroaction en boucle interne **.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kc`: Facteur de charge du redresseur proportionnel à la réactance de commutation (Kc). Valeur typique = 0.113. Valeur par défaut : 0.0  - `kg`: Constante du gain de rétroaction du régulateur de champ en boucle interne (Kg). Valeur typique = 0. Valeur par défaut : 0.0  - `ki`: Coefficient de gain du circuit potentiel (Ki).  Valeur typique = 0. Valeur par défaut : 0.0  - `kim`: Sortie du gain intégral du régulateur de tension (Kim).  Valeur typique = 0. Valeur par défaut : 0.0  - `kir`: Gain intégral du régulateur de tension (Kir).  Valeur typique = 10.75. Valeur par défaut : 0.0  - `kp`: Coefficient de gain du circuit potentiel (Kp).  Valeur typique = 9.3. Valeur par défaut : 0.0  - `kpm`: Sortie du gain proportionnel du régulateur de tension (Kpm).  Valeur typique = 1. Valeur par défaut : 0.0  - `kpr`: Gain proportionnel du régulateur de tension (Kpr).  Valeur typique = 10.75. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `lvgate`: Sélecteur (LVgate). true = LVgate fait partie du schéma fonctionnel false = LVgate ne fait pas partie du schéma fonctionnel.  Valeur typique = false. Valeur par défaut : False  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.02. Valeur par défaut : 0  - `thetap`: Angle de phase du circuit potentiel (thetap).  Valeur typique = 0. Valeur par défaut : 0.0  - `type`: Type NGSI. Il doit être ExcST4B  - `uel`: Selector (Uel). true = UEL fait partie du schéma-bloc false = UEL ne fait pas partie du schéma-bloc.  Valeur typique = false. Valeur par défaut : False  - `vbmax`: Tension d'excitation maximale (Vbmax).  Valeur typique = 11.63. Valeur par défaut : 0.0  - `vgmax`: Tension maximale de rétroaction de la boucle interne (Vgmax).  Valeur typique = 5,8. Valeur par défaut : 0,0  - `vmmax`: Sortie maximale de la boucle interne (Vmmax).  Valeur typique = 99. Valeur par défaut : 0.0  - `vmmin`: Sortie minimale de la boucle interne (Vmmin).  Valeur typique = -99. Valeur par défaut : 0.0  - `vrmax`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 1. Valeur par défaut : 0.0  - `vrmin`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = -0.87. Valeur par défaut : 0.0  - `xl`: Réactance associée à la source de potentiel (Xl).  Valeur typique = 0.124. Valeur par défaut : 0.0    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `kc[number]`: Facteur de charge du redresseur proportionnel à la réactance de commutation (Kc). Valeur typique = 0.113. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: Constante du gain de rétroaction du régulateur de champ en boucle interne (Kg). Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Coefficient de gain du circuit potentiel (Ki).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kim[number]`: Sortie du gain intégral du régulateur de tension (Kim).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kir[number]`: Gain intégral du régulateur de tension (Kir).  Valeur typique = 10.75. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Coefficient de gain du circuit potentiel (Kp).  Valeur typique = 9.3. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpm[number]`: Sortie du gain proportionnel du régulateur de tension (Kpm).  Valeur typique = 1. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpr[number]`: Gain proportionnel du régulateur de tension (Kpr).  Valeur typique = 10.75. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `lvgate[number]`: Sélecteur (LVgate). true = LVgate fait partie du schéma fonctionnel false = LVgate ne fait pas partie du schéma fonctionnel.  Valeur typique = false. Valeur par défaut : False  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta[number]`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.02. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `thetap[number]`: Angle de phase du circuit potentiel (thetap).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type NGSI. Il doit être ExcST4B  - `uel[number]`: Selector (Uel). true = UEL fait partie du schéma-bloc false = UEL ne fait pas partie du schéma-bloc.  Valeur typique = false. Valeur par défaut : False  . Model: [https://schema.org/Number](https://schema.org/Number)- `vbmax[number]`: Tension d'excitation maximale (Vbmax).  Valeur typique = 11.63. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vgmax[number]`: Tension maximale de rétroaction de la boucle interne (Vgmax).  Valeur typique = 5,8. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmmax[number]`: Sortie maximale de la boucle interne (Vmmax).  Valeur typique = 99. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmmin[number]`: Sortie minimale de la boucle interne (Vmmin).  Valeur typique = -99. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: Sortie maximale du régulateur de tension (Vrmax).  Valeur typique = 1. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: Sortie minimale du régulateur de tension (Vrmin).  Valeur typique = -0.87. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xl[number]`: Réactance associée à la source de potentiel (Xl).  Valeur typique = 0.124. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcST4B:    
@@ -393,11 +409,29 @@ ExcST4B:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST4B/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST4B/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un ExcST4B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'une ExcST4B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcST4B au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'une ExcST4B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcST4B au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
