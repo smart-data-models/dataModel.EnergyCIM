@@ -1,16 +1,32 @@
-Entität: CsConverter  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: CsConverter  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/CsConverter/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. DC-Seite des Stromquellenwandlers (CSC).**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. DC-Seite des Stromquellenwandlers (CSC).**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alpha`: Zündwinkel, typischer Wert zwischen 10 und 18 Grad für einen Gleichrichter. CSC-Zustandsvariable, Ergebnis des Leistungsflusses. Voreinstellung: 0,0  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `gamma`: Extinktionswinkel. CSC-Zustandsvariable, Ergebnis des Leistungsflusses. Voreinstellung: 0,0  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxAlpha`: Maximaler Auslösewinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  - `maxGamma`: Maximaler Extinktionswinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  - `maxIdc`: Der maximale Gleichstrom (Id) auf der Gleichstromseite, mit dem der Umrichter arbeiten sollte. Konfigurationsdaten des Stromrichters, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  - `minAlpha`: Minimaler Feuerungswinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  - `minGamma`: Minimaler Extinktionswinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  - `minIdc`: Der minimale Gleichstrom (Id) auf der Gleichstromseite, mit dem der Wandler arbeiten sollte. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0.0  - `name`: Der Name dieses Artikels.  - `operatingMode`: Zeigt an, ob der Gleichstrompol als Wechselrichter oder als Gleichrichter arbeitet. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: Keine  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pPccControl`:  Voreinstellung: Keine  - `ratedIdc`: Nenngleichstrom des Umrichters, auch IdN genannt. Im Leistungsfluss verwendete Umrichterkonfigurationsdaten. Voreinstellung: 0.0  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `targetAlpha`: Soll-Zündwinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  - `targetGamma`: Ziel-Extinktionswinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  - `targetIdc`: Zielwert für den Gleichstrom. Im Leistungsfluss verwendete CSC-Steuergröße. Voreinstellung: 0,0  - `type`: NGSI-Typ. Es muss CsConverter sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alpha[number]`: Zündwinkel, typischer Wert zwischen 10 und 18 Grad für einen Gleichrichter. CSC-Zustandsvariable, Ergebnis des Leistungsflusses. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `gamma[number]`: Extinktionswinkel. CSC-Zustandsvariable, Ergebnis des Leistungsflusses. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxAlpha[number]`: Maximaler Auslösewinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxGamma[number]`: Maximaler Extinktionswinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxIdc[number]`: Der maximale Gleichstrom (Id) auf der Gleichstromseite, mit dem der Umrichter arbeiten sollte. Konfigurationsdaten des Stromrichters, die im Leistungsfluss verwendet werden. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minAlpha[number]`: Minimaler Feuerungswinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minGamma[number]`: Minimaler Extinktionswinkel. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minIdc[number]`: Der minimale Gleichstrom (Id) auf der Gleichstromseite, mit dem der Wandler arbeiten sollte. Im Leistungsfluss verwendete CSC-Konfigurationsdaten. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `operatingMode[number]`: Zeigt an, ob der Gleichstrompol als Wechselrichter oder als Gleichrichter arbeitet. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: Keine  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pPccControl[number]`:  Voreinstellung: Keine  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedIdc[number]`: Nenngleichstrom des Umrichters, auch IdN genannt. Im Leistungsfluss verwendete Umrichterkonfigurationsdaten. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `targetAlpha[number]`: Soll-Zündwinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetGamma[number]`: Ziel-Extinktionswinkel. CSC-Steuergröße, die im Leistungsfluss verwendet wird. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetIdc[number]`: Zielwert für den Gleichstrom. Im Leistungsfluss verwendete CSC-Steuergröße. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss CsConverter sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können einen falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CsConverter:    
@@ -363,11 +379,29 @@ CsConverter:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/CsConverter/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/CsConverter/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 Nicht verfügbar ist das Beispiel eines CsConverters im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines CsConverters im JSON-LD Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines CsConverters im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar ist das Beispiel eines CsConverters im JSON-LD Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Nicht verfügbar ist das Beispiel eines CsConverters im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
