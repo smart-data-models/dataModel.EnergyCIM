@@ -1,16 +1,32 @@
-Entité : UnderexcLimIEEE1  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : UnderexcLimIEEE1  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/UnderexcLimIEEE1/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. La classe représente le modèle de type UEL1 qui a une limite circulaire lorsqu'il est tracé en termes de puissance réactive de la machine par rapport à la puissance réelle de sortie.  Référence : IEEE UEL1 421.5-2005 Section 10.1.**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kuc`: Réglage central de l'UEL (K).  Valeur typique = 1.38. Valeur par défaut : 0.0  - `kuf`: Gain du stabilisateur du système d'excitation UEL (K).  Valeur typique = 3.3. Valeur par défaut : 0.0  - `kui`: Gain intégral de l'UEL (K).  Valeur typique = 0. Valeur par défaut : 0.0  - `kul`: Gain proportionnel de l'UEL (K).  Valeur typique = 100. Valeur par défaut : 0.0  - `kur`: Réglage du rayon UEL (K).  Valeur typique = 1.95. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tu1`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu2`: Constante de temps du décalage UEL (T).  Valeur typique = 0.05. Valeur par défaut : 0  - `tu3`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `tu4`: Constante de temps du décalage UEL (T).  Valeur typique = 0. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être UnderexcLimIEEE1.  - `vucmax`: Limite maximale UEL pour la magnitude du phasor du point de fonctionnement (V).  Valeur typique = 5.8. Valeur par défaut : 0.0  - `vuimax`: Limite maximale de la sortie de l'intégrateur UEL (V). Valeur par défaut : 0,0  - `vuimin`: Limite minimale de la sortie de l'intégrateur UEL (V). Valeur par défaut : 0,0  - `vulmax`: Limite maximale de la sortie UEL (V).  Valeur typique = 18. Valeur par défaut : 0.0  - `vulmin`: Limite minimale de la sortie UEL (V).  Valeur typique = -18. Valeur par défaut : 0.0  - `vurmax`: Limite maximale UEL pour la magnitude du phasor de rayon (V).  Valeur typique = 5.8. Valeur par défaut : 0.0    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `kuc[number]`: Réglage central de l'UEL (K).  Valeur typique = 1.38. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kuf[number]`: Gain du stabilisateur du système d'excitation UEL (K).  Valeur typique = 3.3. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kui[number]`: Gain intégral de l'UEL (K).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kul[number]`: Gain proportionnel de l'UEL (K).  Valeur typique = 100. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kur[number]`: Réglage du rayon UEL (K).  Valeur typique = 1.95. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `tu1[number]`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tu2[number]`: Constante de temps du décalage UEL (T).  Valeur typique = 0.05. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tu3[number]`: Constante de temps de plomb UEL (T).  Valeur typique = 0. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tu4[number]`: Constante de temps du décalage UEL (T).  Valeur typique = 0. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type NGSI. Il doit être UnderexcLimIEEE1.  - `vucmax[number]`: Limite maximale UEL pour la magnitude du phasor du point de fonctionnement (V).  Valeur typique = 5.8. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vuimax[number]`: Limite maximale de la sortie de l'intégrateur UEL (V). Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vuimin[number]`: Limite minimale de la sortie de l'intégrateur UEL (V). Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vulmax[number]`: Limite maximale de la sortie UEL (V).  Valeur typique = 18. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vulmin[number]`: Limite minimale de la sortie UEL (V).  Valeur typique = -18. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vurmax[number]`: Limite maximale UEL pour la magnitude du phasor de rayon (V).  Valeur typique = 5.8. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnderexcLimIEEE1:    
@@ -37,31 +53,43 @@ UnderexcLimIEEE1:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &underexclimieee1_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -73,32 +101,38 @@ UnderexcLimIEEE1:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     kuc:    
       description: 'UEL center setting (K).  Typical Value = 1.38. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kuf:    
       description: 'UEL excitation system stabilizer gain (K).  Typical Value = 3.3. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kui:    
       description: 'UEL integral gain (K).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kul:    
       description: 'UEL proportional gain (K).  Typical Value = 100. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kur:    
       description: 'UEL radius setting (K).  Typical Value = 1.95. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -250,16 +284,21 @@ UnderexcLimIEEE1:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *underexclimieee1_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -270,72 +309,105 @@ UnderexcLimIEEE1:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tu1:    
       description: 'UEL lead time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tu2:    
       description: 'UEL lag time constant (T).  Typical Value = 0.05. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tu3:    
       description: 'UEL lead time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tu4:    
       description: 'UEL lag time constant (T).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be UnderexcLimIEEE1'    
       enum:    
         - UnderexcLimIEEE1    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vucmax:    
       description: 'UEL maximum limit for operating point phasor magnitude (V).  Typical Value = 5.8. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vuimax:    
       description: 'UEL integrator output maximum limit (V). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vuimin:    
       description: 'UEL integrator output minimum limit (V). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vulmax:    
       description: 'UEL output maximum limit (V).  Typical Value = 18. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vulmin:    
       description: 'UEL output minimum limit (V).  Typical Value = -18. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vurmax:    
       description: 'UEL maximum limit for radius phasor magnitude (V).  Typical Value = 5.8. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/UnderexcLimIEEE1/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/UnderexcLimIEEE1/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un UnderexcLimIEEE1 en format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un UnderexcLimIEEE1 au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un UnderexcLimIEEE1 en format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un UnderexcLimIEEE1 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
