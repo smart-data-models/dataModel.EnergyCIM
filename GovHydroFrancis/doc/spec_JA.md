@@ -1,16 +1,32 @@
-エンティティGovHydroFrancis  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティゴブハイドロフランシス  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydroFrancis/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。詳細なハイドロユニット - フランシスモデル。  このモデルは、3種類のガバナーを表現するために使用することができる。フランシスやペルトンのような詳細ハイドロユニットモデルの油圧システムの概略は、DesthellHydroModelHydraulicSystem図で提供されています**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルから引用。詳細なハイドロユニット-フランシスモデル。  このモデルは、3種類のガバナーを表現するために使用することができる。フランシスやペルトンなどの詳細水力ユニットモデルの水力システムの概略は、DecteldHydroModelHydraulicSystemダイアグラムで提供される**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `am`: 最大効率（Am）での開口部S。  代表値＝0.7。初期値：0.0  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `av0`: サージタンクの面積（A）。単位：m、代表値：30デフォルト：0.0  - `av1`: 補償タンクの面積（A）。単位＝m、代表値＝700。デフォルト：0.0  - `bp`: ドループ（Bp）。  代表値＝0.05。初期値：0.0  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `db1`: 意図的なデッドバンドの幅（DB1）。  単位：Hz  代表値＝0、初期値＝0.0  - `description`: このアイテムの説明  - `etamax`: 最大効率（EtaMax）。  代表値＝1.05。デフォルト：0.0  - `governorControl`: ガバナーコントロールフラグ（Cflag）。  典型的な値＝mechanicHydrolicTachoAccelerator。デフォルト。なし  - `h1`: ペンストックのレベル（H）に対する補償室の水位の頭。  単位：m、代表値：4デフォルト：0.0  - `h2`: ペンストックのレベル（H）を基準としたサージタンクの水位のヘッド。  単位：m。代表値：40。デフォルト：0.0  - `hn`: 定格水頭（H）。  単位＝m、代表値＝250。デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `kc`: ペンストックの損失係数（摩擦によるもの）（Kc）。  代表値＝0.025。デフォルト：0.0  - `kg`: ウォータートンネルとサージチャンバーの損失係数（摩擦による）(Kg)。  代表値＝0.025。デフォルト：0.0  - `kt`: ウォッシュアウトゲイン（Kt）。  代表値＝0.25。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `qc0`: 公称揚程（Qc0）における無負荷時のタービン流量。  代表値＝0.21。デフォルト：0.0  - `qn`: 定格流量（Q）。単位＝m/s。代表値＝40。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 微分ゲイン（Ta）。  代表値＝3初期値：0  - `td`: ウォッシュアウト時定数（Td）。  代表値＝3。デフォルト：0  - `ts`: ゲートサーボ時定数（Ts）。  代表値＝0.5。初期値：0  - `twnc`: 水の慣性時定数（Twnc）。  代表値＝1。デフォルト：0  - `twng`: ウォータートンネルとサージチャンバーの慣性時定数（Twng）。代表値＝3。デフォルト：0  - `tx`: 微分帰還ゲイン（Tx）。  典型的な値は1です。初期値：0  - `type`: NGSIタイプです。GovHydroFrancisである必要があります。  - `va`: 最大ゲート開閉速度（Va）。  単位＝PU/sec。  代表値＝0.011。デフォルト：0.0  - `valvmax`: 最大ゲート開口部（ValvMax）。  代表値＝1。初期値：0.0  - `valvmin`: 最小ゲート開度（ValvMin）。  代表値＝0、デフォルト：0.0  - `vc`: 最大ゲート閉鎖速度（Vc）。  単位＝PU/sec。  代表値＝-0.011。デフォルト：0.0  - `waterTunnelSurgeChamberSimulation`: Water tunnel and surge chamber simulation (Tflag). true = water tunnel and surge chamber simulation を有効にする false = water tunnel and surge chamber simulation を無効にする。代表値＝false。デフォルトはFalse  - `zsfc`: ペンストックのレベルを基準とした上水位のヘッド（Zsfc）。  単位：m。代表値：25。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `am[number]`: 最大効率(Am)での開口部S。  典型的な値=0.7。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `av0[number]`: サージタンクの面積 (A)。単位 = m. 典型的な値 = 30.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `av1[number]`: 補償タンクの面積 (A)。単位 = m. 典型的な値 = 700.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: ドループ(Bp)。  典型的な値 = 0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db1[number]`: 意図的なデッドバンド幅（DB1）。  単位：Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `etamax[number]`: 最大効率(EtaMax)。  典型的な値 = 1.05.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorControl[number]`: ガバナー制御フラグ(Cflag)。  典型的な値 = mechanicHydrolicTachoAccelerator。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `h1[number]`: ペンストック水位(H)に対する補償室水位(Head)。  単位：m、代表値：4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h2[number]`: ペンストック水位に対するサージタンク水位(H)のヘッド。  単位：m，代表値：40。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hn[number]`: 定格水頭（H）。  単位：m。代表値：250。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `kc[number]`: ペンストック損失係数（摩擦による）(Kc)。  典型的な値 = 0.025。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: ウォータートンネルとサージチャンバーの損失係数（摩擦による） (Kg).  代表値 = 0.025.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kt[number]`: ウォッシュアウトゲイン (Kt)。  典型的な値 = 0.25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `qc0[number]`: 公称水頭（Qc0）における無負荷時のタービン流量。  典型的な値 = 0.21.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn[number]`: 定格流量（Q）。単位＝m/s。典型的な値 = 40。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 微分利得(Ta)。  代表的な値＝3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: ウォッシュアウト時定数 (Td)。  典型的な値 = 3.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts[number]`: ゲートサーボ時定数(Ts)。  代表値＝0.5。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twnc[number]`: 水の慣性時定数 (Twnc)。  典型的な値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twng[number]`: 水トンネルとサージチャンバーの慣性時定数(Twng)。典型的な値 = 3.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tx[number]`: 微分フィードバックゲイン（Tx）。  典型的な値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIのタイプ。GovHydroFrancisである必要があります。  - `va[number]`: 最大ゲート開閉速度（Va）。  単位＝PU/sec。  典型的な値 = 0.011。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmax[number]`: 最大ゲート開度(ValvMax)。  典型的な値 = 1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmin[number]`: 最小ゲート開度 (ValvMin)。  代表値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vc[number]`: 最大ゲート閉鎖速度（Vc）。  単位：PU/sec.  典型的な値 = -0.011。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTunnelSurgeChamberSimulation[number]`: 水路トンネルおよびサージチャンバーシミュレーション (Tflag) true = 水路トンネルおよびサージチャンバーシミュレーションを有効にする false = 水路トンネルおよびサージチャンバーシミュレーションを無効にする。典型的な値=false。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `zsfc[number]`: ペンストックレベルを基準とした上水位のヘッド（Zsfc）。  単位 = m. 典型的な値 = 25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydroFrancis:    
@@ -449,9 +465,21 @@ GovHydroFrancis:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のGovHydroFrancisの例をkey-valuesとして利用できません。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のGovHydroFrancisの例は利用できません。これはオプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のGovHydroFrancisの例をkey-valuesとして利用できません。これは`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のGovHydroFrancisの例を正規化したものは利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+GovHydroFrancisの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovHydroFrancisのJSON-LD形式を正規化した例は利用不可。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+GovHydroFrancisの例をJSON-LD形式でkey-valuesとして利用することはできません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovHydroFrancisのJSON-LD形式を正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
