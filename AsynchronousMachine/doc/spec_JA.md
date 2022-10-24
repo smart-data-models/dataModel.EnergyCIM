@@ -1,16 +1,32 @@
-エンティティAsynchronousMachine  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティAsynchronousMachine  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/AsynchronousMachine/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルより引用。シャフトが電界とは非同期に回転する回転機械のこと。  回転子の巻線に外部からの接続がない誘導機としても知られている。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルから引用。回転機械で、シャフトが電界と非同期で回転するもの。  回転子巻線に外部接続のない誘導機としても知られている（例：リスかご型誘導機）。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `AsynchronousMachineDynamics`: この非同期マシンの動的な動作を記述するために使用される非同期マシンダイナミクスモデル。デフォルトはなし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `asynchronousMachineType`: 非同期機の種類（モーターまたは発電機）を示す。デフォルトはなし  - `converterFedDrive`: 機械がコンバータ給電駆動であるかどうかを示す。IEC 60909に基づく短絡データ交換に使用される デフォルトFalse  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `efficiency`: 非同期機の公称運転時の効率（単位：％）。コンバータ駆動モータのインジケータ。IEC 60909に基づく短絡データ交換に使用される デフォルト：0.0  - `iaIrRatio`: モーターの定格電流に対するロックローター電流の比率（Ia/Ir）。IEC 60909に基づく短絡データ交換に使用される デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nominalFrequency`: 銘板データは、マシンが50Hzか60Hzかを示す。デフォルト：0.0  - `nominalSpeed`: 銘板データ。  スリップとポールペアの数に依存します。デフォルト：0.0  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `polePairNumber`: ステーターのポールペアの数。IEC 60909に基づく短絡データ交換に使用される デフォルト：0  - `ratedMechanicalPower`: 定格機械力（IEC 60909-0のPr）。IEC 60909に基づく短絡データ交換に使用される。デフォルト：0.0  - `reversible`: コンバータ駆動モータの場合、電力が可逆的に使用できるかどうかを示す。IEC 60909に基づく短絡データ交換に使用される デフォルトFalse  - `rxLockedRotorRatio`: ロックド・ローター・レシオ（R/X）。IEC 60909に基づく短絡データ交換に使用される デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。AsynchronousMachineである必要があります。    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `AsynchronousMachineDynamics[number]`: この非同期機の動的挙動を記述するために使用される非同期機ダイナミクスモデル。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `asynchronousMachineType[number]`: 非同期機（モータまたは発電機）の種類を示す。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `converterFedDrive[number]`: 機械が変換器給電駆動であるかどうかを示す。IEC 60909 に従った短絡データ交換に使用される デフォルト。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `efficiency[number]`: 非同期機の公称運転時の効率（単位：パーセント）。コンバータ駆動用モータのインジケータ。IEC 60909に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iaIrRatio[number]`: モータの定格電流に対するロックロータ電流の比率（Ia/Ir）。IEC 60909に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `nominalFrequency[number]`: 銘板データは、機械が50Hzか60Hzかを示しています。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `nominalSpeed[number]`: 銘板のデータです。  スリップと極対の数に依存する。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `polePairNumber[number]`: 固定子の磁極対の数。IEC 60909に準拠した短絡データ交換に使用 デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedMechanicalPower[number]`: 定格機械的動力（IEC 60909-0のPr）。IEC 60909に準拠した短絡データ交換に使用する。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `reversible[number]`: コンバータ駆動モータで、電源がリバーシブルかどうかを示す。IEC 60909に従った短絡データ交換に使用される デフォルト。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `rxLockedRotorRatio[number]`: ロックローター比（R/X）。IEC 60909に準拠した短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。AsynchronousMachineである必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AsynchronousMachine:    
@@ -345,11 +361,29 @@ AsynchronousMachine:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/AsynchronousMachine/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/AsynchronousMachine/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-AsynchronousMachineの例をkey-valuesとしてJSON-LD形式で利用できません。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のAsynchronousMachineの例は利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-AsynchronousMachineの例をkey-valuesとしてJSON-LD形式で利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のAsynchronousMachineの例は利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+AsynchronousMachineの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+AsynchronousMachine の例を JSON-LD 形式で正規化したものは利用不可。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+AsynchronousMachineの例をJSON-LD形式でkey-valuesにしたものは利用できない。これは `options=keyValues` を使った場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+AsynchronousMachine の例を JSON-LD 形式で正規化したものは利用できない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
