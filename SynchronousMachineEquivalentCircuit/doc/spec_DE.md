@@ -1,16 +1,32 @@
-Entität: SynchronMachineEquivalentCircuit  
-=========================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: SynchronousMachineEquivalentCircuit  
+============================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SynchronousMachineEquivalentCircuit/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Die elektrischen Gleichungen für alle Varianten der Synchronmodelle basieren auf dem SynchronousEquivalentCircuit-Diagramm für die Direkt- und Quadraturachse.    = + = + * / ( + ) = + * * / ( * + * + * ) = + = + * / (+ ) = + ** / ( * + * + * ) = ( + ) / ( * ) = ( * + * + * ) / ( * * ( + ) = ( + ) / ( * ) = ( * + * +  * )/ ( * * ( + ) Gleiche Gleichungen unter Verwendung von CIM-Attributen aus der Klasse SynchronousMachineTimeConstantReactance auf der linken Seite des =-Zeichens und der Klasse SynchronousMachineEquivalentCircuit auf der rechten Seite (außer wie angegeben): xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.statorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.StatorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q) tpdo = (xad + xfd) / (2*pi*Nennfrequenz * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi*Nennfrequenz * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi*Nennfrequenz * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi*Nennfrequenz * r2q * (xaq + x1q).  Gelten nur für ein vereinfachtes Modell, bei dem die 'Canay'-Reaktanz Null ist.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Die elektrischen Gleichungen für alle Varianten der Synchronmodelle basieren auf dem SynchronousEquivalentCircuit-Diagramm für die direkte und die Quadratur-Achse.    = + = + * / ( + ) = + * * / ( * + * + * ) = + = + * / (+ ) = + ** / ( * + * + * ) = ( + ) / ( * ) = ( * + * + * ) / ( * * ( + ) = ( + ) / ( * ) = ( * + * +  * )/ ( * * ( + ) Gleiche Gleichungen unter Verwendung der CIM-Attribute der Klasse SynchronousMachineTimeConstantReactance links vom =-Zeichen und der Klasse SynchronousMachineEquivalentCircuit rechts (außer wie angegeben): xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd) xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d) xQuadSync = xaq + RotatingMachineDynamics.statorLeakageReactance xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q) xQuadSubtrans = RotatingMachineDynamics.StatorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q) tpdo = (xad + xfd) / (2*pi*Nennfrequenz * rfd) tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi*Nennfrequenz * r1d * (xad + xfd) tpqo = (xaq + x1q) / (2*pi*Nennfrequenz * r1q) tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi*Nennfrequenz * r2q * (xaq + x1q).  Gelten nur für ein vereinfachtes Modell, bei dem der Blindwiderstand "Canay" gleich Null ist.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `r1d`: D-Achsen-Dämpfer 1 Wicklungswiderstand. Voreinstellung: 0,0  - `r1q`: Wicklungswiderstand der Q-Achse Dämpfer 1. Voreinstellung: 0,0  - `r2q`: Q-Achsen-Dämpfer 2 Wicklungswiderstand. Voreinstellung: 0,0  - `rfd`: Widerstand der Feldwicklung. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI-Typ. Es muss SynchronousMachineEquivalentCircuit sein  - `x1d`: D-Achsen-Dämpfer 1 Wicklungsleckreaktanz. Voreinstellung: 0,0  - `x1q`: Q-Achsendämpfer 1 Wicklungsleckreaktanz. Voreinstellung: 0,0  - `x2q`: Q-Achsen-Dämpfer 2 Wicklungsleckreaktanz. Voreinstellung: 0,0  - `xad`: Gegenseitige Reaktanz der D-Achse. Voreinstellung: 0,0  - `xaq`: Gegenseitige Reaktanz der Q-Achse. Voreinstellung: 0,0  - `xf1d`: Differentiale gegenseitige (`Canay`) Reaktanz. Voreinstellung: 0,0  - `xfd`: Streureaktanz der Feldwicklung. Voreinstellung: 0,0    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `r1d[number]`: D-Achsen-Dämpfer 1 Wicklungswiderstand. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r1q[number]`: Wicklungswiderstand des Q-Achsendämpfers 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r2q[number]`: Wicklungswiderstand des Q-Achsen-Dämpfers 2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rfd[number]`: Widerstand der Feldwicklung. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Typ. Es muss SynchronousMachineEquivalentCircuit sein  - `x1d[number]`: Streureaktanz der Wicklung des Dämpfers der D-Achse 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x1q[number]`: Streureaktanz der Wicklung des Q-Achsendämpfers 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x2q[number]`: Streureaktanz der Wicklung des Q-Achsendämpfers 2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xad[number]`: Gegenseitige Reaktanz der D-Achse. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xaq[number]`: Gegenseitige Reaktanz der Q-Achse. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xf1d[number]`: Differenzieller gegenseitiger (`Canay`) Blindwiderstand. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xfd[number]`: Streureaktanz der Feldwicklung. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SynchronousMachineEquivalentCircuit:    
@@ -37,31 +53,43 @@ SynchronousMachineEquivalentCircuit:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &synchronousmachineequivalentcircuit_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -73,7 +101,8 @@ SynchronousMachineEquivalentCircuit:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -225,36 +254,45 @@ SynchronousMachineEquivalentCircuit:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *synchronousmachineequivalentcircuit_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     r1d:    
       description: 'D-axis damper 1 winding resistance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     r1q:    
       description: 'Q-axis damper 1 winding resistance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     r2q:    
       description: 'Q-axis damper 2 winding resistance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     rfd:    
       description: 'Field winding resistance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -265,57 +303,87 @@ SynchronousMachineEquivalentCircuit:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be SynchronousMachineEquivalentCircuit'    
       enum:    
         - SynchronousMachineEquivalentCircuit    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     x1d:    
       description: 'D-axis damper 1 winding leakage reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     x1q:    
       description: 'Q-axis damper 1 winding leakage reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     x2q:    
       description: 'Q-axis damper 2 winding leakage reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     xad:    
       description: 'D-axis mutual reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     xaq:    
       description: 'Q-axis mutual reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     xf1d:    
       description: 'Differential mutual (`Canay`) reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     xfd:    
       description: 'Field winding leakage reactance. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SynchronousMachineEquivalentCircuit/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineEquivalentCircuit/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
-Nicht verfügbar das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Nicht verfügbar ist das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines SynchronousMachineEquivalentCircuit im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
