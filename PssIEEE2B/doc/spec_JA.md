@@ -1,16 +1,32 @@
-エンティティPssIEEE2B  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPssIEEE2B  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssIEEE2B/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMのデータモデルからの引用です。このクラスは、IEEE Std 421.5-2005 タイプ PSS2B 電力系統安定化装置モデルを表します。この安定化装置モデルは、通常、電力と速度または周波数の組み合わせを使用して安定化信号を導出する、さまざまなデュアル入力安定化装置を表すように設計されています。  参考文献IEEE 2B 421.5-2005 8.2.**項  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。IEEE Std 421.5-2005 タイプ PSS2B 電力系統スタビライザーモデルを表すクラスである。このスタビライザーモデルは、通常、電力と速度または周波数の組み合わせを使用して安定化信号を導出する、さまざまな二重入力スタビライザーを表現するために設計されている。  参考文献IEEE 2B 421.5-2005 第 8.2.** 項  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `inputSignal1Type`: 入力信号#1の種類。  代表値＝rotorSpeed。デフォルトなし  - `inputSignal2Type`: 入力信号#2の種類。  代表値＝generatorElectricalPower。デフォルト。なし  - `ks1`: スタビライザーゲイン（Ks1）。  代表値＝12。初期値：0.0  - `ks2`: 信号2のゲイン（Ks2）。  代表値＝0.2。初期値：0.0  - `ks3`: 信号#2入力のランプトラッキングフィルタ(Ks3)前のゲイン。  典型的な値は1です。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `m`: ランプ・トラッキング・フィルター（M）の分母の次数。  典型的な値は5です。初期値：0  - `n`: ランプ・トラッキング・フィルターの次数（N）。  典型的な値は1です。初期値：0  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1`: リード／ラグ時定数（T1）。  代表値＝0.12。デフォルト：0  - `t10`: リード／ラグ時定数（T10）。  代表値＝0、初期値＝0  - `t11`: リード／ラグ時定数（T11）。  代表値＝0、初期値＝0  - `t2`: リード／ラグ時定数（T2）。  代表値＝0.02。デフォルト：0  - `t3`: リード／ラグ時定数（T3）。  代表値＝0.3です。デフォルト：0  - `t4`: リード／ラグ時定数（T4）。  代表値＝0.02。デフォルト：0  - `t6`: 信号#1の時定数(T6)。  代表値＝0、デフォルト：0  - `t7`: 信号2（T7）の時定数。  代表値＝2。デフォルト：0  - `t8`: ランプトラッキングフィルタ（T8）のリード。  典型的な値＝0.2です。デフォルト：0  - `t9`: ランプ・トラッキング・フィルター（T9）のラグ。  代表値＝0.1。初期値：0  - `tw1`: 信号#1(Tw1)の最初のウォッシュアウト。  典型的な値は2です。デフォルト：0  - `tw2`: 信号#1(Tw2)の2回目のウォッシュアウト。  典型的な値は2です。デフォルト：0  - `tw3`: 信号2（Tw3）の最初のウォッシュアウト。  典型的な値は2です。デフォルト：0  - `tw4`: 信号#2(Tw4)の2回目のウォッシュアウト。  代表値＝0、デフォルト：0  - `type`: NGSIタイプであること。PssIEEE2Bである必要があります。  - `vsi1max`: 入力信号#1のマックスリミット（Vsi1max）。  典型的な値 = 2.デフォルト：0.0  - `vsi1min`: 入力信号#1の下限値(Vsi1min)。  典型的な値 = -2.デフォルト：0.0  - `vsi2max`: 入力信号#2のマックスリミット（Vsi2max）。  典型的な値 = 2.デフォルト：0.0  - `vsi2min`: 入力信号#2の下限値（Vsi2min）。  典型的な値 = -2.デフォルト：0.0  - `vstmax`: スタビライザー出力の最大リミット（Vstmax）。  代表値＝0.1初期値：0.0  - `vstmin`: スタビライザー出力の下限値（Vstmin）。  代表値＝-0.1初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `inputSignal1Type[number]`: 入力信号の種類#1。  典型的な値 = rotorSpeed.デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `inputSignal2Type[number]`: 入力信号の種類 #2。  典型的な値 = generatorElectricalPower。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks1[number]`: スタビライザーのゲイン（Ks1）。  代表的な値＝12。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks2[number]`: 信号2に対するゲイン（Ks2）。  典型的な値=0.2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks3[number]`: ランプトラッキングフィルタ（Ks3）前の信号＃2入力時のゲイン。  典型的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `m[number]`: ランプトラッキングフィルタの分母オーダー(M)。  典型的な値 = 5.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `n[number]`: ランプトラッキングフィルタの次数（N）。  典型的な値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1[number]`: リード/ラグ時定数 (T1)。  典型的な値 = 0.12。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t10[number]`: リード／ラグ時定数（T10）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t11[number]`: リード/ラグ時定数 (T11)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: リード/ラグ時定数 (T2)。  典型的な値 = 0.02。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: リード/ラグ時定数 (T3)。  典型的な値 = 0.3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: リード/ラグ時定数 (T4)。  代表値＝0.02。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: 信号#1 の時定数（T6）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t7[number]`: 信号番号2（T7）の時定数。  代表的な値＝2。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t8[number]`: ランプトラッキングフィルタ(T8)のリード。  典型的な値 = 0.2。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t9[number]`: ランプトラッキングフィルタ(T9)のラグ。  典型的な値 = 0.1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw1[number]`: 信号1(Tw1)の1回目のウォッシュアウト。  典型的な値=2。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw2[number]`: 信号1(Tw2)の2回目のウォッシュアウト。  典型的な値=2。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw3[number]`: 信号番号2(Tw3)の最初のウォッシュアウト。  典型的な値=2。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw4[number]`: 信号#2 (Tw4)の2回目のウォッシュアウト。  典型的な値=0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。PssIEEE2Bである必要があります。  - `vsi1max[number]`: 入力信号＃1の最大リミット値（Vsi1max）。  典型的な値=2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi1min[number]`: 入力信号＃1の最小リミット（Vsi1min）。  典型的な値=-2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi2max[number]`: 入力信号＃2の最大リミット値（Vsi2max）。  典型的な値=2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi2min[number]`: 入力信号＃2の最小リミット値（Vsi2min）。  典型的な値=-2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: スタビライザー出力最大リミット値（Vstmax）。  代表値＝0.1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: スタビライザー出力最小リミット値（Vstmin）。  代表値 = -0.1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PssIEEE2B:    
@@ -449,9 +465,21 @@ PssIEEE2B:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-key-valuesとしてJSON-LD形式のPssIEEE2Bの例を利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-PssIEEE2Bを正規化してJSON-LD形式にした例は利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-PssIEEE2Bの例をkey-valuesとしてJSON-LD形式で利用できません。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-PssIEEE2Bを正規化してJSON-LD形式にした例は利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+PssIEEE2BのJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+PssIEEE2B を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+PssIEEE2BのJSON-LD形式のkey-valuesの例は利用できません。これは `options=keyValues` を使った場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+PssIEEE2B を正規化した JSON-LD 形式の例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
