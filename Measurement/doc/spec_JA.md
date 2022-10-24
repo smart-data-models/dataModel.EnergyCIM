@@ -1,16 +1,32 @@
-エンティティ測定  
-========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ測定  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Measurement/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。Measurementは、測定された、計算された、または測定されていない計算されていない量を表す。例えば、変電所には温度測定値とドア開放表示があり、変圧器には油温とタンク圧力の測定値があり、ベイには多数のパワーフロー測定値があり、ブレーカーにはスイッチステータス測定値があるかもしれない。  PSR - Measurement関連は、このようなMeasurementの使用を捕捉することを目的としており、EquipmentContainerに基づく命名階層に含まれる。命名階層は、一般的に、例えば「Substation-VoltageLevel-Bay-Switch-Measurement」のように、リーフとしてMeasurementを持っている。いくつかの Measurements は、ネットワーク内の特定のセンサ位置に関連する量を表す。例えば、バスバーにある電圧変圧器（PT）や、ブレーカーとアイソレータの間のバーにある電流変圧器（CT）などである。検出位置は、PSR - Measurement関連では捕捉されません。その代わりに、ネットワークトポロジーで検出位置を定義するために使用される「Measurement - Terminal」関連で捕捉されます。この位置は、Terminal の ConductingEquipment への接続によって定義される。  TerminalとPSRの両方が関連付けられており、PSRのタイプがConductingEquipmentである場合、関連付けられたTerminalはそのConductingEquipmentインスタンスに属している必要があります。センサーの位置が必要な場合は、Measurement-PSR と Measurement-Terminal の両方が使用される。Measurement-Terminalの関連付けが単独で使用されることはない。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルから引用。測定は，測定された量，計算された量，又は測定されない非計算された量を表す。例えば、変電所には温度測定とドア開放表示があり、変圧器には油温とタンク圧の測定値があり、湾には多くの電力フロー測定値があり、遮断器にはスイッチ状態測定値があるなど、あらゆる機器の一部が測定値を含む可能性がある。  PSR - Measurementの関連付けは、このようなMeasurementの用途を把握するためのものであり、EquipmentContainerに基づく命名階層に含まれる。命名階層は通常、Substation-VoltageLevel-Bay-Switch-Measurement のような Measurements をリーフとして持つ。例えば、母線にある電圧変圧器（PT）や、ブレーカとアイソレータの間にある電流変圧器（CT）などである。センサーの位置は、PSR-Measurementの関連付けでは把握されません。その代わり、ネットワークトポロジーで検出位置を定義するために使用される「測定 - 端末」アソシエーションによって取得されます。この位置は、端末とConductingEquipmentの接続によって定義されます。  端末と PSR の両方が関連付けられ、PSR が ConductingEquipment タイプである場合、関連付けられた端末はその ConductingEquipment インスタンスに属する必要があります。センサー位置が必要な場合、Measurement-PSR と Measurement-Terminal の両方が使用されます。測定-端末の関連付けは、単独で使用されることはありません**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `PowerSystemResource`: このパワーシステムリソースに関連する測定値。デフォルトです。なし  - `Terminal`: 1つまたは複数の測定値をネットワーク内の端末に関連付けることができます。デフォルトはなし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `measurementType`: 測定の種類を指定します。  例えば、測定値が屋内温度、屋外温度、バス電圧、ラインフローなどを表しているかどうかを指定します。デフォルト： ''  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `phases`: 測定がどのフェーズに適用されるかを示し、位相情報をエンコードするために`measurementType`を使用する必要性を回避します（これはタイプを爆発させることになります）。測定の位相情報は、`measurementType`および`phases`とともに、通常のネットワーク位相に基づいて、デバイスの測定を一意に定義します。ジャンパーやその他の理由で計算された通電の位相が変更されても、その意味は変わりません。この属性がない場合は、三相（ABC）を想定する。デフォルトはなし  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプです。Measurementである必要があります。  - `unitMultiplier`: 測定量の単位乗数。デフォルトはなし  - `unitSymbol`: 測定量の単位。デフォルトはなし    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `PowerSystemResource[number]`: この電力システムリソースに関連する測定値。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `Terminal[number]`: 1つまたは複数の測定値をネットワーク内の端末と関連付けることができる。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurementType[number]`: 測定の種類を指定する。  例えば、測定値が室内温度、室外温度、バス電圧、ラインフローなどを表しているかどうかを指定する。デフォルト：''。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `phases[number]`: 測定がどのフェーズに適用されるかを示し、フェーズ情報をエンコードするために `measurementType` を使用する必要性を回避します (これはタイプを爆発させることになります)。Measurement の位相情報は、`measurementType` と `phases` と共に、通常のネットワーク位相に基づいて、デバイスの Measurement を一意に定義します。ジャンパーやその他の理由で計算された通電位相が変更されても、それらの意味は変わりません。この属性がない場合は、3つの位相（ABC）を仮定する。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。測定（Measurement）である必要があります。  - `unitMultiplier[number]`: 測定された量の単位倍率を指定します。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `unitSymbol[number]`: 測定された量の単位。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Measurement:    
@@ -323,9 +339,21 @@ Measurement:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-Key-ValuesとしてJSON-LD形式のMeasurementの例は利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のMeasurementの例はありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のMeasurementの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のMeasurementの例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のMeasurementの例をkey-valuesとして利用することはできない。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+MeasurementをJSON-LD形式で正規化した例は利用できない。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のMeasurementの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用したときにNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+MeasurementのJSON-LD形式を正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
