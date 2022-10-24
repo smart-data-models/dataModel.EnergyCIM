@@ -1,16 +1,32 @@
-Entity:ProprietaryParameterDynamics  
-===================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティProprietaryParameterDynamics  
+==================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ProprietaryParameterDynamics/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。独自のユーザー定義モデルで使用するために、複数の異なるデータ型の1つまたは複数のパラメータの定義をサポートします。  注：このクラスはIdentifiedObjectを継承していません。なぜなら、このクラスの1つのインスタンスが複数の独自のユーザー定義モデルのインスタンスによって参照されることを意図していないからです。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルを応用したもの。独自のユーザー定義モデルで使用するための、いくつかの異なるデータ型の一つ以上のパラメータの定義をサポートしています。  注：このクラスはIdentifiedObjectを継承しない。なぜなら、このクラスの単一のインスタンスが複数の独自のユーザー定義モデルのインスタンスから参照されることを意図していないからである。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `AsynchronousMachineUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `DiscontinuousExcitationControlUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `ExcitationSystemUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `LoadUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `MechanicalLoadUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `OverexcitationLimiterUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `PFVArControllerType1UserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `PFVArControllerType2UserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `PowerSystemStabilizerUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `SynchronousMachineUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `TurbineGovernorUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `TurbineLoadControllerUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `UnderexcitationLimiterUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `VoltageAdjusterUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `VoltageCompensatorUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `WindPlantUserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `WindType1or2UserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `WindType3or4UserDefined`: このパラメータが関連付けられているプロプライエタリなユーザー定義モデル。デフォルトはなし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `booleanParameterValue`: booleanパラメータの値に使用されます。この属性が設定されている場合、integerParameterValue と floatParameterValue は設定されません。デフォルトはFalse  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `floatParameterValue`: 浮動小数点のパラメータ値に使用されます。  この属性が設定されている場合、booleanParameterValueとintegerParameterValueは設定されません。デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `integerParameterValue`: 整数のパラメータ値に使用されます。  この属性が設定されている場合、booleanParameterValueとfloatParameterValueは設定されません。デフォルト：0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `parameterNumber`: 関連する独自のユーザー定義モデルに関連する一連のパラメータのうち、パラメータのシーケンス番号。デフォルト：0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプ。ProprietaryParameterDynamicsでなければなりません。    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `AsynchronousMachineUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `DiscontinuousExcitationControlUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `ExcitationSystemUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `LoadUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `MechanicalLoadUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `OverexcitationLimiterUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `PFVArControllerType1UserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `PFVArControllerType2UserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `PowerSystemStabilizerUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `SynchronousMachineUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `TurbineGovernorUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `TurbineLoadControllerUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `UnderexcitationLimiterUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `VoltageAdjusterUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `VoltageCompensatorUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `WindPlantUserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `WindType1or2UserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `WindType3or4UserDefined[number]`: このパラメータが関連付けられている、独自のユーザー定義モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `booleanParameterValue[number]`: boolean パラメータ値に使用する。この属性が設定されている場合、integerParameterValueとfloatParameterValueは設定されません。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `floatParameterValue[number]`: 浮動小数点パラメータ値に使用される。  この属性が入力されている場合、booleanParameterValueとintegerParameterValueは入力されません。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `integerParameterValue[number]`: 整数のパラメータ値に使用される。  この属性が入力されている場合、booleanParameterValueとfloatParameterValueは入力されません。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `parameterNumber[number]`: 関連する独自のユーザー定義モデルに関連するパラメータ集合の中の、パラメータのシーケンス番号。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI タイプ。ProprietaryParameterDynamics である必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ProprietaryParameterDynamics:    
@@ -419,9 +435,21 @@ ProprietaryParameterDynamics:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のProprietaryParameterDynamicsの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のProprietaryParameterDynamicsの例を正規化したものはありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のProprietaryParameterDynamicsの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のPropericationParameterDynamicsの例を正規化したものはありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+ProprietaryParameterDynamics の例を JSON-LD フォーマットの key-value として利用することはできませ ん。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+ProprietaryParameterDynamics を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+ProprietaryParameterDynamicsのJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+ProprietaryParameterDynamics を JSON-LD 形式で正規化した例は存在しない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
