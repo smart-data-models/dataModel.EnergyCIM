@@ -1,16 +1,32 @@
-エンティティExcAC2A  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティExcAC2A  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcAC2A/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルから採用。IEEE AC2Aオルタネーター供給整流器励起システムを修正したもので、フィールド電流制限が異なる。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルより作成。IEEE AC2Aオルタネーター供給整流励磁方式を界磁電流制限を変えて改造したもの**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hvgate`: HVゲートが使用されているか（HVgate）を示す。true = ゲートが使用されている false = ゲートが使用されていない。代表値＝true。デフォルトは偽  - `id`: エンティティのユニークな識別子  - `ka`: 電圧調整器のゲイン（Ka）。  代表値＝400。初期値：0.0  - `kb`: 第2段レギュレータ・ゲイン（Kb）（＞0）。  励磁界電流制御器のゲイン。  典型的な値＝25です。デフォルト：0.0  - `kb1`: 第2段レギュレータ・ゲイン（Kb1）。ExcAC2Aモデルのバリエーションを表すためにKbの代わりに使用される励磁界電流制御器のゲインです。  典型的な値は25です。初期値：0.0  - `kc`: 整流器の負荷率は，整流リアクタンス（Kc）に比例する。  代表値＝0.28。初期値：0.0  - `kd`: 励磁機オルタネータのリアクタンス(Kd)の関数である減磁率。  代表値＝0.35。デフォルト：0.0  - `ke`: 自励磁電界（Ke）に関係するエキサイター定数。  典型的な値は1です。初期値：0.0  - `kf`: 励磁制御系スタビライザーゲイン（Kf）。  代表値＝0.03。初期値：0.0  - `kh`: Exciter field current feedback gain (Kh).  代表値＝1。初期値：0.0  - `kl`: Exciter field current limiter gain (Kl)。  代表値＝10。初期値：0.0  - `kl1`: モデル（Kl1）の異なる使い方を可能にする係数。  典型的な値＝1。既定値：0.0  - `ks`: モデルスピード係数(Ks)を使い分けるための係数。  代表値＝0、初期値＝0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lvgate`: LVゲートが使用されているか（LVgate）を示す。true = ゲートが使用されている false = ゲートが使用されていない。代表値＝true。デフォルトはFalse  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `seve1`: 対応するエキサイタ電圧Ve、整流リアクタンスの後ろ（Se[Ve]）におけるエキサイタ飽和関数値。  代表値＝0.037。初期値：0.0  - `seve2`: 対応するエキサイタ電圧Ve、整流リアクタンスの後ろ（Se[Ve]）におけるエキサイタ飽和関数値。  代表値＝0.012。初期値：0.0  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 電圧調整器の時定数（Ta）。  代表値＝0.02。デフォルト：0  - `tb`: 電圧調整器の時定数（Tb）。  代表値＝0 既定値：0  - `tc`: 電圧調整器の時定数（T）。  代表値＝0 既定値：0  - `te`: エキサイター時定数、エキサイター制御（Te）に伴う積分率。  代表値＝0.6。初期値：0  - `tf`: 励磁制御系安定化時定数（Tf）。  代表値＝1。デフォルト：0  - `type`: NGSIタイプであること。ExcAC2Aである必要があります。  - `vamax`: ボルテージレギュレーターの最大出力（V）。  代表値＝8。初期値：0.0  - `vamin`: ボルテージレギュレーターの最低出力（V）。  代表値＝-8。初期値：0.0  - `ve1`: 飽和が定義される整流リアクタンスの後ろのエキサイターオルタネーター出力電圧（Ve）。  典型的な値は4.4です。初期値：0.0  - `ve2`: 飽和が定義される整流リアクタンスの後ろのエキサイターオルタネータ出力電圧（Ve）。  典型的な値は3.3です。初期値：0.0  - `vfemax`: Exciter field current limit reference (Vfemax)。  代表値＝4.4。初期値：0.0  - `vlr`: 最大エキサイターフィールド電流（Vlr）。  代表値＝4.4。初期値：0.0  - `vrmax`: ボルテージレギュレーターの最大出力（Vrmax）。  代表値＝105。デフォルト：0.0  - `vrmin`: ボルテージレギュレータの最小出力（Vrmin）。  代表値＝-95。初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hvgate[number]`: HVゲートがアクティブかどうかを示す（HVgate） true = ゲートが使われている false = ゲートが使われていない。典型的な値＝true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `ka[number]`: 電圧レギュレータのゲイン (Ka)。  典型的な値 = 400.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kb[number]`: 第2段レギュレータゲイン(Kb) (>0).  励磁磁界電流制御器ゲイン  典型的な値 = 25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kb1[number]`: 第2段レギュレータゲイン(Kb1)。ExcAC2Aモデルのバリエーションを表現するためにKbの代わりに使用される励磁界電流コントローラゲインである。  典型的な値 = 25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: 整流リアクタンス（Kc）に比例する整流器負荷率。  典型的な値＝0.28。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: 励磁機のオルタネータリアクタンス(Kd)の関数で，減磁係数。  典型的な値 = 0.35.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: 自励磁界に関係する励磁定数（Ke）。  代表的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: 励磁制御系スタビライザーゲイン（Kf）。  典型的な値 = 0.03.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh[number]`: 励磁磁界電流フィードバックゲイン（Kh）。  典型的な値 = 1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl[number]`: 励磁電流制限ゲイン（Kl）。  典型的な値 = 10.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl1[number]`: モデルの使い分けを可能にするための係数（Kl1）。  典型的な値 = 1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks[number]`: モデル速度係数(Ks)の使い分けを可能にする係数。  代表的な値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lvgate[number]`: LVゲートがアクティブかどうかを示す（LVgate） true = ゲートが使用されている false = ゲートが使用されていない。典型的な値＝true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `seve1[number]`: 整流リアクタンス（Se[Ve]）の裏面，対応する励磁器電圧Veにおける励磁器飽和関数値。  典型的な値 = 0.037.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seve2[number]`: 整流リアクタンス（Se[Ve]）の背面，対応する励磁電圧Veにおける励磁器飽和関数値。  典型的な値 = 0.012.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 電圧レギュレータの時定数 (Ta)。  代表値＝0.02。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: ボルテージレギュレータの時定数（Tb）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: ボルテージレギュレータの時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Exciter time constant, Exciter control (Te)に関連する積分レート。  典型的な値 = 0.6.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: 励磁制御系安定化時定数（Tf）。  典型的な値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。ExcAC2Aである必要があります。  - `vamax[number]`: ボルテージレギュレータ出力の最大値（V）。  代表値＝8。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vamin[number]`: ボルテージレギュレータ出力の最小値（V）。  代表値＝-8。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ve1[number]`: 飽和が定義される整流リアクタンスに戻るエキサイターオルタネーター出力電圧(Ve)。  典型的な値 = 4.4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ve2[number]`: 飽和が定義される整流リアクタンスに戻るエキサイターオルタネーター出力電圧(Ve)。  典型的な値 = 3.3。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfemax[number]`: 励磁磁界電流制限基準値 (Vfemax).  典型的な値 = 4.4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlr[number]`: 最大励磁磁界電流 (Vlr)。  典型的な値 = 4.4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: ボルテージレギュレータの最大出力電圧(Vrmax)。  代表値＝105。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: ボルテージレギュレータ出力の最小値（Vrmin）。  典型的な値=-95。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティが間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcAC2A:    
@@ -447,11 +463,29 @@ ExcAC2A:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcAC2A/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAC2A/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のExcAC2Aの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcAC2Aの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のExcAC2Aの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcAC2Aの例を利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のExcAC2Aの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使った場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcAC2A を JSON-LD 形式で正規化した例は存在しない。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のExcAC2Aの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使った場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcAC2A を JSON-LD 形式で正規化した例は存在しない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
