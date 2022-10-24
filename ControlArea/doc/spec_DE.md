@@ -1,18 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: ControlArea  
-====================  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ControlArea/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Eine Regelzone ist eine Gruppierung von Erzeugungseinheiten und/oder Lasten und ein Abschnitt von Verbindungsleitungen (als Klemmen), die für eine Vielzahl von Zwecken verwendet werden kann, einschließlich der automatischen Erzeugungssteuerung, der Spezifikation für die Steuerung des Austauschs von Leistungsflusslösungsgebieten und der Eingabe in die Lastprognose.   Beachten Sie, dass eine beliebige Anzahl von sich überschneidenden Regelzonenspezifikationen dem physikalischen Modell überlagert werden kann.**  
-Version: 0.0.1  
+Version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `ControlAreaGeneratingUnit`: Die Spezifikation der Erzeugungseinheit für den Kontrollbereich. Standard: 'Liste'  - `EnergyArea`: Die Energiefläche, die aus dieser Regelzonenangabe prognostiziert wird. Voreinstellung: Keine  - `TieFlow`: Die mit dem Kontrollbereich verbundenen Bindungsströme. Standard: 'Liste'  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `netInterchange`: Der angegebene positive Nettodurchfluss in die Regelzone, d. h. ein positives Vorzeichen bedeutet einen Zustrom in die Regelzone. Voreinstellung: 0,0  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pTolerance`: Wirkleistungs-Netzwerktoleranz Standard: 0.0  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: Die primäre Art der Regelzonendefinition wird verwendet, um zu bestimmen, ob diese für die automatische Erzeugungssteuerung, für die Planung der Austauschsteuerung oder für andere Zwecke verwendet wird.   Eine Regelzone, die mit dem primären Typ der automatischen Erzeugungssteuerung angegeben wurde, kann dennoch prognostiziert und als Austauschzone in der Leistungsflussanalyse verwendet werden. Voreinstellung: Keine    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `ControlAreaGeneratingUnit[number]`: Die Spezifikation der Erzeugungseinheit für den Kontrollbereich. Standard: 'Liste'  . Model: [https://schema.org/Number](https://schema.org/Number)- `EnergyArea[number]`: Die Energiefläche, die aus dieser Regelzonenangabe prognostiziert wird. Voreinstellung: Keine  . Model: [https://schema.org/Number](https://schema.org/Number)- `TieFlow[number]`: Die mit dem Kontrollbereich verbundenen Bindungsströme. Standard: 'Liste'  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `netInterchange[number]`: Der angegebene positive Nettodurchfluss in die Regelzone, d. h. ein positives Vorzeichen bedeutet einen Zustrom in die Regelzone. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pTolerance[number]`: Wirkleistungs-Netzwerktoleranz Standard: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Die primäre Art der Regelzonendefinition wird verwendet, um zu bestimmen, ob diese für die automatische Erzeugungssteuerung, für die Planung der Austauschsteuerung oder für andere Zwecke verwendet wird. Eine Regelzone, die mit dem primären Typ der automatischen Erzeugungssteuerung angegeben wurde, kann dennoch prognostiziert und als Austauschzone in der Leistungsflussanalyse verwendet werden. Voreinstellung: Keine. NGSI-Entitätstyp. Es muss ControlArea sein.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ControlArea:    
@@ -319,9 +333,21 @@ ControlArea:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 Nicht verfügbar ist das Beispiel einer ControlArea im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer ControlArea im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer ControlArea im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer ControlArea im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
