@@ -1,16 +1,32 @@
-エンティティPssIEEE1A  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPssIEEE1A  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssIEEE1A/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMのデータモデルからの引用です。このクラスは、IEEE Std 421.5-2005タイプのPSS1A電力系統安定化装置モデルを表します。PSS1Aは、1つの入力を持つPSSの一般化された形式です。一般的なスタビライザの入力信号には、速度、周波数、および電力があります。  参考文献IEEE 1A 421.5-2005 第8.1.**項  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。IEEE Std 421.5-2005 タイプの PSS1A 電力系統安定化装置モデルを表すクラスである。PSS1A は、単一の入力を持つ PSS の一般化された形式である。一般的なスタビライザの入力信号としては、速度、周波数、電力がある。  参考文献IEEE 1A 421.5-2005 第 8.1.** 節  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `a1`: PSS信号の調整周波数フィルタ定数（A1）。  代表値＝0.061。初期値：0.0  - `a2`: PSS信号の調整周波数フィルタ定数（A2）。  代表値＝0.0017。初期値：0.0  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `inputSignalType`: 入力信号の種類。  代表値＝rotorAngularFrequencyDeviation。デフォルト。なし  - `ks`: スタビライザーゲイン（Ks）。  代表値＝5。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1`: リード／ラグ時定数（T1）。  代表値＝0.3。デフォルト：0  - `t2`: リード／ラグ時定数（T2）。  代表値＝0.03。デフォルト：0  - `t3`: リード／ラグ時定数（T3）。  代表値＝0.3です。デフォルト：0  - `t4`: リード／ラグ時定数（T4）。  代表値＝0.03。デフォルト：0  - `t5`: ウォッシュアウト時定数（T5）。  代表値＝10。デフォルト：0  - `t6`: トランスデューサの時定数（T6）。  代表値＝0.01。デフォルト：0  - `type`: NGSIタイプであること。PssIEEE1Aである必要があります。  - `vrmax`: スタビライザーの最大出力（Vrmax）。  代表値＝0.05初期値：0.0  - `vrmin`: 最小スタビライザー出力（Vrmin）。  代表値＝-0.05初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `a1[number]`: PSS信号調整周波数フィルター定数 (A1)。  代表値＝0.061。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a2[number]`: PSS 信号調整周波数フィルタ定数 (A2)。  代表値＝0.0017。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `inputSignalType[number]`: 入力信号の種類。  Typical Value = rotorAngularFrequencyDeviation （典型的な値：ローター角周波数偏差）。デフォルト。なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks[number]`: スタビライザーのゲイン（Ks）。  代表的な値＝5。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1[number]`: リード/ラグ時定数 (T1)。  典型的な値 = 0.3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: リード/ラグ時定数 (T2)。  典型的な値 = 0.03。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: リード/ラグ時定数 (T3)。  典型的な値 = 0.3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: リード/ラグ時定数 (T4)。  典型的な値 = 0.03。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: ウォッシュアウト時定数 (T5)。  典型的な値 = 10.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: トランスデューサの時定数 (T6)。  典型的な値 = 0.01。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。PssIEEE1Aである必要があります。  - `vrmax[number]`: スタビライザーの最大出力 (Vrmax)。  Typical Value = 0.05。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: スタビライザーの最小出力 (Vrmin)。  代表値＝-0.05。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティが間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PssIEEE1A:    
@@ -359,9 +375,21 @@ PssIEEE1A:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-PssIEEE1Aの例をJSON-LD形式でkey-valuesとして利用できない。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のPssIEEE1Aの例は利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-PssIEEE1Aの例をkey-valuesとしてJSON-LD形式で利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のPssIEEE1Aの例は利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+PssIEEE1A の例を JSON-LD 形式で key-value にしたものは利用できません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+PssIEEE1A を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+PssIEEE1A の例を JSON-LD 形式で key-value にしたものは利用できません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+PssIEEE1A を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
