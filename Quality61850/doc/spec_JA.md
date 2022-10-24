@@ -1,16 +1,32 @@
-エンティティクオリティー61850  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ品質61850  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの適応。このクラスの品質フラグは，IEC 61850で定義されている通りである。ただし，便宜上このクラスに含まれているestimatorReplacedを除く。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。このクラスの品質フラグは IEC 61850 で定義されている通りであるが、estimatorReplaced は便宜上このクラスに含まれている**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `badReference`: リファレンスが校正されていないため、測定値が正しくない可能性があります。デフォルトFalse  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `estimatorReplaced`: estimatorReplacedはIEC61850の品質ビットではないが、便宜上このクラスに入れている。デフォルトはFalse  - `failure`: この識別子は、監視機能が内部または外部の障害（例：通信障害）を検出したことを示す。デフォルトはFalse  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `oldData`: 測定値が古く、指定された時間間隔で正常に更新されていないため、無効である可能性があります。デフォルトはFalse  - `operatorBlocked`: 測定値がブロックされているため、送信できません。デフォルトはFalse  - `oscillatory`: 通信の過負荷を防ぐためには、振動する（変化の速い）バイナリ入力を検出し、抑制することが賢明です。信号が定義された時間(tosc)内に同じ方向(0から1または1から0)に2回変化する場合、振動が検出され、詳細品質識別子「oscillatory」が設定されます。これが検出されると、設定された数の過渡的な変化が経過する可能性があります。この間、有効性ステータス「質問可能」が設定されます。この定義された数の変化の後、信号がまだ振動状態にある場合、値は以前の安定した値の反対の状態に設定されるか、定義されたデフォルト値に設定されなければならない。この場合、信号が発振している間は、有効性のステータス「質問可能」がリセットされ、「無効」が設定されます。一過性の変化を通過させないように設定されている場合は、詳細品質識別子 `oscillatory` （ステータス情報のみに使用）に加えて、有効性ステータス `invalid` が直ちに設定されます。デフォルトはFalse  - `outOfRange`: 測定値があらかじめ設定した値の範囲を超えている。デフォルトFalse  - `overFlow`: 測定値が、適切に表現できる能力を超えている。例えば、カウンターの値が最大カウントバックからオーバーフローして値が0になった場合などです。デフォルトFalse  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: ソースは、値の起源に関連する情報を提供する。値は、プロセスから取得されたもの、デフォルト、または置換されたものです。デフォルトはなし  - `suspect`: 相関関数により、値が他の値と一致しないことが検出されたこと。一般的には、ネットワークのState Estimatorによって設定されます。デフォルトはFalse  - `test`: 測定値はテスト目的で送信されます。デフォルトFalse  - `type`: NGSIタイプです。Quality61850である必要があります。  - `validity`: 測定値の妥当性デフォルトなし    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `badReference[number]`: リファレンスが校正されていないため、測定値が不正確な場合があります。デフォルト無効  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `estimatorReplaced[number]`: estimatorReplaced は IEC61850 の品質ビットではないが、便宜上このクラスで指定されている。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `failure[number]`: この識別子は、監視機能が内部または外部障害（通信障害など）を検出したことを示す。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `oldData[number]`: 指定された時間内に正常に更新されていないため、測定値は古く、無効である可能性があります。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatorBlocked[number]`: 測定値がブロックされ、送信できない。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `oscillatory[number]`: 通信の過負荷を防ぐために、振動する (速く変化する) バイナリ入力を検出して抑制することが賢明である。もし信号が定義された時間（tosc）内に同じ方向（0から1または1から0）に2回変化すると、振動が検出され、詳細品質識別子`oscillatory`が設定されます。もし検出された場合、設定された数の過渡的変化が経過する可能性があります。この間、有効性ステータス`questionable`が設定されます。この定義された数の変化の後、信号がまだ振動状態にある場合、値は前の安定した値の反対の状態に設定されるか、または定義されたデフォルト値に設定されなければならない。この場合、信号が振動している限り、有効性ステータス `questionable` はリセットされ、`invalid` が設定される。過渡的な変化を通過させないように設定されている場合は、詳細品質識別子 `oscillatory` (ステータス情報のみに使用) に加えて、有効性ステータス `invalid` が直ちに設定される。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `outOfRange[number]`: 測定値があらかじめ設定された値の範囲を超えている。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `overFlow[number]`: 測定値が適切に表現できる能力を超えている。例えば、カウンターの値が最大カウントからオーバーフローして、値がゼロになる。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[number]`: ソースは、値の起源に関連する情報を提供する。この値は、プロセスから取得したもの、デフォルト、または置換されたものである可能性があります。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `suspect[number]`: 相関関数により、値が他の値と一致しないことが検出された。通常、ネットワークのState Estimatorによって設定される。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `test[number]`: テスト用に測定値を送信します。デフォルト偽  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。Quality61850である必要があります。  - `validity[number]`: 測定値の有効性。既定値。なし  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Quality61850:    
@@ -354,9 +370,21 @@ Quality61850:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-Quality61850の例をkey-valuesとしてJSON-LD形式で提供しています。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のQuality61850の例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-Quality61850の例をkey-valuesとしてJSON-LD形式で利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のQuality61850の例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のQuality61850の例をkey-valuesとして利用できない。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+Quality61850 を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のQuality61850の例をkey-valuesとして利用できない。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+Quality61850 を JSON-LD 形式で正規化した例はない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
