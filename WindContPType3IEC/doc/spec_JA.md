@@ -1,16 +1,32 @@
-エンティティWindContPType3IEC  
-=======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティWindContPType3IEC  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindContPType3IEC/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの引用Pコントロールモデル タイプ3。  リファレンス。IEC規格61400-27-1 6.6.5.3.**項  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用。P制御モデル タイプ3。  参照IEC 規格 61400-27-1 6.6.5.3 項**を参照。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `WindDynamicsLookupTable`: このウィンドダイナミクスルックアップテーブルが関連付けられているPコントロールタイプ3のモデル。デフォルト: 'list'  - `WindGenTurbineType3IEC`: この風力制御Pタイプ3モデルが関連付けられている風車タイプ3モデル。デフォルトなし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dpmax`: 風力発電機の最大出力のランプレート（）。プロジェクトに依存するパラメータです。デフォルト：0.0  - `dtrisemaxlvrt`: S(d)のLVRT時のトルク上昇率の制限。プロジェクトに依存するパラメータです。デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `kdtd`: アクティブ・ドライブトレイン・ダンピングのゲイン（）。タイプに依存するパラメータです。デフォルト：0.0  - `kip`: PIコントローラーの積分パラメータ（）。タイプ依存のパラメータです。デフォルト：0.0  - `kpp`: PIコントローラーのプロポーショナルゲイン（）。タイプ依存のパラメータです。デフォルト：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `mplvrt`: LVRT電力制御モードを有効にする（M true = 1：電圧制御 false = 0：無効電力制御。  プロジェクトに依存するパラメータです。デフォルトはFalse  - `name`: このアイテムの名前です。  - `omegaoffset`: ロータの速度変化時にコントローラの動作を制限する基準値へのオフセット(ω)これはケース依存のパラメータです。デフォルト：0.0  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pdtdmax`: ドライブトレインの最大アクティブ減衰力（）。タイプに依存するパラメータです。デフォルト：0.0  - `rramp`: 一部のグリッドコードで要求されているトルクのランプ制限（）。プロジェクトに依存するパラメータです。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tdvs`: 深い電圧降下後の時間遅延（T）。これはプロジェクトに依存するパラメータです。デフォルト：0  - `temin`: 発電機の最小トルク（）。タイプ依存のパラメータです。デフォルト：0.0  - `tomegafilt`: 発電機の回転数測定のためのフィルター時定数（）。タイプ依存のパラメータです。デフォルト：0  - `tpfilt`: パワー測定用のフィルター時定数（）。タイプ依存のパラメータです。デフォルト：0  - `tpord`: power order lagの時定数（）。タイプ依存のパラメータです。デフォルト：0.0  - `tufilt`: 電圧測定用のフィルター時定数（）。タイプ依存のパラメータです。デフォルト：0  - `tuscale`: リセットトルク(T)の電圧スケーリングファクター。プロジェクトに依存するパラメータです。デフォルト：0.0  - `twref`: 速度参照フィルタの時定数（）。タイプ依存のパラメータです。デフォルト：0  - `type`: NGSIタイプです。WindContPType3IECである必要があります。  - `udvs`: 深刻な電圧低下の後にLVRT状態を維持するための電圧制限。プロジェクトに依存するパラメータです。デフォルト：0.0  - `updip`: Pコントロールの電圧ディップ閾値（）。  タービン制御の一部であり、コンバータの閾値とは異なる（例：0.8）。これはプロジェクトに依存するパラメータである。デフォルト：0.0  - `wdtd`: アクティブドライブトレインのダンピング周波数（ω）。2つの質量モデルのパラメータから算出されます。タイプに依存するパラメータです。デフォルト：0.0  - `zeta`: アクティブドライブトレインのダンピング係数（ゼータ）。タイプに依存するパラメータです。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `WindDynamicsLookupTable[number]`: この風力発電ルックアップテーブルが関連する P 制御タイプ 3 モデル。デフォルト: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `WindGenTurbineType3IEC[number]`: この風力制御 P タイプ 3 モデルが関連付けられる風力発電機タイプ 3 モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `dpmax[number]`: 風力発電機の最大出力上昇率（）。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtrisemaxlvrt[number]`: S (d)のLVRT中のトルク上昇率の制限。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `kdtd[number]`: アクティブドライブトレインダンピングのゲイン（）。車種依存のパラメータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: PIコントローラ積分パラメータ()。型に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpp[number]`: PIコントローラ比例ゲイン()。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mplvrt[number]`: LVRT 電力制御モードを有効にする（M true = 1: 電圧制御 false = 0: 無効電力制御）。  プロジェクトに依存するパラメータです。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `omegaoffset[number]`: ローター速度変更時にコントローラの動作を制限する基準値へのオフセット(ω)。ケース依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pdtdmax[number]`: ドライブトレインの最大アクティブ減衰力（）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rramp[number]`: 一部のグリッドコードで要求されるトルクのランプ制限（）。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tdvs[number]`: 深い電圧降下後のタイムディレイ(T)。プロジェクトに依存するパラメータです。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `temin[number]`: 最小電動発電機トルク（）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tomegafilt[number]`: 発電機速度測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpfilt[number]`: 電力測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpord[number]`: パワーオーダーラグ()の時定数。型に依存するパラメータです。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tufilt[number]`: 電圧測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuscale[number]`: リセットトルク(T)の電圧スケーリングファクター。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twref[number]`: 速度基準フィルタの時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。WindContPType3IECでなければならない。  - `udvs[number]`: 深い電圧降下の後、LVRT状態を保持するための電圧制限値（）。プロジェクトに依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `updip[number]`: P制御の電圧ディップのしきい値（）。  タービン制御の一部で、コンバータのしきい値と異なる場合が多い(0.8など)。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wdtd[number]`: アクティブドライブトレインの減衰周波数（ω）。2つのマスモデルパラメータから計算することができる。タイプに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `zeta[number]`: アクティブなドライブトレインのダンピングのための係数（ゼータ）。車種依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WindContPType3IEC:    
@@ -425,9 +441,21 @@ WindContPType3IEC:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のWindContPType3IECの例をkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-WindContPType3IECをJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のWindContPType3IECの例をkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のWindContPType3IECの例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のWindContPType3IECの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+利用不可 WindContPType3IECの例をJSON-LD形式で正規化したもの。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+WindContPType3IECのJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+WindContPType3IECのJSON-LD形式を正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
