@@ -1,16 +1,32 @@
-Entità: ExcHU  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: ExcHU  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcHU/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Modello di sistema di eccitazione ungherese, con trasduttore di tensione incorporato.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattato dai modelli di dati CIM. Modello di sistema di eccitazione ungherese, con trasduttore di tensione incorporato **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `ae`: Fattore di guadagno del tag PI del circuito principale (Ae).  Valore tipico = 3. Predefinito: 0.0  - `ai`: Fattore di guadagno del tag PI del ciclo minore (Ai).  Valore tipico = 22. Predefinito: 0.0  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `atr`: Costante AVR (Atr).  Valore tipico = 2.19. Predefinito: 0.0  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `emax`: Limite superiore del segnale di controllo della tensione di campo sulla base del regolatore (Emax).  Valore tipico = 0,996. Predefinito: 0.0  - `emin`: Limite inferiore del segnale di controllo della tensione di campo sulla base del regolatore (Emin).  Valore tipico = -0,866. Predefinito: 0,0  - `id`: Identificatore unico dell'entità  - `imax`: Limite superiore del segnale di uscita del tag PI del circuito principale (Imax).  Valore tipico = 2,19. Predefinito: 0,0  - `imin`: Limite inferiore del segnale di uscita del tag PI del circuito principale (Imin).  Valore tipico = 0,1. Predefinito: 0,0  - `ke`: Costante di conversione della base di tensione (Ke).  Valore tipico = 4,666. Predefinito: 0.0  - `ki`: Costante di conversione della base di corrente (Ki).  Valore tipico = 0,21428. Predefinito: 0.0  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `te`: Costante di tempo di integrazione del tag PI del circuito principale (Te).  Valore tipico = 0,154. Predefinito: 0  - `ti`: Costante di tempo di integrazione del tag di controllo PI ad anello minore (Ti).  Valore tipico = 0,01333. Predefinito: 0  - `tr`: Costante di tempo del filtro (Tr). Se un compensatore di tensione è usato insieme a questo modello di sistema di eccitazione, Tr dovrebbe essere impostato su 0. Valore tipico = 0,01. Predefinito: 0  - `type`: Tipo di NGSI. Deve essere ExcHU    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `ae[number]`: Fattore di guadagno del tag PI dell'anello principale (Ae).  Valore tipico = 3. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ai[number]`: Fattore di guadagno del tag PI ad anello minore (Ai).  Valore tipico = 22. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `atr[number]`: Costante AVR (Atr).  Valore tipico = 2,19. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `emax[number]`: Limite superiore del segnale di controllo della tensione di campo sulla base del regolatore (Emax).  Valore tipico = 0,996. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Limite inferiore del segnale di controllo della tensione di campo sulla base del regolatore (Emin).  Valore tipico = -0,866. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `imax[number]`: Limite superiore del segnale di uscita del tag PI dell'anello maggiore (Imax).  Valore tipico = 2,19. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `imin[number]`: Limite inferiore del segnale di uscita del tag PI dell'anello maggiore (Imin).  Valore tipico = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: Costante di conversione della base di tensione (Ke).  Valore tipico = 4,666. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Costante di conversione della base di corrente (Ki).  Valore tipico = 0,21428. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `te[number]`: Costante di tempo di integrazione del tag PI dell'anello principale (Te).  Valore tipico = 0,154. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: Costante di tempo di integrazione del tag di controllo PI ad anello minore (Ti).  Valore tipico = 0,01333. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Costante di tempo del filtro (Tr). Se si utilizza un compensatore di tensione in combinazione con questo modello di sistema di eccitazione, Tr deve essere impostato su 0. Valore tipico = 0,01. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere ExcHU  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcHU:    
@@ -351,11 +367,29 @@ ExcHU:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcHU/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcHU/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 Non è disponibile l'esempio di un ExcHU in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un ExcHU in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un ExcHU in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 Non è disponibile l'esempio di un ExcHU in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un ExcHU in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+Non è disponibile l'esempio di un ExcHU in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
