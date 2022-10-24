@@ -1,16 +1,32 @@
-エンティティSteadyStateHypothesisVersion  
-==================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティSteadyStateHypothesisVersion（ステディステートハイポセシスバージョン  
+======================================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/SteadyStateHypothesisVersion/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用です。バージョンの詳細: **  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルを応用したものです。バージョン詳細(**)  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `baseUML`: CIMモデル・マネージャーが提供するベースUML。デフォルト: ''  - `baseURI`: Profile URI Model Exchange ヘッダーで使用され，IEC 規格で定義されている。  このURIは，プロファイルとそのバージョンを一意に識別する。これは情報としてのみ与えられており，この CGMES プロファイルのベースとなる最も近い IEC プロファイルを特定するためのものである。デフォルト： ''  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `date`: プロフィールの作成日 2009年1月5日の場合、2009-01-05となります。デフォルトは「」です。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `differenceModelURI`: IEC 61970-552で定義された差分モデルのURI。デフォルト: ''  - `entsoeUML`: ENTSO-Eが提供するUML。デフォルト： ''  - `entsoeURI`: ENTSO-E によって定義され，Model Exchange ヘッダで使用される Profile の URI。  このURIは，プロファイルとそのバージョンを一意に識別する。URI の最後の 2 つの要素 (http://entsoe.eu/CIM/SteadyStateHypothesis/yy/zzz) は，メジャーバージョンとマイナーバージョンを示す。  - yy - メジャーバージョンを示す。 - zzz - マイナーバージョンを示す。デフォルト： ''  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `modelDescriptionURI`: IEC 61970-552で定義されているモデル説明のURI。デフォルト： ''  - `name`: このアイテムの名前です。  - `namespaceRDF`: RDFの名前空間。デフォルト: ''  - `namespaceUML`: CIM UMLネームスペース。デフォルト: ''  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `shortName`: プロファイルのドキュメントで使用されるプロファイルの短い名前です。デフォルト: ''  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIタイプです。これはSteadyStateHypothesisVersionでなければなりません。    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseUML[number]`: CIMモデルマネージャが提供するベースUML。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `baseURI[number]`: Model Exchange のヘッダで使用されるプロファイル URI で，IEC 規格で定義されている。  これはプロファイルとそのバージョンを一意に識別する。この CGMES プロファイルのベースとなる最も近い IEC プロファイルを識別するための情報としてのみ提供される。デフォルト：''。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `date[number]`: プロファイル作成日 Form は YYYY-MM-DD で、例えば 2009 年 1 月 5 日であれば 2009-01-05 となります。デフォルト：''。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `differenceModelURI[number]`: IEC 61970-552で定義された差分モデルURI。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `entsoeUML[number]`: ENTSO-Eが提供するUML。デフォルト：''。  . Model: [https://schema.org/Number](https://schema.org/Number)- `entsoeURI[number]`: ENTSO-Eが定義し，Model Exchangeヘッダで使用されるプロファイルURI。  これはプロファイルとそのバージョンを一意に識別する。URI の最後の 2 つの要素 (http://entsoe.eu/CIM/SteadyStateHypothesis/yy/zzz) はメジャーバージョンとマイナーバージョンを示す。  - yy - メジャーバージョン、 - zzz - マイナーバージョン。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modelDescriptionURI[number]`: IEC 61970-552 で定義されたモデル記述 URI。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `namespaceRDF[number]`: RDF名前空間。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `namespaceUML[number]`: CIM UML 名前空間。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `shortName[number]`: プロファイルのドキュメントで使われるプロファイルの短い名前。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。SteadyStateHypothesisVersionでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SteadyStateHypothesisVersion:    
@@ -347,9 +363,21 @@ SteadyStateHypothesisVersion:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のSteadyStateHypothesisVersionの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-SteadyStateHypothesisVersionをJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のSteadyStateHypothesisVersionの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-利用できないのは、SteadyStateHypothesisVersionを正規化したJSON-LD形式の例です。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のSteadyStateHypothesisVersionの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+SteadyStateHypothesisVersion を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のSteadyStateHypothesisVersionの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+SteadyStateHypothesisVersion を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
