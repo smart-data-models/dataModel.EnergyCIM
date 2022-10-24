@@ -1,16 +1,32 @@
-Entité : ExcIEEEST5B  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ExcIEEEST5B  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST5B/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. La classe représente le modèle IEEE Std 421.5-2005 de type ST5B. Le système d'excitation de type ST5B est une variation du modèle de type ST1A, avec des entrées de surexcitation et de sous-excitation alternatives et des limites supplémentaires.  Référence : IEEE Standard 421.5-2005 Section 7.5.   Note : le schéma fonctionnel dans la norme IEEE 421.5 a un signal d'entrée Vc et n'indique pas le point de sommation avec Vref. L'implémentation de l'ExcIEEEST5B doit considérer le point de sommation avec Vref.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `kc`: Facteur de régulation du redresseur (K).  Valeur typique = 0.004. Valeur par défaut : 0.0  - `kr`: Gain du régulateur (K).  Valeur typique = 200. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps du circuit de mise à feu (T1).  Valeur typique = 0.004. Valeur par défaut : 0  - `tb1`: Constante de temps de retard du régulateur (T).  Valeur typique = 6. Valeur par défaut : 0  - `tb2`: Constante de temps de retard du régulateur (T).  Valeur typique = 0.01. Valeur par défaut : 0  - `tc1`: Constante de temps du régulateur (T).  Valeur typique = 0,8. Valeur par défaut : 0  - `tc2`: Constante de temps du régulateur (T).  Valeur typique = 0.08. Valeur par défaut : 0  - `tob1`: Constante de temps de retard de l'OEL (T).  Valeur typique = 2. Valeur par défaut : 0  - `tob2`: Constante de temps de retard de l'OEL (T).  Valeur typique = 0.08. Valeur par défaut : 0  - `toc1`: Constante de temps du plomb OEL (T).  Valeur typique = 0,1. Valeur par défaut : 0  - `toc2`: Constante de temps du plomb OEL (T).  Valeur typique = 0.08. Valeur par défaut : 0  - `tub1`: Constante de temps du décalage UEL (T).  Valeur typique = 10. Valeur par défaut : 0  - `tub2`: Constante de temps du décalage UEL (T).  Valeur typique = 0.05. Valeur par défaut : 0  - `tuc1`: Constante de temps de plomb UEL (T).  Valeur typique = 2. Valeur par défaut : 0  - `tuc2`: Constante de temps de plomb UEL (T).  Valeur typique = 0.1. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcIEEEST5B.  - `vrmax`: Sortie maximale du régulateur de tension (V).  Valeur typique = 5. Valeur par défaut : 0.0  - `vrmin`: Tension minimale de sortie du régulateur (V).  Valeur typique = -4. Valeur par défaut : 0.0    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `kc[number]`: Facteur de régulation du redresseur (K).  Valeur typique = 0.004. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kr[number]`: Gain du régulateur (K).  Valeur typique = 200. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1[number]`: Constante de temps du circuit de mise à feu (T1).  Valeur typique = 0.004. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb1[number]`: Constante de temps de retard du régulateur (T).  Valeur typique = 6. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb2[number]`: Constante de temps de retard du régulateur (T).  Valeur typique = 0.01. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc1[number]`: Constante de temps du régulateur (T).  Valeur typique = 0,8. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc2[number]`: Constante de temps du régulateur (T).  Valeur typique = 0.08. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tob1[number]`: Constante de temps de retard de l'OEL (T).  Valeur typique = 2. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tob2[number]`: Constante de temps de retard de l'OEL (T).  Valeur typique = 0.08. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc1[number]`: Constante de temps du plomb OEL (T).  Valeur typique = 0,1. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc2[number]`: Constante de temps du plomb OEL (T).  Valeur typique = 0.08. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tub1[number]`: Constante de temps de décalage UEL (T).  Valeur typique = 10. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tub2[number]`: Constante de temps du décalage UEL (T).  Valeur typique = 0.05. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuc1[number]`: Constante de temps du plomb UEL (T).  Valeur typique = 2. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuc2[number]`: Constante de temps de plomb UEL (T).  Valeur typique = 0.1. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type NGSI. Il doit être ExcIEEEST5B.  - `vrmax[number]`: Sortie maximale du régulateur de tension (V).  Valeur typique = 5. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: Tension minimale de sortie du régulateur (V).  Valeur typique = -4. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEST5B:    
@@ -381,11 +397,29 @@ ExcIEEEST5B:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcIEEEST5B/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST5B/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un ExcIEEEST5B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcIEEEST5B au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un ExcIEEEST5B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcIEEEST5B au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcIEEEST5B au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
