@@ -1,16 +1,32 @@
-Entité : ACDCTerminal  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ACDCTerminal  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ACDCTerminal/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. Un point de connexion électrique (CA ou CC) à un équipement conducteur. Les bornes sont connectées à des points de connexion physiques appelés nœuds de connectivité.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `BusNameMarker`: Le marqueur de nom de bus utilisé pour nommer le bus (nœud topologique). Valeur par défaut : Aucun  - `Measurements`: Les mesures associées à cette borne définissent l'endroit où la mesure est placée dans la topologie du réseau.  Elle peut être utilisée, par exemple, pour capturer la position du capteur, comme un transformateur de tension (PT) sur un jeu de barres ou un transformateur de courant (CT) sur la barre entre un disjoncteur et un isolateur. Valeur par défaut : "list".  - `OperationalLimitSet`:  Valeur par défaut : "list".  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `connected`: L'état connecté est lié à un modèle de bus-branche et à la relation topologique nœud-terminal.  Vrai signifie que le terminal est connecté au nœud topologique correspondant et faux signifie qu'il ne l'est pas.  Dans un modèle bus-branche, l'état connecté est utilisé pour indiquer si un équipement est déconnecté sans avoir à modifier la connectivité décrite par la relation topologique nœud à borne. Un cas valide est que l'équipement conducteur peut être connecté à une extrémité et ouvert à l'autre. En particulier pour un segment de ligne CA, où la charge réactive de la ligne peut être importante, c'est un cas pertinent. Par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sequenceNumber`: L'orientation des connexions des bornes pour un équipement conducteur à bornes multiples.  La numérotation de la séquence commence par 1 et les bornes supplémentaires doivent suivre dans un ordre croissant.   La première borne est le "point de départ" d'une branche à deux bornes. Valeur par défaut : 0  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type NGSI. Il doit être ACDCTerminal    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `BusNameMarker[number]`: Le marqueur de nom de bus utilisé pour nommer le bus (nœud topologique). Valeur par défaut : Aucun  . Model: [https://schema.org/Number](https://schema.org/Number)- `Measurements[number]`: Les mesures associées à cette borne définissent l'endroit où la mesure est placée dans la topologie du réseau.  Elle peut être utilisée, par exemple, pour capturer la position du capteur, comme un transformateur de tension (PT) sur un jeu de barres ou un transformateur de courant (CT) sur la barre entre un disjoncteur et un isolateur. Valeur par défaut : "list".  . Model: [https://schema.org/Number](https://schema.org/Number)- `OperationalLimitSet[number]`:  Valeur par défaut : "list".  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `connected[number]`: L'état connecté est lié à un modèle de bus-branche et à la relation topologique nœud-terminal.  Vrai signifie que le terminal est connecté au nœud topologique correspondant et faux signifie qu'il ne l'est pas.  Dans un modèle bus-branche, l'état connecté est utilisé pour indiquer si un équipement est déconnecté sans avoir à modifier la connectivité décrite par la relation topologique nœud à borne. Un cas valide est que l'équipement conducteur peut être connecté à une extrémité et ouvert à l'autre. En particulier pour un segment de ligne CA, où la charge réactive de la ligne peut être importante, c'est un cas pertinent. Par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `sequenceNumber[number]`: L'orientation des connexions des bornes pour un équipement conducteur à bornes multiples.  La numérotation de la séquence commence par 1 et les bornes supplémentaires doivent suivre dans un ordre croissant.   La première borne est le "point de départ" d'une branche à deux bornes. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type NGSI. Il doit être ACDCTerminal  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ACDCTerminal:    
@@ -309,11 +325,29 @@ ACDCTerminal:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ACDCTerminal/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCTerminal/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un ACDCTerminal au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ACDCTerminal au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ACDCTerminal au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ACDCTerminal au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitudeVoir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
