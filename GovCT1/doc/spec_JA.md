@@ -1,16 +1,32 @@
-エンティティGovCT1  
-============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティGovCT1  
+============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovCT1/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。主に燃焼タービンやコンバインドサイクルユニットに使用される、PIDガバナを備えたあらゆる原動機のための一般的なモデル。このモデルは、PIDガバナーで制御される様々な原動機を表現するために使用できる。  このモデルに関する追加情報は，2012 年 IEEE 報告書の 3.1.2.3 項 3-4 ページ（GGOV1）に掲載されている．  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用。PIDガバナーを持つ原動機の一般的なモデルで、主に燃焼タービンやコンバインドサイクル装置で使用される。このモデルは、PIDガバナーで制御される様々な原動機を表現するために使用できる。  このモデルに関する追加情報は、2012 年 IEEE レポート 3.1.2.3 ページ 3-4 (GGOV1) に掲載されています。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `aset`: 加速度リミッタ設定値（Aset）。  単位＝PU/sec。  代表値＝0.01デフォルト：0.0  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `db`: スピードガバナーのデッドバンド（単位速度あたりの値）。  ほとんどのアプリケーションでは、この値をゼロに設定することをお勧めします。  代表値＝0、初期値＝0.0  - `description`: このアイテムの説明  - `dm`: 速度感度係数（Dm）。  Dmは、エンジン出力の軸回転数に対する変化、または最大出力能力の軸回転数に対する変化を表します。  正の値であれば、エンジンの回転数-出力特性が回転数の増加に伴って下降することを表します。わずかに下降する特性は、レシプロエンジンや一部の航空転用タービンに典型的なものである。  負の値の場合、エンジン出力は軸速度の影響を受けないと想定されるが、最大許容燃料流量は軸速度の低下とともに減少すると考えられる。これは、排気温度の制限のために1軸の産業用タービンに特徴的である。  典型的な値 = 0. デフォルト: 0.0  - `id`: エンティティのユニークな識別子  - `ka`: 加速度リミッタゲイン（Ka）。  代表値＝10。初期値：0.0  - `kdgov`: ガバナー微分ゲイン（Kdgov）。  代表値＝0、デフォルト：0.0  - `kigov`: ガバナー積分ゲイン（キゴフ）。  代表値＝2。デフォルト：0.0  - `kiload`: PIコントローラ(Kiload)のロードリミッター積分ゲイン。  代表値＝0.67。初期値：0.0  - `kimw`: パワーコントローラー（リセット）ゲイン（Kimw）。  初期値の0.01は、100秒のリセット時間に対応しています。  0.001の値は、比較的遅い動作のロードコントローラに対応します。  典型的な値は0.01です。初期値：0.0  - `kpgov`: ガバナー比例ゲイン（Kpgov）。  代表値＝10。デフォルト：0.0  - `kpload`: PIコントローラのロードリミッター比例ゲイン(Kpload)です。  代表値＝2。初期値：0.0  - `kturb`: タービンゲイン（Kturb）（＞0）。  代表値＝1.5。デフォルト：0.0  - `ldref`: ロードリミッター基準値（Ldref）。  代表値＝1。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxerr`: 速度誤差信号(maxerr)の最大値。  代表値＝0.05初期値：0.0  - `minerr`: 速度誤差信号(minerr)の最小値。  代表値＝-0.05初期値：0.0  - `mwbase`: パワー値のベース（MWbase）（＞0）。  単位＝MW。デフォルト：0.0  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `r`: 永久垂下（R）。  代表値＝0.04。初期値：0.0  - `rclose`: 最小バルブ閉塞率（Rclose）。  単位＝PU/sec。  代表値＝-0.1。初期値：0.0  - `rdown`: ロードリミットの最大減少率（Rdown）。  代表値＝-99。初期値：0.0  - `ropen`: 最大弁開度（Ropen）。  単位＝PU/sec。  代表値＝0.10デフォルト：0.0  - `rselect`: 垂れ流し用のフィードバック信号（Rselect）。  代表値＝electricalPower。デフォルトはなし  - `rup`: ロードリミットの最大上昇率（Rup）。  代表値＝99。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 加速度リミッタ時定数（Ta）（＞0）。  代表値＝0.1です。デフォルト：0  - `tact`: アクチュエータの時定数（Tact）。  Typical Value = 0.5.デフォルト：0  - `tb`: タービン・ラグ時定数（Tb）（＞0）。  典型的な値＝0.5デフォルト：0  - `tc`: タービンリード時定数（Tc）。  代表値＝0、デフォルト：0  - `tdgov`: ガバナー微分制御時定数（Tdgov）。  典型的な値＝1です。初期値：0  - `teng`: ディーゼルエンジンの輸送時間遅延は、燃料流量の設定を変更してからトルク（Teng）が発生するまでに、小さいながらも測定可能な輸送遅延があるディーゼルエンジンの表現に使用されます。  Tengは、この輸送遅延が特に問題となる特殊なケースを除き、すべてゼロにすべきである。  典型的な値＝0。デフォルト：0  - `tfload`: ロードリミッター時定数（Tfload）（＞0）。  代表値＝3。デフォルト：0  - `tpelec`: 電力変換器の時定数（Tpelec）（＞0）。  代表値＝1。デフォルト：0  - `tsa`: 温度検出リード時定数（Tsa）。  代表値＝4。デフォルト：0  - `tsb`: 温度検出ラグ時定数（Tsb）。  代表値＝5。初期値：0  - `type`: NGSIタイプです。GovCT1である必要があります。  - `vmax`: バルブの最大位置制限（Vmax）。  代表値＝1。デフォルト：0.0  - `vmin`: バルブの最小位置制限（Vmin）。  代表値＝0.15。初期値：0.0  - `wfnl`: 無負荷燃料流量（Wfnl）。  代表値＝0.2。デフォルト：0.0  - `wfspd`: 燃料源特性のスイッチは，所定の燃料バルブストロークに対する燃料流量がエンジン回転数（Wfspd）に比例し得ることを認識するためのものである。 true = 燃料流量が回転数に比例する（一部のガスタービンや，容積型燃料噴射装置を備えたディーゼルエンジンの場合） false = 燃料制御システムが燃料流量をエンジン回転数に依存しないように保つ。代表値＝true。デフォルト。False    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: 加速度リミッタ設定値（Aset）。  単位＝PU/sec.  典型的な値 = 0.01.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db[number]`: スピードガバナーのデッドバンドを単位速度あたりで表した値（db）。  大半のアプリケーションでは、この値をゼロに設定することが推奨されます。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `dm[number]`: 速度感度係数（Dm）。  Dmは，軸回転数に対するエンジン出力の変化，または軸回転数に対する最大出力能力の変化のいずれかを表すことができる。  Dmが正の場合は、速度が上昇するにつれてエンジン速度対出力特性の勾配が下がることを表します。レシプロエンジンや一部の航空転用型タービンでは、わずかに下降する特性が一般的である。  負の場合は、エンジン出力は軸回転数の影響を受けないが、最大許容燃料流量は軸回転数の低下とともに減少すると仮定する。これは、排気温度制限のため、1軸の産業用タービンに特徴的である。  典型的な値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `ka[number]`: 加速度リミッターゲイン（Ka）。  典型的な値 = 10.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: ガバナー微分ゲイン（Kdgov）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: ガバナー積分ゲイン（Kigov）。  代表的な値＝2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: PIコントローラ（Kiload）のロードリミッタ積分ゲインです。  代表値＝0.67。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: パワーコントローラ（リセット）ゲイン（Kimw）。  デフォルト値の0.01は、リセット時間100秒に対応する。  0.001の値は、比較的遅い動作の負荷コントローラに対応します。  典型的な値=0.01。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: ガバナー比例ゲイン（Kpgov）。  代表値＝10。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: PIコントローラのロードリミッタ比例ゲイン（Kpload）。  代表的な値＝2。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: タービンゲイン(Kturb) (>0).  典型的な値 = 1.5。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: ロードリミッター基準値(Ldref)。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxerr[number]`: 速度誤差信号(maxerr)の最大値。  代表値＝0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: 速度誤差信号(minerr)の最小値。  典型的な値=-0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: 電力値のベース（MWbase）（> 0）。  単位＝MW。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `r[number]`: パーマネントドループ (R)。  典型的な値 = 0.04。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: 最小弁閉速度（Rclose）。  単位：PU/sec.  典型的な値 = -0.1.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: 荷重制限減少率（Rdown）の最大値。  典型的な値=-99。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: 最大バルブ開度（Ropen）。  単位＝PU/sec。  典型的な値 = 0.10.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: ドループ用フィードバック信号(Rselect)。  典型的な値：electricalPower。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: 負荷制限の最大増加率(Rup)。  典型的な値=99。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 加速度リミッタ時定数（Ta）（>0）。  代表値＝0.1。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: アクチュエータ時定数（Tact）。  代表値＝0.5。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: タービンラグ時定数(Tb) (>0).  典型的な値 = 0.5。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: タービンリードタイム定数(Tc)。  代表値 = 0. デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: ガバナー微分コントローラの時定数（Tdgov）。  代表値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: ディーゼルエンジンの輸送時間遅れは、燃料流量設定の変更とトルク（Teng）の発現の間にわずかではあるが測定可能な輸送遅れがあるディーゼルエンジンを表現するために使用されるものである。  この輸送遅延が特に問題となる特殊なケースを除き、Tengはゼロであるべきである。  典型的な値=0 デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: ロードリミッター時定数（Tfload）（>0）。  代表的な値＝3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: 電力変換器時定数 (Tpelec) (>0).  典型的な値 = 1.初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: 温度検出リード時定数（Tsa）。  代表値＝4。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: 温度検出遅れ時定数（Tsb）。  代表値＝5。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。GovCT1である必要があります。  - `vmax[number]`: バルブ位置の最大リミット値(Vmax)。  典型的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: バルブ位置リミット最小値（Vmin）。  代表値＝0.15。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: 無負荷時燃料流量（Wfnl）。  典型的な値＝0.2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: 燃料源特性のスイッチで、所定の燃料バルブストロークに対する燃料流量がエンジン速度（Wfspd）に比例し得ることを認識する。 true = 燃料流量が速度に比例する（容積式燃料噴射装置を備えた一部のガスタービンおよびディーゼルエンジン用） false = 燃料制御システムが燃料流量をエンジン速度から独立させる。典型的な値＝true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovCT1:    
@@ -497,9 +513,21 @@ GovCT1:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のGovCT1の例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のGovCT1の例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のGovCT1の例をkey-valuesとして利用できません。これは`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のGovCT1の例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+GovCT1の例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovCT1 を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovCT1の例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovCT1 を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
