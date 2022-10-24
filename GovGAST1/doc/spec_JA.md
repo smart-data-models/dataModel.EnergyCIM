@@ -1,16 +1,32 @@
-エンティティGovGAST1  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティGovGAST1  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovGAST1/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルから採用。改良型単軸ガスタービン。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルより作成。単軸ガスタービンの改良型。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `a`: タービン出力時定数分子のスケールファクター（a）。  代表値＝0.8。デフォルト：0.0  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `b`: タービン出力時定数の分母となるスケールファクター（b）。  代表値＝1。初期値：0.0  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `db1`: 意図的なデッドバンドの幅（db1）。  単位：Hz  代表値＝0、初期値＝0.0  - `db2`: 意図しないデッドバンド（db2）。  単位：MW。  代表値＝0、デフォルト：0.0  - `description`: このアイテムの説明  - `eps`: 意図的なdbヒステリシス（eps）。  単位はHzです。  代表値＝0、初期値＝0.0  - `fidle`: 出力ゼロ時の燃料流量（Fidle）。  代表値＝0.18。デフォルト：0.0  - `gv1`: 非線形ゲインポイント1、PU gv（Gv1）。  代表値＝0 既定値：0.0  - `gv2`: 非線形ゲインポイント2,PU gv（Gv2）。  代表値＝0 既定値：0.0  - `gv3`: 非線形ゲインポイント3、PU gv（Gv3）。  代表値＝0 既定値：0.0  - `gv4`: 非線形ゲインポイント4、PU gv（Gv4）。  代表値＝0、デフォルト：0.0  - `gv5`: 非線形ゲインポイント5、PU gv（Gv5）。  代表値＝0、デフォルト：0.0  - `gv6`: 非線形ゲインポイント6、PU gv（Gv6）。  代表値＝0、デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `ka`: ガバナーゲイン（Ka）。  代表値＝0、初期値＝0.0  - `kt`: 温度リミッタゲイン（Kt）。  代表値＝3。初期値：0.0  - `lmax`: 周囲温度負荷限界（Lmax）。  Lmaxは、限界排気温度に対応するタービン出力です。  代表値＝1。初期値：0.0  - `loadinc`: バルブの位置を高速で変化させることができる（Loadinc）。  代表値＝0.05。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `ltrate`: 長期的な燃料バルブの最大開口率（Ltrate）。  代表値＝0.02。デフォルト：0.0  - `mwbase`: パワー値のベース（MWbase）（＞0）。  単位＝MW。デフォルト：0.0  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pgv1`: 非線形ゲインポイント1、PUパワー（Pgv1）。  代表値＝0、デフォルト：0.0  - `pgv2`: 非線形ゲインポイント2、PUパワー（Pgv2）。  代表値＝0、デフォルト：0.0  - `pgv3`: 非線形ゲインポイント3、PUパワー（Pgv3）。  代表値＝0 既定値：0.0  - `pgv4`: 非線形ゲインポイント4、PUパワー（Pgv4）。  代表値＝0、デフォルト：0.0  - `pgv5`: 非線形ゲインポイント5、PUパワー（Pgv5）。  代表値＝0、デフォルト：0.0  - `pgv6`: 非線形ゲインポイント6、PUパワー（Pgv6）。  代表値＝0、デフォルト：0.0  - `r`: 永久垂下（R）。  代表値＝0.04。初期値：0.0  - `rmax`: 最大燃料弁開度（Rmax）。  単位＝PU/sec。  代表値＝1。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1`: ガバナー機構時定数（T1）。  T1は、レートリミッターが作動していないときに見られる、小さな外乱に対するガバナーの自然なバルブ位置決め時定数を表します。  典型的な値は0.5です。デフォルト：0  - `t2`: タービン出力時定数（T2）。  T2は、ガスタービンエンジンの内部エネルギー蓄積による遅延を表しています。T2は、例えば、多軸エンジンの圧縮機スプールの加速や、空力発電ユニットのフリーパワータービンのプレナム内のガスの圧縮性に関連する遅延の大まかな近似値を与えるために使用することができる。  典型的な値＝0.5。デフォルト：0  - `t3`: タービン排気温度時定数（T3）。  T3は、排気温度と負荷制限システムの遅延を表します。代表値＝3。デフォルト：0  - `t4`: ガバナーリードタイム定数（T4）。  代表値＝0 既定値：0  - `t5`: ガバナー・ラグ時定数（T5）。  代表値＝0、初期値＝0  - `tltr`: バルブポジションアベレージ時定数（Tltr）。  代表値＝10。デフォルト：0  - `type`: NGSIタイプです。GovGAST1である必要があります。  - `vmax`: 最大タービン出力、MWbaseのPU（Vmax）。  代表値＝1。デフォルト：0.0  - `vmin`: 最小タービン出力、MWbaseのPU（Vmin）。  代表値＝0、デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `a[number]`: タービン出力時定数分子スケールファクター(a)。  代表値 = 0.8.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: タービン出力時定数分母のスケールファクター(b)。  典型的な値 = 1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db1[number]`: 意図的なデッドバンド幅（db1）。  単位：Hz。  代表値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: 非意図的デッドバンド(db2)。  単位：MW。  代表値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `eps[number]`: 意図的なdbヒステリシス(eps)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fidle[number]`: 出力がゼロのときの燃料流量（Fidle）。  典型的な値 = 0.18。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: 非線形ゲインポイント1，PU gv (Gv1).  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: 非線形ゲインポイント 2,PU gv (Gv2)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: 非線形ゲインポイント3，PU gv (Gv3).  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: 非線形ゲインポイント4，PU gv (Gv4).  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: 非線形ゲインポイント5，PU gv (Gv5).  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: 非線形ゲインポイント6，PU gv (Gv6).  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `ka[number]`: ガバナーゲイン（Ka）。  代表値=0.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kt[number]`: 温度リミッター利得（Kt）。  典型的な値 = 3.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `lmax[number]`: 周囲温度負荷限界値（Lmax）。  Lmax は、限界排気ガス温度に対応するタービン出力である。  代表値＝1．初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `loadinc[number]`: バルブ位置が高速で変化することを許可する（Loadinc）。  典型的な値 = 0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `ltrate[number]`: 長時間の燃料弁開度の最大値（Ltrate）。  典型的な値 = 0.02。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: 電力値のベース（MWbase）（> 0）。  単位＝MW。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pgv1[number]`: 非線形ゲインポイント1，PUパワー（Pgv1）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: 非線形ゲインポイント2，PUパワー（Pgv2）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: 非線形ゲインポイント3，PUパワー（Pgv3）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: 非線形ゲインポイント4，PUパワー（Pgv4）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: 非線形ゲインポイント5，PUパワー（Pgv5）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: 非線形ゲインポイント6，PUパワー（Pgv6）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: パーマネントドループ (R)。  典型的な値 = 0.04。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rmax[number]`: 燃料弁最大開度（Rmax）。  単位＝PU/sec.  典型的な値 = 1.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1[number]`: ガバナ機構時定数(T1).  T1 は、レートリミッティングが有効でない場合に見られるような、小さな外乱に対するガバナーの自然なバルブ位置決め時定数を表します。  代表値＝0.5。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: タービン出力時定数(T2)。  T2 はガスタービンエンジンの内部エネルギー蓄積による遅れを表す．多軸エンジンの圧縮機スプールの加速や、航空転用機のフリーパワータービンのプレナム内のガスの圧縮性などに伴う遅れを、T2でおおまかに近似することができる。  典型的な値＝0.5。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: タービン排気温度時定数(T3)。  T3 は、排気温度と負荷制限システムの遅延を表す。典型的な値＝3。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: ガバナーリードタイム定数 (T4)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: ガバナー遅延時定数 (T5)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tltr[number]`: バルブ位置の平均化時定数（Tltr）。  典型的な値＝10。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。GovGAST1である必要があります。  - `vmax[number]`: タービン最大出力，MWbase（Vmax）のPU。  典型的な値 = 1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: 最小タービン出力，MWbaseのPU（Vmin）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGAST1:    
@@ -491,9 +507,21 @@ GovGAST1:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-key-valuesとしてJSON-LD形式のGovGAST1の例を利用できません。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-GovGAST1をJSON-LD形式で正規化した例はありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のGovGAST1の例をkey-valuesとして利用できません。これは、`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-GovGAST1をJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+GovGAST1の例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovGAST1 を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+GovGAST1の例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovGAST1 を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
