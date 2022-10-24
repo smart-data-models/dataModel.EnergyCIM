@@ -1,16 +1,32 @@
-Entität: GovHydro2  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: GovHydro2  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydro2/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Das IEEE-Wasserturbinenreglermodell repräsentiert Anlagen mit einfachen Druckrohrleitungskonfigurationen und Hydraulic-Dashpot-Reglern.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Abgeleitet von CIM-Datenmodellen. Das IEEE-Wasserturbinenreglermodell repräsentiert Anlagen mit einfachen Druckrohrleitungskonfigurationen und Hydraulic-Dashpot-Reglern**.  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `aturb`: Zähler-Multiplikator der Turbine (Aturb).  Typischer Wert = -1. Voreinstellung: 0.0  - `bturb`: Turbinen-Nenner-Multiplikator (Bturb).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv3`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv4`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv5`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv6`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `kturb`: Turbinenverstärkung (Kturb).  Typischer Wert = 1. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv3`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv4`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv5`: Nichtlinearer Verstärkungspunkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv6`: Nichtlinearer Verstärkungspunkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Toröffnung (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Toröffnung; ().  Typischer Wert = 0. Voreinstellung: 0.0  - `rperm`: Permanenter Durchhang (Rperm).  Typischer Wert = 0,05. Voreinstellung: 0,0  - `rtemp`: Vorübergehender P-Bereich (Rtemp).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tg`: Gate-Servo-Zeitkonstante (Tg).  Typischer Wert = 0,5. Voreinstellung: 0  - `tp`: Zeitkonstante des Vorsteuer-Servoventils (Tp).  Typischer Wert = 0,03. Voreinstellung: 0  - `tr`: Dashpot-Zeitkonstante (Tr).  Typischer Wert = 12. Voreinstellung: 0  - `tw`: Wasserträgheitszeitkonstante (Tw).  Typischer Wert = 2. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovHydro2 sein  - `uc`: Maximale Torschließgeschwindigkeit (Uc) (<0).  Einheit = VE/sec.   Typischer Wert = -0,1. Voreinstellung: 0,0  - `uo`: Maximale Toröffnungsgeschwindigkeit (Uo).  Einheit = PU/sec.  Typischer Wert = 0,1. Voreinstellung: 0,0    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `aturb[number]`: Zähler-Multiplikator der Turbine (Aturb).  Typischer Wert = -1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bturb[number]`: Multiplikator des Turbinen-Nenners (Bturb).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1[number]`: Beabsichtigte Totzonenbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: Unbeabsichtigte Totzone (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Eine Beschreibung dieses Artikels  - `eps[number]`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `kturb[number]`: Turbinenverstärkung (Kturb).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase[number]`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pgv1[number]`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Nichtlineare Verstärkung Punkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: Nichtlineare Verstärkung Punkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Maximale Toröffnung (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Minimale Toröffnung; ().  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: Permanenter Durchhang (Rperm).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: Vorübergehende Abweichung (Rtemp).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `tg[number]`: Gate-Servo-Zeitkonstante (Tg).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Zeitkonstante des Vorsteuerventils (Tp).  Typischer Wert = 0,03. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Dashpot-Zeitkonstante (Tr).  Typischer Wert = 12. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Wasserträgheitszeitkonstante (Tw).  Typischer Wert = 2. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovHydro2 sein  - `uc[number]`: Maximale Schließgeschwindigkeit des Tores (Uc) (<0).  Einheit = PU/sec.   Typischer Wert = -0,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: Maximale Öffnungsgeschwindigkeit des Tores (Uo).  Einheit = PU/sec.  Typischer Wert = 0,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydro2:    
@@ -37,86 +53,109 @@ GovHydro2:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     aturb:    
       description: 'Turbine numerator multiplier (Aturb).  Typical Value = -1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     bturb:    
       description: 'Turbine denominator multiplier (Bturb).  Typical Value = 0.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     db1:    
       description: 'Intentional deadband width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     db2:    
       description: 'Unintentional deadband (db2).  Unit = MW.  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     eps:    
       description: 'Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv1:    
       description: 'Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv2:    
       description: 'Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv3:    
       description: 'Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv4:    
       description: 'Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv5:    
       description: 'Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv6:    
       description: 'Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &govhydro2_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -128,12 +167,14 @@ GovHydro2:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     kturb:    
       description: 'Turbine gain (Kturb).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -285,71 +326,87 @@ GovHydro2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *govhydro2_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pgv1:    
       description: 'Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv2:    
       description: 'Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv3:    
       description: 'Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv4:    
       description: 'Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv5:    
       description: 'Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv6:    
       description: 'Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pmax:    
       description: 'Maximum gate opening (Pmax).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pmin:    
       description: 'Minimum gate opening; ().  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     rperm:    
       description: 'Permanent droop (Rperm).  Typical Value = 0.05. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     rtemp:    
       description: 'Temporary droop (Rtemp).  Typical Value = 0.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -360,52 +417,81 @@ GovHydro2:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tg:    
       description: 'Gate servo time constant (Tg).  Typical Value = 0.5. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tp:    
       description: 'Pilot servo valve time constant (Tp).  Typical Value = 0.03. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tr:    
       description: 'Dashpot time constant (Tr).  Typical Value = 12. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tw:    
       description: 'Water inertia time constant (Tw).  Typical Value = 2. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be GovHydro2'    
       enum:    
         - GovHydro2    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     uc:    
       description: 'Maximum gate closing velocity (Uc) (<0).  Unit = PU/sec.   Typical Value = -0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     uo:    
       description: 'Maximum gate opening velocity (Uo).  Unit = PU/sec.  Typical Value = 0.1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro2/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro2/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
-Nicht verfügbar das Beispiel eines GovHydro2 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines GovHydro2 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines GovHydro2 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines GovHydro2 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Nicht verfügbar ist das Beispiel eines GovHydro2 im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovHydro2 im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovHydro2 im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovHydro2 im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
