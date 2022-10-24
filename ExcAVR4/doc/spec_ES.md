@@ -1,16 +1,32 @@
-Entidad: ExcAVR4  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: ExcAVR4  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcAVR4/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptado de los modelos de datos de la CIM. Sistema de excitación italiano. Representa el excitador estático y el regulador de tensión eléctrica.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `imul`: Selector de dependencia de la tensión de salida del regulador (Imul). verdadero = el selector está conectado falso = el selector no está conectado. Valor típico = verdadero. Por defecto: Falso  - `ka`: Ganancia del regulador (K).  Valor típico = 300. Por defecto: 0,0  - `ke`: Ganancia del excitador (K).  Valor típico = 1. Por defecto: 0,0  - `kif`: Reactancia interna del excitador (K).  Valor típico = 0. Por defecto: 0.0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1`: Constante de tiempo del regulador (T).  Valor típico = 4,8. Por defecto: 0  - `t1if`: Constante de tiempo de retroalimentación de la corriente del excitador (T).  Valor típico = 60. Por defecto: 0  - `t2`: Constante de tiempo del regulador (T).  Valor típico = 1,5. Por defecto: 0  - `t3`: Constante de tiempo del regulador (T).  Valor típico = 0. Por defecto: 0  - `t4`: Constante de tiempo del regulador (T).  Valor típico = 0. Por defecto: 0  - `tif`: Constante de tiempo de retroalimentación de la corriente del excitador (T).  Valor típico = 0. Por defecto: 0  - `type`: Tipo de NGSI. Tiene que ser ExcAVR4  - `vfmn`: Salida mínima del excitador (V).  Valor típico = 0. Por defecto: 0.0  - `vfmx`: Salida máxima del excitador (V).  Valor típico = 5. Por defecto: 0,0  - `vrmn`: Salida máxima del regulador (V).  Valor típico = 0. Por defecto: 0.0  - `vrmx`: Salida mínima del regulador (V).  Valor típico = 5. Por defecto: 0,0    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `imul[number]`: Selector de dependencia de la tensión de salida del regulador (Imul). verdadero = el selector está conectado falso = el selector no está conectado. Valor típico = verdadero. Por defecto: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `ka[number]`: Ganancia del regulador (K).  Valor típico = 300. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: Ganancia del excitador (K).  Valor típico = 1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kif[number]`: Reactancia interna del excitador (K).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1[number]`: Constante de tiempo del regulador (T).  Valor típico = 4,8. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t1if[number]`: Constante de tiempo de retroalimentación de la corriente del excitador (T).  Valor típico = 60. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Constante de tiempo del regulador (T).  Valor típico = 1,5. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de tiempo del regulador (T).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Constante de tiempo del regulador (T).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tif[number]`: Constante de tiempo de retroalimentación de la corriente del excitador (T).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo de NGSI. Tiene que ser ExcAVR4  - `vfmn[number]`: Salida mínima del excitador (V).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfmx[number]`: Salida máxima del excitador (V).  Valor típico = 5. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmn[number]`: Salida máxima del regulador (V).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmx[number]`: Salida mínima del regulador (V).  Valor típico = 5. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcAVR4:    
@@ -363,11 +379,29 @@ ExcAVR4:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcAVR4/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcAVR4/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 No está disponible el ejemplo de un ExcAVR4 en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcAVR4 en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcAVR4 en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcAVR4 en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
