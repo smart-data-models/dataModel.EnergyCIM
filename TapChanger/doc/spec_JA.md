@@ -1,16 +1,32 @@
-エンティティTapChanger  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティタップチェンジャー  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TapChanger/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。トランスの巻線のタップ位置を変更するための機構。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用。変圧器の巻線タップ位置を変更する機構 **。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `SvTapStep`: タップチェンジャーに関連するタップステップの状態。デフォルトはなし  - `TapChangerControl`: この調整用タップ制御スキームに参加するタップチェンジャー。デフォルトはなし  - `TapSchedules`: TapScheduleはTapChangerに関連付けられています。デフォルト：'list'  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `controlEnabled`: 機器のレギュレーション状態を指定します。  Trueはレギュレーションしている、Falseはレギュレーションしていない。デフォルトはFalse  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `highStep`: タップステップの最高位置、ニュートラルからの前進。属性はlowStepよりも大きくなければならない。デフォルト：0  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lowStep`: タップステップの最低位置、ニュートラルからのリタード デフォルト：0  - `ltcFlag`: TapChangerにロードタップチェンジ機能があるかどうかを指定します。デフォルトはFalse  - `name`: このアイテムの名前です。  - `neutralStep`: この巻線のニュートラル・タップ・ステップ・ポジション。属性は、lowStepと同じかそれ以上、highStepと同じかそれ以下でなければならない。デフォルト：0  - `neutralU`: ニュートラルタップ設定時に巻線が動作する電圧。デフォルト：0.0  - `normalStep`: この巻線の「通常」のネットワーク動作で使用されるタップステップ位置を示します。固定」タップチェンジャーの場合は、現在の物理的なタップ設定を示す。属性は、lowStepと同等以上、highStepと同等以下でなければならない。デフォルト：0  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step`: タップチェンジャーの位置。定常解の開始ステップ。連続的なタップ変数をサポートするために、非整数値が許可されています。連続値を使用する理由は、離散的なタップ・チェンジャーがまだ設計されていない場合や、狭い電圧帯域でタップ・ステップが振動するようなソリューションをサポートするため、または入力として連続的なソリューションに対応するためです。属性は、lowStepと同じかそれ以上、highStepと同じかそれ以下でなければならない。デフォルト：0.0  - `type`: NGSIタイプ。TapChangerでなければなりません。    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `SvTapStep[number]`: タップチェンジャーに関連するタップステップの状態。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `TapChangerControl[number]`: この調整タップ制御方式に参加するタップチェンジャーを指定します。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `TapSchedules[number]`: TapScheduleは、TapChangerに関連付けられます。デフォルト：'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `controlEnabled[number]`: 機器の規制状態を指定する。  Trueは規制中、Falseは規制していない。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `highStep[number]`: タップステップの最高位置、ニュートラルからの前進。この属性はlowStepより大きくなければならない。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lowStep[number]`: タップステップ位置の最小値、ニュートラルからのリタード デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ltcFlag[number]`: TapChangerがロードタップ変更機能を持つかどうかを指定します。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `neutralStep[number]`: この巻線のニュートラルタップステップ位置。属性はlowStep以上、highStep以下でなければならない。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `neutralU[number]`: 中性タップ設定で巻線が動作する電圧。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `normalStep[number]`: この巻線の「通常の」ネットワーク操作で使用されるタップステップ位置。Fixed` タップチェンジャーの場合、現在の物理的なタップ設定を示す。この属性は、lowStep 以上かつ highStep 以下でなければならない。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `step[number]`: タップチェンジャーの位置。定常解の開始ステップ。連続的なタップ変数をサポートするために、非整数値が許可されている。連続値を使用する理由は、離散タップチェンジャーがまだ設計されていない研究ケース、狭い電圧帯でタップステップが振動するソリューション、または入力として連続ソリューションに対応するためである。この属性は、lowStep以上かつhighStep以下でなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプであること。TapChangerである必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 TapChanger:    
@@ -353,9 +369,21 @@ TapChanger:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のTapChangerの例をkey-valuesとして利用できません。これはNGSI-v2の`options=keyValues`との互換性があり、個々のエンティティのコンテキストデータを返します。  
-タップチェンジャーの例をJSON-LD形式で正規化したものは利用できません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のTapChangerの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-タップチェンジャーの例をJSON-LD形式で正規化したものは利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のTapChangerの例をkey-valuesとして利用することはできません。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+TapChanger を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のTapChangerの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+TapChanger を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
