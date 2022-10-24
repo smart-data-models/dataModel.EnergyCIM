@@ -1,16 +1,32 @@
-エンティティWindContQIEC  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティWindContQIEC  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindContQIEC/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。Qコントロールモデル。  リファレンス。IEC規格61400-27-1 6.6.5.6.**項  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルから引用。Q制御モデル。  参考IEC 規格 61400-27-1 6.6.5.6.** 節  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `WindTurbineType3or4IEC`: このリアクティブコントロールモードが関連付けられている風車タイプ3または4のモデル。デフォルト。なし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `iqh1`: ディップ(i)時の最大無効電流注入。タイプ依存のパラメータである。デフォルト：0.0  - `iqmax`: 最大無効電流注入（i）。タイプ依存のパラメータである。デフォルト：0.0  - `iqmin`: 最小無効電流注入（i）。タイプ依存のパラメータです。デフォルト：0.0  - `iqpost`: 故障後の無効電流の注入（）。プロジェクトに依存するパラメータです。デフォルト：0.0  - `kiq`: Reactive power PIコントローラの積分ゲイン（）。タイプ依存のパラメータです。デフォルト：0.0  - `kiu`: 電圧PIコントローラの積分ゲイン（）。タイプ依存のパラメータです。デフォルト：0.0  - `kpq`: リアクティブパワーPIコントローラの比例ゲイン（）。タイプ依存のパラメータです。デフォルト：0.0  - `kpu`: 電圧PIコントローラの比例ゲイン（）。タイプ依存のパラメータです。デフォルト：0.0  - `kqv`: LVRT電流の電圧スケーリング・ファクター（）。プロジェクトに依存するパラメータです。デフォルト：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `qmax`: 最大無効電力（q）。タイプ依存のパラメータです。デフォルト：0.0  - `qmin`: 最小無効電力（q）。タイプ依存のパラメータです。デフォルト：0.0  - `rdroop`: 電圧降下インピーダンス（）の抵抗成分。プロジェクトに依存するパラメータです。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tiq`: 無効電流ラグの時定数（T）。タイプ依存のパラメータです。デフォルト：0  - `tpfilt`: Power measurement filter time constant ()。タイプ依存のパラメータです。デフォルト：0  - `tpost`: 故障後の無効電力が注入される時間帯の長さ（）。プロジェクトに依存するパラメータである。デフォルト：0  - `tqord`: 無効電力オーダーラグの時定数（）。タイプ依存のパラメータです。デフォルト：0  - `tufilt`: 電圧測定フィルタ時定数（）。タイプ依存のパラメータです。デフォルト：0  - `type`: NGSIタイプです。WindContQIECである必要があります。  - `udb1`: 電圧デッドバンドの下限値（）。タイプ依存のパラメータです。デフォルト：0.0  - `udb2`: 電圧デッドバンドの上限値（）。タイプ依存のパラメータです。デフォルト：0.0  - `umax`: 電圧PIコントローラ積分項(u)の最大電圧。タイプ依存のパラメータです。デフォルト：0.0  - `umin`: 電圧PIコントローラ積分項(u)の最小電圧。タイプ依存のパラメータです。デフォルト：0.0  - `uqdip`: qコントロール()でのLVRT検出用の電圧閾値。タイプ依存のパラメータである。デフォルト：0.0  - `uref0`: 電圧リファレンス（）のバイアスをユーザーが定義し、=のときに使用する。デフォルト：0.0  - `windLVRTQcontrolModesType`: LVRT Q制御モードの種類（）。プロジェクトに依存するパラメータです。デフォルトはなし  - `windQcontrolModesType`: 一般的な風車のQ制御モードの種類（）。  プロジェクトに依存するパラメータです。デフォルトはなし  - `xdroop`: 電圧降下インピーダンス（）の誘導成分。プロジェクトに依存するパラメータです。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `WindTurbineType3or4IEC[number]`: この無効制御モードが関連する風力発電機タイプ3または4モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `iqh1[number]`: dip(i)時の最大無効電流注入量。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqmax[number]`: 最大無効電流注入量(i)。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqmin[number]`: 最小無効電流注入量(i)。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqpost[number]`: 故障後の無効電流注入量（）。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiq[number]`: 無効電力PIコントローラ積分ゲイン()。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiu[number]`: 電圧PIコントローラの積分ゲイン()です。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpq[number]`: 無効電力PIコントローラ比例ゲイン()。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpu[number]`: 電圧PIコントローラの比例ゲイン()です。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqv[number]`: LVRT電流の電圧スケーリングファクター()です。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `qmax[number]`: 最大無効電力（q）。タイプ依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qmin[number]`: 最小無効電力(q)。タイプ依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdroop[number]`: 電圧降下インピーダンスの抵抗成分()。プロジェクト依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tiq[number]`: 無効電流遅延の時定数(T)。タイプ依存のパラメータです。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpfilt[number]`: 電力測定フィルタ時定数()。タイプ依存のパラメータです。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpost[number]`: 故障後の無効電力が注入される時間の長さ（）。プロジェクトに依存するパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tqord[number]`: 無効電力オーダーラグ()の時定数。タイプ依存のパラメータです。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tufilt[number]`: 電圧測定フィルタの時定数()。タイプ依存のパラメータです。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプであること。WindContQIECである必要があります。  - `udb1[number]`: 電圧デッドバンド下限値()。機種依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `udb2[number]`: 電圧不感帯の上限値（）。機種依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `umax[number]`: 電圧PIコントローラ積分項(u)の最大電圧。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `umin[number]`: 電圧PIコントローラ積分項(u)の最小電圧。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uqdip[number]`: q制御()でLVRTを検出するための電圧閾値。タイプ依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uref0[number]`: 電圧リファレンス()のユーザ定義バイアス，=のときに使用される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `windLVRTQcontrolModesType[number]`: LVRT Qの制御モードの種類（）。プロジェクトに依存するパラメータです。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `windQcontrolModesType[number]`: 一般的な風力発電機のQ制御モードの種類（）。  プロジェクトに依存するパラメータです。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `xdroop[number]`: 電圧降下インピーダンスの誘導性成分（）。プロジェクトに依存するパラメータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WindContQIEC:    
@@ -449,9 +465,21 @@ WindContQIEC:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のWindContQIECの例をkey-valuesとして利用できません。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のWindContQIECの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のWindContQIECの例をkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のWindContQIECの例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のWindContQIECの例をkey-valuesとして利用できない。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+WindContQIECのJSON-LD形式を正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のWindContQIECの例をkey-valuesとして利用できない。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+WindContQIECのJSON-LD形式を正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
