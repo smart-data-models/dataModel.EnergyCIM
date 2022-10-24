@@ -1,16 +1,32 @@
-エンティティExcST4B  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティExcST4B  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcST4B/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルから採用。最大の内部ループ・フィードバック・ゲインを持つ、修正されたIEEE ST4B静的励磁システム .**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルより作成。IEEE ST4B静的励磁方式を改良し、最大内輪フィードバックゲイン.**としたもの。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `kc`: 整流器の負荷率で，整流リアクタンス（Kc）に比例する。代表値＝0.113。初期値：0.0  - `kg`: インナーループフィールドレギュレーターのフィードバックゲイン定数(Kg)代表値＝0、初期値＝0.0  - `ki`: 電位回路利得係数（Ki）。  代表値＝0、初期値＝0.0  - `kim`: 電圧調整器の積分ゲイン出力（Kim）。  代表値＝0、初期値＝0.0  - `kir`: 電圧調整器の積分利得（Kir）。  代表値＝10.75初期値：0.0  - `kp`: 電位回路利得係数（Kp）。  代表値＝9.3。初期値：0.0  - `kpm`: 電圧調整器の比例ゲイン出力（Kpm）。  代表値＝1。デフォルト：0.0  - `kpr`: 電圧調整器の比例ゲイン（Kpr）。  代表値＝10.75です。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lvgate`: セレクタ（LVgate）。true = LVgateがブロックダイアグラムの一部である false = LVgateがブロックダイアグラムの一部ではない。  代表値＝false。デフォルトはfalse  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 電圧調整器の時定数（Ta）。  代表値＝0.02。デフォルト：0  - `thetap`: 電位回路の位相角（thetap）。  代表値＝0、デフォルト：0.0  - `type`: NGSIタイプです。ExcST4Bである必要があります。  - `uel`: セレクタ（Uel）。true = UELがブロックダイアグラムの一部である false = UELがブロックダイアグラムの一部ではない。  代表値＝false。デフォルトはFalse  - `vbmax`: 最大励磁電圧（Vbmax）。  代表値＝11.63初期値：0.0  - `vgmax`: 最大インナーループフィードバック電圧（Vgmax）。  代表値＝5.8初期値：0.0  - `vmmax`: インナーループの最大出力（Vmmax）。  代表値＝99。デフォルト：0.0  - `vmmin`: インナーループの最小出力（Vmmin）。  代表値＝-99。初期値：0.0  - `vrmax`: ボルテージレギュレータの最大出力（Vrmax）。  代表値＝1。初期値：0.0  - `vrmin`: ボルテージレギュレーターの最小出力（Vrmin）。  代表値＝-0.87。初期値：0.0  - `xl`: 電位源(Xl)に関連するリアクタンス。  代表値＝0.124。初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `kc[number]`: 整流リアクタンス（Kc）に比例する整流器負荷率。代表値＝0.113。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: インナーループ・フィールドレギュレータのフィードバックゲイン定数（Kg）。代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: ポテンシャル回路のゲイン係数（Ki）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kim[number]`: ボルテージレギュレータ積分ゲイン出力（Kim）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kir[number]`: 電圧レギュレータ積分ゲイン (Kir)。  代表値 = 10.75。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: ポテンシャル回路のゲイン係数（Kp）。  典型的な値 = 9.3。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpm[number]`: ボルテージレギュレータ比例ゲイン出力（Kpm）。  代表値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpr[number]`: 電圧レギュレータの比例ゲイン (Kpr)。  代表値＝10.75。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lvgate[number]`: セレクタ（LVgate）。true = LVgateはブロック・ダイアグラムの一部である false = LVgateはブロック・ダイアグラムの一部ではない。  典型的な値 = false。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 電圧レギュレータの時定数 (Ta)。  代表値＝0.02。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `thetap[number]`: 電位回路の位相角(tap)。  典型的な値=0。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。ExcST4Bでなければならない  - `uel[number]`: セレクタ（Uel）。true = UELはブロック図の一部である false = UELはブロック図の一部ではない  典型的な値 = false。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `vbmax[number]`: 最大励磁電圧 (Vbmax)。  代表値 = 11.63.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vgmax[number]`: 最大内ループフィードバック電圧 (Vgmax)。  典型的な値 = 5.8。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmmax[number]`: インナーループ最大出力（Vmmax）。  代表値＝99。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmmin[number]`: インナーループ出力の最小値（Vmmin）。  典型的な値=-99。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: ボルテージレギュレータの最大出力電圧 (Vrmax)。  代表値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: ボルテージレギュレータ出力の最小値 (Vrmin)。  代表値 = -0.87。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xl[number]`: 電位源(Xl)に関連するリアクタンス。  典型的な値 = 0.124。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティが間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcST4B:    
@@ -393,11 +409,29 @@ ExcST4B:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST4B/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST4B/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のExcST4Bの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcST4Bの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExcST4Bの例をkey-valuesとしてJSON-LD形式にしたものは利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExcST4Bを正規化してJSON-LD形式にした例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のExcST4Bの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcST4B を JSON-LD 形式で正規化した例は存在しない。これはオプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のExcST4Bの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcST4B を JSON-LD 形式で正規化した例はありません。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
