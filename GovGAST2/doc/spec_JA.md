@@ -1,16 +1,32 @@
-エンティティGovGAST2  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティGovGAST2  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovGAST2/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。ガスタービンモデル。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルより作成。ガスタービンモデル  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `a`: バルブポジショナー（A）。デフォルト：0.0  - `address`: 郵送先住所  - `af1`: 排気温度パラメータ（Af1）。  単位＝単位温度あたり。  温度（℃）に基づく。 デフォルト：0.0  - `af2`: 0.5(1速)に等しい係数(Af2)。デフォルト：0.0  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `b`: バルブポジショナー（B）。デフォルト：0.0  - `bf1`: (Bf1)となります。  Bf1＝E（1-w）ここでE（速度感度係数）は0.55～0.65×Trです。  単位＝単位温度あたり。  温度（℃）を基準とする。デフォルト：0.0  - `bf2`: タービントルク係数K（燃焼室内の燃料流の発熱量に依存）（Bf2）。デフォルト：0.0  - `c`: バルブポジショナー（C）。デフォルト：0.0  - `cf2`: 出力が0％のときの燃料流量を定義する係数（Cf2）。  同期していても出力は出ない。  通常は0.23×K（23％の燃料流量）。デフォルト：0.0  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `ecr`: 燃焼反応時間遅延（Ecr）。デフォルト：0  - `etd`: タービンと排気の遅延時間（Etd）。デフォルト：0  - `id`: エンティティのユニークな識別子  - `k3`: 燃料調整の比率（K3）。デフォルト：0.0  - `k4`: 放射線シールドのゲイン（K4）。デフォルト：0.0  - `k5`: 放射線シールドのゲイン（K5）。デフォルト：0.0  - `k6`: 最小燃料流量（K6）。デフォルト：0.0  - `kf`: 燃料システムフィードバック（Kf）。デフォルト：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `mwbase`: パワー値のベース（MWbase）（＞0）。  単位＝MW。デフォルト：0.0  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t`: 燃料制御の時定数（T）。デフォルト：0  - `t3`: 放射線シールド時定数（T3）。デフォルト：0  - `t4`: 熱電対の時定数（T4）。デフォルト：0  - `t5`: 温度制御時定数（T5）。デフォルト：0  - `tc`: 温度制御（Tc）。  単位 = [SYMBOL REMOVED]F または [SYMBOL REMOVED]C（定数 Af1 および Bf1 に依存）。デフォルト：0.0  - `tcd`: Compressor discharge time constant (Tcd).デフォルト：0  - `tf`: 燃料系時定数（Tf）。デフォルト：0  - `tmax`: タービンリミットの最大値（Tmax）。デフォルト：0.0  - `tmin`: タービンリミットの最小値（Tmin）。デフォルト：0.0  - `tr`: 定格温度（Tr）。  パラメータAf1およびBf1に応じて、単位＝[SYMBOL REMOVED]C。デフォルト：0.0  - `trate`: タービンの定格（Trate）。  単位＝MW。デフォルト：0.0  - `tt`: 温度コントローラーの積分率（Tt）。デフォルト：0  - `type`: NGSIタイプであること。GovGAST2である必要があります。  - `w`: タービン定格(W)に対するガバナーゲイン(1/droop)。デフォルト：0.0  - `x`: ガバナーリードタイム定数（X）。デフォルト：0  - `y`: ガバナー・ラグ時定数（Y）（>0）。デフォルト：0  - `z`: ガバナーモード（Z）。true = Droop false = ISO。デフォルトはFalse    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `a[number]`: バルブポジショナ（A）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `af1[number]`: 排気温度パラメータ（Af1）。  単位 = 単位温度あたり。  温度（℃）に基づく。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `af2[number]`: 0.5（1速）に相当する係数（Af2）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: バルブポジショナ（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf1[number]`: (Bf1)とします。  Bf1＝E（1-w）ここで、E（速度感度係数）は0.55～0.65×Trです。  単位＝単位温度あたり。  温度（℃）を基準とする デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf2[number]`: タービントルク係数K（燃焼室内の燃料流の発熱量に依存）（Bf2）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `c[number]`: バルブポジショナ（C）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cf2[number]`: 出力が0％のときの燃料流量を定義する係数（Cf2）。  同期しているが出力がない。  通常0.23×K（23%燃料流量）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `ecr[number]`: 燃焼反応時間遅延（Ecr）。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `etd[number]`: タービンと排気の遅れ（Etd）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `k3[number]`: 燃料調整比率（K3）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: 放射線シールド（K4）のゲイン。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: 放射線遮蔽板（K5）のゲイン。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: 最小燃料流量（K6）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: 燃料系フィードバック（Kf）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mwbase[number]`: 電力値のベース（MWbase）（> 0）。  単位＝MW。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t[number]`: 燃料制御の時定数（T）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: 放射線遮蔽時定数（T3）。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: 熱電対の時定数（T4）。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: 温度制御時定数（T5）。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: 温度制御(Tc).  単位＝[SYMBOL REMOVED]F または[SYMBOL REMOVED]C 定数 Af1，Bf1 によって異なる。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcd[number]`: 圧縮機放電時定数(Tcd)。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: 燃料系時定数（Tf）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmax[number]`: タービンの最大限界値（Tmax）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmin[number]`: タービンの最小リミット（Tmin）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: 定格温度(Tr)。  単位＝[SYMBOL REMOVED]C パラメータ Af1，Bf1 により異なる。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trate[number]`: タービンの定格（Trate）。  単位＝MW。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: 温度コントローラ積分値（Tt）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。GovGAST2である必要があります。  - `w[number]`: タービン定格出力（W）に対するガバナーゲイン（1/droop）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x[number]`: ガバナーリードタイム定数（X）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `y[number]`: ガバナー遅延時定数（Y）（>0）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `z[number]`: ガバナーモード (Z) true = Droop false = ISO.デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGAST2:    
@@ -479,9 +495,21 @@ GovGAST2:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のGovGAST2の例をkey-valuesとして利用できません。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-GovGAST2をJSON-LD形式で正規化した例はありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のGovGAST2の例をkey-valuesとして利用できません。これは、`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-GovGAST2をJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+GovGAST2のJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovGAST2 を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+GovGAST2のJSON-LD形式でのkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+GovGAST2 を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
