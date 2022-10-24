@@ -1,16 +1,32 @@
-エンティティExcIEEEDC2A  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティExcIEEEDC2A  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEDC2A/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMのデータモデルからの採用です。このクラスは、IEEE Std 421.5-2005 タイプ DC2A モデルを表す。このモデルは、発電機または補助バスから供給される連続動作する電圧調整器を備えた現場制御の直流整流子励磁装置を表す。  DC1A型との違いは、電圧レギュレータの出力制限が端子電圧に比例していることだけである。DCコミュテータエキサイタに接続された旧式の機械式および回転式の各種増幅器調整装置をソリッドステートに置き換えた代表的な製品である。  参考文献IEEE Standard 421.5-2005 Section 5.2.**を参照。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。このクラスは、IEEE Std 421.5-2005 タイプ DC2A モデルを表します。このモデルは、発電機または補助バスから得た電源を持つ連続的に作用する電圧レギュレータを持つ、フィールド制御の直流整流子励磁装置を表す。  タイプ DC1A モデルとの違いは、電圧レギュレータの出力制限が端子電圧に比例している点のみである。DC整流子励磁機に接続される旧式の機械式および回転式増幅器調整器の各種形式をソリッドステートに置き換えた代表的なものである。  参考文献IEEE 規格 421.5-2005 第 5.2.** 項  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `efd1`: エキサイターサチュレーションが定義されるエキサイター電圧（E）。  代表値＝3.05。初期値：0.0  - `efd2`: エキサイターサチュレーションが定義されるエキサイター電圧（E）。  代表値＝2.29。初期値：0.0  - `exclim`: (exclim)を参照してください。  IEEE規格では、エキサイター出力の下限値が曖昧になっています。典型的な値は-999で、制限が適用されないことを意味する。デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `ka`: 電圧調整器のゲイン（K）。  代表値＝300。デフォルト：0.0  - `ke`: 自励磁電界に関わるエキサイター定数（K）。  代表値＝1。初期値：0.0  - `kf`: 励磁制御系スタビライザーゲイン（K）。  代表値＝0.1。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `seefd1`: 対応するエキサイタ電圧Eにおけるエキサイタ飽和関数値（S[E]）。  代表値＝0.279。初期値：0.0  - `seefd2`: 対応するエキサイタ電圧Eにおけるエキサイタ飽和関数値（S[E]）。  代表値＝0.117。初期値：0.0  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 電圧調整器の時定数（T）。  代表値＝0.01。デフォルト：0  - `tb`: 電圧調整器の時定数（T）。  代表値＝0 既定値：0  - `tc`: 電圧調整器の時定数（T）。  代表値＝0 既定値：0  - `te`: エキサイター時定数、エキサイター制御（T）に伴う積分率。  代表値＝1.33。デフォルト：0  - `tf`: 励磁制御系安定化時定数（T）。  代表値＝0.675。初期値：0  - `type`: NGSIタイプです。ExcIEEEDC2Aである必要があります。  - `uelin`: UEL入力（uelin）。true = 入力がHVゲートに接続される false = 入力がエラー信号に接続される。代表値＝true。デフォルトはFalse  - `vrmax`: ボルテージレギュレーターの最大出力（V）。  代表値＝4.95。初期値：0.0  - `vrmin`: ボルテージレギュレーターの最低出力（V）。  代表値＝-4.9。初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `efd1[number]`: エキサイタ飽和を定義するエキサイタ電圧 (E)。  典型的な値 = 3.05.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efd2[number]`: エキサイタ飽和を定義するエキサイタ電圧 (E)。  典型的な値 = 2.29.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `exclim[number]`: (exclim)です。  IEEE規格はエキサイター出力の下限について曖昧である。典型的な値は-999で、制限がかかっていないことを意味する。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `ka[number]`: 電圧レギュレータのゲイン（K）。  典型的な値=300。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: 自励磁界に関係する励磁定数(K)。  代表的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: 励磁制御系安定化ゲイン (K)。  典型的な値 = 0.1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `seefd1[number]`: 対応する励磁電圧Eにおける励磁器飽和関数値(S[E])。  典型的な値 = 0.279.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seefd2[number]`: 対応する励磁電圧Eにおける励磁器飽和関数値(S[E])。  典型的な値 = 0.117.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 電圧レギュレータの時定数 (T)。  代表値 = 0.01。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: ボルテージレギュレータの時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: ボルテージレギュレータの時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Exciter time constant, Exciter control (T) に関連する積分レート。  典型的な値 = 1.33.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: 励磁制御系安定化時定数 (T)。  典型的な値 = 0.675.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。ExcIEEEDC2Aである必要があります。  - `uelin[number]`: UEL入力（uelin）。true = 入力がHVゲートに接続される false = 入力がエラー信号に接続される。典型的な値 = true。デフォルト。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: ボルテージレギュレータ出力の最大値（V）。  代表値＝4.95。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: ボルテージレギュレータ出力の最小値（V）。  代表値 = -4.9。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEDC2A:    
@@ -375,11 +391,29 @@ ExcIEEEDC2A:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcIEEEDC2A/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEDC2A/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のExcIEEEDC2Aの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcIEEEDC2Aの例を利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のExcIEEEDC2Aの例をkey-valuesとして利用できません。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcIEEEDC2Aの例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+ExcIEEEDC2Aの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcIEEEDC2A を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcIEEEDC2Aの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ExcIEEEDC2A を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
