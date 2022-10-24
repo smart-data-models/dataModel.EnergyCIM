@@ -1,16 +1,32 @@
-エンティティPss1A  
-===========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPss1A  
+===========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss1A/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルより引用単一入力の電力系統安定化装置。PSSタイプ1Aの様々なベンダーの実装を表現できるように、修正されたバージョンである。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルから引用。単一入力電力系統安定化装置。PSS タイプ 1A の各ベンダーの実装を表現できるように修正したものである。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `a1`: ノッチフィルターパラメーター（A1）。デフォルト：0.0  - `a2`: ノッチフィルターパラメーター（A2）。デフォルト：0.0  - `a3`: ノッチ・フィルター・パラメーター（A3）。デフォルト：0.0  - `a4`: ノッチフィルターパラメーター（A4）。デフォルト：0.0  - `a5`: ノッチフィルターパラメーター（A5）。デフォルト：0.0  - `a6`: ノッチフィルターパラメーター（A6）。デフォルト：0.0  - `a7`: ノッチフィルターパラメーター（A7）。デフォルト：0.0  - `a8`: ノッチフィルターパラメーター（A8）。デフォルト：0.0  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `inputSignalType`: 入力信号の種類。デフォルト。なし  - `kd`: セレクタ（Kd）。true = eが使用される false = eが使用されない。デフォルトはフォール  - `ks`: スタビライザーゲイン（Ks）。デフォルト：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1`: リード／ラグ時定数（T1）。デフォルト：0  - `t2`: リード／ラグ時定数（T2）。デフォルト：0  - `t3`: リード／ラグ時定数（T3）。デフォルト：0  - `t4`: リード／ラグ時定数（T4）。デフォルト：0  - `t5`: ウォッシュアウト時定数（T5）。デフォルト：0  - `t6`: トランスデューサの時定数（T6）。デフォルト：0  - `tdelay`: 時定数（Tdelay）。デフォルト：0  - `type`: NGSIタイプ。Pss1Aでなければならない  - `vcl`: スタビライザー入力のカットオフ閾値（Vcl）。デフォルト：0.0  - `vcu`: スタビライザー入力カットオフ閾値（Vcu）。デフォルト：0.0  - `vrmax`: スタビライザーの最大出力（Vrmax）。デフォルト：0.0  - `vrmin`: 最小スタビライザー出力（Vrmin）。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `a1[number]`: ノッチフィルター・パラメーター（A1）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a2[number]`: ノッチフィルター・パラメーター（A2）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a3[number]`: ノッチフィルター・パラメーター（A3）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a4[number]`: ノッチフィルター・パラメーター（A4）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a5[number]`: ノッチフィルター・パラメーター（A5）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a6[number]`: ノッチフィルター・パラメーター（A6）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a7[number]`: ノッチフィルター・パラメーター（A7）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a8[number]`: ノッチフィルター・パラメーター（A8）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `inputSignalType[number]`: 入力信号の種類。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: セレクタ(Kd) true = e を使用 false = e を使用しない。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks[number]`: スタビライザーのゲイン（Ks）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1[number]`: リード／ラグ時定数（T1）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: リード／ラグ時定数（T2）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: リード／ラグ時定数（T3）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: リード／ラグ時定数（T4）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: ウォッシュアウト時定数（T5）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: トランスデューサーの時定数（T6）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdelay[number]`: 時定数（Tdelay）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。Pss1Aでなければならない  - `vcl[number]`: スタビライザーの入力カットオフスレッショルド（Vcl）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vcu[number]`: スタビライザーの入力カットオフスレッショルド（Vcu）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: スタビライザーの最大出力（Vrmax）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: スタビライザーの最小出力（Vrmin）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pss1A:    
@@ -419,9 +435,21 @@ Pss1A:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-Pss1Aの例をkey-valuesとしてJSON-LD形式で利用できない。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のPss1Aの例は利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-Pss1Aの例をkey-valuesとしてJSON-LD形式で利用できない。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のPss1Aの例は利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+Pss1A の例を JSON-LD 形式で key-value として利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+Pss1A を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+Pss1A の例を JSON-LD 形式で key-value として利用することはできません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+Pss1A を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
