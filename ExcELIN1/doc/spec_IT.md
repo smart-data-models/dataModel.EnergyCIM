@@ -1,16 +1,32 @@
-Entità: ExcELIN1  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: ExcELIN1  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcELIN1/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Sistema di eccitazione statico alimentato da trasformatore PI: ELIN (VATECH) - modello semplificato.  Questo modello rappresenta un sistema di eccitazione completamente statico. Un regolatore di tensione PI stabilisce un set point di corrente di campo desiderato per un regolatore di corrente proporzionale. L'integratore del regolatore PI ha un ingresso di follow-up per far corrispondere il suo segnale alla corrente di campo presente.  Uno stabilizzatore del sistema di alimentazione con ingresso di potenza è incluso nel modello.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattato dai modelli di dati CIM. Sistema di eccitazione statico alimentato da trasformatori PI: ELIN (VATECH) - modello semplificato.  Questo modello rappresenta un sistema di eccitazione completamente statico. Un controllore di tensione PI stabilisce il set point di corrente di campo desiderato per un controllore di corrente proporzionale. L'integratore del regolatore PI ha un ingresso di follow-up per far corrispondere il suo segnale alla corrente di campo attuale.  Nel modello è incluso uno stabilizzatore del sistema di potenza con ingresso di potenza.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `dpnf`: Banda morta del controllore (Dpnf).  Valore tipico = 0. Predefinito: 0.0  - `efmax`: Tensione massima di eccitazione a circuito aperto (Efmax).  Valore tipico = 5. Predefinito: 0.0  - `efmin`: Tensione minima di eccitazione a circuito aperto (Efmin).  Valore tipico = -5. Predefinito: 0.0  - `id`: Identificatore unico dell'entità  - `ks1`: Guadagno stabilizzatore 1 (Ks1).  Valore tipico = 0. Predefinito: 0.0  - `ks2`: Guadagno stabilizzatore 2 (Ks2).  Valore tipico = 0. Predefinito: 0.0  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `smax`: Uscita limite dello stabilizzatore (smax).  Valore tipico = 0.1. Predefinito: 0.0  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `tfi`: Costante di tempo del trasduttore di corrente (Tfi).  Valore tipico = 0. Predefinito: 0  - `tnu`: Costante di tempo di reset del controllore (Tnu).  Valore tipico = 2. Predefinito: 0  - `ts1`: Costante di tempo di ritardo di fase dello stabilizzatore (Ts1).  Valore tipico = 1. Predefinito: 0  - `ts2`: Costante di tempo del filtro stabilizzatore (Ts2).  Valore tipico = 1. Predefinito: 0  - `tsw`: Parametri dello stabilizzatore (Tsw).  Valore tipico = 3. Predefinito: 0  - `type`: Tipo NGSI. Deve essere ExcELIN1  - `vpi`: Guadagno del regolatore di corrente (Vpi).  Valore tipico = 12.45. Predefinito: 0.0  - `vpnf`: Guadagno di follow up del controllore (Vpnf).  Valore tipico = 2. Predefinito: 0.0  - `vpu`: Guadagno proporzionale del regolatore di tensione (Vpu).  Valore tipico = 34,5. Predefinito: 0.0  - `xe`: Reattanza efficace del trasformatore di eccitazione (Xe) (>=0).  Xe rappresenta la regolazione del trasformatore/raddrizzatore.  Valore tipico = 0,06. Predefinito: 0,0    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `dpnf[number]`: Banda morta di follow-up del regolatore (Dpnf).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efmax[number]`: Tensione massima di eccitazione a circuito aperto (Efmax).  Valore tipico = 5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efmin[number]`: Tensione minima di eccitazione a circuito aperto (Efmin).  Valore tipico = -5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `ks1[number]`: Guadagno stabilizzatore 1 (Ks1).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks2[number]`: Guadagno stabilizzatore 2 (Ks2).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `smax[number]`: Uscita limite dello stabilizzatore (smax).  Valore tipico = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tfi[number]`: Costante di tempo del trasduttore di corrente (Tfi).  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tnu[number]`: Costante di tempo di reset del controllore (Tnu).  Valore tipico = 2. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts1[number]`: Costante di tempo di ritardo di fase dello stabilizzatore (Ts1).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts2[number]`: Costante di tempo del filtro stabilizzatore (Ts2).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsw[number]`: Parametri dello stabilizzatore (Tsw).  Valore tipico = 3. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere ExcELIN1  - `vpi[number]`: Guadagno del regolatore di corrente (Vpi).  Valore tipico = 12,45. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vpnf[number]`: Guadagno di follow-up del regolatore (Vpnf).  Valore tipico = 2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vpu[number]`: Guadagno proporzionale del regolatore di tensione (Vpu).  Valore tipico = 34,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xe[number]`: Reattanza effettiva del trasformatore di eccitazione (Xe) (>=0).  Xe rappresenta la regolazione dell'unità trasformatore/raddrizzatore.  Valore tipico = 0,06. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcELIN1:    
@@ -369,11 +385,29 @@ ExcELIN1:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcELIN1/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcELIN1/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-Non è disponibile l'esempio di un ExcELIN1 in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un ExcELIN1 in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un ExcELIN1 in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un ExcELIN1 in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+Non è disponibile l'esempio di un ExcELIN1 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di ExcELIN1 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un ExcELIN1 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di ExcELIN1 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
