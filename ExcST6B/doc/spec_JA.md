@@ -1,16 +1,32 @@
-エンティティExcST6B  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティExcST6B  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcST6B/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルから採用。PIDコントローラとオプションの内部フィードバックループを備えた、修正されたIEEE ST6B静電加振システム**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルより作成。PIDコントローラーとオプションの内部フィードバックループを備えたIEEE ST6B静的加振システムの改良版**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `ilr`: エキサイター出力電流制限基準（Ilr）。  代表値＝4.164。初期値：0.0  - `k1`: セレクタ（K1）。true = Ifdからのフィードバックがある false = Ifdからのフィードバックがない。代表値＝true。デフォルト偽  - `kcl`: エキサイター出力電流制限調整（Kcl）。  代表値＝1.0577。初期値：0.0  - `kff`: 内側ループフィールドレギュレータのプリコントロールゲイン定数（Kff）。  代表値＝1。デフォルト：0.0  - `kg`: インナーループ・フィールドレギュレーターのフィードバックゲイン定数（Kg）。  代表値＝1。デフォルト：0.0  - `kia`: 電圧調整器の積分利得（Kia）。  代表値＝45.094です。初期値：0.0  - `klr`: エキサイター出力電流制限調整（Kcl）。  代表値＝17.33初期値：0.0  - `km`: インナーループフィールドレギュレーターのフォワードゲイン定数(Km)  代表値＝1。デフォルト：0.0  - `kpa`: ボルテージレギュレーターの比例ゲイン（Kpa）。  代表値＝18.038。デフォルト：0.0  - `kvd`: 電圧調整器の微分ゲイン（Kvd）です。  代表値＝0，初期値＝0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `oelin`: OEL入力セレクタ（OELin）。代表値＝noOELinput。デフォルトなし  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tg`: インナーループフィールドボルテージレギュレーターのフィードバック時定数（Tg）。  代表値＝0.02。デフォルト：0  - `ts`: Rectifier firing time constant (Ts)。  代表値＝0、デフォルト：0  - `tvd`: 電圧調整器の微分ゲイン（Tvd）。  代表値＝0，デフォルト：0  - `type`: NGSIタイプです。ExcST6Bである必要があります。  - `vamax`: ボルテージレギュレーターの最大出力（Vamax）。  代表値＝4.81。初期値：0.0  - `vamin`: ボルテージレギュレーターの最小出力 (Vamin)。  Typical Value = -3.85.初期値：0.0  - `vilim`: セレクタ（Vilim）。true = Vimin-Vimax リミッターが作動している false = Vimin-Vimax リミッターが作動していない。代表値＝true。デフォルトFalse  - `vimax`: ボルテージレギュレーターの最大入力制限（Vimax）。  代表値＝10。初期値：0.0  - `vimin`: 電圧調整器の最小入力制限（Vimin）。  代表値＝-10。初期値：0.0  - `vmult`: セレクタ(Vmult)。true = レギュレータ出力を端子電圧に乗せる false = レギュレータ出力を端子電圧に乗せない。  代表値＝true。デフォルトはFalse  - `vrmax`: ボルテージレギュレーターの最大出力（Vrmax）。  代表値＝4.81初期値：0.0  - `vrmin`: ボルテージレギュレータの最小出力 (Vrmin) です。  Typical Value = -3.85.初期値：0.0  - `xc`: 励磁源リアクタンス（Xc）。  代表値＝0.05。初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `ilr[number]`: エキサイター出力電流制限基準値（Ilr）。  典型的な値 = 4.164.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: セレクタ(K1) true = IFDからのフィードバック false = IFDからのフィードバックではありません。典型的な値=true。デフォルト。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `kcl[number]`: エキサイター出力電流制限調整（Kcl）。  代表値 = 1.0577.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kff[number]`: 内ループ界磁レギュレータのプリコントロールゲイン定数（Kff）。  代表的な値＝1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: インナーループ・フィールドレギュレータのフィードバックゲイン定数（Kg）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kia[number]`: 電圧レギュレータ積分ゲイン (Kia)。  代表値 = 45.094.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `klr[number]`: エキサイター出力電流制限調整 (Kcl).  代表値＝17.33。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `km[number]`: 内部ループフィールドレギュレータのフォワードゲイン定数（Km）。  典型的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpa[number]`: 電圧レギュレータの比例ゲイン（Kpa）。  典型的な値 = 18.038。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvd[number]`: 電圧レギュレータ微分利得（Kvd）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `oelin[number]`: OEL入力セレクタ(OELin)。典型的な値 = noOELinput。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tg[number]`: 内ループ界磁電圧レギュレータのフィードバック時定数（Tg）。  代表値＝0.02。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts[number]`: 整流器発火時定数（Ts）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tvd[number]`: 電圧レギュレータ微分利得（Tvd）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。ExcST6Bでなければならない  - `vamax[number]`: 最大電圧レギュレータ出力（Vamax）。  代表値＝4.81。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vamin[number]`: 電圧レギュレータ出力の最小値（Vamin）。  代表値 = -3.85。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vilim[number]`: セレクタ（Vilim）。true = Vimin-Vimaxリミッタが有効 false = Vimin-Vimaxリミッタは有効ではありません。典型的な値=true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: 電圧レギュレータの最大入力制限値（Vimax）。  代表値＝10。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: 電圧レギュレータ入力の最小制限値（Vimin）。  代表値 = -10。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmult[number]`: セレクタ（Vmult）。true = レギュレータ出力に端子電圧を掛ける false = レギュレータ出力に端子電圧を掛けない。  典型的な値=true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: ボルテージレギュレータの最大出力電圧 (Vrmax)。  代表値＝4.81。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: ボルテージレギュレータ出力の最小値 (Vrmin)。  代表値 = -3.85。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xc[number]`: 励磁源リアクタンス (Xc)。  代表値＝0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcST6B:    
@@ -417,11 +433,29 @@ ExcST6B:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST6B/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST6B/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のExcST6Bの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExcST6Bの例を正規化してJSON-LD形式にしたものは利用できません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExcST6Bの例をkey-valuesとしてJSON-LD形式で利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcST6Bの例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+JSON-LD形式のExcST6Bの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcST6B を JSON-LD 形式で正規化した例は利用不可。これはオプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のExcST6Bの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcST6B を JSON-LD 形式で正規化した例はありません。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
