@@ -1,16 +1,32 @@
-エンティティPssPTIST3  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPssPTIST3  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssPTIST3/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルから採用。PTIマイクロプロセッサベースのスタビライザータイプ3.XXX  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルより作成。PTIマイクロプロセッサ内蔵スタビライザ タイプ3.**について  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `a0`: フィルター係数（A0）。デフォルト：0.0  - `a1`: リミッター（Al）。デフォルト：0.0  - `a2`: フィルター係数（A2）。デフォルト：0.0  - `a3`: フィルター係数（A3）。デフォルト：0.0  - `a4`: フィルター係数（A4）。デフォルト：0.0  - `a5`: フィルター係数（A5）。デフォルト：0.0  - `address`: 郵送先住所  - `al`: リミッター（Al）。デフォルト：0.0  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `athres`: 出力の平均化がバイパス（Athres）されるしきい値。  典型的な値は0.005です。デフォルト：0.0  - `b0`: フィルター係数（B0）。デフォルト：0.0  - `b1`: フィルター係数（B1）。デフォルト：0.0  - `b2`: フィルター係数（B2）。初期値：0.0  - `b3`: フィルター係数（B3）。デフォルト：0.0  - `b4`: フィルター係数（B4）。デフォルト：0.0  - `b5`: フィルター係数（B5）。デフォルト：0.0  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dl`: リミッター（Dl）。デフォルト：0.0  - `dtc`: コントロールの起動に関する時間ステップ（50Hzの場合は0.03）（Dtc）。  代表値＝0.025。デフォルト：0  - `dtf`: タイムステップの周波数計算（50Hzの場合は0.03）（Dtf）。  代表値＝0.025。初期値：0  - `dtp`: タイムステップ有効電力計算（50Hzの場合は0.015）（Dtp）。  代表値＝0.0125。デフォルト：0  - `id`: エンティティのユニークな識別子  - `isw`: デジタル/アナログ出力スイッチ(Isw)。true = アナログ出力を生成 false = タップ選択テーブルを使用してデジタル出力に変換。デフォルトはFalse  - `k`: ゲイン（K）。  代表値＝9。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `lthres`: しきい値（Lthres）。デフォルト：0.0  - `m`: (M).  M=2*Hです。  代表値＝5。デフォルト：0.0  - `name`: このアイテムの名前です。  - `nav`: 平均化する制御出力の数（Nav）（1 <= Nav <= 16）。  代表値＝4。デフォルト：0.0  - `ncl`: リミット機能を有効にするためのリミット時のカウント数（Ncl）（>0）。デフォルト：0.0  - `ncr`: リミット機能が作動した後、リセットされるまでのカウント数（Ncr）。デフォルト：0.0  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pmin`: (Pmin）に設定されています。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1`: 時定数（T1）。  代表値＝0.3。デフォルト：0  - `t2`: 時定数（T2）。  代表値＝1。デフォルト：0  - `t3`: 時定数（T3）。  代表値＝0.2。デフォルト：0  - `t4`: 時定数（T4）。  代表値＝0.05。デフォルト：0  - `t5`: 時定数（T5）。デフォルト：0  - `t6`: 時定数（T6）。デフォルト：0  - `tf`: 時定数（Tf）。  代表値＝0.2。デフォルト：0  - `tp`: 時定数（Tp）。  代表値＝0.2。デフォルト：0  - `type`: NGSIタイプです。PssPTIST3である必要があります。    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `a0[number]`: フィルタ係数（A0）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a1[number]`: リミッター（Al）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a2[number]`: フィルタ係数（A2）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a3[number]`: フィルタ係数（A3）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a4[number]`: フィルタ係数（A4）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a5[number]`: フィルタ係数（A5）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `al[number]`: リミッター（Al）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `athres[number]`: 出力平均化がバイパスされる閾値（Athres）。  典型的な値= 0.005。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b0[number]`: フィルタ係数（B0）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b1[number]`: フィルタ係数（B1）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b2[number]`: フィルタ係数（B2）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b3[number]`: フィルタ係数（B3）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b4[number]`: フィルタ係数（B4）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b5[number]`: フィルタ係数（B5）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `dl[number]`: リミッター（Dl）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtc[number]`: コントロールの起動に関連する時間ステップ（50Hzの場合は0.03）（Dtc）。  典型的な値 = 0.025.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtf[number]`: タイムステップ周波数計算（50Hzは0.03）(Dtf)。  典型的な値 = 0.025。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtp[number]`: 時間ステップ有効電力計算（50Hzの場合は0.015）（Dtp）。  典型的な値＝0.0125。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `isw[number]`: デジタル／アナログ出力切り替えスイッチ（Isw） true = アナログ出力を生成 false = デジタル出力に変換、タップ選択テーブルを使用。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `k[number]`: ゲイン(K)。  典型的な値 = 9.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `lthres[number]`: しきい値（Lthres）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `m[number]`: (M).  M=2*H。  典型的な値= 5.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `nav[number]`: 平均化する制御出力の数 (Nav) (1 <= Nav <= 16).  典型的な値 = 4.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ncl[number]`: リミット機能(Ncl)(>0)を有効にするためのリミット時のカウント数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ncr[number]`: リミット機能が作動した後、リセットするまでのカウント数（Ncr）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pmin[number]`: (Pmin)です。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `t1[number]`: 時定数(T1)。  典型的な値 = 0.3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: 時定数(T2)。  典型的な値=1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: 時定数(T3)。  典型的な値 = 0.2。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: 時定数(T4)。  典型的な値 = 0.05。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: 時定数（T5）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: 時定数（T6）。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: 時定数(Tf)。  典型的な値 = 0.2。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: 時定数(Tp)。  典型的な値 = 0.2。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプです。PssPTIST3 である必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PssPTIST3:    
@@ -491,9 +507,21 @@ PssPTIST3:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-PssPTIST3の例をJSON-LD形式でkey-valuesとして利用できない。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のPssPTIST3の例は利用できません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-PssPTIST3の例をkey-valuesとしてJSON-LD形式で利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-PssPTIST3の例は、正規化されたJSON-LD形式では利用できません。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+PssPTIST3のJSON-LD形式のkey-valuesの例は利用できません。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+PssPTIST3 を JSON-LD 形式で正規化した例は利用不可。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+PssPTIST3のJSON-LD形式のkey-valuesの例は利用できません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+PssPTIST3 を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
