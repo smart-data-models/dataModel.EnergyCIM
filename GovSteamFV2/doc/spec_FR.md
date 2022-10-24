@@ -1,16 +1,32 @@
-Entité : GovSteamFV2  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : GovSteamFV2  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovSteamFV2/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données du CIM. Régulateur de turbine à vapeur avec constantes de temps de réchauffage et modélisation des effets de la fermeture rapide des vannes pour réduire la puissance mécanique**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dt`: (Dt). Valeur par défaut : 0.0  - `id`: Identifiant unique de l'entité  - `k`: Fraction de la puissance de la turbine développée par les sections de la turbine non impliquées dans le fast valving (K). Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase`: Base alternative utilisée à la place de la base machine dans le modèle d'équipement si nécessaire (MWbase) (>0).  Unité = MW. Valeur par défaut : 0,0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `r`: (R). Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1`: Constante de temps du gouverneur (T1). Valeur par défaut : 0  - `t3`: Constante de temps du réchauffeur (T3). Valeur par défaut : 0  - `ta`: Temps après le temps initial pour la fermeture de la vanne (Ta). Valeur par défaut : 0  - `tb`: Temps après le temps initial pour que la vanne commence à s'ouvrir (Tb). Valeur par défaut : 0  - `tc`: Temps après le temps initial pour que la vanne devienne complètement ouverte (Tc). Valeur par défaut : 0  - `ti`: Temps initial pour commencer le valving rapide (Ti). Valeur par défaut : 0  - `tt`: Constante de temps avec laquelle l'alimentation tombe après la fermeture de la vanne d'interception (Tt). Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovSteamFV2.  - `vmax`: (Vmax). Valeur par défaut : 0.0  - `vmin`: (Vmin). Valeur par défaut : 0.0    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `dt[number]`: (Dt). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `k[number]`: Fraction de la puissance de la turbine développée par les sections de la turbine non impliquées dans le fast valving (K). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase[number]`: Base alternative utilisée à la place de la base machine dans le modèle d'équipement si nécessaire (MWbase) (>0).  Unité = MW. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `r[number]`: (R). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t1[number]`: Constante de temps du gouverneur (T1). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de temps du réchauffeur (T3). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ta[number]`: Temps après le temps initial pour la fermeture de la vanne (Ta). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Temps après le temps initial pour que la vanne commence à s'ouvrir (Tb). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Temps après le temps initial pour que la vanne devienne complètement ouverte (Tc). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: Temps initial pour commencer le valving rapide (Ti). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Constante de temps avec laquelle l'alimentation tombe après la fermeture de la vanne d'interception (Tt). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type de NGSI. Il doit s'agir de GovSteamFV2.  - `vmax[number]`: (Vmax). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: (Vmin). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovSteamFV2:    
@@ -37,36 +53,49 @@ GovSteamFV2:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dt:    
       description: '(Dt). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &govsteamfv2_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -78,12 +107,14 @@ GovSteamFV2:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     k:    
       description: 'Fraction of the turbine power developed by turbine sections not involved in fast valving (K). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -235,26 +266,33 @@ GovSteamFV2:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     mwbase:    
       description: 'Alternate Base used instead of Machine base in equipment model if necessary (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *govsteamfv2_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     r:    
       description: '(R). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -265,67 +303,99 @@ GovSteamFV2:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     t1:    
       description: 'Governor time constant (T1). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t3:    
       description: 'Reheater time constant (T3). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ta:    
       description: 'Time after initial time for valve to close (Ta). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tb:    
       description: 'Time after initial time for valve to begin opening (Tb). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc:    
       description: 'Time after initial time for valve to become fully open (Tc). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ti:    
       description: 'Initial time to begin fast valving (Ti). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tt:    
       description: 'Time constant with which power falls off after intercept valve closure (Tt). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be GovSteamFV2'    
       enum:    
         - GovSteamFV2    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vmax:    
       description: '(Vmax). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     vmin:    
       description: '(Vmin). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovSteamFV2/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV2/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un GovSteamFV2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec la NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un GovSteamFV2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec la NGSI-v2 lorsqu'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un GovSteamFV2 au format JSON-LD tel que normalisé. Il est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un GovSteamFV2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un GovSteamFV2 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un GovSteamFV2 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
