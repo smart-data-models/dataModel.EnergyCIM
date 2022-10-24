@@ -1,16 +1,32 @@
-Entité : ExcST1A  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ExcST1A  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcST1A/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. Modification d'un ancien système d'excitation statique IEEE ST1A sans limiteur de surexcitation (OEL) et limiteur de sous-excitation (UEL).**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `ilr`: Référence de la limite de courant de sortie de l'excitateur (Ilr).  Valeur typique = 0. Valeur par défaut : 0.0  - `ka`: Gain du régulateur de tension (Ka).  Valeur typique = 190. Valeur par défaut : 0.0  - `kc`: Facteur de charge du redresseur proportionnel à la réactance de commutation (Kc). Valeur typique = 0.05. Valeur par défaut : 0.0  - `kf`: Gains des stabilisateurs du système de contrôle d'excitation (Kf).  Valeur typique = 0. Valeur par défaut : 0.0  - `klr`: Gain du limiteur de courant de sortie de l'excitateur (Klr).  Valeur typique = 0. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.02. Valeur par défaut : 0  - `tb`: Constante de temps du régulateur de tension (Tb).  Valeur typique = 10. Valeur par défaut : 0  - `tb1`: Constante de temps du régulateur de tension (Tb).  Valeur typique = 0. Valeur par défaut : 0  - `tc`: Constante de temps du régulateur de tension (Tc).  Valeur typique = 1. Valeur par défaut : 0  - `tc1`: Constante de temps du régulateur de tension (Tc).  Valeur typique = 0. Valeur par défaut : 0  - `tf`: Constante de temps du stabilisateur du système de contrôle d'excitation (Tf).  Valeur typique = 1. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcST1A  - `vamax`: Sortie maximale du régulateur de tension (Vamax).  Valeur typique = 999. Valeur par défaut : 0.0  - `vamin`: Sortie minimale du régulateur de tension (Vamin).  Valeur typique = -999. Valeur par défaut : 0.0  - `vimax`: Limite maximale de l'entrée du régulateur de tension (Vimax).  Valeur typique = 999. Valeur par défaut : 0.0  - `vimin`: Limite d'entrée minimale du régulateur de tension (Vimin).  Valeur typique = -999. Valeur par défaut : 0.0  - `vrmax`: Sorties maximales du régulateur de tension (Vrmax).  Valeur typique = 7,8. Valeur par défaut : 0.0  - `vrmin`: Sorties minimales du régulateur de tension (Vrmin).  Valeur typique = -6.7. Valeur par défaut : 0.0  - `xe`: Réactance effective d'excitation xfmr (Xe).  Valeur typique = 0.04. Valeur par défaut : 0.0    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `ilr[number]`: Référence de la limite de courant de sortie de l'excitateur (Ilr).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ka[number]`: Gain du régulateur de tension (Ka).  Valeur typique = 190. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: Facteur de charge du redresseur proportionnel à la réactance de commutation (Kc). Valeur typique = 0.05. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Gains des stabilisateurs du système de contrôle d'excitation (Kf).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `klr[number]`: Gain du limiteur de courant de sortie de l'excitateur (Klr).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `ta[number]`: Constante de temps du régulateur de tension (Ta).  Valeur typique = 0.02. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Constante de temps du régulateur de tension (Tb).  Valeur typique = 10. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb1[number]`: Constante de temps du régulateur de tension (Tb).  Valeur typique = 0. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Constante de temps du régulateur de tension (Tc).  Valeur typique = 1. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc1[number]`: Constante de temps du régulateur de tension (Tc).  Valeur typique = 0. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Constante de temps du stabilisateur du système de contrôle d'excitation (Tf).  Valeur typique = 1. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type NGSI. Il doit être ExcST1A  - `vamax[number]`: Sortie maximale du régulateur de tension (Vamax).  Valeur typique = 999. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vamin[number]`: Sortie minimale du régulateur de tension (Vamin).  Valeur typique = -999. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: Limite maximale de l'entrée du régulateur de tension (Vimax).  Valeur typique = 999. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: Limite d'entrée minimale du régulateur de tension (Vimin).  Valeur typique = -999. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: Sorties maximales du régulateur de tension (Vrmax).  Valeur typique = 7,8. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: Sorties minimales du régulateur de tension (Vrmin).  Valeur typique = -6.7. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xe[number]`: Réactance effective d'excitation xfmr (Xe).  Valeur typique = 0.04. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcST1A:    
@@ -387,11 +403,29 @@ ExcST1A:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcST1A/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcST1A/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un ExcST1A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcST1A au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcST1A au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcST1A au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
