@@ -1,16 +1,32 @@
-エンティティGeneratingUnit  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティGeneratingUnit  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GeneratingUnit/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。機械的な動力を交流電力に変換するための、単一または一連の同期機のこと。例えば、セット内の個々の機械はスケジューリングのために定義されるが、セットに対しては単一の制御信号が生成される。この場合、セットの各メンバーのGeneratingUnitと、セットに対応する追加のGeneratingUnitが存在することになる。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。機械的な動力を交流電力に変換するための、単一または一連の同期機。例えば、セット内の個々の機械はスケジューリング目的で定義され、セットに対して単一の制御信号が導き出されることがある。この場合、セットの各メンバーのためのGeneratingUnitと、セットに対応する追加のGeneratingUnitが存在することになる**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `ControlAreaGeneratingUnit`: この発電ユニットのControlAreaの仕様。デフォルト：'list'  - `GrossToNetActivePowerCurves`: 発電ユニットは、ユニットの損失および補助電力要件を記述する総有効電力／正味有効電力曲線を持つことができる。デフォルト：'list'  - `RotatingMachine`: 同期機は発電機として動作することがあり、その場合は発電ユニットのメンバーとなる。デフォルトは「リスト」。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `genControlSource`: 発電ユニットのコントロールのソース。デフォルトです。なし  - `governorSCD`: Governor Speed Changer Droopの略。   これは、発電機の出力の変化を、発電機の公称出力と公称周波数で正規化した周波数の変化で割ったもので、単位はパーセント、負の値で表される。速度変更ドロップの値が正であれば、周波数が低下したときに追加の発電機出力が得られます。デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `initialP`: 本ネットワーク構成における本機の初期有効電力のパワーフロー結果を保存するために使用されるデフォルトの初期有効電力。デフォルト：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `longPF`: 発電ユニットの長期経済参加係数。デフォルト：0.0  - `maxOperatingP`: ディスパッチャーが本機に入力できる動作有効電力の上限値です。デフォルト：0.0  - `maximumAllowableSpinningReserve`: スピニングリザーブの最大許容値。現在の動作点に関わらず、スピニングリザーブがこの値より大きいと判断されることはありません。デフォルト：0.0  - `minOperatingP`: ディスパッチャーが本機に入力できる動作有効電力の最小値を示します。デフォルト：0.0  - `name`: このアイテムの名前です。  - `nominalP`: 発電ユニットの公称電力。  governorSCD 属性）のようなパーセンテージベースの属性に正確な意味を与えるために使用される。この属性は、RotatingMachine.resatedS と同等またはそれ以下の正の値でなければならない。デフォルト：0.0  - `normalPF`: 発電ユニットの経済参加係数。デフォルト：0.0  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `ratedGrossMaxP`: ユニットの総定格最大容量（簿価）。デフォルト：0.0  - `ratedGrossMinP`: 送電網に電力を供給している間、ユニットが安全に運転できる総定格最小発電量。デフォルト：0.0  - `ratedNetMaxP`: 定格総容量から、工場内の機械を動かすための補助動力を差し引いた正味の定格総容量。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `shortPF`: 発電ユニットの短期経済参加係数。デフォルト：0.0  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startupCost`: GeneratingUnitが起動するたびに発生する初期起動コスト。デフォルト：0.0  - `totalEfficiency`: 燃料を電気エネルギーに変換する際のユニットの効率。デフォルト：0.0  - `type`: NGSIタイプ。GeneratingUnitでなければならない。  - `variableCost`: ActivePowerの1ユニットあたりの生産にかかる変動費成分です。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `ControlAreaGeneratingUnit[number]`: この発電ユニットのControlAreaの仕様。デフォルト：'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `GrossToNetActivePowerCurves[number]`: 発電ユニットには、ユニットの損失と補助電力要件を記述した、総活動電力／純活動電力曲線がある場合がある。デフォルト：'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `RotatingMachine[number]`: 同期機は、発電機として動作することができ、そのような場合は発電ユニットのメンバーになる。デフォルト：'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `genControlSource[number]`: 発電ユニットの制御源。デフォルト。なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorSCD[number]`: Governor Speed Changer Droop（ガバナー・スピード・チェンジャー・ドゥループ）。   発電機の公称出力と公称周波数で規格化された発電機出力の変化を周波数の変化で割ったもので、パーセントで表し、負数で表す。速度変更ドループが正の値であれば、周波数が低下したときに発電機出力が追加される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `initialP[number]`: デフォルトの初期有効電力。このネットワーク構成で、このユニットの初期有効電力のパワーフロー結果を保存するために使用される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `longPF[number]`: 発電ユニットの長期経済参加係数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxOperatingP[number]`: ディスパッチャがこのユニットに対して入力できる最大動作有効電力の制限値です。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maximumAllowableSpinningReserve[number]`: 許容される最大回転予備量。現在の動作点に関係なく、回転予備がこの値より大きいとみなされることはない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minOperatingP[number]`: ディスパッチャがこのユニットに対して入力できる最小の動作有効電力の制限値です。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `nominalP[number]`: 発電ユニットの公称電力。  ガバナー速度変更ドループ（governorSCD 属性）など、パーセントベースの属性に正確な意味を与えるために使用される。この属性は，RotatingMachine.ratedS.と等しいか又はそれより小さい正の値でなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `normalPF[number]`: 発電単位の経済参加係数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `ratedGrossMaxP[number]`: ユニットの総定格最大容量（帳簿価格）です。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedGrossMinP[number]`: 送電網に電力を供給している間、ユニットが安全に動作できる総定格の最小発電量レベル。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedNetMaxP[number]`: 定格総最大容量から，工場内機械の運転に使用する補助動力を差し引いた正味の定格最大容量をいう。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `shortPF[number]`: 発電ユニットの短期経済参加係数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `startupCost[number]`: GeneratingUnitの各スタートに発生する初期スタートアップコスト。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalEfficiency[number]`: 燃料を電気エネルギーに変換するときのユニットの効率。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。これはGeneratingUnitでなければなりません。  - `variableCost[number]`: ActivePowerの1単位あたりの生産にかかる変動費成分。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティが間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GeneratingUnit:    
@@ -401,9 +417,21 @@ GeneratingUnit:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-GeneratingUnitの例をJSON-LD形式のkey-valuesにしたものは利用できません。これはNGSI-v2の`options=keyValues`との互換性があり、個々のエンティティのコンテキストデータを返します。  
-GeneratingUnitの例をJSON-LD形式で正規化したものはありません。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-GeneratingUnitの例をJSON-LD形式のkey-valuesにしたものは利用できません。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-GeneratingUnitの例をJSON-LD形式で正規化したものはありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+GeneratingUnitの例をJSON-LD形式でkey-valuesとして利用することはできない。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+GeneratingUnit の例を JSON-LD 形式で正規化したものは利用できない。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
+GeneratingUnitの例をJSON-LD形式でkey-valuesとして利用することはできない。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+GeneratingUnit の例を JSON-LD 形式で正規化したものは利用できない。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
