@@ -1,16 +1,32 @@
-Entité : ExcHU  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ExcHU  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcHU/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. Modèle de système d'excitation hongrois, avec transducteur de tension intégré.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `ae`: Facteur de gain de l'étiquette PI de la boucle principale (Ae).  Valeur typique = 3. Valeur par défaut : 0.0  - `ai`: Facteur de gain de l'étiquette PI de la boucle mineure (Ai).  Valeur typique = 22. Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `atr`: Constante AVR (Atr).  Valeur typique = 2.19. Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `emax`: Limite supérieure du signal de contrôle de la tension de champ sur la base du régulateur (Emax).  Valeur typique = 0.996. Valeur par défaut : 0.0  - `emin`: Limite inférieure du signal de contrôle de la tension d'excitation sur la base du régulateur (Emin).  Valeur typique = -0.866. Défaut : 0.0  - `id`: Identifiant unique de l'entité  - `imax`: Limite supérieure du signal de sortie de la balise PI de la boucle principale (Imax).  Valeur typique = 2.19. Valeur par défaut : 0.0  - `imin`: Limite inférieure du signal de sortie de la balise PI de la boucle principale (Imin).  Valeur typique = 0.1. Valeur par défaut : 0.0  - `ke`: Constante de conversion de la base de tension (Ke).  Valeur typique = 4.666. Valeur par défaut : 0.0  - `ki`: Constante de conversion de la base de courant (Ki).  Valeur typique = 0.21428. Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `te`: Constante de temps d'intégration de la balise PI de la boucle principale (Te).  Valeur typique = 0,154. Valeur par défaut : 0  - `ti`: Constante de temps d'intégration de la balise de contrôle PI en boucle mineure (Ti).  Valeur typique = 0.01333. Valeur par défaut : 0  - `tr`: Constante de temps du filtre (Tr). Si un compensateur de tension est utilisé en conjonction avec ce modèle de système d'excitation, Tr doit être réglé sur 0. Valeur typique = 0.01. Valeur par défaut : 0  - `type`: Type NGSI. Il doit être ExcHU    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `ae[number]`: Facteur de gain de l'étiquette PI de la boucle principale (Ae).  Valeur typique = 3. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ai[number]`: Facteur de gain de l'étiquette PI de la boucle mineure (Ai).  Valeur typique = 22. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `atr[number]`: Constante AVR (Atr).  Valeur typique = 2.19. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `emax[number]`: Limite supérieure du signal de contrôle de la tension de champ sur la base du régulateur (Emax).  Valeur typique = 0.996. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Limite inférieure du signal de contrôle de la tension de champ sur la base du régulateur (Emin).  Valeur typique = -0.866. Défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `imax[number]`: Limite supérieure du signal de sortie de la balise PI de la boucle principale (Imax).  Valeur typique = 2.19. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `imin[number]`: Limite inférieure du signal de sortie de la balise PI de la boucle principale (Imin).  Valeur typique = 0.1. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: Constante de conversion de la base de tension (Ke).  Valeur typique = 4.666. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Constante de conversion de la base de courant (Ki).  Valeur typique = 0.21428. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `te[number]`: Constante de temps d'intégration de la balise PI de la boucle principale (Te).  Valeur typique = 0,154. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: Constante de temps d'intégration de la balise de contrôle PI en boucle mineure (Ti).  Valeur typique = 0.01333. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Constante de temps du filtre (Tr). Si un compensateur de tension est utilisé en conjonction avec ce modèle de système d'excitation, Tr doit être réglé sur 0. Valeur typique = 0.01. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type NGSI. Il doit être ExcHU  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcHU:    
@@ -351,11 +367,29 @@ ExcHU:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcHU/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcHU/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un ExcHU au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcHU au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Non disponible l'exemple d'un ExcHU au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un ExcHU au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un ExcHU au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
