@@ -1,16 +1,32 @@
-エンティティExcIEEEST3A  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティExcIEEEST3A  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST3A/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMのデータモデルからの採用です。このクラスはIEEE Std 421.5-2005タイプのST3Aモデルを表しています。  静的システムの中には、エキサイタ制御特性を線形化するために、フィールド電圧制御ループを利用するものがある。これにより、電源の限界に達するまでは、電源の変動に左右されない出力が得られます。  これらのシステムでは、フルサイリスタ・コンプリメンタリやハイブリッド・ブリッジなど、直列または分流構成の様々な制御整流器を利用しています。電源は、機械の端子から供給されるか、内部の巻線から供給されるかのいずれかの電位源だけで構成されます。設計によっては、機械の電位と電流の両方を利用する複合電源を持つ場合もあります。これらの電源は、機械端子の電流と電圧の位相差の組み合わせとして表され、ExcIEEEST3Aで表されるモデルタイプST3Aの適切なパラメータによって対応される。   参考文献IEEE規格421.5-2005 7.3.**項  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。IEEE Std 421.5-2005 タイプ ST3A モデルを表すクラス。  一部の静止システムは、励磁器制御特性を線形化するために界磁電圧制御ループを利用している。これはまた、電源の限界に達するまで、出力を電源の変動から独立させる。  これらのシステムでは、直列または分路構成のフル・サイリスタ・コンプリメントやハイブリッド・ブリッジなど、さまざまな制御整流器設計が利用されています。電源は、機械の端子から供給される電位源だけ、または内部の巻線から供給される電位源だけで構成される場合があります。設計によっては、機械の電位と電流の両方を利用する複合電源がある場合もあります。これらの電源は、機械端子電流と電圧の位相組み合わせとして表され、ExcIEEEST3Aで表されるST3A型モデルの適切なパラメータによって対応されます。   参考文献IEEE規格421.5-2005セクション7.3.**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `ka`: 電圧調整器のゲイン（K）。IEEE標準規格のパラメータKです。 代表値＝200です。初期値：0.0  - `kc`: 整流器の負荷率が整流リアクタンス（K）に比例すること。代表値＝0.2。初期値：0.0  - `kg`: インナーループフィールドレギュレーター（K）のフィードバックゲイン定数。  代表値＝1。初期値：0.0  - `ki`: 電位回路利得係数（K）。  代表値＝0、初期値＝0.0  - `km`: インナーループフィールドレギュレーターのフォワードゲイン定数（K）。  代表値＝7.93。デフォルト：0.0  - `kp`: 電位回路の利得係数（K）。  代表値＝6.15。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 電圧調整器の時定数（T）。  代表値＝0 既定値：0  - `tb`: 電圧調整器の時定数（T）。  代表値＝10。デフォルト：0  - `tc`: 電圧調整器の時定数（T）。  代表値＝1。デフォルト：0  - `thetap`: 電位回路の位相角（thetap）。  代表値＝0、デフォルト：0.0  - `tm`: インナーループフィールドレギュレーター（T）の前進時定数。  代表値＝0.4。デフォルト：0  - `type`: NGSIタイプ。ExcIEEEST3Aである必要があります。  - `vbmax`: 最大励磁電圧（V）。  代表値＝6.9初期値：0.0  - `vgmax`: 最大インナーループフィードバック電圧（V）。  代表値＝5.8初期値：0.0  - `vimax`: ボルテージレギュレーターの最大入力制限値（V）。  代表値＝0.2です。初期値：0.0  - `vimin`: ボルテージレギュレーターの最低入力制限値（V）。  代表値＝-0.2。初期値：0.0  - `vmmax`: インナーループの最大出力（V）。  代表値＝1。デフォルト：0.0  - `vmmin`: インナーループの最小出力（V）。  代表値＝0 既定値：0.0  - `vrmax`: ボルテージレギュレーターの最大出力（V）。  代表値＝10。初期値：0.0  - `vrmin`: ボルテージレギュレーターの最低出力（V）。  代表値＝-10。初期値：0.0  - `xl`: 電位源（X）に関連するリアクタンス。  代表値＝0.081。初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `ka[number]`: 電圧レギュレータのゲイン (K)。IEEE規格のパラメータKに相当する。 代表値＝200。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: 整流リアクタンス（K）に比例する整流器負荷率。典型的な値＝0.2。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: インナーループ・フィールドレギュレータのフィードバックゲイン定数（K）。  典型的な値=1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: ポテンシャル回路のゲイン係数（K）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `km[number]`: 内部ループフィールドレギュレータのフォワードゲイン定数 (K)。  典型的な値 = 7.93.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: ポテンシャル回路のゲイン係数（K）。  典型的な値 = 6.15.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: ボルテージレギュレータの時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: ボルテージレギュレータの時定数（T）。  代表値＝10。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: ボルテージレギュレータの時定数（T）。  典型的な値=1。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `thetap[number]`: 電位回路の位相角(tap)。  典型的な値=0。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tm[number]`: インナーループ・フィールド・レギュレータの順方向時定数（T）。  典型的な値=0.4。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。ExcIEEEST3Aである必要があります。  - `vbmax[number]`: 最大励磁電圧（V）。  代表値＝6.9。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vgmax[number]`: 最大内ループフィードバック電圧（V）。  代表値＝5.8。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: 電圧レギュレータ入力の最大制限値（V）。  代表値＝0.2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: 電圧レギュレータの入力制限の最小値（V）。  代表値 = -0.2。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmmax[number]`: インナーループ最大出力（V）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmmin[number]`: インナーループ出力の最小値（V）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: ボルテージレギュレータ出力の最大値（V）。  代表値＝10。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: ボルテージレギュレータ出力の最小値（V）。  代表値＝-10。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xl[number]`: 電位源(X)に関連するリアクタンス。  典型的な値 = 0.081。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEST3A:    
@@ -399,11 +415,29 @@ ExcIEEEST3A:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcIEEEST3A/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST3A/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のExcIEEEST3Aの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcIEEEST3Aの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のExcIEEEST3Aの例をkey-valuesとして利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcIEEEST3Aの例を利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+ExcIEEEST3Aの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcIEEEST3A を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のExcIEEEST3Aの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ExcIEEEST3A を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
