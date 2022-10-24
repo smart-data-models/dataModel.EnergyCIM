@@ -1,16 +1,32 @@
-Entità: PssSH  
-=============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: PssSH  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssSH/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Modello per lo stabilizzatore del sistema di potenza Siemens 'H infinity' con ingresso di potenza elettrica del generatore.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattato dai modelli di dati CIM. Modello per lo stabilizzatore del sistema di alimentazione Siemens 'H infinity' con ingresso di potenza elettrica del generatore **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `k`: Guadagno principale (K).  Valore tipico = 1. Predefinito: 0.0  - `k0`: Guadagno 0 (K0).  Valore tipico = 0,012. Predefinito: 0.0  - `k1`: Guadagno 1 (K1).  Valore tipico = 0,488. Predefinito: 0.0  - `k2`: Guadagno 2 (K2).  Valore tipico = 0.064. Predefinito: 0.0  - `k3`: Guadagno 3 (K3).  Valore tipico = 0.224. Predefinito: 0.0  - `k4`: Guadagno 4 (K4).  Valore tipico = 0.1. Predefinito: 0.0  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `t1`: Costante di tempo 1 (T1).  Valore tipico = 0,076. Predefinito: 0  - `t2`: Costante di tempo 2 (T2).  Valore tipico = 0,086. Predefinito: 0  - `t3`: Costante di tempo 3 (T3).   Valore tipico = 1,068. Predefinito: 0  - `t4`: Costante di tempo 4 (T4).  Valore tipico = 1,913. Predefinito: 0  - `td`: Costante di tempo di ingresso (Td).  Valore tipico = 10. Predefinito: 0  - `type`: Tipo di NGSI. Deve essere PssSH  - `vsmax`: Limite massimo di uscita (Vsmax).  Valore tipico = 0,1. Predefinito: 0.0  - `vsmin`: Limite minimo di uscita (Vsmin).  Valore tipico = -0.1. Predefinito: 0.0    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `k[number]`: Guadagno principale (K).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k0[number]`: Guadagno 0 (K0).  Valore tipico = 0,012. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: Guadagno 1 (K1).  Valore tipico = 0,488. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: Guadagno 2 (K2).  Valore tipico = 0,064. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k3[number]`: Guadagno 3 (K3).  Valore tipico = 0,224. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Guadagno 4 (K4).  Valore tipico = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `t1[number]`: Costante di tempo 1 (T1).  Valore tipico = 0,076. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Costante di tempo 2 (T2).  Valore tipico = 0,086. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Costante di tempo 3 (T3).   Valore tipico = 1,068. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Costante di tempo 4 (T4).  Valore tipico = 1,913. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Costante di tempo di ingresso (Td).  Valore tipico = 10. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere PssSH  - `vsmax[number]`: Limite massimo di uscita (Vsmax).  Valore tipico = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsmin[number]`: Limite minimo di uscita (Vsmin).  Valore tipico = -0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PssSH:    
@@ -365,9 +381,21 @@ PssSH:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-Non è disponibile l'esempio di un PssSH in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un PssSH in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un PssSH in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un PssSH in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+Non è disponibile l'esempio di un PssSH in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un PssSH in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un PssSH in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un PssSH in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
