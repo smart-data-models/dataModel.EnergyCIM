@@ -1,16 +1,32 @@
-Entité : GovGASTWD  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : GovGASTWD  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovGASTWD/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. Modèle de régulateur de turbine à gaz Woodward.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `a`: Positionneur de vanne (). Valeur par défaut : 0.0  - `address`: L'adresse postale  - `af1`: Température d'échappement Paramètre (Af1). Valeur par défaut : 0.0  - `af2`: Coefficient égal à 0,5(1 vitesse) (Af2). Valeur par défaut : 0.0  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `b`: Positionneur de vanne (). Valeur par défaut : 0.0  - `bf1`: (Bf1).  Bf1 = E(1-w) où E (coefficient de sensibilité à la vitesse) est de 0,55 à 0,65 x Tr. Valeur par défaut : 0,0  - `bf2`: Coefficient de couple de turbine K (dépend du pouvoir calorifique du flux de combustible dans la chambre de combustion) (Bf2). Valeur par défaut : 0.0  - `c`: Positionneur de vanne (). Valeur par défaut : 0.0  - `cf2`: Coefficient définissant le débit de carburant lorsque la puissance de sortie est de 0% (Cf2).  Synchrone mais pas de sortie.  Typiquement 0,23 x K(23% de débit de carburant). Valeur par défaut : 0.0  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `ecr`: Délai de réaction de la combustion (Ecr). Valeur par défaut : 0  - `etd`: Retard de la turbine et de l'échappement (Etd). Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `k3`: Rapport de réglage du carburant (K3). Valeur par défaut : 0.0  - `k4`: Gain de la protection contre les radiations (K4). Valeur par défaut : 0.0  - `k5`: Gain de la protection contre les radiations (K5). Valeur par défaut : 0.0  - `k6`: Débit minimum de carburant (K6). Valeur par défaut : 0.0  - `kd`: Gain du régulateur de chute (Kd). Valeur par défaut : 0.0  - `kdroop`: (Kdroop). Valeur par défaut : 0.0  - `kf`: Retour du système de carburant (Kf). Valeur par défaut : 0.0  - `ki`: Gain du gouverneur isochrone (Ki). Valeur par défaut : 0.0  - `kp`: Gain proportionnel PID (Kp). Valeur par défaut : 0.0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase`: Base pour les valeurs de puissance (MWbase) (> 0).  Unité = MW. Valeur par défaut : 0.0  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t`: Constante de temps du contrôle du carburant (T). Valeur par défaut : 0  - `t3`: Constante de temps de la protection contre les radiations (T3). Valeur par défaut : 0  - `t4`: Constante de temps du thermocouple (T4). Valeur par défaut : 0  - `t5`: Constante de temps de la régulation de la température (T5). Valeur par défaut : 0  - `tc`: Contrôle de la température (Tc). Valeur par défaut : 0.0  - `tcd`: Constante de temps de décharge du compresseur (Tcd). Valeur par défaut : 0  - `td`: Constante de temps du transducteur de puissance (Td). Valeur par défaut : 0  - `tf`: Constante de temps du système de carburant (Tf). Valeur par défaut : 0  - `tmax`: Limite maximale de la turbine (Tmax). Valeur par défaut : 0.0  - `tmin`: Limite minimale de la turbine (Tmin). Valeur par défaut : 0.0  - `tr`: Température nominale (Tr). Valeur par défaut : 0.0  - `trate`: Puissance de la turbine (Trate).  Unité = MW. Valeur par défaut : 0,0  - `tt`: Taux d'intégration du contrôleur de température (Tt). Valeur par défaut : 0  - `type`: Type de NGSI. Il doit s'agir de GovGASTWD    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `a[number]`: Positionneur de vanne (). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `af1[number]`: Température de l'échappement Paramètre (Af1). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `af2[number]`: Coefficient égal à 0,5(1 vitesse) (Af2). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: Positionneur de vanne (). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf1[number]`: (Bf1).  Bf1 = E(1-w) où E (coefficient de sensibilité à la vitesse) est de 0,55 à 0,65 x Tr. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf2[number]`: Coefficient de couple de turbine K (dépend du pouvoir calorifique du flux de combustible dans la chambre de combustion) (Bf2). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `c[number]`: Positionneur de vanne (). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cf2[number]`: Coefficient définissant le débit de carburant lorsque la puissance de sortie est de 0% (Cf2).  Synchrone mais pas de sortie.  Typiquement 0,23 x K(23% de débit de carburant). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `ecr[number]`: Délai de réaction de la combustion (Ecr). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `etd[number]`: Retard de la turbine et de l'échappement (Etd). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `k3[number]`: Rapport de réglage du carburant (K3). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Gain de la protection contre les radiations (K4). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: Gain de la protection contre les radiations (K5). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: Débit minimum de carburant (K6). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Gain du régulateur de chute (Kd). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdroop[number]`: (Kdroop). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Retour du système de carburant (Kf). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Gain du gouverneur isochrone (Ki). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: PID Gain proportionnel (Kp). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `mwbase[number]`: Base pour les valeurs de puissance (MWbase) (> 0).  Unité = MW. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `t[number]`: Constante de temps du contrôle du carburant (T). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de temps de la protection contre les radiations (T3). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Constante de temps du thermocouple (T4). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Constante de temps de la régulation de la température (T5). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Contrôle de la température (Tc). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcd[number]`: Constante de temps de décharge du compresseur (Tcd). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Constante de temps du transducteur de puissance (Td). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Constante de temps du système de carburant (Tf). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmax[number]`: Limite maximale de la turbine (Tmax). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmin[number]`: Limite minimale de la turbine (Tmin). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Température nominale (Tr). Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trate[number]`: Puissance de la turbine (Trate).  Unité = MW. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Taux d'intégration du contrôleur de température (Tt). Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type de NGSI. Il doit s'agir de GovGASTWD  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGASTWD:    
@@ -21,6 +37,7 @@ GovGASTWD:
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -42,76 +59,97 @@ GovGASTWD:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     af1:    
       description: 'Exhaust temperature Parameter (Af1). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     af2:    
       description: 'Coefficient equal to 0.5(1-speed) (Af2). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     b:    
       description: 'Valve positioner (). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     bf1:    
       description: '(Bf1).  Bf1 = E(1-w) where E (speed sensitivity coefficient) is 0.55 to 0.65 x Tr. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     bf2:    
       description: 'Turbine Torque Coefficient K (depends on heating value of fuel stream in combustion chamber) (Bf2). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     c:    
       description: 'Valve positioner (). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     cf2:    
       description: 'Coefficient defining fuel flow where power output is 0% (Cf2).  Synchronous but no output.  Typically 0.23 x K(23% fuel flow). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     ecr:    
       description: 'Combustion reaction time delay (Ecr). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     etd:    
       description: 'Turbine and exhaust delay (Etd). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &govgastwd_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -123,52 +161,62 @@ GovGASTWD:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     k3:    
       description: 'Ratio of Fuel Adjustment (K3). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k4:    
       description: 'Gain of radiation shield (K4). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k5:    
       description: 'Gain of radiation shield (K5). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k6:    
       description: 'Minimum fuel flow (K6). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kd:    
       description: 'Drop Governor Gain (Kd). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kdroop:    
       description: '(Kdroop). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kf:    
       description: 'Fuel system feedback (Kf). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     ki:    
       description: 'Isochronous Governor Gain (Ki). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     kp:    
       description: 'PID Proportional gain (Kp). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -320,21 +368,27 @@ GovGASTWD:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     mwbase:    
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *govgastwd_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -345,87 +399,123 @@ GovGASTWD:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     t:    
       description: 'Fuel Control Time Constant (T). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t3:    
       description: 'Radiation shield time constant (T3). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t4:    
       description: 'Thermocouple time constant (T4). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t5:    
       description: 'Temperature control time constant (T5). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tc:    
       description: 'Temperature control (Tc). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tcd:    
       description: 'Compressor discharge time constant (Tcd). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     td:    
       description: 'Power transducer time constant (Td). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tf:    
       description: 'Fuel system time constant (Tf). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tmax:    
       description: 'Maximum Turbine limit (Tmax). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tmin:    
       description: 'Minimum Turbine limit (Tmin). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tr:    
       description: 'Rated temperature (Tr). Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     trate:    
       description: 'Turbine rating (Trate).  Unit = MW. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     tt:    
       description: 'Temperature controller integration rate (Tt). Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be GovGASTWD'    
       enum:    
         - GovGASTWD    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovGASTWD/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGASTWD/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un GovGASTWD au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un GovGASTWD au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un GovGASTWD au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un GovGASTWD au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
