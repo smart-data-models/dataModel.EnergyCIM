@@ -1,16 +1,32 @@
-エンティティExcIEEEAC8B  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティExcIEEEAC8B  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEAC8B/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMのデータモデルからの引用です。このクラスはIEEE Std 421.5-2005タイプのAC8Bモデルを表す。このモデルは、ブラシレスエキサイタまたはDCエキサイタのPID電圧レギュレータを表します。このモデルのAVRはPID制御で構成されており、比例ゲイン（）、積分ゲイン（）、微分ゲイン（）にそれぞれ別の定数が設定されています。ブラシレスエキサイタの表現（、、、、、）は、AC2A型と同様です。AC8B型モデルは、ブラシレス励磁システムに適用される静的電圧レギュレータを表現するために使用できます。直流回転主励磁機に給電するデジタルベースの電圧レギュレータは、パラメータを0に設定したAC型AC8Bモデルで表すことができます。発電機の端子から給電されるサイリスタ電力段の場合、制限値および制限値は端子電圧の関数でなければなりません。  * および * 。     参考文献IEEE規格421.5-2005 6.8.**項  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用した。IEEE Std 421.5-2005 タイプ AC8B モデル。このモデルは，ブラシレス励磁機または直流励磁機を持つPID電圧レギュレータを表す。このモデルのAVRはPID制御で構成されており、比例ゲイン（）、積分ゲイン（）、微分ゲイン（）にそれぞれ定数が設定されています。ブラシレスエキサイター(, , , )の表現は、AC2A型モデルと同様である。AC8B型は、ブラシレス励磁システムに適用される静的電圧レギュレータを表現するために使用することができます。直流回転主励磁器へ給電するデジタルベースの電圧レギュレータは、パラメータと0に設定したAC型AC8Bモデルで表現できます。発電機の端子から給電するサイリスタ電力段では、限界値と端子電圧の関数にする必要があります。  * とします。     参照。IEEE 規格 421.5-2005 セクション 6.8.** を参照。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `ka`: 電圧調整器のゲイン（K）。  典型的な値は1です。初期値：0.0  - `kc`: 整流器の負荷率が整流リアクタンス（K）に比例すること。代表値＝0.55。初期値：0.0  - `kd`: 励磁機オルタネータのリアクタンス(K)の関数である減磁率。    典型的な値は1.1である。デフォルト：0.0  - `kdr`: 電圧調整器の微分ゲイン（K）。  代表値＝10。初期値：0.0  - `ke`: 自励磁電界に関わるエキサイター定数（K）。  代表値＝1。初期値：0.0  - `kir`: 電圧調整器の積分利得（K）。  代表値＝5初期値：0.0  - `kpr`: 電圧調整器の比例ゲイン（K）。  代表値＝80。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `seve1`: 対応するエキサイタ電圧V、整流リアクタンスの背面（S[V]）におけるエキサイタ飽和関数値。  代表値＝0.3。初期値：0.0  - `seve2`: 対応するエキサイタ電圧V、整流リアクタンスの背面（S[V]）におけるエキサイタ飽和関数値。  代表値＝3。初期値：0.0  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta`: 電圧調整器の時定数（T）。  代表値＝0 既定値：0  - `tdr`: ラグ時定数（T）。  代表値＝0.1。デフォルト：0  - `te`: エキサイター時定数，エキサイター制御（T）に伴う積分率。  典型的な値は1.2です。デフォルト：0  - `type`: NGSIタイプです。ExcIEEEAC8Bである必要があります。  - `ve1`: 飽和が定義される整流リアクタンスの後ろのエキサイターオルタネーター出力電圧（V）はV（V）に等しい。  典型的な値は6.5です。初期値：0.0  - `ve2`: 飽和が定義される整流リアクタンスの後ろ側のエキサイターオルタネータ出力電圧（V）。  典型的な値は9です。初期値：0.0  - `vemin`: 最低限のエキサイター電圧出力（V）。  代表値＝0 既定値：0.0  - `vfemax`: Exciter field current limit reference (V)。  代表値＝6。初期値：0.0  - `vrmax`: ボルテージレギュレーターの最大出力（V）。  代表値＝35。デフォルト：0.0  - `vrmin`: ボルテージレギュレーターの最小出力（V）。  代表値＝0、初期値＝0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `ka[number]`: ボルテージレギュレータのゲイン（K）。  典型的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: 整流リアクタンス（K）に比例する整流器負荷率。典型的な値＝0.55。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: 消磁率。励磁機のオルタネータリアクタンス（K）の関数。    典型的な値 = 1.1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdr[number]`: ボルテージレギュレータ微分利得（K）。  標準値 = 10.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: 自励磁界に関係する励磁定数(K)。  代表的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kir[number]`: ボルテージレギュレータの積分ゲイン（K）。  典型的な値= 5.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpr[number]`: ボルテージレギュレータの比例ゲイン（K）。  典型的な値 = 80.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `seve1[number]`: 整流リアクタンス（S[V]）の背面，対応する励磁電圧（V）における励磁器飽和関数値。  典型的な値 = 0.3.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seve2[number]`: 整流リアクタンス(S[V])の裏側にある対応する励磁電圧(V)における励磁器飽和関数値。  典型的な値 = 3.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: ボルテージレギュレータの時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdr[number]`: 遅延時定数 (T)。  典型的な値 = 0.1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Exciter time constant, exciter control (T) に関連する積分レート。  典型的な値 = 1.2.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプです。ExcIEEEAC8B である必要があります。  - `ve1[number]`: エキサイターオルタネーターの出力電圧で，飽和が定義される整流リアクタンスの背面電圧（V）＝V（V）。  典型的な値 = 6.5.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ve2[number]`: オルタネータ出力電圧のうち，飽和が定義される整流リアクタンスの背面電圧（V）。  典型的な値＝9。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vemin[number]`: エキサイター電圧出力の最小値（V）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfemax[number]`: 励磁磁界電流制限値（V）。  典型的な値 = 6.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: ボルテージレギュレータ出力の最大値（V）。  代表値＝35。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: ボルテージレギュレータ出力の最小値（V）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEAC8B:    
@@ -387,11 +403,29 @@ ExcIEEEAC8B:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcIEEEAC8B/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEAC8B/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のExcIEEEAC8Bの例をkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcIEEEAC8Bの例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-JSON-LD形式のExcIEEEAC8Bの例をkey-valuesとして利用できません。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-正規化されたJSON-LD形式のExcIEEEAC8Bの例を利用できません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+ExcIEEEAC8Bの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+ExcIEEEAC8B を正規化した JSON-LD 形式の例は利用できない。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcIEEEAC8Bの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+ExcIEEEAC8B を正規化した JSON-LD 形式の例は利用できません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
