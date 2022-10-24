@@ -1,16 +1,32 @@
-Entité : LoadComposite  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : LoadComposite  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/LoadComposite/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adapté des modèles de données CIM. Ce modèle combine les effets de la charge statique et de la charge du moteur à induction. La dynamique du moteur est simplifiée en linéarisant les équations de la machine à induction.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `epfd`: Indice de dépendance charge-fréquence active (dynamique) (Epfd).  Valeur typique = 1,5. Valeur par défaut : 0,0  - `epfs`: Indice de dépendance charge-fréquence active (statique) (Epfs).  Valeur typique = 1,5. Valeur par défaut : 0,0  - `epvd`: Indice de dépendance charge-tension active (dynamique) (Epvd).  Valeur typique = 0,7. Valeur par défaut : 0.0  - `epvs`: Indice de dépendance charge-tension active (statique) (Epvs).  Valeur typique = 0.7. Valeur par défaut : 0.0  - `eqfd`: Indice de dépendance charge réactive-fréquence (dynamique) (Eqfd).  Valeur typique = 0. Valeur par défaut : 0.0  - `eqfs`: Indice de dépendance charge réactive-fréquence (statique) (Eqfs).  Valeur typique = 0. Valeur par défaut : 0.0  - `eqvd`: Indice de dépendance charge réactive-tension (dynamique) (Eqvd).  Valeur typique = 2. Valeur par défaut : 0.0  - `eqvs`: Indice de dépendance charge réactive-tension (statique) (Eqvs).  Valeur typique = 2. Valeur par défaut : 0.0  - `h`: Constante d'inertie (H).  Valeur typique = 2,5. Valeur par défaut : 0  - `id`: Identifiant unique de l'entité  - `lfrac`: Facteur de charge - rapport entre la P initiale et la base MVA du moteur (Lfrac).  Valeur typique = 0,8. Valeur par défaut : 0,0  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pfrac`: Fraction de la charge à puissance constante à représenter par ce modèle de moteur (Pfrac) (>=0,0 et <=1,0).  Valeur typique = 0.5. Valeur par défaut : 0.0  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type de NGSI. Il doit s'agir de LoadComposite    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `epfd[number]`: Indice de dépendance charge-fréquence active (dynamique) (Epfd).  Valeur typique = 1,5. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `epfs[number]`: Indice de dépendance charge-fréquence active (statique) (Epfs).  Valeur typique = 1,5. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `epvd[number]`: Indice de dépendance charge-tension active (dynamique) (Epvd).  Valeur typique = 0,7. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `epvs[number]`: Indice de dépendance charge-tension active (statique) (Epvs).  Valeur typique = 0.7. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eqfd[number]`: Indice de dépendance charge réactive-fréquence (dynamique) (Eqfd).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eqfs[number]`: Indice de dépendance charge réactive-fréquence (statique) (Eqfs).  Valeur typique = 0. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eqvd[number]`: Indice de dépendance charge réactive-tension (dynamique) (Eqvd).  Valeur typique = 2. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eqvs[number]`: Indice de dépendance charge réactive-tension (statique) (Eqvs).  Valeur typique = 2. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h[number]`: Constante d'inertie (H).  Valeur typique = 2.5. Valeur par défaut : 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `lfrac[number]`: Facteur de charge - rapport entre la P initiale et la base MVA du moteur (Lfrac).  Valeur typique = 0,8. Valeur par défaut : 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `pfrac[number]`: Fraction de la charge à puissance constante à représenter par ce modèle de moteur (Pfrac) (>=0,0 et <=1,0).  Valeur typique = 0.5. Valeur par défaut : 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type de NGSI. Il doit s'agir de LoadComposite  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 LoadComposite:    
@@ -37,76 +53,97 @@ LoadComposite:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     epfd:    
       description: 'Active load-frequency dependence index (dynamic) (Epfd).  Typical Value = 1.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     epfs:    
       description: 'Active load-frequency dependence index (static) (Epfs).  Typical Value = 1.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     epvd:    
       description: 'Active load-voltage dependence index (dynamic) (Epvd).  Typical Value = 0.7. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     epvs:    
       description: 'Active load-voltage dependence index (static) (Epvs).  Typical Value = 0.7. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     eqfd:    
       description: 'Reactive load-frequency dependence index (dynamic) (Eqfd).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     eqfs:    
       description: 'Reactive load-frequency dependence index (static) (Eqfs).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     eqvd:    
       description: 'Reactive load-voltage dependence index (dynamic) (Eqvd).  Typical Value = 2. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     eqvs:    
       description: 'Reactive load-voltage dependence index (static) (Eqvs).  Typical Value = 2. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     h:    
       description: 'Inertia constant (H).  Typical Value = 2.5. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &loadcomposite_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -118,12 +155,14 @@ LoadComposite:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     lfrac:    
       description: 'Loading factor - ratio of initial P to motor MVA base (Lfrac).  Typical Value = 0.8. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -275,21 +314,27 @@ LoadComposite:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *loadcomposite_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pfrac:    
       description: 'Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0).  Typical Value = 0.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -300,22 +345,45 @@ LoadComposite:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be LoadComposite'    
       enum:    
         - LoadComposite    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/LoadComposite/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadComposite/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
-Non disponible l'exemple d'un LoadComposite au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Non disponible l'exemple d'un LoadComposite au format JSON-LD comme key-values. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un LoadComposite au format JSON-LD tel que normalisé. Il est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un LoadComposite au format JSON-LD comme key-values. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un LoadComposite au format JSON-LD tel que normalisé. Il est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
