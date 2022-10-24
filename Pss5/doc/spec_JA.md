@@ -1,16 +1,32 @@
-エンティティPss5  
-==========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティPss5  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Pss5/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルからの採用。イタリア語PSS - 詳細PSS.**  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIM データモデルから引用。イタリア語PSS - 詳細PSS.**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `ctw2`: セカンド・ウォッシュアウト・イネーブル（C）のセレクタ。true = セカンド・ウォッシュアウト・フィルタがバイパスされている false = セカンド・ウォッシュアウト・フィルタが使用されている。典型的な値はtrueです。デフォルトは偽  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `deadband`: スタビライザー出力のデッドバンド（DeadBand）。  代表値＝0、デフォルト：0.0  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `isfreq`: 周波数／軸速度入力（IsFreq）の選択。true = 速度 false = 周波数。代表値＝trueデフォルトはFalse  - `kf`: 周波数／軸速度入力ゲイン（K）。  代表値＝5です。初期値：0.0  - `kpe`: 電力入力ゲイン（K）。  代表値＝0.3。初期値：0.0  - `kpss`: PSSゲイン（K）。  典型的な値＝1です。初期値：0.0  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pmm`: 最小限の電力でPSSを有効にする（P）。  代表値＝0.25初期値：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tl1`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tl2`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tl3`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tl4`: リード／ラグ時定数（T）。  代表値＝0 既定値：0  - `tpe`: 電力フィルター時定数（T）。  代表値＝0.05。デフォルト：0  - `tw1`: ファーストウォッシュアウト（T）。  典型的な値＝3.5デフォルト：0  - `tw2`: セカンドウォッシュアウト（T）。  代表値＝0、デフォルト：0  - `type`: NGSIタイプであること。Pss5でなければならない  - `vadat`: デフォルト。False  - `vsmn`: スタビライザー出力の上限値（V）。  代表値＝-0.1初期値：0.0  - `vsmx`: スタビライザー出力の下限値（V）。  代表値＝0.1初期値：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `ctw2[number]`: 2番目のウォッシュアウトを有効にするためのセレクタ (C).典型的な値 = true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deadband[number]`: スタビライザー出力のデッドバンド(DeadBand)。  代表値：0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `isfreq[number]`: 周波数／軸回転数入力（IsFreq）のセレクタです。典型的な値 = true。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: 周波数/軸速度入力ゲイン（K）。  典型的な値 = 5.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpe[number]`: 電力入力ゲイン（K）。  典型的な値 = 0.3。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpss[number]`: PSSゲイン(K)。  典型的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pmm[number]`: PSSを有効にする最小電力(P)。  典型的な値=0.25。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tl1[number]`: リード/ラグ時定数(T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl2[number]`: リード/ラグ時定数(T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl3[number]`: リード/ラグ時定数(T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl4[number]`: リード/ラグ時定数(T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpe[number]`: 電力フィルターの時定数（T）。  典型的な値 = 0.05.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw1[number]`: 最初のWashOut（T）。  典型的な値 = 3.5.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw2[number]`: セカンドウォッシュアウト (T)。  典型的な値 = 0. デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。Pss5でなければならない  - `vadat[number]`: デフォルト。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsmn[number]`: スタビライザー出力の最大リミット値（V）。  代表値＝-0.1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsmx[number]`: スタビライザー出力の下限値（V）。  代表値＝0.1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pss5:    
@@ -389,9 +405,21 @@ Pss5:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-key-valuesとしてJSON-LD形式のPss5の例を利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-Pss5をJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-key-valuesとしてJSON-LD形式のPss5の例を利用できません。これは`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-Pss5をJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+Pss5をJSON-LD形式でkey-valuesとした例は利用不可。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+Pss5 を JSON-LD 形式で正規化した例は利用できない。オプションを使用しない場合はNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+Pss5をJSON-LD形式でkey-valuesにした例は利用できません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+Pss5 を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
