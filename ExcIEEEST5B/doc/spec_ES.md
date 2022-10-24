@@ -1,16 +1,32 @@
-Entidad: ExcIEEEST5B  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: ExcIEEEST5B  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcIEEEST5B/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Adaptado de los modelos de datos CIM. La clase representa el modelo IEEE Std 421.5-2005 tipo ST5B. El sistema de excitación de tipo ST5B es una variación del modelo de tipo ST1A, con entradas de sobreexcitación y subexcitación alternativas y límites adicionales.  Referencia: Norma IEEE 421.5-2005, apartado 7.5.   Nota: el diagrama de bloques de la norma IEEE 421.5 tiene la señal de entrada Vc y no indica el punto de suma con Vref. La implementación del ExcIEEEST5B deberá considerar el punto de suma con Vref.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `kc`: Factor de regulación del rectificador (K).  Valor típico = 0,004. Por defecto: 0,0  - `kr`: Ganancia del regulador (K).  Valor típico = 200. Por defecto: 0,0  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t1`: Constante de tiempo del circuito de disparo (T1).  Valor típico = 0,004. Por defecto: 0  - `tb1`: Constante de tiempo de retardo del regulador (T).  Valor típico = 6. Por defecto: 0  - `tb2`: Constante de tiempo de retardo del regulador (T).  Valor típico = 0,01. Por defecto: 0  - `tc1`: Constante de tiempo del regulador (T).  Valor típico = 0,8. Por defecto: 0  - `tc2`: Constante de tiempo de espera del regulador (T).  Valor típico = 0,08. Por defecto: 0  - `tob1`: Constante de tiempo de retardo OEL (T).  Valor típico = 2. Por defecto: 0  - `tob2`: Constante de tiempo de retardo OEL (T).  Valor típico = 0,08. Por defecto: 0  - `toc1`: Constante de tiempo de espera OEL (T).  Valor típico = 0,1. Por defecto: 0  - `toc2`: Constante de tiempo de espera OEL (T).  Valor típico = 0,08. Por defecto: 0  - `tub1`: Constante de tiempo de retardo UEL (T).  Valor típico = 10. Por defecto: 0  - `tub2`: Constante de tiempo de retardo UEL (T).  Valor típico = 0,05. Por defecto: 0  - `tuc1`: Constante de tiempo de espera UEL (T).  Valor típico = 2. Por defecto: 0  - `tuc2`: Constante de tiempo de espera UEL (T).  Valor típico = 0,1. Por defecto: 0  - `type`: Tipo NGSI. Tiene que ser ExcIEEEST5B  - `vrmax`: Salida máxima del regulador de tensión (V).  Valor típico = 5. Por defecto: 0,0  - `vrmin`: Salida mínima del regulador de tensión (V).  Valor típico = -4. Por defecto: 0,0    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `kc[number]`: Factor de regulación del rectificador (K).  Valor típico = 0,004. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kr[number]`: Ganancia del regulador (K).  Valor típico = 200. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1[number]`: Constante de tiempo del circuito de disparo (T1).  Valor típico = 0,004. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb1[number]`: Constante de tiempo de retardo del regulador (T).  Valor típico = 6. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb2[number]`: Constante de tiempo de retardo del regulador (T).  Valor típico = 0,01. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc1[number]`: Constante de tiempo del regulador (T).  Valor típico = 0,8. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc2[number]`: Constante de tiempo de espera del regulador (T).  Valor típico = 0,08. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tob1[number]`: Constante de tiempo de retardo OEL (T).  Valor típico = 2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tob2[number]`: Constante de tiempo de retardo OEL (T).  Valor típico = 0,08. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc1[number]`: Constante de tiempo de espera OEL (T).  Valor típico = 0,1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `toc2[number]`: Constante de tiempo de espera OEL (T).  Valor típico = 0,08. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tub1[number]`: Constante de tiempo de retardo UEL (T).  Valor típico = 10. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tub2[number]`: Constante de tiempo de retardo UEL (T).  Valor típico = 0,05. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuc1[number]`: Constante de tiempo de espera UEL (T).  Valor típico = 2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuc2[number]`: Constante de tiempo de espera UEL (T).  Valor típico = 0,1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser ExcIEEEST5B  - `vrmax[number]`: Salida máxima del regulador de tensión (V).  Valor típico = 5. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: Salida mínima del regulador de tensión (V).  Valor típico = -4. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExcIEEEST5B:    
@@ -381,11 +397,29 @@ ExcIEEEST5B:
         type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcIEEEST5B/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEST5B/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un ExcIEEEST5B en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
