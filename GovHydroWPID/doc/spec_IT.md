@@ -1,16 +1,32 @@
-Entità: GovHydroWPID  
-====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: GovHydroWPID  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydroWPID/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Governatore idraulico PID di Woodward.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattato dai modelli di dati CIM. Governatore idroelettrico PID Woodward.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `d`: Fattore di smorzamento della turbina (D).  Unità = delta P / delta velocità. Predefinito: 0,0  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `gatmax`: Limite massimo di apertura del cancello (Gatmax). Predefinito: 0.0  - `gatmin`: Limite minimo di apertura del cancello (Gatmin). Predefinito: 0.0  - `gv1`: Posizione del gate 1 (Gv1). Predefinito: 0,0  - `gv2`: Posizione del gate 2 (Gv2). Predefinito: 0,0  - `gv3`: Posizione del cancello 3 (Gv3). Predefinito: 0,0  - `id`: Identificatore unico dell'entità  - `kd`: Guadagno derivativo (Kd).  Valore tipico = 1,11. Predefinito: 0.0  - `ki`: Guadagno di reset (Ki).  Valore tipico = 0,36. Predefinito: 0.0  - `kp`: Guadagno proporzionale (Kp).  Valore tipico = 0,1. Predefinito: 0.0  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base per i valori di potenza (MWbase) (>0).  Unità = MW. Predefinito: 0,0  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pgv1`: Uscita a Gv1 PU di MWbase (Pgv1). Predefinito: 0,0  - `pgv2`: Uscita a Gv2 PU di MWbase (Pgv2). Predefinito: 0,0  - `pgv3`: Uscita a Gv3 PU di MWbase (Pgv3). Predefinito: 0.0  - `pmax`: Potenza di uscita massima (Pmax). Predefinito: 0.0  - `pmin`: Potenza minima di uscita (Pmin). Predefinito: 0.0  - `reg`: Caduta permanente (Reg). Predefinito: 0,0  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `ta`: Costante di tempo del regolatore (Ta) (>0).  Valore tipico = 0. Predefinito: 0  - `tb`: Costante di tempo del servo del gate (Tb) (>0).  Valore tipico = 0. Predefinito: 0  - `treg`: Costante di tempo del rilevatore di velocità (Treg). Predefinito: 0  - `tw`: Costante di tempo di inerzia dell'acqua (Tw) (>0).  Valore tipico = 0. Predefinito: 0  - `type`: Tipo di NGSI. Deve essere GovHydroWPID  - `velmax`: Velocità massima di apertura della porta (Velmax).  Unità = PU/sec.  Valore tipico = 0. Default: 0.0  - `velmin`: Velocità massima di chiusura della porta (Velmin).  Unità = PU/sec.  Valore tipico = 0. Default: 0.0    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `d[number]`: Fattore di smorzamento della turbina (D).  Unità = delta P / delta velocità. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `gatmax[number]`: Limite massimo di apertura del cancello (Gatmax). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gatmin[number]`: Limite minimo di apertura del cancello (Gatmin). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Posizione del gate 1 (Gv1). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Posizione del gate 2 (Gv2). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Posizione del gate 3 (Gv3). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `kd[number]`: Guadagno derivativo (Kd).  Valore tipico = 1,11. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Guadagno di reset (Ki).  Valore tipico = 0,36. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Guadagno proporzionale (Kp).  Valore tipico = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mwbase[number]`: Base per i valori di potenza (MWbase) (>0).  Unità = MW. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pgv1[number]`: Uscita su Gv1 PU di MWbase (Pgv1). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Uscita su Gv2 PU di MWbase (Pgv2). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Uscita su Gv3 PU di MWbase (Pgv3). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Potenza massima erogata (Pmax). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Potenza minima in uscita (Pmin). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `reg[number]`: Caduta permanente (Reg). Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `ta[number]`: Costante di tempo del regolatore (Ta) (>0).  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Costante di tempo del servo gate (Tb) (>0).  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `treg[number]`: Costante di tempo del rilevatore di velocità (Treg). Predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Costante di tempo di inerzia dell'acqua (Tw) (>0).  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovHydroWPID  - `velmax[number]`: Velocità massima di apertura del cancello (Velmax).  Unità = PU/sec.  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `velmin[number]`: Velocità massima di chiusura del cancello (Velmin).  Unità = PU/sec.  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydroWPID:    
@@ -419,9 +435,21 @@ GovHydroWPID:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-Non disponibile l'esempio di un GovHydroWPID in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovHydroWPID in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovHydroWPID in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovHydroWPID in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+Non è disponibile l'esempio di un GovHydroWPID in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovHydroWPID in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovHydroWPID in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovHydroWPID in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
