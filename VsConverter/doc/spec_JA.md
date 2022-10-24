@@ -1,16 +1,32 @@
-エンティティVsConverter  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティVsConverter  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/VsConverter/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**CIMデータモデルより引用。電圧源コンバータ(VSC)のDC側、**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**CIMデータモデルから引用しています。電圧源コンバータ(VSC)のDC側.**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `CapabilityCurve`: この能力曲線を持つすべてのコンバータ。デフォルト。なし  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `delta`: ufとucの間の角度。パワーフローで使用されるコンバータの状態変数。デフォルト：0.0  - `description`: このアイテムの説明  - `droop`: D [kV^2 / MW] x Sb / Ubdc^2として求められる。デフォルト：0.0  - `droopCompensation`: 補償（抵抗）定数。遠く離れたバスの電圧を制御する際に、電圧降下を補償するために使用します。デフォルト：0.0  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxModulationIndex`: ACコンバータ電圧(Uc)とDC電圧(Ud)の最大商。パワーフローで使用されるVSCの設定データ。デフォルト：0.0  - `maxValveCurrent`: バルブを通過する最大電流のこと。この電流制限値は、ケイパビリティ・ダイアグラムを算出する際の基準となる。VSCの設定データ。デフォルト：0.0  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pPccControl`: 実電力やDC電圧の制御の種類。デフォルトなし  - `qPccControl`: デフォルトなし  - `qShare`: Uac制御における並列コンバータ間の無効電力分配係数。デフォルト：0.0  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `targetQpcc`: ACグリッドにおける共通結合点での無効電力注入目標値。デフォルト：0.0  - `targetUpcc`: 共通結合点におけるACグリッドの電圧目標値。デフォルト：0.0  - `type`: NGSIタイプです。VsConverterである必要があります。  - `uf`: フィルタのバス電圧。コンバータの状態変数で、パワーフローから得られます。デフォルト：0.0    
-必須項目  
-CIMデータモデルとCIMpyからの採用 - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルがベースとしているpythonクラスは、Institute for Automation of Complex Power Systems (ACS)、EON Energy Research Center (EONERC)、RWTH University Aachen (ドイツ) の3団体によって開発されました。一部のプロパティのタイプが間違っている場合があります。このような場合には、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `CapabilityCurve[number]`: この能力曲線を持つすべてのコンバーター。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `delta[number]`: ufとucの間の角度。パワーフローで使用されるコンバータの状態変数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `droop[number]`: ドループ定数。pu値はD [kV^2 / MW] x Sb / Ubdc^2として取得される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `droopCompensation[number]`: 補償（抵抗）定数。遠くのバスの電圧を制御する際に、電圧降下を補償するために使用する。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxModulationIndex[number]`: ACコンバータ電圧（Uc）とDC電圧（Ud）の間の最大商。パワーフローで使用されるVSCコンフィギュレーションデータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxValveCurrent[number]`: バルブに流れる電流の最大値。この電流制限値は、能力線図の計算の基礎となる。VSCのコンフィギュレーションデータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pPccControl[number]`: 実電力および/またはDC電圧の制御の種類を指定します。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `qPccControl[number]`: デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `qShare[number]`: Uac制御時の並列コンバータ間の無効電力分配係数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `targetQpcc[number]`: 共通結合点における，ACグリッドの無効電力注入目標値。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetUpcc[number]`: 共通結合点におけるACグリッドの目標電圧。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。これはVsConverterでなければならない  - `uf[number]`: フィルターバス電圧。コンバータの状態変数、パワーフローからの結果。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティが間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 VsConverter:    
@@ -359,9 +375,21 @@ VsConverter:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-VsConverterをJSON-LD形式のkey-valuesにした例は利用できません。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-VsConverterをJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
-VsConverterをJSON-LD形式のkey-valuesにした例は利用できません。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-VsConverterをJSON-LD形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+VsConverterの例をJSON-LD形式でkey-valuesにしたものは利用できない。これは `options=keyValues` を使った場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+VsConverter を JSON-LD 形式で正規化した例はない。これはオプションを使わない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+VsConverterの例をJSON-LD形式でkey-valuesにしたものは利用できない。これは `options=keyValues` を使った場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+VsConverterをJSON-LD形式で正規化した例は利用できない。これはオプションを使わない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
