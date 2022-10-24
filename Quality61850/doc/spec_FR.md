@@ -1,16 +1,32 @@
-Entité : Quality61850  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : Quality61850  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Adaptés des modèles de données CIM. Les drapeaux de qualité dans cette classe sont tels que définis dans la norme IEC 61850, à l'exception de estimatorReplaced, qui a été inclus dans cette classe pour des raisons de commodité**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `badReference`: La valeur de mesure peut être incorrecte en raison d'une référence non calibrée. Valeur par défaut : Faux  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `estimatorReplaced`: La valeur a été remplacée par State Estimator. estimatorReplaced n'est pas un bit de qualité IEC61850 mais a été mis dans cette classe pour des raisons de commodité. Par défaut : False  - `failure`: Cet identifiant indique qu'une fonction de supervision a détecté une défaillance interne ou externe, par exemple une défaillance de communication. Par défaut : Faux  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `oldData`: La valeur de mesure est ancienne et peut-être invalide, car elle n'a pas été mise à jour avec succès pendant un intervalle de temps spécifié. Valeur par défaut : False  - `operatorBlocked`: La valeur de mesure est bloquée et donc indisponible pour la transmission. Par défaut : Faux  - `oscillatory`: Pour éviter une surcharge de la communication, il est judicieux de détecter et de supprimer les entrées binaires oscillantes (à variation rapide). Si un signal change dans un temps défini (tosc) deux fois dans la même direction (de 0 à 1 ou de 1 à 0), l'oscillation est détectée et l'identificateur de qualité de détail "oscillatoire" est activé. S'il est détecté, un nombre configuré de changements transitoires peut être passé. Pendant ce temps, l'état de validité `questionnable` est défini. Si après ce nombre défini de changements, le signal est toujours dans l'état oscillant, la valeur doit être fixée soit à l'état opposé de la valeur stable précédente, soit à une valeur par défaut définie. Dans ce cas, l'état de validité "questionnable" est remis à zéro et "invalide" est activé tant que le signal oscille. S'il est configuré de telle sorte qu'aucun changement transitoire ne doit passer, alors l'état de validité `invalide` est défini immédiatement en plus de l'identificateur de qualité détaillé `oscillatoire` (utilisé pour les informations d'état uniquement). Par défaut : False  - `outOfRange`: La valeur mesurée est au-delà d'une plage de valeurs prédéfinie. Valeur par défaut : Faux  - `overFlow`: La valeur de la mesure dépasse la capacité d'être représentée correctement. Par exemple, la valeur d'un compteur déborde du comptage maximum pour atteindre une valeur de zéro. Valeur par défaut : Faux  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: La source donne des informations relatives à l'origine d'une valeur. La valeur peut être acquise à partir du processus, proposée par défaut ou substituée. Par défaut : Aucun  - `suspect`: Une fonction de corrélation a détecté que la valeur n'est pas cohérente avec d'autres valeurs. Généralement défini par un estimateur d'état du réseau. Par défaut : False  - `test`: La valeur de la mesure est transmise à des fins de test. Valeur par défaut : Faux  - `type`: Type NGSI. Il doit être Quality61850  - `validity`: Validité de la valeur de mesure. Valeur par défaut : Aucun    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `badReference[number]`: La valeur de mesure peut être incorrecte en raison d'une référence non calibrée. Valeur par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `estimatorReplaced[number]`: La valeur a été remplacée par State Estimator. estimatorReplaced n'est pas un bit de qualité IEC61850 mais a été mis dans cette classe pour des raisons de commodité. Par défaut : False  . Model: [https://schema.org/Number](https://schema.org/Number)- `failure[number]`: Cet identifiant indique qu'une fonction de supervision a détecté une défaillance interne ou externe, par exemple une défaillance de communication. Par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `oldData[number]`: La valeur de mesure est ancienne et peut-être invalide, car elle n'a pas été mise à jour avec succès pendant un intervalle de temps spécifié. Valeur par défaut : False  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatorBlocked[number]`: La valeur de mesure est bloquée et donc indisponible pour la transmission. Par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `oscillatory[number]`: Pour éviter une surcharge de la communication, il est judicieux de détecter et de supprimer les entrées binaires oscillantes (à variation rapide). Si un signal change dans un temps défini (tosc) deux fois dans la même direction (de 0 à 1 ou de 1 à 0), l'oscillation est détectée et l'identifiant de qualité de détail "oscillatoire" est activé. S'il est détecté, un nombre configuré de changements transitoires peut être passé. Pendant ce temps, l'état de validité `questionnable` est défini. Si après ce nombre défini de changements, le signal est toujours dans l'état oscillant, la valeur sera mise soit à l'état opposé de la valeur stable précédente, soit à une valeur par défaut définie. Dans ce cas, l'état de validité "questionnable" est remis à zéro et "invalide" est activé tant que le signal oscille. S'il est configuré de telle sorte qu'aucun changement transitoire ne doit passer, alors l'état de validité `invalide` est défini immédiatement en plus de l'identificateur de qualité détaillé `oscillatoire` (utilisé pour les informations d'état uniquement). Par défaut : False  . Model: [https://schema.org/Number](https://schema.org/Number)- `outOfRange[number]`: La valeur mesurée est au-delà d'une plage de valeurs prédéfinie. Valeur par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `overFlow[number]`: La valeur de la mesure dépasse la capacité d'être représentée correctement. Par exemple, la valeur d'un compteur déborde du comptage maximum pour atteindre une valeur de zéro. Valeur par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[number]`: La source donne des informations relatives à l'origine d'une valeur. La valeur peut être acquise à partir du processus, proposée par défaut ou substituée. Par défaut : Aucun  . Model: [https://schema.org/Number](https://schema.org/Number)- `suspect[number]`: Une fonction de corrélation a détecté que la valeur n'est pas cohérente avec d'autres valeurs. Généralement défini par un estimateur d'état du réseau. Par défaut : False  . Model: [https://schema.org/Number](https://schema.org/Number)- `test[number]`: La valeur de la mesure est transmise à des fins de test. Valeur par défaut : Faux  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type NGSI. Il doit être Quality61850  - `validity[number]`: Validité de la valeur de mesure. Valeur par défaut : Aucun  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapté de CIM data models and CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Ce modèle de données est une conversion directe du modèle d'information commun (CIM) spécifié par la norme IEC61970 en modèles de données intelligents. Les classes python sur lesquelles ce modèle est basé ont été développées par ces entités : Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) et RWTH University Aachen, Allemagne. Certaines propriétés peuvent avoir un mauvais type. Si tel était le cas, veuillez soulever un problème ou envoyer un courrier à info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Quality61850:    
@@ -37,46 +53,61 @@ Quality61850:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     badReference:    
       description: 'Measurement value may be incorrect due to a reference being out of calibration. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     estimatorReplaced:    
       description: 'Value has been replaced by State Estimator. estimatorReplaced is not an IEC61850 quality bit but has been put in this class for convenience. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     failure:    
       description: 'This identifier indicates that a supervision function has detected an internal or external failure, e.g. communication failure. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &quality61850_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -88,7 +119,8 @@ Quality61850:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -240,41 +272,51 @@ Quality61850:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     oldData:    
       description: 'Measurement value is old and possibly invalid, as it has not been successfully updated during a specified time interval. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     operatorBlocked:    
       description: 'Measurement value is blocked and hence unavailable for transmission. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     oscillatory:    
       description: 'To prevent some overload of the communication it is sensible to detect and suppress oscillating (fast changing) binary inputs. If a signal changes in a defined time (tosc) twice in the same direction (from 0 to 1 or from 1 to 0) then oscillation is detected and the detail quality identifier `oscillatory` is set. If it is detected a configured numbers of transient changes could be passed by. In this time the validity status `questionable` is set. If after this defined numbers of changes the signal is still in the oscillating state the value shall be set either to the opposite state of the previous stable value or to a defined default value. In this case the validity status `questionable` is reset and `invalid` is set as long as the signal is oscillating. If it is configured such that no transient changes should be passed by then the validity status `invalid` is set immediately in addition to the detail quality identifier `oscillatory` (used for status information only). Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     outOfRange:    
       description: 'Measurement value is beyond a predefined range of value. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     overFlow:    
       description: 'Measurement value is beyond the capability of being  represented properly. For example, a counter value overflows from maximum count back to a value of zero. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *quality61850_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -285,39 +327,64 @@ Quality61850:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'Source gives information related to the origin of a value. The value may be acquired from the process, defaulted or substituted. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     suspect:    
       description: 'A correlation function has detected that the value is not consitent with other values. Typically set by a network State Estimator. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     test:    
       description: 'Measurement value is transmitted for test purposes. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
       description: 'NGSI type. It has to be Quality61850'    
       enum:    
         - Quality61850    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     validity:    
       description: 'Validity of the measurement value. Default: None'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Quality61850/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 Non disponible l'exemple d'un Quality61850 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Quality61850 au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Quality61850 au format JSON-LD comme valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 Non disponible l'exemple d'un Quality61850 au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
