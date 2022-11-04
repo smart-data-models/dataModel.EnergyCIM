@@ -103,7 +103,7 @@ IdentifiedObject:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -124,7 +124,7 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -148,7 +148,7 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -174,7 +174,7 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -197,7 +197,7 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -223,7 +223,7 @@ IdentifiedObject:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -252,7 +252,7 @@ IdentifiedObject:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     mRID:    
       description: 'Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended. For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements. Default: '''''    
       type: number    
