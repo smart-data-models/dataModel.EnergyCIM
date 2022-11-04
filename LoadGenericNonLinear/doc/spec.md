@@ -124,7 +124,7 @@ LoadGenericNonLinear:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -145,7 +145,7 @@ LoadGenericNonLinear:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -169,7 +169,7 @@ LoadGenericNonLinear:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -195,7 +195,7 @@ LoadGenericNonLinear:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -218,7 +218,7 @@ LoadGenericNonLinear:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -244,7 +244,7 @@ LoadGenericNonLinear:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -273,7 +273,7 @@ LoadGenericNonLinear:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     ls:    
       description: 'Steady state voltage index for active power (LS). Default: 0.0'    
       type: number    
