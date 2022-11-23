@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Switch/schema.json",
     "title": " Smart Data Models - Switch",
@@ -23,8 +23,8 @@
                     "description": "Property. NGSI type. It has to be Switch"
                 },
                 "SwitchSchedules": {
-                    "description": "Property. Model:'https://schema.org/Number'. A SwitchSchedule is associated with a Switch. Default: 'list'",
-                    "type": "number"
+                    "description": "Property. Model:'https://schema.org/Text'. A SwitchSchedule is associated with a Switch. Default: 'list'",
+                    "type": "string"
                 },
                 "normalOpen": {
                     "description": "Property. Model:'https://schema.org/Number'. The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen. Default: False",
