@@ -1,0 +1,3 @@
+/* (Beta) Export of data model RotationSpeed of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE RotationSpeed_type AS ENUM ('RotationSpeed');
+CREATE TABLE RotationSpeed (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, denominatorMultiplier text, denominatorUnit text, description text, id text, location json, multiplier text, name text, owner json, seeAlso json, source text, type RotationSpeed_type, unit text, value text);
