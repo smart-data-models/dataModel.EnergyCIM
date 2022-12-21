@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GovSteamCC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GovSteamCC_type AS ENUM ('GovSteamCC');
+CREATE TABLE GovSteamCC (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, dhp text, dlp text, fhp text, flp text, id text, location json, mwbase text, name text, owner json, pmaxhp text, pmaxlp text, rhp text, rlp text, seeAlso json, source text, t1hp text, t1lp text, t3hp text, t3lp text, t4hp text, t4lp text, t5hp text, t5lp text, type GovSteamCC_type);
