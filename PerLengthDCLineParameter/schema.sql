@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PerLengthDCLineParameter of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PerLengthDCLineParameter_type AS ENUM ('PerLengthDCLineParameter');
+CREATE TABLE PerLengthDCLineParameter (DCLineSegments text, address json, alternateName text, areaServed text, capacitance text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inductance text, location json, name text, owner json, resistance text, seeAlso json, source text, type PerLengthDCLineParameter_type);
