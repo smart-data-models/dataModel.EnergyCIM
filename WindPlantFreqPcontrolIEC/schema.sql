@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WindPlantFreqPcontrolIEC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WindPlantFreqPcontrolIEC_type AS ENUM ('WindPlantFreqPcontrolIEC');
+CREATE TABLE WindPlantFreqPcontrolIEC (WindDynamicsLookupTable text, WindPlantIEC text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, dprefmax text, dprefmin text, id text, kiwpp text, kpwpp text, location json, name text, owner json, prefmax text, prefmin text, seeAlso json, source text, tpft text, tpfv text, twpffilt text, twppfilt text, type WindPlantFreqPcontrolIEC_type);
