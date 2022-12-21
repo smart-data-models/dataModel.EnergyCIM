@@ -1,0 +1,3 @@
+/* (Beta) Export of data model AsynchronousMachineEquivalentCircuit of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE AsynchronousMachineEquivalentCircuit_type AS ENUM ('AsynchronousMachineEquivalentCircuit');
+CREATE TABLE AsynchronousMachineEquivalentCircuit (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, rr1 text, rr2 text, seeAlso json, source text, type AsynchronousMachineEquivalentCircuit_type, xlr1 text, xlr2 text, xm text);
