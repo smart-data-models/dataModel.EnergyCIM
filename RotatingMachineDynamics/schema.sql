@@ -1,0 +1,3 @@
+/* (Beta) Export of data model RotatingMachineDynamics of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE RotatingMachineDynamics_type AS ENUM ('RotatingMachineDynamics');
+CREATE TABLE RotatingMachineDynamics (address json, alternateName text, areaServed text, damping text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inertia text, location json, name text, owner json, saturationFactor text, saturationFactor120 text, seeAlso json, source text, statorLeakageReactance text, statorResistance text, type RotatingMachineDynamics_type);
