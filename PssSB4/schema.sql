@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PssSB4 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PssSB4_type AS ENUM ('PssSB4');
+CREATE TABLE PssSB4 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, kx text, location json, name text, owner json, seeAlso json, source text, ta text, tb text, tc text, td text, te text, tt text, tx1 text, tx2 text, type PssSB4_type, vsmax text, vsmin text);
