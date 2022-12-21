@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SteadyStateHypothesisVersion of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SteadyStateHypothesisVersion_type AS ENUM ('SteadyStateHypothesisVersion');
+CREATE TABLE SteadyStateHypothesisVersion (address json, alternateName text, areaServed text, baseUML text, baseURI text, dataProvider text, date text, dateCreated timestamp, dateModified timestamp, description text, differenceModelURI text, entsoeUML text, entsoeURI text, id text, location json, modelDescriptionURI text, name text, namespaceRDF text, namespaceUML text, owner json, seeAlso json, shortName text, source text, type SteadyStateHypothesisVersion_type);
