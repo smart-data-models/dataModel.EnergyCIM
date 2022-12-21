@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PssIEEE3B of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PssIEEE3B_type AS ENUM ('PssIEEE3B');
+CREATE TABLE PssIEEE3B (a1 text, a2 text, a3 text, a4 text, a5 text, a6 text, a7 text, a8 text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inputSignal1Type text, inputSignal2Type text, ks1 text, ks2 text, location json, name text, owner json, seeAlso json, source text, t1 text, t2 text, tw1 text, tw2 text, tw3 text, type PssIEEE3B_type, vstmax text, vstmin text);
