@@ -1,0 +1,3 @@
+/* (Beta) Export of data model AsynchronousMachineDynamics of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE AsynchronousMachineDynamics_type AS ENUM ('AsynchronousMachineDynamics');
+CREATE TABLE AsynchronousMachineDynamics (AsynchronousMachine text, MechanicalLoadDynamics text, TurbineGovernorDynamics text, WindTurbineType1or2Dynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type AsynchronousMachineDynamics_type);
