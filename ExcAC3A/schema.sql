@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ExcAC3A of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ExcAC3A_type AS ENUM ('ExcAC3A');
+CREATE TABLE ExcAC3A (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efdn text, id text, ka text, kc text, kd text, ke text, kf text, kf1 text, kf2 text, klv text, kn text, kr text, ks text, location json, name text, owner json, seeAlso json, seve1 text, seve2 text, source text, ta text, tb text, tc text, te text, tf text, type ExcAC3A_type, vamax text, vamin text, ve1 text, ve2 text, vemin text, vfemax text, vlv text);
