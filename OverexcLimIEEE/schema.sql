@@ -1,0 +1,3 @@
+/* (Beta) Export of data model OverexcLimIEEE of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE OverexcLimIEEE_type AS ENUM ('OverexcLimIEEE');
+CREATE TABLE OverexcLimIEEE (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hyst text, id text, ifdlim text, ifdmax text, itfpu text, kcd text, kramp text, location json, name text, owner json, seeAlso json, source text, type OverexcLimIEEE_type);
