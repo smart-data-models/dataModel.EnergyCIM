@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ExcSCRX of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ExcSCRX_type AS ENUM ('ExcSCRX');
+CREATE TABLE ExcSCRX (address json, alternateName text, areaServed text, cswitch text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, emax text, emin text, id text, k text, location json, name text, owner json, rcrfd text, seeAlso json, source text, tatb text, tb text, te text, type ExcSCRX_type);
