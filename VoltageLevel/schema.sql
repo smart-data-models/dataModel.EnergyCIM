@@ -1,0 +1,3 @@
+/* (Beta) Export of data model VoltageLevel of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE VoltageLevel_type AS ENUM ('VoltageLevel');
+CREATE TABLE VoltageLevel (BaseVoltage text, Bays text, Substation text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, highVoltageLimit text, id text, location json, lowVoltageLimit text, name text, owner json, seeAlso json, source text, type VoltageLevel_type);
