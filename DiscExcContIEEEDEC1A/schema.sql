@@ -1,0 +1,3 @@
+/* (Beta) Export of data model DiscExcContIEEEDEC1A of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE DiscExcContIEEEDEC1A_type AS ENUM ('DiscExcContIEEEDEC1A');
+CREATE TABLE DiscExcContIEEEDEC1A (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, esc text, id text, kan text, ketl text, location json, name text, owner json, seeAlso json, source text, tan text, td text, tl1 text, tl2 text, tw5 text, type DiscExcContIEEEDEC1A_type, val text, vanmax text, vomax text, vomin text, vsmax text, vsmin text, vtc text, vtlmt text, vtm text, vtn text);
