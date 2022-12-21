@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WindAeroLinearIEC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WindAeroLinearIEC_type AS ENUM ('WindAeroLinearIEC');
+CREATE TABLE WindAeroLinearIEC (WindGenTurbineType3IEC text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, dpomega text, dptheta text, id text, location json, name text, omegazero text, owner json, pavail text, seeAlso json, source text, thetazero text, type WindAeroLinearIEC_type);
