@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ACLineSegment of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ACLineSegment_type AS ENUM ('ACLineSegment');
+CREATE TABLE ACLineSegment (address json, alternateName text, areaServed text, b0ch text, bch text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, g0ch text, gch text, id text, location json, name text, owner json, r text, r0 text, seeAlso json, shortCircuitEndTemperature text, source text, type ACLineSegment_type, x text, x0 text);
