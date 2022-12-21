@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PositionPoint of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PositionPoint_type AS ENUM ('PositionPoint');
+CREATE TABLE PositionPoint (Location text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, sequenceNumber text, source text, type PositionPoint_type, xPosition text, yPosition text, zPosition text);
