@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ExcIEEEST6B of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ExcIEEEST6B_type AS ENUM ('ExcIEEEST6B');
+CREATE TABLE ExcIEEEST6B (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, ilr text, kci text, kff text, kg text, kia text, klr text, km text, kpa text, location json, name text, oelin text, owner json, seeAlso json, source text, tg text, type ExcIEEEST6B_type, vamax text, vamin text, vrmax text, vrmin text);
