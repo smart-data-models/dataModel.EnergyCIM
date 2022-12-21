@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WindPlantUserDefined of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WindPlantUserDefined_type AS ENUM ('WindPlantUserDefined');
+CREATE TABLE WindPlantUserDefined (ProprietaryParameterDynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, proprietary text, seeAlso json, source text, type WindPlantUserDefined_type);
