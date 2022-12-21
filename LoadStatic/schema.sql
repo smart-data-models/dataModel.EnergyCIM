@@ -1,0 +1,3 @@
+/* (Beta) Export of data model LoadStatic of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE LoadStatic_type AS ENUM ('LoadStatic');
+CREATE TABLE LoadStatic (LoadAggregate text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, ep1 text, ep2 text, ep3 text, eq1 text, eq2 text, eq3 text, id text, kp1 text, kp2 text, kp3 text, kp4 text, kpf text, kq1 text, kq2 text, kq3 text, kq4 text, kqf text, location json, name text, owner json, seeAlso json, source text, staticLoadModelType text, type LoadStatic_type);
