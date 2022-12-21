@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Equipment of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Equipment_type AS ENUM ('Equipment');
+CREATE TABLE Equipment (EquipmentContainer text, OperationalLimitSet text, address json, aggregate text, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type Equipment_type);
