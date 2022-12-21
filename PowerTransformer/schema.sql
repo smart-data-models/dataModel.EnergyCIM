@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PowerTransformer of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PowerTransformer_type AS ENUM ('PowerTransformer');
+CREATE TABLE PowerTransformer (PowerTransformerEnd text, address json, alternateName text, areaServed text, beforeShCircuitHighestOperatingCurrent text, beforeShCircuitHighestOperatingVoltage text, beforeShortCircuitAnglePf text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, highSideMinOperatingU text, id text, isPartOfGeneratorUnit text, location json, name text, operationalValuesConsidered text, owner json, seeAlso json, source text, type PowerTransformer_type);
