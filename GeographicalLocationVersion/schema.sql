@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GeographicalLocationVersion of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GeographicalLocationVersion_type AS ENUM ('GeographicalLocationVersion');
+CREATE TABLE GeographicalLocationVersion (address json, alternateName text, areaServed text, baseUML text, baseURI text, dataProvider text, date text, dateCreated timestamp, dateModified timestamp, description text, differenceModelURI text, entsoeUML text, entsoeURI text, id text, location json, modelDescriptionURI text, name text, namespaceRDF text, namespaceUML text, owner json, seeAlso json, shortName text, source text, type GeographicalLocationVersion_type);
