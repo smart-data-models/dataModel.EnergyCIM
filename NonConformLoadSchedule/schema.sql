@@ -1,0 +1,3 @@
+/* (Beta) Export of data model NonConformLoadSchedule of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE NonConformLoadSchedule_type AS ENUM ('NonConformLoadSchedule');
+CREATE TABLE NonConformLoadSchedule (NonConformLoadGroup text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type NonConformLoadSchedule_type);
