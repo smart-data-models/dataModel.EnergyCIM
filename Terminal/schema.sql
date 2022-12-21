@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Terminal of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Terminal_type AS ENUM ('Terminal');
+CREATE TABLE Terminal (ConductingEquipment text, ConnectivityNode text, ConverterDCSides text, HasFirstMutualCoupling text, HasSecondMutualCoupling text, RegulatingControl text, RemoteInputSignal text, SvPowerFlow text, TieFlow text, TopologicalNode text, TransformerEnd text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, phases text, seeAlso json, source text, type Terminal_type);
