@@ -1,0 +1,3 @@
+/* (Beta) Export of data model LoadMotor of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE LoadMotor_type AS ENUM ('LoadMotor');
+CREATE TABLE LoadMotor (LoadAggregate text, address json, alternateName text, areaServed text, d text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, h text, id text, lfac text, location json, lp text, lpp text, ls text, name text, owner json, pfrac text, ra text, seeAlso json, source text, tbkr text, tpo text, tppo text, tv text, type LoadMotor_type, vt text);
