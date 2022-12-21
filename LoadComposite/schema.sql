@@ -1,0 +1,3 @@
+/* (Beta) Export of data model LoadComposite of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE LoadComposite_type AS ENUM ('LoadComposite');
+CREATE TABLE LoadComposite (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, epfd text, epfs text, epvd text, epvs text, eqfd text, eqfs text, eqvd text, eqvs text, h text, id text, lfrac text, location json, name text, owner json, pfrac text, seeAlso json, source text, type LoadComposite_type);
