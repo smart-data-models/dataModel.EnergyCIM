@@ -1,0 +1,3 @@
+/* (Beta) Export of data model UnderexcLimIEEE1 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE UnderexcLimIEEE1_type AS ENUM ('UnderexcLimIEEE1');
+CREATE TABLE UnderexcLimIEEE1 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, kuc text, kuf text, kui text, kul text, kur text, location json, name text, owner json, seeAlso json, source text, tu1 text, tu2 text, tu3 text, tu4 text, type UnderexcLimIEEE1_type, vucmax text, vuimax text, vuimin text, vulmax text, vulmin text, vurmax text);
