@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ConformLoad of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ConformLoad_type AS ENUM ('ConformLoad');
+CREATE TABLE ConformLoad (LoadGroup text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type ConformLoad_type);
