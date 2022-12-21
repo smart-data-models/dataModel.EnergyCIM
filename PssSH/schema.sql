@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PssSH of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PssSH_type AS ENUM ('PssSH');
+CREATE TABLE PssSH (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, k text, k0 text, k1 text, k2 text, k3 text, k4 text, location json, name text, owner json, seeAlso json, source text, t1 text, t2 text, t3 text, t4 text, td text, type PssSH_type, vsmax text, vsmin text);
