@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PssIEEE1A of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PssIEEE1A_type AS ENUM ('PssIEEE1A');
+CREATE TABLE PssIEEE1A (a1 text, a2 text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inputSignalType text, ks text, location json, name text, owner json, seeAlso json, source text, t1 text, t2 text, t3 text, t4 text, t5 text, t6 text, type PssIEEE1A_type, vrmax text, vrmin text);
