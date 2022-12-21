@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Reactance of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Reactance_type AS ENUM ('Reactance');
+CREATE TABLE Reactance (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, multiplier text, name text, owner json, seeAlso json, source text, type Reactance_type, unit text, value text);
