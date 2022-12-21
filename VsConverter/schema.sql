@@ -1,0 +1,3 @@
+/* (Beta) Export of data model VsConverter of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE VsConverter_type AS ENUM ('VsConverter');
+CREATE TABLE VsConverter (CapabilityCurve text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, delta text, description text, droop text, droopCompensation text, id text, location json, maxModulationIndex text, maxValveCurrent text, name text, owner json, pPccControl text, qPccControl text, qShare text, seeAlso json, source text, targetQpcc text, targetUpcc text, type VsConverter_type, uf text);
