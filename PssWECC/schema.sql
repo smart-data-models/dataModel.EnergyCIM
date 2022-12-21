@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PssWECC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PssWECC_type AS ENUM ('PssWECC');
+CREATE TABLE PssWECC (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inputSignal1Type text, inputSignal2Type text, k1 text, k2 text, location json, name text, owner json, seeAlso json, source text, t1 text, t10 text, t2 text, t3 text, t4 text, t5 text, t6 text, t7 text, t8 text, t9 text, type PssWECC_type, vcl text, vcu text, vsmax text, vsmin text);
