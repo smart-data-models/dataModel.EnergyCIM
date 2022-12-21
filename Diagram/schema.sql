@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Diagram of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Diagram_type AS ENUM ('Diagram');
+CREATE TABLE Diagram (DiagramElements text, DiagramStyle text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, orientation text, owner json, seeAlso json, source text, type Diagram_type, x1InitialView text, x2InitialView text, y1InitialView text, y2InitialView text);
