@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ExcOEX3T of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ExcOEX3T_type AS ENUM ('ExcOEX3T');
+CREATE TABLE ExcOEX3T (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, e1 text, e2 text, id text, ka text, kc text, kd text, ke text, kf text, location json, name text, owner json, see1 text, see2 text, seeAlso json, source text, t1 text, t2 text, t3 text, t4 text, t5 text, t6 text, te text, tf text, type ExcOEX3T_type, vrmax text, vrmin text);
