@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WindGeneratingUnit of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WindGeneratingUnit_type AS ENUM ('WindGeneratingUnit');
+CREATE TABLE WindGeneratingUnit (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type WindGeneratingUnit_type, windGenUnitType text);
