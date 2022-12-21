@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Pss2ST of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Pss2ST_type AS ENUM ('Pss2ST');
+CREATE TABLE Pss2ST (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inputSignal1Type text, inputSignal2Type text, k1 text, k2 text, location json, lsmax text, lsmin text, name text, owner json, seeAlso json, source text, t1 text, t10 text, t2 text, t3 text, t4 text, t5 text, t6 text, t7 text, t8 text, t9 text, type Pss2ST_type, vcl text, vcu text);
