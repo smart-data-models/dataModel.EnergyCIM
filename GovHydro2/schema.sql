@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GovHydro2 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GovHydro2_type AS ENUM ('GovHydro2');
+CREATE TABLE GovHydro2 (address json, alternateName text, areaServed text, aturb text, bturb text, dataProvider text, dateCreated timestamp, dateModified timestamp, db1 text, db2 text, description text, eps text, gv1 text, gv2 text, gv3 text, gv4 text, gv5 text, gv6 text, id text, kturb text, location json, mwbase text, name text, owner json, pgv1 text, pgv2 text, pgv3 text, pgv4 text, pgv5 text, pgv6 text, pmax text, pmin text, rperm text, rtemp text, seeAlso json, source text, tg text, tp text, tr text, tw text, type GovHydro2_type, uc text, uo text);
