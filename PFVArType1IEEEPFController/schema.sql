@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PFVArType1IEEEPFController of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PFVArType1IEEEPFController_type AS ENUM ('PFVArType1IEEEPFController');
+CREATE TABLE PFVArType1IEEEPFController (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, ovex text, owner json, seeAlso json, source text, tpfc text, type PFVArType1IEEEPFController_type, vitmin text, vpf text, vpfcbw text, vpfref text, vvtmax text, vvtmin text);
