@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WindContRotorRIEC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WindContRotorRIEC_type AS ENUM ('WindContRotorRIEC');
+CREATE TABLE WindContRotorRIEC (WindDynamicsLookupTable text, WindGenTurbineType2IEC text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, kirr text, komegafilt text, kpfilt text, kprr text, location json, name text, owner json, rmax text, rmin text, seeAlso json, source text, tomegafilt text, tpfilt text, type WindContRotorRIEC_type);
