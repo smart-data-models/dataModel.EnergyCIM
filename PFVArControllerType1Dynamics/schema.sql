@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PFVArControllerType1Dynamics of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PFVArControllerType1Dynamics_type AS ENUM ('PFVArControllerType1Dynamics');
+CREATE TABLE PFVArControllerType1Dynamics (ExcitationSystemDynamics text, RemoteInputSignal text, VoltageAdjusterDynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type PFVArControllerType1Dynamics_type);
