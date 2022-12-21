@@ -1,0 +1,3 @@
+/* (Beta) Export of data model EnergySource of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE EnergySource_type AS ENUM ('EnergySource');
+CREATE TABLE EnergySource (EnergySchedulingType text, WindTurbineType3or4Dynamics text, activePower text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, nominalVoltage text, owner json, r text, r0 text, reactivePower text, rn text, seeAlso json, source text, type EnergySource_type, voltageAngle text, voltageMagnitude text, x text, x0 text, xn text);
