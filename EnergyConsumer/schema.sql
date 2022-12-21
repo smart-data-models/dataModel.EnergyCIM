@@ -1,0 +1,3 @@
+/* (Beta) Export of data model EnergyConsumer of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE EnergyConsumer_type AS ENUM ('EnergyConsumer');
+CREATE TABLE EnergyConsumer (LoadDynamics text, LoadResponse text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, p text, pfixed text, pfixedPct text, q text, qfixed text, qfixedPct text, seeAlso json, source text, type EnergyConsumer_type);
