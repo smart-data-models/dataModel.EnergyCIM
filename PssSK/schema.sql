@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PssSK of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PssSK_type AS ENUM ('PssSK');
+CREATE TABLE PssSK (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, k1 text, k2 text, k3 text, location json, name text, owner json, seeAlso json, source text, t1 text, t2 text, t3 text, t4 text, t5 text, t6 text, type PssSK_type, vsmax text, vsmin text);
