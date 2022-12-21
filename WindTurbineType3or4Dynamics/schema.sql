@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WindTurbineType3or4Dynamics of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WindTurbineType3or4Dynamics_type AS ENUM ('WindTurbineType3or4Dynamics');
+CREATE TABLE WindTurbineType3or4Dynamics (EnergySource text, RemoteInputSignal text, WindPlantDynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type WindTurbineType3or4Dynamics_type);
