@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SeriesCompensator of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SeriesCompensator_type AS ENUM ('SeriesCompensator');
+CREATE TABLE SeriesCompensator (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, r text, r0 text, seeAlso json, source text, type SeriesCompensator_type, varistorPresent text, varistorRatedCurrent text, varistorVoltageThreshold text, x text, x0 text);
