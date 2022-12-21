@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SynchronousMachineDetailed of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SynchronousMachineDetailed_type AS ENUM ('SynchronousMachineDetailed');
+CREATE TABLE SynchronousMachineDetailed (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efdBaseRatio text, id text, ifdBaseType text, ifdBaseValue text, location json, name text, owner json, saturationFactor120QAxis text, saturationFactorQAxis text, seeAlso json, source text, type SynchronousMachineDetailed_type);
