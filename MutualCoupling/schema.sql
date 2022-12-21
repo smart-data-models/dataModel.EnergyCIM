@@ -1,0 +1,3 @@
+/* (Beta) Export of data model MutualCoupling of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE MutualCoupling_type AS ENUM ('MutualCoupling');
+CREATE TABLE MutualCoupling (First_Terminal text, Second_Terminal text, address json, alternateName text, areaServed text, b0ch text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, distance11 text, distance12 text, distance21 text, distance22 text, g0ch text, id text, location json, name text, owner json, r0 text, seeAlso json, source text, type MutualCoupling_type, x0 text);
