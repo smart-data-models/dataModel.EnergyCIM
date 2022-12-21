@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ExcST4B of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ExcST4B_type AS ENUM ('ExcST4B');
+CREATE TABLE ExcST4B (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, kc text, kg text, ki text, kim text, kir text, kp text, kpm text, kpr text, location json, lvgate text, name text, owner json, seeAlso json, source text, ta text, thetap text, type ExcST4B_type, uel text, vbmax text, vgmax text, vmmax text, vmmin text, vrmax text, vrmin text, xl text);
