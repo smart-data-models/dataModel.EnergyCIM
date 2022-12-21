@@ -1,0 +1,3 @@
+/* (Beta) Export of data model EquivalentBranch of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE EquivalentBranch_type AS ENUM ('EquivalentBranch');
+CREATE TABLE EquivalentBranch (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, negativeR12 text, negativeR21 text, negativeX12 text, negativeX21 text, owner json, positiveR12 text, positiveR21 text, positiveX12 text, positiveX21 text, r text, r21 text, seeAlso json, source text, type EquivalentBranch_type, x text, x21 text, zeroR12 text, zeroR21 text, zeroX12 text, zeroX21 text);
