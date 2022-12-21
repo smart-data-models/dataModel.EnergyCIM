@@ -1,0 +1,3 @@
+/* (Beta) Export of data model TapChanger of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE TapChanger_type AS ENUM ('TapChanger');
+CREATE TABLE TapChanger (SvTapStep text, TapChangerControl text, TapSchedules text, address json, alternateName text, areaServed text, controlEnabled text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, highStep text, id text, location json, lowStep text, ltcFlag text, name text, neutralStep text, neutralU text, normalStep text, owner json, seeAlso json, source text, step text, type TapChanger_type);
