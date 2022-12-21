@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ACDCConverter of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ACDCConverter_type AS ENUM ('ACDCConverter');
+CREATE TABLE ACDCConverter (DCTerminals text, PccTerminal text, address json, alternateName text, areaServed text, baseS text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, idc text, idleLoss text, location json, maxUdc text, minUdc text, name text, numberOfValves text, owner json, p text, poleLossP text, q text, ratedUdc text, resistiveLoss text, seeAlso json, source text, switchingLoss text, targetPpcc text, targetUdc text, type ACDCConverter_type, uc text, udc text, valveU0 text);
