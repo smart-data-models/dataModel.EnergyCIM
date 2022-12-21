@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GenICompensationForGenJ of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GenICompensationForGenJ_type AS ENUM ('GenICompensationForGenJ');
+CREATE TABLE GenICompensationForGenJ (SynchronousMachineDynamics text, VcompIEEEType2 text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, rcij text, seeAlso json, source text, type GenICompensationForGenJ_type, xcij text);
