@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ExcELIN2 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ExcELIN2_type AS ENUM ('ExcELIN2');
+CREATE TABLE ExcELIN2 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efdbas text, id text, iefmax text, iefmax2 text, iefmin text, k1 text, k1ec text, k2 text, k3 text, k4 text, kd1 text, ke2 text, ketb text, location json, name text, owner json, pid1max text, seeAlso json, seve1 text, seve2 text, source text, tb1 text, te text, te2 text, ti1 text, ti3 text, ti4 text, tr4 text, type ExcELIN2_type, upmax text, upmin text, ve1 text, ve2 text, xp text);
