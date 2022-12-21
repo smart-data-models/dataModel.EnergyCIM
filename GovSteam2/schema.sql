@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GovSteam2 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GovSteam2_type AS ENUM ('GovSteam2');
+CREATE TABLE GovSteam2 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, dbf text, description text, id text, k text, location json, mnef text, mxef text, name text, owner json, pmax text, pmin text, seeAlso json, source text, t1 text, t2 text, type GovSteam2_type);
