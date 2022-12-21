@@ -1,0 +1,3 @@
+/* (Beta) Export of data model BasicIntervalSchedule of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE BasicIntervalSchedule_type AS ENUM ('BasicIntervalSchedule');
+CREATE TABLE BasicIntervalSchedule (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, startTime text, type BasicIntervalSchedule_type, value1Unit text, value2Unit text);
