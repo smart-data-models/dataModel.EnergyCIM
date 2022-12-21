@@ -1,0 +1,3 @@
+/* (Beta) Export of data model TurbineGovernorUserDefined of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE TurbineGovernorUserDefined_type AS ENUM ('TurbineGovernorUserDefined');
+CREATE TABLE TurbineGovernorUserDefined (ProprietaryParameterDynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, proprietary text, seeAlso json, source text, type TurbineGovernorUserDefined_type);
