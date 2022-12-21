@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GovHydroWPID of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GovHydroWPID_type AS ENUM ('GovHydroWPID');
+CREATE TABLE GovHydroWPID (address json, alternateName text, areaServed text, d text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, gatmax text, gatmin text, gv1 text, gv2 text, gv3 text, id text, kd text, ki text, kp text, location json, mwbase text, name text, owner json, pgv1 text, pgv2 text, pgv3 text, pmax text, pmin text, reg text, seeAlso json, source text, ta text, tb text, treg text, tw text, type GovHydroWPID_type, velmax text, velmin text);
