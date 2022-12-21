@@ -1,0 +1,3 @@
+/* (Beta) Export of data model VCompIEEEType2 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE VCompIEEEType2_type AS ENUM ('VCompIEEEType2');
+CREATE TABLE VCompIEEEType2 (GenICompensationForGenJ text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, tr text, type VCompIEEEType2_type);
