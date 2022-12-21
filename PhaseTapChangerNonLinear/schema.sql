@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PhaseTapChangerNonLinear of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PhaseTapChangerNonLinear_type AS ENUM ('PhaseTapChangerNonLinear');
+CREATE TABLE PhaseTapChangerNonLinear (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type PhaseTapChangerNonLinear_type, voltageStepIncrement text, xMax text, xMin text);
