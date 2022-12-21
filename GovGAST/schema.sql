@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GovGAST of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GovGAST_type AS ENUM ('GovGAST');
+CREATE TABLE GovGAST (address json, alternateName text, areaServed text, at text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, dturb text, id text, kt text, location json, mwbase text, name text, owner json, r text, seeAlso json, source text, t1 text, t2 text, t3 text, type GovGAST_type, vmax text, vmin text);
