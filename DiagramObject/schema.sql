@@ -1,0 +1,3 @@
+/* (Beta) Export of data model DiagramObject of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE DiagramObject_type AS ENUM ('DiagramObject');
+CREATE TABLE DiagramObject (Diagram text, DiagramObjectPoints text, DiagramObjectStyle text, IdentifiedObject text, VisibilityLayers text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, drawingOrder text, id text, isPolygon text, location json, name text, offsetX text, offsetY text, owner json, rotation text, seeAlso json, source text, type DiagramObject_type);
