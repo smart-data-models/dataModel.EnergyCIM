@@ -1,0 +1,3 @@
+/* (Beta) Export of data model StaticVarCompensator of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE StaticVarCompensator_type AS ENUM ('StaticVarCompensator');
+CREATE TABLE StaticVarCompensator (address json, alternateName text, areaServed text, capacitiveRating text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, inductiveRating text, location json, name text, owner json, q text, sVCControlMode text, seeAlso json, slope text, source text, type StaticVarCompensator_type, voltageSetPoint text);
