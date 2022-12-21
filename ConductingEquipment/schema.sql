@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ConductingEquipment of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ConductingEquipment_type AS ENUM ('ConductingEquipment');
+CREATE TABLE ConductingEquipment (BaseVoltage text, SvStatus text, Terminals text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type ConductingEquipment_type);
