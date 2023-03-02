@@ -19,6 +19,9 @@ Switch:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -27,6 +30,9 @@ Switch:
           type: string
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
           type: string
       type: object
       x-ngsi:
@@ -81,7 +87,7 @@ Switch:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: Geoproperty. Geojson reference to the item. Point
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -102,7 +108,7 @@ Switch:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: Geoproperty. Geojson reference to the item. LineString
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -126,7 +132,7 @@ Switch:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: Geoproperty. Geojson reference to the item. Polygon
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -152,7 +158,7 @@ Switch:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiPoint
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -175,7 +181,7 @@ Switch:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiLineString
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -201,7 +207,7 @@ Switch:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiLineString
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -230,7 +236,7 @@ Switch:
           title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     name:
       description: The name of this item.
       type: string
