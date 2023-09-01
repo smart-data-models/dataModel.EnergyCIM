@@ -1,105 +1,160 @@
 DiscExcContIEEEDEC1A:
+
   description: 'Adapted from CIM data models. The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.  Reference: IEEE Standard 421.5-2005 Section 12.2.'
+
   properties:
+
     address:
+
       description: The mailing address
+
       properties:
+
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          description: The country. For example, Spain
           type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          description: The locality in which the street address is, and which is in the region
           type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          description: The region in which the locality is, and which is in the country
           type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
+          x-ngsi:
+            type: Property
+
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+
         postalCode:
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          description: The postal code. For example, 24004
           type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          description: The street address
           type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+
         streetNr:
-          description: Number identifying a specific property on a public street.
+          description: Number identifying a specific property on a public street
           type: string
+          x-ngsi:
+            type: Property
+
       type: object
+
       x-ngsi:
         model: https://schema.org/address
         type: Property
+
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+
     dataProvider:
-      description: A sequence of characters identifying the provider of the harmonised data entity.
+      description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
+
     dateCreated:
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateModified:
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
+
     esc:
       description: 'Speed change reference ().  Typical Value = 0.0015. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     id:
-      anyOf: &discexccontieeedec1a_-_properties_-_owner_-_items_-_anyof
-        - description: Property. Identifier format of any NGSI entity
+      anyOf:
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
+          x-ngsi:
+            type: Property
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
+
     kan:
       description: 'Discontinuous controller gain ().  Typical Value = 400. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ketl:
       description: 'Terminal voltage limiter gain ().  Typical Value = 47. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+
       oneOf:
-        - description: GeoProperty. Geojson reference to the item. Point
+
+        - description: Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -120,7 +175,10 @@ DiscExcContIEEEDEC1A:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: GeoProperty. Geojson reference to the item. LineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -144,7 +202,10 @@ DiscExcContIEEEDEC1A:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. Polygon
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -170,7 +231,10 @@ DiscExcContIEEEDEC1A:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiPoint
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -193,7 +257,10 @@ DiscExcContIEEEDEC1A:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -219,7 +286,10 @@ DiscExcContIEEEDEC1A:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -247,21 +317,41 @@ DiscExcContIEEEDEC1A:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
+          x-ngsi:
+            type: GeoProperty
+
       x-ngsi:
         type: GeoProperty
+
     name:
-      description: The name of this item.
+      description: The name of this item
       type: string
       x-ngsi:
         type: Property
+
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *discexccontieeedec1a_-_properties_-_owner_-_items_-_anyof
-        description: Property. Unique identifier of the entity
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         type: Property
+
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -274,41 +364,48 @@ DiscExcContIEEEDEC1A:
           type: string
       x-ngsi:
         type: Property
+
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
       type: string
       x-ngsi:
         type: Property
+
     tan:
       description: 'Discontinuous controller time constant ().  Typical Value = 0.08. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     td:
       description: 'Time constant ().  Typical Value = 0.03. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tl1:
       description: 'Time constant ().  Typical Value = 0.025. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tl2:
       description: 'Time constant ().  Typical Value = 1.25. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tw5:
       description: 'DEC washout time constant ().  Typical Value = 5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     type:
       description: NGSI type. It has to be DiscExcContIEEEDEC1A
       enum:
@@ -316,71 +413,89 @@ DiscExcContIEEEDEC1A:
       type: string
       x-ngsi:
         type: Property
+
     val:
       description: 'Regulator voltage reference ().  Typical Value = 5.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vanmax:
       description: 'Limiter for Van (). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vomax:
       description: 'Limiter ().  Typical Value = 0.3. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vomin:
       description: 'Limiter ().  Typical Value = 0.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vsmax:
       description: 'Limiter ().  Typical Value = 0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vsmin:
       description: 'Limiter ().  Typical Value = -0.066. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vtc:
       description: 'Terminal voltage level reference ().  Typical Value = 0.95. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vtlmt:
       description: 'Voltage reference ().  Typical Value = 1.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vtm:
       description: 'Voltage limits ().  Typical Value = 1.13. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     vtn:
       description: 'Voltage limits ().  Typical Value = 1.12. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
   required: []
+
   type: object
-  x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+
+  x-derived-from: ''
+
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
+
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DiscExcContIEEEDEC1A/LICENSE.md
+
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/DiscExcContIEEEDEC1A/schema.json
-  x-model-tags: ""
+
+  x-model-tags: ''
+
   x-version: 0.0.1
