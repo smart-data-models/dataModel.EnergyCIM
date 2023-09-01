@@ -1,189 +1,258 @@
 GovHydro3:
+
   description: Adapted from CIM data models. Modified IEEE Hydro Governor-Turbine Model.  This model differs from that defined in the IEEE modeling guideline paper in that the limits on gate position and velocity do not permit wind up of the upstream signals.
+
   properties:
+
     address:
+
       description: The mailing address
+
       properties:
+
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          description: The country. For example, Spain
           type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          description: The locality in which the street address is, and which is in the region
           type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          description: The region in which the locality is, and which is in the country
           type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
+          x-ngsi:
+            type: Property
+
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+
         postalCode:
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          description: The postal code. For example, 24004
           type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          description: The street address
           type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+
         streetNr:
-          description: Number identifying a specific property on a public street.
+          description: Number identifying a specific property on a public street
           type: string
+          x-ngsi:
+            type: Property
+
       type: object
+
       x-ngsi:
         model: https://schema.org/address
         type: Property
+
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+
     at:
       description: 'Turbine gain (At).  Typical Value = 1.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     dataProvider:
-      description: A sequence of characters identifying the provider of the harmonised data entity.
+      description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
+
     dateCreated:
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateModified:
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     db1:
       description: 'Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     db2:
       description: 'Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
+
     dturb:
       description: 'Turbine damping factor (Dturb).  Typical Value = 0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     eps:
       description: 'Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     governorControl:
       description: 'Governor control flag (Cflag). true = PID control is active false = double derivative control is active. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     gv1:
       description: 'Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     gv2:
       description: 'Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     gv3:
       description: 'Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     gv4:
       description: 'Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     gv5:
       description: 'Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     gv6:
       description: 'Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     h0:
       description: 'Turbine nominal head (H0).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     id:
-      anyOf: &govhydro3_-_properties_-_owner_-_items_-_anyof
-        - description: Property. Identifier format of any NGSI entity
+      anyOf:
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
+          x-ngsi:
+            type: Property
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
+
     k1:
       description: 'Derivative gain (K1).  Typical Value = 0.01. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     k2:
       description: 'Double derivative gain, if Cflag = -1 (K2).  Typical Value = 2.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kg:
       description: 'Gate servo gain (Kg).  Typical Value = 2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ki:
       description: 'Integral gain (Ki).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+
       oneOf:
-        - description: GeoProperty. Geojson reference to the item. Point
+
+        - description: Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -204,7 +273,10 @@ GovHydro3:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: GeoProperty. Geojson reference to the item. LineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -228,7 +300,10 @@ GovHydro3:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. Polygon
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -254,7 +329,10 @@ GovHydro3:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiPoint
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -277,7 +355,10 @@ GovHydro3:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -303,7 +384,10 @@ GovHydro3:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -331,93 +415,125 @@ GovHydro3:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
+          x-ngsi:
+            type: GeoProperty
+
       x-ngsi:
         type: GeoProperty
+
     mwbase:
       description: 'Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     name:
-      description: The name of this item.
+      description: The name of this item
       type: string
       x-ngsi:
         type: Property
+
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *govhydro3_-_properties_-_owner_-_items_-_anyof
-        description: Property. Unique identifier of the entity
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         type: Property
+
     pgv1:
       description: 'Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pgv2:
       description: 'Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pgv3:
       description: 'Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pgv4:
       description: 'Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pgv5:
       description: 'Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pgv6:
       description: 'Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pmax:
       description: 'Maximum gate opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pmin:
       description: 'Minimum gate opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     qnl:
       description: 'No-load turbine flow at nominal head (Qnl).  Typical Value = 0.08. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     relec:
       description: 'Steady-state droop, PU, for electrical power feedback (Relec).  Typical Value = 0.05. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     rgate:
       description: 'Steady-state droop, PU, for governor output feedback (Rgate).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -430,41 +546,48 @@ GovHydro3:
           type: string
       x-ngsi:
         type: Property
+
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
       type: string
       x-ngsi:
         type: Property
+
     td:
       description: 'Input filter time constant (Td).  Typical Value = 0.05. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tf:
       description: 'Washout time constant (Tf).  Typical Value = 0.1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tp:
       description: 'Gate servo time constant (Tp).  Typical Value = 0.05. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tt:
       description: 'Power feedback time constant (Tt).  Typical Value = 0.2. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tw:
       description: 'Water inertia time constant (Tw).  Typical Value = 1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     type:
       description: NGSI type. It has to be GovHydro3
       enum:
@@ -472,23 +595,33 @@ GovHydro3:
       type: string
       x-ngsi:
         type: Property
+
     velcl:
       description: 'Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     velop:
       description: 'Maximum gate opening velocity (Velop).  Unit = PU/sec. Typical Value = 0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
   required: []
+
   type: object
-  x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+
+  x-derived-from: ''
+
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
+
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro3/LICENSE.md
+
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro3/schema.json
-  x-model-tags: ""
+
+  x-model-tags: ''
+
   x-version: 0.0.1
