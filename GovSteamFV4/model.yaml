@@ -1,195 +1,265 @@
 GovSteamFV4:
+
   description: Adapted from CIM data models. Detailed electro-hydraulic governor for steam unit.
+
   properties:
+
     address:
+
       description: The mailing address
+
       properties:
+
         addressCountry:
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
+          description: The country. For example, Spain
           type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+
         addressLocality:
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''
+          description: The locality in which the street address is, and which is in the region
           type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+
         addressRegion:
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
+          description: The region in which the locality is, and which is in the country
           type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
+          x-ngsi:
+            type: Property
+
         postOfficeBoxNumber:
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+
         postalCode:
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''
+          description: The postal code. For example, 24004
           type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+
         streetAddress:
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
+          description: The street address
           type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+
         streetNr:
-          description: Number identifying a specific property on a public street.
+          description: Number identifying a specific property on a public street
           type: string
+          x-ngsi:
+            type: Property
+
       type: object
+
       x-ngsi:
         model: https://schema.org/address
         type: Property
+
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+
     cpsmn:
       description: 'Minimum value of pressure regulator output (Cpsmn).  Typical Value = -1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     cpsmx:
       description: 'Maximum value of pressure regulator output (Cpsmx).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     crmn:
       description: 'Minimum value of regulator set-point (Crmn).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     crmx:
       description: 'Maximum value of regulator set-point (Crmx).  Typical Value = 1.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     dataProvider:
-      description: A sequence of characters identifying the provider of the harmonised data entity.
+      description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
+
     dateCreated:
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateModified:
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
+
     id:
-      anyOf: &govsteamfv4_-_properties_-_owner_-_items_-_anyof
-        - description: Property. Identifier format of any NGSI entity
+      anyOf:
+        - description: Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: Property. Identifier format of any NGSI entity
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
           format: uri
           type: string
+          x-ngsi:
+            type: Property
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
+
     kdc:
       description: 'Derivative gain of pressure regulator (Kdc).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kf1:
       description: 'Frequency bias (reciprocal of droop) (Kf1).  Typical Value = 20. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kf3:
       description: 'Frequency control (reciprocal of droop) (Kf3).  Typical Value = 20. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     khp:
       description: 'Fraction  of total turbine output generated by HP part (Khp).  Typical Value = 0.35. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kic:
       description: 'Integral gain of pressure regulator (Kic).  Typical Value = 0.0033. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kip:
       description: 'Integral gain of pressure feedback regulator (Kip).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kit:
       description: 'Integral gain of electro-hydraulic regulator (Kit).  Typical Value = 0.04. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kmp1:
       description: 'First gain coefficient of  intercept valves characteristic (Kmp1).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kmp2:
       description: 'Second gain coefficient of intercept valves characteristic (Kmp2).  Typical Value = 3.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kpc:
       description: 'Proportional gain of pressure regulator (Kpc).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kpp:
       description: 'Proportional gain of pressure feedback regulator (Kpp).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     kpt:
       description: 'Proportional gain of electro-hydraulic regulator (Kpt).  Typical Value = 0.3. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     krc:
       description: 'Maximum variation of fuel flow (Krc).  Typical Value = 0.05. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ksh:
       description: 'Pressure loss due to flow friction in the boiler tubes (Ksh).  Typical Value = 0.08. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+
       oneOf:
-        - description: GeoProperty. Geojson reference to the item. Point
+
+        - description: Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -210,7 +280,10 @@ GovSteamFV4:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: GeoProperty. Geojson reference to the item. LineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -234,7 +307,10 @@ GovSteamFV4:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. Polygon
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -260,7 +336,10 @@ GovSteamFV4:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiPoint
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -283,7 +362,10 @@ GovSteamFV4:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -309,7 +391,10 @@ GovSteamFV4:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: GeoProperty. Geojson reference to the item. MultiLineString
+          x-ngsi:
+            type: GeoProperty
+
+        - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -337,87 +422,118 @@ GovSteamFV4:
             - coordinates
           title: GeoJSON MultiPolygon
           type: object
+          x-ngsi:
+            type: GeoProperty
+
       x-ngsi:
         type: GeoProperty
+
     lpi:
       description: 'Maximum negative power error (Lpi).  Typical Value = -0.15. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     lps:
       description: 'Maximum positive power error (Lps).  Typical Value = 0.03. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     mnef:
       description: 'Lower limit for frequency correction (MN).  Typical Value = -0.05. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     mxef:
       description: 'Upper limit for frequency correction (MX).  Typical Value = 0.05. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     name:
-      description: The name of this item.
+      description: The name of this item
       type: string
       x-ngsi:
         type: Property
+
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *govsteamfv4_-_properties_-_owner_-_items_-_anyof
-        description: Property. Unique identifier of the entity
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
         type: Property
+
     pr1:
       description: 'First value of pressure set point static characteristic (Pr1).  Typical Value = 0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     pr2:
       description: 'Second value of pressure set point static characteristic, corresponding to Ps0 = 1.0 PU (Pr2).  Typical Value = 0.75. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     psmn:
       description: 'Minimum value of pressure set point static characteristic (Psmn).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     rsmimn:
       description: 'Minimum value of integral regulator (Rsmimn).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     rsmimx:
       description: 'Maximum value of integral regulator (Rsmimx).  Typical Value = 1.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     rvgmn:
       description: 'Minimum value of integral regulator (Rvgmn).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     rvgmx:
       description: 'Maximum value of integral regulator (Rvgmx).  Typical Value = 1.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -430,113 +546,132 @@ GovSteamFV4:
           type: string
       x-ngsi:
         type: Property
+
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
       type: string
       x-ngsi:
         type: Property
+
     srmn:
       description: 'Minimum valve opening (Srmn).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     srmx:
       description: 'Maximum valve opening (Srmx).  Typical Value = 1.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     srsmp:
       description: 'Intercept valves characteristic discontinuity point (Srsmp).  Typical Value = 0.43. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     svmn:
       description: 'Maximum regulator gate closing velocity (Svmn).  Typical Value = -0.0333. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     svmx:
       description: 'Maximum regulator gate opening velocity (Svmx).  Typical Value = 0.0333. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ta:
       description: 'Control valves rate opening time (Ta).  Typical Value = 0.8. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tam:
       description: 'Intercept valves rate opening time (Tam).  Typical Value = 0.8. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tc:
       description: 'Control valves rate closing time (Tc).  Typical Value = 0.5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tcm:
       description: 'Intercept valves rate closing time (Tcm).  Typical Value = 0.5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tdc:
       description: 'Derivative time constant of pressure regulator (Tdc).  Typical Value = 90. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tf1:
       description: 'Time constant of fuel regulation (Tf1).  Typical Value = 10. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tf2:
       description: 'Time constant of steam chest (Tf2).  Typical Value = 10. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     thp:
       description: 'High pressure (HP) time constant of the turbine (Thp).  Typical Value = 0.15. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tmp:
       description: 'Low pressure (LP) time constant of the turbine (Tmp).  Typical Value = 0.4. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     trh:
       description: 'Reheater  time constant of the turbine (Trh).  Typical Value = 10. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     tv:
       description: 'Boiler time constant (Tv).  Typical Value = 60. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ty:
       description: 'Control valves servo time constant (Ty).  Typical Value = 0.1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     type:
       description: NGSI type. It has to be GovSteamFV4
       enum:
@@ -544,41 +679,54 @@ GovSteamFV4:
       type: string
       x-ngsi:
         type: Property
+
     y:
       description: 'Coefficient of linearized equations of turbine (Stodola formulation) (Y).  Typical Value = 0.13. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     yhpmn:
       description: 'Minimum control valve position (Yhpmn).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     yhpmx:
       description: 'Maximum control valve position (Yhpmx).  Typical Value = 1.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ympmn:
       description: 'Minimum intercept valve position (Ympmn).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
     ympmx:
       description: 'Maximum intercept valve position (Ympmx).  Typical Value = 1.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
+
   required: []
+
   type: object
-  x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+
+  x-derived-from: ''
+
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
+
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovSteamFV4/LICENSE.md
+
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV4/schema.json
-  x-model-tags: ""
+
+  x-model-tags: ''
+
   x-version: 0.0.1
