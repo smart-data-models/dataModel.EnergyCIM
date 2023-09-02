@@ -1,121 +1,98 @@
 Pss2B:
-
   description: Adapted from CIM data models. Modified IEEE PSS2B Model.  Extra lead/lag (or rate) block added at end (up to 4 lead/lags total).
-
   properties:
-
     a:
       description: 'Numerator constant (a).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -133,55 +110,45 @@ Pss2B:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     inputSignal1Type:
-      description: 'Type of input signal #1.  Typical Value = rotorSpeed. Default: None'
+      description: "Type of input signal #1.  Typical Value = rotorSpeed. Default: None"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     inputSignal2Type:
-      description: 'Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None'
+      description: "Type of input signal #2.  Typical Value = generatorElectricalPower. Default: None"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ks1:
       description: 'Stabilizer gain (Ks1).  Typical Value = 12. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ks2:
-      description: 'Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0'
+      description: "Gain on signal #2 (Ks2).  Typical Value = 0.2. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ks3:
-      description: 'Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0'
+      description: "Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ks4:
-      description: 'Gain on signal #2 input after ramp-tracking filter (Ks4).  Typical Value = 1. Default: 0.0'
+      description: "Gain on signal #2 input after ramp-tracking filter (Ks4).  Typical Value = 1. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -205,7 +172,6 @@ Pss2B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -232,7 +198,6 @@ Pss2B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -261,7 +226,6 @@ Pss2B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -287,7 +251,6 @@ Pss2B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -316,7 +279,6 @@ Pss2B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -347,30 +309,25 @@ Pss2B:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     m:
       description: 'Denominator order of ramp tracking filter (M).  Typical Value = 5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     n:
       description: 'Order of ramp tracking filter (N).  Typical Value = 1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -393,7 +350,6 @@ Pss2B:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -406,125 +362,107 @@ Pss2B:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     t1:
       description: 'Lead/lag time constant (T1).  Typical Value = 0.12. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t10:
       description: 'Lead/lag time constant (T10).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t11:
       description: 'Lead/lag time constant (T11).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t2:
       description: 'Lead/lag time constant (T2).  Typical Value = 0.02. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t3:
       description: 'Lead/lag time constant (T3).  Typical Value = 0.3. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t4:
       description: 'Lead/lag time constant (T4).  Typical Value = 0.02. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t6:
-      description: 'Time constant on signal #1 (T6).  Typical Value = 0. Default: 0'
+      description: "Time constant on signal #1 (T6).  Typical Value = 0. Default: 0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t7:
-      description: 'Time constant on signal #2 (T7).  Typical Value = 2. Default: 0'
+      description: "Time constant on signal #2 (T7).  Typical Value = 2. Default: 0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t8:
       description: 'Lead of ramp tracking filter (T8).  Typical Value = 0.2. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t9:
       description: 'Lag of ramp tracking filter (T9).  Typical Value = 0.1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ta:
       description: 'Lead constant (Ta).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tb:
       description: 'Lag time constant (Tb).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tw1:
-      description: 'First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0'
+      description: "First washout on signal #1 (Tw1).  Typical Value = 2. Default: 0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tw2:
-      description: 'Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0'
+      description: "Second washout on signal #1 (Tw2).  Typical Value = 2. Default: 0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tw3:
-      description: 'First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0'
+      description: "First washout on signal #2 (Tw3).  Typical Value = 2. Default: 0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tw4:
-      description: 'Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0'
+      description: "Second washout on signal #2 (Tw4).  Typical Value = 0. Default: 0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be Pss2B
       enum:
@@ -532,61 +470,47 @@ Pss2B:
       type: string
       x-ngsi:
         type: Property
-
     vsi1max:
-      description: 'Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0'
+      description: "Input signal #1 max limit (Vsi1max).  Typical Value = 2. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vsi1min:
-      description: 'Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0'
+      description: "Input signal #1 min limit (Vsi1min).  Typical Value = -2. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vsi2max:
-      description: 'Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0'
+      description: "Input signal #2 max limit (Vsi2max).  Typical Value = 2. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vsi2min:
-      description: 'Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0'
+      description: "Input signal #2 min limit (Vsi2min).  Typical Value = -2. Default: 0.0"
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vstmax:
       description: 'Stabilizer output max limit (Vstmax).  Typical Value = 0.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vstmin:
       description: 'Stabilizer output min limit (Vstmin).  Typical Value = -0.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Pss2B/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss2B/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
