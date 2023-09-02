@@ -1,142 +1,116 @@
 WindContPType3IEC:
-
   description: 'Adapted from CIM data models. P control model Type 3.  Reference: IEC Standard 61400-27-1 Section 6.6.5.3.'
-
   properties:
-
     WindDynamicsLookupTable:
       description: 'The P control type 3 model with which this wind dynamics lookup table is associated. Default: ''list'''
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     WindGenTurbineType3IEC:
       description: 'Wind turbine type 3 model with which this Wind control P type 3 model is associated. Default: None'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     dpmax:
       description: 'Maximum wind turbine power ramp rate (). It is project dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     dtrisemaxlvrt:
       description: 'Limitation of torque rise rate during LVRT for S (d). It is project dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -154,34 +128,27 @@ WindContPType3IEC:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     kdtd:
       description: 'Gain for active drive train damping (). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kip:
       description: 'PI controller integration parameter (). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kpp:
       description: 'PI controller proportional gain (). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -205,7 +172,6 @@ WindContPType3IEC:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -232,7 +198,6 @@ WindContPType3IEC:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -261,7 +226,6 @@ WindContPType3IEC:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -287,7 +251,6 @@ WindContPType3IEC:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -316,7 +279,6 @@ WindContPType3IEC:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -347,30 +309,25 @@ WindContPType3IEC:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     mplvrt:
       description: 'Enable LVRT power control mode (M true = 1: voltage control false = 0: reactive power control.  It is project dependent parameter. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     omegaoffset:
       description: 'Offset to reference value that limits controller action during rotor speed changes (omega). It is case dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -393,21 +350,18 @@ WindContPType3IEC:
       type: array
       x-ngsi:
         type: Property
-
     pdtdmax:
       description: 'Maximum active drive train damping power (). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     rramp:
       description: 'Ramp limitation of torque, required in some grid codes (). It is project dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -420,69 +374,59 @@ WindContPType3IEC:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     tdvs:
       description: 'Timedelay after deep voltage sags (T). It is project dependent parameter. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     temin:
       description: 'Minimum electrical generator torque (). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tomegafilt:
       description: 'Filter time constant for generator speed measurement (). It is type dependent parameter. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tpfilt:
       description: 'Filter time constant for power measurement (). It is type dependent parameter. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tpord:
       description: 'Time constant in power order lag (). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tufilt:
       description: 'Filter time constant for voltage measurement (). It is type dependent parameter. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tuscale:
       description: 'Voltage scaling factor of reset-torque (T). It is project dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     twref:
       description: 'Time constant in speed reference filter (). It is type dependent parameter. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be WindContPType3IEC
       enum:
@@ -490,47 +434,35 @@ WindContPType3IEC:
       type: string
       x-ngsi:
         type: Property
-
     udvs:
       description: 'Voltage limit for hold LVRT status after deep voltage sags (). It is project dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     updip:
       description: 'Voltage dip threshold for P-control ().  Part of turbine control, often different (e.g 0.8) from converter thresholds. It is project dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     wdtd:
       description: 'Active drive train damping frequency (omega). It can be calculated from two mass model parameters. It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     zeta:
       description: 'Coefficient for active drive train damping (zeta). It is type dependent parameter. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindContPType3IEC/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType3IEC/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
