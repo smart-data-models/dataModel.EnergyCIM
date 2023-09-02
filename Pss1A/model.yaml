@@ -1,170 +1,140 @@
 Pss1A:
-
   description: Adapted from CIM data models. Single input power system stabilizer. It is a modified version in order to allow representation of various vendors' implementations on PSS type 1A.
-
   properties:
-
     a1:
       description: 'Notch filter parameter (A1). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a2:
       description: 'Notch filter parameter (A2). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a3:
       description: 'Notch filter parameter (A3). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a4:
       description: 'Notch filter parameter (A4). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a5:
       description: 'Notch filter parameter (A5). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a6:
       description: 'Notch filter parameter (A6). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a7:
       description: 'Notch filter parameter (A7). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     a8:
       description: 'Notch filter parameter (A8). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -182,34 +152,27 @@ Pss1A:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     inputSignalType:
       description: 'Type of input signal. Default: None'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kd:
       description: 'Selector (Kd).  true = e used false = e not used. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ks:
       description: 'Stabilizer gain (Ks). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -233,7 +196,6 @@ Pss1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -260,7 +222,6 @@ Pss1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -289,7 +250,6 @@ Pss1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -315,7 +275,6 @@ Pss1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -344,7 +303,6 @@ Pss1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -375,16 +333,13 @@ Pss1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -407,7 +362,6 @@ Pss1A:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -420,62 +374,53 @@ Pss1A:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     t1:
       description: 'Lead/lag time constant (T1). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t2:
       description: 'Lead/lag time constant (T2). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t3:
       description: 'Lead/lag time constant (T3). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t4:
       description: 'Lead/lag time constant (T4). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t5:
       description: 'Washout time constant (T5). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t6:
       description: 'Transducer time constant (T6). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tdelay:
       description: 'Time constant (Tdelay). Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be Pss1A
       enum:
@@ -483,47 +428,35 @@ Pss1A:
       type: string
       x-ngsi:
         type: Property
-
     vcl:
       description: 'Stabilizer input cutoff threshold (Vcl). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vcu:
       description: 'Stabilizer input cutoff threshold (Vcu). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vrmax:
       description: 'Maximum stabilizer output (Vrmax). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vrmin:
       description: 'Minimum stabilizer output (Vrmin). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Pss1A/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss1A/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
