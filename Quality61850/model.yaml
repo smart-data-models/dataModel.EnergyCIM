@@ -1,135 +1,110 @@
 Quality61850:
-
-  description: Adapted from CIM data models. Quality flags in this class are as defined in IEC 61850, except for estimatorReplaced, which has been included in this class for convenience.
-
+  description: 'Adapted from CIM data models. Quality flags in this class are as defined in IEC 61850, except for estimatorReplaced, which has been included in this class for convenience.'
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     badReference:
       description: 'Measurement value may be incorrect due to a reference being out of calibration. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     estimatorReplaced:
       description: 'Value has been replaced by State Estimator. estimatorReplaced is not an IEC61850 quality bit but has been put in this class for convenience. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     failure:
       description: 'This identifier indicates that a supervision function has detected an internal or external failure, e.g. communication failure. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -147,13 +122,9 @@ Quality61850:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -177,7 +148,6 @@ Quality61850:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -204,7 +174,6 @@ Quality61850:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -233,7 +202,6 @@ Quality61850:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -259,7 +227,6 @@ Quality61850:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -288,7 +255,6 @@ Quality61850:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -319,51 +285,43 @@ Quality61850:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     oldData:
       description: 'Measurement value is old and possibly invalid, as it has not been successfully updated during a specified time interval. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     operatorBlocked:
       description: 'Measurement value is blocked and hence unavailable for transmission. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     oscillatory:
       description: 'To prevent some overload of the communication it is sensible to detect and suppress oscillating (fast changing) binary inputs. If a signal changes in a defined time (tosc) twice in the same direction (from 0 to 1 or from 1 to 0) then oscillation is detected and the detail quality identifier `oscillatory` is set. If it is detected a configured numbers of transient changes could be passed by. In this time the validity status `questionable` is set. If after this defined numbers of changes the signal is still in the oscillating state the value shall be set either to the opposite state of the previous stable value or to a defined default value. In this case the validity status `questionable` is reset and `invalid` is set as long as the signal is oscillating. If it is configured such that no transient changes should be passed by then the validity status `invalid` is set immediately in addition to the detail quality identifier `oscillatory` (used for status information only). Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     outOfRange:
       description: 'Measurement value is beyond a predefined range of value. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     overFlow:
       description: 'Measurement value is beyond the capability of being  represented properly. For example, a counter value overflows from maximum count back to a value of zero. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -386,7 +344,6 @@ Quality61850:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -399,28 +356,24 @@ Quality61850:
           type: string
       x-ngsi:
         type: Property
-
     source:
       description: 'Source gives information related to the origin of a value. The value may be acquired from the process, defaulted or substituted. Default: None'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     suspect:
       description: 'A correlation function has detected that the value is not consitent with other values. Typically set by a network State Estimator. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     test:
       description: 'Measurement value is transmitted for test purposes. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be Quality61850
       enum:
@@ -428,26 +381,17 @@ Quality61850:
       type: string
       x-ngsi:
         type: Property
-
     validity:
       description: 'Validity of the measurement value. Default: None'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Quality61850/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
