@@ -1,142 +1,116 @@
 PssIEEE4B:
-
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.  Reference: IEEE 4B 421.5-2005 Section 8.4.'
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     bwh1:
       description: 'Notch filter 1 (high-frequency band): Three dB bandwidth (B). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     bwh2:
       description: 'Notch filter 2 (high-frequency band): Three dB bandwidth (B). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     bwl1:
       description: 'Notch filter 1 (low-frequency band): Three dB bandwidth (B). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     bwl2:
       description: 'Notch filter 2 (low-frequency band): Three dB bandwidth (B). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -154,118 +128,99 @@ PssIEEE4B:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     kh:
       description: 'High band gain (K).  Typical Value = 120. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kh1:
       description: 'High band differential filter gain (K).  Typical Value = 66. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kh11:
       description: 'High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kh17:
       description: 'High band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kh2:
       description: 'High band differential filter gain (K).  Typical Value = 66. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ki:
       description: 'Intermediate band gain (K).  Typical Value = 30. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ki1:
       description: 'Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ki11:
       description: 'Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ki17:
       description: 'Intermediate band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ki2:
       description: 'Intermediate band differential filter gain (K).  Typical Value = 66. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kl:
       description: 'Low band gain (K).  Typical Value = 7.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kl1:
       description: 'Low band differential filter gain (K).  Typical Value = 66. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kl11:
       description: 'Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kl17:
       description: 'Low band first lead-lag blocks coefficient (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kl2:
       description: 'Low band differential filter gain (K).  Typical Value = 66. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -289,7 +244,6 @@ PssIEEE4B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -316,7 +270,6 @@ PssIEEE4B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -345,7 +298,6 @@ PssIEEE4B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -371,7 +323,6 @@ PssIEEE4B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -400,7 +351,6 @@ PssIEEE4B:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -431,44 +381,37 @@ PssIEEE4B:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     omeganh1:
       description: 'Notch filter 1 (high-frequency band): filter frequency (omega). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     omeganh2:
       description: 'Notch filter 2 (high-frequency band): filter frequency (omega). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     omeganl1:
       description: 'Notch filter 1 (low-frequency band): filter frequency (omega). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     omeganl2:
       description: 'Notch filter 2 (low-frequency band): filter frequency (omega). Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -491,7 +434,6 @@ PssIEEE4B:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -504,265 +446,227 @@ PssIEEE4B:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     th1:
       description: 'High band time constant (T).  Typical Value = 0.01513. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th10:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th11:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th12:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th2:
       description: 'High band time constant (T).  Typical Value = 0.01816. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th3:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th4:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th5:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th6:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th7:
       description: 'High band time constant (T).  Typical Value = 0.01816. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th8:
       description: 'High band time constant (T).  Typical Value = 0.02179. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     th9:
       description: 'High band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti1:
       description: 'Intermediate band time constant (T).  Typical Value = 0.173. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti10:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti11:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti12:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti2:
       description: 'Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti3:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti4:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti5:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti6:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti7:
       description: 'Intermediate band time constant (T).  Typical Value = 0.2075. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti8:
       description: 'Intermediate band time constant (T).  Typical Value = 0.2491. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ti9:
       description: 'Intermediate band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl1:
       description: 'Low band time constant (T).  Typical Value = 1.73. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl10:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl11:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl12:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl2:
       description: 'Low band time constant (T).  Typical Value = 2.075. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl3:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl4:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl5:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl6:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl7:
       description: 'Low band time constant (T).  Typical Value = 2.075. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl8:
       description: 'Low band time constant (T).  Typical Value = 2.491. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tl9:
       description: 'Low band time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be PssIEEE4B
       enum:
@@ -770,75 +674,59 @@ PssIEEE4B:
       type: string
       x-ngsi:
         type: Property
-
     vhmax:
       description: 'High band output maximum limit (V).  Typical Value = 0.6. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vhmin:
       description: 'High band output minimum limit (V).  Typical Value = -0.6. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vimax:
       description: 'Intermediate band output maximum limit (V).  Typical Value = 0.6. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vimin:
       description: 'Intermediate band output minimum limit (V).  Typical Value = -0.6. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vlmax:
       description: 'Low band output maximum limit (V).  Typical Value = 0.075. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vlmin:
       description: 'Low band output minimum limit (V).  Typical Value = -0.075. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vstmax:
       description: 'PSS output maximum limit (V).  Typical Value = 0.15. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vstmin:
       description: 'PSS output minimum limit (V).  Typical Value = -0.15. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE4B/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE4B/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
