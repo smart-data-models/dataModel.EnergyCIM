@@ -1,177 +1,146 @@
 GovSteam1:
-
-  description: Adapted from CIM data models. Steam turbine governor model, based on the GovSteamIEEE1 model  (with optional deadband and nonlinear valve gain added).
-
+  description: 'Adapted from CIM data models. Steam turbine governor model, based on the GovSteamIEEE1 model  (with optional deadband and nonlinear valve gain added).'
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     db1:
       description: 'Intentional deadband width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     db2:
       description: 'Unintentional deadband (db2).  Unit = MW.  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     eps:
       description: 'Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     gv1:
       description: 'Nonlinear gain valve position point 1 (GV1).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     gv2:
       description: 'Nonlinear gain valve position point 2 (GV2).  Typical Value = 0.4. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     gv3:
       description: 'Nonlinear gain valve position point 3 (GV3).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     gv4:
       description: 'Nonlinear gain valve position point 4 (GV4).  Typical Value = 0.6. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     gv5:
       description: 'Nonlinear gain valve position point 5 (GV5).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     gv6:
       description: 'Nonlinear gain valve position point 6 (GV6).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -189,76 +158,63 @@ GovSteam1:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     k:
       description: 'Governor gain (reciprocal of droop) (K) (>0).  Typical Value = 25. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k1:
       description: 'Fraction of HP shaft power after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k2:
       description: 'Fraction of LP shaft power after first boiler pass (K2).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k3:
       description: 'Fraction of HP shaft power after second boiler pass (K3).  Typical Value = 0.3. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k4:
       description: 'Fraction of LP shaft power after second boiler pass (K4).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k5:
       description: 'Fraction of HP shaft power after third boiler pass (K5).  Typical Value = 0.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k6:
       description: 'Fraction of LP shaft power after third boiler pass (K6).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k7:
       description: 'Fraction of HP shaft power after fourth boiler pass (K7).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     k8:
       description: 'Fraction of LP shaft power after fourth boiler pass (K8).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -282,7 +238,6 @@ GovSteam1:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -309,7 +264,6 @@ GovSteam1:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -338,7 +292,6 @@ GovSteam1:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -364,7 +317,6 @@ GovSteam1:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -393,7 +345,6 @@ GovSteam1:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -424,23 +375,19 @@ GovSteam1:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     mwbase:
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -463,77 +410,66 @@ GovSteam1:
       type: array
       x-ngsi:
         type: Property
-
     pgv1:
       description: 'Nonlinear gain power value point 1 (Pgv1).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pgv2:
       description: 'Nonlinear gain power value point 2 (Pgv2).  Typical Value = 0.75. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pgv3:
       description: 'Nonlinear gain power value point 3 (Pgv3).  Typical Value = 0.91. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pgv4:
       description: 'Nonlinear gain power value point 4 (Pgv4).  Typical Value = 0.98. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pgv5:
       description: 'Nonlinear gain power value point 5 (Pgv5).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pgv6:
       description: 'Nonlinear gain power value point 6 (Pgv6).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pmax:
       description: 'Maximum valve opening (Pmax) (> Pmin).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     pmin:
       description: 'Minimum valve opening (Pmin) (>=0).  Typical Value = 0. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     sdb1:
       description: 'Intentional deadband indicator. true = intentional deadband is applied false = intentional deadband is not applied. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     sdb2:
       description: 'Unintentional deadband location. true = intentional deadband is applied before point `A` false = intentional deadband is applied after point `A`. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -546,62 +482,53 @@ GovSteam1:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     t1:
       description: 'Governor lag time constant (T1).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t2:
       description: 'Governor lead time constant (T2).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t3:
       description: 'Valve positioner time constant (T3(>0).  Typical Value = 0.1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t4:
       description: 'Inlet piping/steam bowl time constant (T4).  Typical Value = 0.3. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t5:
       description: 'Time constant of second boiler pass (T5).  Typical Value = 5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t6:
       description: 'Time constant of third boiler pass (T6).  Typical Value = 0.5. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     t7:
       description: 'Time constant of fourth boiler pass (T7).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be GovSteam1
       enum:
@@ -609,40 +536,29 @@ GovSteam1:
       type: string
       x-ngsi:
         type: Property
-
     uc:
       description: 'Maximum valve closing velocity (Uc) (<0).  Unit = PU/sec.  Typical Value = -10. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     uo:
       description: 'Maximum valve opening velocity (Uo) (>0).  Unit = PU/sec.  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     valve:
       description: 'Nonlinear valve characteristic. true = nonlinear valve characteristic is used false = nonlinear valve characteristic is not used. Typical Value = true. Default: False'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovSteam1/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteam1/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
