@@ -1,114 +1,92 @@
 ExcIEEEAC1A:
-
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type AC1A model. The model represents the field-controlled alternator-rectifier excitation systems designated Type AC1A. These excitation systems consist of an alternator main exciter with non-controlled rectifiers.  Reference: IEEE Standard 421.5-2005 Section 6.1.'
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -126,48 +104,39 @@ ExcIEEEAC1A:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     ka:
       description: 'Voltage regulator gain (K).  Typical Value = 400. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kc:
       description: 'Rectifier loading factor proportional to commutating reactance (K).  Typical Value = 0.2. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kd:
       description: 'Demagnetizing factor, a function of exciter alternator reactances (K).  Typical Value = 0.38. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ke:
       description: 'Exciter constant related to self-excited field (K).  Typical Value = 1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     kf:
       description: 'Excitation control system stabilizer gains (K).  Typical Value = 0.03. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -191,7 +160,6 @@ ExcIEEEAC1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -218,7 +186,6 @@ ExcIEEEAC1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -247,7 +214,6 @@ ExcIEEEAC1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -273,7 +239,6 @@ ExcIEEEAC1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -302,7 +267,6 @@ ExcIEEEAC1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -333,16 +297,13 @@ ExcIEEEAC1A:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -365,7 +326,6 @@ ExcIEEEAC1A:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -378,62 +338,53 @@ ExcIEEEAC1A:
           type: string
       x-ngsi:
         type: Property
-
     seve1:
       description: 'Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.1. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     seve2:
       description: 'Exciter saturation function value at the corresponding exciter voltage, V, back of commutating reactance (S[V]).  Typical Value = 0.03. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     ta:
       description: 'Voltage regulator time constant (T).  Typical Value = 0.02. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tb:
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tc:
       description: 'Voltage regulator time constant (T).  Typical Value = 0. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     te:
       description: 'Exciter time constant, integration rate associated with exciter control (T).  Typical Value = 0.8. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     tf:
       description: 'Excitation control system stabilizer time constant (T).  Typical Value = 1. Default: 0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     type:
       description: NGSI type. It has to be ExcIEEEAC1A
       enum:
@@ -441,61 +392,47 @@ ExcIEEEAC1A:
       type: string
       x-ngsi:
         type: Property
-
     vamax:
       description: 'Maximum voltage regulator output (V).  Typical Value = 14.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vamin:
       description: 'Minimum voltage regulator output (V).  Typical Value = -14.5. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ve1:
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 4.18. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     ve2:
       description: 'Exciter alternator output voltages back of commutating reactance at which saturation is defined (V).  Typical Value = 3.14. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vrmax:
       description: 'Maximum voltage regulator outputs (V).  Typical Value = 6.03. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     vrmin:
       description: 'Minimum voltage regulator outputs (V).  Typical Value = -5.43. Default: 0.0'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
   required: []
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcIEEEAC1A/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcIEEEAC1A/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
