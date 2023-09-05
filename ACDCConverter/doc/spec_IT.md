@@ -15,12 +15,19 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `DCTerminals[number]`:  Predefinito: "elenco".  . Model: [https://schema.org/Number](https://schema.org/Number)- `PccTerminal[number]`: Tutti i lati CC dei convertitori sono collegati a questo punto del terminale di accoppiamento comune. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseS[number]`: Potenza apparente di base del polo del convertitore. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `idc[number]`: Corrente CC del convertitore, detta anche Id. Variabile di stato del convertitore, risultato del flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `idleLoss[number]`: Perdita di potenza attiva nel polo in assenza di trasferimento di potenza. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxUdc[number]`: La tensione massima sul lato CC a cui il convertitore deve funzionare. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minUdc[number]`: Tensione CC minima consentita del convertitore. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `numberOfValves[number]`: Numero di valvole nel convertitore. Utilizzato nei calcoli delle perdite. Predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `p[number]`: Potenza attiva nel punto di accoppiamento comune. Si utilizza la convenzione del segno del carico, ossia il segno positivo indica il flusso in uscita da un nodo. Valore iniziale per una soluzione allo stato stazionario nel caso in cui si utilizzi un modello di flusso di potenza semplificato. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `poleLossP[number]`: La perdita di potenza attiva su un polo CC = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Per il funzionamento senza perdite Pdc=Pac Per il funzionamento del raddrizzatore con perdite Pdc=Pac-lossP Per il funzionamento dell'inverter con perdite Pdc=Pac+lossP Variabile di stato del convertitore utilizzata nel flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `q[number]`: Potenza reattiva nel punto di accoppiamento comune. Si utilizza la convenzione del segno del carico, ossia il segno positivo indica il flusso in uscita da un nodo. Valore iniziale per una soluzione allo stato stazionario nel caso in cui si utilizzi un modello di flusso di potenza semplificato. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedUdc[number]`: Tensione nominale del convertitore in corrente continua, detta anche UdN. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `resistiveLoss[number]`: Dati di configurazione del convertitore utilizzati nel flusso di potenza. Fare riferimento a poleLossP. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `switchingLoss[number]`: Perdite di commutazione, relative alla potenza apparente di base `baseS`. Fare riferimento a poleLossP. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetPpcc[number]`: Obiettivo di iniezione di potenza reale nella rete CA, nel punto di accoppiamento comune. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetUdc[number]`: Valore target per la grandezza della tensione CC. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere un convertitore ACDCC  - `uc[number]`: Tensione del convertitore, la tensione sul lato CA del ponte. Variabile di stato del convertitore, risultato del flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `udc[number]`: Tensione del convertitore sul lato CC, detta anche Ud. Variabile di stato del convertitore, risultante dal flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valveU0[number]`: Tensione di soglia della valvola. Caduta di tensione in avanti quando la valvola è in conduzione. Utilizzata nei calcoli delle perdite, cioè la switchLoss dipende da numberOfValves * valveU0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `DCTerminals[number]`:  Predefinito: "elenco".  . Model: [https://schema.org/Number](https://schema.org/Number)- `PccTerminal[number]`: Tutti i lati CC dei convertitori sono collegati a questo punto del terminale di accoppiamento comune. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseS[number]`: Potenza apparente di base del polo del convertitore. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `idc[number]`: Corrente CC del convertitore, detta anche Id. Variabile di stato del convertitore, risultato del flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `idleLoss[number]`: Perdita di potenza attiva nel polo in assenza di trasferimento di potenza. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxUdc[number]`: La tensione massima sul lato CC a cui il convertitore deve funzionare. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minUdc[number]`: Tensione CC minima consentita del convertitore. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento  - `numberOfValves[number]`: Numero di valvole nel convertitore. Utilizzato nei calcoli delle perdite. Predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `p[number]`: Potenza attiva nel punto di accoppiamento comune. Si utilizza la convenzione del segno del carico, ossia il segno positivo indica il flusso in uscita da un nodo. Valore iniziale per una soluzione allo stato stazionario nel caso in cui si utilizzi un modello di flusso di potenza semplificato. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `poleLossP[number]`: La perdita di potenza attiva su un polo CC = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2 Per il funzionamento senza perdite Pdc=Pac Per il funzionamento del raddrizzatore con perdite Pdc=Pac-lossP Per il funzionamento dell'inverter con perdite Pdc=Pac+lossP Variabile di stato del convertitore utilizzata nel flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `q[number]`: Potenza reattiva nel punto di accoppiamento comune. Si utilizza la convenzione del segno del carico, ossia il segno positivo indica il flusso in uscita da un nodo. Valore iniziale per una soluzione allo stato stazionario nel caso in cui si utilizzi un modello di flusso di potenza semplificato. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedUdc[number]`: Tensione nominale del convertitore in corrente continua, detta anche UdN. Dati di configurazione del convertitore utilizzati nel flusso di potenza. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `resistiveLoss[number]`: Dati di configurazione del convertitore utilizzati nel flusso di potenza. Fare riferimento a poleLossP. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `switchingLoss[number]`: Perdite di commutazione, relative alla potenza apparente di base `baseS`. Fare riferimento a poleLossP. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetPpcc[number]`: Obiettivo di iniezione di potenza reale nella rete CA, nel punto di accoppiamento comune. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `targetUdc[number]`: Valore target per la grandezza della tensione CC. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere un convertitore ACDCC  - `uc[number]`: Tensione del convertitore, la tensione sul lato CA del ponte. Variabile di stato del convertitore, risultato del flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `udc[number]`: Tensione del convertitore sul lato CC, detta anche Ud. Variabile di stato del convertitore, risultante dal flusso di potenza. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valveU0[number]`: Tensione di soglia della valvola. Caduta di tensione in avanti quando la valvola è in conduzione. Utilizzata nei calcoli delle perdite, cioè la switchLoss dipende da numberOfValves * valveU0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di segnalare un problema o di inviare una mail a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
@@ -45,37 +52,65 @@ ACDCConverter:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -87,38 +122,42 @@ ACDCConverter:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &acdcconverter_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     idc:    
@@ -136,7 +175,7 @@ ACDCConverter:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -155,9 +194,11 @@ ACDCConverter:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -179,9 +220,11 @@ ACDCConverter:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -205,9 +248,11 @@ ACDCConverter:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -228,9 +273,11 @@ ACDCConverter:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -254,9 +301,11 @@ ACDCConverter:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -282,8 +331,10 @@ ACDCConverter:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxUdc:    
@@ -299,7 +350,7 @@ ACDCConverter:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -310,10 +361,24 @@ ACDCConverter:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *acdcconverter_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -348,7 +413,7 @@ ACDCConverter:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -360,7 +425,7 @@ ACDCConverter:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -383,7 +448,7 @@ ACDCConverter:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be ACDCConverter'    
+      description: NGSI type. It has to be ACDCConverter    
       enum:    
         - ACDCConverter    
       type: string    
@@ -410,7 +475,7 @@ ACDCConverter:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ACDCConverter/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ACDCConverter/schema.json    
   x-model-tags: ""    
@@ -423,7 +488,7 @@ ACDCConverter:
 <!-- 80-Examples -->  
 ## Esempi di payload  
 Non è disponibile l'esempio di un ACDCConverter in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un ACDCConverter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un ACDCConverter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 Non è disponibile l'esempio di un ACDCConverter in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 Non è disponibile l'esempio di un ACDCConverter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <!-- /80-Examples -->  
