@@ -1,53 +1,104 @@
-Entità: GovSteamFV4  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: GovSteamFV4  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovSteamFV4/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Governatore elettroidraulico dettagliato per l'unità a vapore.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattato dai modelli di dati CIM. Governatore elettroidraulico dettagliato per unità a vapore **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `cpsmn`: Valore minimo dell'uscita del regolatore di pressione (Cpsmn).  Valore tipico = -1. Predefinito: 0.0  - `cpsmx`: Valore massimo dell'uscita del regolatore di pressione (Cpsmx).  Valore tipico = 1. Predefinito: 0,0  - `crmn`: Valore minimo del set-point del regolatore (Crmn).  Valore tipico = 0. Default: 0.0  - `crmx`: Valore massimo del set-point del regolatore (Crmx).  Valore tipico = 1,2. Predefinito: 0,0  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `kdc`: Guadagno derivativo del regolatore di pressione (Kdc).  Valore tipico = 1. Predefinito: 0,0  - `kf1`: Polarizzazione della frequenza (reciproco dello statismo) (Kf1).  Valore tipico = 20. Predefinito: 0.0  - `kf3`: Controllo della frequenza (reciproco dello statismo) (Kf3).  Valore tipico = 20. Predefinito: 0,0  - `khp`: Frazione della potenza totale della turbina generata dalla parte HP (Khp).  Valore tipico = 0,35. Predefinito: 0.0  - `kic`: Guadagno integrale del regolatore di pressione (Kic).  Valore tipico = 0,0033. Predefinito: 0.0  - `kip`: Guadagno integrale del regolatore di feedback di pressione (Kip).  Valore tipico = 0,5. Predefinito: 0.0  - `kit`: Guadagno integrale del regolatore elettroidraulico (Kit).  Valore tipico = 0,04. Predefinito: 0.0  - `kmp1`: Primo coefficiente di guadagno della caratteristica delle valvole di intercettazione (Kmp1).  Valore tipico = 0,5. Predefinito: 0.0  - `kmp2`: Secondo coefficiente di guadagno della caratteristica delle valvole di intercettazione (Kmp2).  Valore tipico = 3,5. Predefinito: 0,0  - `kpc`: Guadagno proporzionale del regolatore di pressione (Kpc).  Valore tipico = 0,5. Predefinito: 0.0  - `kpp`: Guadagno proporzionale del regolatore di feedback della pressione (Kpp).  Valore tipico = 1. Predefinito: 0,0  - `kpt`: Guadagno proporzionale del regolatore elettroidraulico (Kpt).  Valore tipico = 0,3. Predefinito: 0.0  - `krc`: Variazione massima del flusso di carburante (Krc).  Valore tipico = 0,05. Predefinito: 0.0  - `ksh`: Perdita di pressione dovuta all'attrito del flusso nei tubi della caldaia (Ksh).  Valore tipico = 0,08. Predefinito: 0.0  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `lpi`: Massimo errore di potenza negativo (Lpi).  Valore tipico = -0,15. Predefinito: 0.0  - `lps`: Massimo errore di potenza positiva (Lps).  Valore tipico = 0,03. Predefinito: 0,0  - `mnef`: Limite inferiore per la correzione della frequenza (MN).  Valore tipico = -0.05. Predefinito: 0.0  - `mxef`: Limite superiore per la correzione della frequenza (MX).  Valore tipico = 0,05. Predefinito: 0.0  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pr1`: Primo valore della caratteristica statica del set point di pressione (Pr1).  Valore tipico = 0,2. Predefinito: 0,0  - `pr2`: Secondo valore della caratteristica statica di set point della pressione, corrispondente a Ps0 = 1,0 PU (Pr2).  Valore tipico = 0,75. Predefinito: 0.0  - `psmn`: Valore minimo della caratteristica statica del set point di pressione (Psmn).  Valore tipico = 1. Predefinito: 0.0  - `rsmimn`: Valore minimo del regolatore integrale (Rsmimn).  Valore tipico = 0. Predefinito: 0.0  - `rsmimx`: Valore massimo del regolatore integrale (Rsmimx).  Valore tipico = 1.1. Predefinito: 0,0  - `rvgmn`: Valore minimo del regolatore integrale (Rvgmn).  Valore tipico = 0. Predefinito: 0.0  - `rvgmx`: Valore massimo del regolatore integrale (Rvgmx).  Valore tipico = 1,2. Predefinito: 0,0  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `srmn`: Apertura minima della valvola (Srmn).  Valore tipico = 0. Default: 0.0  - `srmx`: Apertura massima della valvola (Srmx).  Valore tipico = 1.1. Predefinito: 0.0  - `srsmp`: Punto di discontinuità caratteristica delle valvole di intercettazione (Srsmp).  Valore tipico = 0,43. Predefinito: 0.0  - `svmn`: Velocità massima di chiusura del cancello del regolatore (Svmn).  Valore tipico = -0.0333. Predefinito: 0.0  - `svmx`: Velocità massima di apertura della porta del regolatore (Svmx).  Valore tipico = 0.0333. Predefinito: 0.0  - `ta`: Tempo di apertura delle valvole di controllo (Ta).  Valore tipico = 0,8. Predefinito: 0  - `tam`: Tempo di apertura delle valvole di intercettazione (Tam).  Valore tipico = 0,8. Predefinito: 0  - `tc`: Tempo di chiusura delle valvole di controllo (Tc).  Valore tipico = 0,5. Predefinito: 0  - `tcm`: Tempo di chiusura del tasso di intercettazione delle valvole (Tcm).  Valore tipico = 0,5. Predefinito: 0  - `tdc`: Costante di tempo derivativa del regolatore di pressione (Tdc).  Valore tipico = 90. Predefinito: 0  - `tf1`: Costante di tempo della regolazione del carburante (Tf1).  Valore tipico = 10. Predefinito: 0  - `tf2`: Costante di tempo del petto di vapore (Tf2).  Valore tipico = 10. Predefinito: 0  - `thp`: Costante di tempo ad alta pressione (HP) della turbina (Thp).  Valore tipico = 0,15. Predefinito: 0  - `tmp`: Costante di tempo di bassa pressione (LP) della turbina (Tmp).  Valore tipico = 0,4. Predefinito: 0  - `trh`: Costante di tempo del riscaldatore della turbina (Trh).  Valore tipico = 10. Predefinito: 0  - `tv`: Costante di tempo della caldaia (Tv).  Valore tipico = 60. Predefinito: 0  - `ty`: Costante di tempo del servo delle valvole di controllo (Ty).  Valore tipico = 0,1. Predefinito: 0  - `type`: Tipo di NGSI. Deve essere GovSteamFV4  - `y`: Coefficiente delle equazioni linearizzate della turbina (formulazione Stodola) (Y).  Valore tipico = 0,13. Predefinito: 0.0  - `yhpmn`: Posizione minima della valvola di controllo (Yhpmn).  Valore tipico = 0. Default: 0.0  - `yhpmx`: Posizione massima della valvola di controllo (Yhpmx).  Valore tipico = 1.1. Predefinito: 0,0  - `ympmn`: Posizione minima della valvola di intercettazione (Ympmn).  Valore tipico = 0. Predefinito: 0.0  - `ympmx`: Posizione massima della valvola di intercettazione (Ympmx).  Valore tipico = 1.1. Predefinito: 0.0    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `cpsmn[number]`: Valore minimo dell'uscita del regolatore di pressione (Cpsmn).  Valore tipico = -1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cpsmx[number]`: Valore massimo dell'uscita del regolatore di pressione (Cpsmx).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `crmn[number]`: Valore minimo del set-point del regolatore (Crmn).  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `crmx[number]`: Valore massimo del set-point del regolatore (Crmx).  Valore tipico = 1,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `kdc[number]`: Guadagno derivativo del regolatore di pressione (Kdc).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf1[number]`: Bias di frequenza (reciproco dello droop) (Kf1).  Valore tipico = 20. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf3[number]`: Controllo della frequenza (reciproco dello statismo) (Kf3).  Valore tipico = 20. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `khp[number]`: Frazione della potenza totale della turbina generata dalla parte HP (Khp).  Valore tipico = 0,35. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kic[number]`: Guadagno integrale del regolatore di pressione (Kic).  Valore tipico = 0,0033. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: Guadagno integrale del regolatore di retroazione della pressione (Kip).  Valore tipico = 0,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kit[number]`: Guadagno integrale del regolatore elettroidraulico (Kit).  Valore tipico = 0,04. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kmp1[number]`: Primo coefficiente di guadagno della caratteristica delle valvole di intercettazione (Kmp1).  Valore tipico = 0,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kmp2[number]`: Secondo coefficiente di guadagno della caratteristica delle valvole di intercettazione (Kmp2).  Valore tipico = 3,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpc[number]`: Guadagno proporzionale del regolatore di pressione (Kpc).  Valore tipico = 0,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpp[number]`: Guadagno proporzionale del regolatore di retroazione della pressione (Kpp).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpt[number]`: Guadagno proporzionale del regolatore elettroidraulico (Kpt).  Valore tipico = 0,3. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `krc[number]`: Variazione massima del flusso di carburante (Krc).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ksh[number]`: Perdita di pressione dovuta all'attrito del flusso nei tubi della caldaia (Ksh).  Valore tipico = 0,08. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `lpi[number]`: Massimo errore di potenza negativo (Lpi).  Valore tipico = -0,15. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `lps[number]`: Errore massimo di potenza positiva (Lps).  Valore tipico = 0,03. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mnef[number]`: Limite inferiore per la correzione della frequenza (MN).  Valore tipico = -0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mxef[number]`: Limite superiore per la correzione della frequenza (MX).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pr1[number]`: Primo valore della caratteristica statica del set point di pressione (Pr1).  Valore tipico = 0,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pr2[number]`: Secondo valore della caratteristica statica del set point di pressione, corrispondente a Ps0 = 1,0 PU (Pr2).  Valore tipico = 0,75. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `psmn[number]`: Valore minimo del set point di pressione statica caratteristica (Psmn).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rsmimn[number]`: Valore minimo del regolatore integrale (Rsmimn).  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rsmimx[number]`: Valore massimo del regolatore integrale (Rsmimx).  Valore tipico = 1,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rvgmn[number]`: Valore minimo del regolatore integrale (Rvgmn).  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rvgmx[number]`: Valore massimo del regolatore integrale (Rvgmx).  Valore tipico = 1,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `srmn[number]`: Apertura minima della valvola (Srmn).  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `srmx[number]`: Massima apertura della valvola (Srmx).  Valore tipico = 1,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `srsmp[number]`: Punto di discontinuità caratteristica delle valvole di intercettazione (Srsmp).  Valore tipico = 0,43. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `svmn[number]`: Velocità massima di chiusura del regolatore (Svmn).  Valore tipico = -0,0333. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `svmx[number]`: Velocità massima di apertura della paratoia del regolatore (Svmx).  Valore tipico = 0,0333. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ta[number]`: Tempo di apertura delle valvole di regolazione (Ta).  Valore tipico = 0,8. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tam[number]`: Tempo di apertura delle valvole di intercettazione (Tam).  Valore tipico = 0,8. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Tempo di chiusura delle valvole di controllo (Tc).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcm[number]`: Tempo di chiusura della portata delle valvole di intercettazione (Tcm).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdc[number]`: Costante di tempo derivata del regolatore di pressione (Tdc).  Valore tipico = 90. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf1[number]`: Costante di tempo della regolazione del carburante (Tf1).  Valore tipico = 10. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf2[number]`: Costante di tempo della cassa di vapore (Tf2).  Valore tipico = 10. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `thp[number]`: Costante di tempo ad alta pressione (HP) della turbina (Thp).  Valore tipico = 0,15. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmp[number]`: Costante di tempo di bassa pressione (LP) della turbina (Tmp).  Valore tipico = 0,4. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trh[number]`: Costante di tempo del riscaldatore della turbina (Trh).  Valore tipico = 10. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tv[number]`: Costante di tempo della caldaia (Tv).  Valore tipico = 60. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ty[number]`: Costante di tempo del servo delle valvole di controllo (Ty).  Valore tipico = 0,1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovSteamFV4  - `y[number]`: Coefficiente delle equazioni linearizzate della turbina (formulazione Stodola) (Y).  Valore tipico = 0,13. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yhpmn[number]`: Posizione minima della valvola di controllo (Yhpmn).  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yhpmx[number]`: Posizione massima della valvola di controllo (Yhpmx).  Valore tipico = 1,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ympmn[number]`: Posizione minima della valvola di intercettazione (Ympmn).  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ympmx[number]`: Posizione massima della valvola di intercettazione (Ympmx).  Valore tipico = 1,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di segnalare un problema o di inviare una mail a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovSteamFV4:    
-  description: 'Adapted from CIM data models. Detailed electro-hydraulic governor for steam unit.'    
+  description: Adapted from CIM data models. Detailed electro-hydraulic governor for steam unit.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -77,38 +128,42 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &govsteamfv4_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kdc:    
@@ -198,7 +253,7 @@ GovSteamFV4:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -217,9 +272,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -241,9 +298,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -267,9 +326,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -290,9 +351,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -316,9 +379,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -344,8 +409,10 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     lpi:    
@@ -373,15 +440,29 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govsteamfv4_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -428,7 +509,7 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -440,7 +521,7 @@ GovSteamFV4:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -547,7 +628,7 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovSteamFV4'    
+      description: NGSI type. It has to be GovSteamFV4    
       enum:    
         - GovSteamFV4    
       type: string    
@@ -586,16 +667,28 @@ GovSteamFV4:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovSteamFV4/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV4/schema.json    
   x-model-tags: ""    
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-Non è disponibile l'esempio di un GovSteamFV4 in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovSteamFV4 in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un GovSteamFV4 in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovSteamFV4 in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+Non è disponibile l'esempio di un GovSteamFV4 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovSteamFV4 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovSteamFV4 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovSteamFV4 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
