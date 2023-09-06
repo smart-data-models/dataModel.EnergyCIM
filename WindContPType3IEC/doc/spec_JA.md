@@ -3,28 +3,35 @@
 エンティティWindContPType3IEC  
 =======================<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindContPType3IEC/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/WindContPType3IEC/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**CIM データモデルから引用。P制御モデル タイプ3。  参照IEC 規格 61400-27-1 6.6.5.3 項**を参照。  
+グローバルな記述：**CIM データモデルからの引用。P 制御モデル タイプ 3。  参照：IEC 規格 61400-27-1 6.6.5.3.** 節  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `WindDynamicsLookupTable[number]`: この風力発電ルックアップテーブルが関連する P 制御タイプ 3 モデル。デフォルト: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `WindGenTurbineType3IEC[number]`: この風力制御 P タイプ 3 モデルが関連付けられる風力発電機タイプ 3 モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `dpmax[number]`: 風力発電機の最大出力上昇率（）。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtrisemaxlvrt[number]`: S (d)のLVRT中のトルク上昇率の制限。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `kdtd[number]`: アクティブドライブトレインダンピングのゲイン（）。車種依存のパラメータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: PIコントローラ積分パラメータ()。型に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpp[number]`: PIコントローラ比例ゲイン()。型式に依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mplvrt[number]`: LVRT 電力制御モードを有効にする（M true = 1: 電圧制御 false = 0: 無効電力制御）。  プロジェクトに依存するパラメータです。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `omegaoffset[number]`: ローター速度変更時にコントローラの動作を制限する基準値へのオフセット(ω)。ケース依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pdtdmax[number]`: ドライブトレインの最大アクティブ減衰力（）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rramp[number]`: 一部のグリッドコードで要求されるトルクのランプ制限（）。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tdvs[number]`: 深い電圧降下後のタイムディレイ(T)。プロジェクトに依存するパラメータです。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `temin[number]`: 最小電動発電機トルク（）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tomegafilt[number]`: 発電機速度測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpfilt[number]`: 電力測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpord[number]`: パワーオーダーラグ()の時定数。型に依存するパラメータです。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tufilt[number]`: 電圧測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuscale[number]`: リセットトルク(T)の電圧スケーリングファクター。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twref[number]`: 速度基準フィルタの時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。WindContPType3IECでなければならない。  - `udvs[number]`: 深い電圧降下の後、LVRT状態を保持するための電圧制限値（）。プロジェクトに依存するパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `updip[number]`: P制御の電圧ディップのしきい値（）。  タービン制御の一部で、コンバータのしきい値と異なる場合が多い(0.8など)。プロジェクトに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wdtd[number]`: アクティブドライブトレインの減衰周波数（ω）。2つのマスモデルパラメータから計算することができる。タイプに依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `zeta[number]`: アクティブなドライブトレインのダンピングのための係数（ゼータ）。車種依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `WindDynamicsLookupTable[number]`: このウィンドダイナミクスルックアップテーブルが関連付けられている P 制御タイプ 3 モデル。デフォルト: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `WindGenTurbineType3IEC[number]`: この風力制御 P タイプ 3 モデルが関連付けられる風力タービンタイプ 3 モデル。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `dpmax[number]`: 風力タービンの最大出力ランプ率（）。プロジェクトに依存するパラメータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtrisemaxlvrt[number]`: S（d）に対するLVRT中のトルク上昇率の制限。プロジェクト依存のパラメータです。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `kdtd[number]`: アクティブ・ドライブトレイン・ダンピング（）のゲイン。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: PIコントローラー積分パラメーター()。型に依存するパラメータである。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpp[number]`: PIコントローラー比例ゲイン()。型に依存するパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mplvrt[number]`: LVRT 電力制御モードを有効にする（M true = 1：電圧制御 false = 0：無効電力制御。  プロジェクト依存のパラメータです。デフォルト：無効  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `omegaoffset[number]`: ロータ速度の変化（ω）中にコントローラの動作を制限する基準値へのオフセット。ケース依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pdtdmax[number]`: ドライブトレインの最大アクティブ減衰力（）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rramp[number]`: 一部のグリッドコード（）で要求されるトルクのランプ制限。プロジェクト依存のパラメータです。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `tdvs[number]`: 深い電圧降下後の時間遅れ(T)。プロジェクト依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `temin[number]`: 最小発電機トルク（）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tomegafilt[number]`: 発電機速度測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpfilt[number]`: 電力測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpord[number]`: パワーオーダーラグ()の時定数。型依存のパラメータである。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tufilt[number]`: 電圧測定用フィルター時定数()。タイプ依存のパラメータである。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tuscale[number]`: リセット・トルク（T）の電圧スケーリング係数。プロジェクト依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twref[number]`: 速度基準フィルター()の時定数。タイプ依存のパラメータである。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。WindContPType3IECでなければならない。  - `udvs[number]`: 深い電圧降下（）後にLVRT状態を保持するための電圧制限。プロジェクトに依存するパラメータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `updip[number]`: P制御の電圧ディップのしきい値。  タービン制御の一部で、多くの場合コンバータのしきい値とは異なる（例えば0.8）。プロジェクトに依存するパラメータ。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wdtd[number]`: アクティブ・ドライブトレインの減衰周波数（ω）。2つの質量モデルパラメータから計算できる。タイプ依存のパラメータです。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `zeta[number]`: アクティブ・ドライブトレインの減衰係数（ゼータ）。タイプ依存のパラメータである。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)からの引用。このデータモデルは、IEC61970標準によって規定された共通情報モデル（CIM）をスマートデータモデルに直接変換したものです。このモデルに基づくPythonクラスは、Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されました。プロパティによっては、間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org までメールをお送りください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -45,60 +52,88 @@ WindContPType3IEC:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -115,16 +150,20 @@ WindContPType3IEC:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &windcontptype3iec_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kdtd:    
@@ -148,7 +187,7 @@ WindContPType3IEC:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -167,9 +206,11 @@ WindContPType3IEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -191,9 +232,11 @@ WindContPType3IEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -217,9 +260,11 @@ WindContPType3IEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -240,9 +285,11 @@ WindContPType3IEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -266,9 +313,11 @@ WindContPType3IEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -294,8 +343,10 @@ WindContPType3IEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mplvrt:    
@@ -305,7 +356,7 @@ WindContPType3IEC:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -316,10 +367,24 @@ WindContPType3IEC:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *windcontptype3iec_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -336,7 +401,7 @@ WindContPType3IEC:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -348,7 +413,7 @@ WindContPType3IEC:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -401,7 +466,7 @@ WindContPType3IEC:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be WindContPType3IEC'    
+      description: NGSI type. It has to be WindContPType3IEC    
       enum:    
         - WindContPType3IEC    
       type: string    
@@ -434,7 +499,7 @@ WindContPType3IEC:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindContPType3IEC/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContPType3IEC/schema.json    
   x-model-tags: ""    
@@ -446,15 +511,15 @@ WindContPType3IEC:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-JSON-LD形式のWindContPType3IECの例をkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-利用不可 WindContPType3IECの例をJSON-LD形式で正規化したもの。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
-WindContPType3IECのJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
-WindContPType3IECのJSON-LD形式を正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のWindContPType3IECの例をkey-valuesとして利用することはできない。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のWindContPType3IECを正規化した例はない。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のWindContPType3IECの例をkey-valuesとして利用することはできない。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のWindContPType3IECを正規化した例はない。オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
