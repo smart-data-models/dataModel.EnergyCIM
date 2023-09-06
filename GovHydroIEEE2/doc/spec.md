@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `aturb[number]`: Turbine numerator multiplier (Aturb).  Typical Value = -1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bturb[number]`: Turbine denominator multiplier (Bturb).  Typical Value = 0.5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `gv1[number]`: Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `kturb[number]`: Turbine gain (Kturb).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase[number]`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pgv1[number]`: Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Maximum gate opening (Pmax).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Minimum gate opening (Pmin).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: Permanent droop (Rperm).  Typical Value = 0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: Temporary droop (Rtemp).  Typical Value = 0.5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tg[number]`: Gate servo time constant (Tg).  Typical Value = 0.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Pilot servo valve time constant (Tp).  Typical Value = 0.03. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Dashpot time constant (Tr).  Typical Value = 12. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Water inertia time constant (Tw).  Typical Value = 2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovHydroIEEE2  - `uc[number]`: Maximum gate closing velocity (Uc) (<0).  Typical Value = -0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: Maximum gate opening velocity (Uo). Unit = PU/sec.  Typical Value = 0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `aturb[number]`: Turbine numerator multiplier (Aturb).  Typical Value = -1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bturb[number]`: Turbine denominator multiplier (Bturb).  Typical Value = 0.5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `gv1[number]`: Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `kturb[number]`: Turbine gain (Kturb).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase[number]`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pgv1[number]`: Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Maximum gate opening (Pmax).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Minimum gate opening (Pmin).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: Permanent droop (Rperm).  Typical Value = 0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: Temporary droop (Rtemp).  Typical Value = 0.5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `tg[number]`: Gate servo time constant (Tg).  Typical Value = 0.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Pilot servo valve time constant (Tp).  Typical Value = 0.03. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Dashpot time constant (Tr).  Typical Value = 12. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Water inertia time constant (Tw).  Typical Value = 2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovHydroIEEE2  - `uc[number]`: Maximum gate closing velocity (Uc) (<0).  Typical Value = -0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: Maximum gate opening velocity (Uo). Unit = PU/sec.  Typical Value = 0.1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 <!-- /35-RequiredProperties -->  
@@ -30,40 +37,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydroIEEE2:    
-  description: 'Adapted from CIM data models. IEEE hydro turbine governor model represents plants with straightforward penstock configurations and hydraulic-dashpot governors.  Ref'    
+  description: Adapted from CIM data models. IEEE hydro turbine governor model represents plants with straightforward penstock configurations and hydraulic-dashpot governors.  Ref    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -81,24 +116,24 @@ GovHydroIEEE2:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -139,16 +174,20 @@ GovHydroIEEE2:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydroieee2_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kturb:    
@@ -160,7 +199,7 @@ GovHydroIEEE2:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -179,9 +218,11 @@ GovHydroIEEE2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -203,9 +244,11 @@ GovHydroIEEE2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -229,9 +272,11 @@ GovHydroIEEE2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -252,9 +297,11 @@ GovHydroIEEE2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -278,9 +325,11 @@ GovHydroIEEE2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -306,8 +355,10 @@ GovHydroIEEE2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -317,15 +368,29 @@ GovHydroIEEE2:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydroieee2_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -390,7 +455,7 @@ GovHydroIEEE2:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -402,7 +467,7 @@ GovHydroIEEE2:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -431,7 +496,7 @@ GovHydroIEEE2:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydroIEEE2'    
+      description: NGSI type. It has to be GovHydroIEEE2    
       enum:    
         - GovHydroIEEE2    
       type: string    
@@ -452,7 +517,7 @@ GovHydroIEEE2:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydroIEEE2/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroIEEE2/schema.json    
   x-model-tags: ""    
