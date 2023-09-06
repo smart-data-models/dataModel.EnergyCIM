@@ -1,30 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。TopologicalNode  
-==================<!-- /10-Header -->  
+实体拓扑节点  
+======<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/TopologicalNode/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述。**改编自CIM数据模型。对于一个详细的变电站模型，拓扑节点是一组连接节点，在当前网络状态下，通过任何类型的封闭开关（包括跳线）连接在一起。拓扑节点随着当前网络状态的改变而改变（即开关、断路器等改变状态）。对于一个规划模型，开关状态不用于形成拓扑节点。相反，它们是在模型构建工具中手动创建或删除的。以这种方式维护的拓扑节点也被称为 "总线 "**。  
-版本：0.0.1  
+全局描述：**改编自 CIM 数据模型。对于详细的变电站模型而言，拓扑节点是一组连接节点，在当前网络状态下，这些节点通过任何类型的闭合开关（包括跳线）连接在一起。拓扑节点会随着当前网络状态的改变而改变（即开关、断路器等的状态改变）。在规划模型中，开关状态不用于形成拓扑节点。相反，它们是在模型创建工具中手动创建或删除的。以这种方式维护的拓扑节点也称为 "总线 "**。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `AngleRefTopologicalIsland[number]`: 节点作为角度参考的岛屿。   通常情况下，每个岛屿有一个角度参考节点。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `BaseVoltage[number]`: Topologocial节点的基准电压。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `ConnectivityNodeContainer[number]`: toplogical节点所属的连接性节点容器。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `ConnectivityNodes[number]`: 该连接节点被分配到的拓扑节点。  可能取决于网络中交换机的当前状态。默认：'列表  . Model: [https://schema.org/Number](https://schema.org/Number)- `ReportingGroup[number]`: 属于报告组的拓扑节点。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `SvInjection[number]`: 与流量注入状态变量相关的拓扑节点。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `SvVoltage[number]`: 与电压状态相关的拓扑结构节点。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `Terminal[number]`: 与终端相关的拓扑节点。   这可以作为连接节点路径到拓扑节点的替代，因此在某些情况下不需要对连接节点进行建模。   注意，如果连通性节点在模型中，这个关联可能不会被用作输入规范。默认：'列表  . Model: [https://schema.org/Number](https://schema.org/Number)- `TopologicalIsland[number]`: 一个拓扑节点属于一个拓扑岛。默认值。无  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `boundaryPoint[number]`: 确定一个节点是否是一个BoundaryPoint。如果boundaryPoint=true，ConnectivityNode或TopologicalNode代表一个BoundaryPoint。默认值。False  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `fromEndIsoCode[number]`: 该属性用于交换边界点 "From "一侧所属或连接的区域的ISO代码。ISO代码是ISO 3166（）所定义的两个字符的国家代码。该字符串的长度最多为2个字符。该属性是边界模型授权集的要求，该属性仅用于边界拓扑配置文件中的TopologicalNode和边界设备配置文件中的ConnectivityNode。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `fromEndName[number]`: 该属性用于交换一个人类可读的名称，该字符串的长度最多为32个字符。该属性包括两种情况。  边界模型授权集需要该属性，它只用于边界拓扑配置文件中的TopologicalNode和边界设备配置文件中的ConnectivityNode。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `fromEndNameTso[number]`: 该属性用于交换边界点的 "From "方所属的TSO的名称或其连接的TSO。该字符串的长度最多为32个字符。该属性对于边界模型授权集是必需的，它只用于边界拓扑配置文件中的拓扑节点和边界设备配置文件中的连接性节点。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `toEndIsoCode[number]`: 该属性用于交换边界点的 "至 "方所属或连接的区域的ISO代码。ISO代码是ISO 3166（）所定义的两个字符的国家代码。该字符串的长度最多为2个字符。该属性是边界模型授权集的要求，该属性仅用于边界拓扑配置文件中的TopologicalNode和边界设备配置文件中的ConnectivityNode。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `toEndName[number]`: 该属性用于交换一个人类可读的名称，该字符串的长度最多为32个字符。该属性包括两种情况。  边界模型授权集需要该属性，它只用于边界拓扑配置文件中的TopologicalNode和边界设备配置文件中的ConnectivityNode。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `toEndNameTso[number]`: 该属性用于交换边界点的 "To "方所属的TSO名称，或者它所连接的TSO。该字符串的长度最多为32个字符。该属性对于边界模型授权集来说是必需的，它只用于边界拓扑配置文件中的拓扑节点和边界设备配置文件中的连接节点。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI类型。它必须是TopologicalNode  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `AngleRefTopologicalIsland[number]`: 该节点作为角度参考的岛屿。   通常情况下，每个岛屿都有一个角度参考节点。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `BaseVoltage[number]`: 拓扑社会节点的基准电压。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `ConnectivityNodeContainer[number]`: 顶层逻辑节点所属的连接性节点容器。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `ConnectivityNodes[number]`: 分配给此连接节点的拓扑节点。  可能取决于网络中交换机的当前状态。默认："列表  . Model: [https://schema.org/Number](https://schema.org/Number)- `ReportingGroup[number]`: 属于报告组的拓扑节点。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `SvInjection[number]`: 与流量注入状态变量相关的拓扑节点。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `SvVoltage[number]`: 与电压状态相关的拓扑节点。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `Terminal[number]`: 与终端相关的拓扑节点。   这可以作为连接节点路径到拓扑节点的替代，从而在某些情况下无需对连接节点建模。   需要注意的是，如果模型中存在连接节点，那么这种关联可能不会被用作输入规范。默认："列表  . Model: [https://schema.org/Number](https://schema.org/Number)- `TopologicalIsland[number]`: 拓扑节点属于拓扑岛。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `boundaryPoint[number]`: 标识节点是否为边界点。如果 boundaryPoint=true 则 ConnectivityNode 或 TopologicalNode 代表边界点。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `fromEndIsoCode[number]`: 该属性用于交换 "边界点 "的 "从 "端所属或连接区域的 ISO 代码。ISO 代码是由 ISO 3166 () 定义的两个字符的国家代码。字符串长度最多为 2 个字符。该属性是边界模型授权集的必备属性，该属性仅用于边界拓扑配置文件中的拓扑节点（TopologicalNode）和边界设备配置文件中的连接节点（ConnectivityNode）。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `fromEndName[number]`: 该属性用于交换人可读名称，字符串长度不超过 32 个字符。该属性包括两种情况：  边界模型授权集需要该属性，它仅用于边界拓扑配置文件中的拓扑节点和边界设备配置文件中的连接节点。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `fromEndNameTso[number]`: 该属性用于交换 "边界点 "的 "从 "端所属或连接的 TSO 名称。字符串长度最多为 32 个字符。边界模型授权集需要该属性，它仅用于边界拓扑配置文件中的拓扑节点（TopologicalNode）和边界设备配置文件中的连接节点（ConnectivityNode）。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `toEndIsoCode[number]`: 该属性用于交换 "边界点 "的 "到 "端所属或连接区域的 ISO 代码。ISO 代码是由 ISO 3166 () 定义的两个字符的国家代码。字符串长度最多为 2 个字符。该属性是边界模型授权集的必备属性，该属性仅用于边界拓扑配置文件中的拓扑节点（TopologicalNode）和边界设备配置文件中的连接节点（ConnectivityNode）。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `toEndName[number]`: 该属性用于交换人可读名称，字符串长度不超过 32 个字符。该属性包括两种情况：  边界模型授权集需要该属性，它仅用于边界拓扑配置文件中的拓扑节点和边界设备配置文件中的连接节点。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `toEndNameTso[number]`: 该属性用于交换边界点 "To "侧所属或连接的 TSO 名称。字符串长度最多为 32 个字符。边界模型授权集需要使用该属性，它仅用于边界拓扑配置文件中的 TopologicalNode 和边界设备配置文件中的 ConnectivityNode。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI 类型。必须是 TopologicalNode  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-改编自CIM数据模型和CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。这个数据模型是将IEC61970标准规定的通用信息模型（CIM）直接转换为智能数据模型。这个模型所基于的python类是由这些实体复杂电力系统自动化研究所（ACS）、EON能源研究中心（EONERC）和德国亚琛工大开发的。一些属性可能有错误的类型。这种情况下，请提出一个问题或发送邮件到 info@smartdatamodels.org。  
+改编自 CIM 数据模型和 CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。该数据模型将 IEC61970 标准规定的通用信息模型（CIM）直接转换为智能数据模型。该模型所基于的 python 类由德国复杂电力系统自动化研究所 (ACS)、EON 能源研究中心 (EONERC) 和亚琛工业大学 (RWTH University Aachen) 开发。某些属性的类型可能有误。如果出现这种情况，请提出问题或发送邮件至 info@smartdatamodels.org。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -87,37 +94,65 @@ TopologicalNode:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -129,24 +164,24 @@ TopologicalNode:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -169,22 +204,26 @@ TopologicalNode:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &topologicalnode_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -203,9 +242,11 @@ TopologicalNode:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -227,9 +268,11 @@ TopologicalNode:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -253,9 +296,11 @@ TopologicalNode:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -276,9 +321,11 @@ TopologicalNode:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -302,9 +349,11 @@ TopologicalNode:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -330,25 +379,41 @@ TopologicalNode:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *topologicalnode_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -360,7 +425,7 @@ TopologicalNode:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -383,7 +448,7 @@ TopologicalNode:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be TopologicalNode'    
+      description: NGSI type. It has to be TopologicalNode    
       enum:    
         - TopologicalNode    
       type: string    
@@ -392,7 +457,7 @@ TopologicalNode:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/TopologicalNode/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/TopologicalNode/schema.json    
   x-model-tags: ""    
@@ -403,16 +468,16 @@ TopologicalNode:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-不可用JSON-LD格式的TopologicalNode的例子作为key-values。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
-不提供JSON-LD格式的规范化的TopologicalNode的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
-不可用JSON-LD格式的TopologicalNode的例子作为key-values。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
-不提供JSON-LD格式的规范化的TopologicalNode的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+不可用 JSON-LD 格式的 TopologicalNode 示例作为键值。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+未提供规范化 JSON-LD 格式的 TopologicalNode 示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+不可用 JSON-LD 格式的 TopologicalNode 示例作为键值。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+未提供规范化 JSON-LD 格式的 TopologicalNode 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
