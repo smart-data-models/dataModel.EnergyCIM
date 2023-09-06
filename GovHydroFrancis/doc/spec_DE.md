@@ -7,15 +7,22 @@
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Detaillierte Hydroeinheit - Francis-Modell.  Dieses Modell kann zur Darstellung von drei Arten von Reglern verwendet werden. Eine schematische Darstellung des hydraulischen Systems detaillierter Wasserkraftwerksmodelle, wie Francis und Pelton, ist im Diagramm DetailedHydroModelHydraulicSystem enthalten.**  
+Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Detaillierte Hydroeinheit - Francis-Modell.  Dieses Modell kann zur Darstellung von drei Arten von Reglern verwendet werden. Ein Schema des hydraulischen Systems detaillierter Wasserkraftwerksmodelle, wie Francis und Pelton, wird im Diagramm DetailedHydroModelHydraulicSystem dargestellt.**  
 Version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `am[number]`: Öffnungsquerschnitt S bei maximalem Wirkungsgrad (Am).  Typischer Wert = 0,7. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `av0[number]`: Fläche des Wasserschlosses (A). Einheit = m. Typischer Wert = 30. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `av1[number]`: Fläche des Ausgleichsbehälters (A). Einheit = m. Typischer Wert = 700. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: Abweichung (Bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1[number]`: Beabsichtigte Totbandbreite (DB1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Eine Beschreibung dieses Artikels  - `etamax[number]`: Maximaler Wirkungsgrad (EtaMax).  Typischer Wert = 1,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorControl[number]`: Flagge für die Steuerung des Reglers (Cflag).  Typischer Wert = mechanicHydrolicTachoAccelerator. Voreinstellung: Keine  . Model: [https://schema.org/Number](https://schema.org/Number)- `h1[number]`: Höhe des Wasserspiegels der Ausgleichskammer in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 4. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h2[number]`: Höhe des Wasserspiegels des Wasserschlosses in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 40. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hn[number]`: Hydraulische Nennförderhöhe (H).  Einheit = m. Typischer Wert = 250. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `kc[number]`: Verlustkoeffizient der Druckleitung (aufgrund von Reibung) (Kc).  Typischer Wert = 0,025. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: Verlustkoeffizient des Wassertunnels und des Wasserschlosses (aufgrund von Reibung) (Kg).  Typischer Wert = 0,025. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kt[number]`: Auswaschverstärkung (Kt).  Typischer Wert = 0,25. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `qc0[number]`: Leerlaufdurchfluss der Turbine bei Nennförderhöhe (Qc0).  Typischer Wert = 0,21. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn[number]`: Nenndurchfluss (Q). Einheit = m/s. Typischer Wert = 40. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `ta[number]`: Abgeleitete Verstärkung (Ta).  Typischer Wert = 3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Auswaschzeitkonstante (Td).  Typischer Wert = 3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts[number]`: Gate-Servo-Zeitkonstante (Ts).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twnc[number]`: Wasserträgheitszeitkonstante (Twnc).  Typischer Wert = 1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twng[number]`: Trägheitszeitkonstante des Wassertunnels und des Wasserschlosses (Twng). Typischer Wert = 3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tx[number]`: Abgeleitete Rückkopplungsverstärkung (Tx).  Typischer Wert = 1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovHydroFrancis sein  - `va[number]`: Maximale Öffnungsgeschwindigkeit des Tores (Va).  Einheit = PU/sec.  Typischer Wert = 0,011. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmax[number]`: Maximale Toröffnung (ValvMax).  Typischer Wert = 1. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmin[number]`: Minimale Toröffnung (ValvMin).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vc[number]`: Maximale Schließgeschwindigkeit des Tores (Vc).  Einheit = PU/sec.  Typischer Wert = -0,011. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTunnelSurgeChamberSimulation[number]`: Wassertunnel- und Schwallkammersimulation (Tflag). true = Aktivierung der Wassertunnel- und Schwallkammersimulation false = Sperrung der Wassertunnel- und Schwallkammersimulation. Typischer Wert = false. Voreinstellung: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `zsfc[number]`: Höhe des oberen Wasserspiegels in Bezug auf die Höhe der Druckleitung (Zsfc).  Einheit = m. Typischer Wert = 25. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `am[number]`: Öffnungsquerschnitt S bei maximalem Wirkungsgrad (Am).  Typischer Wert = 0,7. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `av0[number]`: Fläche des Wasserschlosses (A). Einheit = m. Typischer Wert = 30. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `av1[number]`: Fläche des Ausgleichsbehälters (A). Einheit = m. Typischer Wert = 700. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: Abweichung (Bp).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `db1[number]`: Beabsichtigte Totbandbreite (DB1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Eine Beschreibung dieses Artikels  - `etamax[number]`: Maximaler Wirkungsgrad (EtaMax).  Typischer Wert = 1,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorControl[number]`: Flagge für die Steuerung des Reglers (Cflag).  Typischer Wert = mechanicHydrolicTachoAccelerator. Voreinstellung: Keine  . Model: [https://schema.org/Number](https://schema.org/Number)- `h1[number]`: Höhe des Wasserspiegels der Ausgleichskammer in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 4. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h2[number]`: Höhe des Wasserspiegels des Wasserschlosses in Bezug auf die Höhe der Druckleitung (H).  Einheit = m. Typischer Wert = 40. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hn[number]`: Hydraulische Nennförderhöhe (H).  Einheit = m. Typischer Wert = 250. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `kc[number]`: Verlustkoeffizient der Druckleitung (aufgrund von Reibung) (Kc).  Typischer Wert = 0,025. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: Verlustkoeffizient des Wassertunnels und des Wasserschlosses (aufgrund von Reibung) (Kg).  Typischer Wert = 0,025. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kt[number]`: Auswaschverstärkung (Kt).  Typischer Wert = 0,25. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `qc0[number]`: Leerlaufdurchfluss der Turbine bei Nennförderhöhe (Qc0).  Typischer Wert = 0,21. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn[number]`: Nenndurchfluss (Q). Einheit = m/s. Typischer Wert = 40. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `ta[number]`: Abgeleitete Verstärkung (Ta).  Typischer Wert = 3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Auswaschzeitkonstante (Td).  Typischer Wert = 3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts[number]`: Gate-Servo-Zeitkonstante (Ts).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twnc[number]`: Wasserträgheitszeitkonstante (Twnc).  Typischer Wert = 1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twng[number]`: Trägheitszeitkonstante des Wassertunnels und des Wasserschlosses (Twng). Typischer Wert = 3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tx[number]`: Abgeleitete Rückkopplungsverstärkung (Tx).  Typischer Wert = 1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovHydroFrancis sein  - `va[number]`: Maximale Öffnungsgeschwindigkeit des Tores (Va).  Einheit = PU/sec.  Typischer Wert = 0,011. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmax[number]`: Maximale Toröffnung (ValvMax).  Typischer Wert = 1. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmin[number]`: Minimale Toröffnung (ValvMin).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vc[number]`: Maximale Schließgeschwindigkeit des Tores (Vc).  Einheit = PU/sec.  Typischer Wert = -0,011. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTunnelSurgeChamberSimulation[number]`: Wassertunnel- und Schwallkammersimulation (Tflag). true = Aktivierung der Wassertunnel- und Schwallkammersimulation false = Sperrung der Wassertunnel- und Schwallkammersimulation. Typischer Wert = false. Voreinstellung: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `zsfc[number]`: Höhe des oberen Wasserspiegels in Bezug auf die Höhe der Druckleitung (Zsfc).  Einheit = m. Typischer Wert = 25. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
@@ -33,32 +40,60 @@ GovHydroFrancis:
   description: 'Adapted from CIM data models. Detailed hydro unit - Francis model.  This model can be used to represent three types of governors. A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is provided in the DetailedHydroModelHydraulicSystem diagram.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -69,7 +104,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -93,18 +128,18 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -116,7 +151,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -151,16 +186,20 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydrofrancis_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kc:    
@@ -184,7 +223,7 @@ GovHydroFrancis:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -203,9 +242,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -227,9 +268,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -253,9 +296,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -276,9 +321,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -302,9 +349,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -330,20 +379,36 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydrofrancis_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -360,7 +425,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -372,7 +437,7 @@ GovHydroFrancis:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -413,7 +478,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydroFrancis'    
+      description: NGSI type. It has to be GovHydroFrancis    
       enum:    
         - GovHydroFrancis    
       type: string    
@@ -458,7 +523,7 @@ GovHydroFrancis:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydroFrancis/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroFrancis/schema.json    
   x-model-tags: ""    
@@ -472,7 +537,7 @@ GovHydroFrancis:
 ## Beispiel-Nutzlasten  
 Nicht verfügbar ist das Beispiel eines GovHydroFrancis im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines GovHydroFrancis im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar ist das Beispiel eines GovHydroFrancis im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovHydroFrancis im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines GovHydroFrancis im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
