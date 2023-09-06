@@ -14,23 +14,30 @@
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `a[number]`: Posicionador de válvulas (). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `af1[number]`: Temperatura de los gases de escape Parámetro (Af1). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `af2[number]`: Coeficiente igual a 0,5(1 velocidad) (Af2). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: Posicionador de válvulas (). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf1[number]`: (Bf1).  Bf1 = E(1-w) donde E (coeficiente de sensibilidad a la velocidad) es de 0,55 a 0,65 x Tr. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf2[number]`: Coeficiente de par de la turbina K (depende del poder calorífico del flujo de combustible en la cámara de combustión) (Bf2). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `c[number]`: Posicionador de válvulas (). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cf2[number]`: Coeficiente que define el flujo de combustible cuando la potencia de salida es del 0% (Cf2).  Sincronizado pero sin salida.  Normalmente 0,23 x K (23% de flujo de combustible). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `ecr[number]`: Retraso del tiempo de reacción de la combustión (Ecr). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `etd[number]`: Retraso de la turbina y del escape (Etd). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `k3[number]`: Relación de ajuste de combustible (K3). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Ganancia del escudo contra la radiación (K4). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: Ganancia del escudo contra la radiación (K5). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: Caudal mínimo de combustible (K6). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Ganancia del regulador de caída (Kd). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdroop[number]`: (Kdroop). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Retroalimentación del sistema de combustible (Kf). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Ganancia del gobernador isócrono (Ki). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Ganancia proporcional PID (Kp). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase[number]`: Base para valores de potencia (MWbase) (> 0).  Unidad = MW. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `t[number]`: Constante de tiempo de control de combustible (T). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de tiempo del escudo de radiación (T3). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Constante de tiempo del termopar (T4). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Constante de tiempo de control de temperatura (T5). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Control de temperatura (Tc). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcd[number]`: Constante de tiempo de descarga del compresor (Tcd). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Constante de tiempo del transductor de potencia (Td). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Constante de tiempo del sistema de combustible (Tf). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmax[number]`: Límite máximo de la turbina (Tmax). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmin[number]`: Límite mínimo de la turbina (Tmin). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Temperatura nominal (Tr). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trate[number]`: Potencia de la turbina (Trate).  Unidad = MW. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Tasa de integración del controlador de temperatura (Tt). Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo de NGSI. Tiene que ser GovGASTWD  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `a[number]`: Posicionador de válvula (). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `af1[number]`: Temperatura de escape Parámetro (Af1). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `af2[number]`: Coeficiente igual a 0,5(1 velocidad) (Af2). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: Posicionador de válvula (). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf1[number]`: (Bf1).  Bf1 = E(1-w) donde E (coeficiente de sensibilidad a la velocidad) es de 0,55 a 0,65 x Tr. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf2[number]`: Coeficiente de par de turbina K (depende del poder calorífico del flujo de combustible en la cámara de combustión) (Bf2). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `c[number]`: Posicionador de válvula (). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cf2[number]`: Coeficiente que define el flujo de combustible cuando la potencia de salida es del 0% (Cf2).  Sincrónico pero sin salida.  Normalmente 0,23 x K (23% de flujo de combustible). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `ecr[number]`: Tiempo de retardo de la reacción de combustión (Ecr). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `etd[number]`: Retardo de turbina y escape (Etd). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `k3[number]`: Relación de ajuste del combustible (K3). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Ganancia del escudo contra la radiación (K4). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: Ganancia del escudo contra la radiación (K5). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: Caudal mínimo de combustible (K6). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Ganancia del regulador de caída (Kd). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdroop[number]`: (Kdroop). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Retroalimentación del sistema de combustible (Kf). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Ganancia del regulador isócrono (Ki). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Ganancia proporcional PID (Kp). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `mwbase[number]`: Base para valores de potencia (MWbase) (> 0).  Unidad = MW. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t[number]`: Constante de tiempo de control de combustible (T). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de tiempo del escudo de radiación (T3). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Constante de tiempo del termopar (T4). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Constante de tiempo de control de temperatura (T5). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Control de temperatura (Tc). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcd[number]`: Constante de tiempo de descarga del compresor (Tcd). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Constante de tiempo del transductor de potencia (Td). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Constante de tiempo del sistema de combustible (Tf). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmax[number]`: Límite máximo de la turbina (Tmáx). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmin[number]`: Límite mínimo de la turbina (Tmin). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Temperatura nominal (Tr). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trate[number]`: Potencia de la turbina (Trate).  Unidad = MW. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Tasa de integración del controlador de temperatura (Tt). Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo de NGSI. Tiene que ser GovGASTWD  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGASTWD:    
-  description: 'Adapted from CIM data models. Woodward Gas turbine governor model.'    
+  description: Adapted from CIM data models. Woodward Gas turbine governor model.    
   properties:    
     a:    
       description: 'Valve positioner (). Default: 0.0'    
@@ -39,26 +46,54 @@ GovGASTWD:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -76,12 +111,12 @@ GovGASTWD:
         model: https://schema.org/Number    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -117,24 +152,24 @@ GovGASTWD:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -151,16 +186,20 @@ GovGASTWD:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govgastwd_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     k3:    
@@ -220,7 +259,7 @@ GovGASTWD:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -239,9 +278,11 @@ GovGASTWD:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -263,9 +304,11 @@ GovGASTWD:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -289,9 +332,11 @@ GovGASTWD:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -312,9 +357,11 @@ GovGASTWD:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -338,9 +385,11 @@ GovGASTWD:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -366,8 +415,10 @@ GovGASTWD:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -377,20 +428,34 @@ GovGASTWD:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govgastwd_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -402,7 +467,7 @@ GovGASTWD:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -485,7 +550,7 @@ GovGASTWD:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovGASTWD'    
+      description: NGSI type. It has to be GovGASTWD    
       enum:    
         - GovGASTWD    
       type: string    
@@ -494,7 +559,7 @@ GovGASTWD:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovGASTWD/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGASTWD/schema.json    
   x-model-tags: ""    
@@ -506,15 +571,15 @@ GovGASTWD:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un GovGASTWD en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un GovGASTWD en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un GovGASTWD en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un GovGASTWD en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un GovGASTWD en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
