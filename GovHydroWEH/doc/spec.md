@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `db[number]`: Speed Dead Band (db). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: A description of this item  - `dicn[number]`: Value to allow the integral controller to advance beyond the gate limits (Dicn). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dpv[number]`: Value to allow the Pilot valve controller to advance beyond the gate limits (Dpv). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dturb[number]`: Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `feedbackSignal[number]`: Feedback signal selection (Sw). true = PID Output (if R-Perm-Gate=droop and R-Perm-Pe=0) false = Electrical Power (if R-Perm-Gate=0 and R-Perm-Pe=droop) or false = Gate Position (if R-Perm-Gate=droop and R-Perm-Pe=0). Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl1[number]`: Flow Gate 1 (Fl1).  Flow value for gate position point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl2[number]`: Flow Gate 2 (Fl2).  Flow value for gate position point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl3[number]`: Flow Gate 3 (Fl3).  Flow value for gate position point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl4[number]`: Flow Gate 4 (Fl4).  Flow value for gate position point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl5[number]`: Flow Gate 5 (Fl5).  Flow value for gate position point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp1[number]`: Flow P1 (Fp1).  Turbine Flow value for point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp10[number]`: Flow P10 (Fp10).  Turbine Flow value for point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp2[number]`: Flow P2 (Fp2).  Turbine Flow value for point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp3[number]`: Flow P3 (Fp3).  Turbine Flow value for point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp4[number]`: Flow P4 (Fp4).  Turbine Flow value for point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp5[number]`: Flow P5 (Fp5).  Turbine Flow value for point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp6[number]`: Flow P6 (Fp6).  Turbine Flow value for point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp7[number]`: Flow P7 (Fp7).  Turbine Flow value for point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp8[number]`: Flow P8 (Fp8).  Turbine Flow value for point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp9[number]`: Flow P9 (Fp9).  Turbine Flow value for point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: Maximum Gate Position (Gmax). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: Minimum Gate Position (Gmin). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gtmxcl[number]`: Maximum gate closing rate (Gtmxcl). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gtmxop[number]`: Maximum gate opening rate (Gtmxop). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Gate 1 (Gv1).  Gate Position value for point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Gate 2 (Gv2).  Gate Position value for point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Gate 3 (Gv3).  Gate Position value for point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Gate 4 (Gv4).  Gate Position value for point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Gate 5 (Gv5).  Gate Position value for point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `kd[number]`: Derivative controller derivative gain (Kd). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Derivative controller Integral gain (Ki). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Derivative control gain (Kp). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase[number]`: Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmss1[number]`: Pmss Flow P1 (Pmss1).  Mechanical Power output Pmss for Turbine Flow point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss10[number]`: Pmss Flow P10 (Pmss10).  Mechanical Power output Pmss for Turbine Flow point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss2[number]`: Pmss Flow P2 (Pmss2).  Mechanical Power output Pmss for Turbine Flow point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss3[number]`: Pmss Flow P3 (Pmss3).  Mechanical Power output Pmss for Turbine Flow point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss4[number]`: Pmss Flow P4 (Pmss4).  Mechanical Power output Pmss for Turbine Flow point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss5[number]`: Pmss Flow P5 (Pmss5).  Mechanical Power output Pmss for Turbine Flow point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss6[number]`: Pmss Flow P6 (Pmss6).  Mechanical Power output Pmss for Turbine Flow point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss7[number]`: Pmss Flow P7 (Pmss7).  Mechanical Power output Pmss for Turbine Flow point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss8[number]`: Pmss Flow P8 (Pmss8).  Mechanical Power output Pmss for Turbine Flow point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss9[number]`: Pmss Flow P9 (Pmss9).  Mechanical Power output Pmss for Turbine Flow point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rpg[number]`: Permanent droop for governor output feedback (R-Perm-Gate). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rpp[number]`: Permanent droop for electrical power feedback (R-Perm-Pe). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `td[number]`: Derivative controller time constant to limit the derivative characteristic beyond a breakdown frequency to avoid amplification of high-frequency noise (Td). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdv[number]`: Distributive Valve time lag time constant (Tdv). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Value to allow the Distribution valve controller to advance beyond the gate movement rate limit (Tg). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Pilot Valve time lag time constant (Tp). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpe[number]`: Electrical power droop time constant (Tpe). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Water inertia time constant (Tw) (>0). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovHydroWEH  <!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `db[number]`: Speed Dead Band (db). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: A description of this item  - `dicn[number]`: Value to allow the integral controller to advance beyond the gate limits (Dicn). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dpv[number]`: Value to allow the Pilot valve controller to advance beyond the gate limits (Dpv). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dturb[number]`: Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `feedbackSignal[number]`: Feedback signal selection (Sw). true = PID Output (if R-Perm-Gate=droop and R-Perm-Pe=0) false = Electrical Power (if R-Perm-Gate=0 and R-Perm-Pe=droop) or false = Gate Position (if R-Perm-Gate=droop and R-Perm-Pe=0). Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl1[number]`: Flow Gate 1 (Fl1).  Flow value for gate position point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl2[number]`: Flow Gate 2 (Fl2).  Flow value for gate position point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl3[number]`: Flow Gate 3 (Fl3).  Flow value for gate position point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl4[number]`: Flow Gate 4 (Fl4).  Flow value for gate position point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fl5[number]`: Flow Gate 5 (Fl5).  Flow value for gate position point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp1[number]`: Flow P1 (Fp1).  Turbine Flow value for point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp10[number]`: Flow P10 (Fp10).  Turbine Flow value for point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp2[number]`: Flow P2 (Fp2).  Turbine Flow value for point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp3[number]`: Flow P3 (Fp3).  Turbine Flow value for point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp4[number]`: Flow P4 (Fp4).  Turbine Flow value for point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp5[number]`: Flow P5 (Fp5).  Turbine Flow value for point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp6[number]`: Flow P6 (Fp6).  Turbine Flow value for point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp7[number]`: Flow P7 (Fp7).  Turbine Flow value for point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp8[number]`: Flow P8 (Fp8).  Turbine Flow value for point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fp9[number]`: Flow P9 (Fp9).  Turbine Flow value for point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: Maximum Gate Position (Gmax). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: Minimum Gate Position (Gmin). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gtmxcl[number]`: Maximum gate closing rate (Gtmxcl). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gtmxop[number]`: Maximum gate opening rate (Gtmxop). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Gate 1 (Gv1).  Gate Position value for point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Gate 2 (Gv2).  Gate Position value for point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Gate 3 (Gv3).  Gate Position value for point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Gate 4 (Gv4).  Gate Position value for point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Gate 5 (Gv5).  Gate Position value for point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `kd[number]`: Derivative controller derivative gain (Kd). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Derivative controller Integral gain (Ki). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Derivative control gain (Kp). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `mwbase[number]`: Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmss1[number]`: Pmss Flow P1 (Pmss1).  Mechanical Power output Pmss for Turbine Flow point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss10[number]`: Pmss Flow P10 (Pmss10).  Mechanical Power output Pmss for Turbine Flow point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss2[number]`: Pmss Flow P2 (Pmss2).  Mechanical Power output Pmss for Turbine Flow point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss3[number]`: Pmss Flow P3 (Pmss3).  Mechanical Power output Pmss for Turbine Flow point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss4[number]`: Pmss Flow P4 (Pmss4).  Mechanical Power output Pmss for Turbine Flow point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss5[number]`: Pmss Flow P5 (Pmss5).  Mechanical Power output Pmss for Turbine Flow point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss6[number]`: Pmss Flow P6 (Pmss6).  Mechanical Power output Pmss for Turbine Flow point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss7[number]`: Pmss Flow P7 (Pmss7).  Mechanical Power output Pmss for Turbine Flow point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss8[number]`: Pmss Flow P8 (Pmss8).  Mechanical Power output Pmss for Turbine Flow point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmss9[number]`: Pmss Flow P9 (Pmss9).  Mechanical Power output Pmss for Turbine Flow point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rpg[number]`: Permanent droop for governor output feedback (R-Perm-Gate). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rpp[number]`: Permanent droop for electrical power feedback (R-Perm-Pe). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `td[number]`: Derivative controller time constant to limit the derivative characteristic beyond a breakdown frequency to avoid amplification of high-frequency noise (Td). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdv[number]`: Distributive Valve time lag time constant (Tdv). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Value to allow the Distribution valve controller to advance beyond the gate movement rate limit (Tg). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Pilot Valve time lag time constant (Tp). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpe[number]`: Electrical power droop time constant (Tpe). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Water inertia time constant (Tw) (>0). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovHydroWEH  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 <!-- /35-RequiredProperties -->  
@@ -30,57 +37,85 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydroWEH:    
-  description: 'Adapted from CIM data models. Woodward Electric Hydro Governor Model.'    
+  description: Adapted from CIM data models. Woodward Electric Hydro Governor Model.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -92,7 +127,7 @@ GovHydroWEH:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -265,16 +300,20 @@ GovHydroWEH:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydroweh_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kd:    
@@ -298,7 +337,7 @@ GovHydroWEH:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -317,9 +356,11 @@ GovHydroWEH:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -341,9 +382,11 @@ GovHydroWEH:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -367,9 +410,11 @@ GovHydroWEH:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -390,9 +435,11 @@ GovHydroWEH:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -416,9 +463,11 @@ GovHydroWEH:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -444,8 +493,10 @@ GovHydroWEH:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -455,15 +506,29 @@ GovHydroWEH:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydroweh_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -540,7 +605,7 @@ GovHydroWEH:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -552,7 +617,7 @@ GovHydroWEH:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -593,7 +658,7 @@ GovHydroWEH:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydroWEH'    
+      description: NGSI type. It has to be GovHydroWEH    
       enum:    
         - GovHydroWEH    
       type: string    
@@ -602,7 +667,7 @@ GovHydroWEH:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydroWEH/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroWEH/schema.json    
   x-model-tags: ""    
