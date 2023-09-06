@@ -1,92 +1,127 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティExternalNetworkInjection  
-==============================<!-- /10-Header -->  
+エンティティ外部ネットワーク注入  
+================<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExternalNetworkInjection/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExternalNetworkInjection/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**CIM データモデルから引用した。このクラスは外部ネットワークを表し、IEC 60909 の計算で使用される。  
+グローバルな記述：**CIM データモデルからの引用。このクラスは外部ネットワークを表し、IEC 60909 の計算に使用される。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `governorSCD[number]`: パワー・フリークエンシー・バイアス。これは，電力注入量の変化を周波数の変化で割って，マイナスにしたものである。  電力周波数バイアスを正の値にすると、周波数が低下したときに電力注入が追加される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `ikSecond[number]`: IEC(Ik`)に従って初期対称短絡電流と電力を計算したかどうかを示す。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxInitialSymShCCurrent[number]`: 最大初期対称短絡電流（Ik` max）（単位：A）（Ik` = Sk`/(SQRT(3) Un)）。IEC 60909に準拠した短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxP[number]`: インジェクションの最大有効電力。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxQ[number]`: 短絡のモデリングには使用しない。負荷交換のための切込みのモデリングに使用される。maxQ と minQ を使用しない場合 ReactiveCapabilityCurve を使用することができる Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxR0ToX0Ratio[number]`: Network Feeder のゼロシーケンス抵抗とそのゼロシーケンスリアクタンスの最大比 (R(0)/X(0) max)。IEC 60909 に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxR1ToX1Ratio[number]`: Network Feeder の正方向シーケンス抵抗とその正方向シーケンスリアクタンスの最大比 (R(1)/X(1) max)。IEC 60909 に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxZ0ToZ1Ratio[number]`: 零相インピーダンスと正相インピーダンスの最大比（Z(0)/Z(1) max）。IEC 60909に基づく短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minInitialSymShCCurrent[number]`: 最小の初期対称短絡電流（Ik` min）（単位：A）（Ik` = Sk`/(SQRT(3) Un)）。IEC 60909に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minP[number]`: インジェクションの最小有効電力。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minQ[number]`: 短絡のモデリングには使用しない。負荷交換のための切込みのモデリングに使用される。maxQ と minQ を使用しない場合 ReactiveCapabilityCurve を使用することができる Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minR0ToX0Ratio[number]`: IEC (Ik`) に従って初期対称短絡電流と電力が計算されているかどうかを示す。IEC 6090に基づく短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minR1ToX1Ratio[number]`: Network Feeder の正方向シーケンス抵抗とその正方向シーケンスリアクタンスの最小比 (R(1)/X(1) min).IEC 60909 に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minZ0ToZ1Ratio[number]`: 零相インピーダンスと正相インピーダンスの最小比（Z(0)/Z(1)min）。IEC 60909に基づく短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `p[number]`: アクティブパワーインジェクション。負荷符号を使用し、正の符号はノードから流出することを意味する。定常状態ソリューションの開始値。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `q[number]`: 無効電力注入。負荷符号を使用し、正の符号はノードから流出することを意味する。定常解の開始値。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `referencePriority[number]`: パワーフロー電圧位相角参照バス選択として使用するユニットの優先順位。0 = don't care（デフォルト） 1 = 最優先。2は1より小さく、以下同様。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。ExternalNetworkInjectionでなければならない。  - `voltageFactor[number]`: 短絡電流Ik`および電力Sk`の計算に使用された電圧係数（pu）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `governorSCD[number]`: 電力周波数バイアス。これは、電力注入の変化を周波数の変化で割って負にしたものである。  電力周波数バイアスを正の値にすると、周波数が低下したときに追加電力が注入される。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `ikSecond[number]`: 初期対称短絡電流と電力がIEC（Ik`）に従って計算されているかどうかを示す。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `maxInitialSymShCCurrent[number]`: A 単位の最大初期対称短絡電流 (Ik` max) (Ik` = Sk`/(SQRT(3) Un))。IEC 60909に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxP[number]`: インジェクションの最大有効電力。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxQ[number]`: 短絡モデリング用ではなく、負荷フロー交換のためのインフィードのモデリングに使用される。maxQ および minQ を使用しない場合は、ReactiveCapabilityCurve を使用できる デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxR0ToX0Ratio[number]`: ゼロシーケンスリアクタンスに対するネットワークフィーダのゼロシーケンス抵抗の最大比（R(0)/X(0)max）。IEC 60909 に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxR1ToX1Ratio[number]`: 正シーケンスリアクタンスに対するネットワークフィーダの正シーケンス抵抗の最大比（R(1)/X(1)max）。IEC 60909 に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxZ0ToZ1Ratio[number]`: ゼロシーケンスインピーダンスの正シーケンスインピーダンスに対する最大比（Z(0)/Z(1)max）。IEC 60909に基づく短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minInitialSymShCCurrent[number]`: 最小初期対称短絡電流（Ik` min）（単位：A）（Ik` = Sk`/（SQRT(3) Un）。IEC 60909に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minP[number]`: 注入の最小有効電力。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minQ[number]`: 短絡モデリング用ではなく、負荷フロー交換のためのインフィードのモデリングに使用される。maxQ および minQ を使用しない場合は、ReactiveCapabilityCurve を使用できる デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minR0ToX0Ratio[number]`: 初期対称短絡電流と電力が IEC (Ik`) に従って計算されているかどうかを示す。IEC 6090に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minR1ToX1Ratio[number]`: 正シーケンスリアクタンスに対するネットワークフィーダの正シーケンス抵抗の最小比（R(1)/X(1)min）。IEC 60909 に従った短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minZ0ToZ1Ratio[number]`: ゼロシーケンスインピーダンスの正シーケンスインピーダンスに対する最小比（Z(0)/Z(1)min）。IEC 60909に基づく短絡データ交換に使用 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `p[number]`: 有効電力注入。すなわち、正の符号はノードからの流出を意味する。定常解の開始値。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `q[number]`: 無効電力注入。すなわち、正の符号はノードからの流出を意味する。定常解の開始値。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `referencePriority[number]`: パワーフロー電圧位相角基準バス選択として使用するユニットの優先順位。0 = 気にしない（デフォルト） 1 = 最優先。2 は 1 より小さい。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: NGSIタイプ。ExternalNetworkInjectionでなければならない。  - `voltageFactor[number]`: 短絡電流Ik`および電力Sk`の計算に使用されるpu単位の電圧係数。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)からの引用。このデータモデルは、IEC61970標準によって規定された共通情報モデル（CIM）をスマートデータモデルに直接変換したものです。このモデルに基づくPythonクラスは、Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されました。プロパティによっては、間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org までメールをお送りください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ExternalNetworkInjection:    
-  description: 'Adapted from CIM data models. This class represents external network and it is used for IEC 60909 calculations.'    
+  description: Adapted from CIM data models. This class represents external network and it is used for IEC 60909 calculations.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -97,16 +132,20 @@ ExternalNetworkInjection:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &externalnetworkinjection_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ikSecond:    
@@ -118,7 +157,7 @@ ExternalNetworkInjection:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -137,9 +176,11 @@ ExternalNetworkInjection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -161,9 +202,11 @@ ExternalNetworkInjection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -187,9 +230,11 @@ ExternalNetworkInjection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -210,9 +255,11 @@ ExternalNetworkInjection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -236,9 +283,11 @@ ExternalNetworkInjection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -264,8 +313,10 @@ ExternalNetworkInjection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxInitialSymShCCurrent:    
@@ -341,15 +392,29 @@ ExternalNetworkInjection:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *externalnetworkinjection_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -372,7 +437,7 @@ ExternalNetworkInjection:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -384,12 +449,12 @@ ExternalNetworkInjection:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be ExternalNetworkInjection'    
+      description: NGSI type. It has to be ExternalNetworkInjection    
       enum:    
         - ExternalNetworkInjection    
       type: string    
@@ -404,7 +469,7 @@ ExternalNetworkInjection:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExternalNetworkInjection/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExternalNetworkInjection/schema.json    
   x-model-tags: ""    
@@ -416,15 +481,15 @@ ExternalNetworkInjection:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-ExternalNetworkInjectionのJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExternalNetworkInjection を JSON-LD 形式で正規化した例は、利用不可。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExternalNetworkInjectionの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-ExternalNetworkInjection を JSON-LD 形式で正規化した例はない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のExternalNetworkInjectionの例をkey-valuesとして利用することはできない。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると、個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の ExternalNetworkInjection の例は利用できません。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のExternalNetworkInjectionの例をkey-valuesとして利用することはできない。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の ExternalNetworkInjection の例は利用できません。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
