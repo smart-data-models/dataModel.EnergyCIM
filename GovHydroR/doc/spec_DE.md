@@ -15,7 +15,14 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `at[number]`: Turbinenverstärkung (At).  Typischer Wert = 1,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1[number]`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Eine Beschreibung dieses Artikels  - `dturb[number]`: Dämpfungsfaktor der Turbine (Dturb).  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eps[number]`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: Maximale Leistung des Reglers (Gmax).  Typischer Wert = 1,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: Minimale Leistung des Reglers (Gmin).  Typischer Wert = -0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h0[number]`: Nennhöhe der Turbine (H0).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `inputSignal[number]`: Eingangssignalschalter (Flag). true = Pe-Eingang wird verwendet false = Rückmeldung wird von CV empfangen. Flag ist normalerweise abhängig von Tt.  Wenn Tf Null ist, wird Flag auf false gesetzt. Wenn Tf nicht Null ist, wird Flag auf true gesetzt.  Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: Gate-Servo-Verstärkung (Kg).  Typischer Wert = 2. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Integrale Verstärkung (Ki).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase[number]`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pgv1[number]`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Nichtlineare Verstärkung Punkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: Nichtlineare Verstärkung Punkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Maximale Toröffnung, PU der MW-Basis (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Minimale Toröffnung, PU der MW-Basis (Pmin).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qnl[number]`: Leerlaufdurchfluss der Turbine bei Nennhöhe (Qnl).  Typischer Wert = 0,08. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: Stationärer P-Bereich (R).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `t1[number]`: Vorlaufzeitkonstante 1 (T1).  Typischer Wert = 1,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Nachlaufzeitkonstante 1 (T2).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Durchlaufzeitkonstante 2 (T3).  Typischer Wert = 1,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Nachlaufzeitkonstante 2 (T4).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Vorlaufzeitkonstante 3 (T5).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Nachlaufzeitkonstante 3 (T6).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t7[number]`: Vorlaufzeitkonstante 4 (T7).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t8[number]`: Nachlaufzeitkonstante 4 (T8).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Zeitkonstante des Eingangsfilters (Td).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Gate-Servo-Zeitkonstante (Tp).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Zeitkonstante der Leistungsrückführung (Tt).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Wasserträgheitszeitkonstante (Tw).  Typischer Wert = 1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovHydroR sein  - `velcl[number]`: Maximale Schließgeschwindigkeit des Tores (Velcl).  Einheit = PU/sec.  Typischer Wert = -0,2. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `velop[number]`: Maximale Toröffnungsgeschwindigkeit (Velop).  Einheit = PU/sec.  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `at[number]`: Verstärkung der Turbine (At).  Typischer Wert = 1,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `db1[number]`: Beabsichtigte Totbandbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Eine Beschreibung dieses Artikels  - `dturb[number]`: Dämpfungsfaktor der Turbine (Dturb).  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eps[number]`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: Maximale Leistung des Reglers (Gmax).  Typischer Wert = 1,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: Minimale Leistung des Reglers (Gmin).  Typischer Wert = -0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Nichtlinearer Verstärkungspunkt 1, PU gv (Gv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Nichtlinearer Verstärkungspunkt 2, PU gv (Gv2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Nichtlinearer Verstärkungspunkt 3, PU gv (Gv3).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Nichtlinearer Verstärkungspunkt 4, PU gv (Gv4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Nichtlinearer Verstärkungspunkt 5, PU gv (Gv5).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: Nichtlinearer Verstärkungspunkt 6, PU gv (Gv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h0[number]`: Nennhöhe der Turbine (H0).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `inputSignal[number]`: Eingangssignalschalter (Flag). true = Pe-Eingang wird verwendet false = Rückmeldung wird von CV empfangen. Flag ist normalerweise abhängig von Tt.  Wenn Tf Null ist, wird Flag auf false gesetzt. Wenn Tf nicht Null ist, wird Flag auf true gesetzt.  Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: Gate-Servo-Verstärkung (Kg).  Typischer Wert = 2. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Integrale Verstärkung (Ki).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase[number]`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pgv1[number]`: Nichtlinearer Verstärkungspunkt 1, PU-Leistung (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Nichtlinearer Verstärkungspunkt 2, PU-Leistung (Pgv2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Nichtlinearer Verstärkungspunkt 3, PU-Leistung (Pgv3).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Nichtlinearer Verstärkungspunkt 4, PU-Leistung (Pgv4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Nichtlineare Verstärkung Punkt 5, PU-Leistung (Pgv5).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: Nichtlineare Verstärkung Punkt 6, PU-Leistung (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Maximale Toröffnung, PU der MW-Basis (Pmax).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Minimale Toröffnung, PU der MW-Basis (Pmin).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qnl[number]`: Leerlaufdurchfluss der Turbine bei Nennhöhe (Qnl).  Typischer Wert = 0,08. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: Stationärer P-Bereich (R).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `t1[number]`: Vorlaufzeitkonstante 1 (T1).  Typischer Wert = 1,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Nachlaufzeitkonstante 1 (T2).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Vorlaufzeitkonstante 2 (T3).  Typischer Wert = 1,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Nachlaufzeitkonstante 2 (T4).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Vorlaufzeitkonstante 3 (T5).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Nachlaufzeitkonstante 3 (T6).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t7[number]`: Vorlaufzeitkonstante 4 (T7).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t8[number]`: Nachlaufzeitkonstante 4 (T8).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Zeitkonstante des Eingangsfilters (Td).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Gate-Servo-Zeitkonstante (Tp).  Typischer Wert = 0,05. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Zeitkonstante der Leistungsrückführung (Tt).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Wasserträgheitszeitkonstante (Tw).  Typischer Wert = 1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovHydroR sein  - `velcl[number]`: Maximale Schließgeschwindigkeit des Tores (Velcl).  Einheit = PU/sec.  Typischer Wert = -0,2. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `velop[number]`: Maximale Toröffnungsgeschwindigkeit (Velop).  Einheit = PU/sec.  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
@@ -30,40 +37,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydroR:    
-  description: 'Adapted from CIM data models. Fourth order lead-lag governor and hydro turbine.'    
+  description: Adapted from CIM data models. Fourth order lead-lag governor and hydro turbine.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -75,18 +110,18 @@ GovHydroR:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -104,7 +139,7 @@ GovHydroR:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -175,16 +210,20 @@ GovHydroR:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydror_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     inputSignal:    
@@ -208,7 +247,7 @@ GovHydroR:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -227,9 +266,11 @@ GovHydroR:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -251,9 +292,11 @@ GovHydroR:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -277,9 +320,11 @@ GovHydroR:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -300,9 +345,11 @@ GovHydroR:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -326,9 +373,11 @@ GovHydroR:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -354,8 +403,10 @@ GovHydroR:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -365,15 +416,29 @@ GovHydroR:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydror_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -438,7 +503,7 @@ GovHydroR:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -450,7 +515,7 @@ GovHydroR:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -527,7 +592,7 @@ GovHydroR:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydroR'    
+      description: NGSI type. It has to be GovHydroR    
       enum:    
         - GovHydroR    
       type: string    
@@ -548,7 +613,7 @@ GovHydroR:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydroR/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroR/schema.json    
   x-model-tags: ""    
