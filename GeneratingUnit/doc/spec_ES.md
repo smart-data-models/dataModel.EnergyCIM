@@ -1,30 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entidad: GeneratingUnit  
-=======================<!-- /10-Header -->  
+Entidad: Unidad generadora  
+==========================<!-- /10-Header -->  
 <!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GeneratingUnit/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Adaptado de los modelos de datos CIM. Un conjunto de máquinas síncronas para convertir la energía mecánica en energía de corriente alterna. Por ejemplo, las máquinas individuales dentro de un conjunto pueden definirse con fines de programación mientras se deriva una única señal de control para el conjunto. En este caso habría una GeneratingUnit para cada miembro del conjunto y una GeneratingUnit adicional correspondiente al conjunto.**  
+Descripción global: **Adaptado de los modelos de datos CIM. Conjunto de máquinas síncronas que convierten la energía mecánica en energía de corriente alterna. Por ejemplo, las máquinas individuales de un conjunto pueden definirse con fines de programación, mientras que para el conjunto se deriva una única señal de control. En este caso habría una GeneratingUnit para cada miembro del conjunto y una GeneratingUnit adicional correspondiente al conjunto.**  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `ControlAreaGeneratingUnit[number]`: Especificaciones del área de control para esta unidad generadora. Por defecto: "lista  . Model: [https://schema.org/Number](https://schema.org/Number)- `GrossToNetActivePowerCurves[number]`: Una unidad de generación puede tener una curva de potencia activa bruta a potencia activa neta, que describe las pérdidas y las necesidades de potencia auxiliar de la unidad. Por defecto: "lista".  . Model: [https://schema.org/Number](https://schema.org/Number)- `RotatingMachine[number]`: Una máquina síncrona puede funcionar como generador y, como tal, se convierte en miembro de una unidad generadora. Por defecto: 'lista'  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `genControlSource[number]`: El origen de los controles para una unidad generadora. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorSCD[number]`: Caída del Cambiador de Velocidad del Gobernador.   Es el cambio en la salida de potencia del generador dividido por el cambio en la frecuencia normalizado por la potencia nominal del generador y la frecuencia nominal y expresado en porcentaje y negado. Un valor positivo de droop de cambio de velocidad proporciona una salida adicional del generador ante una caída de la frecuencia. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `initialP[number]`: Potencia activa inicial por defecto que se utiliza para almacenar un resultado de flujo de potencia para la potencia activa inicial para esta unidad en esta configuración de red. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `longPF[number]`: Factor de participación económica a largo plazo de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxOperatingP[number]`: Este es el límite máximo de potencia activa de funcionamiento que el despachador puede introducir para esta unidad. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maximumAllowableSpinningReserve[number]`: Máxima reserva de giro permitida. La reserva de giro nunca se considerará mayor que este valor, independientemente del punto de funcionamiento actual. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minOperatingP[number]`: Este es el límite mínimo de potencia activa de funcionamiento que el despachador puede introducir para esta unidad. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `nominalP[number]`: La potencia nominal de la unidad generadora.  Se utiliza para dar un significado preciso a los atributos basados en el porcentaje, como la caída del cambio de velocidad del regulador (atributo governorSCD). El atributo deberá ser un valor positivo igual o menor que RotatingMachine.ratedS. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `normalPF[number]`: Factor de participación económica de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `ratedGrossMaxP[number]`: La capacidad máxima nominal bruta de la unidad (valor contable). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedGrossMinP[number]`: El nivel de generación mínimo nominal bruto al que la unidad puede operar con seguridad mientras entrega energía a la red de transmisión. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedNetMaxP[number]`: La capacidad máxima nominal neta determinada restando la potencia auxiliar utilizada para el funcionamiento de la maquinaria interna de la planta de la capacidad máxima bruta nominal. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortPF[number]`: Factor de participación económica a corto plazo de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startupCost[number]`: El coste de puesta en marcha inicial en el que se incurre por cada arranque de la GeneratingUnit. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalEfficiency[number]`: La eficiencia de la unidad para convertir el combustible en energía eléctrica. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser GeneratingUnit  - `variableCost[number]`: El componente de coste variable de producción por unidad de ActivePower. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `ControlAreaGeneratingUnit[number]`: Especificaciones de ControlArea para esta unidad generadora. Por defecto: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `GrossToNetActivePowerCurves[number]`: Una unidad generadora puede tener una curva de potencia activa bruta a potencia activa neta, que describe las pérdidas y las necesidades de potencia auxiliar de la unidad. Por defecto: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `RotatingMachine[number]`: Una máquina síncrona puede funcionar como generador y, como tal, se convierte en miembro de una unidad generadora. Por defecto: 'list'  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `genControlSource[number]`: La fuente de controles para una unidad generadora. Predeterminado: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorSCD[number]`: Caída del variador de velocidad del regulador.   Es el cambio en la potencia de salida del generador dividido por el cambio en la frecuencia normalizada por la potencia nominal del generador y la frecuencia nominal y expresado en porcentaje y negado. Un valor positivo de droop de cambio de velocidad proporciona salida adicional del generador ante una caída de frecuencia. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `initialP[number]`: Potencia activa inicial por defecto que se utiliza para almacenar un resultado de flujo de potencia para la potencia activa inicial para esta unidad en esta configuración de red. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `longPF[number]`: Factor de participación económica a largo plazo de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxOperatingP[number]`: Este es el límite máximo de potencia activa operativa que el despachador puede ingresar para esta unidad. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `maximumAllowableSpinningReserve[number]`: Máxima reserva de giro permitida. La reserva de giro nunca se considerará superior a este valor, independientemente del punto de funcionamiento actual. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minOperatingP[number]`: Este es el límite mínimo de potencia activa operativa que el despachador puede ingresar para esta unidad. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `nominalP[number]`: Potencia nominal de la unidad generadora.  Se utiliza para dar un significado preciso a los atributos basados en porcentajes, como el estatismo de cambio de velocidad del regulador (atributo governorSCD). El atributo deberá ser un valor positivo igual o inferior a RotatingMachine.ratedS. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `normalPF[number]`: Factor de participación económica de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `ratedGrossMaxP[number]`: Capacidad máxima nominal bruta de la unidad (valor contable). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedGrossMinP[number]`: El nivel de generación mínimo nominal bruto con el que la unidad puede funcionar de forma segura mientras suministra energía a la red de transporte. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedNetMaxP[number]`: La capacidad máxima nominal neta determinada restando la potencia auxiliar utilizada para hacer funcionar la maquinaria interna de la planta de la capacidad máxima bruta nominal. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortPF[number]`: Factor de participación económica a corto plazo de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `startupCost[number]`: El coste de arranque inicial incurrido por cada arranque de la GeneratingUnit. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalEfficiency[number]`: La eficiencia de la unidad en la conversión del combustible en energía eléctrica. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser GeneratingUnit  - `variableCost[number]`: El componente de coste variable de producción por unidad de ActivePower. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -51,60 +58,88 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -121,16 +156,20 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &generatingunit_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     initialP:    
@@ -142,7 +181,7 @@ GeneratingUnit:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -161,9 +200,11 @@ GeneratingUnit:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -185,9 +226,11 @@ GeneratingUnit:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -211,9 +254,11 @@ GeneratingUnit:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -234,9 +279,11 @@ GeneratingUnit:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -260,9 +307,11 @@ GeneratingUnit:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -288,8 +337,10 @@ GeneratingUnit:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     longPF:    
@@ -317,7 +368,7 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -334,10 +385,24 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *generatingunit_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -360,7 +425,7 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -378,7 +443,7 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -395,7 +460,7 @@ GeneratingUnit:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GeneratingUnit'    
+      description: NGSI type. It has to be GeneratingUnit    
       enum:    
         - GeneratingUnit    
       type: string    
@@ -410,7 +475,7 @@ GeneratingUnit:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GeneratingUnit/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GeneratingUnit/schema.json    
   x-model-tags: ""    
@@ -422,15 +487,15 @@ GeneratingUnit:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de una GeneratingUnit en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una GeneratingUnit en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una GeneratingUnit en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una GeneratingUnit en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de una GeneratingUnit en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de una GeneratingUnit en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de una GeneratingUnit en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una GeneratingUnit en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
