@@ -14,13 +14,20 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `a[number]`: Ventil-Stellungsregler (A). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `af1[number]`: Abgastemperatur Parameter (Af1).  Einheit = Temperatur pro Einheit.  Basierend auf der Temperatur in Grad C. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `af2[number]`: Koeffizient gleich 0,5 (1 Geschwindigkeit) (Af2). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: Ventil-Stellungsregler (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf1[number]`: (Bf1).  Bf1 = E(1-w), wobei E (Geschwindigkeitsempfindlichkeitskoeffizient) 0,55 bis 0,65 x Tr beträgt.  Einheit = pro Temperatureinheit.  Basierend auf der Temperatur in Grad C. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf2[number]`: Turbinendrehmomentkoeffizient K (hängt vom Heizwert des Brennstoffstroms in der Brennkammer ab) (Bf2). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `c[number]`: Ventil-Stellungsregler (C). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cf2[number]`: Koeffizient, der den Kraftstofffluss bei einer Leistung von 0 % definiert (Cf2).  Synchron, aber keine Leistung.  Normalerweise 0,23 x K (23% Brennstoffdurchsatz). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `ecr[number]`: Verzögerung der Verbrennungsreaktion (Ecr). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `etd[number]`: Turbinen- und Abgasverzögerung (Etd). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `k3[number]`: Verhältnis der Kraftstoffanpassung (K3). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Verstärkung des Strahlungsschutzes (K4). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: Verstärkung des Strahlungsschutzes (K5). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: Minimaler Kraftstoffdurchfluss (K6). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Rückmeldung des Kraftstoffsystems (Kf). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase[number]`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `t[number]`: Zeitkonstante der Kraftstoffregelung (T). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Zeitkonstante des Strahlenschutzes (T3). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Thermoelement-Zeitkonstante (T4). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Zeitkonstante der Temperaturregelung (T5). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Temperaturregelung (Tc).  Einheit = [SYMBOL ENTFERNT]F oder [SYMBOL ENTFERNT]C je nach den Konstanten Af1 und Bf1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcd[number]`: Zeitkonstante der Verdichterentladung (Tcd). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Zeitkonstante des Kraftstoffsystems (Tf). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmax[number]`: Maximaler Turbinengrenzwert (Tmax). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmin[number]`: Minimaler Turbinengrenzwert (Tmin). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Nenntemperatur (Tr).  Einheit = [SYMBOL ENTFERNT]C abhängig von den Parametern Af1 und Bf1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trate[number]`: Turbinenleistung (Trate).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Integrationsrate des Temperaturreglers (Tt). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovGAST2 sein.  - `w[number]`: Verstärkung des Reglers (1/Droop) bei der Turbinenleistung (W). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x[number]`: Konstante für die Vorlaufzeit des Reglers (X). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `y[number]`: Verzögerungszeitkonstante des Reglers (Y) (>0). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `z[number]`: Reglermodus (Z). true = Droop false = ISO. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `a[number]`: Ventil-Stellungsregler (A). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `af1[number]`: Abgastemperatur Parameter (Af1).  Einheit = Temperatur pro Einheit.  Basierend auf der Temperatur in Grad C. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `af2[number]`: Koeffizient gleich 0,5 (1 Geschwindigkeit) (Af2). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: Ventil-Stellungsregler (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf1[number]`: (Bf1).  Bf1 = E(1-w), wobei E (Geschwindigkeitsempfindlichkeitskoeffizient) 0,55 bis 0,65 x Tr beträgt.  Einheit = pro Temperatureinheit.  Basierend auf der Temperatur in Grad C. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bf2[number]`: Turbinendrehmomentkoeffizient K (hängt vom Heizwert des Brennstoffstroms in der Brennkammer ab) (Bf2). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `c[number]`: Ventil-Stellungsregler (C). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cf2[number]`: Koeffizient, der den Kraftstofffluss bei einer Leistung von 0 % definiert (Cf2).  Synchron, aber keine Leistung.  Normalerweise 0,23 x K (23% Brennstoffdurchsatz). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `ecr[number]`: Verzögerung der Verbrennungsreaktion (Ecr). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `etd[number]`: Turbinen- und Abgasverzögerung (Etd). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `k3[number]`: Verhältnis der Kraftstoffanpassung (K3). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Verstärkung des Strahlungsschutzes (K4). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: Verstärkung des Strahlungsschutzes (K5). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: Minimaler Kraftstoffdurchfluss (K6). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Rückmeldung des Kraftstoffsystems (Kf). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase[number]`: Basis für Leistungswerte (MWbase) (> 0).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `t[number]`: Zeitkonstante der Kraftstoffregelung (T). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Zeitkonstante des Strahlenschutzes (T3). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Thermoelement-Zeitkonstante (T4). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Zeitkonstante der Temperaturregelung (T5). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Temperaturregelung (Tc).  Einheit = [SYMBOL ENTFERNT]F oder [SYMBOL ENTFERNT]C je nach den Konstanten Af1 und Bf1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcd[number]`: Zeitkonstante der Verdichterentladung (Tcd). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Zeitkonstante des Kraftstoffsystems (Tf). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmax[number]`: Maximaler Turbinengrenzwert (Tmax). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmin[number]`: Minimaler Turbinengrenzwert (Tmin). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Nenntemperatur (Tr).  Einheit = [SYMBOL ENTFERNT]C abhängig von den Parametern Af1 und Bf1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trate[number]`: Turbinenleistung (Trate).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Integrationsrate des Temperaturreglers (Tt). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovGAST2 sein.  - `w[number]`: Verstärkung des Reglers (1/Droop) bei der Turbinenleistung (W). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x[number]`: Konstante für die Vorlaufzeit des Reglers (X). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `y[number]`: Verzögerungszeitkonstante des Reglers (Y) (>0). Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `z[number]`: Reglermodus (Z). true = Droop false = ISO. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können einen falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -30,7 +37,7 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGAST2:    
-  description: 'Adapted from CIM data models. Gas turbine model.'    
+  description: Adapted from CIM data models. Gas turbine model.    
   properties:    
     a:    
       description: 'Valve positioner (A). Default: 0.0'    
@@ -39,26 +46,54 @@ GovGAST2:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -76,12 +111,12 @@ GovGAST2:
         model: https://schema.org/Number    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -117,24 +152,24 @@ GovGAST2:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -151,16 +186,20 @@ GovGAST2:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govgast2_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     k3:    
@@ -196,7 +235,7 @@ GovGAST2:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -215,9 +254,11 @@ GovGAST2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -239,9 +280,11 @@ GovGAST2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -265,9 +308,11 @@ GovGAST2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -288,9 +333,11 @@ GovGAST2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -314,9 +361,11 @@ GovGAST2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -342,8 +391,10 @@ GovGAST2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -353,20 +404,34 @@ GovGAST2:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govgast2_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -378,7 +443,7 @@ GovGAST2:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -455,7 +520,7 @@ GovGAST2:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovGAST2'    
+      description: NGSI type. It has to be GovGAST2    
       enum:    
         - GovGAST2    
       type: string    
@@ -488,7 +553,7 @@ GovGAST2:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovGAST2/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST2/schema.json    
   x-model-tags: ""    
