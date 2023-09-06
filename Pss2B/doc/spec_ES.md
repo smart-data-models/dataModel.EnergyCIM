@@ -7,30 +7,37 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Adaptado de los modelos de datos CIM. Modelo IEEE PSS2B modificado.  Se ha añadido un bloque adicional de lead/lag (o tasa) al final (hasta 4 lead/lags en total).**  
+Descripción global: **Adaptado de los modelos de datos CIM. Modelo IEEE PSS2B modificado.  Se ha añadido al final un bloque adicional de adelanto/retraso (o tasa) (hasta un total de 4 adelantos/retrasos)**.  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `a[number]`: Constante del numerador (a).  Valor típico = 1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `inputSignal1Type[number]`: Tipo de señal de entrada #1.  Valor típico = rotorSpeed. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `inputSignal2Type[number]`: Tipo de señal de entrada #2.  Valor típico = generatorElectricalPower. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks1[number]`: Ganancia del estabilizador (Ks1).  Valor típico = 12. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks2[number]`: Ganancia en la señal #2 (Ks2).  Valor típico = 0,2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks3[number]`: Ganancia en la entrada de la señal #2 antes del filtro de seguimiento de rampa (Ks3).  Valor típico = 1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks4[number]`: Ganancia en la entrada de la señal #2 después del filtro de seguimiento de rampa (Ks4).  Valor típico = 1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `m[number]`: Orden del denominador del filtro de seguimiento de rampa (M).  Valor típico = 5. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `n[number]`: Orden del filtro de seguimiento de rampa (N).  Valor típico = 1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1[number]`: Constante de tiempo de avance/retraso (T1).  Valor típico = 0,12. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t10[number]`: Constante de tiempo de avance/retraso (T10).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t11[number]`: Constante de tiempo de avance/retraso (T11).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Constante de tiempo de avance/retraso (T2).  Valor típico = 0,02. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de tiempo de avance/retraso (T3).  Valor típico = 0,3. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Constante de tiempo de avance/retraso (T4).  Valor típico = 0,02. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Constante de tiempo en la señal #1 (T6).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t7[number]`: Constante de tiempo en la señal #2 (T7).  Valor típico = 2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t8[number]`: Conducción del filtro de seguimiento de rampa (T8).  Valor típico = 0,2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t9[number]`: Retraso del filtro de seguimiento de rampa (T9).  Valor típico = 0,1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ta[number]`: Constante de plomo (Ta).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Constante de tiempo de retardo (Tb).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw1[number]`: Primer lavado en la señal #1 (Tw1).  Valor típico = 2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw2[number]`: Segundo lavado en la señal #1 (Tw2).  Valor típico = 2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw3[number]`: Primer lavado en la señal #2 (Tw3).  Valor típico = 2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw4[number]`: Segundo lavado en la señal #2 (Tw4).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser Pss2B  - `vsi1max[number]`: Límite máximo de la señal de entrada #1 (Vsi1max).  Valor típico = 2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi1min[number]`: Límite mínimo de la señal de entrada #1 (Vsi1min).  Valor típico = -2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi2max[number]`: Límite máximo de la señal de entrada #2 (Vsi2max).  Valor típico = 2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi2min[number]`: Límite mínimo de la señal de entrada #2 (Vsi2min).  Valor típico = -2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: Límite máximo de salida del estabilizador (Vstmax).  Valor típico = 0,1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: Límite mínimo de salida del estabilizador (Vstmin).  Valor típico = -0,1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `a[number]`: Constante del numerador (a).  Valor típico = 1. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `inputSignal1Type[number]`: Tipo de señal de entrada #1.  Valor típico = rotorSpeed. Valor por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `inputSignal2Type[number]`: Tipo de señal de entrada #2.  Valor típico = generatorElectricalPower. Valor por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks1[number]`: Ganancia del estabilizador (Ks1).  Valor típico = 12. Valor por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks2[number]`: Ganancia en la señal nº 2 (Ks2).  Valor típico = 0,2. Valor por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks3[number]`: Ganancia en la entrada de señal #2 antes del filtro de seguimiento de rampa (Ks3).  Valor típico = 1. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks4[number]`: Ganancia en la entrada de señal #2 después del filtro de seguimiento de rampa (Ks4).  Valor típico = 1. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `m[number]`: Orden denominador del filtro de seguimiento de rampa (M).  Valor típico = 5. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `n[number]`: Orden del filtro de seguimiento de rampa (N).  Valor típico = 1. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `t1[number]`: Constante de tiempo de adelanto/retraso (T1).  Valor típico = 0,12. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t10[number]`: Constante de tiempo de adelanto/retraso (T10).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t11[number]`: Constante de tiempo de adelanto/retraso (T11).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Constante de tiempo de avance/retraso (T2).  Valor típico = 0,02. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Constante de tiempo de avance/retraso (T3).  Valor típico = 0,3. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Constante de tiempo de avance/retraso (T4).  Valor típico = 0,02. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Constante de tiempo en la señal #1 (T6).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t7[number]`: Constante de tiempo en la señal #2 (T7).  Valor típico = 2. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t8[number]`: Conducción del filtro de seguimiento de rampa (T8).  Valor típico = 0,2. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t9[number]`: Retardo del filtro de seguimiento de rampa (T9).  Valor típico = 0,1. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ta[number]`: Constante de plomo (Ta).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Constante de tiempo de retardo (Tb).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw1[number]`: Primer lavado de la señal nº 1 (Tw1).  Valor típico = 2. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw2[number]`: Segundo lavado en la señal #1 (Tw2).  Valor típico = 2. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw3[number]`: Primer lavado en la señal #2 (Tw3).  Valor típico = 2. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw4[number]`: Segundo lavado en la señal #2 (Tw4).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser Pss2B  - `vsi1max[number]`: Límite máximo de la señal de entrada nº 1 (Vsi1max).  Valor típico = 2. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi1min[number]`: Límite mínimo de la señal de entrada nº 1 (Vsi1min).  Valor típico = -2. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi2max[number]`: Límite máximo de la señal de entrada nº 2 (Vsi2max).  Valor típico = 2. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vsi2min[number]`: Límite mínimo de la señal de entrada nº 2 (Vsi2min).  Valor típico = -2. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: Límite máximo de salida del estabilizador (Vstmax).  Valor típico = 0,1. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: Límite mínimo de salida del estabilizador (Vstmin).  Valor típico = -0,1. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pss2B:    
-  description: 'Adapted from CIM data models. Modified IEEE PSS2B Model.  Extra lead/lag (or rate) block added at end (up to 4 lead/lags total).'    
+  description: Adapted from CIM data models. Modified IEEE PSS2B Model.  Extra lead/lag (or rate) block added at end (up to 4 lead/lags total).    
   properties:    
     a:    
       description: 'Numerator constant (a).  Typical Value = 1. Default: 0.0'    
@@ -39,74 +46,106 @@ Pss2B:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &pss2b_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     inputSignal1Type:    
@@ -148,7 +187,7 @@ Pss2B:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -167,9 +206,11 @@ Pss2B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -191,9 +232,11 @@ Pss2B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -217,9 +260,11 @@ Pss2B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -240,9 +285,11 @@ Pss2B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -266,9 +313,11 @@ Pss2B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -294,8 +343,10 @@ Pss2B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     m:    
@@ -311,20 +362,34 @@ Pss2B:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *pss2b_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -336,7 +401,7 @@ Pss2B:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -437,7 +502,7 @@ Pss2B:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be Pss2B'    
+      description: NGSI type. It has to be Pss2B    
       enum:    
         - Pss2B    
       type: string    
@@ -482,7 +547,7 @@ Pss2B:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Pss2B/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Pss2B/schema.json    
   x-model-tags: ""    
@@ -494,15 +559,15 @@ Pss2B:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un Pss2B en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un Pss2B en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un Pss2B en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un Pss2B en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un Pss2B en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un Pss2B en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un Pss2B en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un Pss2B en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
