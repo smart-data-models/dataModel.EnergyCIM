@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `a0[number]`: Filter coefficient (A0). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a1[number]`: Limiter (Al). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a2[number]`: Filter coefficient (A2). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a3[number]`: Filter coefficient (A3). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a4[number]`: Filter coefficient (A4). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a5[number]`: Filter coefficient (A5). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `al[number]`: Limiter (Al). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `athres[number]`: Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b0[number]`: Filter coefficient (B0). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b1[number]`: Filter coefficient (B1). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b2[number]`: Filter coefficient (B2). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b3[number]`: Filter coefficient (B3). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b4[number]`: Filter coefficient (B4). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b5[number]`: Filter coefficient (B5). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `dl[number]`: Limiter (Dl). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtc[number]`: Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtf[number]`: Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtp[number]`: Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `isw[number]`: Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `k[number]`: Gain (K).  Typical Value = 9. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `lthres[number]`: Threshold value (Lthres). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `m[number]`: (M).  M=2*H.  Typical Value = 5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `nav[number]`: Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ncl[number]`: Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ncr[number]`: Number of counts until reset after limit function is triggered (Ncr). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmin[number]`: (Pmin). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `t1[number]`: Time constant (T1).  Typical Value = 0.3. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Time constant (T2).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Time constant (T3).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Time constant (T4).  Typical Value = 0.05. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Time constant (T5). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Time constant (T6). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Time constant (Tf).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Time constant (Tp).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be PssPTIST3  <!-- /30-PropertiesList -->  
+- `a0[number]`: Filter coefficient (A0). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a1[number]`: Limiter (Al). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a2[number]`: Filter coefficient (A2). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a3[number]`: Filter coefficient (A3). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a4[number]`: Filter coefficient (A4). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `a5[number]`: Filter coefficient (A5). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `al[number]`: Limiter (Al). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `athres[number]`: Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b0[number]`: Filter coefficient (B0). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b1[number]`: Filter coefficient (B1). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b2[number]`: Filter coefficient (B2). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b3[number]`: Filter coefficient (B3). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b4[number]`: Filter coefficient (B4). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b5[number]`: Filter coefficient (B5). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `dl[number]`: Limiter (Dl). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtc[number]`: Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtf[number]`: Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dtp[number]`: Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `isw[number]`: Digital/analog output switch (Isw). true = produce analog output false = convert to digital output, using tap selection table. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `k[number]`: Gain (K).  Typical Value = 9. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `lthres[number]`: Threshold value (Lthres). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `m[number]`: (M).  M=2*H.  Typical Value = 5. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item  - `nav[number]`: Number of control outputs to average (Nav) (1 <= Nav <= 16).  Typical Value = 4. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ncl[number]`: Number of counts at limit to active limit function (Ncl) (>0). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ncr[number]`: Number of counts until reset after limit function is triggered (Ncr). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pmin[number]`: (Pmin). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `t1[number]`: Time constant (T1).  Typical Value = 0.3. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Time constant (T2).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Time constant (T3).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Time constant (T4).  Typical Value = 0.05. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Time constant (T5). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Time constant (T6). Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Time constant (Tf).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Time constant (Tp).  Typical Value = 0.2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be PssPTIST3  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 <!-- /35-RequiredProperties -->  
@@ -30,7 +37,7 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PssPTIST3:    
-  description: 'Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 3.'    
+  description: Adapted from CIM data models. PTI Microprocessor-Based Stabilizer type 3.    
   properties:    
     a0:    
       description: 'Filter coefficient (A0). Default: 0.0'    
@@ -69,26 +76,54 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -100,12 +135,12 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -153,24 +188,24 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -199,16 +234,20 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &pssptist3_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isw:    
@@ -226,7 +265,7 @@ PssPTIST3:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -245,9 +284,11 @@ PssPTIST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -269,9 +310,11 @@ PssPTIST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -295,9 +338,11 @@ PssPTIST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -318,9 +363,11 @@ PssPTIST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -344,9 +391,11 @@ PssPTIST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -372,8 +421,10 @@ PssPTIST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     lthres:    
@@ -389,7 +440,7 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -412,10 +463,24 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *pssptist3_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -426,7 +491,7 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -438,7 +503,7 @@ PssPTIST3:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -491,7 +556,7 @@ PssPTIST3:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be PssPTIST3'    
+      description: NGSI type. It has to be PssPTIST3    
       enum:    
         - PssPTIST3    
       type: string    
@@ -500,7 +565,7 @@ PssPTIST3:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssPTIST3/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssPTIST3/schema.json    
   x-model-tags: ""    
