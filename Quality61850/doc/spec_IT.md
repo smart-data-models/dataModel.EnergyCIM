@@ -15,12 +15,19 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `badReference[number]`: Il valore di misura potrebbe essere errato a causa di un riferimento fuori calibrazione. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `estimatorReplaced[number]`: Il valore è stato sostituito da State Estimator. estimatorReplaced non è un bit di qualità IEC61850, ma è stato inserito in questa classe per comodità. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `failure[number]`: Questo identificatore indica che una funzione di supervisione ha rilevato un guasto interno o esterno, ad esempio un guasto di comunicazione. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `oldData[number]`: Il valore di misura è vecchio e forse non valido, poiché non è stato aggiornato correttamente durante l'intervallo di tempo specificato. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatorBlocked[number]`: Il valore di misura è bloccato e quindi non disponibile per la trasmissione. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `oscillatory[number]`: Per evitare un sovraccarico della comunicazione, è opportuno rilevare e sopprimere gli ingressi binari oscillanti (che cambiano rapidamente). Se un segnale cambia in un tempo definito (tosc) due volte nella stessa direzione (da 0 a 1 o da 1 a 0), viene rilevata l'oscillazione e viene impostato l'identificatore di qualità del dettaglio "oscillante". Se viene rilevata, può trascorrere un numero configurato di variazioni transitorie. In questo lasso di tempo viene impostato lo stato di validità `questionabile`. Se dopo questo numero definito di cambiamenti il segnale è ancora in stato oscillatorio, il valore viene impostato sullo stato opposto del precedente valore stabile o su un valore predefinito definito. In questo caso, lo stato di validità `questionable` viene ripristinato e `invalid` viene impostato finché il segnale oscilla. Se è configurato in modo tale che non debbano passare variazioni transitorie, lo stato di validità `invalido` viene impostato immediatamente, oltre all'identificatore di qualità di dettaglio `oscillatorio` (utilizzato solo per le informazioni sullo stato). Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `outOfRange[number]`: Il valore di misura supera un intervallo di valori predefinito. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `overFlow[number]`: Il valore della misura supera la capacità di essere rappresentato correttamente. Ad esempio, il valore di un contatore trabocca dal conteggio massimo a un valore pari a zero. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[number]`: L'origine fornisce informazioni relative all'origine di un valore. Il valore può essere acquisito dal processo, predefinito o sostituito. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)- `suspect[number]`: Una funzione di correlazione ha rilevato che il valore non è coerente con altri valori. In genere viene impostato da un Estimatore di stato della rete. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `test[number]`: Il valore di misura viene trasmesso a scopo di test. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere Qualità61850  - `validity[number]`: Validità del valore di misura. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `badReference[number]`: Il valore di misura potrebbe essere errato a causa di un riferimento fuori calibrazione. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `estimatorReplaced[number]`: Il valore è stato sostituito da State Estimator. estimatorReplaced non è un bit di qualità IEC61850, ma è stato inserito in questa classe per comodità. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `failure[number]`: Questo identificatore indica che una funzione di supervisione ha rilevato un guasto interno o esterno, ad esempio un guasto di comunicazione. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `oldData[number]`: Il valore di misura è vecchio e forse non valido, in quanto non è stato aggiornato correttamente durante l'intervallo di tempo specificato. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatorBlocked[number]`: Il valore di misura è bloccato e quindi non disponibile per la trasmissione. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `oscillatory[number]`: Per evitare un sovraccarico della comunicazione, è opportuno rilevare e sopprimere gli ingressi binari oscillanti (che cambiano rapidamente). Se un segnale cambia in un tempo definito (tosc) due volte nella stessa direzione (da 0 a 1 o da 1 a 0), viene rilevata l'oscillazione e viene impostato l'identificatore di qualità del dettaglio "oscillante". Se viene rilevata, può trascorrere un numero configurato di variazioni transitorie. In questo lasso di tempo viene impostato lo stato di validità `questionabile`. Se dopo questo numero definito di cambiamenti il segnale è ancora in stato oscillatorio, il valore viene impostato sullo stato opposto del precedente valore stabile o su un valore predefinito definito. In questo caso, lo stato di validità `questionable` viene ripristinato e `invalid` viene impostato finché il segnale oscilla. Se è configurato in modo tale che non debbano passare cambiamenti transitori, allora lo stato di validità `invalido` viene impostato immediatamente, oltre all'identificatore di qualità di dettaglio `oscillatorio` (usato solo per informazioni sullo stato). Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `outOfRange[number]`: Il valore di misura supera un intervallo di valori predefinito. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `overFlow[number]`: Il valore della misura supera la capacità di essere rappresentato correttamente. Ad esempio, il valore di un contatore trabocca dal conteggio massimo a un valore pari a zero. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[number]`: L'origine fornisce informazioni relative all'origine di un valore. Il valore può essere acquisito dal processo, predefinito o sostituito. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)- `suspect[number]`: Una funzione di correlazione ha rilevato che il valore non è coerente con altri valori. In genere viene impostato da un Estimatore di stato della rete. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `test[number]`: Il valore di misura viene trasmesso a scopo di test. Predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere Qualità61850  - `validity[number]`: Validità del valore di misura. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di segnalare un problema o di inviare una mail a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
@@ -33,37 +40,65 @@ Quality61850:
   description: 'Adapted from CIM data models. Quality flags in this class are as defined in IEC 61850, except for estimatorReplaced, which has been included in this class for convenience.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -75,24 +110,24 @@ Quality61850:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -109,22 +144,26 @@ Quality61850:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &quality61850_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -143,9 +182,11 @@ Quality61850:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -167,9 +208,11 @@ Quality61850:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -193,9 +236,11 @@ Quality61850:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -216,9 +261,11 @@ Quality61850:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -242,9 +289,11 @@ Quality61850:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -270,12 +319,14 @@ Quality61850:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -310,15 +361,29 @@ Quality61850:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *quality61850_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -348,7 +413,7 @@ Quality61850:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be Quality61850'    
+      description: NGSI type. It has to be Quality61850    
       enum:    
         - Quality61850    
       type: string    
@@ -363,7 +428,7 @@ Quality61850:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Quality61850/schema.json    
   x-model-tags: ""    
