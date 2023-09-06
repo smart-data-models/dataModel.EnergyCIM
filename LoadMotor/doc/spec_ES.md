@@ -1,30 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entidad: LoadMotor  
-==================<!-- /10-Header -->  
+Entidad: CargaMotor  
+===================<!-- /10-Header -->  
 <!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/LoadMotor/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Adaptado de los modelos de datos CIM. Carga agregada del motor de inducción. Este modelo se utiliza para representar una fracción de una carga ordinaria como carga de motor de inducción.  Permite que la carga tratada como potencia constante ordinaria en el análisis de flujo de potencia sea representada por un motor de inducción en la simulación dinámica.  Si = 0. o = , o = 0., sólo se representa una jaula. La saturación magnética no se modela. Se puede modelar un modelo de "una jaula" o de "dos jaulas" de la máquina de inducción. La saturación magnética no se modela.  Este modelo está pensado para la representación de agregaciones de muchos motores dispersos a través de una carga representada en un bus de alta tensión, pero donde no hay información sobre las características de los motores individuales.  Este modelo trata una fracción de la parte de potencia constante de una carga como un motor. Durante la inicialización, la potencia inicial consumida por el motor se establece igual a veces la parte constante de la carga estática.  El resto de la carga se deja como carga estática.  La demanda de potencia reactiva del motor se calcula durante la inicialización en función de la tensión en el bus de carga. Esta demanda de potencia reactiva puede ser menor o mayor que la componente constante de la carga.  Si la demanda reactiva del motor es mayor que la componente constante de la carga, el modelo inserta un condensador en derivación en el terminal del motor para reducir su demanda reactiva hasta igualar la carga reactiva constante.   Si un modelo de motor y un modelo de carga estática están presentes para una carga, se supone que el motor se resta de la carga constante del flujo de potencia antes de aplicar el modelo de carga estática.  El resto de la carga, si la hay, se representa entonces con el modelo de carga estática.**  
+Descripción global: **Adaptado de los modelos de datos CIM. Carga agregada del motor de inducción. Este modelo se utiliza para representar una fracción de una carga ordinaria como carga de motor de inducción.  Permite que la carga que se trata como potencia constante ordinaria en el análisis de flujo de potencia se represente mediante un motor de inducción en la simulación dinámica.  Si = 0. o = , o = 0., sólo se representa una jaula. La saturación magnética no se modela. Se puede modelar un modelo de "una jaula" o de "dos jaulas" de la máquina de inducción. No se modela la saturación magnética.  Este modelo está pensado para la representación de agregaciones de muchos motores dispersos a través de una carga representada en un bus de alta tensión, pero donde no hay información sobre las características de los motores individuales.  Este modelo trata una fracción de la parte de potencia constante de una carga como un motor. Durante la inicialización, la potencia inicial consumida por el motor se establece igual a veces la parte constante de la carga estática.  El resto de la carga se deja como carga estática.  La demanda de potencia reactiva del motor se calcula durante la inicialización en función de la tensión en el bus de carga. Esta demanda de potencia reactiva puede ser menor o mayor que la componente constante de la carga.  Si la demanda reactiva del motor es superior a la componente constante de la carga, el modelo inserta un condensador en derivación en el terminal del motor para reducir su demanda reactiva hasta igualarla a la carga reactiva constante.   Si un modelo de motor y un modelo de carga estática están presentes para una carga, se supone que el motor se resta de la carga constante del flujo de potencia antes de que se aplique el modelo de carga estática.  El resto de la carga, si la hay, se representa entonces mediante el modelo de carga estática.**  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `LoadAggregate[number]`: Carga agregada a la que pertenece esta carga agregada del motor (dinámica). Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `d[number]`: Factor de amortiguación (D).  Unidad = delta P/delta velocidad.  Valor típico = 2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `h[number]`: Constante de inercia (H) (no=0).  Valor típico = 0,4. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `lfac[number]`: Factor de carga - relación entre la P inicial y la base de MVA del motor (Lfac).  Valor típico = 0,8. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `lp[number]`: Reactancia transitoria (Lp).  Valor típico = 0,15. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `lpp[number]`: Reactancia subtransitoria (Lpp).  Valor típico = 0,15. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ls[number]`: Reactancia sincrónica (Ls).  Valor típico = 3,2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pfrac[number]`: Fracción de carga de potencia constante que debe representar este modelo de motor (Pfrac) (>=0,0 y <=1,0).  Valor típico = 0,3. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ra[number]`: Resistencia del estator (Ra).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tbkr[number]`: Tiempo de funcionamiento del interruptor (Tbkr).  Valor típico = 0,08. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpo[number]`: Constante de tiempo transitoria del rotor (Tpo) (no=0).  Valor típico = 1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tppo[number]`: Constante de tiempo del rotor subtransitorio (Tppo).  Valor típico = 0,02. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tv[number]`: Tiempo de recogida de la tensión (Tv).  Valor típico = 0,1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo de NGSI. Tiene que ser LoadMotor  - `vt[number]`: Umbral de tensión para el disparo (Vt).  Valor típico = 0,7. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `LoadAggregate[number]`: Carga agregada a la que pertenece esta carga (dinámica) agregada del motor. Predeterminado: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `d[number]`: Factor de amortiguación (D).  Unidad = delta P/delta velocidad.  Valor típico = 2. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `h[number]`: Constante de inercia (H) (no=0).  Valor típico = 0,4. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `lfac[number]`: Factor de carga - relación entre la P inicial y la base de MVA del motor (Lfac).  Valor típico = 0,8. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `lp[number]`: Reactancia transitoria (Lp).  Valor típico = 0,15. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `lpp[number]`: Reactancia subtransitoria (Lpp).  Valor típico = 0,15. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ls[number]`: Reactancia síncrona (Ls).  Valor típico = 3,2. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `pfrac[number]`: Fracción de carga de potencia constante que debe representar este modelo de motor (Pfrac) (>=0,0 y <=1,0).  Valor típico = 0,3. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ra[number]`: Resistencia del estator (Ra).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tbkr[number]`: Tiempo de funcionamiento del disyuntor (Tbkr).  Valor típico = 0,08. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpo[number]`: Constante de tiempo transitoria del rotor (Tpo) (no=0).  Valor típico = 1. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tppo[number]`: Constante de tiempo del rotor subtransitorio (Tppo).  Valor típico = 0,02. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tv[number]`: Tiempo de desconexión por tensión (Tv).  Valor típico = 0,1. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser LoadMotor  - `vt[number]`: Umbral de tensión para el disparo (Vt).  Valor típico = 0,7. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -39,37 +46,65 @@ LoadMotor:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -81,24 +116,24 @@ LoadMotor:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -109,16 +144,20 @@ LoadMotor:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &loadmotor_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     lfac:    
@@ -130,7 +169,7 @@ LoadMotor:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -149,9 +188,11 @@ LoadMotor:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -173,9 +214,11 @@ LoadMotor:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -199,9 +242,11 @@ LoadMotor:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -222,9 +267,11 @@ LoadMotor:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -248,9 +295,11 @@ LoadMotor:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -276,8 +325,10 @@ LoadMotor:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     lp:    
@@ -299,15 +350,29 @@ LoadMotor:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *loadmotor_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -324,7 +389,7 @@ LoadMotor:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -336,7 +401,7 @@ LoadMotor:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -365,7 +430,7 @@ LoadMotor:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be LoadMotor'    
+      description: NGSI type. It has to be LoadMotor    
       enum:    
         - LoadMotor    
       type: string    
@@ -380,7 +445,7 @@ LoadMotor:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/LoadMotor/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/LoadMotor/schema.json    
   x-model-tags: ""    
@@ -393,14 +458,14 @@ LoadMotor:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 No está disponible el ejemplo de un LoadMotor en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un LoadMotor en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un LoadMotor en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un LoadMotor en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un LoadMotor en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un LoadMotor en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
