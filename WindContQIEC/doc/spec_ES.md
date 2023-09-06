@@ -14,17 +14,24 @@
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `WindTurbineType3or4IEC[number]`: Modelo de aerogenerador tipo 3 o 4 al que se asocia este modo de control reactivo. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `iqh1[number]`: Máxima inyección de corriente reactiva durante la inmersión (i). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqmax[number]`: Máxima inyección de corriente reactiva (i). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqmin[number]`: Inyección mínima de corriente reactiva (i). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqpost[number]`: Inyección de corriente reactiva tras la avería (). Es un parámetro que depende del proyecto. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiq[number]`: Ganancia de integración del controlador PI de potencia reactiva (). Es un parámetro dependiente del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiu[number]`: Ganancia de integración del controlador PI de tensión (). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpq[number]`: Ganancia proporcional del controlador PI de potencia reactiva (). Es un parámetro dependiente del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpu[number]`: Ganancia proporcional del controlador PI de tensión (). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqv[number]`: Factor de escala de tensión para la corriente LVRT (). Es un parámetro que depende del proyecto. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `qmax[number]`: Potencia reactiva máxima (q). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qmin[number]`: Potencia reactiva mínima (q). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdroop[number]`: Componente resistivo de la impedancia de caída de tensión (). Es un parámetro que depende del proyecto. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tiq[number]`: Constante de tiempo en el retraso de la corriente reactiva (T). Es un parámetro que depende del tipo. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpfilt[number]`: Constante de tiempo del filtro de medición de potencia (). Es un parámetro que depende del tipo. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpost[number]`: Duración del periodo de tiempo en el que se inyecta la potencia reactiva posterior a la avería (). Es un parámetro que depende del proyecto. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tqord[number]`: Constante de tiempo en el retardo de orden de la potencia reactiva (). Es un parámetro dependiente del tipo. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tufilt[number]`: Constante de tiempo del filtro de medición de tensión (). Es un parámetro dependiente del tipo. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo de NGSI. Tiene que ser WindContQIEC  - `udb1[number]`: Límite inferior de la banda muerta de tensión (). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `udb2[number]`: Límite superior de la banda muerta de tensión (). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `umax[number]`: Tensión máxima en el término integral del controlador PI de tensión (u). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `umin[number]`: Tensión mínima en el término integral del controlador PI de tensión (u). Es un parámetro que depende del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uqdip[number]`: Umbral de tensión para la detección de LVRT en el control q (). Es un parámetro dependiente del tipo. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uref0[number]`: Sesgo definido por el usuario en la referencia de tensión (), utilizado cuando =. Es un parámetro que depende del caso. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `windLVRTQcontrolModesType[number]`: Tipos de modos de control de LVRT Q (). Es un parámetro que depende del proyecto. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `windQcontrolModesType[number]`: Tipos de modos de control general de la turbina eólica Q ().  Es un parámetro que depende del proyecto. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `xdroop[number]`: Componente inductivo de la impedancia de caída de tensión (). Es un parámetro que depende del proyecto. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `WindTurbineType3or4IEC[number]`: Modelo de aerogenerador tipo 3 ó 4 al que se asocia este modo de control reactivo. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `iqh1[number]`: Inyección máxima de corriente reactiva durante la inmersión (i). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqmax[number]`: Inyección máxima de corriente reactiva (i). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqmin[number]`: Inyección mínima de corriente reactiva (i). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `iqpost[number]`: Inyección de corriente reactiva posterior a la avería (). Es un parámetro que depende del proyecto. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiq[number]`: Ganancia de integración del controlador PI de potencia reactiva (). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiu[number]`: Ganancia de integración del controlador PI de tensión (). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpq[number]`: Ganancia proporcional del controlador PI de potencia reactiva (). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpu[number]`: Ganancia proporcional del controlador PI de tensión (). Es un parámetro dependiente del tipo. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqv[number]`: Factor de escala de tensión para la corriente LVRT (). Es un parámetro dependiente del proyecto. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `qmax[number]`: Potencia reactiva máxima (q). Es un parámetro dependiente del tipo. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qmin[number]`: Potencia reactiva mínima (q). Es un parámetro dependiente del tipo. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdroop[number]`: Componente resistivo de la impedancia de caída de tensión (). Es un parámetro que depende del proyecto. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tiq[number]`: Constante de tiempo en el desfase de la corriente reactiva (T). Es un parámetro dependiente del tipo. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpfilt[number]`: Constante de tiempo del filtro de medición de potencia (). Es un parámetro dependiente del tipo. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpost[number]`: Duración del periodo de tiempo en el que se inyecta potencia reactiva posterior a la avería (). Es un parámetro que depende del proyecto. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tqord[number]`: Constante de tiempo en retardo de orden de potencia reactiva (). Es un parámetro dependiente del tipo. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tufilt[number]`: Constante de tiempo del filtro de medición de tensión (). Es un parámetro dependiente del tipo. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser WindContQIEC  - `udb1[number]`: Límite inferior de la banda muerta de tensión (). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `udb2[number]`: Límite superior de la banda muerta de tensión (). Es un parámetro dependiente del tipo. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `umax[number]`: Tensión máxima en el término integral del controlador PI de tensión (u). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `umin[number]`: Tensión mínima en el término integral del controlador PI de tensión (u). Es un parámetro dependiente del tipo. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uqdip[number]`: Umbral de tensión para la detección de LVRT en el control q (). Es un parámetro dependiente del tipo. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uref0[number]`: Sesgo definido por el usuario en la referencia de tensión (), utilizado cuando =. Es un parámetro que depende del caso. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `windLVRTQcontrolModesType[number]`: Tipos de modos de control LVRT Q (). Es un parámetro dependiente del proyecto. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `windQcontrolModesType[number]`: Tipos de modos generales de control Q de aerogeneradores ().  Es un parámetro dependiente del proyecto. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `xdroop[number]`: Componente inductivo de la impedancia de caída de tensión (). Es un parámetro que depende del proyecto. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -39,74 +46,106 @@ WindContQIEC:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &windcontqiec_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     iqh1:    
@@ -166,7 +205,7 @@ WindContQIEC:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -185,9 +224,11 @@ WindContQIEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -209,9 +250,11 @@ WindContQIEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -235,9 +278,11 @@ WindContQIEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -258,9 +303,11 @@ WindContQIEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -284,9 +331,11 @@ WindContQIEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -312,20 +361,36 @@ WindContQIEC:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *windcontqiec_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -348,7 +413,7 @@ WindContQIEC:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -360,7 +425,7 @@ WindContQIEC:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -395,7 +460,7 @@ WindContQIEC:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be WindContQIEC'    
+      description: NGSI type. It has to be WindContQIEC    
       enum:    
         - WindContQIEC    
       type: string    
@@ -458,7 +523,7 @@ WindContQIEC:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/WindContQIEC/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/WindContQIEC/schema.json    
   x-model-tags: ""    
@@ -470,15 +535,15 @@ WindContQIEC:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un WindContQIEC en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un WindContQIEC en formato JSON-LD normalizado. Es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un WindContQIEC en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un WindContQIEC en formato JSON-LD como normalizado. Es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un WindContQIEC en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un WindContQIEC en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un WindContQIEC en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un WindContQIEC en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
