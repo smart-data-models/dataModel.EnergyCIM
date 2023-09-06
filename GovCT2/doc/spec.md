@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `db[number]`: Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: A description of this item  - `dm[number]`: Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim1[number]`: Frequency threshold 1 (Flim1).  Unit = Hz.  Typical Value = 59. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim10[number]`: Frequency threshold 10 (Flim10).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim2[number]`: Frequency threshold 2 (Flim2).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim3[number]`: Frequency threshold 3 (Flim3).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim4[number]`: Frequency threshold 4 (Flim4).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim5[number]`: Frequency threshold 5 (Flim5).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim6[number]`: Frequency threshold 6 (Flim6).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim7[number]`: Frequency threshold 7 (Flim7).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim8[number]`: Frequency threshold 8 (Flim8).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim9[number]`: Frequency threshold 9 (Flim9).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `ka[number]`: Acceleration limiter Gain (Ka).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: Governor integral gain (Kigov).  Typical Value = 0.45. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: Load limiter integral gain for PI controller (Kiload).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: Governor proportional gain (Kpgov).  Typical Value = 4. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: Load limiter proportional gain for PI controller (Kpload).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: Turbine gain (Kturb).  Typical Value = 1.9168. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxerr[number]`: Maximum value for speed error signal (Maxerr).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: Minimum value for speed error signal (Minerr).  Typical Value = -1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `plim1[number]`: Power limit 1 (Plim1).  Typical Value = 0.8325. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim10[number]`: Power limit 10 (Plim10).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim2[number]`: Power limit 2 (Plim2).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim3[number]`: Power limit 3 (Plim3).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim4[number]`: Power limit 4 (Plim4).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim5[number]`: Power limit 5 (Plim5).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim6[number]`: Power limit 6 (Plim6).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim7[number]`: Power limit 7 (Plim7).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim8[number]`: Power limit 8 (Plim8).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim9[number]`: Power Limit 9 (Plim9).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `prate[number]`: Ramp rate for frequency-dependent power limit (Prate).  Typical Value = 0.017. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: Permanent droop (R).  Typical Value = 0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ta[number]`: Acceleration limiter time constant (Ta).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: Actuator time constant (Tact).  Typical Value = 0.4. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Turbine lag time constant (Tb).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Turbine lead time constant (Tc).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: Load Limiter time constant (Tfload).  Typical Value = 3. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: Electrical power transducer time constant (Tpelec).  Typical Value = 2.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: Temperature detection lead time constant (Tsa).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: Temperature detection lag time constant (Tsb).  Typical Value = 50. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovCT2  - `vmax[number]`: Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: Minimum valve position limit (Vmin).  Typical Value = 0.175. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: No load fuel flow (Wfnl).  Typical Value = 0.187. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = false. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: Acceleration limiter setpoint (Aset).  Unit = PU/sec.  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `db[number]`: Speed governor dead band in per unit speed (db).  In the majority of applications, it is recommended that this value be set to zero.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: A description of this item  - `dm[number]`: Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the engine power with the shaft speed or the variation of maximum power capability with shaft speed.  If it is positive it describes the falling slope of the engine speed verses power characteristic as speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed, but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim1[number]`: Frequency threshold 1 (Flim1).  Unit = Hz.  Typical Value = 59. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim10[number]`: Frequency threshold 10 (Flim10).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim2[number]`: Frequency threshold 2 (Flim2).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim3[number]`: Frequency threshold 3 (Flim3).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim4[number]`: Frequency threshold 4 (Flim4).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim5[number]`: Frequency threshold 5 (Flim5).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim6[number]`: Frequency threshold 6 (Flim6).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim7[number]`: Frequency threshold 7 (Flim7).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim8[number]`: Frequency threshold 8 (Flim8).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim9[number]`: Frequency threshold 9 (Flim9).  Unit = Hz.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `ka[number]`: Acceleration limiter Gain (Ka).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: Governor derivative gain (Kdgov).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: Governor integral gain (Kigov).  Typical Value = 0.45. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: Load limiter integral gain for PI controller (Kiload).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: Power controller (reset) gain (Kimw).  The default value of 0.01 corresponds to a reset time of 100 seconds.  A value of 0.001 corresponds to a relatively slow acting load controller.  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: Governor proportional gain (Kpgov).  Typical Value = 4. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: Load limiter proportional gain for PI controller (Kpload).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: Turbine gain (Kturb).  Typical Value = 1.9168. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: Load limiter reference value (Ldref).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxerr[number]`: Maximum value for speed error signal (Maxerr).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: Minimum value for speed error signal (Minerr).  Typical Value = -1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: Base for power values (MWbase) (> 0).  Unit = MW. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `plim1[number]`: Power limit 1 (Plim1).  Typical Value = 0.8325. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim10[number]`: Power limit 10 (Plim10).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim2[number]`: Power limit 2 (Plim2).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim3[number]`: Power limit 3 (Plim3).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim4[number]`: Power limit 4 (Plim4).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim5[number]`: Power limit 5 (Plim5).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim6[number]`: Power limit 6 (Plim6).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim7[number]`: Power limit 7 (Plim7).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim8[number]`: Power limit 8 (Plim8).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim9[number]`: Power Limit 9 (Plim9).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `prate[number]`: Ramp rate for frequency-dependent power limit (Prate).  Typical Value = 0.017. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: Permanent droop (R).  Typical Value = 0.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: Minimum valve closing rate (Rclose).  Unit = PU/sec.  Typical Value = -99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: Maximum rate of load limit decrease (Rdown).  Typical Value = -99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: Maximum valve opening rate (Ropen).  Unit = PU/sec.  Typical Value = 99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: Feedback signal for droop (Rselect).  Typical Value = electricalPower. Default: None  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: Maximum rate of load limit increase (Rup).  Typical Value = 99. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `ta[number]`: Acceleration limiter time constant (Ta).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: Actuator time constant (Tact).  Typical Value = 0.4. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Turbine lag time constant (Tb).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Turbine lead time constant (Tc).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: Governor derivative controller time constant (Tdgov).  Typical Value = 1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: Transport time delay for diesel engine used in representing diesel engines where there is a small but measurable transport delay between a change in fuel flow setting and the development of torque (Teng).  Teng should be zero in all but special cases where this transport delay is of particular concern.  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: Load Limiter time constant (Tfload).  Typical Value = 3. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: Electrical power transducer time constant (Tpelec).  Typical Value = 2.5. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: Temperature detection lead time constant (Tsa).  Typical Value = 0. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: Temperature detection lag time constant (Tsb).  Typical Value = 50. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be GovCT2  - `vmax[number]`: Maximum valve position limit (Vmax).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: Minimum valve position limit (Vmin).  Typical Value = 0.175. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: No load fuel flow (Wfnl).  Typical Value = 0.187. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: Switch for fuel source characteristic to recognize that fuel flow, for a given fuel valve stroke, can be proportional to engine speed (Wfspd). true = fuel flow proportional to speed (for some gas turbines and diesel engines with positive displacement fuel injectors) false = fuel control system keeps fuel flow independent of engine speed. Typical Value = false. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 <!-- /35-RequiredProperties -->  
@@ -30,40 +37,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovCT2:    
-  description: 'Adapted from CIM data models. General governor model with frequency-dependent fuel flow limit.  This model is a modification of the GovCT1model in order to represent the frequency-dependent fuel flow limit of a specific gas turbine manufacturer.'    
+  description: Adapted from CIM data models. General governor model with frequency-dependent fuel flow limit.  This model is a modification of the GovCT1model in order to represent the frequency-dependent fuel flow limit of a specific gas turbine manufacturer.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -75,18 +110,18 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -98,7 +133,7 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -169,16 +204,20 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govct2_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ka:    
@@ -238,7 +277,7 @@ GovCT2:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -257,9 +296,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -281,9 +322,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -307,9 +350,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -330,9 +375,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -356,9 +403,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -384,8 +433,10 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxerr:    
@@ -407,15 +458,29 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govct2_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -522,7 +587,7 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -534,7 +599,7 @@ GovCT2:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -599,7 +664,7 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovCT2'    
+      description: NGSI type. It has to be GovCT2    
       enum:    
         - GovCT2    
       type: string    
@@ -632,7 +697,7 @@ GovCT2:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovCT2/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovCT2/schema.json    
   x-model-tags: ""    
