@@ -3,28 +3,35 @@
 エンティティPowerTransformerEnd  
 =========================<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformerEnd/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PowerTransformerEnd/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**CIM データモデルから引用。PowerTransformer の各 Terminal には、PowerTransformerEnd が関連付けられている。PowerTransformerEnd のインピーダンス値 r、r0、x、x0 は、以下のようにスター等価を表す。 1) 2 つの Terminal PowerTransformer では、高電圧 PowerTransformerEnd は r、r0、x、x0 にゼロ以外の値、低電圧 PowerTransformerEnd は r、r0、x、x0 にゼロ値を持つ。2) 3端子電源トランスの場合、3つのPowerTransformerEndsは、スター内の各脚をr、r0、x、x0の値で表し、スター等価を表している。3) 3つ以上のTerminalを持つPowerTransformerでは、PowerTransformerEndのインピーダンス値を使用することはできない。代わりにTransformerMeshImpedanceを使用するか、トランスを複数のPowerTransformerに分割してください**。  
+グローバルな記述：**CIM データモデルからの引用。PowerTransformerEnd は、PowerTransformer の各 Terminal に関連付けられている。PowerTransformerEnd のインピーダンス値 r、r0、x、および x0 は、以下のようにスター等価を表す。 1) 2 端子 PowerTransformer の場合、高電圧 PowerTransformerEnd は r、r0、x、および x0 にゼロ以外の値を持ち、低電圧 PowerTransformerEnd は r、r0、x、および x0 にゼロの値を持つ。2) 3 端子 PowerTransformer の場合、3 つの PowerTransformerEnd は、r、r0、x、および x0 の値で表されるスター内の各レグを持つスター等価を表す。3) 3 端子以上の PowerTransformer では、PowerTransformerEnd のインピーダンス値は使用できない。代わりに TransformerMeshImpedance を使用するか、トランスを複数の PowerTransformer に分割してください。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `PowerTransformer[number]`: この電源トランスの両端。デフォルト。なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: 着磁分岐サセプタンス（B mag）。  値は正または負になります。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b0[number]`: ゼロシーケンス磁化分岐サセプタンス。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `connectionKind[number]`: 接続の種類。デフォルト。なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `g[number]`: 磁性体分岐コンダクタンス。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `g0[number]`: ゼロシーケンス着磁分岐コンダクタンス（スター型）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `phaseAngleClock[number]`: 端子電圧位相角変位 360°を時分割で表す。有効な値は0～11です。例えば，ベクトルグループコードが`Dyn11`の変圧器の二次側端の場合，接続種類をニュートラル付きワイとし，クロックの位相角を11と指定する。  1と指定したトランス端番号のクロック値は，0と仮定します。  トランス端番号は，端子配列番号と同じとは限りません。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: トランス端の抵抗値（スター型）。この属性は，非等価なトランスの場合，0以上でなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r0[number]`: トランス端の零次直列抵抗（スター型）。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedS[number]`: 通常の皮相電力定格。属性は正の値でなければならない。2巻きの変圧器の場合，高電圧側と低電圧側の値は同じでなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedU[number]`: 定格電圧：三相巻線は相位相、単相巻線は相位相または相ニュートラルのどちらか。TransformerEnd.endNumberで与えられる高電圧側は、低電圧側の定格Uより大きいか等しい定格Uを持たなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSIタイプ。PowerTransformerEndでなければならない。  - `x[number]`: トランス端の正系列直列リアクタンス（スター型）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x0[number]`: トランス端のゼロシーケンス直列リアクタンス。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `PowerTransformer[number]`: この電源トランスの両端。デフォルト：なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `b[number]`: 磁化分岐サセプタンス（B mag）。  値は正でも負でもよい。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `b0[number]`: ゼロ磁化分岐サセプタンス。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `connectionKind[number]`: 接続の種類。デフォルト：なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `g[number]`: 着磁分岐コンダクタンス。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `g0[number]`: ゼロシーケンス着磁分岐コンダクタンス（スターモデル）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `phaseAngleClock[number]`: 端子電圧位相角変位。360°を時分割で表す。有効な値は 0～11 である。例えば、ベクトルグループコードが`Dyn11`の変圧器の二次側端の場合、接続種類をニュートラル付きワイと指定し、クロックの位相角を11と指定する。  1として指定された変圧器端番号のクロック値は、ゼロであると仮定される。  トランス端番号は、端子シーケンス番号と同じであるとは仮定されないことに注意。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: トランス端の抵抗（スターモデル）。この属性は、等価でない変圧器の場合はゼロ以上でなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r0[number]`: トランス端のゼロシーケンス直列抵抗（スターモデル）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedS[number]`: 通常の皮相電力定格。属性は正の値とする。2巻変圧器の場合、高電圧側と低電圧側の値は同一でなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ratedU[number]`: 定格電圧：三相巻線の場合は相相、単相巻線の場合は相相または相中性のいずれか。TransformerEnd.endNumber で与えられる高電圧側は、低電圧側の ratedU 以上の ratedU を持たなければならない。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: NGSIタイプ。PowerTransformerEndでなければならない。  - `x[number]`: トランス端の正列直列リアクタンス（スターモデル）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x0[number]`: トランス端のゼロシーケンス直列リアクタンス。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)からの引用。このデータモデルは、IEC61970標準によって規定された共通情報モデル（CIM）をスマートデータモデルに直接変換したものです。このモデルに基づくPythonクラスは、Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されました。プロパティによっては、間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org までメールをお送りください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -39,37 +46,65 @@ PowerTransformerEnd:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -93,24 +128,24 @@ PowerTransformerEnd:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -127,22 +162,26 @@ PowerTransformerEnd:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &powertransformerend_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -161,9 +200,11 @@ PowerTransformerEnd:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -185,9 +226,11 @@ PowerTransformerEnd:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -211,9 +254,11 @@ PowerTransformerEnd:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -234,9 +279,11 @@ PowerTransformerEnd:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -260,9 +307,11 @@ PowerTransformerEnd:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -288,20 +337,36 @@ PowerTransformerEnd:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *powertransformerend_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -336,7 +401,7 @@ PowerTransformerEnd:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -348,12 +413,12 @@ PowerTransformerEnd:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be PowerTransformerEnd'    
+      description: NGSI type. It has to be PowerTransformerEnd    
       enum:    
         - PowerTransformerEnd    
       type: string    
@@ -374,7 +439,7 @@ PowerTransformerEnd:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PowerTransformerEnd/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PowerTransformerEnd/schema.json    
   x-model-tags: ""    
@@ -386,15 +451,15 @@ PowerTransformerEnd:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-PowerTransformerEnd の例を JSON-LD フォーマットの key-value として利用することはできません。これは、`options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
-PowerTransformerEnd の例を JSON-LD 形式で正規化したものは利用できない。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
-PowerTransformerEndの例をJSON-LD形式でkey-valuesとして利用することはできません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
-PowerTransformerEnd の例を JSON-LD 形式で正規化したものは利用できない。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のPowerTransformerEndの例をkey-valuesとして利用することはできない。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると、個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の PowerTransformerEnd の例は利用できない。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のPowerTransformerEndの例をkey-valuesとして利用することはできない。これは NGSI-LD と互換性があり、`options=keyValues` を使用すると、個々のエンティティのコンテキストデータを返す。  
+正規化されたJSON-LD形式のPowerTransformerEndの例は利用できません。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
