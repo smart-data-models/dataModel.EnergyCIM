@@ -3,67 +3,102 @@
 エンティティGovCT2  
 ============<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovCT2/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovCT2/LICENSE.md)  
+[文書が自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**CIMデータモデルから引用。周波数依存の燃料流量制限を持つ一般的なガバナモデル。  GovCT1model を、特定のガスタービンメーカーの周波数依存の燃料流量制限を表現するために改良したモデルです**。  
+グローバルな記述：**CIM データモデルからの引用。周波数依存の燃料流量制限を持つ一般的なガバナモデル。  このモデルは、特定のガスタービン製造業者の周波数依存燃料流量制限を表現するために、GovCT1modelを修正したものです。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: 加速度リミッタ設定値（Aset）。  単位＝PU/sec.  典型的な値 = 10.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db[number]`: スピードガバナーのデッドバンドを単位速度あたりで表した値（db）。  大半のアプリケーションでは、この値をゼロに設定することが推奨されます。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `dm[number]`: 速度感度係数（Dm）。  Dmは，軸回転数に対するエンジン出力の変化，または軸回転数に対する最大出力能力の変化のいずれかを表すことができる。  Dmが正の場合は、速度が上昇するにつれてエンジン速度対出力特性の勾配が下がることを表します。レシプロエンジンや一部の航空転用型タービンでは、わずかに下降する特性が一般的である。  負の場合は、エンジン出力は軸回転数の影響を受けないが、最大許容燃料流量は軸回転数の低下とともに減少すると仮定する。これは、排気温度制限のため、1軸の産業用タービンに特徴的である。  典型的な値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim1[number]`: 周波数閾値1 (Flim1)。  単位＝Hz。  典型的な値＝59。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim10[number]`: 周波数閾値10（Flim10）。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim2[number]`: 周波数閾値2 (Flim2)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim3[number]`: 周波数閾値3 (Flim3)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim4[number]`: 周波数閾値4 (Flim4)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim5[number]`: 周波数閾値5 (Flim5)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim6[number]`: 周波数閾値6 (Flim6)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim7[number]`: 周波数閾値7 (Flim7)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim8[number]`: 周波数閾値8 (Flim8)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim9[number]`: 周波数閾値9 (Flim9)。  単位：Hz。  典型的な値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `ka[number]`: 加速度リミッタのゲイン（Ka）。  典型的な値 = 10.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: ガバナー微分ゲイン（Kdgov）。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: ガバナー積分ゲイン（Kigov）。  代表値 = 0.45.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: PIコントローラ（Kiload）用ロードリミッタ積分ゲインです。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: パワーコントローラ（リセット）ゲイン（Kimw）。  デフォルト値の0.01は、リセット時間100秒に対応する。  0.001の値は、比較的遅い動作の負荷コントローラに対応する。  代表値＝0 デフォルト値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: ガバナー比例ゲイン（Kpgov）。  代表値＝4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: PIコントローラのロードリミッタ比例ゲイン（Kpload）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: タービンゲイン (Kturb)。  典型的な値 = 1.9168.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: ロードリミッター基準値(Ldref)。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxerr[number]`: 速度誤差信号(Maxerr)の最大値。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: 速度誤差信号(Minerr)の最小値。  典型的な値=-1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: 電力値のベース（MWbase）（> 0）。  単位＝MW。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `plim1[number]`: パワーリミット1 (Plim1)。  典型的な値=0.8325。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim10[number]`: パワーリミット10 (Plim10)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim2[number]`: パワーリミット2 (Plim2)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim3[number]`: パワーリミット3 (Plim3)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim4[number]`: パワーリミット4 (Plim4)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim5[number]`: パワーリミット5 (Plim5)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim6[number]`: パワーリミット6 (Plim6)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim7[number]`: パワーリミット7 (Plim7)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim8[number]`: パワーリミット8 (Plim8)。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim9[number]`: Power Limit 9 (Plim9)。  典型的な値= 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `prate[number]`: 周波数依存の電力制限のランプ率（Prate）。  典型的な値 = 0.017。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: パーマネントドループ (R)。  典型的な値 = 0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: 最小弁閉速度（Rclose）。  単位：PU/sec.  典型的な値 = -99.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: 荷重制限減少率（Rdown）の最大値。  典型的な値=-99。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: 最大バルブ開度（Ropen）。  単位＝PU/sec.  典型的な値 = 99.初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: ドループ用フィードバック信号(Rselect)。  典型的な値：electricalPower。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: 負荷制限の最大増加率(Rup)。  典型的な値=99。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 加速度リミッタ時定数（Ta）。  代表的な値＝1。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: アクチュエータ時定数 (タクト)。  典型的な値 = 0.4。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: タービン・ラグ時定数（Tb）。  典型的な値 = 0.1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: タービンリードタイム定数(Tc)。  代表値 = 0. デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: ガバナー微分コントローラの時定数（Tdgov）。  代表値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: ディーゼルエンジンの輸送時間遅れは、燃料流量設定の変更とトルク（Teng）の発現の間にわずかではあるが測定可能な輸送遅れがあるディーゼルエンジンを表現するために使用される。  この輸送遅延が特に問題となる特殊なケースを除き、Tengはゼロであるべきである。  典型的な値=0 デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: ロードリミッター時定数（Tfload）。  代表的な値＝3。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: 電力変換器の時定数 (Tpelec)。  典型的な値 = 2.5。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: 温度検出リード時定数（Tsa）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: 温度検出遅れ時間定数（Tsb）。  代表値＝50。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。GovCT2である必要があります。  - `vmax[number]`: バルブ位置の最大リミット値(Vmax)。  典型的な値=1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: バルブ位置の下限値（Vmin）。  代表値＝0.175。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: 無負荷時燃料流量（Wfnl）。  典型的な値=0.187。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: 燃料源特性のスイッチで、与えられた燃料バルブストロークに対する燃料流量がエンジン速度（Wfspd）に比例し得ることを認識する。 true = 燃料流量が速度に比例する（ポジティブディスプレイスメント燃料インジェクタを備えた一部のガスタービンおよびディーゼルエンジン用） false = 燃料制御システムが燃料流量をエンジン速度から独立させる。典型的な値=false。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: 加速リミッター設定値（Aset）。  単位 = PU/秒。  代表値 = 10。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db[number]`: 単位速度あたりのスピードガバナー不感帯（db）。  ほとんどのアプリケーションでは、この値をゼロに設定することを推奨します。  デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: この商品の説明  - `dm[number]`: 速度感度係数（Dm）。  Dmは，軸回転数に対するエンジン出力の変化，ま たは軸回転数に対する最大出力能力の変化のいずれ かを表す。  Dmが正の場合，速度が増加するにつれて，エンジン速度対出力特性の下降勾配を表す。わずかに下降する特性は，レシプロエンジンや一部の航空転用タービンに典型的である。  負の場合，エンジン出力は軸回転数の影響を受けないと仮定されるが，最大許容燃料流量は軸回転数の低下とともに低下すると仮定される。これは排気温度制限のため、産業用一軸タービンに特徴的である。  代表値 = 0 デフォルト値: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim1[number]`: 周波数しきい値1（Flim1）。  単位＝Hz。  代表値＝59。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim10[number]`: 周波数しきい値10（Flim10）。  単位 = Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim2[number]`: 周波数しきい値2（Flim2）。  単位 = Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim3[number]`: 周波数しきい値3（Flim3）。  単位＝Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim4[number]`: 周波数しきい値4（Flim4）。  単位 = Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim5[number]`: 周波数しきい値5（Flim5）。  単位＝Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim6[number]`: 周波数しきい値6（Flim6）。  単位＝Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim7[number]`: 周波数しきい値7（Flim7）。  単位＝Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim8[number]`: 周波数しきい値8（Flim8）。  単位 = Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `flim9[number]`: 周波数しきい値9（Flim9）。  単位 = Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `ka[number]`: 加速度リミッターゲイン（Ka）。  代表値 = 10。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: ガバナー微分ゲイン（Kdgov）。  代表値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: ガバナー積分ゲイン（Kigov）。  代表値 = 0.45。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: PIコントローラ（Kiload）のロードリミッタ積分ゲイン。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: 電源コントローラー（リセット）ゲイン（Kimw）。  デフォルト値の0.01は、100秒のリセット時間に対応する。  0.001の値は、比較的遅い動作の負荷コントローラに対応する。  代表値 = 0 デフォルト値: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: ガバナー比例ゲイン（Kpgov）。  代表値 = 4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: PIコントローラのロードリミッタ比例ゲイン（Kpload）。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: タービンゲイン（Kturb）。  代表値 = 1.9168。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: ロードリミッター基準値（Ldref）。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `maxerr[number]`: 速度エラー信号（Maxerr）の最大値。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: 速度エラー信号（Minerr）の最小値。  代表値 = -1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: 電力値のベース（MWbase）（> 0）。  単位 = MW。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `plim1[number]`: パワーリミット1 (Plim1)。  代表値=0.8325。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim10[number]`: パワーリミット10（Plim10）。  代表値=0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim2[number]`: パワーリミット2（Plim2）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim3[number]`: パワーリミット3（Plim3）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim4[number]`: パワーリミット4（Plim4）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim5[number]`: パワーリミット5（Plim5）。  代表値=0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim6[number]`: パワーリミット6（Plim6）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim7[number]`: パワーリミット7（Plim7）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim8[number]`: パワーリミット8（Plim8）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `plim9[number]`: パワーリミット9（Plim9）。  代表値 = 0 デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `prate[number]`: 周波数依存の電力制限（Prate）のランプ・レート。  代表値 = 0.017。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: 永久垂下 (R)。  代表値 = 0.05。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: 最小バルブ閉鎖速度（Rclose）。  単位 = PU/秒。  代表値 = -99。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: 負荷限界低下率（Rdown）の最大値。  代表値 = -99。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: 最大バルブ開度（Ropen）。  単位 = PU/秒。  代表値 = 99。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: 垂下用フィードバック信号（Rselect）。  代表値 = electricalPower。デフォルト：なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: 最大負荷上昇率（Rup）。  代表値=99。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `ta[number]`: 加速度リミッター時定数 (Ta)。  代表値 = 1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: アクチュエータ時定数（Tact）。  代表値 = 0.4。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: タービン・ラグ時定数(Tb)。  代表値 = 0.1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: タービンリードタイム定数(Tc)。  代表値 = 0 デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: ガバナー微分コントローラ時定数（Tdgov）。  代表値 = 1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: 燃料流量の設定変更とトルク（Teng）の発生との間にわずかではあるが測定可能な輸送遅れがあるディーゼルエンジンを表すのに使用されるディーゼルエンジンの輸送時間遅れ。  Tengは、この輸送遅延が特に懸念される特別な場合を除き、すべてゼロであるべきである。  代表値 = 0 デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: ロードリミッター時定数（Tfload）。  代表値 = 3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: 電力変換器時定数（Tpelec）。  代表値 = 2.5。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: 温度検出リードタイム定数（Tsa）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: 温度検出遅れ時定数（Tsb）。  代表値：50。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。GovCT2でなければならない。  - `vmax[number]`: バルブ位置の最大制限値(Vmax)。  代表値 = 1。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: バルブ位置の最小制限値（Vmin）。  代表値 = 0.175。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: 無負荷燃料流量（Wfnl）。  代表値 = 0.187。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: true=燃料流量が速度に比例する（一部のガスタ ービンおよび容積式燃料インジェクタを備えた ディーゼルエンジン）。標準値 = false。デフォルト：false  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)から引用。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)からの引用。このデータモデルは、IEC61970標準によって規定された共通情報モデル（CIM）をスマートデータモデルに直接変換したものです。このモデルに基づくPythonクラスは、Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されました。プロパティによっては、間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org までメールをお送りください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovCT2:    
-  description: 'Adapted from CIM data models. General governor model with frequency-dependent fuel flow limit.  This model is a modification of the GovCT1model in order to represent the frequency-dependent fuel flow limit of a specific gas turbine manufacturer.'    
+  description: Adapted from CIM data models. General governor model with frequency-dependent fuel flow limit.  This model is a modification of the GovCT1model in order to represent the frequency-dependent fuel flow limit of a specific gas turbine manufacturer.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -75,18 +110,18 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -98,7 +133,7 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -169,16 +204,20 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govct2_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ka:    
@@ -238,7 +277,7 @@ GovCT2:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -257,9 +296,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -281,9 +322,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -307,9 +350,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -330,9 +375,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -356,9 +403,11 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -384,8 +433,10 @@ GovCT2:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxerr:    
@@ -407,15 +458,29 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govct2_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -522,7 +587,7 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -534,7 +599,7 @@ GovCT2:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -599,7 +664,7 @@ GovCT2:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovCT2'    
+      description: NGSI type. It has to be GovCT2    
       enum:    
         - GovCT2    
       type: string    
@@ -632,7 +697,7 @@ GovCT2:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovCT2/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovCT2/schema.json    
   x-model-tags: ""    
@@ -644,15 +709,15 @@ GovCT2:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-GovCT2のJSON-LD形式のkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-GovCT2のJSON-LD形式を正規化した例はありません。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-GovCT2のJSON-LD形式でのkey-valuesの例は利用できません。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
-GovCT2 を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のGovCT2の例をkey-valuesとして利用することはできない。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の GovCT2 の例は利用できない。これは、オプションを使用しない場合は NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD形式のGovCT2のkey-valuesの例は利用できない。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の GovCT2 の例は利用できない。オプションを使用しない場合は NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返す。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
