@@ -15,7 +15,14 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `bca[number]`: Set-point limite di accelerazione (Bca).  Unità = 1/s.  Valore tipico = 0,01. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: Droop (bp).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `dtc[number]`: Variazione della temperatura di scarico dovuta all'aumento del flusso di carburante da 0 a 1 PU (deltaTc).  Valore tipico = 390. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `ka[number]`: Flusso minimo di carburante (Ka).  Valore tipico = 0,23. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kac[number]`: Feedback del sistema di alimentazione (K).  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kca[number]`: Guadagno integrale del controllo dell'accelerazione (Kca). Unità = 1/s.  Valore tipico = 100. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ksi[number]`: Guadagno dello schermo antiradiazioni (Ksi).  Valore tipico = 0,8. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ky[number]`: Coefficiente della funzione di trasferimento del posizionatore della valvola carburante (Ky).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mnef[number]`: Valore di errore negativo massimo del flusso di carburante (MN).  Valore tipico = -0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mxef[number]`: Valore massimo di errore positivo del flusso di carburante (MX).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rcmn[number]`: Flusso minimo di carburante (RCMN).  Valore tipico = -0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rcmx[number]`: Flusso massimo di carburante (RCMX).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tac[number]`: Costante di tempo del controllo del carburante (Tac).  Valore tipico = 0,1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Costante di tempo del volume di scarico del compressore (Tc).  Valore tipico = 0,2. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Guadagno derivato del regolatore di temperatura (Td).  Valore tipico = 3,3. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfen[number]`: Temperatura nominale di scarico della turbina corrispondente a Pm=1 PU (Tfen).  Valore tipico = 540. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Costante di tempo del regolatore di velocità (Tg).  Valore tipico = 0,05. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsi[number]`: Costante di tempo dello schermo antiradiazioni (Tsi).  Valore tipico = 15. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Velocità di integrazione del regolatore di temperatura (Tt).  Valore tipico = 250. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ttc[number]`: Costante di tempo della termocoppia (Ttc).  Valore tipico = 2,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ty[number]`: Costante di tempo del posizionatore della valvola del carburante (Ty).  Valore tipico = 0,2. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovGAST3  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `bca[number]`: Set-point limite di accelerazione (Bca).  Unità = 1/s.  Valore tipico = 0,01. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: Droop (bp).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `dtc[number]`: Variazione della temperatura di scarico dovuta all'aumento del flusso di carburante da 0 a 1 PU (deltaTc).  Valore tipico = 390. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `ka[number]`: Flusso minimo di carburante (Ka).  Valore tipico = 0,23. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kac[number]`: Feedback del sistema di alimentazione (K).  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kca[number]`: Guadagno integrale del controllo dell'accelerazione (Kca). Unità = 1/s.  Valore tipico = 100. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ksi[number]`: Guadagno dello schermo antiradiazioni (Ksi).  Valore tipico = 0,8. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ky[number]`: Coefficiente della funzione di trasferimento del posizionatore della valvola carburante (Ky).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mnef[number]`: Valore di errore negativo massimo del flusso di carburante (MN).  Valore tipico = -0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mxef[number]`: Valore di errore positivo massimo del flusso di carburante (MX).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `rcmn[number]`: Flusso minimo di carburante (RCMN).  Valore tipico = -0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rcmx[number]`: Flusso massimo di carburante (RCMX).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tac[number]`: Costante di tempo del controllo del carburante (Tac).  Valore tipico = 0,1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Costante di tempo del volume di scarico del compressore (Tc).  Valore tipico = 0,2. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: Guadagno derivato del regolatore di temperatura (Td).  Valore tipico = 3,3. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfen[number]`: Temperatura nominale di scarico della turbina corrispondente a Pm=1 PU (Tfen).  Valore tipico = 540. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Costante di tempo del regolatore di velocità (Tg).  Valore tipico = 0,05. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsi[number]`: Costante di tempo dello schermo antiradiazioni (Tsi).  Valore tipico = 15. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tt[number]`: Velocità di integrazione del regolatore di temperatura (Tt).  Valore tipico = 250. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ttc[number]`: Costante di tempo della termocoppia (Ttc).  Valore tipico = 2,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ty[number]`: Costante di tempo del posizionatore della valvola del carburante (Ty).  Valore tipico = 0,2. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovGAST3  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 <!-- /35-RequiredProperties -->  
@@ -30,40 +37,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovGAST3:    
-  description: 'Adapted from CIM data models. Generic turbogas with acceleration and temperature controller.'    
+  description: Adapted from CIM data models. Generic turbogas with acceleration and temperature controller.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -81,24 +116,24 @@ GovGAST3:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -109,16 +144,20 @@ GovGAST3:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govgast3_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ka:    
@@ -154,7 +193,7 @@ GovGAST3:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -173,9 +212,11 @@ GovGAST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -197,9 +238,11 @@ GovGAST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -223,9 +266,11 @@ GovGAST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -246,9 +291,11 @@ GovGAST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -272,9 +319,11 @@ GovGAST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -300,8 +349,10 @@ GovGAST3:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mnef:    
@@ -317,15 +368,29 @@ GovGAST3:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govgast3_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -342,7 +407,7 @@ GovGAST3:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -354,7 +419,7 @@ GovGAST3:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -413,7 +478,7 @@ GovGAST3:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovGAST3'    
+      description: NGSI type. It has to be GovGAST3    
       enum:    
         - GovGAST3    
       type: string    
@@ -422,7 +487,7 @@ GovGAST3:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovGAST3/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST3/schema.json    
   x-model-tags: ""    
@@ -435,7 +500,7 @@ GovGAST3:
 <!-- 80-Examples -->  
 ## Esempi di payload  
 Non è disponibile l'esempio di un GovGAST3 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un GovGAST3 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovGAST3 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 Non è disponibile l'esempio di un GovGAST3 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 Non è disponibile l'esempio di un GovGAST3 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <!-- /80-Examples -->  
