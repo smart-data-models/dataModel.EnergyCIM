@@ -14,13 +14,20 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `cpsmn[number]`: Mindestwert des Druckreglerausgangs (Cpsmn).  Typischer Wert = -1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cpsmx[number]`: Höchstwert des Druckreglerausgangs (Cpsmx).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `crmn[number]`: Minimaler Wert des Regler-Sollwerts (Crmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `crmx[number]`: Maximaler Wert des Regler-Sollwerts (Crmx).  Typischer Wert = 1,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `kdc[number]`: Abgeleitete Verstärkung des Druckreglers (Kdc).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf1[number]`: Frequenzvorspannung (Kehrwert der Abweichung) (Kf1).  Typischer Wert = 20. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf3[number]`: Frequenzregelung (Kehrwert der Abweichung) (Kf3).  Typischer Wert = 20. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `khp[number]`: Anteil der vom HP-Teil erzeugten Gesamtleistung der Turbine (Khp).  Typischer Wert = 0,35. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kic[number]`: Integrale Verstärkung des Druckreglers (Kic).  Typischer Wert = 0,0033. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: Integrale Verstärkung des Druckrückführungsreglers (Kip).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kit[number]`: Integralverstärkung des elektrohydraulischen Reglers (Kit).  Typischer Wert = 0,04. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kmp1[number]`: Erster Verstärkungskoeffizient der Intercept-Ventilkennlinie (Kmp1).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kmp2[number]`: Zweiter Verstärkungskoeffizient der Intercept-Ventilkennlinie (Kmp2).  Typischer Wert = 3,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpc[number]`: Proportionalverstärkung des Druckreglers (Kpc).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpp[number]`: Proportionale Verstärkung des Druckrückführungsreglers (Kpp).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpt[number]`: Proportionalverstärkung des elektro-hydraulischen Reglers (Kpt).  Typischer Wert = 0,3. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `krc[number]`: Maximale Abweichung des Kraftstoffdurchflusses (Krc).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ksh[number]`: Druckverlust aufgrund von Strömungsreibung in den Kesselrohren (Ksh).  Typischer Wert = 0,08. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `lpi[number]`: Maximaler negativer Leistungsfehler (Lpi).  Typischer Wert = -0,15. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `lps[number]`: Maximaler positiver Leistungsfehler (Lps).  Typischer Wert = 0,03. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mnef[number]`: Unterer Grenzwert für die Frequenzkorrektur (MN).  Typischer Wert = -0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mxef[number]`: Oberer Grenzwert für die Frequenzkorrektur (MX).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pr1[number]`: Erster Wert der statischen Drucksollwertkennlinie (Pr1).  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pr2[number]`: Zweiter Wert der statischen Drucksollwertkennlinie, entsprechend Ps0 = 1,0 VPE (Pr2).  Typischer Wert = 0,75. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `psmn[number]`: Mindestwert der statischen Drucksollwertkennlinie (Psmn).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rsmimn[number]`: Mindestwert des Integralreglers (Rsmimn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rsmimx[number]`: Höchstwert des Integralreglers (Rsmimx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rvgmn[number]`: Mindestwert des Integralreglers (Rvgmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rvgmx[number]`: Höchstwert des Integralreglers (Rvgmx).  Typischer Wert = 1,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `srmn[number]`: Minimale Ventilöffnung (Srmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `srmx[number]`: Maximale Ventilöffnung (Srmx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `srsmp[number]`: Schnittpunkt Ventile charakteristischer Unstetigkeitspunkt (Srsmp).  Typischer Wert = 0,43. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `svmn[number]`: Maximale Schließgeschwindigkeit des Reglers (Svmn).  Typischer Wert = -0,0333. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `svmx[number]`: Maximale Öffnungsgeschwindigkeit des Reglers (Svmx).  Typischer Wert = 0,0333. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ta[number]`: Öffnungszeit der Steuerventile (Ta).  Typischer Wert = 0,8. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tam[number]`: Öffnungszeit des Abschnittsventils (Tam).  Typischer Wert = 0,8. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Regelventile: Schließzeit (Tc).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcm[number]`: Schließzeit des Abschnittsventils (Tcm).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdc[number]`: Abgeleitete Zeitkonstante des Druckreglers (Tdc).  Typischer Wert = 90. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf1[number]`: Zeitkonstante der Kraftstoffregelung (Tf1).  Typischer Wert = 10. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf2[number]`: Zeitkonstante der Dampfkammer (Tf2).  Typischer Wert = 10. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `thp[number]`: Hochdruck-Zeitkonstante (HP) der Turbine (Thp).  Typischer Wert = 0,15. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmp[number]`: Niederdruck-Zeitkonstante (LP) der Turbine (Tmp).  Typischer Wert = 0,4. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trh[number]`: Nachheizzeitkonstante der Turbine (Trh).  Typischer Wert = 10. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tv[number]`: Zeitkonstante des Kessels (Tv).  Typischer Wert = 60. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ty[number]`: Zeitkonstante der Servoventile (Ty).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovSteamFV4 sein.  - `y[number]`: Koeffizient der linearisierten Gleichungen der Turbine (Stodola-Formulierung) (Y).  Typischer Wert = 0,13. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yhpmn[number]`: Minimale Regelventilstellung (Yhpmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yhpmx[number]`: Maximale Regelventilstellung (Yhpmx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ympmn[number]`: Minimale Abfangventilstellung (Ympmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ympmx[number]`: Maximale Abfangventilstellung (Ympmx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `cpsmn[number]`: Mindestwert des Druckreglerausgangs (Cpsmn).  Typischer Wert = -1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `cpsmx[number]`: Höchstwert des Druckreglerausgangs (Cpsmx).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `crmn[number]`: Minimaler Wert des Regler-Sollwerts (Crmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `crmx[number]`: Maximaler Wert des Regler-Sollwerts (Crmx).  Typischer Wert = 1,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `kdc[number]`: Abgeleitete Verstärkung des Druckreglers (Kdc).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf1[number]`: Frequenzvorspannung (Kehrwert der Abweichung) (Kf1).  Typischer Wert = 20. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf3[number]`: Frequenzregelung (Kehrwert der Abweichung) (Kf3).  Typischer Wert = 20. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `khp[number]`: Anteil der vom HP-Teil erzeugten Gesamtleistung der Turbine (Khp).  Typischer Wert = 0,35. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kic[number]`: Integrale Verstärkung des Druckreglers (Kic).  Typischer Wert = 0,0033. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: Integrale Verstärkung des Druckrückführungsreglers (Kip).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kit[number]`: Integralverstärkung des elektrohydraulischen Reglers (Kit).  Typischer Wert = 0,04. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kmp1[number]`: Erster Verstärkungskoeffizient der Intercept-Ventilkennlinie (Kmp1).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kmp2[number]`: Zweiter Verstärkungskoeffizient der Intercept-Ventilkennlinie (Kmp2).  Typischer Wert = 3,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpc[number]`: Proportionalverstärkung des Druckreglers (Kpc).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpp[number]`: Proportionale Verstärkung des Druckrückführungsreglers (Kpp).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpt[number]`: Proportionalverstärkung des elektro-hydraulischen Reglers (Kpt).  Typischer Wert = 0,3. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `krc[number]`: Maximale Abweichung des Kraftstoffdurchflusses (Krc).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ksh[number]`: Druckverlust aufgrund von Strömungsreibung in den Kesselrohren (Ksh).  Typischer Wert = 0,08. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `lpi[number]`: Maximaler negativer Leistungsfehler (Lpi).  Typischer Wert = -0,15. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `lps[number]`: Maximaler positiver Leistungsfehler (Lps).  Typischer Wert = 0,03. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mnef[number]`: Unterer Grenzwert für die Frequenzkorrektur (MN).  Typischer Wert = -0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mxef[number]`: Oberer Grenzwert für die Frequenzkorrektur (MX).  Typischer Wert = 0,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pr1[number]`: Erster Wert der statischen Drucksollwertkennlinie (Pr1).  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pr2[number]`: Zweiter Wert der statischen Drucksollwertkennlinie, entsprechend Ps0 = 1,0 VPE (Pr2).  Typischer Wert = 0,75. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `psmn[number]`: Mindestwert der statischen Drucksollwertkennlinie (Psmn).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rsmimn[number]`: Mindestwert des Integralreglers (Rsmimn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rsmimx[number]`: Höchstwert des Integralreglers (Rsmimx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rvgmn[number]`: Mindestwert des Integralreglers (Rvgmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rvgmx[number]`: Höchstwert des Integralreglers (Rvgmx).  Typischer Wert = 1,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `srmn[number]`: Minimale Ventilöffnung (Srmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `srmx[number]`: Maximale Ventilöffnung (Srmx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `srsmp[number]`: Schnittpunkt Ventile charakteristischer Unstetigkeitspunkt (Srsmp).  Typischer Wert = 0,43. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `svmn[number]`: Maximale Schließgeschwindigkeit des Reglers (Svmn).  Typischer Wert = -0,0333. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `svmx[number]`: Maximale Öffnungsgeschwindigkeit des Reglers (Svmx).  Typischer Wert = 0,0333. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ta[number]`: Öffnungszeit der Steuerventile (Ta).  Typischer Wert = 0,8. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tam[number]`: Öffnungszeit des Abschnittsventils (Tam).  Typischer Wert = 0,8. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Regelventile: Schließzeit (Tc).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tcm[number]`: Schließzeit des Abschnittsventils (Tcm).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdc[number]`: Abgeleitete Zeitkonstante des Druckreglers (Tdc).  Typischer Wert = 90. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf1[number]`: Zeitkonstante der Kraftstoffregelung (Tf1).  Typischer Wert = 10. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf2[number]`: Zeitkonstante der Dampfkammer (Tf2).  Typischer Wert = 10. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `thp[number]`: Hochdruck-Zeitkonstante (HP) der Turbine (Thp).  Typischer Wert = 0,15. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tmp[number]`: Niederdruck-Zeitkonstante (LP) der Turbine (Tmp).  Typischer Wert = 0,4. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `trh[number]`: Nachheizzeitkonstante der Turbine (Trh).  Typischer Wert = 10. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tv[number]`: Zeitkonstante des Kessels (Tv).  Typischer Wert = 60. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ty[number]`: Zeitkonstante der Servoventile (Ty).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovSteamFV4 sein.  - `y[number]`: Koeffizient der linearisierten Gleichungen der Turbine (Stodola-Formulierung) (Y).  Typischer Wert = 0,13. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yhpmn[number]`: Minimale Regelventilstellung (Yhpmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yhpmx[number]`: Maximale Regelventilstellung (Yhpmx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ympmn[number]`: Minimale Abfangventilstellung (Ympmn).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ympmx[number]`: Maximale Abfangventilstellung (Ympmx).  Typischer Wert = 1,1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können einen falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -30,40 +37,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovSteamFV4:    
-  description: 'Adapted from CIM data models. Detailed electro-hydraulic governor for steam unit.'    
+  description: Adapted from CIM data models. Detailed electro-hydraulic governor for steam unit.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -93,38 +128,42 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &govsteamfv4_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kdc:    
@@ -214,7 +253,7 @@ GovSteamFV4:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -233,9 +272,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -257,9 +298,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -283,9 +326,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -306,9 +351,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -332,9 +379,11 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -360,8 +409,10 @@ GovSteamFV4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     lpi:    
@@ -389,15 +440,29 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govsteamfv4_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -444,7 +509,7 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -456,7 +521,7 @@ GovSteamFV4:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -563,7 +628,7 @@ GovSteamFV4:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovSteamFV4'    
+      description: NGSI type. It has to be GovSteamFV4    
       enum:    
         - GovSteamFV4    
       type: string    
@@ -602,7 +667,7 @@ GovSteamFV4:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovSteamFV4/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV4/schema.json    
   x-model-tags: ""    
@@ -617,7 +682,7 @@ GovSteamFV4:
 Nicht verfügbar ist das Beispiel eines GovSteamFV4 im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines GovSteamFV4 im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel eines GovSteamFV4 im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar ist das Beispiel eines GovSteamFV4 im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovSteamFV4 im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
