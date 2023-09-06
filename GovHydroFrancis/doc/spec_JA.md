@@ -3,28 +3,35 @@
 エンティティゴブハイドロフランシス  
 =================<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydroFrancis/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydroFrancis/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**CIMデータモデルから引用。詳細なハイドロユニット-フランシスモデル。  このモデルは、3種類のガバナーを表現するために使用することができる。フランシスやペルトンなどの詳細水力ユニットモデルの水力システムの概略は、DecteldHydroModelHydraulicSystemダイアグラムで提供される**。  
+グローバルな記述：**CIMデータモデルからの引用。詳細水力ユニット - フランシスモデル。  このモデルは3種類のガバナーを表現するために使用できる。フランシスやペルトンのような詳細水力ユニットモデルの水力系統の概略図は、DetelicathHydroModelHydraulicSystemダイアグラムで提供される。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `am[number]`: 最大効率(Am)での開口部S。  典型的な値=0.7。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `av0[number]`: サージタンクの面積 (A)。単位 = m. 典型的な値 = 30.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `av1[number]`: 補償タンクの面積 (A)。単位 = m. 典型的な値 = 700.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: ドループ(Bp)。  典型的な値 = 0.05。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db1[number]`: 意図的なデッドバンド幅（DB1）。  単位：Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `etamax[number]`: 最大効率(EtaMax)。  典型的な値 = 1.05.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorControl[number]`: ガバナー制御フラグ(Cflag)。  典型的な値 = mechanicHydrolicTachoAccelerator。デフォルトなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `h1[number]`: ペンストック水位(H)に対する補償室水位(Head)。  単位：m、代表値：4。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h2[number]`: ペンストック水位に対するサージタンク水位(H)のヘッド。  単位：m，代表値：40。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hn[number]`: 定格水頭（H）。  単位：m。代表値：250。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `kc[number]`: ペンストック損失係数（摩擦による）(Kc)。  典型的な値 = 0.025。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: ウォータートンネルとサージチャンバーの損失係数（摩擦による） (Kg).  代表値 = 0.025.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kt[number]`: ウォッシュアウトゲイン (Kt)。  典型的な値 = 0.25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `qc0[number]`: 公称水頭（Qc0）における無負荷時のタービン流量。  典型的な値 = 0.21.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn[number]`: 定格流量（Q）。単位＝m/s。典型的な値 = 40。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ta[number]`: 微分利得(Ta)。  代表的な値＝3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: ウォッシュアウト時定数 (Td)。  典型的な値 = 3.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts[number]`: ゲートサーボ時定数(Ts)。  代表値＝0.5。初期値：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twnc[number]`: 水の慣性時定数 (Twnc)。  典型的な値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twng[number]`: 水トンネルとサージチャンバーの慣性時定数(Twng)。典型的な値 = 3.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tx[number]`: 微分フィードバックゲイン（Tx）。  典型的な値 = 1.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIのタイプ。GovHydroFrancisである必要があります。  - `va[number]`: 最大ゲート開閉速度（Va）。  単位＝PU/sec。  典型的な値 = 0.011。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmax[number]`: 最大ゲート開度(ValvMax)。  典型的な値 = 1.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmin[number]`: 最小ゲート開度 (ValvMin)。  代表値 = 0. デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vc[number]`: 最大ゲート閉鎖速度（Vc）。  単位：PU/sec.  典型的な値 = -0.011。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTunnelSurgeChamberSimulation[number]`: 水路トンネルおよびサージチャンバーシミュレーション (Tflag) true = 水路トンネルおよびサージチャンバーシミュレーションを有効にする false = 水路トンネルおよびサージチャンバーシミュレーションを無効にする。典型的な値=false。デフォルトFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `zsfc[number]`: ペンストックレベルを基準とした上水位のヘッド（Zsfc）。  単位 = m. 典型的な値 = 25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `am[number]`: 最大効率（Am）での開口部S。  代表値 = 0.7。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `av0[number]`: サージタンクの面積 (A)。単位 = m. 標準値 = 30.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `av1[number]`: 補償タンクの面積（A）。単位 = m. 標準値 = 700.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bp[number]`: ドループ（Bp）。  代表値 = 0.05。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `db1[number]`: 意図的なデッドバンド幅（DB1）。  単位＝Hz。  代表値＝0 デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: この商品の説明  - `etamax[number]`: 最大効率（EtaMax）。  代表値 = 1.05。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `governorControl[number]`: ガバナー制御フラグ（Cflag）。  代表値 = mechanicHydrolicTachoAccelerator。デフォルト：なし  . Model: [https://schema.org/Number](https://schema.org/Number)- `h1[number]`: ペンストックのレベル（H）に対する補償室の水位ヘッド。  単位 = m. 標準値 = 4.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `h2[number]`: ペンストック（H）に対するサージタンク水位のヘッド。  単位 = m. 標準値 = 40.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hn[number]`: 定格水頭 (H)。  単位 = m。代表値 = 250。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `kc[number]`: ペンストック損失係数（摩擦による）(Kc)。  代表値 = 0.025。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kg[number]`: ウォータートンネルとサージチャンバーの損失係数（摩擦による）（Kg）。  代表値 = 0.025。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kt[number]`: ウォッシュアウトゲイン（Kt）。  代表値 = 0.25。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `qc0[number]`: 公称揚程（Qc0）における無負荷タービン流量。  代表値 = 0.21。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn[number]`: 定格流量（Q）。単位=m/s。代表値 = 40。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `ta[number]`: 微分ゲイン (Ta)。  代表値 = 3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `td[number]`: ウォッシュアウト時定数（Td）。  代表値 = 3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ts[number]`: ゲートサーボ時定数（Ts）。  代表値 = 0.5。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twnc[number]`: 水の慣性時定数 (Twnc).  代表値 = 1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `twng[number]`: 水トンネルとサージチャンバーの慣性時定数(Twng)。代表値 = 3。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tx[number]`: 微分フィードバック・ゲイン（Tx）。  代表値 = 1。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。GovHydroFrancisでなければならない。  - `va[number]`: 最大ゲート開口速度（Va）。  単位 = PU/秒。  代表値=0.011。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmax[number]`: 最大ゲート開度（ValvMax）。  代表値 = 1。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `valvmin[number]`: 最小ゲート開度（ValvMin）。  代表値 = 0。デフォルト: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vc[number]`: 最大ゲート閉鎖速度（Vc）。  単位 = PU/秒。  代表値 = -0.011。デフォルト：0.0。  . Model: [https://schema.org/Number](https://schema.org/Number)- `waterTunnelSurgeChamberSimulation[number]`: 水トンネルとサージチャンバーのシミュレーション（Tflag） true = 水トンネルとサージチャンバーのシミュレーションを有効にする false = 水トンネルとサージチャンバーのシミュレーションを禁止する。代表値 = false。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `zsfc[number]`: ペンストック（Zsfc）に対する上水位の揚程。  単位 = m. 標準値 = 25.デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)からの引用。このデータモデルは、IEC61970標準によって規定された共通情報モデル（CIM）をスマートデータモデルに直接変換したものです。このモデルに基づくPythonクラスは、Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されました。プロパティによっては、間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org までメールをお送りください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,32 +40,60 @@ GovHydroFrancis:
   description: 'Adapted from CIM data models. Detailed hydro unit - Francis model.  This model can be used to represent three types of governors. A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is provided in the DetailedHydroModelHydraulicSystem diagram.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -69,7 +104,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -93,18 +128,18 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -116,7 +151,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -151,16 +186,20 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydrofrancis_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kc:    
@@ -184,7 +223,7 @@ GovHydroFrancis:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -203,9 +242,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -227,9 +268,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -253,9 +296,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -276,9 +321,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -302,9 +349,11 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -330,20 +379,36 @@ GovHydroFrancis:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydrofrancis_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -360,7 +425,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -372,7 +437,7 @@ GovHydroFrancis:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -413,7 +478,7 @@ GovHydroFrancis:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydroFrancis'    
+      description: NGSI type. It has to be GovHydroFrancis    
       enum:    
         - GovHydroFrancis    
       type: string    
@@ -458,7 +523,7 @@ GovHydroFrancis:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydroFrancis/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroFrancis/schema.json    
   x-model-tags: ""    
@@ -470,15 +535,15 @@ GovHydroFrancis:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-GovHydroFrancisの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-GovHydroFrancisのJSON-LD形式を正規化した例は利用不可。オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返す。  
-GovHydroFrancisの例をJSON-LD形式でkey-valuesとして利用することはできません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
-GovHydroFrancisのJSON-LD形式を正規化した例は利用不可。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+JSON-LD形式のGovHydroFrancisの例をkey-valuesとして利用することはできない。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返す。  
+正規化されたJSON-LD形式のGovHydroFrancisの例は利用できない。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のGovHydroFrancisの例をkey-valuesとして利用することはできない。これは、`options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の GovHydroFrancis の例は利用できません。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
