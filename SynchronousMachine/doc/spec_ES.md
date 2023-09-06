@@ -7,30 +7,37 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Adaptado de los modelos de datos CIM. Dispositivo electromecánico que funciona con un eje que gira sincrónicamente con la red. Se trata de una máquina única que funciona como generador o condensador síncrono o bomba.**  
+Descripción global: **Adaptado de los modelos de datos CIM. Dispositivo electromecánico que funciona con un eje que gira sincrónicamente con la red. Se trata de una sola máquina que funciona como generador o condensador síncrono o bomba.**  
 versión: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `InitialReactiveCapabilityCurve[number]`: Las máquinas síncronas utilizan esta curva por defecto. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `SynchronousMachineDynamics[number]`: Modelo de dinámica de la máquina síncrona utilizado para describir el comportamiento dinámico de esta máquina síncrona. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `earthing[number]`: Indica si el generador está conectado a tierra o no. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `earthingStarPointR[number]`: Resistencia de puesta a tierra del punto de estrella del generador (Re). Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  . Model: [https://schema.org/Number](https://schema.org/Number)- `earthingStarPointX[number]`: Reactancia de puesta a tierra del punto de estrella del generador (Xe). Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909.  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `ikk[number]`: Corriente de cortocircuito en estado estacionario (en A para el perfil) del generador con excitación compuesta durante un cortocircuito trifásico. - Ikk=0: Generador sin excitación compuesta. - Ikk?0: Generador con excitación compuesta. Ikk se utiliza para calcular la corriente de cortocircuito mínima en estado estacionario para los generadores con excitación compuesta (apartado 4.6.1.2 de la CEI 60909-0). (Apartado 4.3.4.2. de la CEI 60909-0) Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxQ[number]`: Límite máximo de potencia reactiva. Es el límite máximo (nominal) de la unidad. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minQ[number]`: Límite mínimo de potencia reactiva para la unidad. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mu[number]`: Factor para calcular la corriente de corte (apartado 4.5.2.1 de la CEI 60909-0). Se utiliza sólo para el cortocircuito de una sola alimentación en un generador (apartado 4.3.4.2. de la CEI 60909-0). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo.  - `operatingMode[number]`: Modo de funcionamiento actual. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `qPercent[number]`: Porcentaje del control reactivo coordinado que proviene de esta máquina. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: Resistencia equivalente (RG) del generador. La RG se considera para el cálculo de todas las corrientes, excepto para el cálculo de la corriente de pico ip. Se utiliza para el intercambio de datos de cortocircuito según la norma IEC 60909 Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r0[number]`: Resistencia de secuencia cero de la máquina síncrona. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r2[number]`: Resistencia de secuencia negativa. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `referencePriority[number]`: Prioridad de la unidad para su uso como selección del bus de referencia del ángulo de fase de la tensión del flujo de potencia. 0 = no importa (por defecto) 1 = máxima prioridad. 2 es menor que 1 y así sucesivamente. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `satDirectSubtransX[number]`: Reactancia subtransitoria del eje directo saturada, también conocida como Xd`sat. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `satDirectSyncX[number]`: Reactancia sincrónica saturada de eje directo (xdsat); recíproca de la relación de cortocircuito. Se utiliza para el intercambio de datos de cortocircuito, sólo para el cortocircuito de una sola alimentación en un generador. (Apartado 4.3.4.2. de la norma IEC 60909-0). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `satDirectTransX[number]`: Reactancia transitoria de eje directo saturado. El atributo se utiliza principalmente para los cálculos de cortocircuito según ANSI. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortCircuitRotorType[number]`: Tipo de rotor, utilizado por las aplicaciones de cortocircuito, sólo para el cortocircuito alimentado individualmente según IEC 60909. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Modos en los que puede funcionar esta máquina síncrona. Por defecto: Ninguno. Tipo de entidad NGSI. Tiene que ser SynchronousMachine  . Model: [https://schema.org/Number](https://schema.org/Number)- `voltageRegulationRange[number]`: Rango de regulación de la tensión del generador (PG en la IEC 60909-0) utilizado para el cálculo del factor de corrección de la impedancia KG definido en la IEC 60909-0 Este atributo se utiliza para describir la tensión de funcionamiento de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x0[number]`: Reactancia de secuencia cero de la máquina síncrona. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x2[number]`: Reactancia de secuencia negativa. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `InitialReactiveCapabilityCurve[number]`: Las máquinas síncronas utilizan esta curva por defecto. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `SynchronousMachineDynamics[number]`: Modelo de dinámica de la máquina síncrona utilizado para describir el comportamiento dinámico de esta máquina síncrona. Predeterminado: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `earthing[number]`: Indica si el generador está conectado a tierra o no. Se utiliza para el intercambio de datos de cortocircuito según IEC 60909 Por defecto: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)- `earthingStarPointR[number]`: Resistencia de puesta a tierra del punto de estrella del generador (Re). Se utiliza para el intercambio de datos de cortocircuito según IEC 60909 Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `earthingStarPointX[number]`: Reactancia de puesta a tierra del punto estrella del generador (Xe). Utilizado para el intercambio de datos de cortocircuito según IEC 60909 Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `ikk[number]`: Corriente de cortocircuito en régimen permanente (en A para el perfil) del generador con excitación compuesta durante un cortocircuito trifásico. - Ikk=0: Generador sin excitación compuesta. - Ikk?0: Generador con excitación compuesta. Ikk se utiliza para calcular la corriente de cortocircuito mínima en régimen permanente para los generadores con excitación compuesta (apartado 4.6.1.2 de la CEI 60909-0) Sólo se utiliza para el cortocircuito alimentado individualmente en un generador. (Apartado 4.3.4.2. de la norma IEC 60909-0) Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `maxQ[number]`: Límite máximo de potencia reactiva. Es el límite máximo (nominal) de la unidad. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minQ[number]`: Límite mínimo de potencia reactiva para la unidad. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mu[number]`: Factor de cálculo de la corriente de corte (apartado 4.5.2.1 de la CEI 60909-0). Sólo se utiliza en caso de cortocircuito alimentado individualmente en un generador (apartado 4.3.4.2. de la CEI 60909-0). Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `operatingMode[number]`: Modo de funcionamiento actual. Predeterminado: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `qPercent[number]`: Porcentaje del control reactivo coordinado que proviene de esta máquina. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r[number]`: Resistencia equivalente (RG) del generador. La RG se considera para el cálculo de todas las corrientes, excepto para el cálculo de la corriente de pico ip. Se utiliza para el intercambio de datos de cortocircuito según IEC 60909 Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r0[number]`: Resistencia de secuencia cero de la máquina síncrona. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `r2[number]`: Resistencia de secuencia negativa. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `referencePriority[number]`: Prioridad de la unidad para su uso como selección de bus de referencia de ángulo de fase de tensión de flujo de potencia. 0 = no importa (por defecto) 1 = máxima prioridad. 2 es menor que 1 y así sucesivamente. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `satDirectSubtransX[number]`: Reactancia subtransitoria del eje directo saturada, también conocida como Xd`sat. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `satDirectSyncX[number]`: Reactancia síncrona saturada de ejes directos (xdsat); recíproca de la relación de cortocircuito. Utilizado para el intercambio de datos de cortocircuito, sólo para cortocircuito alimentado individualmente en un generador. (Apartado 4.3.4.2. de la norma IEC 60909-0). Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `satDirectTransX[number]`: Reactancia transitoria de eje directo saturada. El atributo se utiliza principalmente para cálculos de cortocircuito según ANSI. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortCircuitRotorType[number]`: Tipo de rotor, utilizado por aplicaciones de cortocircuito, sólo para cortocircuito alimentado individualmente según IEC 60909. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Modos en los que puede funcionar esta máquina síncrona. Por defecto: Ninguno. Tipo de entidad NGSI. tiene que ser SynchronousMachine  . Model: [https://schema.org/Number](https://schema.org/Number)- `voltageRegulationRange[number]`: Rango de regulación de la tensión del generador (PG en la CEI 60909-0) utilizado para el cálculo del factor de corrección de la impedancia KG definido en la CEI 60909-0 Este atributo se utiliza para describir la tensión de funcionamiento de la unidad generadora. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x0[number]`: Reactancia de secuencia cero de la máquina síncrona. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `x2[number]`: Reactancia de secuencia negativa. Predeterminado: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 SynchronousMachine:    
-  description: 'Adapted from CIM data models. An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.'    
+  description: Adapted from CIM data models. An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.    
   properties:    
     InitialReactiveCapabilityCurve:    
       description: 'Synchronous machines using this curve as default. Default: None'    
@@ -45,60 +52,88 @@ SynchronousMachine:
         model: https://schema.org/Number    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -121,16 +156,20 @@ SynchronousMachine:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &synchronousmachine_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ikk:    
@@ -142,7 +181,7 @@ SynchronousMachine:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -161,9 +200,11 @@ SynchronousMachine:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -185,9 +226,11 @@ SynchronousMachine:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -211,9 +254,11 @@ SynchronousMachine:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -234,9 +279,11 @@ SynchronousMachine:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -260,9 +307,11 @@ SynchronousMachine:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -288,8 +337,10 @@ SynchronousMachine:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxQ:    
@@ -311,7 +362,7 @@ SynchronousMachine:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -322,10 +373,24 @@ SynchronousMachine:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *synchronousmachine_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -378,7 +443,7 @@ SynchronousMachine:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -396,7 +461,7 @@ SynchronousMachine:
         model: https://schema.org/Number    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -429,7 +494,7 @@ SynchronousMachine:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/SynchronousMachine/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachine/schema.json    
   x-model-tags: ""    
@@ -442,14 +507,14 @@ SynchronousMachine:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 No está disponible el ejemplo de una SynchronousMachine en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una SynchronousMachine en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una SynchronousMachine en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de una SynchronousMachine en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una SynchronousMachine en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de una SynchronousMachine en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de una SynchronousMachine en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
