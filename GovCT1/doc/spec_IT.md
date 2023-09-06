@@ -15,12 +15,19 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: Setpoint del limitatore di accelerazione (Aset).  Unità = PU/sec.  Valore tipico = 0,01. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `db[number]`: Banda morta del regolatore di velocità in unità di velocità (db).  Nella maggior parte delle applicazioni, si raccomanda di impostare questo valore a zero.  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Descrizione dell'articolo  - `dm[number]`: Coefficiente di sensibilità alla velocità (Dm).  Il Dm può rappresentare la variazione della potenza del motore con la velocità dell'albero o la variazione della capacità di potenza massima con la velocità dell'albero.  Se è positivo, descrive la pendenza decrescente della caratteristica del regime del motore rispetto alla potenza all'aumentare della velocità. Una caratteristica leggermente discendente è tipica dei motori alternativi e di alcune turbine aeroderivate.  Se è negativo, si presume che la potenza del motore non sia influenzata dalla velocità dell'albero, ma che il flusso di carburante massimo consentito diminuisca con la diminuzione della velocità dell'albero. Questo è caratteristico delle turbine industriali monoalbero a causa dei limiti di temperatura dei gas di scarico.  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `ka[number]`: Guadagno del limitatore di accelerazione (Ka).  Valore tipico = 10. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: Guadagno derivato del regolatore (Kdgov).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: Guadagno integrale del governatore (Kigov).  Valore tipico = 2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: Guadagno integrale del limitatore di carico per il regolatore PI (Kiload).  Valore tipico = 0,67. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: Guadagno del controllore di potenza (reset) (Kimw).  Il valore predefinito di 0,01 corrisponde a un tempo di ripristino di 100 secondi.  Un valore di 0,001 corrisponde a un regolatore di carico ad azione relativamente lenta.  Valore tipico = 0,01. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: Guadagno proporzionale del regolatore (Kpgov).  Valore tipico = 10. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: Guadagno proporzionale del limitatore di carico per il regolatore PI (Kpload).  Valore tipico = 2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: Guadagno della turbina (Kturb) (>0).  Valore tipico = 1,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: Valore di riferimento del limitatore di carico (Ldref).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxerr[number]`: Valore massimo del segnale di errore di velocità (maxerr).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: Valore minimo per il segnale di errore di velocità (minerr).  Valore tipico = -0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: Base per i valori di potenza (MWbase) (> 0).  Unità = MW. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `r[number]`: Caduta permanente (R).  Valore tipico = 0,04. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: Velocità minima di chiusura della valvola (Rclose).  Unità = PU/sec.  Valore tipico = -0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: Velocità massima di diminuzione del limite di carico (Rdown).  Valore tipico = -99. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: Velocità massima di apertura della valvola (Ropen).  Unità = PU/sec.  Valore tipico = 0,10. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: Segnale di retroazione per lo droop (Rselect).  Valore tipico = electricalPower. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: Velocità massima di aumento del limite di carico (Rup).  Valore tipico = 99. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `ta[number]`: Costante di tempo del limitatore di accelerazione (Ta) (>0).  Valore tipico = 0,1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: Costante di tempo dell'attuatore (Tact).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Costante di tempo di ritardo della turbina (Tb) (>0).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Costante di tempo della turbina (Tc).  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: Costante di tempo del regolatore derivato (Tdgov).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: Ritardo di trasporto per motori diesel utilizzato per rappresentare i motori diesel in cui esiste un piccolo ma misurabile ritardo di trasporto tra la variazione della regolazione del flusso di carburante e lo sviluppo della coppia (Teng).  Teng dovrebbe essere pari a zero in tutti i casi, tranne quelli speciali in cui questo ritardo di trasporto è particolarmente importante.  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: Costante di tempo del limitatore di carico (Tfload) (>0).  Valore tipico = 3. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: Costante di tempo del trasduttore di potenza elettrica (Tpelec) (>0).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: Costante di tempo di ritardo del rilevamento della temperatura (Tsa).  Valore tipico = 4. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: Costante di tempo di ritardo del rilevamento della temperatura (Tsb).  Valore tipico = 5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovCT1  - `vmax[number]`: Limite massimo della posizione della valvola (Vmax).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: Limite minimo di posizione della valvola (Vmin).  Valore tipico = 0,15. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: Flusso di carburante a vuoto (Wfnl).  Valore tipico = 0,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: Interruttore per la caratteristica della sorgente di combustibile per riconoscere che il flusso di combustibile, per una data corsa della valvola del combustibile, può essere proporzionale alla velocità del motore (Wfspd). true = flusso di combustibile proporzionale alla velocità (per alcune turbine a gas e motori diesel con iniettori di combustibile a spostamento positivo) false = il sistema di controllo del combustibile mantiene il flusso di combustibile indipendente dalla velocità del motore. Valore tipico = true. Valore predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova in campagna  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `aset[number]`: Setpoint del limitatore di accelerazione (Aset).  Unità = PU/sec.  Valore tipico = 0,01. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `db[number]`: Banda morta del regolatore di velocità in unità di velocità (db).  Nella maggior parte delle applicazioni, si raccomanda di impostare questo valore a zero.  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Descrizione dell'articolo  - `dm[number]`: Coefficiente di sensibilità alla velocità (Dm).  Il Dm può rappresentare la variazione della potenza del motore con la velocità dell'albero o la variazione della capacità di potenza massima con la velocità dell'albero.  Se è positivo, descrive la pendenza decrescente della caratteristica del regime del motore rispetto alla potenza all'aumentare della velocità. Una caratteristica leggermente discendente è tipica dei motori alternativi e di alcune turbine aeroderivate.  Se è negativo, si presume che la potenza del motore non sia influenzata dalla velocità dell'albero, ma che il flusso di carburante massimo consentito diminuisca con la diminuzione della velocità dell'albero. Questo è caratteristico delle turbine industriali monoalbero a causa dei limiti di temperatura dei gas di scarico.  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `ka[number]`: Guadagno del limitatore di accelerazione (Ka).  Valore tipico = 10. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kdgov[number]`: Guadagno derivato del regolatore (Kdgov).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kigov[number]`: Guadagno integrale del governatore (Kigov).  Valore tipico = 2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kiload[number]`: Guadagno integrale del limitatore di carico per il regolatore PI (Kiload).  Valore tipico = 0,67. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kimw[number]`: Guadagno del controllore di potenza (reset) (Kimw).  Il valore predefinito di 0,01 corrisponde a un tempo di ripristino di 100 secondi.  Un valore di 0,001 corrisponde a un regolatore di carico ad azione relativamente lenta.  Valore tipico = 0,01. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpgov[number]`: Guadagno proporzionale del regolatore (Kpgov).  Valore tipico = 10. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kpload[number]`: Guadagno proporzionale del limitatore di carico per il regolatore PI (Kpload).  Valore tipico = 2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kturb[number]`: Guadagno della turbina (Kturb) (>0).  Valore tipico = 1,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ldref[number]`: Valore di riferimento del limitatore di carico (Ldref).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxerr[number]`: Valore massimo del segnale di errore di velocità (maxerr).  Valore tipico = 0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `minerr[number]`: Valore minimo per il segnale di errore di velocità (minerr).  Valore tipico = -0,05. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `mwbase[number]`: Base per i valori di potenza (MWbase) (> 0).  Unità = MW. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `r[number]`: Caduta permanente (R).  Valore tipico = 0,04. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rclose[number]`: Velocità minima di chiusura della valvola (Rclose).  Unità = PU/sec.  Valore tipico = -0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rdown[number]`: Velocità massima di diminuzione del limite di carico (Rdown).  Valore tipico = -99. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ropen[number]`: Velocità massima di apertura della valvola (Ropen).  Unità = PU/sec.  Valore tipico = 0,10. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rselect[number]`: Segnale di retroazione per lo droop (Rselect).  Valore tipico = electricalPower. Predefinito: Nessuno  . Model: [https://schema.org/Number](https://schema.org/Number)- `rup[number]`: Velocità massima di aumento del limite di carico (Rup).  Valore tipico = 99. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `ta[number]`: Costante di tempo del limitatore di accelerazione (Ta) (>0).  Valore tipico = 0,1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tact[number]`: Costante di tempo dell'attuatore (Tact).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb[number]`: Costante di tempo di ritardo della turbina (Tb) (>0).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc[number]`: Costante di tempo della turbina (Tc).  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tdgov[number]`: Costante di tempo del regolatore derivato (Tdgov).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `teng[number]`: Ritardo di trasporto per motori diesel utilizzato per rappresentare i motori diesel in cui esiste un piccolo ma misurabile ritardo di trasporto tra la variazione della regolazione del flusso di carburante e lo sviluppo della coppia (Teng).  Teng dovrebbe essere pari a zero in tutti i casi, tranne quelli speciali in cui questo ritardo di trasporto è particolarmente importante.  Valore tipico = 0. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tfload[number]`: Costante di tempo del limitatore di carico (Tfload) (>0).  Valore tipico = 3. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tpelec[number]`: Costante di tempo del trasduttore di potenza elettrica (Tpelec) (>0).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsa[number]`: Costante di tempo di ritardo del rilevamento della temperatura (Tsa).  Valore tipico = 4. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tsb[number]`: Costante di tempo di ritardo del rilevamento della temperatura (Tsb).  Valore tipico = 5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovCT1  - `vmax[number]`: Limite massimo di posizione della valvola (Vmax).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vmin[number]`: Limite minimo di posizione della valvola (Vmin).  Valore tipico = 0,15. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfnl[number]`: Flusso di carburante a vuoto (Wfnl).  Valore tipico = 0,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `wfspd[number]`: Interruttore per la caratteristica della sorgente di combustibile per riconoscere che il flusso di combustibile, per una data corsa della valvola del combustibile, può essere proporzionale alla velocità del motore (Wfspd). true = flusso di combustibile proporzionale alla velocità (per alcune turbine a gas e motori diesel con iniettori di combustibile a spostamento positivo) false = il sistema di controllo del combustibile mantiene il flusso di combustibile indipendente dalla velocità del motore. Valore tipico = true. Valore predefinito: Falso  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di sollevare un problema o di inviare una mail a info@smartdatamodels.org.  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di segnalare un problema o di inviare una mail a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
@@ -33,37 +40,65 @@ GovCT1:
   description: 'Adapted from CIM data models. General model for any prime mover with a PID governor, used primarily for combustion turbine and combined cycle units. This model can be used to represent a variety of prime movers controlled by PID governors.  It is suitable, for example, for representation of     Additional information on this model is available in the 2012 IEEE report, , section 3.1.2.3 page 3-4 (GGOV1).'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -75,18 +110,18 @@ GovCT1:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -98,7 +133,7 @@ GovCT1:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -109,16 +144,20 @@ GovCT1:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govct1_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ka:    
@@ -178,7 +217,7 @@ GovCT1:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -197,9 +236,11 @@ GovCT1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -221,9 +262,11 @@ GovCT1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -247,9 +290,11 @@ GovCT1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -270,9 +315,11 @@ GovCT1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -296,9 +343,11 @@ GovCT1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -324,8 +373,10 @@ GovCT1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxerr:    
@@ -347,15 +398,29 @@ GovCT1:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govct1_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -396,7 +461,7 @@ GovCT1:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -408,7 +473,7 @@ GovCT1:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -473,7 +538,7 @@ GovCT1:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovCT1'    
+      description: NGSI type. It has to be GovCT1    
       enum:    
         - GovCT1    
       type: string    
@@ -506,7 +571,7 @@ GovCT1:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovCT1/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovCT1/schema.json    
   x-model-tags: ""    
