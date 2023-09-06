@@ -7,24 +7,31 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Adaptado de los modelos de datos CIM. Modelo de sistema de excitación rotativo de uso general.  Este modelo puede utilizarse para representar una amplia gama de sistemas de excitación cuya fuente de energía de CC es un generador de CA o CC. Abarca los modelos de sistemas de excitación de tipo IEEE AC1, AC2, DC1 y DC2.**  
+Descripción global: **Adaptado de los modelos de datos CIM. Modelo de sistema de excitación rotativa de uso general.  Este modelo puede utilizarse para representar una amplia gama de sistemas de excitación cuya fuente de alimentación de CC es un generador de CA o CC. Abarca los modelos de sistemas de excitación IEEE de tipo AC1, AC2, DC1 y DC2.**  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `e1[number]`: Valor de la tensión de campo 1 (E1).  Valor típico = 3. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `e2[number]`: Valor de la tensión de campo 2 (E2).  Valor típico = 4. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fbf[number]`: Bandera de señal de retroalimentación de velocidad (Fbf). Valor típico = fieldCurrent. Por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `flimf[number]`: Bandera de tipo de límite (Flimf).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `kc[number]`: Factor de regulación del rectificador (Kc).  Valor típico = 0,05. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Factor de regulación del excitador (Kd).  Valor típico = 2. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: Constante proporcional de campo del excitador (Ke).  Valor típico = 1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kefd[number]`: Ganancia de retroalimentación de la tensión de campo (Kefd).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Ganancia de retroalimentación de velocidad (Kf).  Valor típico = 0,05. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh[number]`: Ganancia de retroalimentación del controlador de tensión de campo (Kh).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kii[number]`: Ganancia integral del regulador de corriente de campo (Kii).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: Ganancia proporcional del regulador de corriente de campo (Kip).  Valor típico = 1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks[number]`: Coeficiente para permitir un uso diferente del coeficiente de velocidad del modelo (Ks).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvi[number]`: Ganancia integral del regulador de tensión (Kvi).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvp[number]`: Ganancia proporcional del regulador de tensión (Kvp).  Valor típico = 2800. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvphz[number]`: Ganancia del limitador V/Hz (Kvphz).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `nvphz[number]`: Velocidad de captación del limitador V/Hz (Nvphz).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `se1[number]`: Factor de saturación en E1 (Se1).  Valor típico = 0,0001. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `se2[number]`: Factor de saturación en E2 (Se2).  Valor típico = 0,001. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ta[number]`: Constante de tiempo del regulador de tensión (Ta).  Valor típico = 0,01. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb1[number]`: Constante de tiempo de retardo (Tb1).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb2[number]`: Constante de tiempo de retardo (Tb2).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc1[number]`: Constante de tiempo de espera (Tc1).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc2[number]`: Constante de tiempo de espera (Tc2).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Constante de tiempo del campo excitador (Te).  Valor típico = 1,2. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Constante de tiempo de retroalimentación de la tasa (Tf).  Valor típico = 1. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf1[number]`: Constante de tiempo de retroalimentación (Tf1).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf2[number]`: Constante de tiempo de retardo de retroalimentación (Tf2).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Constante de tiempo del puente de corriente de campo (Tp).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo de NGSI. Tiene que ser ExcREXS  - `vcmax[number]`: Tensión máxima de composición (Vcmax).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfmax[number]`: Corriente de campo máxima del excitador (Vfmax).  Valor típico = 47. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfmin[number]`: Corriente mínima de campo del excitador (Vfmin).  Valor típico = -20. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: Límite de entrada del regulador de tensión (Vimax).  Valor típico = 0,1. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: Salida máxima del regulador (Vrmax).  Valor típico = 47. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: Salida mínima del regulador (Vrmin).  Valor típico = -20. Por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xc[number]`: Reactancia de composición del excitador (Xc).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `e1[number]`: Valor de tensión de campo 1 (E1).  Valor típico = 3. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `e2[number]`: Valor de tensión de campo 2 (E2).  Valor típico = 4. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `fbf[number]`: Indicador de señal de realimentación de velocidad (Fbf). Valor típico = fieldCurrent. Valor por defecto: Ninguno  . Model: [https://schema.org/Number](https://schema.org/Number)- `flimf[number]`: Indicador de tipo de límite (Flimf).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `kc[number]`: Factor de regulación del rectificador (Kc).  Valor típico = 0,05. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Factor de regulación del excitador (Kd).  Valor típico = 2. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ke[number]`: Constante proporcional de campo del excitador (Ke).  Valor típico = 1. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kefd[number]`: Ganancia de realimentación de tensión de campo (Kefd).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kf[number]`: Ganancia de realimentación de velocidad (Kf).  Valor típico = 0,05. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh[number]`: Ganancia de realimentación del regulador de tensión de campo (Kh).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kii[number]`: Ganancia integral del regulador de intensidad de campo (Kii).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kip[number]`: Ganancia proporcional del regulador de corriente de campo (Kip).  Valor típico = 1. Valor por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ks[number]`: Coeficiente para permitir diferentes usos del coeficiente modelo-velocidad (Ks).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvi[number]`: Ganancia integral del regulador de tensión (Kvi).  Valor típico = 0. Por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvp[number]`: Ganancia proporcional del regulador de tensión (Kvp).  Valor típico = 2800. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kvphz[number]`: Ganancia del limitador V/Hz (Kvphz).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `nvphz[number]`: Velocidad de captación del limitador V/Hz (Nvphz).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `se1[number]`: Factor de saturación en E1 (Se1).  Valor típico = 0,0001. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `se2[number]`: Factor de saturación en E2 (Se2).  Valor típico = 0,001. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ta[number]`: Constante de tiempo del regulador de tensión (Ta).  Valor típico = 0,01. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb1[number]`: Constante de tiempo de retardo (Tb1).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tb2[number]`: Constante de tiempo de retardo (Tb2).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc1[number]`: Constante de tiempo de espera (Tc1).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tc2[number]`: Constante de tiempo de espera (Tc2).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Constante de tiempo del campo excitador (Te).  Valor típico = 1,2. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf[number]`: Constante de tiempo de realimentación de la velocidad (Tf).  Valor típico = 1. Valor por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf1[number]`: Constante de tiempo de realimentación (Tf1).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tf2[number]`: Constante de tiempo de retardo de realimentación (Tf2).  Valor típico = 0. Predeterminado: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Corriente de campo Constante de tiempo de puente (Tp).  Valor típico = 0. Por defecto: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Tiene que ser ExcREXS  - `vcmax[number]`: Tensión máxima de composición (Vcmax).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfmax[number]`: Corriente máxima del campo excitador (Vfmax).  Valor típico = 47. Valor por defecto: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vfmin[number]`: Corriente mínima del campo excitador (Vfmin).  Valor típico = -20. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: Límite de entrada del regulador de tensión (Vimax).  Valor típico = 0,1. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmax[number]`: Salida máxima del regulador (Vrmax).  Valor típico = 47. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vrmin[number]`: Salida mínima del regulador (Vrmin).  Valor típico = -20. Valor por defecto: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `xc[number]`: Reactancia compuesta del excitador (Xc).  Valor típico = 0. Predeterminado: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases de python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. Este es el caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
+Adaptado de los modelos de datos CIM y CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Este modelo de datos es una conversión directa del Modelo de Información Común (CIM) especificado por la norma IEC61970 en modelos de datos inteligentes. Las clases python en las que se basa este modelo fueron desarrolladas por estas entidades Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) y RWTH University Aachen, Alemania. Algunas propiedades pueden tener un tipo incorrecto. En este caso, por favor, plantee una cuestión o envíe un correo a info@smartdatamodels.org.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,60 +40,88 @@ ExcREXS:
   description: 'Adapted from CIM data models. General Purpose Rotating Excitation System Model.  This model can be used to represent a wide range of excitation systems whose DC power source is an AC or DC generator. It encompasses IEEE type AC1, AC2, DC1, and DC2 excitation system models.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -115,16 +150,20 @@ ExcREXS:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &excrexs_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kc:    
@@ -202,7 +241,7 @@ ExcREXS:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -221,9 +260,11 @@ ExcREXS:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -245,9 +286,11 @@ ExcREXS:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -271,9 +314,11 @@ ExcREXS:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -294,9 +339,11 @@ ExcREXS:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -320,9 +367,11 @@ ExcREXS:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -348,12 +397,14 @@ ExcREXS:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -364,10 +415,24 @@ ExcREXS:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *excrexs_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -384,7 +449,7 @@ ExcREXS:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -396,7 +461,7 @@ ExcREXS:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -461,7 +526,7 @@ ExcREXS:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be ExcREXS'    
+      description: NGSI type. It has to be ExcREXS    
       enum:    
         - ExcREXS    
       type: string    
@@ -512,7 +577,7 @@ ExcREXS:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcREXS/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcREXS/schema.json    
   x-model-tags: ""    
@@ -524,15 +589,15 @@ ExcREXS:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un ExcREXS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcREXS en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcREXS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
-No está disponible el ejemplo de un ExcREXS en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un ExcREXS en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un ExcREXS en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un ExcREXS en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No disponible el ejemplo de un ExcREXS en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
