@@ -15,7 +15,14 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `efdmax[number]`: Grenzwert für die Begrenzung der Feldspannung (Efdmax). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efdmin[number]`: Grenzwert für die Begrenzung der Feldspannung (Efdmin). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emax[number]`: Maximaler Feldspannungsausgang (Emax).  Typischer Wert = 20. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Minimaler Feldspannungsausgang (Emin).  Typischer Wert = -20. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `k[number]`: Verstärkung (K).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: Parameter der Untererregungsgrenze (K1).  Typischer Wert = 0,1364. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: Parameter der Untererregungsgrenze (K2).  Typischer Wert = -0,3861. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: Verstärkung des PI-Reglers (Kc).  Typischer Wert = 70. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kce[number]`: Regelungsfaktor des Gleichrichters (Kce).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Interne Reaktanz des Erregers (Kd).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kgob[number]`: P-Regler-Verstärkung (Kgob).  Typischer Wert = 10. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Verstärkung des PI-Reglers (Kp).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqi[number]`: PI-Reglerverstärkung des Integralanteils (Kqi).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqob[number]`: Anstiegsgeschwindigkeit der Blindleistung (Kqob). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqp[number]`: Verstärkung des PI-Reglers (Kqp).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `nq[number]`: Totzone der Blindleistung (nq).  Bestimmt den Bereich der Empfindlichkeit.  Typischer Wert = 0,001. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `qconoff[number]`: Zustand der Sekundärspannungsregelung (Qc_on_off). true = Sekundärspannungsregelung ist ON false = Sekundärspannungsregelung ist OFF. Typischer Wert = false. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `qz[number]`: Gewünschter Wert (Sollwert) der Blindleistung, manuelle Einstellung (Qz). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `remote[number]`: Wahlschalter zur Anwendung der automatischen Berechnung im sekundären Reglermodell. true = automatische Berechnung ist aktiviert false = manuelle Einstellung ist aktiv; die Verwendung des gewünschten Blindleistungswertes (Qz) ist erforderlich. Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `sbase[number]`: Scheinleistung der Einheit (Sbase).  Einheit = MVA.  Typischer Wert = 259. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `tc[number]`: PI-Regler Phasenvorlaufzeitkonstante (Tc).  Typischer Wert = 8. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Zeitkonstante des Verstärkungsblocks (Te).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: PI-Regler Phasenvorlaufzeitkonstante (Ti).  Typischer Wert = 2. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Zeitkonstante (Tp).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Zeitkonstante des Spannungswandlers (Tr).  Typischer Wert = 0,01. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss ExcSK sein  - `uimax[number]`: Maximaler Fehler (Uimax).  Typischer Wert = 10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uimin[number]`: Minimaler Fehler (UImin).  Typischer Wert = -10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmax[number]`: Maximaler Reglerausgang (URmax).  Typischer Wert = 10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmin[number]`: Minimaler Reglerausgang (URmin).  Typischer Wert = -10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmax[number]`: Maximaler Klemmenspannungseingang (Vtmax).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 1,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmin[number]`: Minimaler Klemmenspannungseingang (Vtmin).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 0,95. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yp[number]`: Maximaler Ausgang (Yp).  Minimaler Ausgang = 0. Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `efdmax[number]`: Grenzwert für die Begrenzung der Feldspannung (Efdmax). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efdmin[number]`: Grenzwert für die Begrenzung der Feldspannung (Efdmin). Standardwert: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emax[number]`: Maximaler Feldspannungsausgang (Emax).  Typischer Wert = 20. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Minimaler Feldspannungsausgang (Emin).  Typischer Wert = -20. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `k[number]`: Verstärkung (K).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: Parameter der Untererregungsgrenze (K1).  Typischer Wert = 0,1364. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: Parameter der Untererregungsgrenze (K2).  Typischer Wert = -0,3861. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: Verstärkung des PI-Reglers (Kc).  Typischer Wert = 70. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kce[number]`: Regelungsfaktor des Gleichrichters (Kce).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Interne Reaktanz des Erregers (Kd).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kgob[number]`: P-Regler-Verstärkung (Kgob).  Typischer Wert = 10. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: Verstärkung des PI-Reglers (Kp).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqi[number]`: PI-Reglerverstärkung des Integralanteils (Kqi).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqob[number]`: Anstiegsgeschwindigkeit der Blindleistung (Kqob). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqp[number]`: Verstärkung des PI-Reglers (Kqp).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `nq[number]`: Totzone der Blindleistung (nq).  Bestimmt den Bereich der Empfindlichkeit.  Typischer Wert = 0,001. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `qconoff[number]`: Zustand der Sekundärspannungsregelung (Qc_on_off). true = Sekundärspannungsregelung ist ON false = Sekundärspannungsregelung ist OFF. Typischer Wert = false. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `qz[number]`: Gewünschter Wert (Sollwert) der Blindleistung, manuelle Einstellung (Qz). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `remote[number]`: Wahlschalter zur Anwendung der automatischen Berechnung im sekundären Reglermodell. true = automatische Berechnung ist aktiviert false = manuelle Einstellung ist aktiv; die Verwendung des gewünschten Blindleistungswertes (Qz) ist erforderlich. Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `sbase[number]`: Scheinleistung der Einheit (Sbase).  Einheit = MVA.  Typischer Wert = 259. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `tc[number]`: PI-Regler Phasenvorlaufzeitkonstante (Tc).  Typischer Wert = 8. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Zeitkonstante des Verstärkungsblocks (Te).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: PI-Regler Phasenvorlaufzeitkonstante (Ti).  Typischer Wert = 2. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Zeitkonstante (Tp).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Zeitkonstante des Spannungswandlers (Tr).  Typischer Wert = 0,01. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss ExcSK sein  - `uimax[number]`: Maximaler Fehler (Uimax).  Typischer Wert = 10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uimin[number]`: Minimaler Fehler (UImin).  Typischer Wert = -10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmax[number]`: Maximaler Reglerausgang (URmax).  Typischer Wert = 10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmin[number]`: Minimaler Reglerausgang (URmin).  Typischer Wert = -10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmax[number]`: Maximaler Klemmenspannungseingang (Vtmax).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 1,05. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmin[number]`: Minimaler Klemmenspannungseingang (Vtmin).  Bestimmt den Bereich der Spannungstotzone.  Typischer Wert = 0,95. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yp[number]`: Maximaler Ausgang (Yp).  Minimaler Ausgang = 0. Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
@@ -33,60 +40,88 @@ ExcSK:
   description: 'Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -115,16 +150,20 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &excsk_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     k:    
@@ -196,7 +235,7 @@ ExcSK:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -215,9 +254,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -239,9 +280,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -265,9 +308,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -288,9 +333,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -314,9 +361,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -342,12 +391,14 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -358,10 +409,24 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *excsk_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -390,7 +455,7 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -402,7 +467,7 @@ ExcSK:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -437,7 +502,7 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be ExcSK'    
+      description: NGSI type. It has to be ExcSK    
       enum:    
         - ExcSK    
       type: string    
@@ -488,7 +553,7 @@ ExcSK:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcSK/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSK/schema.json    
   x-model-tags: ""    
