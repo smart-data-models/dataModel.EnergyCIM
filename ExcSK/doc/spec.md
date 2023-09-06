@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `efdmax[number]`: Field voltage clipping limit (Efdmax). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efdmin[number]`: Field voltage clipping limit (Efdmin). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emax[number]`: Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `k[number]`: Gain (K).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: PI controller gain (Kc).  Typical Value = 70. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kce[number]`: Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kgob[number]`: P controller gain (Kgob).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: PI controller gain (Kp).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqi[number]`: PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqob[number]`: Rate of rise of the reactive power (Kqob). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqp[number]`: PI controller gain (Kqp).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `nq[number]`: Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `qconoff[number]`: Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `qz[number]`: Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `remote[number]`: Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `sbase[number]`: Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tc[number]`: PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Time constant of gain block (Te).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Time constant (Tp).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be ExcSK  - `uimax[number]`: Maximum error (Uimax).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uimin[number]`: Minimum error (UImin).  Typical Value = -10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmax[number]`: Maximum controller output (URmax).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmin[number]`: Minimum controller output (URmin).  Typical Value = -10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmax[number]`: Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmin[number]`: Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yp[number]`: Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `efdmax[number]`: Field voltage clipping limit (Efdmax). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efdmin[number]`: Field voltage clipping limit (Efdmin). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emax[number]`: Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `k[number]`: Gain (K).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: PI controller gain (Kc).  Typical Value = 70. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kce[number]`: Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kgob[number]`: P controller gain (Kgob).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: PI controller gain (Kp).  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqi[number]`: PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqob[number]`: Rate of rise of the reactive power (Kqob). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqp[number]`: PI controller gain (Kqp).  Typical Value = 0. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `nq[number]`: Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `qconoff[number]`: Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `qz[number]`: Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `remote[number]`: Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False  . Model: [https://schema.org/Number](https://schema.org/Number)- `sbase[number]`: Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `tc[number]`: PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: Time constant of gain block (Te).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Time constant (Tp).  Typical Value = 0.1. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI type. It has to be ExcSK  - `uimax[number]`: Maximum error (Uimax).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uimin[number]`: Minimum error (UImin).  Typical Value = -10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmax[number]`: Maximum controller output (URmax).  Typical Value = 10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmin[number]`: Minimum controller output (URmin).  Typical Value = -10. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmax[number]`: Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmin[number]`: Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yp[number]`: Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 <!-- /35-RequiredProperties -->  
@@ -33,60 +40,88 @@ ExcSK:
   description: 'Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -115,16 +150,20 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &excsk_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     k:    
@@ -196,7 +235,7 @@ ExcSK:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -215,9 +254,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -239,9 +280,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -265,9 +308,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -288,9 +333,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -314,9 +361,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -342,12 +391,14 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -358,10 +409,24 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *excsk_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -390,7 +455,7 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -402,7 +467,7 @@ ExcSK:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -437,7 +502,7 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be ExcSK'    
+      description: NGSI type. It has to be ExcSK    
       enum:    
         - ExcSK    
       type: string    
@@ -488,7 +553,7 @@ ExcSK:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcSK/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSK/schema.json    
   x-model-tags: ""    
