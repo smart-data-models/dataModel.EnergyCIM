@@ -1,173 +1,259 @@
-Entität: GovSteam1  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: GovSteam1  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovSteam1/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Abgeleitet aus CIM-Datenmodellen. Dampfturbinenreglermodell, basierend auf dem GovSteamIEEE1-Modell (mit optionalem Totband und nichtlinearer Ventilverstärkung hinzugefügt).**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Angelehnt an die CIM-Datenmodelle. Dampfturbinenreglermodell, basierend auf dem GovSteamIEEE1-Modell (mit optionaler Totzone und nichtlinearer Ventilverstärkung).**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `db1`: Beabsichtigte Totzonenbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `db2`: Unbeabsichtigtes Totband (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  - `description`: Eine Beschreibung dieses Artikels  - `eps`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  - `gv1`: Nichtlineare Verstärkung Ventilstellungspunkt 1 (GV1).  Typischer Wert = 0. Voreinstellung: 0.0  - `gv2`: Nichtlineare Verstärkung Ventilstellungspunkt 2 (GV2).  Typischer Wert = 0,4. Voreinstellung: 0,0  - `gv3`: Nichtlineare Verstärkung Ventilstellungspunkt 3 (GV3).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `gv4`: Nichtlineare Verstärkung Ventilstellungspunkt 4 (GV4).  Typischer Wert = 0,6. Voreinstellung: 0,0  - `gv5`: Nichtlineare Verstärkung Ventilstellungspunkt 5 (GV5).  Typischer Wert = 1. Voreinstellung: 0.0  - `gv6`: Nichtlineare Verstärkung Ventilstellungspunkt 6 (GV6).  Typischer Wert = 0. Voreinstellung: 0.0  - `id`: Eindeutiger Bezeichner der Entität  - `k`: Verstärkung des Reglers (Kehrwert des P-Bereichs) (K) (>0).  Typischer Wert = 25. Voreinstellung: 0.0  - `k1`: Bruchteil der HP-Wellenleistung nach dem ersten Kesseldurchgang (K1).  Typischer Wert = 0,2. Voreinstellung: 0,0  - `k2`: Bruchteil der LP-Wellenleistung nach dem ersten Kesseldurchgang (K2).  Typischer Wert = 0. Voreinstellung: 0.0  - `k3`: Bruchteil der HP-Wellenleistung nach dem zweiten Kesseldurchgang (K3).  Typischer Wert = 0,3. Voreinstellung: 0,0  - `k4`: Bruchteil der LP-Wellenleistung nach dem zweiten Kesseldurchgang (K4).  Typischer Wert = 0. Voreinstellung: 0.0  - `k5`: Bruchteil der HP-Wellenleistung nach dem dritten Kesseldurchgang (K5).  Typischer Wert = 0,5. Voreinstellung: 0,0  - `k6`: Bruchteil der LP-Wellenleistung nach dem dritten Kesseldurchgang (K6).  Typischer Wert = 0. Voreinstellung: 0.0  - `k7`: Bruchteil der HP-Wellenleistung nach dem vierten Kesseldurchgang (K7).  Typischer Wert = 0. Voreinstellung: 0.0  - `k8`: Bruchteil der LP-Wellenleistung nach dem vierten Kesseldurchgang (K8).  Typischer Wert = 0. Voreinstellung: 0.0  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pgv1`: Nichtlineare Verstärkung Leistungswert Punkt 1 (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  - `pgv2`: Nichtlineare Verstärkung Leistungswert Punkt 2 (Pgv2).  Typischer Wert = 0,75. Voreinstellung: 0,0  - `pgv3`: Nichtlineare Verstärkung Leistungswert Punkt 3 (Pgv3).  Typischer Wert = 0,91. Voreinstellung: 0.0  - `pgv4`: Nichtlineare Verstärkung Leistungswert Punkt 4 (Pgv4).  Typischer Wert = 0,98. Voreinstellung: 0.0  - `pgv5`: Nichtlineare Verstärkung Leistungswert Punkt 5 (Pgv5).  Typischer Wert = 1. Voreinstellung: 0,0  - `pgv6`: Nichtlineare Verstärkung Leistungswert Punkt 6 (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  - `pmax`: Maximale Ventilöffnung (Pmax) (> Pmin).  Typischer Wert = 1. Voreinstellung: 0,0  - `pmin`: Minimale Ventilöffnung (Pmin) (>=0).  Typischer Wert = 0. Voreinstellung: 0.0  - `sdb1`: Intentional deadband indicator. true = intentional deadband wird angewendet false = intentional deadband wird nicht angewendet. Typischer Wert = true. Voreinstellung: Falsch  - `sdb2`: Ungewollte Deadband-Position. true = gewolltes Deadband wird vor Punkt `A` angewendet false = gewolltes Deadband wird nach Punkt `A` angewendet. Typischer Wert = true. Voreinstellung: False  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `t1`: Verzögerungszeitkonstante des Reglers (T1).  Typischer Wert = 0. Voreinstellung: 0  - `t2`: Reglervorlaufzeitkonstante (T2).  Typischer Wert = 0. Voreinstellung: 0  - `t3`: Zeitkonstante des Ventilstellungsreglers (T3(>0).  Typischer Wert = 0,1. Voreinstellung: 0  - `t4`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,3. Voreinstellung: 0  - `t5`: Zeitkonstante des zweiten Kesseldurchgangs (T5).  Typischer Wert = 5. Voreinstellung: 0  - `t6`: Zeitkonstante des dritten Kesseldurchgangs (T6).  Typischer Wert = 0,5. Voreinstellung: 0  - `t7`: Zeitkonstante des vierten Kesseldurchgangs (T7).  Typischer Wert = 0. Voreinstellung: 0  - `type`: NGSI-Typ. Es muss GovSteam1 sein  - `uc`: Maximale Ventilschließgeschwindigkeit (Uc) (<0).  Einheit = PU/sec.  Typischer Wert = -10. Voreinstellung: 0.0  - `uo`: Maximale Ventilöffnungsgeschwindigkeit (Uo) (>0).  Einheit = PU/sec.  Typischer Wert = 1. Voreinstellung: 0.0  - `valve`: Nichtlineare Ventilkennlinie. true = nichtlineare Ventilkennlinie wird verwendet false = nichtlineare Ventilkennlinie wird nicht verwendet. Typischer Wert = true. Voreinstellung: False    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `db1[number]`: Beabsichtigte Totzonenbreite (db1).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: Unbeabsichtigte Totzone (db2).  Einheit = MW.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Eine Beschreibung dieses Artikels  - `eps[number]`: Beabsichtigte db-Hysterese (eps).  Einheit = Hz.  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Nichtlineare Verstärkung Ventilstellungspunkt 1 (GV1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Nichtlineare Verstärkung Ventilstellungspunkt 2 (GV2).  Typischer Wert = 0,4. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Nichtlineare Verstärkung Ventilstellungspunkt 3 (GV3).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Nichtlineare Verstärkung Ventilstellungspunkt 4 (GV4).  Typischer Wert = 0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Nichtlineare Verstärkung Ventilstellungspunkt 5 (GV5).  Typischer Wert = 1. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv6[number]`: Nichtlineare Verstärkung Ventilstellungspunkt 6 (GV6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `k[number]`: Verstärkung des Reglers (Kehrwert des P-Bereichs) (K) (>0).  Typischer Wert = 25. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: Anteil der HP-Wellenleistung nach dem ersten Kesseldurchgang (K1).  Typischer Wert = 0,2. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: Bruchteil der LP-Wellenleistung nach dem ersten Kesseldurchgang (K2).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k3[number]`: Anteil der HP-Wellenleistung nach dem zweiten Kesseldurchgang (K3).  Typischer Wert = 0,3. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k4[number]`: Anteil der LP-Wellenleistung nach dem zweiten Kesseldurchgang (K4).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k5[number]`: Anteil der HP-Wellenleistung nach dem dritten Kesseldurchgang (K5).  Typischer Wert = 0,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k6[number]`: Anteil der LP-Wellenleistung nach dem dritten Kesseldurchgang (K6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k7[number]`: Anteil der HP-Wellenleistung nach dem vierten Kesseldurchgang (K7).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k8[number]`: Anteil der LP-Wellenleistung nach dem vierten Kesseldurchgang (K8).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mwbase[number]`: Basis für Leistungswerte (MWbase) (>0).  Einheit = MW. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pgv1[number]`: Nichtlineare Verstärkung Leistungswert Punkt 1 (Pgv1).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Nichtlineare Verstärkung Leistungswert Punkt 2 (Pgv2).  Typischer Wert = 0,75. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Nichtlineare Verstärkung Leistungswert Punkt 3 (Pgv3).  Typischer Wert = 0,91. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Nichtlineare Verstärkung Leistungswert Punkt 4 (Pgv4).  Typischer Wert = 0,98. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Nichtlineare Verstärkung Leistungswert Punkt 5 (Pgv5).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv6[number]`: Nichtlineare Verstärkung Leistungswert Punkt 6 (Pgv6).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmax[number]`: Maximale Ventilöffnung (Pmax) (> Pmin).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pmin[number]`: Minimale Ventilöffnung (Pmin) (>=0).  Typischer Wert = 0. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `sdb1[number]`: Anzeige für beabsichtigtes Totband. true = beabsichtigtes Totband wird angewendet false = beabsichtigtes Totband wird nicht angewendet. Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `sdb2[number]`: Unbeabsichtigte Deadband-Position. true = absichtliches Deadband wird vor Punkt `A` angewendet false = absichtliches Deadband wird nach Punkt `A` angewendet. Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `t1[number]`: Verzögerungszeitkonstante des Reglers (T1).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t2[number]`: Konstante der Vorlaufzeit des Reglers (T2).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t3[number]`: Zeitkonstante des Ventilstellungsreglers (T3(>0).  Typischer Wert = 0,1. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t4[number]`: Zeitkonstante der Einlassleitung/Dampfschale (T4).  Typischer Wert = 0,3. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t5[number]`: Zeitkonstante des zweiten Kesseldurchgangs (T5).  Typischer Wert = 5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t6[number]`: Zeitkonstante des dritten Kesseldurchgangs (T6).  Typischer Wert = 0,5. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `t7[number]`: Zeitkonstante des vierten Kesseldurchgangs (T7).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss GovSteam1 sein.  - `uc[number]`: Maximale Ventilschließgeschwindigkeit (Uc) (<0).  Einheit = PU/sec.  Typischer Wert = -10. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: Maximale Öffnungsgeschwindigkeit des Ventils (Uo) (>0).  Einheit = PU/sec.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `valve[number]`: Nichtlineare Ventilkennlinie. true = nichtlineare Ventilkennlinie wird verwendet false = nichtlineare Ventilkennlinie wird nicht verwendet. Typischer Wert = true. Voreinstellung: Falsch  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch den Standard IEC61970 spezifiziert ist, in Smart Data Models. Die Python-Klassen, auf denen dieses Modell basiert, wurden von den genannten Einrichtungen Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) und RWTH Aachen entwickelt. Einige Eigenschaften können einen falschen Typ haben. Dies war der Fall, bitte erheben Sie einen Fehler oder senden Sie eine Mail an info@smartdatamodels.org.  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Angepasst von CIM-Datenmodellen und CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Dieses Datenmodell ist eine direkte Umsetzung des Common Information Model (CIM), das durch die Norm IEC61970 spezifiziert ist, in intelligente Datenmodelle. Die Python-Klassen, auf denen dieses Modell basiert, wurden vom Institut für Automatisierung komplexer Stromversorgungssysteme (ACS), dem EON Energy Research Center (EONERC) und der RWTH Aachen, Deutschland, entwickelt. Einige Eigenschaften können den falschen Typ haben. Sollte dies der Fall sein, melden Sie bitte einen Fehler oder senden Sie eine E-Mail an info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovSteam1:    
   description: 'Adapted from CIM data models. Steam turbine governor model, based on the GovSteamIEEE1 model  (with optional deadband and nonlinear valve gain added).'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
-      type: Property    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
-      type: Property    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     db1:    
       description: 'Intentional deadband width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     db2:    
       description: 'Unintentional deadband (db2).  Unit = MW.  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     description:    
-      description: 'A description of this item'    
-      type: Property    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     eps:    
       description: 'Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv1:    
       description: 'Nonlinear gain valve position point 1 (GV1).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv2:    
       description: 'Nonlinear gain valve position point 2 (GV2).  Typical Value = 0.4. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv3:    
       description: 'Nonlinear gain valve position point 3 (GV3).  Typical Value = 0.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv4:    
       description: 'Nonlinear gain valve position point 4 (GV4).  Typical Value = 0.6. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv5:    
       description: 'Nonlinear gain valve position point 5 (GV5).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     gv6:    
       description: 'Nonlinear gain valve position point 6 (GV6).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     id:    
-      anyOf: &govsteam1_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
-      type: Property    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
     k:    
       description: 'Governor gain (reciprocal of droop) (K) (>0).  Typical Value = 25. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k1:    
       description: 'Fraction of HP shaft power after first boiler pass (K1).  Typical Value = 0.2. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k2:    
       description: 'Fraction of LP shaft power after first boiler pass (K2).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k3:    
       description: 'Fraction of HP shaft power after second boiler pass (K3).  Typical Value = 0.3. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k4:    
       description: 'Fraction of LP shaft power after second boiler pass (K4).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k5:    
       description: 'Fraction of HP shaft power after third boiler pass (K5).  Typical Value = 0.5. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k6:    
       description: 'Fraction of LP shaft power after third boiler pass (K6).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k7:    
       description: 'Fraction of HP shaft power after fourth boiler pass (K7).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     k8:    
       description: 'Fraction of LP shaft power after fourth boiler pass (K8).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -186,9 +272,11 @@ GovSteam1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -210,9 +298,11 @@ GovSteam1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -236,9 +326,11 @@ GovSteam1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -259,9 +351,11 @@ GovSteam1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -285,9 +379,11 @@ GovSteam1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -313,75 +409,107 @@ GovSteam1:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
-      type: GeoProperty    
+          x-ngsi:    
+            type: GeoProperty    
+      x-ngsi:    
+        type: GeoProperty    
     mwbase:    
       description: 'Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     name:    
-      description: 'The name of this item.'    
-      type: Property    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govsteam1_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: Property    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pgv1:    
       description: 'Nonlinear gain power value point 1 (Pgv1).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv2:    
       description: 'Nonlinear gain power value point 2 (Pgv2).  Typical Value = 0.75. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv3:    
       description: 'Nonlinear gain power value point 3 (Pgv3).  Typical Value = 0.91. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv4:    
       description: 'Nonlinear gain power value point 4 (Pgv4).  Typical Value = 0.98. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv5:    
       description: 'Nonlinear gain power value point 5 (Pgv5).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pgv6:    
       description: 'Nonlinear gain power value point 6 (Pgv6).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pmax:    
       description: 'Maximum valve opening (Pmax) (> Pmin).  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     pmin:    
       description: 'Minimum valve opening (Pmin) (>=0).  Typical Value = 0. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     sdb1:    
       description: 'Intentional deadband indicator. true = intentional deadband is applied false = intentional deadband is not applied. Typical Value = true. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     sdb2:    
       description: 'Unintentional deadband location. true = intentional deadband is applied before point `A` false = intentional deadband is applied after point `A`. Typical Value = true. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -390,72 +518,105 @@ GovSteam1:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
+      x-ngsi:    
+        type: Property    
     t1:    
       description: 'Governor lag time constant (T1).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t2:    
       description: 'Governor lead time constant (T2).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t3:    
       description: 'Valve positioner time constant (T3(>0).  Typical Value = 0.1. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t4:    
       description: 'Inlet piping/steam bowl time constant (T4).  Typical Value = 0.3. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t5:    
       description: 'Time constant of second boiler pass (T5).  Typical Value = 5. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t6:    
       description: 'Time constant of third boiler pass (T6).  Typical Value = 0.5. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     t7:    
       description: 'Time constant of fourth boiler pass (T7).  Typical Value = 0. Default: 0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     type:    
-      description: 'NGSI type. It has to be GovSteam1'    
+      description: NGSI type. It has to be GovSteam1    
       enum:    
         - GovSteam1    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     uc:    
       description: 'Maximum valve closing velocity (Uc) (<0).  Unit = PU/sec.  Typical Value = -10. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     uo:    
       description: 'Maximum valve opening velocity (Uo) (>0).  Unit = PU/sec.  Typical Value = 1. Default: 0.0'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     valve:    
       description: 'Nonlinear valve characteristic. true = nonlinear valve characteristic is used false = nonlinear valve characteristic is not used. Typical Value = true. Default: False'    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
   required: []    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovSteam1/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteam1/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
-Nicht verfügbar das Beispiel eines GovSteam1 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines GovSteam1 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines GovSteam1 im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
-Nicht verfügbar das Beispiel eines GovSteam1 im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Nicht verfügbar ist das Beispiel eines GovSteam1 im JSON-LD Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovSteam1 im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovSteam1 im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel eines GovSteam1 im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
