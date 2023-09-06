@@ -1,30 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。阁下  
-=====<!-- /10-Header -->  
+实体：ExcSK  
+========<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/ExcSK/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述。**改编自CIM数据模型。斯洛伐克的励磁系统模型。  UEL和二次电压控制都包含在这个模型中。当使用此模型时，不能有单独的欠励磁限制器或VAR控制器模型。**。  
-版本：0.0.1  
+全局描述：**改编自 CIM 数据模型。斯洛伐克励磁系统模型。  该模型包含欠励磁限制器和二次电压控制。使用该模型时，不能使用单独的欠励磁限制器或 VAr 控制器模型。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `efdmax[number]`: 场电压削波限制（Efdmax）。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efdmin[number]`: 场电压削波限制（Efdmin）。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emax[number]`: 最大场电压输出（Emax）。  典型值=20。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: 最小场电压输出（Emin）。  典型值=-20。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `k[number]`: 增益（K）。  典型值=1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: 励磁不足极限参数（K1）。  典型值=0.1364。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: 欠激励极限参数（K2）。  典型值=-0.3861。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: PI控制器增益（Kc）。  典型值=70。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kce[number]`: 整流器调节系数（Kce）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: 激励器内部电抗（Kd）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kgob[number]`: P控制器增益（Kgob）。  典型值=10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: PI控制器增益（Kp）。  典型值=1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqi[number]`: 积分分量的PI控制器增益（Kqi）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqob[number]`: 无功功率的上升率（Kqob）。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqp[number]`: PI控制器增益（Kqp）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `nq[number]`: 无功功率的死区（nq）。  决定了灵敏度的范围。  典型值=0.001。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `qconoff[number]`: 二级电压控制状态（Qc_on_off）。true = 二级电压控制为ON false = 二级电压控制为OFF。典型值=false。默认值。false（假）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `qz[number]`: 无功功率的期望值（设定值），手动设置（Qz）。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `remote[number]`: 选择器在二级控制器模型中应用自动计算。 true = 自动计算被激活 false = 手动设置被激活；需要使用无功功率（Qz）的期望值。典型值=true。默认值。False（假）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `sbase[number]`: 单位的表观功率（Sbase）。  单位=MVA。  典型值 = 259。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `tc[number]`: PI控制器相位引导时间常数（Tc）。  典型值=8。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: 增益块的时间常数（Te）。  典型值=0.1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: PI控制器相位引导时间常数（Ti）。  典型值=2。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: 时间常数（Tp）。  典型值=0.1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: 电压传感器时间常数（Tr）。  典型值=0.01。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI类型。它必须是ExcSK  - `uimax[number]`: 最大误差（Uimax）。  典型值=10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uimin[number]`: 最小误差（UImin）。  典型值=-10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmax[number]`: 最大控制器输出（URmax）。  典型值=10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmin[number]`: 最小控制器输出（URmin）。  典型值=-10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmax[number]`: 最大终端电压输入（Vtmax）。  决定了电压死区的范围。  典型值=1.05。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmin[number]`: 最小终端电压输入（Vtmin）。  决定了电压死区的范围。  典型值=0.95。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yp[number]`: 最大输出（Yp）。  最小输出=0。典型值=1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `efdmax[number]`: 场电压削波限值 (Efdmax)。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `efdmin[number]`: 场电压削波限值 (Efdmin)。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emax[number]`: 最大场电压输出 (Emax)。  典型值 = 20。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `emin[number]`: 最小场电压输出 (Emin)。  典型值 = -20。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `k[number]`: 增益 (K)。  典型值 = 1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k1[number]`: 欠激励限制参数 (K1)。  典型值 = 0.1364。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `k2[number]`: 欠激励限制参数 (K2)。  典型值 = -0.3861。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kc[number]`: PI 控制器增益 (Kc)。  典型值 = 70。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kce[number]`: 整流器调节因子 (Kce)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kd[number]`: 励磁机内部电抗 (Kd)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kgob[number]`: P 控制器增益（Kgob）。  典型值 = 10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kp[number]`: PI 控制器增益 (Kp)。  典型值 = 1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqi[number]`: PI 控制器积分增益 (Kqi)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqob[number]`: 无功功率上升率 (Kqob)。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kqp[number]`: PI 控制器增益 (Kqp)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `nq[number]`: 无功功率死区 (nq)。  决定灵敏度范围。  典型值 = 0.001。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `qconoff[number]`: true = 二次电压控制开启 false = 二次电压控制关闭。典型值 = false。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `qz[number]`: 无功功率的预期值（设定值），手动设置 (Qz)。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `remote[number]`: true = 激活自动计算 false = 激活手动设置；需要使用预期无功功率值 (Qz)。典型值 = true。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `sbase[number]`: 机组的视在功率（Sbase）。  单位 = MVA。  典型值 = 259。默认值： 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `tc[number]`: PI 控制器相位提前时间常数 (Tc)。  典型值 = 8。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `te[number]`: 增益块 (Te) 的时间常数。  典型值 = 0.1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti[number]`: PI 控制器相位超前时间常数 (Ti)。  典型值 = 2。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: 时间常数 (Tp)。  典型值 = 0.1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: 电压传感器时间常数 (Tr)。  典型值 = 0.01。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI 类型。必须是 ExcSK  - `uimax[number]`: 最大误差 (Uimax)。  典型值 = 10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uimin[number]`: 最小误差 (UImin)。  典型值 = -10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmax[number]`: 控制器最大输出 (URmax)。  典型值 = 10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `urmin[number]`: 控制器最小输出 (URmin)。  典型值 = -10。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmax[number]`: 最大终端输入电压 (Vtmax)。  决定电压死区的范围。  典型值 = 1.05。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vtmin[number]`: 最小终端电压输入 (Vtmin)。  决定电压死区的范围。  典型值 = 0.95。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `yp[number]`: 最大输出 (Yp)。  最小输出 = 0。典型值 = 1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-改编自CIM数据模型和CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。这个数据模型是将IEC61970标准规定的通用信息模型（CIM）直接转换为智能数据模型。这个模型所基于的python类是由这些实体复杂电力系统自动化研究所（ACS）、EON能源研究中心（EONERC）和德国亚琛工大开发的。一些属性可能有错误的类型。这种情况下，请提出一个问题或发送邮件到 info@smartdatamodels.org。  
+改编自 CIM 数据模型和 CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。该数据模型将 IEC61970 标准规定的通用信息模型（CIM）直接转换为智能数据模型。该模型所基于的 python 类由德国复杂电力系统自动化研究所 (ACS)、EON 能源研究中心 (EONERC) 和亚琛工业大学 (RWTH University Aachen) 开发。某些属性的类型可能有误。如果出现这种情况，请提出问题或发送邮件至 info@smartdatamodels.org。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,60 +40,88 @@ ExcSK:
   description: 'Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -115,16 +150,20 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &excsk_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     k:    
@@ -196,7 +235,7 @@ ExcSK:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -215,9 +254,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -239,9 +280,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -265,9 +308,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -288,9 +333,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -314,9 +361,11 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -342,12 +391,14 @@ ExcSK:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -358,10 +409,24 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *excsk_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -390,7 +455,7 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -402,7 +467,7 @@ ExcSK:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -437,7 +502,7 @@ ExcSK:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be ExcSK'    
+      description: NGSI type. It has to be ExcSK    
       enum:    
         - ExcSK    
       type: string    
@@ -488,7 +553,7 @@ ExcSK:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/ExcSK/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSK/schema.json    
   x-model-tags: ""    
@@ -499,16 +564,16 @@ ExcSK:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-不提供JSON-LD格式的ExcSK的例子作为key-values。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
-不提供规范化的JSON-LD格式的ExcSK的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
-不提供JSON-LD格式的ExcSK作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
-不提供规范化的JSON-LD格式的ExcSK的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+不可用 JSON-LD 格式的 ExcSK 示例作为键值。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+没有以 JSON-LD 格式规范化的 ExcSK 示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+不可用 JSON-LD 格式的 ExcSK 示例作为键值。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+没有以 JSON-LD 格式规范化的 ExcSK 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
