@@ -1,53 +1,104 @@
-Entità: GovHydro4  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: GovHydro4  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydro4/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Adattato dai modelli di dati CIM. Turbina idroelettrica e regolatore. Rappresenta impianti con configurazioni di condotta forzata semplici e governatori idraulici di tipo tradizionale 'dashpot'.  Questo modello può essere usato per rappresentare turbine semplici, Francis, Pelton o Kaplan.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Adattato dai modelli di dati CIM. Turbina idroelettrica e regolatore. Rappresenta impianti con configurazioni di condotte forzate semplici e governatori idraulici di tipo tradizionale "dashpot".  Questo modello può essere utilizzato per rappresentare turbine semplici, Francis, Pelton o Kaplan **.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `at`: Guadagno della turbina (At).  Valore tipico = 1,2. Predefinito: 0.0  - `bgv0`: Punto 0 del servo della lama Kaplan (Bgv0).  Valore tipico = 0. Default: 0.0  - `bgv1`: Punto di servo della lama Kaplan 1 (Bgv1).  Valore tipico = 0. Default: 0.0  - `bgv2`: Punto 2 del servo della lama Kaplan (Bgv2). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 0.1. Predefinito: 0.0  - `bgv3`: Punto 3 del servo della lama Kaplan (Bgv3). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 0.667. Predefinito: 0.0  - `bgv4`: Punto 4 del servo della lama Kaplan (Bgv4).  Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 0.9. Predefinito: 0.0  - `bgv5`: Punto 5 del servo della lama Kaplan (Bgv5). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 1. Predefinito: 0.0  - `bmax`: Massimo fattore di regolazione delle pale (Bmax). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 1.1276. Predefinito: 0.0  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `db1`: Larghezza della banda morta intenzionale (db1).  Unità = Hz.  Valore tipico = 0. Predefinito: 0.0  - `db2`: Banda morta involontaria (db2).  Unità = MW.  Valore tipico = 0. Predefinito: 0.0  - `description`: Una descrizione di questo articolo  - `dturb`: Fattore di smorzamento della turbina (Dturb).  Unità = delta P (PU di MWbase) / delta velocità (PU). Valore tipico = 0.5.  Valore tipico Francis = 1.1, Kaplan = 1.1. Predefinito: 0.0  - `eps`: Isteresi db intenzionale (eps).  Unità = Hz.  Valore tipico = 0. Predefinito: 0.0  - `gmax`: Apertura massima del cancello, PU di MWbase (Gmax).  Valore tipico = 1. Predefinito: 0,0  - `gmin`: Apertura minima del cancello, PU di MWbase (Gmin).  Valore tipico = 0. Default: 0.0  - `gv0`: Punto di guadagno non lineare 0, PU gv (Gv0). Valore tipico = 0. Valore tipico Francis = 0.1, Kaplan = 0.1. Predefinito: 0.0  - `gv1`: Punto di guadagno non lineare 1, PU gv (Gv1). Valore tipico = 0. Valore tipico Francis = 0.4, Kaplan = 0.4. Predefinito: 0.0  - `gv2`: Punto di guadagno non lineare 2, PU gv (Gv2). Valore tipico = 0. Valore tipico Francis = 0.5, Kaplan = 0.5. Predefinito: 0.0  - `gv3`: Punto di guadagno non lineare 3, PU gv (Gv3). Valore tipico = 0. Valore tipico Francis = 0.7, Kaplan = 0.7. Predefinito: 0.0  - `gv4`: Punto di guadagno non lineare 4, PU gv (Gv4). Valore tipico = 0. Valore tipico Francis = 0.8, Kaplan = 0.8. Predefinito: 0.0  - `gv5`: Punto di guadagno non lineare 5, PU gv (Gv5). Valore tipico = 0. Valore tipico Francis = 0.9, Kaplan = 0.9. Predefinito: 0.0  - `hdam`: Testa disponibile alla diga (hdam).  Valore tipico = 1. Predefinito: 0.0  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `mwbase`: Base per i valori di potenza (MWbase) (>0).  Unità = MW. Predefinito: 0,0  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pgv0`: Punto di guadagno non lineare 0, potenza PU (Pgv0).  Valore tipico = 0. Predefinito: 0.0  - `pgv1`: Punto di guadagno non lineare 1, potenza PU (Pgv1). Valore tipico = 0. Valore tipico Francis = 0.42, Kaplan = 0.35. Predefinito: 0.0  - `pgv2`: Punto di guadagno non lineare 2, potenza PU (Pgv2). Valore tipico = 0. Valore tipico Francis = 0.56, Kaplan = 0.468. Predefinito: 0.0  - `pgv3`: Punto di guadagno non lineare 3, potenza PU (Pgv3). Valore tipico = 0. Valore tipico Francis = 0.8, Kaplan = 0.796. Predefinito: 0.0  - `pgv4`: Punto di guadagno non lineare 4, potenza PU (Pgv4). Valore tipico = 0. Valore tipico Francis = 0.9, Kaplan = 0.917. Predefinito: 0.0  - `pgv5`: Punto di guadagno non lineare 5, potenza PU (Pgv5).  Valore tipico = 0. Valore tipico Francis = 0.97, Kaplan = 0.99. Predefinito: 0.0  - `qn1`: Flusso a vuoto alla prevalenza nominale (Qnl). Valore tipico = 0.08.  Valore tipico Francis = 0, Kaplan = 0. Default: 0.0  - `rperm`: Caduta permanente (Rperm).  Valore tipico = 0,05. Predefinito: 0  - `rtemp`: Caduta temporanea (Rtemp).  Valore tipico = 0,3. Predefinito: 0  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `tblade`: Costante di tempo del servo della lama (Tblade).  Valore tipico = 100. Predefinito: 0  - `tg`: Costante di tempo del servo del gate (Tg) (>0).  Valore tipico = 0,5. Predefinito: 0  - `tp`: Costante di tempo del servo pilota (Tp).  Valore tipico = 0,1. Predefinito: 0  - `tr`: Costante di tempo del dashpot (Tr) (>0).  Valore tipico = 5. Predefinito: 0  - `tw`: Costante di tempo di inerzia dell'acqua (Tw) (>0).  Valore tipico = 1. Predefinito: 0  - `type`: Tipo di NGSI. Deve essere GovHydro4  - `uc`: Velocità massima di chiusura del cancello (Uc).  Valore tipico = 0,2. Predefinito: 0.0  - `uo`: Velocità massima di apertura del cancello (Uo).  Vlaue tipico = 0,2. Predefinito: 0.0    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `at[number]`: Guadagno della turbina (At).  Valore tipico = 1,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv0[number]`: Punto di asservimento lama Kaplan 0 (Bgv0).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv1[number]`: Punto di asservimento lama Kaplan 1 (Bgv1).  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv2[number]`: Punto di asservimento lama Kaplan 2 (Bgv2). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv3[number]`: Punto di asservimento lama Kaplan 3 (Bgv3). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 0,667. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv4[number]`: Punto di asservimento lama Kaplan 4 (Bgv4).  Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 0,9. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv5[number]`: Servocomando lama Kaplan punto 5 (Bgv5). Valore tipico = 0. Valore tipico Francis = 0, Kaplan = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bmax[number]`: Fattore di regolazione massima delle pale (Bmax). Valore tipico = 0. Valore tipico Francesco = 0, Kaplan = 1,1276. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzati  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `db1[number]`: Larghezza banda morta intenzionale (db1).  Unità = Hz.  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: Banda morta involontaria (db2).  Unità = MW.  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: Descrizione dell'articolo  - `dturb[number]`: Fattore di smorzamento della turbina (Dturb).  Unità = delta P (PU di MWbase) / delta velocità (PU). Valore tipico = 0,5.  Valore tipico Francis = 1,1, Kaplan = 1,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eps[number]`: Isteresi db intenzionale (eps).  Unità = Hz.  Valore tipico = 0. Default: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: Apertura massima del cancello, PU di MWbase (Gmax).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: Apertura minima del cancello, PU di MWbase (Gmin).  Valore tipico = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv0[number]`: Punto di guadagno non lineare 0, PU gv (Gv0). Valore tipico = 0. Valore tipico Francesco = 0,1, Kaplan = 0,1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: Punto di guadagno non lineare 1, PU gv (Gv1). Valore tipico = 0. Valore tipico Francesco = 0,4, Kaplan = 0,4. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: Punto di guadagno non lineare 2, PU gv (Gv2). Valore tipico = 0. Valore tipico Francesco = 0,5, Kaplan = 0,5. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: Punto di guadagno non lineare 3, PU gv (Gv3). Valore tipico = 0. Valore tipico Francesco = 0,7, Kaplan = 0,7. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: Punto di guadagno non lineare 4, PU gv (Gv4). Valore tipico = 0. Valore tipico Francesco = 0,8, Kaplan = 0,8. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: Punto di guadagno non lineare 5, PU gv (Gv5). Valore tipico = 0. Valore tipico Francesco = 0,9, Kaplan = 0,9. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hdam[number]`: Prevalenza disponibile alla diga (hdam).  Valore tipico = 1. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mwbase[number]`: Base per i valori di potenza (MWbase) (>0).  Unità = MW. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pgv0[number]`: Punto di guadagno non lineare 0, potenza PU (Pgv0).  Valore tipico = 0. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv1[number]`: Punto di guadagno non lineare 1, potenza PU (Pgv1). Valore tipico = 0. Valore tipico Francesco = 0,42, Kaplan = 0,35. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: Punto di guadagno non lineare 2, potenza PU (Pgv2). Valore tipico = 0. Valore tipico Francesco = 0,56, Kaplan = 0,468. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: Punto di guadagno non lineare 3, potenza PU (Pgv3). Valore tipico = 0. Valore tipico Francesco = 0,8, Kaplan = 0,796. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: Punto di guadagno non lineare 4, potenza PU (Pgv4). Valore tipico = 0. Valore tipico Francesco = 0,9, Kaplan = 0,917. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: Punto di guadagno non lineare 5, potenza PU (Pgv5).  Valore tipico = 0. Valore tipico Francesco = 0,97, Kaplan = 0,99. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn1[number]`: Portata a vuoto alla prevalenza nominale (Qnl). Valore tipico = 0,08.  Valore tipico Francis = 0, Kaplan = 0. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: Caduta permanente (Rperm).  Valore tipico = 0,05. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: Caduta temporanea (Rtemp).  Valore tipico = 0,3. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tblade[number]`: Costante di tempo del servo della lama (Tblade).  Valore tipico = 100. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: Costante di tempo del servo gate (Tg) (>0).  Valore tipico = 0,5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: Costante di tempo del servo pilota (Tp).  Valore tipico = 0,1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Costante di tempo del dashpot (Tr) (>0).  Valore tipico = 5. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: Costante di tempo di inerzia dell'acqua (Tw) (>0).  Valore tipico = 1. Valore predefinito: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo NGSI. Deve essere GovHydro4  - `uc[number]`: Velocità massima di chiusura del cancello (Uc).  Valore tipico = 0,2. Valore predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: Velocità massima di apertura del cancello (Uo).  Vlaue tipico = 0,2. Predefinito: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da queste entità Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. Questo è stato il caso, si prega di sollevare un problema o inviare una mail a info@smartdatamodels.org.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Adattato dai modelli di dati CIM e CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy). Questo modello di dati è una conversione diretta del Common Information Model (CIM) specificato dallo standard IEC61970 in modelli di dati intelligenti. Le classi python su cui si basa questo modello sono state sviluppate da questi enti Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) e RWTH University Aachen, Germania. Alcune proprietà possono avere un tipo sbagliato. In questo caso, si prega di segnalare un problema o di inviare una mail a info@smartdatamodels.org.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GovHydro4:    
   description: 'Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight-forward penstock configurations and hydraulic governors of traditional ''dashpot'' type.  This model can be used to represent simple, Francis, Pelton or Kaplan turbines.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -101,18 +152,18 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -130,7 +181,7 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -201,22 +252,26 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydro4_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -235,9 +290,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -259,9 +316,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -285,9 +344,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -308,9 +369,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -334,9 +397,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -362,8 +427,10 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -373,15 +440,29 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydro4_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -440,7 +521,7 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -452,7 +533,7 @@ GovHydro4:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -487,7 +568,7 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydro4'    
+      description: NGSI type. It has to be GovHydro4    
       enum:    
         - GovHydro4    
       type: string    
@@ -508,16 +589,28 @@ GovHydro4:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro4/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro4/schema.json    
   x-model-tags: ""    
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-Non è disponibile l'esempio di un GovHydro4 in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovHydro4 in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Non è disponibile l'esempio di un GovHydro4 in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-Non disponibile l'esempio di un GovHydro4 in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+Non è disponibile l'esempio di un GovHydro4 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovHydro4 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovHydro4 in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Non è disponibile l'esempio di un GovHydro4 in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
