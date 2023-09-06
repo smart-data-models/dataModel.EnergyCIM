@@ -1,30 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。GovHydro4  
+实体：GovHydro4  
 ============<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/GovHydro4/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述。**改编自CIM数据模型。水轮机和调速器。代表具有直截了当的笔架结构和传统 "冲床 "类型的水力调节器的工厂。  该模型可用于表示简单、混流式、佩尔顿或卡普兰水轮机。  
-版本：0.0.1  
+全局描述：**改编自 CIM 数据模型。水轮机和调速器。代表具有简单水闸配置和传统 "仪表盘 "型水力调速器的水电站。  该模型可用于表示简单、混流式、佩尔顿式或卡普兰式水轮机。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `at[number]`: 涡轮机增益（At）。  典型值=1.2。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv0[number]`: 卡普兰叶片伺服点0（Bgv0）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv1[number]`: 卡普兰叶片伺服点1（Bgv1）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv2[number]`: 卡普兰叶片伺服点2（Bgv2）。典型值=0。典型值弗朗西斯=0，卡普兰=0.1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv3[number]`: 卡普兰叶片伺服点3（Bgv3）。典型值=0。典型值弗朗西斯=0，卡普兰=0.667。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv4[number]`: 卡普兰叶片伺服点4（Bgv4）。  典型值=0。典型值弗朗西斯=0，卡普兰=0.9。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv5[number]`: 卡普兰叶片伺服点5（Bgv5）。典型值=0。典型值弗朗西斯=0，卡普兰=1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bmax[number]`: 最大叶片调整系数（Bmax）。典型值=0。典型值弗朗西斯=0，卡普兰=1.1276。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `db1[number]`: 有意的死区宽度（db1）。  单位=Hz。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: 非故意死区（db2）。  单位=MW。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: 对这个项目的描述  - `dturb[number]`: 涡轮机阻尼系数（Dturb）。  单位=delta P（MWbase的PU）/delta速度（PU）。典型值=0.5。  典型值 混流=1.1，卡普兰=1.1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eps[number]`: 有意的db滞后（eps）。  单位=Hz。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: 最大闸门开度，MWbase的PU（Gmax）。  典型值=1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: 最小闸门开度，MWbase的PU（Gmin）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv0[number]`: 非线性增益点0，PU gv（Gv0）。典型值 = 0.典型值 Francis = 0.1, Kaplan = 0.1.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: 非线性增益点1，PU gv（Gv1）。典型值 = 0.典型值 Francis = 0.4, Kaplan = 0.4.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: 非线性增益点2，PU gv（Gv2）。典型值 = 0.典型值 Francis = 0.5, Kaplan = 0.5.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: 非线性增益点3，PU gv（Gv3）。典型值 = 0.典型值 Francis = 0.7, Kaplan = 0.7.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: 非线性增益点4，PU gv（Gv4）。典型值 = 0.典型值 Francis = 0.8, Kaplan = 0.8.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: 非线性增益点5，PU gv（Gv5）。典型值 = 0.典型值 Francis = 0.9, Kaplan = 0.9.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hdam[number]`: 大坝上的可用水头（hdam）。  典型值=1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `mwbase[number]`: 功率值的基础（MWbase）（>0）。  单位=MW。默认：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `pgv0[number]`: 非线性增益点0，PU功率（Pgv0）。  典型值=0。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv1[number]`: 非线性增益点1，PU功率（Pgv1）。典型值 = 0.典型值 Francis = 0.42, Kaplan = 0.35.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: 非线性增益点2，PU功率（Pgv2）。典型值 = 0.典型值 Francis = 0.56, Kaplan = 0.468.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: 非线性增益点3，PU功率（Pgv3）。典型值 = 0.典型值 Francis = 0.8, Kaplan = 0.796.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: 非线性增益点4，PU功率（Pgv4）。典型值 = 0.典型值 Francis = 0.9, Kaplan = 0.917.默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: 非线性增益点5，PU功率（Pgv5）。  典型值 = 0。典型值 Francis = 0.97，Kaplan = 0.99。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn1[number]`: 额定扬程下的空载流量（Qnl）。典型值=0.08。  典型值 Francis = 0, Kaplan = 0. 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: 永久下降（Rperm）。  典型值=0.05。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: 临时下降（Rtemp）。  典型值=0.3。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `tblade[number]`: 叶片伺服时间常数（Tblade）。  典型值=100。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: 门控伺服时间常数（Tg）（>0）。  典型值=0.5。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: 先导伺服时间常数（Tp）。  典型值=0.1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Dashpot时间常数（Tr）（>0）。  典型值=5。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: 水的惯性时间常数（Tw）（>0）。  典型值=1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI类型。它必须是GovHydro4  - `uc[number]`: 最大闸门关闭速度（Uc）。  典型值=0.2。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: 最大闸门开启速度（Uo）。  典型的Vlaue = 0.2。默认：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `at[number]`: 涡轮增益 (At)。  典型值 = 1.2。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv0[number]`: 卡普兰叶片伺服点 0 (Bgv0)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv1[number]`: 卡普兰叶片伺服点 1 (Bgv1)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv2[number]`: 卡普兰叶片伺服点 2 (Bgv2)。典型值 Francis = 0，Kaplan = 0.1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv3[number]`: 卡普兰叶片伺服点 3 (Bgv3)。典型值 Francis = 0，Kaplan = 0.667。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv4[number]`: 卡普兰叶片伺服点 4 (Bgv4)。  典型值 Francis = 0，Kaplan = 0.9。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bgv5[number]`: 卡普兰叶片伺服点 5 (Bgv5)。典型值 Francis = 0，Kaplan = 1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bmax[number]`: 最大叶片调整系数 (Bmax)。典型值 Francis = 0，Kaplan = 1.1276。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `db1[number]`: 有意死区宽度 (db1)。  单位 = 赫兹。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `db2[number]`: 无意死带 (db2)。  单位 = MW。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: 项目描述  - `dturb[number]`: 涡轮机阻尼系数 (Dturb)。  单位 = delta P（MWbase 的 PU）/delta 速度 (PU)。典型值 = 0.5。  典型值 混流式 = 1.1，卡普兰式 = 1.1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `eps[number]`: 有意 db 滞后 (eps)。  单位 = 赫兹。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmax[number]`: 最大闸门开度，MWbase 的 PU (Gmax)。  典型值 = 1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gmin[number]`: 最小闸门开度，MWbase 的 PU (Gmin)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv0[number]`: 非线性增益点 0，PU gv (Gv0)。典型值 = 0。典型值 Francis = 0.1，Kaplan = 0.1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv1[number]`: 非线性增益点 1，PU gv (Gv1)。典型值 = 0。典型值 Francis = 0.4，Kaplan = 0.4。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv2[number]`: 非线性增益点 2，PU gv (Gv2)。典型值 = 0.典型值 Francis = 0.5，Kaplan = 0.5。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv3[number]`: 非线性增益点 3，PU gv (Gv3)。典型值 = 0。典型值 Francis = 0.7，Kaplan = 0.7。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv4[number]`: 非线性增益点 4，PU gv (Gv4)。典型值 = 0.典型值 Francis = 0.8，Kaplan = 0.8。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `gv5[number]`: 非线性增益点 5，PU gv (Gv5)。典型值 = 0。典型值 Francis = 0.9，Kaplan = 0.9。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `hdam[number]`: 大坝可用水头 (hdam)。  典型值 = 1。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `mwbase[number]`: 功率值基准 (MWbase) (>0)。  单位 = MW。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `pgv0[number]`: 非线性增益点 0，PU 功率 (Pgv0)。  典型值 = 0 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv1[number]`: 非线性增益点 1，PU 功率 (Pgv1)。典型值 = 0。典型值 Francis = 0.42，Kaplan = 0.35。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv2[number]`: 非线性增益点 2，PU 功率 (Pgv2)。典型值 Francis = 0.56，Kaplan = 0.468。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv3[number]`: 非线性增益点 3，PU 功率 (Pgv3)。典型值 = 0。典型值 Francis = 0.8，Kaplan = 0.796。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv4[number]`: 非线性增益点 4，PU 功率 (Pgv4)。典型值 = 0。典型值 Francis = 0.9，Kaplan = 0.917。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `pgv5[number]`: 非线性增益点 5，PU 功率 (Pgv5)。  典型值 = 0。典型值 Francis = 0.97，Kaplan = 0.99。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `qn1[number]`: 额定水头下的空载流量 (Qnl)。典型值 = 0.08。  典型值 Francis = 0，Kaplan = 0。 默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rperm[number]`: 永久下垂 (Rperm)。  典型值 = 0.05。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `rtemp[number]`: 暂降 (Rtemp)。  典型值 = 0.3。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `tblade[number]`: 叶片伺服时间常数 (Tblade)。  典型值 = 100。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tg[number]`: 栅极伺服时间常数 (Tg) (>0)。  典型值 = 0.5。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tp[number]`: 先导伺服时间常数 (Tp)。  典型值 = 0.1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tr[number]`: Dashpot 时间常数 (Tr) (>0)。  典型值 = 5。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tw[number]`: 水惯性时间常数 (Tw) (>0)。  典型值 = 1。默认值：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI 类型。必须是 GovHydro4  - `uc[number]`: 最大闸门关闭速度 (Uc)。  典型值 = 0.2。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `uo[number]`: 最大闸门开启速度 (Uo)。  典型值 Vlaue = 0.2。默认值：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-改编自CIM数据模型和CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。这个数据模型是将IEC61970标准规定的通用信息模型（CIM）直接转换为智能数据模型。这个模型所基于的python类是由这些实体复杂电力系统自动化研究所（ACS）、EON能源研究中心（EONERC）和德国亚琛工大开发的。一些属性可能有错误的类型。这种情况下，请提出一个问题或发送邮件到 info@smartdatamodels.org。  
+改编自 CIM 数据模型和 CIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)。该数据模型将 IEC61970 标准规定的通用信息模型（CIM）直接转换为智能数据模型。该模型所基于的 python 类由德国复杂电力系统自动化研究所 (ACS)、EON 能源研究中心 (EONERC) 和亚琛工业大学 (RWTH University Aachen) 开发。某些属性的类型可能有误。如果出现这种情况，请提出问题或发送邮件至 info@smartdatamodels.org。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,37 +40,65 @@ GovHydro4:
   description: 'Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight-forward penstock configurations and hydraulic governors of traditional ''dashpot'' type.  This model can be used to represent simple, Francis, Pelton or Kaplan turbines.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -117,18 +152,18 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -146,7 +181,7 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -217,22 +252,26 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     id:    
-      anyOf: &govhydro4_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -251,9 +290,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -275,9 +316,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -301,9 +344,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -324,9 +369,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -350,9 +397,11 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -378,8 +427,10 @@ GovHydro4:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mwbase:    
@@ -389,15 +440,29 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *govhydro4_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -456,7 +521,7 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -468,7 +533,7 @@ GovHydro4:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -503,7 +568,7 @@ GovHydro4:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be GovHydro4'    
+      description: NGSI type. It has to be GovHydro4    
       enum:    
         - GovHydro4    
       type: string    
@@ -524,7 +589,7 @@ GovHydro4:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/GovHydro4/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro4/schema.json    
   x-model-tags: ""    
@@ -535,16 +600,16 @@ GovHydro4:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-不提供JSON-LD格式的GovHydro4的例子作为关键值。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
-不提供规范化的JSON-LD格式的GovHydro4的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
-不提供JSON-LD格式的GovHydro4的例子，作为key-values。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
-不提供规范化的JSON-LD格式的GovHydro4的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+以 JSON-LD 格式作为键值的 GovHydro4 示例不可用。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+未提供规范化 JSON-LD 格式的 GovHydro4 示例。在不使用选项的情况下，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+以 JSON-LD 格式作为键值的 GovHydro4 示例不可用。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+未提供规范化 JSON-LD 格式的 GovHydro4 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
