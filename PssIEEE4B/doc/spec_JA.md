@@ -3,28 +3,35 @@
 エンティティPssIEEE4B  
 ===============<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssIEEE4B/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.EnergyCIM/blob/master/PssIEEE4B/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**CIM データモデルから引用した。IEEE Std 421.5-2005 タイプの PSS2B 電力系統安定化装置モデルを表すクラスである。PSS4B モデルでは、複数の動作周波数帯に基づく構造を表す。このデルタオメガ（速度入力）PSSでは、低周波、中周波、高周波の各振動モードに対応した3つのバンドが使用されています。  参考文献IEEE 4B 421.5-2005 8.4.** 節  
+グローバルな記述：**CIM データモデルからの引用。このクラスは、IEEE Std 421.5-2005 タイプの PSS2B 電力系統安定器モデルを表す。PSS4B モデルは、複数の動作周波数帯に基づく構造を表す。このデルタ・オメガ（速度入力）PSSでは、それぞれ低周波、中間周波、高周波の振動モード専用の3つの独立した帯域が使用されている。  参考文献IEEE 4B 421.5-2005 8.4.**項  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bwh1[number]`: ノッチフィルター1（高周波帯域）。3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwh2[number]`: ノッチフィルター2（高周波帯域）。3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl1[number]`: ノッチフィルター1（低周波帯域）。3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl2[number]`: ノッチフィルター2（低周波帯域）。3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `kh[number]`: ハイバンドゲイン（K）。  典型的な値＝120。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh1[number]`: 高帯域差動フィルタのゲイン (K)。  典型的な値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh11[number]`: 高帯域第一リードラグブロック係数（K）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh17[number]`: 高帯域第一リードラグブロック係数（K）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh2[number]`: 高帯域差動フィルタのゲイン (K)。  典型的な値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: 中間帯域のゲイン（K）。  典型的な値＝30。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki1[number]`: 中間帯域差動フィルタの利得（K）。  典型的な値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki11[number]`: 中間帯域の第一リードラグブロック係数（K）。  代表的な値＝1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki17[number]`: 中間帯域の第一リードラグブロック係数（K）。  代表的な値＝1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki2[number]`: 中間帯域差動フィルタの利得（K）。  典型的な値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl[number]`: 低帯域ゲイン（K）。  代表値＝7.5。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl1[number]`: 低域差動フィルタの利得（K）。  典型的な値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl11[number]`: 低域第一リードラグブロック係数（K）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl17[number]`: 低域第一リードラグブロック係数（K）。  代表的な値＝1。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl2[number]`: 低域差動フィルタの利得（K）。  典型的な値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `omeganh1[number]`: ノッチフィルター1（高周波帯域）：フィルター周波数（Ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganh2[number]`: ノッチフィルター2（高周波帯域）：フィルター周波数（Ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl1[number]`: ノッチフィルター1（低周波帯）：フィルター周波数（Ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl2[number]`: ノッチフィルター2（低周波帯）：フィルター周波数（Ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `th1[number]`: ハイバンドの時定数 (T)。  代表値＝0.01513。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th10[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th11[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th12[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th2[number]`: ハイバンドの時定数 (T)。  代表値＝0.01816。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th3[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th4[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th5[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th6[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th7[number]`: ハイバンドの時定数 (T)。  代表値＝0.01816。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th8[number]`: ハイバンドの時定数 (T)。  代表値 = 0.02179.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th9[number]`: ハイバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti1[number]`: 中間バンド時定数(T)。  代表値＝0.173。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti10[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti11[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti12[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti2[number]`: 中間バンド時定数(T)。  典型的な値 = 0.2075.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti3[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti4[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti5[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti6[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti7[number]`: 中間バンド時定数(T)。  典型的な値 = 0.2075.デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti8[number]`: 中間バンド時定数(T)。  代表値＝0.2491。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti9[number]`: 中間バンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl1[number]`: ローバンドの時定数（T）。  代表的な値＝1.73。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl10[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl11[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl12[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl2[number]`: 低域時定数 (T)。  代表的な値＝2.075。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl3[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl4[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl5[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl6[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl7[number]`: 低域時定数 (T)。  代表的な値＝2.075。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl8[number]`: ローバンドの時定数（T）。  代表的な値＝2.491。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl9[number]`: ローバンド時定数（T）。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。PssIEEE4Bである必要があります。  - `vhmax[number]`: ハイバンド出力最大リミット値（V）。  Typical Value = 0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vhmin[number]`: ハイバンド出力の下限値（V）。  代表値＝-0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: 中間バンド出力最大リミット値（V）。  Typical Value = 0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: 中間バンド出力下限値（V）。  代表値＝-0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmax[number]`: Low band output maximum limit (V)。  Typical Value = 0.075。初期値：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmin[number]`: 低帯域出力下限値（V）。  代表値 = -0.075。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: PSS出力最大リミット値(V)。  Typical Value = 0.15。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: PSS出力下限値(V)。  代表値 = -0.15。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bwh1[number]`: ノッチフィルター1（高周波帯域）：3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwh2[number]`: ノッチフィルター2（高周波帯域）：3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl1[number]`: ノッチフィルター1（低周波帯域）：3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl2[number]`: ノッチフィルター2（低周波帯域）：3dBの帯域幅（B）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `kh[number]`: ハイバンド・ゲイン（K）。  代表値 = 120。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh1[number]`: 高帯域差動フィルタ・ゲイン（K）。  代表値：66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh11[number]`: ハイバンドの第一リードラグブロック係数(K)。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh17[number]`: ハイバンドの第一リードラグブロック係数(K)。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh2[number]`: 高帯域差動フィルタ・ゲイン（K）。  代表値：66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: 中間バンドゲイン（K）。  代表値 = 30。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki1[number]`: 中間帯域差動フィルタ・ゲイン（K）。  代表値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki11[number]`: 中間帯域の第1リードラグブロック係数（K）。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki17[number]`: 中間帯域の第1リードラグブロック係数（K）。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki2[number]`: 中間帯域差動フィルタ・ゲイン（K）。  代表値＝66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl[number]`: ローバンドゲイン（K）。  代表値 = 7.5。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl1[number]`: 低帯域差動フィルタ・ゲイン（K）。  代表値：66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl11[number]`: 低域第一リードラグブロック係数（K）。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl17[number]`: 低域第一リードラグブロック係数（K）。  代表値 = 1。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl2[number]`: 低帯域差動フィルタ・ゲイン（K）。  代表値：66。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `omeganh1[number]`: ノッチ・フィルター1（高周波帯域）：フィルター周波数（ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganh2[number]`: ノッチフィルター2（高周波帯域）：フィルター周波数（ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl1[number]`: ノッチフィルター1（低周波数帯域）：フィルター周波数（ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl2[number]`: ノッチフィルター2（低周波数帯域）：フィルター周波数（ω）。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `th1[number]`: ハイバンド時定数(T)。  代表値 = 0.01513。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th10[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th11[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th12[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th2[number]`: ハイバンド時定数(T)。  代表値 = 0.01816。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th3[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th4[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th5[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th6[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th7[number]`: ハイバンド時定数(T)。  代表値 = 0.01816。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th8[number]`: ハイバンド時定数(T)。  代表値 = 0.02179。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th9[number]`: ハイバンド時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti1[number]`: 中間バンド時定数(T)。  代表値 = 0.173。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti10[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti11[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti12[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti2[number]`: 中間バンドの時定数(T)。  代表値 = 0.2075。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti3[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti4[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti5[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti6[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti7[number]`: 中間バンドの時定数(T)。  代表値 = 0.2075。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti8[number]`: 中間バンド時定数(T)。  代表値=0.2491。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti9[number]`: 中間バンド時定数 (T)。  代表値 = 0。デフォルト: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl1[number]`: ローバンド時定数 (T)。  代表値 = 1.73。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl10[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl11[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl12[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl2[number]`: 低域時定数 (T)。  代表値 = 2.075。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl3[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl4[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl5[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl6[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl7[number]`: 低域時定数 (T)。  代表値 = 2.075。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl8[number]`: ローバンド時定数(T)。  代表値 = 2.491。デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl9[number]`: 低域時定数 (T)。  代表値＝0 デフォルト：0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。PssIEEE4Bでなければならない。  - `vhmax[number]`: ハイバンド出力の上限（V）。  代表値 = 0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vhmin[number]`: ハイバンド出力下限値（V）。  代表値 = -0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: 中間バンド出力の上限（V）。  代表値 = 0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: 中間帯域出力下限値（V）。  代表値 = -0.6。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmax[number]`: ロー・バンド出力の最大制限値（V）。  代表値 = 0.075。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmin[number]`: 低域出力下限値（V）。  代表値 = -0.075。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: PSS出力の最大制限値（V）。  代表値 = 0.15。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: PSS出力下限値（V）。  代表値 = -0.15。デフォルト：0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy) から引用した。このデータモデルは、IEC61970規格で規定されたCommon Information Model (CIM)をスマートデータモデルに直接変換したものです。このモデルのベースとなっているpythonクラスは、これらのエンティティInstitute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されたものである。一部のプロパティは間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org にメールを送ってください。  
+CIMデータモデルとCIMpy - [https://github.com/sogno-platform/cimpy](https://github.com/sogno-platform/cimpy)からの引用。このデータモデルは、IEC61970標準によって規定された共通情報モデル（CIM）をスマートデータモデルに直接変換したものです。このモデルに基づくPythonクラスは、Institute for Automation of Complex Power Systems (ACS), EON Energy Research Center (EONERC) and RWTH University Aachen, Germanyによって開発されました。プロパティによっては、間違ったタイプを持つことがあります。このような場合は、問題を提起するか、info@smartdatamodels.org までメールをお送りください。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,37 +40,65 @@ PssIEEE4B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.  Reference: IEEE 4B 421.5-2005 Section 8.4.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -93,38 +128,42 @@ PssIEEE4B:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &pssieee4b_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kh:    
@@ -220,7 +259,7 @@ PssIEEE4B:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -239,9 +278,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -263,9 +304,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -289,9 +332,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -312,9 +357,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -338,9 +385,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -366,12 +415,14 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -400,15 +451,29 @@ PssIEEE4B:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *pssieee4b_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -420,7 +485,7 @@ PssIEEE4B:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -641,7 +706,7 @@ PssIEEE4B:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be PssIEEE4B'    
+      description: NGSI type. It has to be PssIEEE4B    
       enum:    
         - PssIEEE4B    
       type: string    
@@ -698,7 +763,7 @@ PssIEEE4B:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE4B/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE4B/schema.json    
   x-model-tags: ""    
@@ -710,15 +775,15 @@ PssIEEE4B:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-PssIEEE4Bの例をJSON-LD形式でkey-valuesとして利用することはできません。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
-PssIEEE4B を JSON-LD 形式で正規化した例はありません。オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返されます。  
-PssIEEE4Bの例をJSON-LD形式でkey-valuesとして利用することはできません。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
-PssIEEE4B を正規化した JSON-LD 形式の例はありません。オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+キー値として JSON-LD 形式の PssIEEE4B の例は利用できない。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の PssIEEE4B の例は利用できません。これは、オプションを使用しない場合、NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返す。  
+JSON-LD フォーマットの PssIEEE4B のキー値の例は利用できない。これは、`options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返す。  
+正規化された JSON-LD 形式の PssIEEE4B の例は利用できません。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
