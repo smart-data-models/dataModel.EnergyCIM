@@ -14,8 +14,15 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bwh1[number]`: Kerbfilter 1 (Hochfrequenzband): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwh2[number]`: Kerbfilter 2 (Hochfrequenzband): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl1[number]`: Kerbfilter 1 (niederfrequentes Band): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl2[number]`: Kerbfilter 2 (niederfrequentes Band): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `kh[number]`: Hohe Bandverstärkung (K).  Typischer Wert = 120. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh1[number]`: Hochband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh11[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im Hochfrequenzbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh17[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im Hochfrequenzbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh2[number]`: Hochband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Zwischenbandverstärkung (K).  Typischer Wert = 30. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki1[number]`: Zwischenband-Differenzfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki11[number]`: Intermediate band first lead-lag blocks coefficient (K).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki17[number]`: Intermediate band first lead-lag blocks coefficient (K).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki2[number]`: Zwischenband-Differenzfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl[number]`: Niedrige Bandverstärkung (K).  Typischer Wert = 7,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl1[number]`: Niederband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl11[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im unteren Bandbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl17[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im unteren Bandbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl2[number]`: Niederband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `omeganh1[number]`: Kerbfilter 1 (Hochfrequenzband): Filterfrequenz (omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganh2[number]`: Kerbfilter 2 (Hochfrequenzband): Filterfrequenz (Omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl1[number]`: Kerbfilter 1 (Tieffrequenzband): Filterfrequenz (Omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl2[number]`: Kerbfilter 2 (Tieffrequenzband): Filterfrequenz (Omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `th1[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,01513. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th10[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th11[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th12[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th2[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,01816. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th3[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th4[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th5[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th6[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th7[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,01816. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th8[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,02179. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th9[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti1[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,173. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti10[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti11[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti12[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti2[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,2075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti3[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti4[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti5[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti6[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti7[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,2075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti8[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,2491. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti9[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl1[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 1,73. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl10[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl11[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl12[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl2[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 2,075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl3[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl4[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl5[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl6[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl7[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 2,075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl8[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 2,491. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl9[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss PssIEEE4B sein.  - `vhmax[number]`: Höchstgrenze des High-Band-Ausgangs (V).  Typischer Wert = 0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vhmin[number]`: Minimaler Grenzwert des High-Band-Ausgangs (V).  Typischer Wert = -0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: Maximaler Grenzwert des Zwischenbandausgangs (V).  Typischer Wert = 0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: Minimaler Grenzwert des Zwischenbandausgangs (V).  Typischer Wert = -0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmax[number]`: Maximaler Grenzwert für den Low-Band-Ausgang (V).  Typischer Wert = 0,075. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmin[number]`: Minimaler Grenzwert für den Low-Band-Ausgang (V).  Typischer Wert = -0,075. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: Maximaler Grenzwert des PSS-Ausgangs (V).  Typischer Wert = 0,15. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: Minimaler Grenzwert des PSS-Ausgangs (V).  Typischer Wert = -0,15. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bwh1[number]`: Kerbfilter 1 (Hochfrequenzband): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwh2[number]`: Kerbfilter 2 (Hochfrequenzband): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl1[number]`: Kerbfilter 1 (niederfrequentes Band): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `bwl2[number]`: Kerbfilter 2 (niederfrequentes Band): Drei-dB-Bandbreite (B). Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `kh[number]`: Hohe Bandverstärkung (K).  Typischer Wert = 120. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh1[number]`: Hochband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh11[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im Hochfrequenzbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh17[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im Hochfrequenzbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kh2[number]`: Hochband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki[number]`: Zwischenbandverstärkung (K).  Typischer Wert = 30. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki1[number]`: Zwischenband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki11[number]`: Intermediate band first lead-lag blocks coefficient (K).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki17[number]`: Intermediate band first lead-lag blocks coefficient (K).  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ki2[number]`: Zwischenband-Differentialfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl[number]`: Niedrige Bandverstärkung (K).  Typischer Wert = 7,5. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl1[number]`: Niederband-Differenzfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl11[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im unteren Bandbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl17[number]`: Koeffizient (K) für den ersten Lead-Lag-Block im unteren Bandbereich.  Typischer Wert = 1. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `kl2[number]`: Niederband-Differenzfilter-Verstärkung (K).  Typischer Wert = 66. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `omeganh1[number]`: Kerbfilter 1 (Hochfrequenzband): Filterfrequenz (omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganh2[number]`: Kerbfilter 2 (Hochfrequenzband): Filterfrequenz (Omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl1[number]`: Kerbfilter 1 (Tieffrequenzband): Filterfrequenz (Omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `omeganl2[number]`: Kerbfilter 2 (Tieffrequenzband): Filterfrequenz (Omega). Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `th1[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,01513. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th10[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th11[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th12[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th2[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,01816. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th3[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th4[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th5[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th6[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th7[number]`: Zeitkonstante im oberen Bereich (T).  Typischer Wert = 0,01816. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th8[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0,02179. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `th9[number]`: Zeitkonstante des oberen Bandes (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti1[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,173. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti10[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti11[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti12[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti2[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,2075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti3[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti4[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti5[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti6[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti7[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,2075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti8[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0,2491. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `ti9[number]`: Zwischenband-Zeitkonstante (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl1[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 1,73. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl10[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl11[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl12[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl2[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 2,075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl3[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl4[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl5[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl6[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl7[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 2,075. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl8[number]`: Zeitkonstante im unteren Bereich (T).  Typischer Wert = 2,491. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `tl9[number]`: Zeitkonstante für das untere Band (T).  Typischer Wert = 0. Voreinstellung: 0  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Typ. Es muss PssIEEE4B sein.  - `vhmax[number]`: Höchstgrenze des High-Band-Ausgangs (V).  Typischer Wert = 0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vhmin[number]`: Minimaler Grenzwert des High-Band-Ausgangs (V).  Typischer Wert = -0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimax[number]`: Maximaler Grenzwert des Zwischenbandausgangs (V).  Typischer Wert = 0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vimin[number]`: Minimaler Grenzwert des Zwischenbandausgangs (V).  Typischer Wert = -0,6. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmax[number]`: Maximaler Grenzwert für den Low-Band-Ausgang (V).  Typischer Wert = 0,075. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vlmin[number]`: Minimaler Grenzwert für den Low-Band-Ausgang (V).  Typischer Wert = -0,075. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmax[number]`: Maximaler Grenzwert des PSS-Ausgangs (V).  Typischer Wert = 0,15. Voreinstellung: 0,0  . Model: [https://schema.org/Number](https://schema.org/Number)- `vstmin[number]`: Minimaler Grenzwert des PSS-Ausgangs (V).  Typischer Wert = -0,15. Voreinstellung: 0.0  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
@@ -33,37 +40,65 @@ PssIEEE4B:
   description: 'Adapted from CIM data models. The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.  Reference: IEEE 4B 421.5-2005 Section 8.4.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -93,38 +128,42 @@ PssIEEE4B:
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &pssieee4b_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     kh:    
@@ -220,7 +259,7 @@ PssIEEE4B:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -239,9 +278,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -263,9 +304,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -289,9 +332,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -312,9 +357,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -338,9 +385,11 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -366,12 +415,14 @@ PssIEEE4B:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -400,15 +451,29 @@ PssIEEE4B:
         model: https://schema.org/Number    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *pssieee4b_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -420,7 +485,7 @@ PssIEEE4B:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -641,7 +706,7 @@ PssIEEE4B:
         model: https://schema.org/Number    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be PssIEEE4B'    
+      description: NGSI type. It has to be PssIEEE4B    
       enum:    
         - PssIEEE4B    
       type: string    
@@ -698,7 +763,7 @@ PssIEEE4B:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/PssIEEE4B/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/PssIEEE4B/schema.json    
   x-model-tags: ""    
@@ -710,7 +775,7 @@ PssIEEE4B:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
-Nicht verfügbar ist das Beispiel einer PssIEEE4B im JSON-LD Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Nicht verfügbar ist das Beispiel einer PssIEEE4B im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer PssIEEE4B im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer PssIEEE4B im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 Nicht verfügbar ist das Beispiel einer PssIEEE4B im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
