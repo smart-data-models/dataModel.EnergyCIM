@@ -533,6 +533,10 @@
         "baseURIcore": "https://smartdatamodels.org/dataModel.EnergyCIM/baseURIcore",
         "baseURIoperation": "https://smartdatamodels.org/dataModel.EnergyCIM/baseURIoperation",
         "baseURIshortCircuit": "https://smartdatamodels.org/dataModel.EnergyCIM/baseURIshortCircuit",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bca": "https://smartdatamodels.org/dataModel.EnergyCIM/bca",
         "bch": "https://smartdatamodels.org/dataModel.EnergyCIM/bch",
         "beforeShCircuitHighestOperatingCurrent": "https://smartdatamodels.org/dataModel.EnergyCIM/beforeShCircuitHighestOperatingCurrent",
@@ -571,6 +575,10 @@
         "connectionKind": "https://smartdatamodels.org/dataModel.EnergyCIM/connectionKind",
         "controlEnabled": "https://smartdatamodels.org/dataModel.EnergyCIM/controlEnabled",
         "converterFedDrive": "https://smartdatamodels.org/dataModel.EnergyCIM/converterFedDrive",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "cpsmn": "https://smartdatamodels.org/dataModel.EnergyCIM/cpsmn",
         "cpsmx": "https://smartdatamodels.org/dataModel.EnergyCIM/cpsmx",
         "crmn": "https://smartdatamodels.org/dataModel.EnergyCIM/crmn",
