@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcIEEEAC4A of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcIEEEAC4A of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcIEEEAC4A_type AS ENUM ('ExcIEEEAC4A');
-CREATE TABLE ExcIEEEAC4A (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, ka text, kc text, location json, name text, owner json, seeAlso json, source text, ta text, tb text, tc text, type ExcIEEEAC4A_type, vimax text, vimin text, vrmax text, vrmin text);
+CREATE TABLE ExcIEEEAC4A (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, ka NUMERIC, kc NUMERIC, name TEXT, owner JSON, source TEXT, ta NUMERIC, tb NUMERIC, tc NUMERIC, type ExcIEEEAC4A_type, vimax NUMERIC, vimin NUMERIC, vrmax NUMERIC, vrmin NUMERIC);
