@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcIEEEST2A of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcIEEEST2A of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcIEEEST2A_type AS ENUM ('ExcIEEEST2A');
-CREATE TABLE ExcIEEEST2A (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efdmax text, id text, ka text, kc text, ke text, kf text, ki text, kp text, location json, name text, owner json, seeAlso json, source text, ta text, te text, tf text, type ExcIEEEST2A_type, uelin text, vrmax text, vrmin text);
+CREATE TABLE ExcIEEEST2A (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, efdmax NUMERIC, ka NUMERIC, kc NUMERIC, ke NUMERIC, kf NUMERIC, ki NUMERIC, kp NUMERIC, name TEXT, owner JSON, source TEXT, ta NUMERIC, te NUMERIC, tf NUMERIC, type ExcIEEEST2A_type, uelin NUMERIC, vrmax NUMERIC, vrmin NUMERIC);
