@@ -1,3 +1,3 @@
-/* (Beta) Export of data model VolumeFlowRate of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model VolumeFlowRate of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE VolumeFlowRate_type AS ENUM ('VolumeFlowRate');
-CREATE TABLE VolumeFlowRate (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, denominatorMultiplier text, denominatorUnit text, description text, id text, location json, multiplier text, name text, owner json, seeAlso json, source text, type VolumeFlowRate_type, unit text, value text);
+CREATE TABLE VolumeFlowRate (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, denominatorMultiplier NUMERIC, denominatorUnit NUMERIC, description TEXT, multiplier NUMERIC, name TEXT, owner JSON, source TEXT, type VolumeFlowRate_type, unit NUMERIC, value NUMERIC);
