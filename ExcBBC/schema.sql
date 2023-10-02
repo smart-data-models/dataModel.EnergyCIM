@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcBBC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcBBC of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcBBC_type AS ENUM ('ExcBBC');
-CREATE TABLE ExcBBC (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efdmax text, efdmin text, id text, k text, location json, name text, owner json, seeAlso json, source text, switch text, t1 text, t2 text, t3 text, t4 text, type ExcBBC_type, vrmax text, vrmin text, xe text);
+CREATE TABLE ExcBBC (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, efdmax NUMERIC, efdmin NUMERIC, k NUMERIC, name TEXT, owner JSON, source TEXT, switch NUMERIC, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, t4 NUMERIC, type ExcBBC_type, vrmax NUMERIC, vrmin NUMERIC, xe NUMERIC);
