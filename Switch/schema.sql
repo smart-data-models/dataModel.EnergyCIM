@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Switch of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Switch of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Switch_type AS ENUM ('Switch');
-CREATE TABLE Switch (SwitchSchedules text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, normalOpen text, open text, owner json, ratedCurrent text, retained text, seeAlso json, source text, type Switch_type);
+CREATE TABLE Switch (SwitchSchedules TEXT, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, normalOpen NUMERIC, open NUMERIC, owner JSON, ratedCurrent NUMERIC, retained NUMERIC, source TEXT, type Switch_type);
