@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SvInjection of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SvInjection of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SvInjection_type AS ENUM ('SvInjection');
-CREATE TABLE SvInjection (TopologicalNode text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, pInjection text, qInjection text, seeAlso json, source text, type SvInjection_type);
+CREATE TABLE SvInjection (TopologicalNode NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, pInjection NUMERIC, qInjection NUMERIC, source TEXT, type SvInjection_type);
