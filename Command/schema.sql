@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Command of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Command of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Command_type AS ENUM ('Command');
-CREATE TABLE Command (DiscreteValue text, ValueAliasSet text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, normalValue text, owner json, seeAlso json, source text, type Command_type, value text);
+CREATE TABLE Command (DiscreteValue NUMERIC, ValueAliasSet NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, normalValue NUMERIC, owner JSON, source TEXT, type Command_type, value NUMERIC);
