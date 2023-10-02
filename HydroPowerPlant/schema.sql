@@ -1,3 +1,3 @@
-/* (Beta) Export of data model HydroPowerPlant of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model HydroPowerPlant of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE HydroPowerPlant_type AS ENUM ('HydroPowerPlant');
-CREATE TABLE HydroPowerPlant (HydroGeneratingUnits text, HydroPumps text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hydroPlantStorageType text, id text, location json, name text, owner json, seeAlso json, source text, type HydroPowerPlant_type);
+CREATE TABLE HydroPowerPlant (HydroGeneratingUnits NUMERIC, HydroPumps NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hydroPlantStorageType NUMERIC, name TEXT, owner JSON, source TEXT, type HydroPowerPlant_type);
