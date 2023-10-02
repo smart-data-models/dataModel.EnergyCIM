@@ -1,3 +1,3 @@
-/* (Beta) Export of data model LinearShuntCompensator of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model LinearShuntCompensator of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE LinearShuntCompensator_type AS ENUM ('LinearShuntCompensator');
-CREATE TABLE LinearShuntCompensator (address json, alternateName text, areaServed text, b0PerSection text, bPerSection text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, g0PerSection text, gPerSection text, id text, location json, name text, owner json, seeAlso json, source text, type LinearShuntCompensator_type);
+CREATE TABLE LinearShuntCompensator (address JSON, alternateName TEXT, areaServed TEXT, b0PerSection NUMERIC, bPerSection NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, g0PerSection NUMERIC, gPerSection NUMERIC, name TEXT, owner JSON, source TEXT, type LinearShuntCompensator_type);
