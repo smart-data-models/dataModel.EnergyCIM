@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcSEXS of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcSEXS of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcSEXS_type AS ENUM ('ExcSEXS');
-CREATE TABLE ExcSEXS (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efdmax text, efdmin text, emax text, emin text, id text, k text, kc text, location json, name text, owner json, seeAlso json, source text, tatb text, tb text, tc text, te text, type ExcSEXS_type);
+CREATE TABLE ExcSEXS (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, efdmax NUMERIC, efdmin NUMERIC, emax NUMERIC, emin NUMERIC, k NUMERIC, kc NUMERIC, name TEXT, owner JSON, source TEXT, tatb NUMERIC, tb NUMERIC, tc NUMERIC, te NUMERIC, type ExcSEXS_type);
