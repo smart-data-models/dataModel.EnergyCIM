@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Pss1 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Pss1 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Pss1_type AS ENUM ('Pss1');
-CREATE TABLE Pss1 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, kf text, kpe text, ks text, kw text, location json, name text, owner json, pmin text, seeAlso json, source text, t10 text, t5 text, t6 text, t7 text, t8 text, t9 text, tpe text, type Pss1_type, vadat text, vsmn text, vsmx text);
+CREATE TABLE Pss1 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, kf NUMERIC, kpe NUMERIC, ks NUMERIC, kw NUMERIC, name TEXT, owner JSON, pmin NUMERIC, source TEXT, t10 NUMERIC, t5 NUMERIC, t6 NUMERIC, t7 NUMERIC, t8 NUMERIC, t9 NUMERIC, tpe NUMERIC, type Pss1_type, vadat NUMERIC, vsmn NUMERIC, vsmx NUMERIC);
