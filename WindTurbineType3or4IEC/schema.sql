@@ -1,3 +1,3 @@
-/* (Beta) Export of data model WindTurbineType3or4IEC of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model WindTurbineType3or4IEC of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE WindTurbineType3or4IEC_type AS ENUM ('WindTurbineType3or4IEC');
-CREATE TABLE WindTurbineType3or4IEC (WIndContQIEC text, WindContCurrLimIEC text, WindProtectionIEC text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type WindTurbineType3or4IEC_type);
+CREATE TABLE WindTurbineType3or4IEC (WIndContQIEC NUMERIC, WindContCurrLimIEC NUMERIC, WindProtectionIEC NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type WindTurbineType3or4IEC_type);
