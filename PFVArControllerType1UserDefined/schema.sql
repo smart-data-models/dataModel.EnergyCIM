@@ -1,3 +1,3 @@
-/* (Beta) Export of data model PFVArControllerType1UserDefined of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model PFVArControllerType1UserDefined of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PFVArControllerType1UserDefined_type AS ENUM ('PFVArControllerType1UserDefined');
-CREATE TABLE PFVArControllerType1UserDefined (ProprietaryParameterDynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, proprietary text, seeAlso json, source text, type PFVArControllerType1UserDefined_type);
+CREATE TABLE PFVArControllerType1UserDefined (ProprietaryParameterDynamics NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, proprietary NUMERIC, source TEXT, type PFVArControllerType1UserDefined_type);
