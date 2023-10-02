@@ -1,3 +1,3 @@
-/* (Beta) Export of data model CapacitancePerLength of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model CapacitancePerLength of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE CapacitancePerLength_type AS ENUM ('CapacitancePerLength');
-CREATE TABLE CapacitancePerLength (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, denominatorMultiplier text, denominatorUnit text, description text, id text, location json, multiplier text, name text, owner json, seeAlso json, source text, type CapacitancePerLength_type, unit text, value text);
+CREATE TABLE CapacitancePerLength (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, denominatorMultiplier NUMERIC, denominatorUnit NUMERIC, description TEXT, multiplier NUMERIC, name TEXT, owner JSON, source TEXT, type CapacitancePerLength_type, unit NUMERIC, value NUMERIC);
