@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ReactiveCapabilityCurve of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ReactiveCapabilityCurve of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ReactiveCapabilityCurve_type AS ENUM ('ReactiveCapabilityCurve');
-CREATE TABLE ReactiveCapabilityCurve (EquivalentInjection text, InitiallyUsedBySynchronousMachines text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type ReactiveCapabilityCurve_type);
+CREATE TABLE ReactiveCapabilityCurve (EquivalentInjection NUMERIC, InitiallyUsedBySynchronousMachines NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type ReactiveCapabilityCurve_type);
