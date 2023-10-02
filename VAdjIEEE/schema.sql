@@ -1,3 +1,3 @@
-/* (Beta) Export of data model VAdjIEEE of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model VAdjIEEE of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE VAdjIEEE_type AS ENUM ('VAdjIEEE');
-CREATE TABLE VAdjIEEE (address json, adjslew text, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, taoff text, taon text, type VAdjIEEE_type, vadjf text, vadjmax text, vadjmin text);
+CREATE TABLE VAdjIEEE (address JSON, adjslew NUMERIC, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, taoff NUMERIC, taon NUMERIC, type VAdjIEEE_type, vadjf NUMERIC, vadjmax NUMERIC, vadjmin NUMERIC);
