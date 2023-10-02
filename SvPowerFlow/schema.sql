@@ -1,3 +1,3 @@
-/* (Beta) Export of data model SvPowerFlow of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model SvPowerFlow of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SvPowerFlow_type AS ENUM ('SvPowerFlow');
-CREATE TABLE SvPowerFlow (Terminal text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, p text, q text, seeAlso json, source text, type SvPowerFlow_type);
+CREATE TABLE SvPowerFlow (Terminal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, p NUMERIC, q NUMERIC, source TEXT, type SvPowerFlow_type);
