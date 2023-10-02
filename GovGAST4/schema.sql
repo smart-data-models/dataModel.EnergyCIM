@@ -1,3 +1,3 @@
-/* (Beta) Export of data model GovGAST4 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model GovGAST4 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE GovGAST4_type AS ENUM ('GovGAST4');
-CREATE TABLE GovGAST4 (address json, alternateName text, areaServed text, bp text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, ktm text, location json, mnef text, mxef text, name text, owner json, rymn text, rymx text, seeAlso json, source text, ta text, tc text, tcm text, tm text, tv text, type GovGAST4_type);
+CREATE TABLE GovGAST4 (address JSON, alternateName TEXT, areaServed TEXT, bp NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, ktm NUMERIC, mnef NUMERIC, mxef NUMERIC, name TEXT, owner JSON, rymn NUMERIC, rymx NUMERIC, source TEXT, ta NUMERIC, tc NUMERIC, tcm NUMERIC, tm NUMERIC, tv NUMERIC, type GovGAST4_type);
