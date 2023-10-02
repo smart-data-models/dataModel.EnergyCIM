@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcHU of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcHU of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcHU_type AS ENUM ('ExcHU');
-CREATE TABLE ExcHU (address json, ae text, ai text, alternateName text, areaServed text, atr text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, emax text, emin text, id text, imax text, imin text, ke text, ki text, location json, name text, owner json, seeAlso json, source text, te text, ti text, tr text, type ExcHU_type);
+CREATE TABLE ExcHU (address JSON, ae NUMERIC, ai NUMERIC, alternateName TEXT, areaServed TEXT, atr NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, emax NUMERIC, emin NUMERIC, imax NUMERIC, imin NUMERIC, ke NUMERIC, ki NUMERIC, name TEXT, owner JSON, source TEXT, te NUMERIC, ti NUMERIC, tr NUMERIC, type ExcHU_type);
