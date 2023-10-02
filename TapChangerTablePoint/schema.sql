@@ -1,3 +1,3 @@
-/* (Beta) Export of data model TapChangerTablePoint of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model TapChangerTablePoint of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE TapChangerTablePoint_type AS ENUM ('TapChangerTablePoint');
-CREATE TABLE TapChangerTablePoint (address json, alternateName text, areaServed text, b text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, g text, id text, location json, name text, owner json, r text, ratio text, seeAlso json, source text, step text, type TapChangerTablePoint_type, x text);
+CREATE TABLE TapChangerTablePoint (address JSON, alternateName TEXT, areaServed TEXT, b NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, g NUMERIC, name TEXT, owner JSON, r NUMERIC, ratio NUMERIC, source TEXT, step NUMERIC, type TapChangerTablePoint_type, x NUMERIC);
