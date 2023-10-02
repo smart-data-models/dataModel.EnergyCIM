@@ -1,3 +1,3 @@
-/* (Beta) Export of data model VoltageAdjusterUserDefined of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model VoltageAdjusterUserDefined of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE VoltageAdjusterUserDefined_type AS ENUM ('VoltageAdjusterUserDefined');
-CREATE TABLE VoltageAdjusterUserDefined (ProprietaryParameterDynamics text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, proprietary text, seeAlso json, source text, type VoltageAdjusterUserDefined_type);
+CREATE TABLE VoltageAdjusterUserDefined (ProprietaryParameterDynamics NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, proprietary NUMERIC, source TEXT, type VoltageAdjusterUserDefined_type);
