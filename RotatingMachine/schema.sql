@@ -1,3 +1,3 @@
-/* (Beta) Export of data model RotatingMachine of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model RotatingMachine of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RotatingMachine_type AS ENUM ('RotatingMachine');
-CREATE TABLE RotatingMachine (GeneratingUnit text, HydroPump text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, p text, q text, ratedPowerFactor text, ratedS text, ratedU text, seeAlso json, source text, type RotatingMachine_type);
+CREATE TABLE RotatingMachine (GeneratingUnit NUMERIC, HydroPump NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, p NUMERIC, q NUMERIC, ratedPowerFactor NUMERIC, ratedS NUMERIC, ratedU NUMERIC, source TEXT, type RotatingMachine_type);
