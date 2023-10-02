@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Curve of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Curve of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Curve_type AS ENUM ('Curve');
-CREATE TABLE Curve (CurveDatas text, address json, alternateName text, areaServed text, curveStyle text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type Curve_type, xUnit text, y1Unit text, y2Unit text);
+CREATE TABLE Curve (CurveDatas NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, curveStyle NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type Curve_type, xUnit NUMERIC, y1Unit NUMERIC, y2Unit NUMERIC);
