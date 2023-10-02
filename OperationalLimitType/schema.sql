@@ -1,3 +1,3 @@
-/* (Beta) Export of data model OperationalLimitType of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model OperationalLimitType of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE OperationalLimitType_type AS ENUM ('OperationalLimitType');
-CREATE TABLE OperationalLimitType (OperationalLimit text, acceptableDuration text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, direction text, id text, limitType text, location json, name text, owner json, seeAlso json, source text, type OperationalLimitType_type);
+CREATE TABLE OperationalLimitType (OperationalLimit NUMERIC, acceptableDuration NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, direction NUMERIC, limitType NUMERIC, name TEXT, owner JSON, source TEXT, type OperationalLimitType_type);
