@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Measurement of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Measurement of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Measurement_type AS ENUM ('Measurement');
-CREATE TABLE Measurement (PowerSystemResource text, Terminal text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, measurementType text, name text, owner json, phases text, seeAlso json, source text, type Measurement_type, unitMultiplier text, unitSymbol text);
+CREATE TABLE Measurement (PowerSystemResource NUMERIC, Terminal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, measurementType TEXT, name TEXT, owner JSON, phases NUMERIC, source TEXT, type Measurement_type, unitMultiplier NUMERIC, unitSymbol NUMERIC);
