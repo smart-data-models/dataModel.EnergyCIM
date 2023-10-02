@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcAVR5 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcAVR5 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcAVR5_type AS ENUM ('ExcAVR5');
-CREATE TABLE ExcAVR5 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, ka text, location json, name text, owner json, rex text, seeAlso json, source text, ta text, type ExcAVR5_type);
+CREATE TABLE ExcAVR5 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, ka NUMERIC, name TEXT, owner JSON, rex NUMERIC, source TEXT, ta NUMERIC, type ExcAVR5_type);
