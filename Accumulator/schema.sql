@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Accumulator of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Accumulator of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Accumulator_type AS ENUM ('Accumulator');
-CREATE TABLE Accumulator (AccumulatorValues text, LimitSets text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type Accumulator_type);
+CREATE TABLE Accumulator (AccumulatorValues NUMERIC, LimitSets NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type Accumulator_type);
