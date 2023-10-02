@@ -1,3 +1,3 @@
-/* (Beta) Export of data model DCConductingEquipment of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model DCConductingEquipment of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DCConductingEquipment_type AS ENUM ('DCConductingEquipment');
-CREATE TABLE DCConductingEquipment (DCTerminals text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type DCConductingEquipment_type);
+CREATE TABLE DCConductingEquipment (DCTerminals NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type DCConductingEquipment_type);
