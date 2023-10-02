@@ -1,3 +1,3 @@
-/* (Beta) Export of data model DCConverterUnit of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model DCConverterUnit of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DCConverterUnit_type AS ENUM ('DCConverterUnit');
-CREATE TABLE DCConverterUnit (Substation text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, operationMode text, owner json, seeAlso json, source text, type DCConverterUnit_type);
+CREATE TABLE DCConverterUnit (Substation NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, operationMode NUMERIC, owner JSON, source TEXT, type DCConverterUnit_type);
