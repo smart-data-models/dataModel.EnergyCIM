@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ControlArea of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ControlArea of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ControlArea_type AS ENUM ('ControlArea');
-CREATE TABLE ControlArea (ControlAreaGeneratingUnit text, EnergyArea text, TieFlow text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, netInterchange text, owner json, pTolerance text, seeAlso json, source text, type ControlArea_type);
+CREATE TABLE ControlArea (ControlAreaGeneratingUnit NUMERIC, EnergyArea NUMERIC, TieFlow NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, netInterchange NUMERIC, owner JSON, pTolerance NUMERIC, source TEXT, type ControlArea_type);
