@@ -1,3 +1,3 @@
-/* (Beta) Export of data model ExcANS of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model ExcANS of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ExcANS_type AS ENUM ('ExcANS');
-CREATE TABLE ExcANS (address json, alternateName text, areaServed text, blint text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, ifmn text, ifmx text, k2 text, k3 text, kce text, krvecc text, kvfif text, location json, name text, owner json, seeAlso json, source text, t1 text, t2 text, t3 text, tb text, type ExcANS_type, vrmn text, vrmx text);
+CREATE TABLE ExcANS (address JSON, alternateName TEXT, areaServed TEXT, blint NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, ifmn NUMERIC, ifmx NUMERIC, k2 NUMERIC, k3 NUMERIC, kce NUMERIC, krvecc NUMERIC, kvfif NUMERIC, name TEXT, owner JSON, source TEXT, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, tb NUMERIC, type ExcANS_type, vrmn NUMERIC, vrmx NUMERIC);
