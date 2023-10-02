@@ -1,3 +1,3 @@
-/* (Beta) Export of data model AnalogControl of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model AnalogControl of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE AnalogControl_type AS ENUM ('AnalogControl');
-CREATE TABLE AnalogControl (AnalogValue text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, maxValue text, minValue text, name text, owner json, seeAlso json, source text, type AnalogControl_type);
+CREATE TABLE AnalogControl (AnalogValue NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, maxValue NUMERIC, minValue NUMERIC, name TEXT, owner JSON, source TEXT, type AnalogControl_type);
