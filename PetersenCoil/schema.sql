@@ -1,3 +1,3 @@
-/* (Beta) Export of data model PetersenCoil of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model PetersenCoil of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PetersenCoil_type AS ENUM ('PetersenCoil');
-CREATE TABLE PetersenCoil (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, mode text, name text, nominalU text, offsetCurrent text, owner json, positionCurrent text, seeAlso json, source text, type PetersenCoil_type, xGroundMax text, xGroundMin text, xGroundNominal text);
+CREATE TABLE PetersenCoil (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, mode NUMERIC, name TEXT, nominalU NUMERIC, offsetCurrent NUMERIC, owner JSON, positionCurrent NUMERIC, source TEXT, type PetersenCoil_type, xGroundMax NUMERIC, xGroundMin NUMERIC, xGroundNominal NUMERIC);
