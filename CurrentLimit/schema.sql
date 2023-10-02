@@ -1,3 +1,3 @@
-/* (Beta) Export of data model CurrentLimit of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model CurrentLimit of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE CurrentLimit_type AS ENUM ('CurrentLimit');
-CREATE TABLE CurrentLimit (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type CurrentLimit_type, value text);
+CREATE TABLE CurrentLimit (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type CurrentLimit_type, value NUMERIC);
