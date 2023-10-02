@@ -1,3 +1,3 @@
-/* (Beta) Export of data model RegularIntervalSchedule of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model RegularIntervalSchedule of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RegularIntervalSchedule_type AS ENUM ('RegularIntervalSchedule');
-CREATE TABLE RegularIntervalSchedule (TimePoints text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, endTime text, id text, location json, name text, owner json, seeAlso json, source text, timeStep text, type RegularIntervalSchedule_type);
+CREATE TABLE RegularIntervalSchedule (TimePoints NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, endTime NUMERIC, name TEXT, owner JSON, source TEXT, timeStep NUMERIC, type RegularIntervalSchedule_type);
