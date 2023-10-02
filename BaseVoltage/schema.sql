@@ -1,3 +1,3 @@
-/* (Beta) Export of data model BaseVoltage of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model BaseVoltage of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BaseVoltage_type AS ENUM ('BaseVoltage');
-CREATE TABLE BaseVoltage (ConductingEquipment text, TopologicalNode text, TransformerEnds text, VoltageLevel text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, nominalVoltage text, owner json, seeAlso json, source text, type BaseVoltage_type);
+CREATE TABLE BaseVoltage (ConductingEquipment NUMERIC, TopologicalNode NUMERIC, TransformerEnds NUMERIC, VoltageLevel NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, nominalVoltage NUMERIC, owner JSON, source TEXT, type BaseVoltage_type);
