@@ -1,3 +1,3 @@
-/* (Beta) Export of data model DCShunt of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model DCShunt of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DCShunt_type AS ENUM ('DCShunt');
-CREATE TABLE DCShunt (address json, alternateName text, areaServed text, capacitance text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, ratedUdc text, resistance text, seeAlso json, source text, type DCShunt_type);
+CREATE TABLE DCShunt (address JSON, alternateName TEXT, areaServed TEXT, capacitance NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, ratedUdc NUMERIC, resistance NUMERIC, source TEXT, type DCShunt_type);
