@@ -1,3 +1,3 @@
-/* (Beta) Export of data model PFVArType2IEEEPFController of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model PFVArType2IEEEPFController of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PFVArType2IEEEPFController_type AS ENUM ('PFVArType2IEEEPFController');
-CREATE TABLE PFVArType2IEEEPFController (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, exlon text, id text, ki text, kp text, location json, name text, owner json, pfref text, seeAlso json, source text, type PFVArType2IEEEPFController_type, vclmt text, vref text, vs text);
+CREATE TABLE PFVArType2IEEEPFController (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, exlon NUMERIC, ki NUMERIC, kp NUMERIC, name TEXT, owner JSON, pfref NUMERIC, source TEXT, type PFVArType2IEEEPFController_type, vclmt NUMERIC, vref NUMERIC, vs NUMERIC);
