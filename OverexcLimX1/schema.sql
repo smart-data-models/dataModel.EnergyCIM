@@ -1,3 +1,3 @@
-/* (Beta) Export of data model OverexcLimX1 of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model OverexcLimX1 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE OverexcLimX1_type AS ENUM ('OverexcLimX1');
-CREATE TABLE OverexcLimX1 (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, efd1 text, efd2 text, efd3 text, efddes text, efdrated text, id text, kmx text, location json, name text, owner json, seeAlso json, source text, t1 text, t2 text, t3 text, type OverexcLimX1_type, vlow text);
+CREATE TABLE OverexcLimX1 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, efd1 NUMERIC, efd2 NUMERIC, efd3 NUMERIC, efddes NUMERIC, efdrated NUMERIC, kmx NUMERIC, name TEXT, owner JSON, source TEXT, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, type OverexcLimX1_type, vlow NUMERIC);
