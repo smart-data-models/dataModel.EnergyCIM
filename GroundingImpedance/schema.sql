@@ -1,3 +1,3 @@
-/* (Beta) Export of data model GroundingImpedance of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model GroundingImpedance of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE GroundingImpedance_type AS ENUM ('GroundingImpedance');
-CREATE TABLE GroundingImpedance (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type GroundingImpedance_type, x text);
+CREATE TABLE GroundingImpedance (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type GroundingImpedance_type, x NUMERIC);
