@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Voltage of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Voltage of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Voltage_type AS ENUM ('Voltage');
-CREATE TABLE Voltage (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, multiplier text, name text, owner json, seeAlso json, source text, type Voltage_type, unit text, value text);
+CREATE TABLE Voltage (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, multiplier NUMERIC, name TEXT, owner JSON, source TEXT, type Voltage_type, unit NUMERIC, value NUMERIC);
