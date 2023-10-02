@@ -1,3 +1,3 @@
-/* (Beta) Export of data model PhaseTapChangerLinear of the subject dataModel.EnergyCIM for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model PhaseTapChangerLinear of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PhaseTapChangerLinear_type AS ENUM ('PhaseTapChangerLinear');
-CREATE TABLE PhaseTapChangerLinear (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, stepPhaseShiftIncrement text, type PhaseTapChangerLinear_type, xMax text, xMin text);
+CREATE TABLE PhaseTapChangerLinear (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, stepPhaseShiftIncrement NUMERIC, type PhaseTapChangerLinear_type, xMax NUMERIC, xMin NUMERIC);
