@@ -1,3 +1,3 @@
 /* (Beta) Export of data model PowerSystemStabilizerDynamics of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PowerSystemStabilizerDynamics_type AS ENUM ('PowerSystemStabilizerDynamics');
-CREATE TABLE PowerSystemStabilizerDynamics (ExcitationSystemDynamics NUMERIC, RemoteInputSignal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type PowerSystemStabilizerDynamics_type);
+CREATE TABLE PowerSystemStabilizerDynamics (ExcitationSystemDynamics NUMERIC, RemoteInputSignal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type PowerSystemStabilizerDynamics_type);
