@@ -1,3 +1,3 @@
 /* (Beta) Export of data model AccumulatorLimitSet of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE AccumulatorLimitSet_type AS ENUM ('AccumulatorLimitSet');
-CREATE TABLE AccumulatorLimitSet (Limits NUMERIC, Measurements NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type AccumulatorLimitSet_type);
+CREATE TABLE AccumulatorLimitSet (Limits NUMERIC, Measurements NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type AccumulatorLimitSet_type);
