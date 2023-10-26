@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Location of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Location_type AS ENUM ('Location');
-CREATE TABLE Location (CoordinateSystem NUMERIC, PositionPoints NUMERIC, PowerSystemResources NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type Location_type);
+CREATE TABLE Location (CoordinateSystem NUMERIC, PositionPoints NUMERIC, PowerSystemResources NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type Location_type);
