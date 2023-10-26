@@ -1,3 +1,3 @@
 /* (Beta) Export of data model SetPoint of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SetPoint_type AS ENUM ('SetPoint');
-CREATE TABLE SetPoint (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, normalValue NUMERIC, owner JSON, source TEXT, type SetPoint_type, value NUMERIC);
+CREATE TABLE SetPoint (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, normalValue NUMERIC, owner JSON, seeAlso JSON, source TEXT, type SetPoint_type, value NUMERIC);
