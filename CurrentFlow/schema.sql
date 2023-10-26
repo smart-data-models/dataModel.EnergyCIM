@@ -1,3 +1,3 @@
 /* (Beta) Export of data model CurrentFlow of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE CurrentFlow_type AS ENUM ('CurrentFlow');
-CREATE TABLE CurrentFlow (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, multiplier NUMERIC, name TEXT, owner JSON, source TEXT, type CurrentFlow_type, unit NUMERIC, value NUMERIC);
+CREATE TABLE CurrentFlow (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, multiplier NUMERIC, name TEXT, owner JSON, seeAlso JSON, source TEXT, type CurrentFlow_type, unit NUMERIC, value NUMERIC);
