@@ -1,3 +1,3 @@
 /* (Beta) Export of data model EquivalentEquipment of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE EquivalentEquipment_type AS ENUM ('EquivalentEquipment');
-CREATE TABLE EquivalentEquipment (EquivalentNetwork NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type EquivalentEquipment_type);
+CREATE TABLE EquivalentEquipment (EquivalentNetwork NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type EquivalentEquipment_type);
