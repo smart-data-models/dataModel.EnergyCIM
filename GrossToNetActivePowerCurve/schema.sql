@@ -1,3 +1,3 @@
 /* (Beta) Export of data model GrossToNetActivePowerCurve of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE GrossToNetActivePowerCurve_type AS ENUM ('GrossToNetActivePowerCurve');
-CREATE TABLE GrossToNetActivePowerCurve (GeneratingUnit NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type GrossToNetActivePowerCurve_type);
+CREATE TABLE GrossToNetActivePowerCurve (GeneratingUnit NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type GrossToNetActivePowerCurve_type);
