@@ -1,3 +1,3 @@
 /* (Beta) Export of data model MechanicalLoadUserDefined of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE MechanicalLoadUserDefined_type AS ENUM ('MechanicalLoadUserDefined');
-CREATE TABLE MechanicalLoadUserDefined (ProprietaryParameterDynamics NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, proprietary NUMERIC, source TEXT, type MechanicalLoadUserDefined_type);
+CREATE TABLE MechanicalLoadUserDefined (ProprietaryParameterDynamics NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, proprietary NUMERIC, seeAlso JSON, source TEXT, type MechanicalLoadUserDefined_type);
