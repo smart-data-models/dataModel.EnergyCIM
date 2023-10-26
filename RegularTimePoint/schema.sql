@@ -1,3 +1,3 @@
 /* (Beta) Export of data model RegularTimePoint of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RegularTimePoint_type AS ENUM ('RegularTimePoint');
-CREATE TABLE RegularTimePoint (IntervalSchedule NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, sequenceNumber NUMERIC, source TEXT, type RegularTimePoint_type, value1 NUMERIC, value2 NUMERIC);
+CREATE TABLE RegularTimePoint (IntervalSchedule NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, sequenceNumber NUMERIC, source TEXT, type RegularTimePoint_type, value1 NUMERIC, value2 NUMERIC);
