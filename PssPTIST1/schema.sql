@@ -1,3 +1,3 @@
 /* (Beta) Export of data model PssPTIST1 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PssPTIST1_type AS ENUM ('PssPTIST1');
-CREATE TABLE PssPTIST1 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, dtc NUMERIC, dtf NUMERIC, dtp NUMERIC, k NUMERIC, m NUMERIC, name TEXT, owner JSON, source TEXT, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, t4 NUMERIC, tf NUMERIC, tp NUMERIC, type PssPTIST1_type);
+CREATE TABLE PssPTIST1 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, dtc NUMERIC, dtf NUMERIC, dtp NUMERIC, id TEXT PRIMARY KEY, k NUMERIC, location JSON, m NUMERIC, name TEXT, owner JSON, seeAlso JSON, source TEXT, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, t4 NUMERIC, tf NUMERIC, tp NUMERIC, type PssPTIST1_type);
