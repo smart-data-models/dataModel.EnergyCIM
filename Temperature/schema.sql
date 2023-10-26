@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Temperature of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Temperature_type AS ENUM ('Temperature');
-CREATE TABLE Temperature (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, multiplier NUMERIC, name TEXT, owner JSON, source TEXT, type Temperature_type, unit NUMERIC, value NUMERIC);
+CREATE TABLE Temperature (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, multiplier NUMERIC, name TEXT, owner JSON, seeAlso JSON, source TEXT, type Temperature_type, unit NUMERIC, value NUMERIC);
