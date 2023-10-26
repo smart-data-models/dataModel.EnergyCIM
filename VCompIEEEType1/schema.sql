@@ -1,3 +1,3 @@
 /* (Beta) Export of data model VCompIEEEType1 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE VCompIEEEType1_type AS ENUM ('VCompIEEEType1');
-CREATE TABLE VCompIEEEType1 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, rc NUMERIC, source TEXT, tr NUMERIC, type VCompIEEEType1_type, xc NUMERIC);
+CREATE TABLE VCompIEEEType1 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, rc NUMERIC, seeAlso JSON, source TEXT, tr NUMERIC, type VCompIEEEType1_type, xc NUMERIC);
