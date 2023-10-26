@@ -1,3 +1,3 @@
 /* (Beta) Export of data model ActivePowerLimit of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ActivePowerLimit_type AS ENUM ('ActivePowerLimit');
-CREATE TABLE ActivePowerLimit (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type ActivePowerLimit_type, value NUMERIC);
+CREATE TABLE ActivePowerLimit (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type ActivePowerLimit_type, value NUMERIC);
