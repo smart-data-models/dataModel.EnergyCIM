@@ -1,3 +1,3 @@
 /* (Beta) Export of data model DCLineSegment of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DCLineSegment_type AS ENUM ('DCLineSegment');
-CREATE TABLE DCLineSegment (PerLengthParameter NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, capacitance NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, inductance NUMERIC, length NUMERIC, name TEXT, owner JSON, resistance NUMERIC, source TEXT, type DCLineSegment_type);
+CREATE TABLE DCLineSegment (PerLengthParameter NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, capacitance NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, inductance NUMERIC, length NUMERIC, location JSON, name TEXT, owner JSON, resistance NUMERIC, seeAlso JSON, source TEXT, type DCLineSegment_type);
