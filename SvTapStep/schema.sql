@@ -1,3 +1,3 @@
 /* (Beta) Export of data model SvTapStep of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SvTapStep_type AS ENUM ('SvTapStep');
-CREATE TABLE SvTapStep (TapChanger NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, position NUMERIC, source TEXT, type SvTapStep_type);
+CREATE TABLE SvTapStep (TapChanger NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, position NUMERIC, seeAlso JSON, source TEXT, type SvTapStep_type);
