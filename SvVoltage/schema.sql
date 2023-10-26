@@ -1,3 +1,3 @@
 /* (Beta) Export of data model SvVoltage of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SvVoltage_type AS ENUM ('SvVoltage');
-CREATE TABLE SvVoltage (TopologicalNode NUMERIC, address JSON, alternateName TEXT, angle NUMERIC, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type SvVoltage_type, v NUMERIC);
+CREATE TABLE SvVoltage (TopologicalNode NUMERIC, address JSON, alternateName TEXT, angle NUMERIC, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type SvVoltage_type, v NUMERIC);
