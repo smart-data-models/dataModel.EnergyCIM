@@ -1,3 +1,3 @@
 /* (Beta) Export of data model PhaseTapChangerTablePoint of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PhaseTapChangerTablePoint_type AS ENUM ('PhaseTapChangerTablePoint');
-CREATE TABLE PhaseTapChangerTablePoint (PhaseTapChangerTable NUMERIC, address JSON, alternateName TEXT, angle NUMERIC, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type PhaseTapChangerTablePoint_type);
+CREATE TABLE PhaseTapChangerTablePoint (PhaseTapChangerTable NUMERIC, address JSON, alternateName TEXT, angle NUMERIC, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type PhaseTapChangerTablePoint_type);
