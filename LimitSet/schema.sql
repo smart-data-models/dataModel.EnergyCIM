@@ -1,3 +1,3 @@
 /* (Beta) Export of data model LimitSet of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE LimitSet_type AS ENUM ('LimitSet');
-CREATE TABLE LimitSet (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, isPercentageLimits NUMERIC, name TEXT, owner JSON, source TEXT, type LimitSet_type);
+CREATE TABLE LimitSet (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, isPercentageLimits NUMERIC, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type LimitSet_type);
