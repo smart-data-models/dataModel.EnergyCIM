@@ -1,3 +1,3 @@
 /* (Beta) Export of data model MechLoad1 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE MechLoad1_type AS ENUM ('MechLoad1');
-CREATE TABLE MechLoad1 (a NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, b NUMERIC, d NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, e NUMERIC, name TEXT, owner JSON, source TEXT, type MechLoad1_type);
+CREATE TABLE MechLoad1 (a NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, b NUMERIC, d NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, e NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type MechLoad1_type);
