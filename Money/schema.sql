@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Money of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Money_type AS ENUM ('Money');
-CREATE TABLE Money (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, multiplier NUMERIC, name TEXT, owner JSON, source TEXT, type Money_type, unit NUMERIC, value NUMERIC);
+CREATE TABLE Money (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, multiplier NUMERIC, name TEXT, owner JSON, seeAlso JSON, source TEXT, type Money_type, unit NUMERIC, value NUMERIC);
