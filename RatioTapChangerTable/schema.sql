@@ -1,3 +1,3 @@
 /* (Beta) Export of data model RatioTapChangerTable of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RatioTapChangerTable_type AS ENUM ('RatioTapChangerTable');
-CREATE TABLE RatioTapChangerTable (RatioTapChanger NUMERIC, RatioTapChangerTablePoint NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type RatioTapChangerTable_type);
+CREATE TABLE RatioTapChangerTable (RatioTapChanger NUMERIC, RatioTapChangerTablePoint NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type RatioTapChangerTable_type);
