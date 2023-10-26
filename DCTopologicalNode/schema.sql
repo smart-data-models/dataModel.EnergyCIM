@@ -1,3 +1,3 @@
 /* (Beta) Export of data model DCTopologicalNode of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DCTopologicalNode_type AS ENUM ('DCTopologicalNode');
-CREATE TABLE DCTopologicalNode (DCEquipmentContainer NUMERIC, DCNodes NUMERIC, DCTerminals NUMERIC, DCTopologicalIsland NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type DCTopologicalNode_type);
+CREATE TABLE DCTopologicalNode (DCEquipmentContainer NUMERIC, DCNodes NUMERIC, DCTerminals NUMERIC, DCTopologicalIsland NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type DCTopologicalNode_type);
