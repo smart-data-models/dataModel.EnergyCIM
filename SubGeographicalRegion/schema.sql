@@ -1,3 +1,3 @@
 /* (Beta) Export of data model SubGeographicalRegion of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SubGeographicalRegion_type AS ENUM ('SubGeographicalRegion');
-CREATE TABLE SubGeographicalRegion (DCLines NUMERIC, Lines NUMERIC, Region NUMERIC, Substations NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type SubGeographicalRegion_type);
+CREATE TABLE SubGeographicalRegion (DCLines NUMERIC, Lines NUMERIC, Region NUMERIC, Substations NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type SubGeographicalRegion_type);
