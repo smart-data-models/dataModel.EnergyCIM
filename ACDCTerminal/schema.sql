@@ -1,3 +1,3 @@
 /* (Beta) Export of data model ACDCTerminal of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ACDCTerminal_type AS ENUM ('ACDCTerminal');
-CREATE TABLE ACDCTerminal (BusNameMarker NUMERIC, Measurements NUMERIC, OperationalLimitSet NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, connected NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, sequenceNumber NUMERIC, source TEXT, type ACDCTerminal_type);
+CREATE TABLE ACDCTerminal (BusNameMarker NUMERIC, Measurements NUMERIC, OperationalLimitSet NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, connected NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, sequenceNumber NUMERIC, source TEXT, type ACDCTerminal_type);
