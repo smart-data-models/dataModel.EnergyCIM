@@ -1,3 +1,3 @@
 /* (Beta) Export of data model UnderexcLimX2 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE UnderexcLimX2_type AS ENUM ('UnderexcLimX2');
-CREATE TABLE UnderexcLimX2 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, kf2 NUMERIC, km NUMERIC, melmax NUMERIC, name TEXT, owner JSON, qo NUMERIC, r NUMERIC, source TEXT, tf2 NUMERIC, tm NUMERIC, type UnderexcLimX2_type);
+CREATE TABLE UnderexcLimX2 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, kf2 NUMERIC, km NUMERIC, location JSON, melmax NUMERIC, name TEXT, owner JSON, qo NUMERIC, r NUMERIC, seeAlso JSON, source TEXT, tf2 NUMERIC, tm NUMERIC, type UnderexcLimX2_type);
