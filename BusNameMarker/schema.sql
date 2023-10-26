@@ -1,3 +1,3 @@
 /* (Beta) Export of data model BusNameMarker of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BusNameMarker_type AS ENUM ('BusNameMarker');
-CREATE TABLE BusNameMarker (ReportingGroup NUMERIC, Terminal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, priority NUMERIC, source TEXT, type BusNameMarker_type);
+CREATE TABLE BusNameMarker (ReportingGroup NUMERIC, Terminal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, priority NUMERIC, seeAlso JSON, source TEXT, type BusNameMarker_type);
