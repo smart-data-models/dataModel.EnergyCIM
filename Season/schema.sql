@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Season of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Season_type AS ENUM ('Season');
-CREATE TABLE Season (SeasonDayTypeSchedules NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, endDate NUMERIC, name TEXT, owner JSON, source TEXT, startDate NUMERIC, type Season_type);
+CREATE TABLE Season (SeasonDayTypeSchedules NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, endDate NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, startDate NUMERIC, type Season_type);
