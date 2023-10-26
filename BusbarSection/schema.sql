@@ -1,3 +1,3 @@
 /* (Beta) Export of data model BusbarSection of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE BusbarSection_type AS ENUM ('BusbarSection');
-CREATE TABLE BusbarSection (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, ipMax NUMERIC, name TEXT, owner JSON, source TEXT, type BusbarSection_type);
+CREATE TABLE BusbarSection (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, ipMax NUMERIC, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type BusbarSection_type);
