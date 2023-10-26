@@ -22,6 +22,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.EnergyCIM/b
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCTopologicalNode/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCTopologicalNode/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/DCTopologicalNode/doc/spec_KO.md)
 ### Examples
 ### Dynamic Examples generation
 
