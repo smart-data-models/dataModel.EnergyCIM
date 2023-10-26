@@ -1,3 +1,3 @@
 /* (Beta) Export of data model PowerSystemResource of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE PowerSystemResource_type AS ENUM ('PowerSystemResource');
-CREATE TABLE PowerSystemResource (Controls NUMERIC, Location NUMERIC, Measurements NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type PowerSystemResource_type);
+CREATE TABLE PowerSystemResource (Controls NUMERIC, Location NUMERIC, Measurements NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type PowerSystemResource_type);
