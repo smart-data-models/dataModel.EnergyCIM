@@ -1,3 +1,3 @@
 /* (Beta) Export of data model SvStatus of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE SvStatus_type AS ENUM ('SvStatus');
-CREATE TABLE SvStatus (ConductingEquipment NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, inService NUMERIC, name TEXT, owner JSON, source TEXT, type SvStatus_type);
+CREATE TABLE SvStatus (ConductingEquipment NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, inService NUMERIC, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type SvStatus_type);
