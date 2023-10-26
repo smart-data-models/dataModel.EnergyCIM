@@ -1,3 +1,3 @@
 /* (Beta) Export of data model GovHydroIEEE0 of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE GovHydroIEEE0_type AS ENUM ('GovHydroIEEE0');
-CREATE TABLE GovHydroIEEE0 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, k NUMERIC, mwbase NUMERIC, name TEXT, owner JSON, pmax NUMERIC, pmin NUMERIC, source TEXT, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, t4 NUMERIC, type GovHydroIEEE0_type);
+CREATE TABLE GovHydroIEEE0 (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, k NUMERIC, location JSON, mwbase NUMERIC, name TEXT, owner JSON, pmax NUMERIC, pmin NUMERIC, seeAlso JSON, source TEXT, t1 NUMERIC, t2 NUMERIC, t3 NUMERIC, t4 NUMERIC, type GovHydroIEEE0_type);
