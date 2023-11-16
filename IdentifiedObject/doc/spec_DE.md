@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[number]`: Die Beschreibung ist ein freier, von Menschen lesbarer Text, der das Objekt beschreibt oder benennt. Er kann nicht eindeutig sein und muss nicht mit einer Benennungshierarchie korrelieren. Standard: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: Das Attribut wird für den Austausch des EIC-Codes (Energy identification Code) verwendet. Die Länge der Zeichenkette beträgt 16 Zeichen, wie im EIC-Code definiert. Referenzen: Voreinstellung: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mRID[number]`: Master Resource Identifier, der von einer Modellbehörde vergeben wird. Der mRID ist innerhalb eines Austauschkontexts global eindeutig. Globale Eindeutigkeit lässt sich leicht durch die Verwendung einer UUID, wie in RFC 4122 beschrieben, für die mRID erreichen.  Die Verwendung von UUID wird dringend empfohlen. Für CIMXML-Datendateien in RDF-Syntax gemäß IEC 61970-552 Edition 1 wird die mRID auf die Attribute rdf:ID oder rdf:about abgebildet, die CIM-Objektelemente identifizieren. Voreinstellung: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: Der Name ist ein beliebiger freier, von Menschen lesbarer und möglicherweise nicht eindeutiger Text, der das Objekt benennt. Voreinstellung: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `shortName[number]`: Das Attribut wird für den Austausch eines menschenlesbaren Kurznamens mit einer Länge von maximal 12 Zeichen verwendet. Standard: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Typ. Es muss IdentifiedObject sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -128,7 +129,7 @@ IdentifiedObject:
         type: Property    
     description:    
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -327,10 +328,9 @@ IdentifiedObject:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''    
-      type: number    
+      description: The name of this item    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
@@ -387,11 +387,11 @@ IdentifiedObject:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
