@@ -1,6 +1,6 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
 # IdentifiedObject
-Version: 0.0.1
+Version: 0.1.0
 
 ## Description 
 
@@ -22,6 +22,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.EnergyCIM/b
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/doc/spec_KO.md)
 ### Examples
 ### Dynamic Examples generation
 
