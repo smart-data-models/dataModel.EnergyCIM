@@ -1,3 +1,3 @@
 /* (Beta) Export of data model IdentifiedObject of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE IdentifiedObject_type AS ENUM ('IdentifiedObject');
-CREATE TABLE IdentifiedObject (DiagramObjects NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description NUMERIC, energyIdentCodeEic NUMERIC, id TEXT PRIMARY KEY, location JSON, mRID NUMERIC, name NUMERIC, owner JSON, seeAlso JSON, shortName NUMERIC, source TEXT, type IdentifiedObject_type);
+CREATE TABLE IdentifiedObject (DiagramObjects NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, energyIdentCodeEic NUMERIC, id TEXT PRIMARY KEY, location JSON, mRID NUMERIC, name TEXT, owner JSON, seeAlso JSON, shortName NUMERIC, source TEXT, type IdentifiedObject_type);
