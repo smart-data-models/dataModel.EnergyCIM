@@ -90,7 +90,7 @@ IdentifiedObject:
         type: Property
     description:
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''
-      type: number
+      type: string
       x-ngsi:
         model: https://schema.org/Number
         type: Property
@@ -289,10 +289,9 @@ IdentifiedObject:
         model: https://schema.org/Number
         type: Property
     name:
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''
-      type: number
+      description: The name of this item
+      type: string
       x-ngsi:
-        model: https://schema.org/Number
         type: Property
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
@@ -349,8 +348,8 @@ IdentifiedObject:
   required: []
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.1.0
