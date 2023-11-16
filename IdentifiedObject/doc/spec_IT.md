@@ -7,7 +7,7 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Adottata dai modelli di dati CIM. Si tratta di una classe radice per fornire un'identificazione comune a tutte le classi che necessitano di attributi di identificazione e denominazione.**  
+Descrizione globale: **Adottata dai modelli di dati CIM. Si tratta di una classe principale per fornire un'identificazione comune a tutte le classi che necessitano di attributi di identificazione e di denominazione.**  
 versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
 - `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[number]`: La descrizione è un testo libero leggibile dall'uomo che descrive o dà un nome all'oggetto. Può essere non univoco e non correlato a una gerarchia di nomi. Valore predefinito: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: L'attributo è utilizzato per lo scambio del codice EIC (Energy identification Code). La lunghezza della stringa è di 16 caratteri, come definito dal codice EIC. Riferimenti: Predefinito: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `mRID[number]`: Identificatore di risorsa master emesso da un'autorità di modello. L'mRID è unico a livello globale in un contesto di scambio. L'unicità globale si ottiene facilmente utilizzando un UUID, come specificato in RFC 4122, per l'mRID.  L'uso di UUID è fortemente consigliato. Per i file di dati CIMXML in sintassi RDF conforme a IEC 61970-552 Edizione 1, l'mRID è mappato agli attributi rdf:ID o rdf:about che identificano gli elementi degli oggetti CIM. Predefinito: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: Il nome è un testo libero leggibile dall'uomo e possibilmente non univoco, che dà il nome all'oggetto. Predefinito: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `shortName[number]`: L'attributo è utilizzato per lo scambio di un nome breve leggibile dall'uomo con una lunghezza massima di 12 caratteri. Predefinito: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo NGSI. Deve essere IdentifiedObject  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
@@ -128,7 +129,7 @@ IdentifiedObject:
         type: Property    
     description:    
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -327,10 +328,9 @@ IdentifiedObject:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''    
-      type: number    
+      description: The name of this item    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
@@ -387,11 +387,11 @@ IdentifiedObject:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
