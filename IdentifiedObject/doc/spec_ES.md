@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[number]`: La descripción es un texto libre legible por humanos que describe o nombra el objeto. Puede no ser único y no estar relacionado con una jerarquía de nombres. Por defecto: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: El atributo se utiliza para intercambiar el código EIC (Energy identification Code). La longitud de la cadena es de 16 caracteres definidos por el código EIC. Referencias: Por defecto: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `mRID[number]`: Identificador maestro de recursos emitido por una autoridad de modelo. El mRID es globalmente único dentro de un contexto de intercambio. La unicidad global se consigue fácilmente utilizando un UUID, como se especifica en el RFC 4122, para el mRID.  Se recomienda encarecidamente el uso de UUID. Para archivos de datos CIMXML en sintaxis RDF conforme a IEC 61970-552 Edición 1, el mRID se asigna a atributos rdf:ID o rdf:about que identifican elementos de objetos CIM. Por defecto: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: El nombre es cualquier texto libre legible por humanos y posiblemente no único que nombra al objeto. Por defecto: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shortName[number]`: El atributo se utiliza para intercambiar un nombre corto legible por humanos con una longitud máxima de 12 caracteres. Por defecto: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo NGSI. Tiene que ser IdentifiedObject  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -128,7 +129,7 @@ IdentifiedObject:
         type: Property    
     description:    
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -327,10 +328,9 @@ IdentifiedObject:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''    
-      type: number    
+      description: The name of this item    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
@@ -387,11 +387,11 @@ IdentifiedObject:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -399,7 +399,7 @@ IdentifiedObject:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
-No está disponible el ejemplo de un IdentifiedObject en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un IdentifiedObject en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No disponible el ejemplo de un IdentifiedObject en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 No está disponible el ejemplo de un IdentifiedObject en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 No disponible el ejemplo de un IdentifiedObject en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
