@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[number]`: 설명은 개체를 설명하거나 이름을 지정하는 사람이 읽을 수 있는 자유로운 텍스트입니다. 고유하지 않을 수 있으며 명명 계층 구조와 관련이 없을 수 있습니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: 이 속성은 EIC 코드(에너지 식별 코드)를 교환하는 데 사용됩니다. 문자열의 길이는 EIC 코드에 정의된 대로 16자입니다. 참조: 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `mRID[number]`: 모델 기관에서 발급한 마스터 리소스 식별자입니다. mRID는 거래소 컨텍스트 내에서 전 세계적으로 고유합니다. 글로벌 고유성은 mRID에 RFC 4122에 지정된 대로 UUID를 사용하면 쉽게 달성할 수 있습니다.  UUID 사용을 강력히 권장합니다. IEC 61970-552 Edition 1을 준수하는 RDF 구문으로 된 CIMXML 데이터 파일의 경우, mRID는 CIM 개체 요소를 식별하는 rdf:ID 또는 rdf:about 속성에 매핑됩니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: 이름은 사람이 읽을 수 있고 객체의 이름을 지정할 수 있는 고유하지 않은 텍스트입니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `shortName[number]`: 이 속성은 문자열 길이가 최대 12자인 사람이 읽을 수 있는 짧은 이름을 교환하는 데 사용됩니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 유형. 식별된 개체여야 합니다.  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[number]`: 설명은 개체를 설명하거나 이름을 지정하는 사람이 읽을 수 있는 자유로운 텍스트입니다. 고유하지 않을 수 있으며 명명 계층 구조와 관련이 없을 수 있습니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: 이 속성은 EIC 코드(에너지 식별 코드)의 교환에 사용됩니다. 문자열의 길이는 EIC 코드에 정의된 대로 16자입니다. 참조: 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `mRID[number]`: 모델 기관에서 발급한 마스터 리소스 식별자입니다. mRID는 거래소 컨텍스트 내에서 전 세계적으로 고유합니다. 글로벌 고유성은 mRID에 RFC 4122에 지정된 대로 UUID를 사용하면 쉽게 달성할 수 있습니다.  UUID 사용을 강력히 권장합니다. IEC 61970-552 Edition 1을 준수하는 RDF 구문으로 된 CIMXML 데이터 파일의 경우, mRID는 CIM 개체 요소를 식별하는 rdf:ID 또는 rdf:about 속성에 매핑됩니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: 이름은 사람이 읽을 수 있고 객체의 이름을 지정할 수 있는 고유하지 않은 텍스트입니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `shortName[number]`: 이 속성은 문자열 길이가 최대 12자인 사람이 읽을 수 있는 짧은 이름을 교환하는 데 사용됩니다. 기본값: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 유형. 식별된 개체여야 합니다.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 <!-- /35-RequiredProperties -->  
@@ -129,7 +129,7 @@ IdentifiedObject:
         type: Property    
     description:    
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -328,10 +328,9 @@ IdentifiedObject:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''    
-      type: number    
+      description: The name of this item    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
@@ -388,11 +387,11 @@ IdentifiedObject:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -408,7 +407,7 @@ IdentifiedObject:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
