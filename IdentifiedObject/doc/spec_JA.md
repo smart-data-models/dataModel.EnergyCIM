@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[number]`: 説明(description)は、オブジェクトを説明したり命名したりする、人間が読め る自由なテキストである。一意ではないかもしれませんし、命名階層に関連しないかもしれません。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: この属性は、EICコード（エネルギー識別コード）の交換に使用される。文字列の長さは、EICコードで定義された16文字です。参照：デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mRID[number]`: モデル機関が発行するマスターリソース識別子。mRIDは、交換コンテキスト内でグローバルに一意である。グローバルな一意性は、RFC 4122で規定されているUUIDをmRIDに使用することで容易に達成できる。  UUIDの使用を強く推奨する。IEC 61970-552 Edition 1に準拠したRDF構文のCIMXMLデータファイルでは、mRIDはCIMオブジェクト要素を識別するrdf:IDまたはrdf:about属性にマッピングされる。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: 名前は人間が読める自由なもので、オブジェクトの名前を示す一意でないテキストでもよい。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shortName[number]`: この属性は、文字列の長さが最大12文字で、人間が読める短い名前を交換するために使用されます。デフォルト: ''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: NGSIタイプ。IdentifiedObjectでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -128,7 +129,7 @@ IdentifiedObject:
         type: Property    
     description:    
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -327,10 +328,9 @@ IdentifiedObject:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''    
-      type: number    
+      description: The name of this item    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
@@ -387,11 +387,11 @@ IdentifiedObject:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
