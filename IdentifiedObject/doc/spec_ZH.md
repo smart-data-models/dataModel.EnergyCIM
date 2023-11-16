@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[number]`: 描述是描述或命名对象的自由人可读文本。它可以是非唯一的，也可以与命名层次无关。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: 该属性用于交换 EIC 代码（能源识别代码）。字符串长度为 EIC 代码规定的 16 个字符。参考：默认：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `mRID[number]`: 由示范机构发布的主资源标识符。mRID 在交换上下文中具有全局唯一性。使用 RFC 4122 中规定的 UUID 作为 mRID，很容易实现全球唯一性。  强烈建议使用 UUID。对于符合 IEC 61970-552 Edition 1 的 RDF 语法的 CIMXML 数据文件，mRID 被映射到标识 CIM 对象元素的 rdf:ID 或 rdf:about 属性。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: 名称是任何可自由读取的文本，可能是命名对象的非唯一文本。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `shortName[number]`: 该属性用于交换人可读的简短名称，字符串长度不超过 12 个字符。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 类型。必须是 IdentifiedObject  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[number]`: 描述是描述或命名对象的自由人可读文本。它可以是非唯一的，也可以与命名层次无关。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyIdentCodeEic[number]`: 该属性用于交换 EIC 代码（能源识别代码）。字符串长度为 EIC 代码规定的 16 个字符。参考：默认：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `mRID[number]`: 由示范机构发布的主资源标识符。mRID 在交换上下文中具有全局唯一性。使用 RFC 4122 中规定的 UUID 作为 mRID，很容易实现全球唯一性。  强烈建议使用 UUID。对于符合 IEC 61970-552 Edition 1 的 RDF 语法的 CIMXML 数据文件，mRID 被映射到标识 CIM 对象元素的 rdf:ID 或 rdf:about 属性。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[number]`: 名称是任何可自由读取的文本，可能是命名对象的非唯一文本。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `shortName[number]`: 该属性用于交换人可读的简短名称，字符串长度不超过 12 个字符。默认值：''  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 类型。必须是 IdentifiedObject  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 <!-- /35-RequiredProperties -->  
@@ -128,7 +129,7 @@ IdentifiedObject:
         type: Property    
     description:    
       description: 'The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy. Default: '''''    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -327,10 +328,9 @@ IdentifiedObject:
         model: https://schema.org/Number    
         type: Property    
     name:    
-      description: 'The name is any free human readable and possibly non unique text naming the object. Default: '''''    
-      type: number    
+      description: The name of this item    
+      type: string    
       x-ngsi:    
-        model: https://schema.org/Number    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
@@ -387,11 +387,11 @@ IdentifiedObject:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/IdentifiedObject/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/IdentifiedObject/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
