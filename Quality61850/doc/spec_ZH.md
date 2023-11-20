@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `badReference[number]`: 测量值可能因参照物超出校准范围而不正确。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `estimatorReplaced[number]`: EstimatorReplaced 不是 IEC61850 的质量位，但为了方便起见放在了这个类中。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `failure[number]`: 该标识符表示监控功能检测到内部或外部故障，如通信故障。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `oldData[number]`: 测量值已过期，可能无效，因为在指定时间间隔内未成功更新。默认值假  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatorBlocked[number]`: 测量值被阻止，因此无法传输。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `oscillatory[number]`: 为防止通信过载，最好检测并抑制振荡（快速变化）的二进制输入。如果信号在规定时间（tosc）内同方向变化两次（从 0 到 1 或从 1 到 0），则会检测到振荡，并设置细节质量标识符 "振荡"。如果检测到振荡，则可通过配置的瞬态变化次数。在此期间，将设置有效状态 "可质疑"。如果经过一定次数的变化后，信号仍处于振荡状态，则该值将被设置为与先前稳定值相反的状态，或设置为定义的默认值。在这种情况下，只要信号处于振荡状态，就会重置 "有问题 "的有效性状态，并设置 "无效"。如果配置为不通过瞬态变化，则除了详细质量标识符 "振荡"（仅用于状态信息）外，还会立即设置有效性状态 "无效"。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `outOfRange[number]`: 测量值超出预定义值范围。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `overFlow[number]`: 测量值超出了正确表示的能力。例如，计数器值从最大计数溢出回到零值。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[number]`: 来源提供与数值来源有关的信息。该值可以从流程中获取、默认或替换。默认值无  . Model: [https://schema.org/Number](https://schema.org/Number)- `suspect[number]`: 相关函数检测到该值与其他值不一致。通常由网络状态估计器设置。默认值假  . Model: [https://schema.org/Number](https://schema.org/Number)- `test[number]`: 为测试目的传输测量值。默认值：假  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI 类型。必须是 Quality61850  - `validity[number]`: 测量值的有效性。默认值：无  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -396,7 +397,7 @@ Quality61850:
         type: Property    
     source:    
       description: 'Source gives information related to the origin of a value. The value may be acquired from the process, defaulted or substituted. Default: None'    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -428,7 +429,7 @@ Quality61850:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Quality61850/schema.json    
   x-model-tags: ""    
