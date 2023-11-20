@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `badReference[number]`: リファレンスが校正されていないため、測定値が正しくない可能性がある。デフォルト：デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `estimatorReplaced[number]`: estimatorReplaced は IEC61850 の品質ビットではないが、便宜上このクラスに入れた。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `failure[number]`: この識別子は、監視機能が内部または外部の障害（通信障害など）を検出したことを示す。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `oldData[number]`: 測定値は古く、指定された時間間隔の間に正常に更新されていないため、無効である可能性があります。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `operatorBlocked[number]`: 測定値がブロックされ、送信できない。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `oscillatory[number]`: 通信の過負荷を防ぐために、振動する(変化の速い)バイナリ入力を検出して抑制することが賢明である。もし信号が定義された時間(tosc)内に同じ方向(0から1または1から0)に2回変化すると、振動が検出され、詳細品質識別子`oscillatory`が設定されます。これが検出されると、設定された数の過渡変化が経過する。この間に有効性ステータス`questionable`が設定される。この設定された回数の変化の後、信号がまだ振動状態にある場合、その値は前の安定した値 の反対の状態に設定されるか、定義されたデフォルト値に設定される。この場合、信号が発振している限り、有効性ステータス `questionable` はリセットされ、`invalid` が設定される。過渡的な変化を通過させないように設定されている場合は、詳細品質識別子 `oscillatory` (ステータス情報のみに使用) に加えて、有効性ステータス `invalid` が即座に設定されます。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `outOfRange[number]`: 測定値があらかじめ定義された値の範囲を超えている。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `overFlow[number]`: 測定値が適切に表現できる能力を超えている。例えば、カウンタ値が最大カウントからオーバーフローして0に戻る。デフォルトはFalse  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[number]`: ソース（Source）は、値の起源に関連する情報を提供する。値は、プロセスから取得したもの、デフォルトのもの、または代用されたものである可能性があります。デフォルトはなし  . Model: [https://schema.org/Number](https://schema.org/Number)- `suspect[number]`: 相関関数は、値が他の値と一致しないことを検出した。通常、ネットワーク状態推定器によって設定される。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `test[number]`: 測定値はテスト用に送信されます。デフォルト：False  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSIタイプ。Quality61850でなければならない。  - `validity[number]`: 測定値の妥当性。デフォルト：なし  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -396,7 +397,7 @@ Quality61850:
         type: Property    
     source:    
       description: 'Source gives information related to the origin of a value. The value may be acquired from the process, defaulted or substituted. Default: None'    
-      type: number    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
@@ -428,7 +429,7 @@ Quality61850:
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.EnergyCIM/blob/master/Quality61850/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Quality61850/schema.json    
   x-model-tags: ""    
