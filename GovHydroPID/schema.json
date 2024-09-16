@@ -1,160 +1,145 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroPID/schema.json",
-    "title": " Smart Data Models - GovHydroPID",
-    "description": "Adapted from CIM data models. PID governor and turbine.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.3.4",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
+  "title": "Weather Observed schema - Smart Data Models",
+  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WeatherObserved"
+          ],
+          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "dateObserved": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "GovHydroPID"
-                    ],
-                    "description": "Property. NGSI type. It has to be GovHydroPID"
-                },
-                "aturb": {
-                    "description": "Property. Model:'https://schema.org/Number'. Turbine numerator multiplier (Aturb) (note 3).  Typical Value -1. Default: 0.0",
-                    "type": "number"
-                },
-                "bturb": {
-                    "description": "Property. Model:'https://schema.org/Number'. Turbine denominator multiplier (Bturb) (note 3).  Typical Value = 0.5. Default: 0.0",
-                    "type": "number"
-                },
-                "db1": {
-                    "description": "Property. Model:'https://schema.org/Number'. Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "db2": {
-                    "description": "Property. Model:'https://schema.org/Number'. Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "eps": {
-                    "description": "Property. Model:'https://schema.org/Number'. Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "gv1": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU gv (Gv1).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "gv2": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU gv (Gv2).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "gv3": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU gv (Gv3).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "gv4": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "gv5": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "gv6": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "inputSignal": {
-                    "description": "Property. Model:'https://schema.org/Number'. Input signal switch (Flag).  true = Pe input is used false = feedback is received from CV. Flag is normally dependent on Tt.  If Tf is zero, Flag is set to false. If Tf is not zero, Flag is set to true.  Typical Value = true. Default: False",
-                    "type": "number"
-                },
-                "kd": {
-                    "description": "Property. Model:'https://schema.org/Number'. Derivative gain (Kd).  Typical Value = 1.11. Default: 0.0",
-                    "type": "number"
-                },
-                "kg": {
-                    "description": "Property. Model:'https://schema.org/Number'. Gate servo gain (Kg).  Typical Value = 2.5. Default: 0.0",
-                    "type": "number"
-                },
-                "ki": {
-                    "description": "Property. Model:'https://schema.org/Number'. Integral gain (Ki).  Typical Value = 0.36. Default: 0.0",
-                    "type": "number"
-                },
-                "kp": {
-                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain (Kp).  Typical Value = 0.1. Default: 0.0",
-                    "type": "number"
-                },
-                "mwbase": {
-                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
-                    "type": "number"
-                },
-                "pgv1": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU power (Pgv1).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "pgv2": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU power (Pgv2).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "pgv3": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU power (Pgv3).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "pgv4": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU power (Pgv4).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "pgv5": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "pgv6": {
-                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 6, PU power (Pgv6).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "pmax": {
-                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening, PU of MWbase (Pmax).  Typical Value = 1. Default: 0.0",
-                    "type": "number"
-                },
-                "pmin": {
-                    "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening, PU of MWbase (Pmin).  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "r": {
-                    "description": "Property. Model:'https://schema.org/Number'. Steady state droop (R).  Typical Value = 0.05. Default: 0.0",
-                    "type": "number"
-                },
-                "td": {
-                    "description": "Property. Model:'https://schema.org/Number'. Input filter time constant (Td).  Typical Value = 0. Default: 0",
-                    "type": "number"
-                },
-                "tf": {
-                    "description": "Property. Model:'https://schema.org/Number'. Washout time constant (Tf).  Typical Value = 0.1. Default: 0",
-                    "type": "number"
-                },
-                "tp": {
-                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tp).  Typical Value = 0.35. Default: 0",
-                    "type": "number"
-                },
-                "tt": {
-                    "description": "Property. Model:'https://schema.org/Number'. Power feedback time constant (Tt).  Typical Value = 0.02. Default: 0",
-                    "type": "number"
-                },
-                "tturb": {
-                    "description": "Property. Model:'https://schema.org/Number'. Turbine time constant (Tturb) (note 3).  Typical Value = 0.8. Default: 0",
-                    "type": "number"
-                },
-                "velcl": {
-                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.14. Default: 0.0",
-                    "type": "number"
-                },
-                "velop": {
-                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening velocity (Velop).  Unit = PU/sec.  Typical Value = 0.09. Default: 0.0",
-                    "type": "number"
-                }
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+        },
+        "solarRadiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+        },
+        "directIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+        },
+        "diffuseIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+        },
+        "pressureTendency": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "falling",
+                "raising",
+                "steady"
+              ]
+            },
+            {
+              "type": "number"
             }
+          ],
+          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+        },
+        "dewPoint": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+        },
+        "refDevice": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
+        },
+        "streamGauge": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+        },
+        "snowHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+        },
+        "uVIndexMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+        },
+        "aqiMajorPollutant": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
+        },
+        "aqiMajorPollutantForecast": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
+        },
+        "precipitationForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
+        },
+        "airQualityIndex": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
+        },
+        "relativeHumidityForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
+        },
+        "airQualityIndexForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureTSA": {
+          "type": "object",
+          "description": "Property. Air temperature time series aggregation",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-    ]
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "dateObserved",
+    "location"
+  ]
 }
