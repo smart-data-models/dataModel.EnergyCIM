@@ -1,84 +1,145 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/SynchronousMachineTimeConstantReactance/schema.json",
-    "title": " Smart Data Models - SynchronousMachineTimeConstantReactance",
-    "description": "Adapted from CIM data models. Synchronous machine detailed modelling types are defined by the combination of the attributes SynchronousMachineTimeConstantReactance.modelType and SynchronousMachineTimeConstantReactance.rotorType.     The parameters used for models expressed in time constant reactance form include:",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.3.4",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
+  "title": "Weather Observed schema - Smart Data Models",
+  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WeatherObserved"
+          ],
+          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "dateObserved": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "SynchronousMachineTimeConstantReactance"
-                    ],
-                    "description": "Property. NGSI type. It has to be SynchronousMachineTimeConstantReactance"
-                },
-                "ks": {
-                    "description": "Property. Model:'https://schema.org/Number'. Saturation loading correction factor (Ks) (>= 0).  Used only by Type J model.  Typical Value = 0. Default: 0.0",
-                    "type": "number"
-                },
-                "modelType": {
-                    "description": "Property. Model:'https://schema.org/Number'. Type of synchronous machine model used in Dynamic simulation applications. Default: None",
-                    "type": "number"
-                },
-                "rotorType": {
-                    "description": "Property. Model:'https://schema.org/Number'. Type of rotor on physical machine. Default: None",
-                    "type": "number"
-                },
-                "tc": {
-                    "description": "Property. Model:'https://schema.org/Number'. Damping time constant for `Canay` reactance.  Typical Value = 0. Default: 0",
-                    "type": "number"
-                },
-                "tpdo": {
-                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis transient rotor time constant (T`do) (> T``do).  Typical Value = 5. Default: 0",
-                    "type": "number"
-                },
-                "tppdo": {
-                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient rotor time constant (T``do) (> 0).  Typical Value = 0.03. Default: 0",
-                    "type": "number"
-                },
-                "tppqo": {
-                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis subtransient rotor time constant (T``qo) (> 0). Typical Value = 0.03. Default: 0",
-                    "type": "number"
-                },
-                "tpqo": {
-                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis transient rotor time constant (T`qo) (> T``qo). Typical Value = 0.5. Default: 0",
-                    "type": "number"
-                },
-                "xDirectSubtrans": {
-                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis subtransient reactance (unsaturated) (X``d) (> Xl).  Typical Value = 0.2. Default: 0.0",
-                    "type": "number"
-                },
-                "xDirectSync": {
-                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis synchronous reactance (Xd) (>= X`d). The quotient of a sustained value of that AC component of armature voltage that is produced by the total direct-axis flux due to direct-axis armature current and the value of the AC component of this current, the machine running at rated speed. Typical Value = 1.8. Default: 0.0",
-                    "type": "number"
-                },
-                "xDirectTrans": {
-                    "description": "Property. Model:'https://schema.org/Number'. Direct-axis transient reactance (unsaturated) (X`d) (> =X``d).  Typical Value = 0.5. Default: 0.0",
-                    "type": "number"
-                },
-                "xQuadSubtrans": {
-                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis subtransient reactance (X``q) (> Xl).  Typical Value = 0.2. Default: 0.0",
-                    "type": "number"
-                },
-                "xQuadSync": {
-                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis synchronous reactance (Xq) (> =X`q). The ratio of the component of reactive armature voltage, due to the quadrature-axis component of armature current, to this component of current, under steady state conditions and at rated frequency.  Typical Value = 1.6. Default: 0.0",
-                    "type": "number"
-                },
-                "xQuadTrans": {
-                    "description": "Property. Model:'https://schema.org/Number'. Quadrature-axis transient reactance (X`q) (> =X``q).  Typical Value = 0.3. Default: 0.0",
-                    "type": "number"
-                }
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+        },
+        "solarRadiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+        },
+        "directIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+        },
+        "diffuseIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+        },
+        "pressureTendency": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "falling",
+                "raising",
+                "steady"
+              ]
+            },
+            {
+              "type": "number"
             }
+          ],
+          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+        },
+        "dewPoint": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+        },
+        "refDevice": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
+        },
+        "streamGauge": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+        },
+        "snowHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+        },
+        "uVIndexMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+        },
+        "aqiMajorPollutant": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
+        },
+        "aqiMajorPollutantForecast": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
+        },
+        "precipitationForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
+        },
+        "airQualityIndex": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
+        },
+        "relativeHumidityForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
+        },
+        "airQualityIndexForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureTSA": {
+          "type": "object",
+          "description": "Property. Air temperature time series aggregation",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-    ]
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "dateObserved",
+    "location"
+  ]
 }
