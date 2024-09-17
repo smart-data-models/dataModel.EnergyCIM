@@ -1,145 +1,232 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovSteamFV4/schema.json",
+    "title": " Smart Data Models - GovSteamFV4",
+    "description": "Adapted from CIM data models. Detailed electro-hydraulic governor for steam unit.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "precipitation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
-        },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovSteamFV4"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovSteamFV4"
+                },
+                "cpsmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value of pressure regulator output (Cpsmn).  Typical Value = -1. Default: 0.0",
+                    "type": "number"
+                },
+                "cpsmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum value of pressure regulator output (Cpsmx).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "crmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value of regulator set-point (Crmn).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "crmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum value of regulator set-point (Crmx).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "kdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative gain of pressure regulator (Kdc).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kf1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency bias (reciprocal of droop) (Kf1).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "kf3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Frequency control (reciprocal of droop) (Kf3).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "khp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fraction  of total turbine output generated by HP part (Khp).  Typical Value = 0.35. Default: 0.0",
+                    "type": "number"
+                },
+                "kic": {
+                    "description": "Property. Model:'https://schema.org/Number'. Integral gain of pressure regulator (Kic).  Typical Value = 0.0033. Default: 0.0",
+                    "type": "number"
+                },
+                "kip": {
+                    "description": "Property. Model:'https://schema.org/Number'. Integral gain of pressure feedback regulator (Kip).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kit": {
+                    "description": "Property. Model:'https://schema.org/Number'. Integral gain of electro-hydraulic regulator (Kit).  Typical Value = 0.04. Default: 0.0",
+                    "type": "number"
+                },
+                "kmp1": {
+                    "description": "Property. Model:'https://schema.org/Number'. First gain coefficient of  intercept valves characteristic (Kmp1).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kmp2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Second gain coefficient of intercept valves characteristic (Kmp2).  Typical Value = 3.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kpc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain of pressure regulator (Kpc).  Typical Value = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "kpp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain of pressure feedback regulator (Kpp).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kpt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Proportional gain of electro-hydraulic regulator (Kpt).  Typical Value = 0.3. Default: 0.0",
+                    "type": "number"
+                },
+                "krc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum variation of fuel flow (Krc).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "ksh": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pressure loss due to flow friction in the boiler tubes (Ksh).  Typical Value = 0.08. Default: 0.0",
+                    "type": "number"
+                },
+                "lpi": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum negative power error (Lpi).  Typical Value = -0.15. Default: 0.0",
+                    "type": "number"
+                },
+                "lps": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum positive power error (Lps).  Typical Value = 0.03. Default: 0.0",
+                    "type": "number"
+                },
+                "mnef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lower limit for frequency correction (MN).  Typical Value = -0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "mxef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Upper limit for frequency correction (MX).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "pr1": {
+                    "description": "Property. Model:'https://schema.org/Number'. First value of pressure set point static characteristic (Pr1).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "pr2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Second value of pressure set point static characteristic, corresponding to Ps0 = 1.0 PU (Pr2).  Typical Value = 0.75. Default: 0.0",
+                    "type": "number"
+                },
+                "psmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value of pressure set point static characteristic (Psmn).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "rsmimn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value of integral regulator (Rsmimn).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "rsmimx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum value of integral regulator (Rsmimx).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "rvgmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum value of integral regulator (Rvgmn).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "rvgmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum value of integral regulator (Rvgmx).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "srmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum valve opening (Srmn).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "srmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum valve opening (Srmx).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "srsmp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intercept valves characteristic discontinuity point (Srsmp).  Typical Value = 0.43. Default: 0.0",
+                    "type": "number"
+                },
+                "svmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum regulator gate closing velocity (Svmn).  Typical Value = -0.0333. Default: 0.0",
+                    "type": "number"
+                },
+                "svmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum regulator gate opening velocity (Svmx).  Typical Value = 0.0333. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Control valves rate opening time (Ta).  Typical Value = 0.8. Default: 0",
+                    "type": "number"
+                },
+                "tam": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intercept valves rate opening time (Tam).  Typical Value = 0.8. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Control valves rate closing time (Tc).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tcm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intercept valves rate closing time (Tcm).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tdc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative time constant of pressure regulator (Tdc).  Typical Value = 90. Default: 0",
+                    "type": "number"
+                },
+                "tf1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of fuel regulation (Tf1).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "tf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of steam chest (Tf2).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "thp": {
+                    "description": "Property. Model:'https://schema.org/Number'. High pressure (HP) time constant of the turbine (Thp).  Typical Value = 0.15. Default: 0",
+                    "type": "number"
+                },
+                "tmp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Low pressure (LP) time constant of the turbine (Tmp).  Typical Value = 0.4. Default: 0",
+                    "type": "number"
+                },
+                "trh": {
+                    "description": "Property. Model:'https://schema.org/Number'. Reheater  time constant of the turbine (Trh).  Typical Value = 10. Default: 0",
+                    "type": "number"
+                },
+                "tv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Boiler time constant (Tv).  Typical Value = 60. Default: 0",
+                    "type": "number"
+                },
+                "ty": {
+                    "description": "Property. Model:'https://schema.org/Number'. Control valves servo time constant (Ty).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "y": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient of linearized equations of turbine (Stodola formulation) (Y).  Typical Value = 0.13. Default: 0.0",
+                    "type": "number"
+                },
+                "yhpmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum control valve position (Yhpmn).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "yhpmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum control valve position (Yhpmx).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "ympmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum intercept valve position (Ympmn).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "ympmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum intercept valve position (Ympmx).  Typical Value = 1.1. Default: 0.0",
+                    "type": "number"
+                }
             }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+    ]
 }
