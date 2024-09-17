@@ -1,145 +1,172 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcREXS/schema.json",
+    "title": " Smart Data Models - ExcREXS",
+    "description": "Adapted from CIM data models. General Purpose Rotating Excitation System Model.  This model can be used to represent a wide range of excitation systems whose DC power source is an AC or DC generator. It encompasses IEEE type AC1, AC2, DC1, and DC2 excitation system models.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "precipitation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
-        },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcREXS"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcREXS"
+                },
+                "e1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage value 1 (E1).  Typical Value = 3. Default: 0.0",
+                    "type": "number"
+                },
+                "e2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage value 2 (E2).  Typical Value = 4. Default: 0.0",
+                    "type": "number"
+                },
+                "fbf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback signal flag (Fbf). Typical Value = fieldCurrent. Default: None",
+                    "type": "number"
+                },
+                "flimf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Limit type flag (Flimf).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier regulation factor (Kc).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter regulation factor (Kd).  Typical Value = 2. Default: 0.0",
+                    "type": "number"
+                },
+                "ke": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter field proportional constant (Ke).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kefd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage feedback gain (Kefd).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback gain (Kf).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "kh": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage controller feedback gain (Kh).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kii": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field Current Regulator Integral Gain (Kii).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kip": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field Current Regulator Proportional Gain (Kip).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "ks": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient to allow different usage of the model-speed coefficient (Ks).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kvi": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage Regulator Integral Gain (Kvi).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kvp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage Regulator Proportional Gain (Kvp).  Typical Value = 2800. Default: 0.0",
+                    "type": "number"
+                },
+                "kvphz": {
+                    "description": "Property. Model:'https://schema.org/Number'. V/Hz limiter gain (Kvphz).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "nvphz": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pickup speed of V/Hz limiter (Nvphz).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "se1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E1 (Se1).  Typical Value = 0.0001. Default: 0.0",
+                    "type": "number"
+                },
+                "se2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Saturation factor at E2 (Se2).  Typical Value = 0.001. Default: 0.0",
+                    "type": "number"
+                },
+                "ta": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage Regulator time constant (Ta).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "tb1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (Tb1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tb2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lag time constant (Tb2).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tc1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (Tc1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tc2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Lead time constant (Tc2).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter field time constant (Te).  Typical Value = 1.2. Default: 0",
+                    "type": "number"
+                },
+                "tf": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate feedback time constant (Tf).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "tf1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback lead time constant (Tf1).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tf2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback lag time constant (Tf2).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field current Bridge time constant (Tp).  Typical Value = 0. Default: 0",
+                    "type": "number"
+                },
+                "vcmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum compounding voltage (Vcmax).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "vfmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum Exciter Field Current (Vfmax).  Typical Value = 47. Default: 0.0",
+                    "type": "number"
+                },
+                "vfmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum Exciter Field Current (Vfmin).  Typical Value = -20. Default: 0.0",
+                    "type": "number"
+                },
+                "vimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage Regulator Input Limit (Vimax).  Typical Value = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum controller output (Vrmax).  Typical Value = 47. Default: 0.0",
+                    "type": "number"
+                },
+                "vrmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum controller output (Vrmin).  Typical Value = -20. Default: 0.0",
+                    "type": "number"
+                },
+                "xc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter compounding reactance (Xc).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                }
             }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+    ]
 }
