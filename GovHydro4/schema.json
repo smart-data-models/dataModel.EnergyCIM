@@ -1,145 +1,180 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydro4/schema.json",
+    "title": " Smart Data Models - GovHydro4",
+    "description": "Adapted from CIM data models. Hydro turbine and governor. Represents plants with straight-forward penstock configurations and hydraulic governors of traditional 'dashpot' type.  This model can be used to represent simple, Francis, Pelton or Kaplan turbines.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "precipitation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
-        },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydro4"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydro4"
+                },
+                "at": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine gain (At).  Typical Value = 1.2. Default: 0.0",
+                    "type": "number"
+                },
+                "bgv0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kaplan blade servo point 0 (Bgv0).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "bgv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kaplan blade servo point 1 (Bgv1).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "bgv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kaplan blade servo point 2 (Bgv2). Typical Value = 0.  Typical Value Francis = 0, Kaplan = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "bgv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kaplan blade servo point 3 (Bgv3). Typical Value = 0.  Typical Value Francis = 0, Kaplan = 0.667. Default: 0.0",
+                    "type": "number"
+                },
+                "bgv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kaplan blade servo point 4 (Bgv4).  Typical Value = 0.  Typical Value Francis = 0, Kaplan = 0.9. Default: 0.0",
+                    "type": "number"
+                },
+                "bgv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Kaplan blade servo point 5 (Bgv5). Typical Value = 0.  Typical Value Francis = 0, Kaplan = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "bmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum blade adjustment factor (Bmax). Typical Value = 0.  Typical Value Francis = 0, Kaplan = 1.1276. Default: 0.0",
+                    "type": "number"
+                },
+                "db1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional deadband width (db1).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "db2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "dturb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Typical Value = 0.5.  Typical Value Francis = 1.1, Kaplan = 1.1. Default: 0.0",
+                    "type": "number"
+                },
+                "eps": {
+                    "description": "Property. Model:'https://schema.org/Number'. Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening, PU of MWbase (Gmax).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "gmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum gate opening, PU of MWbase (Gmin).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "gv0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 0, PU gv (Gv0). Typical Value = 0.  Typical Value Francis = 0.1, Kaplan = 0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "gv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU gv (Gv1). Typical Value = 0.  Typical Value Francis = 0.4, Kaplan = 0.4. Default: 0.0",
+                    "type": "number"
+                },
+                "gv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU gv (Gv2). Typical Value = 0.  Typical Value Francis = 0.5, Kaplan = 0.5. Default: 0.0",
+                    "type": "number"
+                },
+                "gv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU gv (Gv3). Typical Value = 0.  Typical Value Francis = 0.7, Kaplan = 0.7. Default: 0.0",
+                    "type": "number"
+                },
+                "gv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU gv (Gv4). Typical Value = 0.  Typical Value Francis = 0.8, Kaplan = 0.8. Default: 0.0",
+                    "type": "number"
+                },
+                "gv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU gv (Gv5). Typical Value = 0.  Typical Value Francis = 0.9, Kaplan = 0.9. Default: 0.0",
+                    "type": "number"
+                },
+                "hdam": {
+                    "description": "Property. Model:'https://schema.org/Number'. Head available at dam (hdam).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv0": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 0, PU power (Pgv0).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 1, PU power (Pgv1). Typical Value = 0.  Typical Value Francis = 0.42, Kaplan = 0.35. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 2, PU power (Pgv2). Typical Value = 0.  Typical Value Francis = 0.56, Kaplan = 0.468. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 3, PU power (Pgv3). Typical Value = 0.  Typical Value Francis = 0.8, Kaplan = 0.796. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 4, PU power (Pgv4). Typical Value = 0.  Typical Value Francis = 0.9, Kaplan = 0.917. Default: 0.0",
+                    "type": "number"
+                },
+                "pgv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Nonlinear gain point 5, PU power (Pgv5).  Typical Value = 0.  Typical Value Francis = 0.97, Kaplan = 0.99. Default: 0.0",
+                    "type": "number"
+                },
+                "qn1": {
+                    "description": "Property. Model:'https://schema.org/Number'. No-load flow at nominal head (Qnl). Typical Value = 0.08.  Typical Value Francis = 0, Kaplan = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "rperm": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop (Rperm).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "rtemp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temporary droop (Rtemp).  Typical Value = 0.3. Default: 0",
+                    "type": "number"
+                },
+                "tblade": {
+                    "description": "Property. Model:'https://schema.org/Number'. Blade servo time constant (Tblade).  Typical Value = 100. Default: 0",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate servo time constant (Tg) (>0).  Typical Value = 0.5. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pilot servo time constant (Tp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Dashpot time constant (Tr) (>0).  Typical Value = 5. Default: 0",
+                    "type": "number"
+                },
+                "tw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0).  Typical Value = 1. Default: 0",
+                    "type": "number"
+                },
+                "uc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Max gate closing velocity (Uc).  Typical Value = 0.2. Default: 0.0",
+                    "type": "number"
+                },
+                "uo": {
+                    "description": "Property. Model:'https://schema.org/Number'. Max gate opening velocity (Uo).  Typical Vlaue = 0.2. Default: 0.0",
+                    "type": "number"
+                }
             }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+    ]
 }
