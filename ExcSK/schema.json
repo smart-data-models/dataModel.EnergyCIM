@@ -1,145 +1,156 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/ExcSK/schema.json",
+    "title": " Smart Data Models - ExcSK",
+    "description": "Adapted from CIM data models. Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "precipitation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
-        },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "ExcSK"
+                    ],
+                    "description": "Property. NGSI type. It has to be ExcSK"
+                },
+                "efdmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage clipping limit (Efdmax). Default: 0.0",
+                    "type": "number"
+                },
+                "efdmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Field voltage clipping limit (Efdmin). Default: 0.0",
+                    "type": "number"
+                },
+                "emax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum field voltage output (Emax).  Typical Value = 20. Default: 0.0",
+                    "type": "number"
+                },
+                "emin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum field voltage output (Emin).  Typical Value = -20. Default: 0.0",
+                    "type": "number"
+                },
+                "k": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain (K).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "k1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Parameter of underexcitation limit (K1).  Typical Value = 0.1364. Default: 0.0",
+                    "type": "number"
+                },
+                "k2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Parameter of underexcitation limit (K2).  Typical Value = -0.3861. Default: 0.0",
+                    "type": "number"
+                },
+                "kc": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kc).  Typical Value = 70. Default: 0.0",
+                    "type": "number"
+                },
+                "kce": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rectifier regulation factor (Kce).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exciter internal reactance (Kd).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kgob": {
+                    "description": "Property. Model:'https://schema.org/Number'. P controller gain (Kgob).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kp).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "kqi": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain of integral component (Kqi).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kqob": {
+                    "description": "Property. Model:'https://schema.org/Number'. Rate of rise of the reactive power (Kqob). Default: 0.0",
+                    "type": "number"
+                },
+                "kqp": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller gain (Kqp).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "nq": {
+                    "description": "Property. Model:'https://schema.org/Number'. Dead band of reactive power (nq).  Determines the range of sensitivity.  Typical Value = 0.001. Default: 0.0",
+                    "type": "number"
+                },
+                "qconoff": {
+                    "description": "Property. Model:'https://schema.org/Number'. Secondary voltage control state (Qc_on_off). true = secondary voltage control is ON false = secondary voltage control is OFF. Typical Value = false. Default: False",
+                    "type": "number"
+                },
+                "qz": {
+                    "description": "Property. Model:'https://schema.org/Number'. Desired value (setpoint) of reactive power, manual setting (Qz). Default: 0.0",
+                    "type": "number"
+                },
+                "remote": {
+                    "description": "Property. Model:'https://schema.org/Number'. Selector to apply automatic calculation in secondary controller model. true = automatic calculation is activated false = manual set is active; the use of desired value of reactive power (Qz) is required. Typical Value = true. Default: False",
+                    "type": "number"
+                },
+                "sbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Apparent power of the unit (Sbase).  Unit = MVA.  Typical Value = 259. Default: 0.0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller phase lead time constant (Tc).  Typical Value = 8. Default: 0",
+                    "type": "number"
+                },
+                "te": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of gain block (Te).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "ti": {
+                    "description": "Property. Model:'https://schema.org/Number'. PI controller phase lead time constant (Ti).  Typical Value = 2. Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant (Tp).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tr": {
+                    "description": "Property. Model:'https://schema.org/Number'. Voltage transducer time constant (Tr).  Typical Value = 0.01. Default: 0",
+                    "type": "number"
+                },
+                "uimax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum error (Uimax).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "uimin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum error (UImin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "urmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum controller output (URmax).  Typical Value = 10. Default: 0.0",
+                    "type": "number"
+                },
+                "urmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum controller output (URmin).  Typical Value = -10. Default: 0.0",
+                    "type": "number"
+                },
+                "vtmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum terminal voltage input (Vtmax).  Determines the range of voltage dead band.  Typical Value = 1.05. Default: 0.0",
+                    "type": "number"
+                },
+                "vtmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum terminal voltage input (Vtmin).  Determines the range of voltage dead band.  Typical Value = 0.95. Default: 0.0",
+                    "type": "number"
+                },
+                "yp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum output (Yp).  Minimum output = 0.  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                }
             }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+    ]
 }
