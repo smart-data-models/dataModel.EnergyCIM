@@ -1,145 +1,112 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovGAST3/schema.json",
+    "title": " Smart Data Models - GovGAST3",
+    "description": "Adapted from CIM data models. Generic turbogas with acceleration and temperature controller.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "precipitation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
-        },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovGAST3"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovGAST3"
+                },
+                "bca": {
+                    "description": "Property. Model:'https://schema.org/Number'. Acceleration limit set-point (Bca).  Unit = 1/s.  Typical Value = 0.01. Default: 0.0",
+                    "type": "number"
+                },
+                "bp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Droop (bp).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "dtc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Exhaust temperature variation due to fuel flow increasing from 0 to 1 PU (deltaTc).  Typical Value = 390. Default: 0.0",
+                    "type": "number"
+                },
+                "ka": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum fuel flow (Ka).  Typical Value = 0.23. Default: 0.0",
+                    "type": "number"
+                },
+                "kac": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel system feedback (K).  Typical Value = 0. Default: 0.0",
+                    "type": "number"
+                },
+                "kca": {
+                    "description": "Property. Model:'https://schema.org/Number'. Acceleration control integral gain (Kca). Unit = 1/s.  Typical Value = 100. Default: 0.0",
+                    "type": "number"
+                },
+                "ksi": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gain of radiation shield (Ksi).  Typical Value = 0.8. Default: 0.0",
+                    "type": "number"
+                },
+                "ky": {
+                    "description": "Property. Model:'https://schema.org/Number'. Coefficient of transfer function of fuel valve positioner (Ky).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "mnef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum negative error value (MN).  Typical Value = -0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "mxef": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel flow maximum positive error value (MX).  Typical Value = 0.05. Default: 0.0",
+                    "type": "number"
+                },
+                "rcmn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum fuel flow (RCMN).  Typical Value = -0.1. Default: 0.0",
+                    "type": "number"
+                },
+                "rcmx": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum fuel flow (RCMX).  Typical Value = 1. Default: 0.0",
+                    "type": "number"
+                },
+                "tac": {
+                    "description": "Property. Model:'https://schema.org/Number'. Fuel control time constant (Tac).  Typical Value = 0.1. Default: 0",
+                    "type": "number"
+                },
+                "tc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Compressor discharge volume time constant (Tc).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature controller derivative gain (Td).  Typical Value = 3.3. Default: 0",
+                    "type": "number"
+                },
+                "tfen": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine rated exhaust temperature correspondent to Pm=1 PU (Tfen).  Typical Value = 540. Default: 0.0",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of speed governor (Tg).  Typical Value = 0.05. Default: 0",
+                    "type": "number"
+                },
+                "tsi": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of radiation shield (Tsi).  Typical Value = 15. Default: 0",
+                    "type": "number"
+                },
+                "tt": {
+                    "description": "Property. Model:'https://schema.org/Number'. Temperature controller integration rate (Tt).  Typical Value = 250. Default: 0.0",
+                    "type": "number"
+                },
+                "ttc": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of thermocouple (Ttc).  Typical Value = 2.5. Default: 0",
+                    "type": "number"
+                },
+                "ty": {
+                    "description": "Property. Model:'https://schema.org/Number'. Time constant of fuel valve positioner (Ty).  Typical Value = 0.2. Default: 0",
+                    "type": "number"
+                }
             }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+    ]
 }
