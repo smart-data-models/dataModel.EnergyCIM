@@ -1,145 +1,232 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.4",
-  "modelTags": "IUDX",
-  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
-  "title": "Weather Observed schema - Smart Data Models",
-  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "WeatherObserved"
-          ],
-          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/GovHydroWEH/schema.json",
+    "title": " Smart Data Models - GovHydroWEH",
+    "description": "Adapted from CIM data models. Woodward Electric Hydro Governor Model.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "dateObserved": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "precipitation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
-        },
-        "solarRadiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
-        },
-        "directIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
-        },
-        "diffuseIrradiation": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
-        },
-        "pressureTendency": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "falling",
-                "raising",
-                "steady"
-              ]
-            },
-            {
-              "type": "number"
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "GovHydroWEH"
+                    ],
+                    "description": "Property. NGSI type. It has to be GovHydroWEH"
+                },
+                "db": {
+                    "description": "Property. Model:'https://schema.org/Number'. Speed Dead Band (db). Default: 0.0",
+                    "type": "number"
+                },
+                "dicn": {
+                    "description": "Property. Model:'https://schema.org/Number'. Value to allow the integral controller to advance beyond the gate limits (Dicn). Default: 0.0",
+                    "type": "number"
+                },
+                "dpv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Value to allow the Pilot valve controller to advance beyond the gate limits (Dpv). Default: 0.0",
+                    "type": "number"
+                },
+                "dturb": {
+                    "description": "Property. Model:'https://schema.org/Number'. Turbine damping factor (Dturb).  Unit = delta P (PU of MWbase) / delta speed (PU). Default: 0.0",
+                    "type": "number"
+                },
+                "feedbackSignal": {
+                    "description": "Property. Model:'https://schema.org/Number'. Feedback signal selection (Sw). true = PID Output (if R-Perm-Gate=droop and R-Perm-Pe=0) false = Electrical Power (if R-Perm-Gate=0 and R-Perm-Pe=droop) or false = Gate Position (if R-Perm-Gate=droop and R-Perm-Pe=0). Default: False",
+                    "type": "number"
+                },
+                "fl1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow Gate 1 (Fl1).  Flow value for gate position point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fl2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow Gate 2 (Fl2).  Flow value for gate position point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fl3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow Gate 3 (Fl3).  Flow value for gate position point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fl4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow Gate 4 (Fl4).  Flow value for gate position point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fl5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow Gate 5 (Fl5).  Flow value for gate position point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P1 (Fp1).  Turbine Flow value for point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P10 (Fp10).  Turbine Flow value for point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P2 (Fp2).  Turbine Flow value for point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P3 (Fp3).  Turbine Flow value for point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P4 (Fp4).  Turbine Flow value for point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P5 (Fp5).  Turbine Flow value for point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P6 (Fp6).  Turbine Flow value for point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P7 (Fp7).  Turbine Flow value for point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P8 (Fp8).  Turbine Flow value for point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "fp9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Flow P9 (Fp9).  Turbine Flow value for point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "gmax": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum Gate Position (Gmax). Default: 0.0",
+                    "type": "number"
+                },
+                "gmin": {
+                    "description": "Property. Model:'https://schema.org/Number'. Minimum Gate Position (Gmin). Default: 0.0",
+                    "type": "number"
+                },
+                "gtmxcl": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate closing rate (Gtmxcl). Default: 0.0",
+                    "type": "number"
+                },
+                "gtmxop": {
+                    "description": "Property. Model:'https://schema.org/Number'. Maximum gate opening rate (Gtmxop). Default: 0.0",
+                    "type": "number"
+                },
+                "gv1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate 1 (Gv1).  Gate Position value for point 1 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "gv2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate 2 (Gv2).  Gate Position value for point 2 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "gv3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate 3 (Gv3).  Gate Position value for point 3 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "gv4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate 4 (Gv4).  Gate Position value for point 4 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "gv5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Gate 5 (Gv5).  Gate Position value for point 5 for lookup table representing water flow through the turbine as a function of gate position to produce steady state flow. Default: 0.0",
+                    "type": "number"
+                },
+                "kd": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative controller derivative gain (Kd). Default: 0.0",
+                    "type": "number"
+                },
+                "ki": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative controller Integral gain (Ki). Default: 0.0",
+                    "type": "number"
+                },
+                "kp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative control gain (Kp). Default: 0.0",
+                    "type": "number"
+                },
+                "mwbase": {
+                    "description": "Property. Model:'https://schema.org/Number'. Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss1": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P1 (Pmss1).  Mechanical Power output Pmss for Turbine Flow point 1 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss10": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P10 (Pmss10).  Mechanical Power output Pmss for Turbine Flow point 10 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss2": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P2 (Pmss2).  Mechanical Power output Pmss for Turbine Flow point 2 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss3": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P3 (Pmss3).  Mechanical Power output Pmss for Turbine Flow point 3 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss4": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P4 (Pmss4).  Mechanical Power output Pmss for Turbine Flow point 4 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss5": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P5 (Pmss5).  Mechanical Power output Pmss for Turbine Flow point 5 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss6": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P6 (Pmss6).  Mechanical Power output Pmss for Turbine Flow point 6 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss7": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P7 (Pmss7).  Mechanical Power output Pmss for Turbine Flow point 7 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss8": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P8 (Pmss8).  Mechanical Power output Pmss for Turbine Flow point 8 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "pmss9": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pmss Flow P9 (Pmss9).  Mechanical Power output Pmss for Turbine Flow point 9 for lookup table representing per unit mechanical power on machine MVA rating as a function of turbine flow. Default: 0.0",
+                    "type": "number"
+                },
+                "rpg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop for governor output feedback (R-Perm-Gate). Default: 0.0",
+                    "type": "number"
+                },
+                "rpp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Permanent droop for electrical power feedback (R-Perm-Pe). Default: 0.0",
+                    "type": "number"
+                },
+                "td": {
+                    "description": "Property. Model:'https://schema.org/Number'. Derivative controller time constant to limit the derivative characteristic beyond a breakdown frequency to avoid amplification of high-frequency noise (Td). Default: 0",
+                    "type": "number"
+                },
+                "tdv": {
+                    "description": "Property. Model:'https://schema.org/Number'. Distributive Valve time lag time constant (Tdv). Default: 0",
+                    "type": "number"
+                },
+                "tg": {
+                    "description": "Property. Model:'https://schema.org/Number'. Value to allow the Distribution valve controller to advance beyond the gate movement rate limit (Tg). Default: 0",
+                    "type": "number"
+                },
+                "tp": {
+                    "description": "Property. Model:'https://schema.org/Number'. Pilot Valve time lag time constant (Tp). Default: 0",
+                    "type": "number"
+                },
+                "tpe": {
+                    "description": "Property. Model:'https://schema.org/Number'. Electrical power droop time constant (Tpe). Default: 0",
+                    "type": "number"
+                },
+                "tw": {
+                    "description": "Property. Model:'https://schema.org/Number'. Water inertia time constant (Tw) (>0). Default: 0",
+                    "type": "number"
+                }
             }
-          ],
-          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
-        },
-        "dewPoint": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
-        },
-        "refDevice": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
-        },
-        "streamGauge": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
-        },
-        "snowHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
-        },
-        "uVIndexMax": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
-        },
-        "aqiMajorPollutant": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
-        },
-        "aqiMajorPollutantForecast": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
-        },
-        "precipitationForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
-        },
-        "airQualityIndex": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
-        },
-        "relativeHumidityForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
-        },
-        "airQualityIndexForecast": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
-        },
-        "airTemperatureTSA": {
-          "type": "object",
-          "description": "Property. Air temperature time series aggregation",
-          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "dateObserved",
-    "location"
-  ]
+    ]
 }
