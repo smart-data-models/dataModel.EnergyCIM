@@ -1,36 +1,36 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/HydroPump/schema.json",
-    "title": " Smart Data Models - HydroPump",
-    "description": "Adapted from CIM data models. A synchronous motor-driven pump, typically associated with a pumped storage plant.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/HydroPump/schema.json",
+  "title": " Smart Data Models - HydroPump",
+  "description": "Adapted from CIM data models. A synchronous motor-driven pump, typically associated with a pumped storage plant.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "HydroPump"
+          ],
+          "description": "Property. NGSI type. It has to be HydroPump"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "HydroPowerPlant": {
+          "description": "Property. Model:'https://schema.org/Number'. The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: None",
+          "type": "number"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "HydroPump"
-                    ],
-                    "description": "Property. NGSI type. It has to be HydroPump"
-                },
-                "HydroPowerPlant": {
-                    "description": "Property. Model:'https://schema.org/Number'. The hydro pump may be a member of a pumped storage plant or a pump for distributing water. Default: None",
-                    "type": "number"
-                },
-                "RotatingMachine": {
-                    "description": "Property. Model:'https://schema.org/Number'. The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: None",
-                    "type": "number"
-                }
-            }
+        "RotatingMachine": {
+          "description": "Property. Model:'https://schema.org/Number'. The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating. Default: None",
+          "type": "number"
         }
-    ]
+      }
+    }
+  ]
 }
