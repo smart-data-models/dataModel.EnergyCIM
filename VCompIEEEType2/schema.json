@@ -1,36 +1,36 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VCompIEEEType2/schema.json",
-    "title": " Smart Data Models - VCompIEEEType2",
-    "description": "Adapted from CIM data models. ",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/VCompIEEEType2/schema.json",
+  "title": " Smart Data Models - VCompIEEEType2",
+  "description": "Adapted from CIM data models. ",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "VCompIEEEType2"
+          ],
+          "description": "Property. NGSI type. It has to be VCompIEEEType2"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "GenICompensationForGenJ": {
+          "description": "Property. Model:'https://schema.org/Number'. Compensation of this voltage compensator`s generator for current flow out of another generator. Default: 'list'",
+          "type": "number"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "VCompIEEEType2"
-                    ],
-                    "description": "Property. NGSI type. It has to be VCompIEEEType2"
-                },
-                "GenICompensationForGenJ": {
-                    "description": "Property. Model:'https://schema.org/Number'. Compensation of this voltage compensator`s generator for current flow out of another generator. Default: 'list'",
-                    "type": "number"
-                },
-                "tr": {
-                    "description": "Property. Model:'https://schema.org/Number'.  Default: 0",
-                    "type": "number"
-                }
-            }
+        "tr": {
+          "description": "Property. Model:'https://schema.org/Number'.  Default: 0",
+          "type": "number"
         }
-    ]
+      }
+    }
+  ]
 }
