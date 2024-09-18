@@ -1,36 +1,36 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Accumulator/schema.json",
-    "title": " Smart Data Models - Accumulator",
-    "description": "Adapted from CIM data models. Accumulator represents an accumulated (counted) Measurement, e.g. an energy value.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModels.CIMEnergyClasses/Accumulator/schema.json",
+  "title": " Smart Data Models - Accumulator",
+  "description": "Adapted from CIM data models. Accumulator represents an accumulated (counted) Measurement, e.g. an energy value.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Accumulator"
+          ],
+          "description": "Property. NGSI type. It has to be Accumulator"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "AccumulatorValues": {
+          "description": "Property. Model:'https://schema.org/Number'. Measurement to which this value is connected. Default: 'list'",
+          "type": "number"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "Accumulator"
-                    ],
-                    "description": "Property. NGSI type. It has to be Accumulator"
-                },
-                "AccumulatorValues": {
-                    "description": "Property. Model:'https://schema.org/Number'. Measurement to which this value is connected. Default: 'list'",
-                    "type": "number"
-                },
-                "LimitSets": {
-                    "description": "Property. Model:'https://schema.org/Number'. The Measurements using the LimitSet. Default: 'list'",
-                    "type": "number"
-                }
-            }
+        "LimitSets": {
+          "description": "Property. Model:'https://schema.org/Number'. The Measurements using the LimitSet. Default: 'list'",
+          "type": "number"
         }
-    ]
+      }
+    }
+  ]
 }
