@@ -535,7 +535,7 @@
         "baseURIshortCircuit": "https://smartdatamodels.org/dataModel.EnergyCIM/baseURIshortCircuit",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "bca": "https://smartdatamodels.org/dataModel.EnergyCIM/bca",
         "bch": "https://smartdatamodels.org/dataModel.EnergyCIM/bch",
@@ -577,7 +577,7 @@
         "converterFedDrive": "https://smartdatamodels.org/dataModel.EnergyCIM/converterFedDrive",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "cpsmn": "https://smartdatamodels.org/dataModel.EnergyCIM/cpsmn",
         "cpsmx": "https://smartdatamodels.org/dataModel.EnergyCIM/cpsmx",
@@ -983,7 +983,7 @@
         "limitType": "https://smartdatamodels.org/dataModel.EnergyCIM/limitType",
         "lmax": "https://smartdatamodels.org/dataModel.EnergyCIM/lmax",
         "loadinc": "https://smartdatamodels.org/dataModel.EnergyCIM/loadinc",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "longPF": "https://smartdatamodels.org/dataModel.EnergyCIM/longPF",
         "lookupTableFunctionType": "https://smartdatamodels.org/dataModel.EnergyCIM/lookupTableFunctionType",
         "lowStep": "https://smartdatamodels.org/dataModel.EnergyCIM/lowStep",
@@ -1004,7 +1004,7 @@
         "mRID": "https://smartdatamodels.org/dataModel.EnergyCIM/mRID",
         "max": {
             "@container": "@list",
-            "@id": "ngsi-ld:max"
+            "@id": "https://uri.etsi.org/ngsi-ld/max"
         },
         "maxAlpha": "https://smartdatamodels.org/dataModel.EnergyCIM/maxAlpha",
         "maxGamma": "https://smartdatamodels.org/dataModel.EnergyCIM/maxGamma",
@@ -1040,7 +1040,7 @@
         "minZ0ToZ1Ratio": "https://smartdatamodels.org/dataModel.EnergyCIM/minZ0ToZ1Ratio",
         "minerr": "https://smartdatamodels.org/dataModel.EnergyCIM/minerr",
         "mnef": "https://smartdatamodels.org/dataModel.EnergyCIM/mnef",
-        "mode": "ngsi-ld:mode",
+        "mode": "https://uri.etsi.org/ngsi-ld/mode",
         "modelDescriptionURI": "https://smartdatamodels.org/dataModel.EnergyCIM/modelDescriptionURI",
         "modelType": "https://smartdatamodels.org/dataModel.EnergyCIM/modelType",
         "mplvrt": "https://smartdatamodels.org/dataModel.EnergyCIM/mplvrt",
@@ -1198,7 +1198,7 @@
         "pssin": "https://smartdatamodels.org/dataModel.EnergyCIM/pssin",
         "psslim": "https://smartdatamodels.org/dataModel.EnergyCIM/psslim",
         "pt": "https://smartdatamodels.org/dataModel.EnergyCIM/pt",
-        "q": "ngsi-ld:q",
+        "q": "https://uri.etsi.org/ngsi-ld/q",
         "q0": "https://smartdatamodels.org/dataModel.EnergyCIM/q0",
         "q1": "https://smartdatamodels.org/dataModel.EnergyCIM/q1",
         "q10": "https://smartdatamodels.org/dataModel.EnergyCIM/q10",
@@ -1623,7 +1623,7 @@
         "vadjmin": "https://smartdatamodels.org/dataModel.EnergyCIM/vadjmin",
         "val": "https://smartdatamodels.org/dataModel.EnergyCIM/val",
         "validity": "https://smartdatamodels.org/dataModel.EnergyCIM/validity",
-        "value": "ngsi-ld:hasValue",
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue",
         "value1": "https://smartdatamodels.org/dataModel.EnergyCIM/value1",
         "value1Unit": "https://smartdatamodels.org/dataModel.EnergyCIM/value1Unit",
         "value2": "https://smartdatamodels.org/dataModel.EnergyCIM/value2",
