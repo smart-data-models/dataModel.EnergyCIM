@@ -1,3 +1,37 @@
 /* (Beta) Export of data model ACDCConverter of the subject dataModel.EnergyCIM for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ACDCConverter_type AS ENUM ('ACDCConverter');
-CREATE TABLE ACDCConverter (DCTerminals NUMERIC, PccTerminal NUMERIC, address JSON, alternateName TEXT, areaServed TEXT, baseS NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, idc NUMERIC, idleLoss NUMERIC, location JSON, maxUdc NUMERIC, minUdc NUMERIC, name TEXT, numberOfValves NUMERIC, owner JSON, p NUMERIC, poleLossP NUMERIC, q NUMERIC, ratedUdc NUMERIC, resistiveLoss NUMERIC, seeAlso JSON, source TEXT, switchingLoss NUMERIC, targetPpcc NUMERIC, targetUdc NUMERIC, type ACDCConverter_type, uc NUMERIC, udc NUMERIC, valveU0 NUMERIC);
+CREATE TABLE ACDCConverter (
+  "DCTerminals" NUMERIC,
+  "PccTerminal" NUMERIC,
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "baseS" NUMERIC,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "idc" NUMERIC,
+  "idleLoss" NUMERIC,
+  "location" JSON,
+  "maxUdc" NUMERIC,
+  "minUdc" NUMERIC,
+  "name" TEXT,
+  "numberOfValves" NUMERIC,
+  "owner" JSON,
+  "p" NUMERIC,
+  "poleLossP" NUMERIC,
+  "q" NUMERIC,
+  "ratedUdc" NUMERIC,
+  "resistiveLoss" NUMERIC,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "switchingLoss" NUMERIC,
+  "targetPpcc" NUMERIC,
+  "targetUdc" NUMERIC,
+  "type" ACDCConverter_type,
+  "uc" NUMERIC,
+  "udc" NUMERIC,
+  "valveU0" NUMERIC
+);
